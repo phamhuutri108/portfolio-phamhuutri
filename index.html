@@ -469,54 +469,107 @@
 </div>
 
 <script>
-    function showPage(pageId, groupId = null) {
+    // 1. CẤU HÌNH ĐƯỜNG DẪN URL
+    // Cú pháp: 'id-của-div-trong-html': 'đường-dẫn-muốn-hiện-trên-trình-duyệt'
+    const urlMapping = {
+        'home': '/',
+        'about': '/about',
+        'contact': '/contact',
+        'cat-short-films': '/short-films',
+        'cat-commercial': '/commercial',
+        'cat-writing': '/writing',
         
-        // --- PHẦN 1: XỬ LÝ NỘI DUNG CHÍNH (CONTENT) ---
-        // Ẩn hết các trang cũ
-        const sections = document.querySelectorAll('.page-section');
-        sections.forEach(section => {
-            section.classList.remove('active-section');
-        });
+        // Các phim chi tiết
+        'film-karma': '/film/karma',
+        'film-ghost': '/film/the-ghost',
+        'film-alive': '/film/alive',
+        'film-city': '/film/city-grows',
+        'film-cocks-cooking': '/film/cocks-cooking',
+        
+        // Các mục khác (nếu có)
+        'comm-1': '/commercial/campaign-a',
+        'write-1': '/writing/essays-cinema'
+    };
 
-        // Hiện trang mới
+    // Hàm tìm ID trang dựa trên URL hiện tại (Dùng khi F5 hoặc gõ link trực tiếp)
+    function getIdFromUrl(path) {
+        if (path.length > 1 && path.endsWith('/')) {
+            path = path.slice(0, -1); // Xóa dấu / thừa ở cuối
+        }
+        
+        // Tìm xem đường dẫn hiện tại khớp với ID nào trong danh sách trên
+        for (const [id, url] of Object.entries(urlMapping)) {
+            if (url === path) return id;
+        }
+        return 'home'; // Không tìm thấy thì về Trang chủ
+    }
+
+    // 2. HÀM CHÍNH: SHOW PAGE (Đã nâng cấp)
+    function showPage(pageId, groupId = null, addToHistory = true) {
+        
+        // --- A. XỬ LÝ GIAO DIỆN (Giống code cũ) ---
+        
+        // 1. Ẩn hiện nội dung chính
+        const sections = document.querySelectorAll('.page-section');
+        sections.forEach(section => section.classList.remove('active-section'));
+
         const activeSection = document.getElementById(pageId);
         if (activeSection) {
             activeSection.classList.add('active-section');
+            window.scrollTo(0, 0); // Cuộn lên đầu trang
         }
 
-        // --- PHẦN 2: XỬ LÝ MÀU LINK (ACTIVE LINK) ---
-        // Bỏ màu xanh ở tất cả các link
+        // 2. Tô màu menu (Active Link)
         const allLinks = document.querySelectorAll('a');
-        allLinks.forEach(link => {
-            link.classList.remove('active-link');
-        });
-
-        // Tô màu xanh cho link vừa bấm
-        const activeLink = document.getElementById('link-' + pageId);
-        if (activeLink) {
-            activeLink.classList.add('active-link');
-        }
-
-        // --- PHẦN 3: XỬ LÝ ĐÓNG/MỞ SIDEBAR (QUAN TRỌNG NHẤT) ---
+        allLinks.forEach(link => link.classList.remove('active-link'));
         
-        // Bước A: Reset trạng thái - Đóng tất cả các nhóm lại trước
-        // (Đây là bước giúp "bấm heading khác thì cái cũ biến mất")
-        const allGroups = document.querySelectorAll('.category-group');
-        allGroups.forEach(group => {
-            group.classList.remove('is-open');
-        });
+        const activeLink = document.getElementById('link-' + pageId);
+        if (activeLink) activeLink.classList.add('active-link');
 
-        // Bước B: Nếu link vừa bấm thuộc một nhóm nào đó (Short films, Commercial...)
-        // Thì "đóng đinh" trạng thái mở cho nhóm đó
+        // 3. Xử lý đóng/mở Sidebar
+        const allGroups = document.querySelectorAll('.category-group');
+        allGroups.forEach(group => group.classList.remove('is-open'));
+        
         if (groupId) {
             const activeGroup = document.getElementById(groupId);
-            if (activeGroup) {
-                activeGroup.classList.add('is-open');
-            }
+            if (activeGroup) activeGroup.classList.add('is-open');
         }
-        // Lưu ý: Nếu groupId là null (khi bấm Home/About), Bước B không chạy 
-        // -> Kết quả là Sidebar đóng gọn lại hết (đúng ý bạn).
+
+        // --- B. XỬ LÝ URL (Phần mới thêm) ---
+        // Nếu addToHistory = true thì đổi URL trên thanh địa chỉ
+        if (addToHistory && urlMapping[pageId]) {
+            const newUrl = urlMapping[pageId];
+            window.history.pushState({ pageId: pageId, groupId: groupId }, "", newUrl);
+        }
     }
+
+    // 3. XỬ LÝ KHI BẤM NÚT BACK/FORWARD TRÊN TRÌNH DUYỆT
+    window.onpopstate = function(event) {
+        if (event.state) {
+            // Khôi phục trạng thái cũ từ lịch sử
+            showPage(event.state.pageId, event.state.groupId, false);
+        } else {
+            // Nếu không có lịch sử, tự tính toán lại từ URL
+            const path = window.location.pathname;
+            const id = getIdFromUrl(path);
+            showPage(id, null, false);
+        }
+    };
+
+    // 4. TỰ ĐỘNG CHẠY KHI VỪA VÀO WEB (Xử lý F5)
+    document.addEventListener("DOMContentLoaded", () => {
+        const path = window.location.pathname;
+        const initialId = getIdFromUrl(path);
+        
+        // Logic phụ: Nếu đang vào link phim thì tự mở sidebar nhóm phim
+        let initialGroup = null;
+        if (initialId.includes('film-')) initialGroup = 'group-films'; 
+        if (initialId.includes('comm-')) initialGroup = 'group-comm';
+        if (initialId.includes('write-')) initialGroup = 'group-writing';
+        
+        // Gọi hàm hiển thị (false để không lưu lịch sử lần đầu)
+        showPage(initialId, initialGroup, false); 
+    });
 </script>
 
 <script>
