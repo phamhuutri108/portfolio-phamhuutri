@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Huu Tri | Portfolio</title>
+    <style>
+        /* --- 1. RESET & BASIC SETUP --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Giữ font chữ Georgia giống hệt trang mẫu */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+            color: #000;
+            background-color: #fff;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #666; /* Màu xám khi di chuột giống mẫu */
+            text-decoration: underline;
+        }
+
+        /* --- 2. LAYOUT (SIDEBAR + CONTENT) --- */
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* --- 3. SIDEBAR (Cột trái) --- */
+        .sidebar {
+            width: 260px; /* Độ rộng cố định giống trang mẫu */
+            padding: 40px 30px;
+            border-right: 1px solid #eee; /* Đường kẻ mờ ngăn cách */
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .site-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Menu chính */
+        .main-menu {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .main-menu li {
+            margin-bottom: 8px;
+        }
+
+        .main-menu a {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Danh mục (Category) */
+        .category-section h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 10px;
+            margin-top: 25px;
+            font-weight: normal;
+        }
+
+        .category-list {
+            list-style: none;
+        }
+
+        .category-list li {
+            margin-bottom: 6px;
+            font-size: 13px;
+        }
+
+        /* Copyright */
+        .copyright {
+            margin-top: 50px;
+            font-size: 11px;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        /* --- 4. MAIN CONTENT (Cột phải) --- */
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            max-width: 1200px;
+        }
+
+        /* Gallery Grid (Thay thế cho slideshow cũ kỹ) */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            display: block;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(100%); /* Ảnh đen trắng mặc định giống phong cách nghệ thuật */
+            transition: filter 0.3s;
+        }
+
+        .gallery-item:hover img {
+            filter: grayscale(0%); /* Có màu khi di chuột */
+        }
+
+        /* --- 5. RESPONSIVE (Cho điện thoại) --- */
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #eee;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <aside class="sidebar">
+        <h1 class="site-title"><a href="#">Pham Huu Tri</a></h1>
+
+        <ul class="main-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="category-section">
+            <h4>Academic Projects</h4>
+            <ul class="category-list">
+                <li><a href="#">Art and Media Study (2026)</a></li>
+                <li><a href="#">Psychology Research</a></li>
+            </ul>
+
+            <h4>Portfolio</h4>
+            <ul class="category-list">
+                <li><a href="#">Writing Samples</a></li>
+                <li><a href="#">Video Editing</a></li>
+                <li><a href="#">Audio Projects</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Pham Huu Tri.</p>
+            <br>
+            <p>Tel: 0889314705</p>
+            <p><a href="mailto:email@example.com">Email Me</a></p>
+        </div>
+    </aside>
+
+    <main class="content">
+        <div class="gallery-grid">
+            
+            <a href="https://www.canva.com/design/DAFzAn6Gu0Y/2MTDiCpUg8gdZMKjR_EySA/view" target="_blank" class="gallery-item">
+                <img src="https://i.ibb.co/n6HQjr0/1.png" alt="Project 1">
+            </a>
+
+            <a href="https://www.canva.com/design/DAFrl_OASDM/PHqcrr9C64iReavYJoSMcg/view" target="_blank" class="gallery-item">
+                <img src="https://i.ibb.co/3fpP9tM/2.png" alt="Project 2">
+            </a>
+
+            <a href="https://www.canva.com/design/DAFzA-Asapc/GQ3ogA8i3A9XdoIpUNiySw/view" target="_blank" class="gallery-item">
+                <img src="https://i.ibb.co/1dVP3Nr/3.png" alt="Project 3">
+            </a>
+
+            <a href="#" class="gallery-item">
+                <img src="https://dummyimage.com/600x400/ccc/fff&text=New+Project" alt="Future Project">
+            </a>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
