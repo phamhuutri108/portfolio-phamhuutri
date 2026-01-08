@@ -3,207 +3,891 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pham Huu Tri</title>
-    <style>
-        /* --- 1. RESET & BASIC SETUP --- */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            /* Giữ font chữ Georgia giống hệt trang mẫu */
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 14px;
-            color: #000;
-            background-color: #fff;
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: #666; /* Màu xám khi di chuột giống mẫu */
-            text-decoration: underline;
-        }
-
-        /* --- 2. LAYOUT (SIDEBAR + CONTENT) --- */
-        .wrapper {
-            display: flex;
-            min-height: 100vh;
-        }
-
-        /* --- 3. SIDEBAR (Cột trái) --- */
-        .sidebar {
-            width: 260px; /* Độ rộng cố định giống trang mẫu */
-            padding: 40px 30px;
-            border-right: 1px solid #eee; /* Đường kẻ mờ ngăn cách */
-            flex-shrink: 0;
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            overflow-y: auto;
-        }
-
-        .site-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Menu chính */
-        .main-menu {
-            list-style: none;
-            margin-bottom: 40px;
-        }
-
-        .main-menu li {
-            margin-bottom: 8px;
-        }
-
-        .main-menu a {
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        /* Danh mục (Category) */
-        .category-section h4 {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #888;
-            margin-bottom: 10px;
-            margin-top: 25px;
-            font-weight: normal;
-        }
-
-        .category-list {
-            list-style: none;
-        }
-
-        .category-list li {
-            margin-bottom: 6px;
-            font-size: 13px;
-        }
-
-        /* Copyright */
-        .copyright {
-            margin-top: 50px;
-            font-size: 11px;
-            color: #888;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-
-        /* --- 4. MAIN CONTENT (Cột phải) --- */
-        .content {
-            flex-grow: 1;
-            padding: 40px;
-            max-width: 1200px;
-        }
-
-        /* Gallery Grid (Thay thế cho slideshow cũ kỹ) */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery-item {
-            display: block;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            filter: grayscale(100%); /* Ảnh đen trắng mặc định giống phong cách nghệ thuật */
-            transition: filter 0.3s;
-        }
-
-        .gallery-item:hover img {
-            filter: grayscale(0%); /* Có màu khi di chuột */
-        }
-
-        /* --- 5. RESPONSIVE (Cho điện thoại) --- */
-        @media (max-width: 768px) {
-            .wrapper {
-                flex-direction: column;
-            }
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-                border-right: none;
-                border-bottom: 1px solid #eee;
-            }
-            .content {
-                padding: 20px;
-            }
-        }
-    </style>
+    <title>Pham Huu Tri's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="wrapper">
     <aside class="sidebar">
-        <h1 class="site-title"><a href="#">Pham Huu Tri</a></h1>
+
+        <div class="lang-switch">
+    <span class="lang-btn active" onclick="setLanguage('en')" id="btn-en">EN</span>
+    <span class="separator">-</span>
+    <span class="lang-btn" onclick="setLanguage('vi')" id="btn-vi">VI</span>
+</div>
+<div class="site-logo">
+    </div>
+
+        <div class="site-logo">
+            <a href="#" onclick="showPage('home')">
+                <img src="https://ik.imagekit.io/phamhuutri108/tri_potrait_b&w.JPG" alt="Pham Huu Tri">
+            </a>
+        </div>
 
         <ul class="main-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <li>
+        <a href="#" onclick="showPage('home')" id="link-home" class="active-link">
+            <span class="content-en">Home</span>
+            <span class="content-vi">Trang chủ</span>
+        </a>
+    </li>
+    <li>
+        <a href="#" onclick="showPage('about')" id="link-about">
+            <span class="content-en">About</span>
+            <span class="content-vi">Về tôi</span>
+        </a>
+    </li>
+    <li>
+        <a href="#" onclick="showPage('contact')" id="link-contact">
+            <span class="content-en">Contact</span>
+            <span class="content-vi">Liên hệ</span>
+        </a>
+    </li>
+</ul>
 
         <div class="category-section">
-            <h4>Academic Projects</h4>
-            <ul class="category-list">
-                <li><a href="#">Art and Media Studyyyyyyyyyy</a></li>
-                <li><a href="#">Psychology Research</a></li>
-            </ul>
+    
+    <div class="category-group" id="group-films">
+    <h4>
+        <a href="#" onclick="showPage('cat-short-films', 'group-films')" id="link-cat-short-films">
+            <span class="content-en">Short Films</span>
+            <span class="content-vi">Phim ngắn</span>
+        </a>
+    </h4>
+    <ul class="category-list">
+        <li>
+            <a href="#" onclick="showPage('film-karma', 'group-films')" id="link-film-karma">
+                <span class="content-en">Karma</span>
+                <span class="content-vi">Nghiệp</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="showPage('film-ghost', 'group-films')" id="link-film-ghost">
+                <span class="content-en">"The Ghost" Wants to Live</span>
+                <span class="content-vi">"Con Ma" Muốn Sống</span>
+            </a>
+        </li>
+        <li>
+    <a href="#" onclick="showPage('film-cocks-cooking', 'group-films')" id="link-film-cocks-cooking">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </a>
+</li>
+        <li>
+            <a href="#" onclick="showPage('film-alive', 'group-films')" id="link-film-alive">
+                <span class="content-en">Alive</span>
+                <span class="content-vi">Khi Chúng Ta Được Sống</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="showPage('film-city', 'group-films')" id="link-film-city">
+                <span class="content-en">When the City Grows</span>
+                <span class="content-vi">Khi Thành Phố Lớn</span>
+            </a>
+        </li>
+    </ul>
+</div>
 
-            <h4>Portfolio</h4>
-            <ul class="category-list">
-                <li><a href="#">Writing Samples</a></li>
-                <li><a href="#">Video Editing</a></li>
-                <li><a href="#">Audio Projects</a></li>
-            </ul>
-        </div>
+    <div class="category-group" id="group-comm">
+        <h4>
+            <a href="#" onclick="showPage('cat-commercial', 'group-comm')" id="link-cat-commercial">
+                <span class="content-en">Commercial</span>
+                <span class="content-vi">Quảng cáo</span>
+            </a>
+        </h4>
+        <ul class="category-list">
+            <li>
+                <a href="#" onclick="showPage('comm-1', 'group-comm')" id="link-comm-1">
+                    <span class="content-en">Brand Campaign A</span>
+                    <span class="content-vi">Chiến dịch A</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category-group" id="group-writing">
+        <h4>
+            <a href="#" onclick="showPage('cat-writing', 'group-writing')" id="link-cat-writing">
+                <span class="content-en">Writing</span>
+                <span class="content-vi">Viết</span>
+            </a>
+        </h4>
+        <ul class="category-list">
+            <li>
+                <a href="#" onclick="showPage('write-1', 'group-writing')" id="link-write-1">
+                    <span class="content-en">Essays on Cinema</span>
+                    <span class="content-vi">Tiểu luận điện ảnh</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
 
         <div class="copyright">
             <p>&copy; 2026 Pham Huu Tri.</p>
-            <br>
-            <p>Tel: 0889314705</p>
-            <p><a href="mailto:email@example.com">Email Me</a></p>
         </div>
     </aside>
 
     <main class="content">
-        <div class="gallery-grid">
-            
-            <a href="https://www.canva.com/design/DAFzAn6Gu0Y/2MTDiCpUg8gdZMKjR_EySA/view" target="_blank" class="gallery-item">
-                <img src="https://i.ibb.co/n6HQjr0/1.png" alt="Project 1">
-            </a>
-
-            <a href="https://www.canva.com/design/DAFrl_OASDM/PHqcrr9C64iReavYJoSMcg/view" target="_blank" class="gallery-item">
-                <img src="https://i.ibb.co/3fpP9tM/2.png" alt="Project 2">
-            </a>
-
-            <a href="https://www.canva.com/design/DAFzA-Asapc/GQ3ogA8i3A9XdoIpUNiySw/view" target="_blank" class="gallery-item">
-                <img src="https://i.ibb.co/1dVP3Nr/3.png" alt="Project 3">
-            </a>
-
-            <a href="#" class="gallery-item">
-                <img src="https://dummyimage.com/600x400/ccc/fff&text=New+Project" alt="Future Project">
-            </a>
+        
+        <div id="home" class="page-section active-section">
+            <img src="https://ik.imagekit.io/phamhuutri108/one%20buddha%20is%20not%20enough.JPG" 
+                 alt="Home Art" 
+                 class="home-center-img">
         </div>
+
+        <div id="about" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">About</span>
+        <span class="content-vi">Giới thiệu</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-vi">
+                Xin chào, tôi là <b>Phạm Hữu Trí</b>.<br>
+                Hiện tại, tôi đang theo đuổi con đường làm phim độc lập và là một freelancer bán thời gian. Đôi khi tôi viết.
+            </span>
+            <span class="content-en">
+                Hello, I am <b>Pham Huu Tri</b>.<br>
+                Currently, I am pursuing independent filmmaking and working as a part-time freelancer. Sometimes, I write.
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Tuyên ngôn</span>
+            <span class="content-en">Artist Statement</span>
+        </h3>
+
+        <p style="font-style: italic;">"A human being."</p>
+
+        <p>
+            <span class="content-vi">
+                Thực hành nghệ thuật với tôi là hành trình khám phá tính nhân bản.
+                Mỗi khung hình, mỗi dòng chữ đều là một nỗ lực để thấu hiểu việc làm người.
+            </span>
+            <span class="content-en">
+                To me, artistic practice is a journey of exploring humanity.
+                Every frame, every line is an effort to understand what it means to be human.
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Giáo dục</span>
+            <span class="content-en">Education</span>
+        </h3>
+        <p>
+            <span class="content-vi"> <b>Đại học Văn Lang, TP. HCM</b> (2021 - 2026)<br>
+            </span>
+
+            <span class="content-en"> <b>Van Lang University, Vietnam</b> (2021 - 2026)<br>
+            </span>
+            <span class="content-vi" style="font-size: 11px; color: #666;">
+                Chuyên ngành: Đạo diễn điện ảnh & truyền hình
+            </span>
+            <span class="content-en" style="font-size: 11px; color: #666;">
+                Major: Art in Film & Television Directing
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Quá trình làm phim - Giải thưởng</span>
+            <span class="content-en">Filmography - Awards</span>
+        </h3>
+        
+        <ul style="list-style: none; padding-left: 0; font-size: 12px;">
+    
+    <li style="margin-bottom: 5px;">
+        2024 - <i>
+            <span class="content-vi">Nghiệp</span>
+            <span class="content-en">Karma</span>
+        </i>
+        <span class="content-vi">(Phim ngắn): <b>Cánh diều bạc</b>, Hội điện ảnh Việt Nam</span>
+        <span class="content-en">(Short film): <b>Silver Prize</b>, Golden Kite Awards, Vietnam Cinema Association</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2023 - <i>
+            <span class="content-vi">"Con Ma" Muốn Sống</span>
+            <span class="content-en">"The Ghost" Wants to Live</span>
+        </i>
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Giải ba</b>, Liên hoan phim ngắn TP. HCM</span>
+        <span class="content-en">(Short documentary): <b>Third Prize</b>, HCMC Short Film Festival</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2022 - <i>
+            <span class="content-vi">"Con Ma" Muốn Sống</span>
+            <span class="content-en">"The Ghost" Wants to Live</span>
+        </i> 
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Quỹ sáng tác trẻ</b>, Hội điện ảnh TP. HCM</span>
+        <span class="content-en">(Short documentary): <b>Young Creativity Fund</b>, HCMC Cinema Association</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2020 - <i>
+            <span class="content-vi">Khi Chúng Ta Được Sống</span>
+            <span class="content-en">Alive</span>
+        </i>
+        <span class="content-vi">(Phim ngắn): <b>Phim xuất sắc nhất</b>, The Original Project, Hà Nội</span>
+        <span class="content-en">(Short film): <b>Best Short Film</b>, The Original Project, Hanoi</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2020 - <i>
+            <span class="content-vi">Khi Thành Phố Lớn</span>
+            <span class="content-en">When the City Grows</span>
+        </i>
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Giải nhì</b>, Le Filmmaking Camp, Quảng Trị - Đại sứ quán Mỹ tài trợ</span>
+        <span class="content-en">(Short documentary): <b>Second Prize</b>, Le Filmmaking Camp, Quang Tri - Sponsored by the U.S. Embassy</span>
+    </li>
+
+</ul>
+
+        <div id="resume-holder" style="text-align: center; margin-top: 60px; height: 50px;">
+            <a href="https://drive.google.com/file/d/16exeCisXqDe9dqmPtJ8lGSgUCP4F9pD1/view?usp=sharing" target="_blank" id="wandering-resume">Resume</a>
+        </div>
+    </div>
+</div>
+
+        <div id="contact" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Contact</span>
+        <span class="content-vi">Liên hệ</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <b>
+                <span class="content-en">Phone:</span>
+                <span class="content-vi">Điện thoại:</span>
+            </b> 
+            <a href="tel:+84865953041" style="color: #111;">(+84) 865 953 041</a>
+        </p>
+        
+        <p>
+            <b>Email:</b> 
+            <a href="mailto:contact@phamhuutri.com" style="color: #111;">contact@phamhuutri.com</a>
+        </p>
+        
+        <p>
+            <b>Instagram:</b> 
+            <a href="https://www.instagram.com/phamhuutri.es" target="_blank">@phamhuutri.es</a>
+        </p>
+        
+        <p>
+            <b>Facebook:</b> 
+            <a href="https://www.facebook.com/phamhuutri108/" target="_blank">Phạm Hữu Trí</a>
+        </p>
+
+        <img src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+             alt="Contact Image"
+             id="musical-image"
+             style="display: block; margin: 50px auto 0 auto; width: 350px; height: auto; cursor: pointer;"
+             title="Click to play music">
+
+        <audio id="contact-audio">
+            <source src="https://ik.imagekit.io/phamhuutri108/Trang-Mua%20Xuan(from%20Album%20Trong).m4a" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+        <div id="cat-short-films" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Short Films</span>
+        <span class="content-vi">Phim ngắn</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-en">Selected works from 2020 to present.</span>
+            <span class="content-vi">Các tác phẩm tiêu biểu từ năm 2020 đến nay.</span>
+        </p>
+    </div>
+
+    <div class="gallery-grid" style="margin-top:30px;">
+        
+        <a href="#" onclick="showPage('film-karma', 'group-films')" class="gallery-item">
+            <img src="https://dummyimage.com/400x250/eee/111&text=Karma" alt="Karma">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Karma (2024)</span>
+                <span class="content-vi">Nghiệp (2024)</span>
+            </p>
+        </a>
+
+        <a href="#" onclick="showPage('film-ghost', 'group-films')" class="gallery-item">
+            <img src="https://dummyimage.com/400x250/eee/111&text=The+Ghost" alt="The Ghost">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">"The Ghost" Wants to Live (2023)</span>
+                <span class="content-vi">"Con Ma" Muốn Sống (2023)</span>
+            </p>
+        </a>
+
+        <a href="#" onclick="showPage('film-cocks-cooking', 'group-films')" class="gallery-item">
+    <img src="https://dummyimage.com/400x250/eee/111&text=Cock's+Cooking" alt="Cock's Cooking">
+    <p style="margin-top: 5px; font-weight: bold;">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </p>
+</a>
+
+        <a href="#" onclick="showPage('film-alive', 'group-films')" class="gallery-item">
+            <img src="https://dummyimage.com/400x250/eee/111&text=Alive" alt="Alive">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Alive (2020)</span>
+                <span class="content-vi">Khi Chúng Ta Được Sống (2020)</span>
+            </p>
+        </a>
+
+        <a href="#" onclick="showPage('film-city', 'group-films')" class="gallery-item">
+            <img src="https://dummyimage.com/400x250/eee/111&text=City+Grows" alt="City">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">When the City Grows (2020)</span>
+                <span class="content-vi">Khi Thành Phố Lớn (2020)</span>
+            </p>
+        </a>
+
+    </div>
+</div>
+
+        <div id="cat-commercial" class="page-section">
+            <h2 class="page-title">Commercial Projects</h2>
+            <p>Các dự án thương mại...</p>
+        </div>
+
+        <div id="cat-writing" class="page-section">
+            <h2 class="page-title">Writing</h2>
+            <p>Các bài viết...</p>
+        </div>
+
+
+        <div id="film-karma" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Karma (2024)</span>
+        <span class="content-vi">Nghiệp (2024)</span>
+    </h2>
+    <div class="about-text">
+        <p>
+            <span class="content-en"><b>Genre:</b> Short Film<br><b>Awards:</b> Silver Prize, Golden Kite Awards.</span>
+            <span class="content-vi"><b>Thể loại:</b> Phim ngắn<br><b>Giải thưởng:</b> Cánh diều bạc 2024.</span>
+        </p>
+        <p>
+            <span class="content-en">[English synopsis goes here...]</span>
+            <span class="content-vi">[Nội dung tóm tắt phim Nghiệp viết ở đây...]</span>
+        </p>
+        <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Karma" style="width:100%; margin-top:20px;">
+    </div>
+</div>
+
+<div id="film-ghost" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">"The Ghost" Wants to Live (2023)</span>
+        <span class="content-vi">"Con Ma" Muốn Sống (2023)</span>
+    </h2>
+    <div class="about-text">
+        <p>
+            <span class="content-en"><b>Genre:</b> Short Documentary<br><b>Awards:</b> Third Prize, HCMC Short Film Festival.</span>
+            <span class="content-vi"><b>Thể loại:</b> Phim tài liệu ngắn<br><b>Giải thưởng:</b> Giải ba, LHP Ngắn TP.HCM.</span>
+        </p>
+        <p>
+            <span class="content-en">[English synopsis goes here...]</span>
+            <span class="content-vi">[Nội dung tóm tắt phim Con Ma Muốn Sống viết ở đây...]</span>
+        </p>
+        <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Ghost" style="width:100%; margin-top:20px;">
+    </div>
+</div>
+
+<div id="film-cocks-cooking" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </h2>
+    <div class="about-text">
+        <p>
+            <span class="content-en"><b>Genre:</b> Short Film<br><b>Year:</b> [Year]</span>
+            <span class="content-vi"><b>Thể loại:</b> Phim ngắn<br><b>Năm:</b> [Điền năm]</span>
+        </p>
+        <p>
+            <span class="content-en">[English synopsis for Cock's Cooking...]</span>
+            <span class="content-vi">[Nội dung tóm tắt phim Gà Trống Nấu Cơm viết ở đây...]</span>
+        </p>
+        <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Cocks+Cooking" style="width:100%; margin-top:20px;">
+    </div>
+</div>
+
+<div id="film-alive" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Alive (2020)</span>
+        <span class="content-vi">Khi Chúng Ta Được Sống (2020)</span>
+    </h2>
+    <div class="about-text">
+        <p>
+            <span class="content-en"><b>Genre:</b> Short Film<br><b>Awards:</b> Best Short Film, The Original Project.</span>
+            <span class="content-vi"><b>Thể loại:</b> Phim ngắn<br><b>Giải thưởng:</b> Phim xuất sắc nhất, The Original Project.</span>
+        </p>
+        <p>
+            <span class="content-en">[English synopsis goes here...]</span>
+            <span class="content-vi">[Nội dung tóm tắt phim Khi Chúng Ta Được Sống...]</span>
+        </p>
+        <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Alive" style="width:100%; margin-top:20px;">
+    </div>
+</div>
+
+<div id="film-city" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">When the City Grows (2020)</span>
+        <span class="content-vi">Khi Thành Phố Lớn (2020)</span>
+    </h2>
+    <div class="about-text">
+        <p>
+            <span class="content-en"><b>Genre:</b> Short Documentary<br><b>Awards:</b> Second Prize, Le Filmmaking Camp.</span>
+            <span class="content-vi"><b>Thể loại:</b> Phim tài liệu ngắn<br><b>Giải thưởng:</b> Giải nhì, Le Filmmaking Camp.</span>
+        </p>
+        <p>
+            <span class="content-en">[English synopsis goes here...]</span>
+            <span class="content-vi">[Nội dung tóm tắt phim Khi Thành Phố Lớn...]</span>
+        </p>
+        <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+City" style="width:100%; margin-top:20px;">
+    </div>
+</div>
+
+        <div id="comm-1" class="page-section">
+            <h2 class="page-title">Brand Campaign A</h2>
+            <p>Nội dung quảng cáo...</p>
+        </div>
+
+        <div id="write-1" class="page-section">
+            <h2 class="page-title">Essays on Cinema</h2>
+            <p>Nội dung bài viết...</p>
+        </div>
+
     </main>
 </div>
+
+<script>
+    function showPage(pageId, groupId = null) {
+        
+        // --- PHẦN 1: XỬ LÝ NỘI DUNG CHÍNH (CONTENT) ---
+        // Ẩn hết các trang cũ
+        const sections = document.querySelectorAll('.page-section');
+        sections.forEach(section => {
+            section.classList.remove('active-section');
+        });
+
+        // Hiện trang mới
+        const activeSection = document.getElementById(pageId);
+        if (activeSection) {
+            activeSection.classList.add('active-section');
+        }
+
+        // --- PHẦN 2: XỬ LÝ MÀU LINK (ACTIVE LINK) ---
+        // Bỏ màu xanh ở tất cả các link
+        const allLinks = document.querySelectorAll('a');
+        allLinks.forEach(link => {
+            link.classList.remove('active-link');
+        });
+
+        // Tô màu xanh cho link vừa bấm
+        const activeLink = document.getElementById('link-' + pageId);
+        if (activeLink) {
+            activeLink.classList.add('active-link');
+        }
+
+        // --- PHẦN 3: XỬ LÝ ĐÓNG/MỞ SIDEBAR (QUAN TRỌNG NHẤT) ---
+        
+        // Bước A: Reset trạng thái - Đóng tất cả các nhóm lại trước
+        // (Đây là bước giúp "bấm heading khác thì cái cũ biến mất")
+        const allGroups = document.querySelectorAll('.category-group');
+        allGroups.forEach(group => {
+            group.classList.remove('is-open');
+        });
+
+        // Bước B: Nếu link vừa bấm thuộc một nhóm nào đó (Short films, Commercial...)
+        // Thì "đóng đinh" trạng thái mở cho nhóm đó
+        if (groupId) {
+            const activeGroup = document.getElementById(groupId);
+            if (activeGroup) {
+                activeGroup.classList.add('is-open');
+            }
+        }
+        // Lưu ý: Nếu groupId là null (khi bấm Home/About), Bước B không chạy 
+        // -> Kết quả là Sidebar đóng gọn lại hết (đúng ý bạn).
+    }
+</script>
+
+<script>
+    /* --- LOGIC: EXPLOSION + DRAG & DROP --- */
+    document.addEventListener("DOMContentLoaded", () => {
+        const homeSection = document.getElementById('home');
+        const centerImage = document.querySelector('.home-center-img');
+        
+        let hasChaosStarted = false;
+
+        // Biến hỗ trợ Drag & Drop
+        let isDragging = false;
+        let currentDragItem = null;
+        let dragOffsetX = 0;
+        let dragOffsetY = 0;
+
+        const wordsList = ["one", "Buddha", "is", "not", "enough"];
+        
+        // CẤU HÌNH
+        const WORD_COUNT = 120; 
+        const MIN_SIZE = 7;     
+        const MAX_SIZE = 30;    
+
+        function randomRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // --- HÀM 1: TẠO ANIMATION LƠ LỬNG (Tách ra để dùng lại sau khi Drop) ---
+        function startFloating(element) {
+            // Hủy các animation cũ (nếu có) để tránh xung đột
+            const animations = element.getAnimations();
+            animations.forEach(anim => anim.cancel());
+
+            const floatDuration = randomRange(10000, 30000); 
+            const rotateEnd = randomRange(-90, 90); 
+
+            // Animation mới: Chỉ rung rinh nhẹ quanh vị trí hiện tại
+            element.animate([
+                { transform: `translate(-50%, -50%) rotate(0deg)` },
+                { transform: `translate(calc(-50% + ${randomRange(-50,50)}px), calc(-50% + ${randomRange(-50,50)}px)) rotate(${rotateEnd}deg)` },
+                { transform: `translate(-50%, -50%) rotate(0deg)` }
+            ], {
+                duration: floatDuration,
+                iterations: Infinity,
+                direction: 'alternate',
+                easing: 'ease-in-out'
+            });
+        }
+
+        // --- HÀM 2: TẠO HIỆU ỨNG NỔ ---
+        function createExplosion() {
+            if (!homeSection || hasChaosStarted) return;
+            hasChaosStarted = true; 
+
+            for (let i = 0; i < WORD_COUNT; i++) {
+                const span = document.createElement('span');
+                
+                span.innerText = wordsList[Math.floor(Math.random() * wordsList.length)];
+                span.className = 'chaos-word';
+                
+                // QUAN TRỌNG: Cho phép chuột tương tác để kéo thả
+                span.style.pointerEvents = 'auto'; 
+                span.style.cursor = 'grab'; // Đổi con trỏ thành bàn tay
+
+                // Random kích thước
+                const size = randomRange(MIN_SIZE, MAX_SIZE);
+                span.style.fontSize = `${size}px`;
+                span.style.opacity = randomRange(0.2, 0.8);
+                
+                // Vị trí xuất phát: Tâm ảnh
+                span.style.left = '50%';
+                span.style.top = '50%';
+                span.style.transform = 'translate(-50%, -50%)'; 
+
+                // Thời gian bay (Slow Motion: 4s - 8s)
+                const flyDuration = randomRange(4.0, 8.0); 
+
+                span.style.transition = `
+                    left ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                    top ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1),
+                    opacity ${flyDuration}s ease
+                `;
+
+                homeSection.appendChild(span);
+
+                // Kích hoạt bay ra
+                setTimeout(() => {
+                    const targetX = randomRange(-10, 110);
+                    const targetY = randomRange(-10, 110);
+
+                    span.style.left = `${targetX}%`;
+                    span.style.top = `${targetY}%`;
+                    
+                    // Sau khi bay xong thì bắt đầu lơ lửng
+                    setTimeout(() => {
+                        // Chỉ bắt đầu lơ lửng nếu người dùng KHÔNG đang kéo nó
+                        if (currentDragItem !== span) {
+                            startFloating(span);
+                        }
+                    }, flyDuration * 1000);
+
+                }, 20); 
+            }
+        }
+
+        // --- HÀM 3: XỬ LÝ KÉO THẢ (DRAG & DROP) ---
+        
+        // A. Bắt đầu kéo (Mousedown)
+        document.addEventListener('mousedown', (e) => {
+            if (e.target.classList.contains('chaos-word')) {
+                isDragging = true;
+                currentDragItem = e.target;
+                
+                // Đổi con trỏ
+                currentDragItem.style.cursor = 'grabbing';
+
+                // Tắt transition để kéo cho mượt (không bị delay bay)
+                currentDragItem.style.transition = 'none';
+
+                // Tạm dừng animation lơ lửng
+                const anims = currentDragItem.getAnimations();
+                anims.forEach(anim => anim.cancel());
+
+                // Tính toán vị trí con chuột so với góc của chữ
+                const rect = currentDragItem.getBoundingClientRect();
+                dragOffsetX = e.clientX - rect.left;
+                dragOffsetY = e.clientY - rect.top;
+                
+                e.preventDefault(); // Ngăn bôi đen text
+            }
+        });
+
+        // B. Di chuyển chuột (Mousemove) - Gắn vào document để không bị tuột
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging && currentDragItem) {
+                // Tính toạ độ mới (theo pixel)
+                // Lưu ý: rect.left/top bao gồm cả translate(-50%), nên ta cần tính toán kỹ một chút
+                // Hoặc đơn giản là set left/top theo vị trí chuột
+                
+                // Lấy container cha để tính toạ độ tương đối
+                const containerRect = homeSection.getBoundingClientRect();
+                
+                let newLeft = e.clientX - containerRect.left;
+                let newTop = e.clientY - containerRect.top;
+
+                // Gán vị trí mới (convert sang px)
+                currentDragItem.style.left = `${newLeft}px`;
+                currentDragItem.style.top = `${newTop}px`;
+            }
+        });
+
+        // C. Thả chuột (Mouseup)
+        document.addEventListener('mouseup', () => {
+            if (isDragging && currentDragItem) {
+                currentDragItem.style.cursor = 'grab';
+                
+                // Kích hoạt lại chế độ lơ lửng tại vị trí mới
+                startFloating(currentDragItem);
+
+                isDragging = false;
+                currentDragItem = null;
+            }
+        });
+
+
+        // GẮN SỰ KIỆN CLICK VÀO ẢNH
+        if (centerImage) {
+            centerImage.style.cursor = 'pointer'; 
+            centerImage.addEventListener('click', (e) => {
+                e.stopPropagation();
+                createExplosion();
+            });
+        }
+    });
+</script>
+
+                // --- Chữ Resume bay lượn ---
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const resumeLink = document.getElementById('wandering-resume');
+        const aboutSection = document.getElementById('about');
+        const resumeHolder = document.getElementById('resume-holder');
+        
+        let hasStarted = false; // Kiểm tra xem đã kích hoạt bay chưa
+        let isHovering = false; 
+        let moveTimer = null;   
+        
+        // Biến đếm số lần người dùng phải rượt đuổi
+        let catchAttempt = 0; 
+        const MAX_EVASION = 3; // Số lần nó bỏ chạy trước khi chịu đứng lại
+
+        function random(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Hàm tính toán vùng an toàn (Hành lang bên phải)
+        function getNewCoordinates() {
+            const containerW = aboutSection.offsetWidth;
+            const containerH = aboutSection.offsetHeight;
+            const itemW = resumeLink.offsetWidth;
+            const itemH = resumeLink.offsetHeight;
+
+            // Vùng an toàn: Nửa bên phải màn hình
+            const safeZoneX = containerW * 0.40; 
+            const minLeft = safeZoneX;
+            const maxLeft = containerW - itemW - 20;
+
+            const minTop = 80; // Tránh tiêu đề
+            const maxTop = containerH - itemH - 20;
+
+            // Fallback nếu màn hình quá nhỏ
+            if (maxLeft < minLeft) return { left: containerW - itemW - 10, top: random(minTop, maxTop) };
+
+            return {
+                left: random(minLeft, maxLeft),
+                top: random(minTop, maxTop)
+            };
+        }
+
+        // HÀM 1: Di chuyển lơ lửng (Chậm)
+        function moveResume() {
+            if (!hasStarted) return; // Chưa bắt đầu thì không chạy
+            
+            // Nếu đang hover (đã bắt được) hoặc không ở tab About thì dừng
+            if (isHovering || !aboutSection.classList.contains('active-section')) {
+                moveTimer = setTimeout(moveResume, 1000);
+                return;
+            }
+
+            // Xóa class bỏ chạy (nếu có) để trở về bay lơ lửng
+            resumeLink.classList.remove('evading');
+
+            const coords = getNewCoordinates();
+            resumeLink.style.left = `${coords.left}px`;
+            resumeLink.style.top = `${coords.top}px`;
+
+            moveTimer = setTimeout(moveResume, 1300); // Tốc độ lơ lửng
+        }
+
+        // HÀM 2: Bỏ chạy (Nhanh)
+        function evadeMouse() {
+            // Thêm class evading để transition nhanh hơn (0.2s)
+            resumeLink.classList.add('evading');
+            
+            const coords = getNewCoordinates();
+            resumeLink.style.left = `${coords.left}px`;
+            resumeLink.style.top = `${coords.top}px`;
+
+            // Reset trạng thái hover để nó tiếp tục bay sau khi né
+            isHovering = false;
+            
+            // Sau khi né xong (0.3s) thì quay lại chế độ bay lơ lửng
+            setTimeout(() => {
+                if (!isHovering) moveResume();
+            }, 300);
+        }
+
+        // --- SỰ KIỆN TƯƠNG TÁC ---
+
+        resumeLink.addEventListener('mouseenter', () => {
+            // TRƯỜNG HỢP 1: Lần đầu tiên chạm vào -> KÍCH HOẠT GAME
+            if (!hasStarted) {
+                hasStarted = true;
+                
+                // Tính toán vị trí hiện tại so với khung cha để gán absolute không bị giật
+                const rect = resumeLink.getBoundingClientRect();
+                const parentRect = aboutSection.getBoundingClientRect();
+                
+                const startLeft = rect.left - parentRect.left;
+                const startTop = rect.top - parentRect.top;
+
+                // Chuyển sang Absolute
+                resumeLink.style.left = `${startLeft}px`;
+                resumeLink.style.top = `${startTop}px`;
+                resumeLink.classList.add('flying');
+
+                // Ngay lập tức bỏ chạy lần đầu tiên!
+                catchAttempt++;
+                evadeMouse();
+                return;
+            }
+
+            // TRƯỜNG HỢP 2: Đã bay rồi -> XỬ LÝ RƯỢT ĐUỔI
+            if (catchAttempt < MAX_EVASION) {
+                catchAttempt++;
+                // Bỏ chạy tiếp
+                evadeMouse();
+            } else {
+                // TRƯỜNG HỢP 3: Đã đuổi đủ số lần -> ĐẦU HÀNG (Đứng yên)
+                isHovering = true;
+                clearTimeout(moveTimer);
+                
+                const computedStyle = window.getComputedStyle(resumeLink);
+                resumeLink.style.transition = 'none'; // Freeze
+                resumeLink.style.left = computedStyle.left;
+                resumeLink.style.top = computedStyle.top;
+            }
+        });
+
+        resumeLink.addEventListener('mouseleave', () => {
+            // Nếu đã bắt được rồi mà thả ra thì reset lại game (hoặc cho bay tiếp tùy ý)
+            // Ở đây mình cho nó bay tiếp lơ lửng
+            if (hasStarted && isHovering) {
+                isHovering = false;
+                
+                // Trả lại transition mượt
+                resumeLink.style.transition = 'top 1.3s ease-in-out, left 1.3s ease-in-out, color 0.2s';
+                moveResume();
+                
+                // MẸO: Reset lại số lần bắt để lần sau vào lại phải đuổi tiếp?
+                // Nếu muốn khó thì uncomment dòng dưới:
+                // catchAttempt = 0; 
+            }
+        });
+    });
+</script>
+
+
+                // --- CHUYỂN NGÔN NGỮ ---
+<script>
+    // Hàm thiết lập ngôn ngữ
+    function setLanguage(lang) {
+        // 1. Gán class cho body (mode-en hoặc mode-vi)
+        document.body.className = 'mode-' + lang;
+
+        // 2. Đổi màu nút bấm (đậm nhạt)
+        const btnEn = document.getElementById('btn-en');
+        const btnVi = document.getElementById('btn-vi');
+
+        if (lang === 'en') {
+            btnEn.classList.add('active');
+            btnVi.classList.remove('active');
+        } else {
+            btnVi.classList.add('active');
+            btnEn.classList.remove('active');
+        }
+
+        // 3. Lưu lại lựa chọn (để F5 không bị mất)
+        localStorage.setItem('preferredLang', lang);
+    }
+
+    // Tự động chạy khi vừa vào web
+    document.addEventListener("DOMContentLoaded", () => {
+        // Kiểm tra xem trước đó khách chọn gì, nếu chưa chọn thì mặc định là 'en' (Tiếng Anh)
+        const savedLang = localStorage.getItem('preferredLang') || 'en';
+        setLanguage(savedLang);
+    });
+</script>
+
+
+                // --- NHẠC NỀN TRANG LIÊN HỆ ---
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const musicalImage = document.getElementById('musical-image');
+        const contactAudio = document.getElementById('contact-audio');
+
+        if (musicalImage && contactAudio) {
+            musicalImage.addEventListener('click', () => {
+                // Kiểm tra: Nếu nhạc đang tắt (paused) thì bật, đang bật thì tắt
+                if (contactAudio.paused) {
+                    contactAudio.play();
+                    // (Tùy chọn) Giảm độ mờ ảnh một chút để biết nhạc đang chạy
+                    musicalImage.style.opacity = "0.7"; 
+                } else {
+                    contactAudio.pause();
+                    // Trả lại độ sáng bình thường
+                    musicalImage.style.opacity = "1";
+                }
+            });
+        }
+    });
+</script>
 
 </body>
 </html>

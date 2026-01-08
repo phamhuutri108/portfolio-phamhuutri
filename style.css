@@ -1,0 +1,313 @@
+/* --- style.css --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px; 
+    color: #111;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+a { text-decoration: none; color: #000; transition: all 0.2s; }
+a:hover { color: #666; text-decoration: none; } /* Bỏ gạch chân khi hover cho sạch */
+
+/* BỐ CỤC */
+.wrapper { display: flex; min-height: 100vh; }
+
+/* --- SIDEBAR --- */
+.sidebar {
+    width: 260px;
+    padding: 30px 30px 40px 30px;
+    border-right: 1px solid #eee;
+    flex-shrink: 0;
+    position: sticky; 
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background: #fff;
+    z-index: 10;
+}
+
+.site-logo { margin-bottom: 30px; text-align: center; }
+.site-logo a { display: block; }
+.site-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Menu Chính */
+.main-menu { list-style: none; margin-bottom: 40px; }
+.main-menu li { margin-bottom: 10px; }
+.main-menu a { 
+    font-size: 13px; 
+    font-weight: 700; 
+    display: block; 
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+/* --- QUAN TRỌNG: Thay đổi style Active Link --- */
+/* Không gạch chân, đổi màu xanh */
+.main-menu a.active-link,
+.category-section h4 a.active-link, /* Áp dụng cho cả tiêu đề danh mục */
+.category-list a.active-link {      /* Áp dụng cho cả link con */
+    text-decoration: none;
+    color: #0033cc !important; /* Màu xanh dương (dùng !important để chắc chắn ăn màu) */
+}
+
+/* --- style.css (Cập nhật phần Danh mục) --- */
+
+/* ... Các phần trên giữ nguyên ... */
+
+/* Danh mục phụ (Short Films, Commercial...) */
+.category-section h4 {
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+    margin-top: 10px;   /* Khoảng cách trên tiêu đề */
+    font-weight: bold;  /* In đậm khung chứa */
+}
+
+/* Style cho Link tiêu đề (Short Films, Commercial...) - IN ĐẬM */
+.category-section h4 a {
+    font-size: 13px; 
+    text-transform: capitalize;
+    color: #000; /* Màu đen rõ ràng */
+    font-weight: bold; /* In đậm chữ */
+    letter-spacing: 1px;
+    display: block;
+}
+
+.category-section h4 a:hover {
+    color: #0033cc; /* Hover vẫn ra xanh cho đồng bộ */
+}
+
+/* Style cho Link Active của tiêu đề */
+.category-section h4 a.active-link {
+    color: #0033cc !important;
+}
+
+
+/* Style cho Danh sách con - MÀU NHẠT */
+.category-list { list-style: none; padding-left: 0; }
+.category-list li { margin-bottom: 6px; font-size: 12px; }
+
+.category-list li a { 
+    color: #888; /* Màu xám nhạt (Light color) */
+    transition: color 0.2s;
+}
+
+/* --- Thay thế từ dòng 104 cũ --- */
+
+/* 1. Mặc định ẩn danh sách con */
+.category-list {
+    display: none; /* QUAN TRỌNG: Để ẩn danh sách */
+    padding-left: 20px;
+    list-style: none;
+    margin-top: 5px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* 2. HIỆU ỨNG HOVER: Rê chuột vào nhóm thì hiện ra */
+.category-group:hover .category-list {
+    display: block;
+}
+
+/* 3. HIỆU ỨNG CLICK (STAY): Khi được thêm class .is-open thì hiện luôn */
+/* 3. HIỆU ỨNG CLICK (STAY): Khi được thêm class .is-open thì hiện luôn */
+.category-group.is-open .category-list {
+    display: block !important; /* Thêm !important để nó không bị ẩn khi chuột rời đi */
+}
+
+/* Link con khi được chọn */
+.category-list a.active-link {
+    color: #0033cc !important; /* Vẫn là màu xanh chủ đạo khi chọn */
+    font-weight: bold; /* Thêm in đậm nhẹ khi được chọn để dễ nhận biết */
+}
+
+/* Footer */
+.copyright {
+    margin-top: 50px;
+    font-size: 10px;
+    color: #aaa;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+}
+
+/* CONTENT */
+.content { flex-grow: 1; padding: 40px 50px; max-width: 1000px; }
+
+.page-section { display: none; animation: fadeIn 0.6s ease; }
+.page-section.active-section { display: block; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.page-title {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-style: normal;
+   /* border-bottom: 1px solid #eee; */
+   /* padding-bottom: 10px; */
+}
+
+.about-text p { margin-bottom: 15px; max-width: 700px; text-align: justify;}
+.about-text h3 { 
+    font-size: 13px; margin-top: 25px; margin-bottom: 8px; 
+    text-transform: capitalize; letter-spacing: 1px; font-weight: bold;
+   /* border-bottom: 1px solid #f9f9f9; */
+   
+  /* padding-bottom: 2px; display: inline-block; */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.gallery-item img {
+    width: 100%; height: auto; display: block;
+    filter: grayscale(100%); transition: filter 0.3s;
+}
+.gallery-item:hover img { filter: grayscale(0%); }
+
+@media (max-width: 768px) {
+    .wrapper { flex-direction: column; }
+    .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #eee; padding: 20px; position: relative; height: auto;}
+    .content { padding: 20px; }
+}
+
+/* --- CẬP NHẬT RIÊNG CHO TRANG HOME (CHAOS EFFECT) --- */
+#home.active-section {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full màn hình để chữ bay thoải mái */
+    position: relative; /* Quan trọng: làm mốc toạ độ cho chữ bay */
+    overflow: hidden;   /* Ẩn những chữ bay ra ngoài khung */
+    background-color: #fff; /* Đảm bảo nền sạch */
+}
+
+/* Class cho ảnh trung tâm để nó nổi lên trên */
+.home-center-img {
+    width: 200px; 
+    height: auto; 
+    display: block; 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    z-index: 10; /* Nổi lên trên chữ */
+    position: relative; 
+    background: #fff; /* Tránh bị chữ xuyên thấu nếu ảnh png */
+}
+
+/* Class cho các từ ngữ bay lượn */
+.chaos-word {
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1; /* Nằm dưới ảnh */
+    opacity: 0.5;
+    color: #111;
+    pointer-events: none; /* Chuột không đụng được vào chữ */
+    will-change: transform; /* Tối ưu hiệu năng */
+    font-family: 'Georgia', serif;
+}
+
+/* --- THÊM VÀO CUỐI STYLE.CSS --- */
+
+#about {
+    position: relative;
+    min-height: 600px; 
+    overflow: hidden; /* Quan trọng để không bay ra ngoài */
+}
+
+/* TRẠNG THÁI 1: Nằm im ban đầu */
+#wandering-resume {
+    position: relative; /* Ban đầu là relative để nằm gọn trong dòng */
+    display: inline-block;
+    font-size: 16px; 
+    font-weight: bold;
+    color: #111;
+    text-transform: none; /* Chỉ viết hoa chữ cái đầu */
+    cursor: pointer;
+    padding: 20px; /* Vùng đệm lớn để dễ chạm vào kích hoạt */
+    z-index: 50;
+    
+    /* Hiệu ứng chuyển màu khi hover lúc chưa bay */
+    transition: color 0.3s;
+}
+
+/* TRẠNG THÁI 2: Khi bắt đầu bay (JS sẽ thêm class này) */
+#wandering-resume.flying {
+    position: absolute; /* Tách khỏi dòng văn bản để bay */
+    
+    /* Chuyển động lơ lửng (Ambient) */
+    transition: top 1.3s ease-in-out, left 1.3s ease-in-out, color 0.2s;
+}
+
+/* TRẠNG THÁI 3: Khi bỏ chạy (Evasion) */
+#wandering-resume.evading {
+    /* Chuyển động cực nhanh để né chuột */
+    transition: top 0.2s ease-out, left 0.2s ease-out !important;
+}
+
+/* Đổi màu khi hover (chỉ hiện khi đã bắt được nó) */
+#wandering-resume:hover {
+    color: #0033cc;
+}
+
+/* --- CHUYỂN NGÔN NGỮ --- */
+
+/* 1. Trang trí nút chuyển ngữ */
+.lang-switch {
+    text-align: center;
+    margin-bottom: 10px; 
+    font-size: 10px; 
+    font-weight: bold;
+    /* Đổi màu dấu gạch ngang sang đen cho đồng bộ */
+    color: #111; 
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.lang-btn {
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 0 2px;
+    
+    /* TRẠNG THÁI BÌNH THƯỜNG (Chưa chọn): Màu đen giống văn bản */
+    color: #111; 
+}
+
+/* TRẠNG THÁI HOVER: Rê chuột vào thì đổi xanh */
+.lang-btn:hover {
+    color: #0033cc;
+}
+
+/* TRẠNG THÁI ACTIVE: Khi đã chọn thì GIỮ NGUYÊN MÀU XANH */
+.lang-btn.active {
+    color: #0033cc !important; /* Màu xanh chủ đạo */
+    font-weight: 900; /* Đậm hơn chút để khẳng định đang chọn */
+}
+
+.separator {
+    color: #111; /* Gạch nối cũng màu đen cho giống text */
+    font-size: 9px;
+    vertical-align: middle;
+}
+
+/* 2. QUY TẮC ẨN HIỆN NGÔN NGỮ (QUAN TRỌNG) */
+
+/* Nếu Body đang ở chế độ Tiếng Anh -> Ẩn mọi thứ là Tiếng Việt */
+body.mode-en .content-vi {
+    display: none !important;
+}
+
+/* Nếu Body đang ở chế độ Tiếng Việt -> Ẩn mọi thứ là Tiếng Anh */
+body.mode-vi .content-en {
+    display: none !important;
+}
