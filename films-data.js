@@ -14,7 +14,7 @@ const filmsData = {
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/ooWID56SmHk" 
-                    title="Mood and Tone" frameborder="0" 
+                    title="Dad, Don't Lie To Me" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
@@ -42,7 +42,7 @@ const filmsData = {
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Cast:</b> Ngô Nhật Trường, Cô Nhum, Vũ Nguyễn Uy Nhân</li>
-                <li><b>Director and Writer:</b> Phạm Hữu Trí</li>
+                <li><b>Director and Screenwriter:</b> Phạm Hữu Trí</li>
                 <li><b>Producers:</b> Thục Mai, Thảo Quiêng</li>
                 <li><b>Cinematography:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Production Designer:</b> Dzuy Tom</li>
@@ -82,7 +82,7 @@ const filmsData = {
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/ooWID56SmHk" 
-                    title="Mood and Tone" frameborder="0" 
+                    title="Dad, Don't Lie To Me" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
@@ -176,25 +176,26 @@ const filmsData = {
 
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
-                <li><b>Director & Screenwriter:</b> Phạm Hữu Trí</li>
-                <li><b>Consultant Director:</b> NSƯT Nguyễn Tường Phương</li>
-                <li><b>Assistant Director:</b> Lê Diễm Quỳnh</li>
-                <li><b>Producer:</b> Hoàng Mỹ</li>
-                <li><b>Line Producer:</b> Quang Phạm</li>
-                <li><b>Location Manager:</b> Phạm Văn Nam</li>
-                <li><b>Director of Photography:</b> Nguyễn Tùng Lâm, Hoàng Bảo Uyên</li>
-                <li><b>Camera Operator:</b> Nguyễn Tùng Lâm, Hoàng Bảo Uyên</li>
-                <li><b>Assistant Camera:</b> Mẫn Nhi Mạch</li>
-                <li><b>Gaffer & Key Grip:</b> Phong Trần</li>
-                <li><b>Production Designer:</b> Cá Đen</li>
-                <li><b>Props Master:</b> Trang Hồ</li>
-                <li><b>Makeup Artist:</b> Nguyễn Tố Loan</li>
+                <li><b>Diễn viên:</b> Khánh Duy, Cô Nhum, Đức Trí</li>
+                <li><b>Đạo diễn & Kịch bản:</b> Phạm Hữu Trí</li>
+                <li><b>Cố vấn nghệ thuật:</b> NSƯT Nguyễn Tường Phương</li>
+                <li><b>Trợ lý đạo diễn:</b> Lê Diễm Quỳnh</li>
+                <li><b>Sản xuất:</b> Hoàng Mỹ</li>
+                <li><b>Điều phối sản xuất:</b> Quang Phạm</li>
+                <li><b>Quản lý bối cảnh:</b> Phạm Văn Nam</li>
+                <li><b>Đạo diễn hình ảnh:</b> Nguyễn Tùng Lâm, Hoàng Bảo Uyên</li>
+                <li><b>Quay phim:</b> Nguyễn Tùng Lâm, Hoàng Bảo Uyên</li>
+                <li><b>Phụ quay:</b> Mẫn Nhi Mạch</li>
+                <li><b>Điều phối ánh sáng & Kỹ thuật:</b> Phong Trần</li>
+                <li><b>Thiết kế sản xuất:</b> Cá Đen</li>
+                <li><b>Đạo cụ:</b> Trang Hồ</li>
+                <li><b>Nghệ sĩ hóa trang:</b> Nguyễn Tố Loan</li>
                 <li><b>Storyboard Artist:</b> Bảo Ngọc, Phạm Hữu Trí</li>
-                <li><b>Sound Operator:</b> Ngô Hà Nam</li>
-                <li><b>Sound Mixing & Mastering:</b> Ngô Hà Nam</li>
-                <li><b>Editor:</b> Ngô Hà Nam, Phạm Hữu Trí</li>
-                <li><b>Colourist:</b> Lâm Nguyễn Tùng</li>
-                <li><b>Production Assistant:</b> Lan Phương</li>
+                <li><b>Thu thanh hiện trường:</b> Ngô Hà Nam</li>
+                <li><b>Hiệu chỉnh âm thanh:</b> Ngô Hà Nam</li>
+                <li><b>Dượng phim:</b> Ngô Hà Nam, Phạm Hữu Trí</li>
+                <li><b>Hiệu chỉnh màu sắc:</b> Lâm Nguyễn Tùng</li>
+                <li><b>Trợ lý sản xuất:</b> Lan Phương</li>
             </ul>
 
             <h3>Behind The Scene</h3>
@@ -247,6 +248,7 @@ const filmsData = {
 
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Cast:</b> Khanh Duy, Co Nhum, Duc Tri</li>
                 <li><b>Director & Screenwriter:</b> Pham Huu Tri</li>
                 <li><b>Consultant Director:</b> NSUT. Director Nguyen Tuong Phuong</li>
                 <li><b>Assistant Director:</b> Le Diem Quynh</li>
@@ -317,13 +319,13 @@ const filmsData = {
 
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
-                <li><b>Character:</b> Nguyễn Lâm Anh, Nguyễn Bảo Ngọc</li>
-                <li><b>Director & Screenwriter:</b> Phạm Hữu Trí</li>
-                <li><b>Director's Consultant (Cố Vấn Nghệ Thuật):</b> NSND. Đạo Bá Sơn</li>
-                <li><b>Camera Operator:</b> Võ Nguyễn Đạt Kha, Phan Quốc Anh, Phan Thiên Anh, Nguyễn Đan Thọ</li>
-                <li><b>Editor:</b> Phạm Hữu Trí</li>
-                <li><b>Songs sang by Character:</b> Một Ngày - Kiên, Con Dế Mèn Hát Vào Mùa Hè - Tùng</li>
-                <li><b>Film footages used:</b> Norwegian Wood (Rừng Na Uy) - Directed by Trần Anh Hùng</li>
+                <li><b>Nhân vật:</b> Nguyễn Lâm Anh, Nguyễn Bảo Ngọc</li>
+                <li><b>Đạo diễn & Kịch bản:</b> Phạm Hữu Trí</li>
+                <li><b>Cố Vấn Nghệ Thuật:</b> NSND. Đào Bá Sơn</li>
+                <li><b>Quay phim:</b> Võ Nguyễn Đạt Kha, Phan Quốc Anh, Phan Thiện Anh, Nguyễn Đan Thọ</li>
+                <li><b>Dựng phim:</b> Phạm Hữu Trí</li>
+                <li><b>Bài hát trong phim:</b> Một Ngày - Kiên, Con Dế Mèn Hát Vào Mùa Hè - Tùng</li>
+                <li><b>Đoạn phim được sử dụng:</b> Norwegian Wood (Rừng Na Uy) - Đạo diễn Trần Anh Hùng</li>
             </ul>
 
             <div style="text-align: left; margin: 30px 0;">
@@ -361,7 +363,8 @@ const filmsData = {
             <p>
                 <b>Genre:</b> Documentary short / Interactive<br>
                 <b>Year:</b> 2022<br>
-                <b>Awards:</b><br>
+                <b>Duration:</b> 22:02<br>
+                <b>Award & Fund:</b><br>
                 Third Prize, HCMC Short Film Festival (2023)<br>
                 Young Creativity Fund, HCMC Cinema Association (2022)
             </p>
@@ -382,13 +385,13 @@ const filmsData = {
 
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
-                <li><b>Character:</b> Nguyễn Lâm Anh, Nguyễn Bảo Ngọc</li>
+                <li><b>Character:</b> Nguyen Lam Anh, Nguyen Bao Ngoc</li>
                 <li><b>Director & Screenwriter:</b> Phạm Hữu Trí</li>
-                <li><b>Director's Consultant:</b> NSND. Đạo Bá Sơn</li>
-                <li><b>Camera Operator:</b> Võ Nguyễn Đạt Kha, Phan Quốc Anh, Phan Thiên Anh, Nguyễn Đan Thọ</li>
-                <li><b>Editor:</b> Phạm Hữu Trí</li>
-                <li><b>Songs sang by Character:</b> Một Ngày - Kiên, Con Dế Mèn Hát Vào Mùa Hè - Tùng</li>
-                <li><b>Film footages used:</b> Norwegian Wood (Rừng Na Uy) - Directed by Trần Anh Hùng</li>
+                <li><b>Director's Consultant:</b> NSND. Dao Ba Son</li>
+                <li><b>Camera Operator:</b> Vo Nguyen Dat Kha, Phan Quoc Anh, Phan Thien Anh, Nguyen Dan Tho</li>
+                <li><b>Editor:</b> Pham Huu Tri</li>
+                <li><b>Songs sung by Character:</b> Một Ngày - Kien, Con Dế Mèn Hát Vào Mùa Hè - Tung</li>
+                <li><b>Film footages used:</b> Norwegian Wood (Rừng Na Uy) - Directed by Tran Anh Hung</li>
             </ul>
 
             <div style="text-align: left; margin: 30px 0;">
@@ -403,22 +406,23 @@ const filmsData = {
             <h3>Behind The Scene</h3>
             
             <div class="gallery-wall">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_5.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_12.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_15.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_5.png" class="big">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_12.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_15.png" class="wide">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_8.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_10.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_2.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_10.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_2.png" class="tall">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_14.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_4.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_4.png" class="wide">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_16.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_11.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_11.png" class="tall">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_3.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_6.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_6.png" class="wide">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_9.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_7.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_13.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_13.png" class="wide">
             </div>
         `
     },
@@ -427,21 +431,57 @@ const filmsData = {
     "film-cocks-cooking": {
         vi: `
             <p>
-                <b>Thể loại:</b> Phim ngắn<br>
-                <b>Năm:</b> [Điền năm]
+                <b>Thể loại:</b> Fiction short / Drama<br>
+                <b>Năm:</b> 2023<br>
+                <b>Thời lượng:</b> 06:45
             </p>
-            <p>
-                [Nội dung tóm tắt phim Gà Trống Nấu Cơm viết ở đây...]
-            </p>
+
+            <div style="text-align: left; margin: 20px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/nOfecnBi0bM" 
+                    title="Cock's Cooking" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Crew</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Đạo diễn, Kịch bản và Dựng phim:</b> Phạm Hữu Trí</li>
+                <li><b>Diễn viên:</b> Võ Nguyễn Đạt Kha</li>
+            </ul>
+
+            <h3>Nhạc</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><i>You Are So Beautiful</i> bởi <b>Joe Cocker</b></li>
+            </ul>
         `,
         en: `
             <p>
-                <b>Genre:</b> Short Film<br>
-                <b>Year:</b> [Year]
+                <b>Genre:</b> Fiction short / Drama<br>
+                <b>Year:</b> 2023<br>
+                <b>Duration:</b> 06:45
             </p>
-            <p>
-                [English synopsis for Cock's Cooking...]
-            </p>
+
+            <div style="text-align: left; margin: 20px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/nOfecnBi0bM" 
+                    title="Cock's Cooking" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Crew</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Director, Screenwriter and Editor:</b> Pham Huu Tri</li>
+                <li><b>Cast:</b> Vo Nguyen Dat Kha</li>
+            </ul>
+
+            <h3>Music</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><i>You Are So Beautiful</i> by <b>Joe Cocker</b></li>
+            </ul>
         `
     },
 
@@ -449,21 +489,73 @@ const filmsData = {
     "film-alive": {
         vi: `
             <p>
-                <b>Thể loại:</b> Phim ngắn<br>
-                <b>Giải thưởng:</b> Phim xuất sắc nhất, The Original Project 2020.
+                <b>Thể loại:</b> Fiction short / Drama<br>
+                <b>Năm:</b> 2020<br>
+                <b>Thời lượng:</b> 19:23<br>
+                <b>Giải thưởng:</b><br>
+                Best Short Film, The Original Project, Hanoi (2022)
             </p>
-            <p>
-                [Nội dung tóm tắt phim Khi Chúng Ta Được Sống...]
-            </p>
+
+            <div style="text-align: left; margin: 20px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/QBW1HpOVGz8" 
+                    title="Alive" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Crew</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Diễn viên:</b> Ngọc Đạt, Tuyết Sương, Minh Nhã, Thảo Linh, Công Sang,
+                Phạm Lê Bảo, Lê Đăng Doanh, Trọng Nghĩa, Duy Khang</li>
+                <li><b>Đạo diễn:</b> Phạm Hữu Trí</li>
+                <li><b>Đồng Đạo diễn:</b> Nguyễn Lâm Anh</li>
+                <li><b>Sản xuất:</b> Phương Uyên</li>
+                <li><b>Biên kịch:</b> Quốc Vinh</li>
+                <li><b>Quay phim:</b> Nhật Khánh</li>
+                <li><b>Dựng phim:</b> Lê Đăng Doanh</li>
+                <li><b>Graphic Designer:</b> Trần Lương Gia Huy</li>
+                <li><b>VFX:</b> Hoàng Hữu Quân</li>
+                <li><b>Thiết kế âm thanh:</b> Lâm Quý</li>
+                <li><b>Props:</b> Trần Gia Bảo, Hoàng Việt</li>
+                <li><b>Trợ lý sản xuất:</b> Gia Hưng, Duy Khánh</li>
+            </ul>
         `,
         en: `
             <p>
-                <b>Genre:</b> Short Film<br>
-                <b>Awards:</b> Best Short Film, The Original Project 2020.
+                <b>Genre:</b> Fiction short / Drama<br>
+                <b>Year:</b> 2020<br>
+                <b>Duration:</b> 19:23<br>
+                <b>Award:</b><br>
+                Best Short Film, The Original Project, Hanoi (2022)
             </p>
-            <p>
-                [English synopsis goes here...]
-            </p>
+
+            <div style="text-align: left; margin: 20px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/QBW1HpOVGz8" 
+                    title="Alive" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Crew</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Cast:</b> Ngoc Dat, Tuyet Suong, Minh Nha, Thao Linh, Cong Sang,
+                Pham Le Bao, Le Dang Doanh, Trong Nghia, Duy Khang</li>
+                <li><b>Director:</b> Pham Huu Tri</li>
+                <li><b>Co-Director:</b> Nguyen Lam Anh</li>
+                <li><b>Producer:</b> Phuong Uyen</li>
+                <li><b>Screenwriter:</b> Quoc Vinh</li>
+                <li><b>Camera Operator:</b> Nhat Khanh</li>
+                <li><b>Dựng phim:</b> Le Dang Doanh</li>
+                <li><b>Graphic Designer:</b> Tran Lương Gia Huy</li>
+                <li><b>VFX:</b> Hoang Huu Quan</li>
+                <li><b>Sound Design:</b> Lam Quy</li>
+                <li><b>Props:</b> Tran Gia Bao, Hoang Viet</li>
+                <li><b>Production Assistant:</b> Gia Hung, Duy Khanh</li>
+            </ul>
         `
     },
 
@@ -472,20 +564,64 @@ const filmsData = {
         vi: `
             <p>
                 <b>Thể loại:</b> Phim tài liệu ngắn<br>
-                <b>Giải thưởng:</b> Giải nhì, Le Filmmaking Camp 2020.
+                <b>Năm:</b> 2020<br>
+                <b>Thời lượng:</b> 02:55<br>
+                <b>Giải thưởng:</b><br>
+                Giải nhì, Le Filmmaking Camp, Quảng Trị
             </p>
+
+            <div style="text-align: left; margin: 20px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/9qh9bCoNitI" 
+                    title="When My City Grows" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
             <p>
-                [Nội dung tóm tắt phim Khi Thành Phố Lớn...]
+                Dự án được tổ chức dưới sự tài trợ của Đại sứ quán Hoa Kỳ và được bảo trợ tổ chức của Tỉnh Đoàn Quảng Trị.
             </p>
+
+            <h3>Đội ngũ</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Đạo diễn, Quay phim và Dựng phim:</b> Phạm Hữu Trí</li>
+                <li><b>Kịch bản:</b> Quốc Vinh</li>
+                <li><b>Sản xuất:</b> Hải Yến</li>
+                <li><b>Trợ lý đạo diễn:</b> Việt Hà, Công Thoại</li>
+                <li><b>Trợ lý kịch bản:</b> Thanh Lam, Hoa Diệu</li>
+            </ul>
         `,
         en: `
             <p>
-                <b>Genre:</b> Short Documentary<br>
-                <b>Awards:</b> Second Prize, Le Filmmaking Camp 2020.
+                <b>Genre:</b> Documentary short<br>
+                <b>Year:</b> 2020<br>
+                <b>Duration:</b> 02:55<br>
+                <b>Award:</b><br>
+                Second Prize, Le Filmmaking Camp, Quang Tri
             </p>
+
+            <div style="text-align: left; margin: 20px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/9qh9bCoNitI" 
+                    title="When My City Grows" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
             <p>
-                [English synopsis goes here...]
+                The project was organised with sponsorship from the U.S. Embassy and supported by the Quang Tri Provincial Youth Union.
             </p>
+
+            <h3>Crew</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Director, Filmming and Editor:</b> Phạm Hữu Trí</li>
+                <li><b>Screenwriter:</b> Quoc Vinh</li>
+                <li><b>Producer:</b> Hai Yen</li>
+                <li><b>Assistant Directors:</b> Viet Ha, Cong Thoai</li>
+                <li><b>Script Assistants:</b> Thanh Lam, Hoa Dieu</li>
+            </ul>
         `
     }
 };
