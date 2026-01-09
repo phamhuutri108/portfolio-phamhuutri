@@ -311,3 +311,91 @@ body.mode-en .content-vi {
 body.mode-vi .content-en {
     display: none !important;
 }
+
+/* --- GALLERY WALL STYLE (BTS) --- */
+.gallery-wall {
+    display: grid;
+    /* Chia làm 4 cột bằng nhau */
+    grid-template-columns: repeat(4, 1fr); 
+    /* Tự động lấp đầy các khoảng trống */
+    grid-auto-flow: dense; 
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+    margin-top: 30px;
+}
+
+.gallery-wall img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cắt ảnh để vừa khít khung mà không bị méo */
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery-wall img:hover {
+    transform: scale(1.02); /* Phóng to nhẹ khi rê chuột */
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* CÁC CLASS ĐỂ CHỈNH KÍCH THƯỚC TỪNG ẢNH */
+
+/* 1. Ảnh khổ Ngang (chiếm 2 cột) */
+.gallery-wall .wide {
+    grid-column: span 2; 
+}
+
+/* 2. Ảnh khổ Dọc (chiếm 2 hàng) */
+.gallery-wall .tall {
+    grid-row: span 2; 
+}
+
+/* 3. Ảnh To bự (chiếm 2 cột x 2 hàng) */
+.gallery-wall .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* Mặc định không có class gì thì là ảnh vuông nhỏ (1x1) */
+
+/* --- LIGHTBOX STYLES --- */
+.lightbox-overlay {
+    position: fixed;
+    z-index: 9999; /* Đảm bảo nằm trên tất cả mọi thứ */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Màu đen mờ 90% */
+    display: none; /* Mặc định ẩn */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Bấm ra ngoài để đóng */
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    cursor: default; /* Để người dùng biết bấm vào ảnh không tắt */
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    color: #bbb;
+}

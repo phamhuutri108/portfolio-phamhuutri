@@ -329,23 +329,23 @@
     
     <div class="about-text">
         <p>
-            <span class="content-en">Selected works from 2020 to present.</span>
-            <span class="content-vi">Các tác phẩm tiêu biểu từ năm 2020 đến nay.</span>
+            <span class="content-en">2020 - present.</span>
+            <span class="content-vi">2020 - hiện tại.</span>
         </p>
     </div>
 
     <div class="gallery-grid" style="margin-top:30px;">
 
         <a href="javascript:void(0)" onclick="showPage('film-dad-lie', 'group-films')" class="gallery-item">
-    <img src="https://dummyimage.com/400x250/eee/111&text=Dad+Dont+Lie" alt="Dad Don't Lie">
+    <img src="https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" alt="Dad Don't Lie">
     <p style="margin-top: 5px; font-weight: bold;">
-        <span class="content-en">Dad, Don't Lie To Me (2024)</span>
-        <span class="content-vi">Ba ơi, Đừng Nói Dối (2024)</span>
+        <span class="content-en">Dad, Don't Lie To Me (2026)</span>
+        <span class="content-vi">Ba ơi, Đừng Nói Dối (2026)</span>
     </p>
 </a>
         
         <a href="javascript:void(0)" onclick="showPage('film-karma', 'group-films')" class="gallery-item">
-            <img src="https://dummyimage.com/400x250/eee/111&text=Karma" alt="Karma">
+            <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_thumbnail.png" alt="Karma">
             <p style="margin-top: 5px; font-weight: bold;">
                 <span class="content-en">Karma (2024)</span>
                 <span class="content-vi">Nghiệp (2024)</span>
@@ -399,21 +399,16 @@
 
         <div id="film-dad-lie" class="page-section">
     <h2 class="page-title">
-        <span class="content-en">Dad, Don't Lie To Me (2024)</span>
-        <span class="content-vi">Ba Ơi, Đừng Nói Dối (2024)</span>
+        <span class="content-en">Dad, Don't Lie To Me (2026)</span>
+        <span class="content-vi">Ba Ơi, Đừng Nói Dối (2026)</span>
     </h2>
-    <div class="about-text dynamic-content" data-id="film-dad-lie"></div>
-    
-    <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Dad+Lie" style="width:100%; margin-top:20px;">
-</div>
-
-        <div id="film-karma" class="page-section">
+     <div class="about-text dynamic-content" data-id="film-dad-lie"></div>
+</div> <div id="film-karma" class="page-section">
     <h2 class="page-title">
         <span class="content-en">Karma (2024)</span>
         <span class="content-vi">Nghiệp (2024)</span>
     </h2>
     <div class="about-text dynamic-content" data-id="film-karma"></div>
-    <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Karma" style="width:100%; margin-top:20px;">
 </div>
 
 <div id="film-ghost" class="page-section">
@@ -422,7 +417,7 @@
         <span class="content-vi">"Con Ma" Muốn Sống (2023)</span>
     </h2>
     <div class="about-text dynamic-content" data-id="film-ghost"></div>
-    <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Ghost" style="width:100%; margin-top:20px;">
+    
 </div>
 
 <div id="film-cocks-cooking" class="page-section">
@@ -431,7 +426,7 @@
         <span class="content-vi">Gà Trống Nấu Cơm</span>
     </h2>
     <div class="about-text dynamic-content" data-id="film-cocks-cooking"></div>
-    <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Cocks+Cooking" style="width:100%; margin-top:20px;">
+    
 </div>
 
 <div id="film-alive" class="page-section">
@@ -440,7 +435,7 @@
         <span class="content-vi">Khi Chúng Ta Được Sống (2020)</span>
     </h2>
     <div class="about-text dynamic-content" data-id="film-alive"></div>
-    <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+Alive" style="width:100%; margin-top:20px;">
+    
 </div>
 
 <div id="film-city" class="page-section">
@@ -449,7 +444,7 @@
         <span class="content-vi">Khi Thành Phố Lớn (2020)</span>
     </h2>
     <div class="about-text dynamic-content" data-id="film-city"></div>
-    <img src="https://dummyimage.com/800x450/ccc/000&text=Still+Cut+City" style="width:100%; margin-top:20px;">
+    
 </div>
 
         <div id="comm-1" class="page-section">
@@ -958,6 +953,42 @@
             }
         });
     });
+</script>
+
+<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+    // --- LOGIC LIGHTBOX ---
+    
+    // 1. Lắng nghe sự kiện click trên toàn bộ trang (Event Delegation)
+    document.addEventListener('click', function(e) {
+        // Kiểm tra xem cái được click có phải là ảnh trong gallery-wall không
+        if (e.target && e.target.closest('.gallery-wall img')) {
+            const imgSrc = e.target.src; // Lấy đường dẫn ảnh
+            openLightbox(imgSrc);
+        }
+    });
+
+    const lightbox = document.getElementById('lightbox-overlay');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    // 2. Hàm mở Lightbox
+    function openLightbox(src) {
+        lightboxImg.src = src;
+        lightbox.style.display = "flex";
+        // Ngăn cuộn chuột ở trang chính khi đang xem ảnh
+        document.body.style.overflow = "hidden"; 
+    }
+
+    // 3. Hàm đóng Lightbox
+    function closeLightbox() {
+        lightbox.style.display = "none";
+        // Cho phép cuộn trang trở lại
+        document.body.style.overflow = "auto"; 
+    }
 </script>
 
 </body>
