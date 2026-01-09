@@ -250,7 +250,7 @@ const filmsData = {
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Cast:</b> Khanh Duy, Co Nhum, Duc Tri</li>
                 <li><b>Director & Screenwriter:</b> Pham Huu Tri</li>
-                <li><b>Consultant Director:</b> NSUT. Director Nguyen Tuong Phuong</li>
+                <li><b>Consultant Director:</b> NSUT. Nguyen Tuong Phuong</li>
                 <li><b>Assistant Director:</b> Le Diem Quynh</li>
                 <li><b>Producer:</b> Hoang My</li>
                 <li><b>Line Producer:</b> Quang Pham</li>
@@ -386,7 +386,7 @@ const filmsData = {
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Character:</b> Nguyen Lam Anh, Nguyen Bao Ngoc</li>
-                <li><b>Director & Screenwriter:</b> Phạm Hữu Trí</li>
+                <li><b>Director & Screenwriter:</b> Pham Huu Tri</li>
                 <li><b>Director's Consultant:</b> NSND. Dao Ba Son</li>
                 <li><b>Camera Operator:</b> Vo Nguyen Dat Kha, Phan Quoc Anh, Phan Thien Anh, Nguyen Dan Tho</li>
                 <li><b>Editor:</b> Pham Huu Tri</li>
