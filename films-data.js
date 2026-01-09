@@ -343,7 +343,7 @@ const filmsData = {
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_5.png" class="big">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_12.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_17.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_15.png" class="wide">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_8.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_10.png" class="wide">
@@ -409,7 +409,7 @@ const filmsData = {
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_5.png" class="big">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_12.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_17.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_15.png" class="wide">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_8.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_10.png" class="wide">
