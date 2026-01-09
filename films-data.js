@@ -11,7 +11,7 @@ const filmsData = {
                 <b>Năm:</b> Sắp ra mắt (2026)
             </p>
 
-            <div style="text-align: center; margin: 30px 0;">
+            <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/ooWID56SmHk" 
                     title="Mood and Tone" frameborder="0" 
@@ -79,7 +79,7 @@ const filmsData = {
                 <b>Year:</b> Coming-soon 2026
             </p>
 
-            <div style="text-align: center; margin: 30px 0;">
+            <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/ooWID56SmHk" 
                     title="Mood and Tone" frameborder="0" 
@@ -148,14 +148,14 @@ const filmsData = {
         vi: `
             <p>
                 <b>Thể loại:</b> Fiction short / Drama<br>
-                <b>Năm:</b> 2024
+                <b>Năm:</b> 2024<br>
                 <b>Thời lượng:</b> 28:20<br>
                 <b>Giải thưởng:</b><br>
                 Cánh Diều Bạc, Hội điện ảnh Việt Nam (2024)<br>
                 Kịch bản xuất sắc nhất - FABA Films (2025)
             </p>
 
-            <div style="text-align: center; margin: 30px 0;">
+            <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/VzVB9pFBoiY" 
                     title="Karma" frameborder="0" 
@@ -226,7 +226,7 @@ const filmsData = {
                 Best Screenplay, FABA Films (2025)
             </p>
 
-            <div style="text-align: center; margin: 30px 0;">
+            <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/VzVB9pFBoiY" 
                     title="Karma" frameborder="0" 
@@ -293,21 +293,133 @@ const filmsData = {
     "film-ghost": {
         vi: `
             <p>
-                <b>Thể loại:</b> Phim tài liệu ngắn<br>
-                <b>Giải thưởng:</b> Giải ba, Liên hoan phim ngắn TP. HCM 2023.
+                <b>Thể loại:</b> Phim tài liệu ngắn / Tương tác<br>
+                <b>Năm:</b> 2022<br>
+                <b>Thời lượng:</b> 22:02<br>
+                <b>Giải thưởng:</b><br>
+                Giải ba, Liên hoan phim ngắn TP. HCM (2023)<br>
+                Quỹ Sáng Tạo Trẻ, Hội Điện Ảnh TP. HCM (2022)
             </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/ijfYdCNMRK8" 
+                    title="The Ghost Wants to Live" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Synopsis</h3>
             <p>
-                [Nội dung tóm tắt phim Con Ma Muốn Sống viết ở đây...]
+                Phim là toàn bộ câu chuyện của nhân vật Lâm Anh, kể về những thăng trầm của bản thân khi đã trải qua căn bệnh trầm cảm. Đã có lúc cô tự nhận mình là một con ma, và giờ đây… con ma ấy muốn được sống, muốn được hạnh phúc. Với phong cách tương tác, bộ phim đã lột tả thế giới nội tâm phức tạp của nhân vật thông qua cách trả lời thông minh, sắc sảo và chân thực.
             </p>
+
+            <h3>Crew</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Character:</b> Nguyễn Lâm Anh, Nguyễn Bảo Ngọc</li>
+                <li><b>Director & Screenwriter:</b> Phạm Hữu Trí</li>
+                <li><b>Director's Consultant (Cố Vấn Nghệ Thuật):</b> NSND. Đạo Bá Sơn</li>
+                <li><b>Camera Operator:</b> Võ Nguyễn Đạt Kha, Phan Quốc Anh, Phan Thiên Anh, Nguyễn Đan Thọ</li>
+                <li><b>Editor:</b> Phạm Hữu Trí</li>
+                <li><b>Songs sang by Character:</b> Một Ngày - Kiên, Con Dế Mèn Hát Vào Mùa Hè - Tùng</li>
+                <li><b>Film footages used:</b> Norwegian Wood (Rừng Na Uy) - Directed by Trần Anh Hùng</li>
+            </ul>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/XZLOe_1Gcnc" 
+                    title="The Ghost Wants to Live" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Behind The Scene</h3>
+            
+            <div class="gallery-wall">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_5.png" class="big">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_12.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_15.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_8.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_10.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_2.png" class="tall">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_14.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_4.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_16.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_11.png" class="tall">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_3.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_6.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_9.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_7.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_13.png" class="wide">
+            </div>
         `,
         en: `
             <p>
-                <b>Genre:</b> Short Documentary<br>
-                <b>Awards:</b> Third Prize, HCMC Short Film Festival 2023.
+                <b>Genre:</b> Documentary short / Interactive<br>
+                <b>Year:</b> 2022<br>
+                <b>Awards:</b><br>
+                Third Prize, HCMC Short Film Festival (2023)<br>
+                Young Creativity Fund, HCMC Cinema Association (2022)
             </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/XZLOe_1Gcnc" 
+                    title="The Ghost Wants to Live" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Synopsis</h3>
             <p>
-                [English synopsis goes here...]
+                The film tells the complete story of the character Lâm Anh, recounting the ups and downs she experienced after battling depression. There was a time when she considered herself a ghost, and now... that ghost wants to live, wants to be happy. With an interactive style, the film reveals the complex inner world of the character through intelligent, sharp, and authentic responses.
             </p>
+
+            <h3>Crew</h3>
+            <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
+                <li><b>Character:</b> Nguyễn Lâm Anh, Nguyễn Bảo Ngọc</li>
+                <li><b>Director & Screenwriter:</b> Phạm Hữu Trí</li>
+                <li><b>Director's Consultant:</b> NSND. Đạo Bá Sơn</li>
+                <li><b>Camera Operator:</b> Võ Nguyễn Đạt Kha, Phan Quốc Anh, Phan Thiên Anh, Nguyễn Đan Thọ</li>
+                <li><b>Editor:</b> Phạm Hữu Trí</li>
+                <li><b>Songs sang by Character:</b> Một Ngày - Kiên, Con Dế Mèn Hát Vào Mùa Hè - Tùng</li>
+                <li><b>Film footages used:</b> Norwegian Wood (Rừng Na Uy) - Directed by Trần Anh Hùng</li>
+            </ul>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/ijfYdCNMRK8" 
+                    title="The Ghost Wants to Live" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Behind The Scene</h3>
+            
+            <div class="gallery-wall">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_5.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_12.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_15.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_8.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_10.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_2.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_14.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_4.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_16.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_11.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_3.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_6.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_9.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_7.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_13.png">
+            </div>
         `
     },
 
