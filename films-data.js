@@ -368,7 +368,7 @@ const filmsData = {
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/XZLOe_1Gcnc" 
+                    src="https://www.youtube.com/embed/ijfYdCNMRK8" 
                     title="The Ghost Wants to Live" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -393,7 +393,7 @@ const filmsData = {
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/ijfYdCNMRK8" 
+                    src="https://www.youtube.com/embed/XZLOe_1Gcnc" 
                     title="The Ghost Wants to Live" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
