@@ -12,6 +12,9 @@ body {
 a { text-decoration: none; color: #000; transition: all 0.2s; }
 a:hover { color: #666; text-decoration: none; } /* Bỏ gạch chân khi hover cho sạch */
 
+/* Brand link styling */
+a.brand-link:hover { color: #0033cc !important; }
+
 /* BỐ CỤC */
 .wrapper { display: flex; min-height: 100vh; }
 
