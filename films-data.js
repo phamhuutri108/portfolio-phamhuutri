@@ -7,7 +7,7 @@ const filmsData = {
     "film-dad-lie": {
         vi: `
             <p>
-                <b>Thể loại:</b> Phim ngắn hư cấu / Tâm lý, Quan sát<br>
+                <b>Thể loại:</b> Phim ngắn / Tâm lý, Quan sát<br>
                 <b>Năm:</b> Sắp ra mắt (2026)
             </p>
 
@@ -147,7 +147,7 @@ const filmsData = {
     "film-karma": {
         vi: `
             <p>
-                <b>Thể loại:</b> Short fiction / Drama<br>
+                <b>Thể loại:</b> Phim ngắn / Drama<br>
                 <b>Năm:</b> 2024<br>
                 <b>Thời lượng:</b> 28:20<br>
                 <b>Giải thưởng:</b><br>
@@ -431,7 +431,7 @@ const filmsData = {
     "film-cocks-cooking": {
         vi: `
             <p>
-                <b>Thể loại:</b> Short fiction / Drama<br>
+                <b>Thể loại:</b> Phim ngắn / Drama<br>
                 <b>Năm:</b> 2023<br>
                 <b>Thời lượng:</b> 06:45
             </p>
@@ -489,7 +489,7 @@ const filmsData = {
     "film-alive": {
         vi: `
             <p>
-                <b>Thể loại:</b> Short fiction / Drama<br>
+                <b>Thể loại:</b> Phim ngắn / Drama<br>
                 <b>Năm:</b> 2020<br>
                 <b>Thời lượng:</b> 19:23<br>
                 <b>Giải thưởng:</b><br>
