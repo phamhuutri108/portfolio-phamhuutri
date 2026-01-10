@@ -9,7 +9,7 @@ const commercialData = {
                 <b>Thương hiệu:</b> <a href="https://www.nhatot.com" target="_blank">Nhà Tốt</a><br>
                 <b>Tiêu đề:</b> Nhà vừa ý, giá hợp lý!<br>
                 <b>Năm:</b> 2025<br>
-                <b>Quốc gia:</b> Vietnam<br>
+                <b>Quốc gia:</b> Việt Nam<br>
                 <b>Vai trò:</b> Trợ lý Đạo diễn
             </p>
 
