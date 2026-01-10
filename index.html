@@ -214,7 +214,7 @@
     <div class="category-group" id="group-writing">
         <h4>
             <a href="javascript:void(0)" onclick="showPage('cat-writing', 'group-writing')" id="link-cat-writing">
-                <span class="content-en">Writing</span>
+                <span class="content-en">Writings</span>
                 <span class="content-vi">Viết</span>
             </a>
         </h4>
@@ -604,7 +604,7 @@
         <div id="cat-writing" class="page-section">
     <div class="writing-top-area">
         <h2 class="page-title">
-            <span class="content-en">Writing</span>
+            <span class="content-en">Writings</span>
             <span class="content-vi">Viết</span>
         </h2>
         
@@ -796,13 +796,7 @@
 
 
 
-        <div id="write-1" class="page-section">
-            <h2 class="page-title">Essays on Cinema</h2>
-            <p>Nội dung bài viết...</p>
-        </div>
-
-    </main>
-</div>
+        
 
 <script>
     // 1. CẤU HÌNH ĐƯỜNG DẪN URL
@@ -840,8 +834,22 @@
         'other-full-moon': '/others/full-moon',
         'other-chill-nw': '/others/chill-cung-tay-bac',
         
-        // Writing
-        'write-1': '/writing/essays-cinema'
+        // Writings
+        'write-dieu-khac-la': '/writings/co-dieu-gi-do-khac',
+        'write-ba-noi-doi': '/writings/ba-toi-la-ke-noi-doi',
+        'write-108-ga-nang': '/writings/108-ga-va-nang-la-ban',
+        'write-nha-trang-sep': '/writings/nha-trang-11-09-24',
+        'write-manh-giay-khe-da': '/writings/nhung-manh-giay-trong-khe-da',
+        'write-sg-apr': '/writings/sai-gon-15-04-24',
+        'write-vo-tuong-dai': '/writings/vo-tuong-dai',
+        'write-loi-me-theu-thao': '/writings/loi-me-theu-thao',
+        'write-sg-jun-23': '/writings/sai-gon-12-06-23',
+        'write-sg-mar-23': '/writings/sai-gon-04-03-23',
+        'write-mui-thuoc-la': '/writings/mui-thuoc-la-quen-thuoc',
+        'write-tu-do-that-su': '/writings/tu-do-that-su',
+        'write-triet-ly-tran-nha': '/writings/triet-ly-cai-tran-nha',
+        'write-tinh-yeu-tinh-thuong': '/writings/tinh-yeu-di-qua-tinh-thuong-o-lai',
+        'write-vong-ngu': '/writings/vong-ngu'
     };
 
     // Hàm tìm ID trang dựa trên URL hiện tại (Dùng khi F5 hoặc gõ link trực tiếp)
@@ -859,6 +867,27 @@
 
     // 2. HÀM CHÍNH: SHOW PAGE (Đã nâng cấp)
     function showPage(pageId, groupId = null, addToHistory = true) {
+        
+        // --- [MỚI] XỬ LÝ RIÊNG CHO BÀI VIẾT (WRITING) ---
+        // Nếu ID bắt đầu bằng 'write-' (ví dụ: write-ba-noi-doi)
+        if (pageId && pageId.startsWith('write-')) {
+            // 1. Mở trang cha (Writing) trước
+            showPage('cat-writing', 'group-writing', false);
+            
+            // 2. Mở nội dung bài viết
+            // Dùng timeout để đảm bảo dữ liệu đã kịp load
+            setTimeout(() => {
+                openWritingDetail(pageId);
+            }, 50);
+
+            // 3. Cập nhật URL thủ công
+            if (addToHistory && urlMapping[pageId]) {
+                 window.history.pushState({ pageId: pageId, groupId: 'group-writing' }, "", urlMapping[pageId]);
+            }
+            return; // Dừng hàm tại đây, không chạy logic mặc định bên dưới nữa
+        }
+
+
         
         // --- A. XỬ LÝ GIAO DIỆN ---
         
@@ -1558,7 +1587,7 @@
         });
     }
 
-    // --- HÀM MỞ BÀI VIẾT (KHÔNG DỪNG ANIMATION) ---
+    // --- HÀM MỞ BÀI VIẾT (CẬP NHẬT URL) ---
     function openWritingDetail(id) {
         const post = writingData.find(item => item.id === id);
         if (!post) return;
@@ -1573,33 +1602,35 @@
         if (metaEl) metaEl.innerText = `${post.location}, ${post.date}`;
         if (contentEl) contentEl.innerHTML = `<div class="content-vi">${post.content.vi}</div><div class="content-en">${post.content.en}</div>`;
 
-        // 2. Hiện khung bài viết lên
+        // 2. Hiện khung bài viết
         if (viewEl) {
             viewEl.style.display = 'block';
-            
-            // 3. Cuộn trang xuống để người dùng thấy bài viết
-            // Dùng setTimeout nhỏ để đảm bảo giao diện đã render xong
             setTimeout(() => {
                 viewEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 100);
         }
 
-        // --- QUAN TRỌNG: KHÔNG GỌI cancelAnimationFrame ĐỂ CHỮ VẪN BAY ---
-        
-        // 4. Update URL (nếu muốn) nhưng không đổi trang
-        // window.history.pushState(..., ..., urlMapping[id]); 
+        // 3. [QUAN TRỌNG] Cập nhật URL thành /writing/ten-bai-viet
+        if (urlMapping[id]) {
+            // Kiểm tra xem URL hiện tại đã đúng chưa để tránh push trùng
+            const currentPath = window.location.pathname;
+            if (currentPath !== urlMapping[id]) {
+                window.history.pushState({ pageId: id, groupId: 'group-writing' }, "", urlMapping[id]);
+            }
+        }
     }
 
-    // --- HÀM ĐÓNG BÀI VIẾT ---
+    // --- HÀM ĐÓNG BÀI VIẾT (TRẢ VỀ URL GỐC) ---
     function closeWritingDetail() {
         const viewEl = document.getElementById('writing-detail-view');
         if (viewEl) {
             viewEl.style.display = 'none';
-            
-            // Cuộn lại lên đầu trang
             const topArea = document.querySelector('.writing-top-area');
             if (topArea) topArea.scrollIntoView({ behavior: 'smooth' });
         }
+
+        // Trả URL về /writing
+        window.history.pushState({ pageId: 'cat-writing', groupId: 'group-writing' }, "", '/writing');
     }
 
     // Bắt sự kiện Resize để không bị lỗi văng ra ngoài
