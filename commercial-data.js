@@ -250,6 +250,106 @@ const commercialData = {
                 1st Assistant Director, scheduling shoots and organizing production activities on set.
             </p>
         `
+    },
+
+    // 6. BẠCH ĐẰNG CEMENT - XI MĂNG VUA, CÙNG XÂY DI SẢN
+    "comm-bach-dang-cement": {
+        vi: `
+            <p>
+                <b>Brand:</b> Bạch Đằng Cement<br>
+                <b>Title:</b> Xi Măng Vua, Cùng Xây Di Sản<br>
+                <b>Year:</b> 2026<br>
+                <b>Country:</b> Vietnam<br>
+                <b>Role:</b> Director's Assistant
+            </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/" 
+                    title="Bạch Đằng Cement" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Mô tả vai trò</h3>
+            <p>
+                Trợ lý cá nhân cho Đạo diễn, hỗ trợ phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án.
+            </p>
+        `,
+        en: `
+            <p>
+                <b>Brand:</b> Bạch Đằng Cement<br>
+                <b>Title:</b> King Cement, Building Heritage Together<br>
+                <b>Year:</b> 2026<br>
+                <b>Country:</b> Vietnam<br>
+                <b>Role:</b> Director's Assistant
+            </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/" 
+                    title="Bạch Đằng Cement" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Role Description</h3>
+            <p>
+                Personal Assistant to the Director, supporting the development of ideas and preparation of creative content for the project.
+            </p>
+        `
+    },
+
+    // 7. BỆNH VIỆN PHƯƠNG NAM - MẸ BẦU CHỐT LUÔN
+    "comm-benh-vien-phuong-nam": {
+        vi: `
+            <p>
+                <b>Brand:</b> Bệnh Viện Phương Nam<br>
+                <b>Title:</b> Mẹ Bầu Chốt Luôn<br>
+                <b>Year:</b> 2026<br>
+                <b>Country:</b> Vietnam<br>
+                <b>Role:</b> Director's Assistant
+            </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/" 
+                    title="Bệnh Viện Phương Nam" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Mô tả vai trò</h3>
+            <p>
+                Trợ lý cá nhân cho Đạo diễn, hỗ trợ phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án.
+            </p>
+        `,
+        en: `
+            <p>
+                <b>Brand:</b> Bệnh Viện Phương Nam<br>
+                <b>Title:</b> Expectant Mothers Always Decide<br>
+                <b>Year:</b> 2026<br>
+                <b>Country:</b> Vietnam<br>
+                <b>Role:</b> Director's Assistant
+            </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/" 
+                    title="Bệnh Viện Phương Nam" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Role Description</h3>
+            <p>
+                Personal Assistant to the Director, supporting the development of ideas and preparation of creative content for the project.
+            </p>
+        `
     }
 
 };
