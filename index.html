@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Huu Tri's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="https://ik.imagekit.io/phamhuutri108/logo.png">
+
+    <meta name="description" content="A human being.">
+    <meta name="author" content="Pham Huu Tri">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phamhuutri.com/">
+    <meta property="og:title" content="Pham Huu Tri's Portfolio">
+    <meta property="og:description" content="A human being.">
+
+    <meta property="og:image" content="https://ik.imagekit.io/phamhuutri108/cover-meta.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pham Huu Tri's Portfolio">
+    <meta name="twitter:description" content="A human being.">
+    <meta name="twitter:image" content="https://ik.imagekit.io/phamhuutri108/cover-meta.png">
+</head>
+<body>
+
+<div class="wrapper">
+    <aside class="sidebar">
+
+        <div class="lang-switch">
+    <span class="lang-btn active" onclick="setLanguage('en')" id="btn-en">EN</span>
+    <span class="separator">-</span>
+    <span class="lang-btn" onclick="setLanguage('vi')" id="btn-vi">VI</span>
+</div>
+<div class="site-logo">
+    </div>
+
+        <div class="site-logo">
+            <a href="javascript:void(0)" onclick="showPage('home')">
+                <img src="https://ik.imagekit.io/phamhuutri108/tri_potrait_b&w.JPG" alt="Pham Huu Tri">
+            </a>
+        </div>
+
+        <ul class="main-menu">
+    <li>
+        <a href="javascript:void(0)" onclick="showPage('home')" id="link-home" class="active-link">
+            <span class="content-en">Home</span>
+            <span class="content-vi">Trang chủ</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0)" onclick="showPage('about')" id="link-about">
+            <span class="content-en">About</span>
+            <span class="content-vi">Về tôi</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0)" onclick="showPage('contact')" id="link-contact">
+            <span class="content-en">Contact</span>
+            <span class="content-vi">Liên hệ</span>
+        </a>
+    </li>
+</ul>
+
+        <div class="category-section">
+    
+    <div class="category-group" id="group-films">
+    <h4>
+        <a href="javascript:void(0)" onclick="showPage('cat-short-films', 'group-films')" id="link-cat-short-films">
+            <span class="content-en">Short Films</span>
+            <span class="content-vi">Phim ngắn</span>
+        </a>
+    </h4>
+    <ul class="category-list">
+
+        <li>
+    <a href="javascript:void(0)" onclick="showPage('film-dad-lie', 'group-films')" id="link-film-dad-lie">
+        <span class="content-en">Dad, Don't Lie To Me</span>
+        <span class="content-vi">Ba Ơi, Đừng Nói Dối</span>
+    </a>
+</li>
+
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('film-karma', 'group-films')" id="link-film-karma">
+                <span class="content-en">Karma</span>
+                <span class="content-vi">Nghiệp</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('film-ghost', 'group-films')" id="link-film-ghost">
+                <span class="content-en">"The Ghost" Wants to Live</span>
+                <span class="content-vi">"Con Ma" Muốn Sống</span>
+            </a>
+        </li>
+        <li>
+    <a href="javascript:void(0)" onclick="showPage('film-cocks-cooking', 'group-films')" id="link-film-cocks-cooking">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </a>
+</li>
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('film-alive', 'group-films')" id="link-film-alive">
+                <span class="content-en">Alive</span>
+                <span class="content-vi">Khi Chúng Ta Được Sống</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('film-city', 'group-films')" id="link-film-city">
+                <span class="content-en">When My City Grows</span>
+                <span class="content-vi">Khi Thành Phố Lớn</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="category-group" id="group-comm">
+        <h4>
+            <a href="javascript:void(0)" onclick="showPage('cat-commercial', 'group-comm')" id="link-cat-commercial">
+                <span class="content-en">Commercial</span>
+                <span class="content-vi">Quảng cáo</span>
+            </a>
+        </h4>
+        <ul class="category-list">
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('comm-1', 'group-comm')" id="link-comm-1">
+                    <span class="content-en">Brand Campaign A</span>
+                    <span class="content-vi">Chiến dịch A</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category-group" id="group-writing">
+        <h4>
+            <a href="javascript:void(0)" onclick="showPage('cat-writing', 'group-writing')" id="link-cat-writing">
+                <span class="content-en">Writing</span>
+                <span class="content-vi">Viết</span>
+            </a>
+        </h4>
+        <ul class="category-list">
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('write-1', 'group-writing')" id="link-write-1">
+                    <span class="content-en">Essays on Cinema</span>
+                    <span class="content-vi">Tiểu luận điện ảnh</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Pham Huu Tri.</p>
+        </div>
+    </aside>
+
+    <main class="content">
+        
+        <div id="home" class="page-section active-section">
+            <img src="https://ik.imagekit.io/phamhuutri108/one%20buddha%20is%20not%20enough.JPG" 
+                 alt="Home Art" 
+                 class="home-center-img">
+        </div>
+
+        <div id="about" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">About</span>
+        <span class="content-vi">Giới thiệu</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-vi">
+                Xin chào, tôi là <b>Phạm Hữu Trí</b>.<br>
+                Hiện tại, tôi đang theo đuổi con đường làm phim độc lập và là một freelancer bán thời gian. Đôi khi tôi viết.
+            </span>
+            <span class="content-en">
+                Hello, I am <b>Pham Huu Tri</b>.<br>
+                Currently, I am pursuing independent filmmaking and working as a part-time freelancer. Sometimes, I write.
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Tuyên ngôn</span>
+            <span class="content-en">Artist Statement</span>
+        </h3>
+
+        <p style="font-style: italic;">"A human being."</p>
+
+        <p>
+            <span class="content-vi">
+                Thực hành nghệ thuật với tôi là hành trình khám phá tính nhân bản.
+                Mỗi khung hình, mỗi dòng chữ đều là một nỗ lực để thấu hiểu việc làm người.
+            </span>
+            <span class="content-en">
+                To me, artistic practice is a journey of exploring humanity.
+                Every frame, every line is an effort to understand what it means to be human.
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Giáo dục</span>
+            <span class="content-en">Education</span>
+        </h3>
+        <p>
+            <span class="content-vi"> <b>Đại học Văn Lang, TP. HCM</b> (2021 - 2026)<br>
+            </span>
+
+            <span class="content-en"> <b>Van Lang University, Vietnam</b> (2021 - 2026)<br>
+            </span>
+            <span class="content-vi" style="font-size: 11px; color: #666;">
+                Chuyên ngành: Đạo diễn điện ảnh & truyền hình
+            </span>
+            <span class="content-en" style="font-size: 11px; color: #666;">
+                Major: Art in Film & Television Directing
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Quá trình làm phim - Giải thưởng</span>
+            <span class="content-en">Filmography - Awards</span>
+        </h3>
+        
+        <ul style="list-style: none; padding-left: 0; font-size: 12px;">
+    
+    <li style="margin-bottom: 5px;">
+        2024 - <i>
+            <span class="content-vi">Nghiệp</span>
+            <span class="content-en">Karma</span>
+        </i>
+        <span class="content-vi">(Phim ngắn): <b>Cánh diều bạc</b>, Hội điện ảnh Việt Nam</span>
+        <span class="content-en">(Short film): <b>Silver Prize</b>, Golden Kite Awards, Vietnam Cinema Association</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2023 - <i>
+            <span class="content-vi">"Con Ma" Muốn Sống</span>
+            <span class="content-en">"The Ghost" Wants to Live</span>
+        </i>
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Giải ba</b>, Liên hoan phim ngắn TP. HCM</span>
+        <span class="content-en">(Short documentary): <b>Third Prize</b>, HCMC Short Film Festival</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2022 - <i>
+            <span class="content-vi">"Con Ma" Muốn Sống</span>
+            <span class="content-en">"The Ghost" Wants to Live</span>
+        </i> 
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Quỹ sáng tác trẻ</b>, Hội điện ảnh TP. HCM</span>
+        <span class="content-en">(Short documentary): <b>Young Creativity Fund</b>, HCMC Cinema Association</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2020 - <i>
+            <span class="content-vi">Khi Chúng Ta Được Sống</span>
+            <span class="content-en">Alive</span>
+        </i>
+        <span class="content-vi">(Phim ngắn): <b>Phim xuất sắc nhất</b>, The Original Project, Hà Nội</span>
+        <span class="content-en">(Short film): <b>Best Short Film</b>, The Original Project, Hanoi</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2020 - <i>
+            <span class="content-vi">Khi Thành Phố Lớn</span>
+            <span class="content-en">When My City Grows</span>
+        </i>
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Giải nhì</b>, Le Filmmaking Camp, Quảng Trị - Đại sứ quán Mỹ tài trợ</span>
+        <span class="content-en">(Short documentary): <b>Second Prize</b>, Le Filmmaking Camp, Quang Tri - Sponsored by the U.S. Embassy</span>
+    </li>
+
+</ul>
+
+        <div id="resume-holder" style="text-align: center; margin-top: 60px; height: 50px;">
+            <a href="https://drive.google.com/file/d/16exeCisXqDe9dqmPtJ8lGSgUCP4F9pD1/view?usp=sharing" target="_blank" id="wandering-resume">Resume</a>
+        </div>
+    </div>
+</div>
+
+        <div id="contact" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Contact</span>
+        <span class="content-vi">Liên hệ</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <b>
+                <span class="content-en">Phone:</span>
+                <span class="content-vi">Điện thoại:</span>
+            </b> 
+            <a href="tel:+84865953041" style="color: #111;">(+84) 865 953 041</a>
+        </p>
+        
+        <p>
+            <b>Email:</b> 
+            <a href="mailto:contact@phamhuutri.com" style="color: #111;">contact@phamhuutri.com</a>
+        </p>
+        
+        <p>
+            <b>Instagram:</b> 
+            <a href="https://www.instagram.com/phamhuutri.es" target="_blank">@phamhuutri.es</a>
+        </p>
+        
+        <p>
+            <b>Facebook:</b> 
+            <a href="https://www.facebook.com/phamhuutri108/" target="_blank">Phạm Hữu Trí</a>
+        </p>
+
+        <img src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+             alt="Contact Image"
+             id="musical-image"
+             style="display: block; margin: 50px auto 0 auto; width: 350px; height: auto; cursor: pointer;"
+             title="Click to play music">
+
+        <audio id="contact-audio">
+            <source src="https://ik.imagekit.io/phamhuutri108/Trang-Mua%20Xuan(from%20Album%20Trong).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+        <div id="cat-short-films" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Short Films</span>
+        <span class="content-vi">Phim ngắn</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-en">2020 - present.</span>
+            <span class="content-vi">2020 - hiện tại.</span>
+        </p>
+    </div>
+
+    <div class="gallery-grid" style="margin-top:30px;">
+
+        <a href="javascript:void(0)" onclick="showPage('film-dad-lie', 'group-films')" class="gallery-item">
+    <img src="https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" alt="Dad Don't Lie">
+    <p style="margin-top: 5px; font-weight: bold;">
+        <span class="content-en">Dad, Don't Lie To Me</span>
+        <span class="content-vi">Ba ơi, Đừng Nói Dối</span>
+    </p>
+</a>
+        
+        <a href="javascript:void(0)" onclick="showPage('film-karma', 'group-films')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_thumbnail.png" alt="Karma">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Karma</span>
+                <span class="content-vi">Nghiệp</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('film-ghost', 'group-films')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_thumbnail.png" alt="The Ghost Wants to Live">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">"The Ghost" Wants to Live (2022)</span>
+                <span class="content-vi">"Con Ma" Muốn Sống (2022)</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('film-cocks-cooking', 'group-films')" class="gallery-item">
+    <img src="https://ik.imagekit.io/phamhuutri108/GTNC_thumbnail.jpg" alt="Cock's Cooking">
+    <p style="margin-top: 5px; font-weight: bold;">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </p>
+</a>
+
+        <a href="javascript:void(0)" onclick="showPage('film-alive', 'group-films')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/Alive_thumbnail.jpg" alt="Alive">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Alive</span>
+                <span class="content-vi">Khi Chúng Ta Được Sống</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('film-city', 'group-films')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/KTPL_thumbnail.jpg" alt="City">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">When My City Grows</span>
+                <span class="content-vi">Khi Thành Phố Lớn</span>
+            </p>
+        </a>
+
+    </div>
+</div>
+
+        <div id="cat-commercial" class="page-section">
+            <h2 class="page-title">Commercial Projects</h2>
+            <p>Các dự án thương mại...</p>
+        </div>
+
+        <div id="cat-writing" class="page-section">
+            <h2 class="page-title">Writing</h2>
+            <p>Các bài viết...</p>
+        </div>
+
+        <div id="film-dad-lie" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Dad, Don't Lie To Me</span>
+        <span class="content-vi">Ba Ơi, Đừng Nói Dối</span>
+    </h2>
+     <div class="about-text dynamic-content" data-id="film-dad-lie"></div>
+</div> <div id="film-karma" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Karma</span>
+        <span class="content-vi">Nghiệp</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-karma"></div>
+</div>
+
+<div id="film-ghost" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">"The Ghost" Wants to Live</span>
+        <span class="content-vi">"Con Ma" Muốn Sống</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-ghost"></div>
+    
+</div>
+
+<div id="film-cocks-cooking" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-cocks-cooking"></div>
+    
+</div>
+
+<div id="film-alive" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Alive</span>
+        <span class="content-vi">Khi Chúng Ta Được Sống</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-alive"></div>
+    
+</div>
+
+<div id="film-city" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">When My City Grows</span>
+        <span class="content-vi">Khi Thành Phố Lớn</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-city"></div>
+    
+</div>
+
+        <div id="comm-1" class="page-section">
+            <h2 class="page-title">Brand Campaign A</h2>
+            <p>Nội dung quảng cáo...</p>
+        </div>
+
+        <div id="write-1" class="page-section">
+            <h2 class="page-title">Essays on Cinema</h2>
+            <p>Nội dung bài viết...</p>
+        </div>
+
+    </main>
+</div>
+
+<script>
+    // 1. CẤU HÌNH ĐƯỜNG DẪN URL
+    // Cú pháp: 'id-của-div-trong-html': 'đường-dẫn-muốn-hiện-trên-trình-duyệt'
+    const urlMapping = {
+        'home': '',
+        'about': '/about',
+        'contact': '/contact',
+        'cat-short-films': '/short-films',
+        'cat-commercial': '/commercial',
+        'cat-writing': '/writing',
+        
+        // Các phim chi tiết
+        'film-dad-lie': '/short-film/dad-dont-lie-to-me',
+        'film-karma': '/short-film/karma',
+        'film-ghost': '/short-film/the-ghost-wants-to-live',
+        'film-alive': '/short-film/alive',
+        'film-city': '/short-film/when-my-city-grows',
+        'film-cocks-cooking': '/short-film/cocks-cooking',
+        
+        // Các mục khác (nếu có)
+        'comm-1': '/commercial/campaign-a',
+        'write-1': '/writing/essays-cinema'
+    };
+
+    // Hàm tìm ID trang dựa trên URL hiện tại (Dùng khi F5 hoặc gõ link trực tiếp)
+    function getIdFromUrl(path) {
+        if (path.length > 1 && path.endsWith('/')) {
+            path = path.slice(0, -1); // Xóa dấu / thừa ở cuối
+        }
+        
+        // Tìm xem đường dẫn hiện tại khớp với ID nào trong danh sách trên
+        for (const [id, url] of Object.entries(urlMapping)) {
+            if (url === path) return id;
+        }
+        return 'home'; // Không tìm thấy thì về Trang chủ
+    }
+
+    // 2. HÀM CHÍNH: SHOW PAGE (Đã nâng cấp)
+    function showPage(pageId, groupId = null, addToHistory = true) {
+        
+        // --- A. XỬ LÝ GIAO DIỆN (Giống code cũ) ---
+        
+        // 1. Ẩn hiện nội dung chính
+        const sections = document.querySelectorAll('.page-section');
+        sections.forEach(section => section.classList.remove('active-section'));
+
+        const activeSection = document.getElementById(pageId);
+        if (activeSection) {
+            activeSection.classList.add('active-section');
+            window.scrollTo(0, 0); // Cuộn lên đầu trang
+        }
+
+        // 2. Tô màu menu (Active Link)
+        const allLinks = document.querySelectorAll('a');
+        allLinks.forEach(link => link.classList.remove('active-link'));
+        
+        const activeLink = document.getElementById('link-' + pageId);
+        if (activeLink) activeLink.classList.add('active-link');
+
+        // 3. Xử lý đóng/mở Sidebar
+        const allGroups = document.querySelectorAll('.category-group');
+        allGroups.forEach(group => group.classList.remove('is-open'));
+        
+        if (groupId) {
+            const activeGroup = document.getElementById(groupId);
+            if (activeGroup) activeGroup.classList.add('is-open');
+        }
+
+        // --- B. XỬ LÝ URL (Phần mới thêm) ---
+        // Nếu addToHistory = true thì đổi URL trên thanh địa chỉ
+        if (addToHistory && urlMapping[pageId]) {
+            const newUrl = urlMapping[pageId];
+            window.history.pushState({ pageId: pageId, groupId: groupId }, "", newUrl);
+        }
+    }
+
+    // 3. XỬ LÝ KHI BẤM NÚT BACK/FORWARD TRÊN TRÌNH DUYỆT
+    window.onpopstate = function(event) {
+        if (event.state) {
+            // Khôi phục trạng thái cũ từ lịch sử
+            showPage(event.state.pageId, event.state.groupId, false);
+        } else {
+            // Nếu không có lịch sử, tự tính toán lại từ URL
+            const path = window.location.pathname;
+            const id = getIdFromUrl(path);
+            showPage(id, null, false);
+        }
+    };
+
+    // 4. TỰ ĐỘNG CHẠY KHI VỪA VÀO WEB (Xử lý F5)
+    document.addEventListener("DOMContentLoaded", () => {
+        const path = window.location.pathname;
+        const initialId = getIdFromUrl(path);
+        
+        // Logic phụ: Nếu đang vào link phim thì tự mở sidebar nhóm phim
+        let initialGroup = null;
+        if (initialId.includes('film-')) initialGroup = 'group-films'; 
+        if (initialId.includes('comm-')) initialGroup = 'group-comm';
+        if (initialId.includes('write-')) initialGroup = 'group-writing';
+        
+        // Gọi hàm hiển thị (false để không lưu lịch sử lần đầu)
+        showPage(initialId, initialGroup, false); 
+    });
+</script>
+
+<script>
+    /* --- LOGIC: EXPLOSION + DRAG & DROP --- */
+    document.addEventListener("DOMContentLoaded", () => {
+        const homeSection = document.getElementById('home');
+        const centerImage = document.querySelector('.home-center-img');
+        
+        let hasChaosStarted = false;
+
+        // Biến hỗ trợ Drag & Drop
+        let isDragging = false;
+        let currentDragItem = null;
+        let dragOffsetX = 0;
+        let dragOffsetY = 0;
+
+        const wordsList = ["one", "Buddha", "is", "not", "enough"];
+        
+        // CẤU HÌNH
+        const WORD_COUNT = 120; 
+        const MIN_SIZE = 7;     
+        const MAX_SIZE = 30;    
+
+        function randomRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // --- HÀM 1: TẠO ANIMATION LƠ LỬNG (Tách ra để dùng lại sau khi Drop) ---
+        function startFloating(element) {
+            // Hủy các animation cũ (nếu có) để tránh xung đột
+            const animations = element.getAnimations();
+            animations.forEach(anim => anim.cancel());
+
+            const floatDuration = randomRange(10000, 30000); 
+            const rotateEnd = randomRange(-90, 90); 
+
+            // Animation mới: Chỉ rung rinh nhẹ quanh vị trí hiện tại
+            element.animate([
+                { transform: `translate(-50%, -50%) rotate(0deg)` },
+                { transform: `translate(calc(-50% + ${randomRange(-50,50)}px), calc(-50% + ${randomRange(-50,50)}px)) rotate(${rotateEnd}deg)` },
+                { transform: `translate(-50%, -50%) rotate(0deg)` }
+            ], {
+                duration: floatDuration,
+                iterations: Infinity,
+                direction: 'alternate',
+                easing: 'ease-in-out'
+            });
+        }
+
+        // --- HÀM 2: TẠO HIỆU ỨNG NỔ ---
+        function createExplosion() {
+            if (!homeSection || hasChaosStarted) return;
+            hasChaosStarted = true; 
+
+            for (let i = 0; i < WORD_COUNT; i++) {
+                const span = document.createElement('span');
+                
+                span.innerText = wordsList[Math.floor(Math.random() * wordsList.length)];
+                span.className = 'chaos-word';
+                
+                // QUAN TRỌNG: Cho phép chuột tương tác để kéo thả
+                span.style.pointerEvents = 'auto'; 
+                span.style.cursor = 'grab'; // Đổi con trỏ thành bàn tay
+
+                // Random kích thước
+                const size = randomRange(MIN_SIZE, MAX_SIZE);
+                span.style.fontSize = `${size}px`;
+                span.style.opacity = randomRange(0.2, 0.8);
+                
+                // Vị trí xuất phát: Tâm ảnh
+                span.style.left = '50%';
+                span.style.top = '50%';
+                span.style.transform = 'translate(-50%, -50%)'; 
+
+                // Thời gian bay (Slow Motion: 4s - 8s)
+                const flyDuration = randomRange(4.0, 8.0); 
+
+                span.style.transition = `
+                    left ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                    top ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1),
+                    opacity ${flyDuration}s ease
+                `;
+
+                homeSection.appendChild(span);
+
+                // Kích hoạt bay ra
+                setTimeout(() => {
+                    const targetX = randomRange(-10, 110);
+                    const targetY = randomRange(-10, 110);
+
+                    span.style.left = `${targetX}%`;
+                    span.style.top = `${targetY}%`;
+                    
+                    // Sau khi bay xong thì bắt đầu lơ lửng
+                    setTimeout(() => {
+                        // Chỉ bắt đầu lơ lửng nếu người dùng KHÔNG đang kéo nó
+                        if (currentDragItem !== span) {
+                            startFloating(span);
+                        }
+                    }, flyDuration * 1000);
+
+                }, 20); 
+            }
+        }
+
+        // --- HÀM 3: XỬ LÝ KÉO THẢ (DRAG & DROP) ---
+        
+        // A. Bắt đầu kéo (Mousedown)
+        document.addEventListener('mousedown', (e) => {
+            if (e.target.classList.contains('chaos-word')) {
+                isDragging = true;
+                currentDragItem = e.target;
+                
+                // Đổi con trỏ
+                currentDragItem.style.cursor = 'grabbing';
+
+                // Tắt transition để kéo cho mượt (không bị delay bay)
+                currentDragItem.style.transition = 'none';
+
+                // Tạm dừng animation lơ lửng
+                const anims = currentDragItem.getAnimations();
+                anims.forEach(anim => anim.cancel());
+
+                // Tính toán vị trí con chuột so với góc của chữ
+                const rect = currentDragItem.getBoundingClientRect();
+                dragOffsetX = e.clientX - rect.left;
+                dragOffsetY = e.clientY - rect.top;
+                
+                e.preventDefault(); // Ngăn bôi đen text
+            }
+        });
+
+        // B. Di chuyển chuột (Mousemove) - Gắn vào document để không bị tuột
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging && currentDragItem) {
+                // Tính toạ độ mới (theo pixel)
+                // Lưu ý: rect.left/top bao gồm cả translate(-50%), nên ta cần tính toán kỹ một chút
+                // Hoặc đơn giản là set left/top theo vị trí chuột
+                
+                // Lấy container cha để tính toạ độ tương đối
+                const containerRect = homeSection.getBoundingClientRect();
+                
+                let newLeft = e.clientX - containerRect.left;
+                let newTop = e.clientY - containerRect.top;
+
+                // Gán vị trí mới (convert sang px)
+                currentDragItem.style.left = `${newLeft}px`;
+                currentDragItem.style.top = `${newTop}px`;
+            }
+        });
+
+        // C. Thả chuột (Mouseup)
+        document.addEventListener('mouseup', () => {
+            if (isDragging && currentDragItem) {
+                currentDragItem.style.cursor = 'grab';
+                
+                // Kích hoạt lại chế độ lơ lửng tại vị trí mới
+                startFloating(currentDragItem);
+
+                isDragging = false;
+                currentDragItem = null;
+            }
+        });
+
+
+        // GẮN SỰ KIỆN CLICK VÀO ẢNH
+        if (centerImage) {
+            centerImage.style.cursor = 'pointer'; 
+            centerImage.addEventListener('click', (e) => {
+                e.stopPropagation();
+                createExplosion();
+            });
+        }
+    });
+</script>
+
+                
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const resumeLink = document.getElementById('wandering-resume');
+        const aboutSection = document.getElementById('about');
+        const resumeHolder = document.getElementById('resume-holder');
+        
+        let hasStarted = false; // Kiểm tra xem đã kích hoạt bay chưa
+        let isHovering = false; 
+        let moveTimer = null;   
+        
+        // Biến đếm số lần người dùng phải rượt đuổi
+        let catchAttempt = 0; 
+        const MAX_EVASION = 3; // Số lần nó bỏ chạy trước khi chịu đứng lại
+
+        function random(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Hàm tính toán vùng an toàn (Hành lang bên phải)
+        function getNewCoordinates() {
+            const containerW = aboutSection.offsetWidth;
+            const containerH = aboutSection.offsetHeight;
+            const itemW = resumeLink.offsetWidth;
+            const itemH = resumeLink.offsetHeight;
+
+            // Vùng an toàn: Nửa bên phải màn hình
+            const safeZoneX = containerW * 0.40; 
+            const minLeft = safeZoneX;
+            const maxLeft = containerW - itemW - 20;
+
+            const minTop = 80; // Tránh tiêu đề
+            const maxTop = containerH - itemH - 20;
+
+            // Fallback nếu màn hình quá nhỏ
+            if (maxLeft < minLeft) return { left: containerW - itemW - 10, top: random(minTop, maxTop) };
+
+            return {
+                left: random(minLeft, maxLeft),
+                top: random(minTop, maxTop)
+            };
+        }
+
+        // HÀM 1: Di chuyển lơ lửng (Chậm)
+        function moveResume() {
+            if (!hasStarted) return; // Chưa bắt đầu thì không chạy
+            
+            // Nếu đang hover (đã bắt được) hoặc không ở tab About thì dừng
+            if (isHovering || !aboutSection.classList.contains('active-section')) {
+                moveTimer = setTimeout(moveResume, 1000);
+                return;
+            }
+
+            // Xóa class bỏ chạy (nếu có) để trở về bay lơ lửng
+            resumeLink.classList.remove('evading');
+
+            const coords = getNewCoordinates();
+            resumeLink.style.left = `${coords.left}px`;
+            resumeLink.style.top = `${coords.top}px`;
+
+            moveTimer = setTimeout(moveResume, 1300); // Tốc độ lơ lửng
+        }
+
+        // HÀM 2: Bỏ chạy (Nhanh)
+        function evadeMouse() {
+            // Thêm class evading để transition nhanh hơn (0.2s)
+            resumeLink.classList.add('evading');
+            
+            const coords = getNewCoordinates();
+            resumeLink.style.left = `${coords.left}px`;
+            resumeLink.style.top = `${coords.top}px`;
+
+            // Reset trạng thái hover để nó tiếp tục bay sau khi né
+            isHovering = false;
+            
+            // Sau khi né xong (0.3s) thì quay lại chế độ bay lơ lửng
+            setTimeout(() => {
+                if (!isHovering) moveResume();
+            }, 300);
+        }
+
+        // --- SỰ KIỆN TƯƠNG TÁC ---
+
+        resumeLink.addEventListener('mouseenter', () => {
+            // TRƯỜNG HỢP 1: Lần đầu tiên chạm vào -> KÍCH HOẠT GAME
+            if (!hasStarted) {
+                hasStarted = true;
+                
+                // Tính toán vị trí hiện tại so với khung cha để gán absolute không bị giật
+                const rect = resumeLink.getBoundingClientRect();
+                const parentRect = aboutSection.getBoundingClientRect();
+                
+                const startLeft = rect.left - parentRect.left;
+                const startTop = rect.top - parentRect.top;
+
+                // Chuyển sang Absolute
+                resumeLink.style.left = `${startLeft}px`;
+                resumeLink.style.top = `${startTop}px`;
+                resumeLink.classList.add('flying');
+
+                // Ngay lập tức bỏ chạy lần đầu tiên!
+                catchAttempt++;
+                evadeMouse();
+                return;
+            }
+
+            // TRƯỜNG HỢP 2: Đã bay rồi -> XỬ LÝ RƯỢT ĐUỔI
+            if (catchAttempt < MAX_EVASION) {
+                catchAttempt++;
+                // Bỏ chạy tiếp
+                evadeMouse();
+            } else {
+                // TRƯỜNG HỢP 3: Đã đuổi đủ số lần -> ĐẦU HÀNG (Đứng yên)
+                isHovering = true;
+                clearTimeout(moveTimer);
+                
+                const computedStyle = window.getComputedStyle(resumeLink);
+                resumeLink.style.transition = 'none'; // Freeze
+                resumeLink.style.left = computedStyle.left;
+                resumeLink.style.top = computedStyle.top;
+            }
+        });
+
+        resumeLink.addEventListener('mouseleave', () => {
+            // Nếu đã bắt được rồi mà thả ra thì reset lại game (hoặc cho bay tiếp tùy ý)
+            // Ở đây mình cho nó bay tiếp lơ lửng
+            if (hasStarted && isHovering) {
+                isHovering = false;
+                
+                // Trả lại transition mượt
+                resumeLink.style.transition = 'top 1.3s ease-in-out, left 1.3s ease-in-out, color 0.2s';
+                moveResume();
+                
+                // MẸO: Reset lại số lần bắt để lần sau vào lại phải đuổi tiếp?
+                // Nếu muốn khó thì uncomment dòng dưới:
+                // catchAttempt = 0; 
+            }
+        });
+    });
+</script>
+
+
+                
+<script>
+    // Hàm thiết lập ngôn ngữ
+    function setLanguage(lang) {
+        // 1. Gán class cho body (mode-en hoặc mode-vi)
+        document.body.className = 'mode-' + lang;
+
+        // 2. Đổi màu nút bấm (đậm nhạt)
+        const btnEn = document.getElementById('btn-en');
+        const btnVi = document.getElementById('btn-vi');
+
+        if (lang === 'en') {
+            btnEn.classList.add('active');
+            btnVi.classList.remove('active');
+        } else {
+            btnVi.classList.add('active');
+            btnEn.classList.remove('active');
+        }
+
+        // 3. Lưu lại lựa chọn (để F5 không bị mất)
+        localStorage.setItem('preferredLang', lang);
+    }
+
+    // Tự động chạy khi vừa vào web
+    document.addEventListener("DOMContentLoaded", () => {
+        // Kiểm tra xem trước đó khách chọn gì, nếu chưa chọn thì mặc định là 'en' (Tiếng Anh)
+        const savedLang = localStorage.getItem('preferredLang') || 'en';
+        setLanguage(savedLang);
+    });
+</script>
+
+
+                
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const musicalImage = document.getElementById('musical-image');
+        const contactAudio = document.getElementById('contact-audio');
+
+        if (musicalImage && contactAudio) {
+            musicalImage.addEventListener('click', () => {
+                // Kiểm tra: Nếu nhạc đang tắt (paused) thì bật, đang bật thì tắt
+                if (contactAudio.paused) {
+                    contactAudio.play();
+                    // (Tùy chọn) Giảm độ mờ ảnh một chút để biết nhạc đang chạy
+                    musicalImage.style.opacity = "0.7"; 
+                } else {
+                    contactAudio.pause();
+                    // Trả lại độ sáng bình thường
+                    musicalImage.style.opacity = "1";
+                }
+            });
+        }
+    });
+</script>
+
+<script src="films-data.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Tìm các khung trống
+        const containers = document.querySelectorAll('.dynamic-content');
+
+        containers.forEach(div => {
+            const id = div.getAttribute('data-id');
+            // Nếu tìm thấy dữ liệu trong file js thì điền vào
+            if (typeof filmsData !== 'undefined' && filmsData[id]) {
+                div.innerHTML = `
+                    <div class="content-vi">${filmsData[id].vi}</div>
+                    <div class="content-en">${filmsData[id].en}</div>
+                `;
+            }
+        });
+    });
+</script>
+
+<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+    // --- LOGIC LIGHTBOX ---
+    
+    // 1. Lắng nghe sự kiện click trên toàn bộ trang (Event Delegation)
+    document.addEventListener('click', function(e) {
+        // Kiểm tra xem cái được click có phải là ảnh trong gallery-wall không
+        if (e.target && e.target.closest('.gallery-wall img')) {
+            const imgSrc = e.target.src; // Lấy đường dẫn ảnh
+            openLightbox(imgSrc);
+        }
+    });
+
+    const lightbox = document.getElementById('lightbox-overlay');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    // 2. Hàm mở Lightbox
+    function openLightbox(src) {
+        lightboxImg.src = src;
+        lightbox.style.display = "flex";
+        // Ngăn cuộn chuột ở trang chính khi đang xem ảnh
+        document.body.style.overflow = "hidden"; 
+    }
+
+    // 3. Hàm đóng Lightbox
+    function closeLightbox() {
+        lightbox.style.display = "none";
+        // Cho phép cuộn trang trở lại
+        document.body.style.overflow = "auto"; 
+    }
+</script>
+
+</body>
+</html>
