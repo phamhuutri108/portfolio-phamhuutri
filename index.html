@@ -118,7 +118,7 @@
     <div class="category-group" id="group-comm">
         <h4>
             <a href="javascript:void(0)" onclick="showPage('cat-commercial', 'group-comm')" id="link-cat-commercial">
-                <span class="content-en">Commercial</span>
+                <span class="content-en">Commercials</span>
                 <span class="content-vi">Quảng cáo</span>
             </a>
         </h4>
@@ -167,6 +167,24 @@
             </li>
         </ul>
     </div>
+
+    <div class="category-group" id="group-others">
+        <h4>
+            <a href="javascript:void(0)" onclick="showPage('cat-others', 'group-others')" id="link-cat-others">
+                <span class="content-en">Others</span>
+                <span class="content-vi">Khác</span>
+            </a>
+        </h4>
+        <ul class="category-list">
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('other-music-videos', 'group-others')" id="link-other-music-videos">
+                    <span class="content-en">Music Videos</span>
+                    <span class="content-vi">Music Videos</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
 
     <div class="category-group" id="group-writing">
         <h4>
@@ -425,7 +443,7 @@
 
         <div id="cat-commercial" class="page-section">
     <h2 class="page-title">
-        <span class="content-en">Commercial</span>
+        <span class="content-en">Commercials</span>
         <span class="content-vi">Quảng cáo</span>
     </h2>
     
@@ -496,6 +514,38 @@
 
     </div>
 </div>
+
+
+    <div id="cat-others" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Other Projects</span>
+                <span class="content-vi">Các dự án khác</span>
+            </h2>
+            
+            <div class="about-text">
+                <p>
+                    <span class="content-en"> Other projects where I worked on Assistant Director.</span>
+                    <span class="content-vi">Các dự án khác nơi tôi làm với vai trò trợ lý đạo diễn.</span>
+                </p>
+            </div>
+
+            <div class="gallery-grid" style="margin-top:30px;">
+                <a href="javascript:void(0)" onclick="showPage('other-music-videos', 'group-others')" class="gallery-item">
+                    <img src="https://ik.imagekit.io/phamhuutri108/logo.png" style="object-fit: contain; background: #f0f0f0; height: 180px;" alt="Music Videos">
+                    <p style="margin-top: 5px; font-weight: bold;">
+                        <span class="content-en">Music Videos</span>
+                        <span class="content-vi">Music Videos</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div id="other-music-videos" class="page-section">
+            <h2 class="page-title">Music Videos</h2>
+            <div class="about-text dynamic-content" data-id="other-music-videos"></div>
+        </div>
+
+
 
         <div id="cat-writing" class="page-section">
             <h2 class="page-title">Writing</h2>
@@ -624,10 +674,11 @@
         'about': '/about',
         'contact': '/contact',
         'cat-short-films': '/short-films',
-        'cat-commercial': '/commercial',
+        'cat-commercial': '/commercials',
+        'cat-others': '/others',
         'cat-writing': '/writing',
         
-        // Các phim chi tiết
+        // Short films
         'film-dad-lie': '/short-film/dad-dont-lie-to-me',
         'film-karma': '/short-film/karma',
         'film-ghost': '/short-film/the-ghost-wants-to-live',
@@ -635,16 +686,19 @@
         'film-city': '/short-film/when-my-city-grows',
         'film-cocks-cooking': '/short-film/cocks-cooking',
         
-        // Các commercial
-        'comm-nhatot': '/commercial/nhatot',
-        'comm-batdongsan': '/commercial/batdongsan',
-        'comm-thegioididong': '/commercial/thegioididong',
-        'comm-fpt-iphone': '/commercial/fpt-iphone',
-        'comm-fpt-backtoschool': '/commercial/fpt-backtoschool',
-        'comm-bach-dang-cement': '/commercial/bach-dang-cement',
-        'comm-benh-vien-phuong-nam': '/commercial/benh-vien-phuong-nam',
+        // Commercials
+        'comm-nhatot': '/commercials/nhatot',
+        'comm-batdongsan': '/commercials/batdongsan',
+        'comm-thegioididong': '/commercials/thegioididong',
+        'comm-fpt-iphone': '/commercials/fptshop-iphone',
+        'comm-fpt-backtoschool': '/commercials/fpt-amd',
+        'comm-bach-dang-cement': '/commercials/bach-dang-cement',
+        'comm-benh-vien-phuong-nam': '/commercials/phuong-nam-hospital',
+
+        // Other projects
+        'other-music-videos': '/other/music-videos',
         
-        // Các mục khác (nếu có)
+        // Writing
         'write-1': '/writing/essays-cinema'
     };
 
@@ -722,6 +776,7 @@
         let initialGroup = null;
         if (initialId.includes('film-')) initialGroup = 'group-films'; 
         if (initialId.includes('comm-')) initialGroup = 'group-comm';
+        if (initialId.includes('other-')) initialGroup = 'group-others';
         if (initialId.includes('write-')) initialGroup = 'group-writing';
         
         // Gọi hàm hiển thị (false để không lưu lịch sử lần đầu)
@@ -1102,6 +1157,8 @@
 
 <script src="films-data.js"></script>
 <script src="commercial-data.js"></script>
+<script src="others-data.js"></script>
+<script src="writing-data.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         // Tìm các khung trống
@@ -1122,6 +1179,14 @@
                     <div class="content-vi">${commercialData[id].vi}</div>
                     <div class="content-en">${commercialData[id].en}</div>
                 `;
+            }
+            // others-data.js
+            else if (typeof othersData !== 'undefined' && othersData[id]) {
+                div.innerHTML = `
+                    <div class="content-vi">${othersData[id].vi}</div>
+                    <div class="content-en">${othersData[id].en}</div>
+                `;
+            
             }
         });
     });
