@@ -459,7 +459,7 @@ body.mode-vi .content-en {
 /* --- SỬA LAYOUT TRANG WRITING (SPLIT VIEW) --- */
 
 /* 1. Trang chính: Cho phép cuộn (Scroll) */
-#cat-writing {
+#cat-writing.active-section {
     display: block; /* Trở về block để các phần tử xếp dọc */
     min-height: 100vh;
     position: relative;
