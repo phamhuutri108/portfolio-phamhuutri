@@ -455,3 +455,59 @@ body.mode-vi .content-en {
         text-align: center;
     }
 }
+
+/* --- SỬA LAYOUT TRANG WRITING (SPLIT VIEW) --- */
+
+/* 1. Trang chính: Cho phép cuộn (Scroll) */
+#cat-writing {
+    display: block; /* Trở về block để các phần tử xếp dọc */
+    min-height: 100vh;
+    position: relative;
+    overflow-y: auto; /* Cho phép cuộn dọc */
+    overflow-x: hidden;
+}
+
+/* 2. Khu vực Chữ bay (Top): Cố định chiều cao */
+.writing-top-area {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Chiếm 60% màn hình, phần còn lại để hiện bài viết */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* 3. Container chữ bay: Nằm gọn trong khu vực Top */
+#writing-list-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Các tiêu đề text vẫn nổi lên trên */
+.writing-top-area .page-title,
+.writing-top-area .about-text {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    /* Có thể thêm background mờ nhẹ nếu muốn chữ dễ đọc hơn */
+}
+
+/* 4. Khu vực Đọc bài (Bottom) */
+#writing-detail-view {
+    padding: 40px 20px;
+    background: #fff;
+    position: relative;
+    z-index: 20; /* Nằm trên cùng để nền trắng che các chữ nếu có lỡ bay xuống */
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
