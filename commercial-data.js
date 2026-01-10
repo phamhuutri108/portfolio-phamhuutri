@@ -6,11 +6,11 @@ const commercialData = {
     "comm-nhatot": {
         vi: `
             <p>
-                <b>Brand:</b> <a href="https://www.nhatot.com" target="_blank" style="color: #000; transition: color 0.2s;" onmouseover="this.style.color='#0033cc'" onmouseout="this.style.color='#000'">Nhà Tốt</a><br>
-                <b>Title:</b> Nhà vừa ý, giá hợp lý!<br>
-                <b>Year:</b> 2025<br>
-                <b>Country:</b> Vietnam<br>
-                <b>Role:</b> Trợ lý Đạo diễn
+                <b>Thương hiệu:</b> <a href="https://www.nhatot.com" target="_blank">Nhà Tốt</a><br>
+                <b>Tiêu đề:</b> Nhà vừa ý, giá hợp lý!<br>
+                <b>Năm:</b> 2025<br>
+                <b>Quốc gia:</b> Vietnam<br>
+                <b>Vai trò:</b> Trợ lý Đạo diễn
             </p>
 
             <div style="text-align: left; margin: 30px 0;">
