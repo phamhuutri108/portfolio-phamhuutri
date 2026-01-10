@@ -298,7 +298,7 @@ const filmsData = {
                 <b>Thể loại:</b> Phim tài liệu ngắn / Tương tác<br>
                 <b>Năm:</b> 2022<br>
                 <b>Thời lượng:</b> 22:02<br>
-                <b>Giải thưởng:</b><br>
+                <b>Giải thưởng & Quỹ:</b><br>
                 Giải ba, Liên hoan phim ngắn TP. HCM (2023)<br>
                 Quỹ Sáng Tạo Trẻ, Hội Điện Ảnh TP. HCM (2022)
             </p>
@@ -492,8 +492,7 @@ const filmsData = {
                 <b>Thể loại:</b> Phim ngắn / Tâm lý<br>
                 <b>Năm:</b> 2020<br>
                 <b>Thời lượng:</b> 19:23<br>
-                <b>Giải thưởng:</b><br>
-                Best Short Film, The Original Project, Hanoi (2022)
+                <b>Giải thưởng:</b> Best Short Film, The Original Project, Hanoi (2022)
             </p>
 
             <div style="text-align: left; margin: 20px 0;">
@@ -527,8 +526,7 @@ const filmsData = {
                 <b>Genre:</b> Short fiction / Drama<br>
                 <b>Year:</b> 2020<br>
                 <b>Duration:</b> 19:23<br>
-                <b>Award:</b><br>
-                Best Short Film, The Original Project, Hanoi (2022)
+                <b>Award:</b> Best Short Film, The Original Project, Hanoi (2022)
             </p>
 
             <div style="text-align: left; margin: 20px 0;">
@@ -566,8 +564,7 @@ const filmsData = {
                 <b>Thể loại:</b> Phim tài liệu ngắn<br>
                 <b>Năm:</b> 2020<br>
                 <b>Thời lượng:</b> 02:55<br>
-                <b>Giải thưởng:</b><br>
-                Giải nhì, Le Filmmaking Camp, Quảng Trị
+                <b>Giải thưởng:</b> Giải nhì, Le Filmmaking Camp, Quảng Trị
             </p>
 
             <div style="text-align: left; margin: 20px 0;">
@@ -597,8 +594,7 @@ const filmsData = {
                 <b>Genre:</b> Documentary short<br>
                 <b>Year:</b> 2020<br>
                 <b>Duration:</b> 02:55<br>
-                <b>Award:</b><br>
-                Second Prize, Le Filmmaking Camp, Quang Tri
+                <b>Award:</b> Second Prize, Le Filmmaking Camp, Quang Tri
             </p>
 
             <div style="text-align: left; margin: 20px 0;">
