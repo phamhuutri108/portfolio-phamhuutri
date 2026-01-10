@@ -602,35 +602,44 @@
 
 
         <div id="cat-writing" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Writing</span>
-                <span class="content-vi">Viết</span>
-            </h2>
-            
-            <div class="about-text">
-                <p>
-                    <span class="content-en">Essays, notes, and stream of consciousness on cinema and life.</span>
-                    <span class="content-vi">Tiểu luận, ghi chép và những dòng suy tưởng về điện ảnh và cuộc sống.</span>
-                </p>
-            </div>
+    <div class="writing-top-area">
+        <h2 class="page-title">
+            <span class="content-en">Writing</span>
+            <span class="content-vi">Viết</span>
+        </h2>
+        
 
-            <div id="writing-list-container">
-                </div>
+        <div id="writing-list-container"></div>
+    </div>
+
+    <div id="writing-detail-view" style="display: none;">
+        <div style="margin-bottom: 20px;">
+            <a href="javascript:void(0)" onclick="closeWritingDetail()" 
+               style="font-size: 26px; text-decoration: none; color: #999; transition: all 0.2s; display: inline-block;"
+               onmouseover="this.style.color='#0033cc'; this.style.transform='translateX(-5px)'"
+               onmouseout="this.style.color='#999'; this.style.transform='translateX(0)'"
+               title="Back / Quay lại">
+                &larr;
+            </a>
         </div>
+        
+        <h2 class="page-title" id="detail-title" style="text-align: left;"></h2>
+        
+        <p style="font-size:13px; color:#666; margin-bottom:30px; font-style: italic; text-align: left;" id="detail-meta"></p>
 
-        <div id="writing-detail-view" class="page-section">
-            <div style="margin-bottom: 20px;">
-                <a href="javascript:void(0)" onclick="showPage('cat-writing', 'group-writing')" style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">
-                    &larr; <span class="content-en">Back to List</span><span class="content-vi">Quay lại danh sách</span>
-                </a>
-            </div>
-            
-            <h2 class="page-title" id="detail-title"></h2>
-            
-            <p style="font-family:'Courier New'; font-size:12px; color:#888; margin-bottom:30px;" id="detail-meta"></p>
+        <div class="essay-content" id="detail-content" style="max-width: 100%; text-align: justify;"></div>
+        
+        <div style="height: 100px;"></div>
+    </div>
+</div>
 
-            <div class="essay-content" id="detail-content"></div>
-        </div>
+
+
+
+
+
+
+        
 
 
 
@@ -1549,27 +1558,48 @@
         });
     }
 
+    // --- HÀM MỞ BÀI VIẾT (KHÔNG DỪNG ANIMATION) ---
     function openWritingDetail(id) {
         const post = writingData.find(item => item.id === id);
         if (!post) return;
 
+        // 1. Điền dữ liệu
         const titleEl = document.getElementById('detail-title');
         const metaEl = document.getElementById('detail-meta');
         const contentEl = document.getElementById('detail-content');
+        const viewEl = document.getElementById('writing-detail-view');
 
         if (titleEl) titleEl.innerHTML = `<span class="content-vi">${post.title.vi}</span><span class="content-en">${post.title.en}</span>`;
-        if (metaEl) metaEl.innerText = `${post.location} | ${post.date}`;
+        if (metaEl) metaEl.innerText = `${post.location}, ${post.date}`;
         if (contentEl) contentEl.innerHTML = `<div class="content-vi">${post.content.vi}</div><div class="content-en">${post.content.en}</div>`;
 
-        showPage('writing-detail-view', 'group-writing');
-        
-        // Tạm dừng animation khi xem chi tiết
-        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        // 2. Hiện khung bài viết lên
+        if (viewEl) {
+            viewEl.style.display = 'block';
+            
+            // 3. Cuộn trang xuống để người dùng thấy bài viết
+            // Dùng setTimeout nhỏ để đảm bảo giao diện đã render xong
+            setTimeout(() => {
+                viewEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
 
-        const allLinks = document.querySelectorAll('a');
-        allLinks.forEach(link => link.classList.remove('active-link'));
-        const activeLink = document.getElementById('link-' + id);
-        if (activeLink) activeLink.classList.add('active-link');
+        // --- QUAN TRỌNG: KHÔNG GỌI cancelAnimationFrame ĐỂ CHỮ VẪN BAY ---
+        
+        // 4. Update URL (nếu muốn) nhưng không đổi trang
+        // window.history.pushState(..., ..., urlMapping[id]); 
+    }
+
+    // --- HÀM ĐÓNG BÀI VIẾT ---
+    function closeWritingDetail() {
+        const viewEl = document.getElementById('writing-detail-view');
+        if (viewEl) {
+            viewEl.style.display = 'none';
+            
+            // Cuộn lại lên đầu trang
+            const topArea = document.querySelector('.writing-top-area');
+            if (topArea) topArea.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 
     // Bắt sự kiện Resize để không bị lỗi văng ra ngoài
