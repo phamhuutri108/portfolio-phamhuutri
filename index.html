@@ -218,14 +218,9 @@
                 <span class="content-vi">Viết</span>
             </a>
         </h4>
-        <ul class="category-list">
-            <li>
-                <a href="javascript:void(0)" onclick="showPage('write-1', 'group-writing')" id="link-write-1">
-                    <span class="content-en">Essays on Cinema</span>
-                    <span class="content-vi">Tiểu luận điện ảnh</span>
-                </a>
-            </li>
-        </ul>
+        
+        <ul class="category-list" id="sidebar-writing-list">
+            </ul>
     </div>
 
 </div>
@@ -601,10 +596,47 @@
 
 
 
+
+
+
+
+
         <div id="cat-writing" class="page-section">
-            <h2 class="page-title">Writing</h2>
-            <p>Các bài viết...</p>
+            <h2 class="page-title">
+                <span class="content-en">Writing</span>
+                <span class="content-vi">Viết</span>
+            </h2>
+            
+            <div class="about-text">
+                <p>
+                    <span class="content-en">Essays, notes, and stream of consciousness on cinema and life.</span>
+                    <span class="content-vi">Tiểu luận, ghi chép và những dòng suy tưởng về điện ảnh và cuộc sống.</span>
+                </p>
+            </div>
+
+            <div id="writing-list-container">
+                </div>
         </div>
+
+        <div id="writing-detail-view" class="page-section">
+            <div style="margin-bottom: 20px;">
+                <a href="javascript:void(0)" onclick="showPage('cat-writing', 'group-writing')" style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">
+                    &larr; <span class="content-en">Back to List</span><span class="content-vi">Quay lại danh sách</span>
+                </a>
+            </div>
+            
+            <h2 class="page-title" id="detail-title"></h2>
+            
+            <p style="font-family:'Courier New'; font-size:12px; color:#888; margin-bottom:30px;" id="detail-meta"></p>
+
+            <div class="essay-content" id="detail-content"></div>
+        </div>
+
+
+
+
+
+
 
         <div id="film-dad-lie" class="page-section">
     <h2 class="page-title">
@@ -819,7 +851,7 @@
     // 2. HÀM CHÍNH: SHOW PAGE (Đã nâng cấp)
     function showPage(pageId, groupId = null, addToHistory = true) {
         
-        // --- A. XỬ LÝ GIAO DIỆN (Giống code cũ) ---
+        // --- A. XỬ LÝ GIAO DIỆN ---
         
         // 1. Ẩn hiện nội dung chính
         const sections = document.querySelectorAll('.page-section');
@@ -828,17 +860,17 @@
         const activeSection = document.getElementById(pageId);
         if (activeSection) {
             activeSection.classList.add('active-section');
-            window.scrollTo(0, 0); // Cuộn lên đầu trang
+            window.scrollTo(0, 0); 
         }
 
-        // 2. Tô màu menu (Active Link)
+        // 2. Tô màu menu
         const allLinks = document.querySelectorAll('a');
         allLinks.forEach(link => link.classList.remove('active-link'));
         
         const activeLink = document.getElementById('link-' + pageId);
         if (activeLink) activeLink.classList.add('active-link');
 
-        // 3. Xử lý đóng/mở Sidebar
+        // 3. Sidebar toggle
         const allGroups = document.querySelectorAll('.category-group');
         allGroups.forEach(group => group.classList.remove('is-open'));
         
@@ -847,11 +879,19 @@
             if (activeGroup) activeGroup.classList.add('is-open');
         }
 
-        // --- B. XỬ LÝ URL (Phần mới thêm) ---
-        // Nếu addToHistory = true thì đổi URL trên thanh địa chỉ
+        // --- B. XỬ LÝ URL ---
         if (addToHistory && urlMapping[pageId]) {
             const newUrl = urlMapping[pageId];
             window.history.pushState({ pageId: pageId, groupId: groupId }, "", newUrl);
+        }
+
+        // --- C. (MỚI) KHỞI ĐỘNG LẠI CHUYỂN ĐỘNG NẾU VÀO TRANG WRITING ---
+        // Kiểm tra: Nếu trang vừa mở là 'cat-writing', hãy chạy lại hàm render
+        if (pageId === 'cat-writing' && typeof renderWritingList === 'function') {
+            // setTimeout nhỏ để đảm bảo div đã hiện ra (block) rồi mới tính toán kích thước
+            setTimeout(() => {
+                renderWritingList(); 
+            }, 10);
         }
     }
 
@@ -1327,6 +1367,221 @@
         // Cho phép cuộn trang trở lại
         document.body.style.overflow = "auto"; 
     }
+</script>
+
+
+<script>
+    /* --- HỆ THỐNG VẬT LÝ: FIX LỖI TỤM GÓC --- */
+
+    let animationFrameId; 
+    const physicsItems = []; 
+
+    function renderWritingList() {
+        const container = document.getElementById('writing-list-container');
+        if (!container || typeof writingData === 'undefined') return;
+
+        // 1. Reset
+        container.innerHTML = '';
+        physicsItems.length = 0; 
+        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+
+        // --- FIX QUAN TRỌNG: TÍNH TOÁN KÍCH THƯỚC AN TOÀN ---
+        // Nếu container đang ẩn (offsetWidth = 0), ta dùng tạm kích thước màn hình
+        // Trừ đi 300px (chiều rộng sidebar) để không bị tràn
+        const safeWidth = container.offsetWidth > 0 ? container.offsetWidth : (window.innerWidth - 300);
+        const safeHeight = container.offsetHeight > 0 ? container.offsetHeight : window.innerHeight;
+
+        // 2. Tạo phần tử
+        writingData.forEach((item, index) => {
+            const el = document.createElement('div');
+            el.className = 'writing-scatter-item';
+            
+            el.innerHTML = `
+                <span class="content-vi">${item.title.vi}</span>
+                <span class="content-en">${item.title.en}</span>
+            `;
+            
+            el.onclick = () => openWritingDetail(item.id);
+
+            // Style
+            const fontSize = Math.floor(Math.random() * 2) + 12; // 12px - 13px
+            el.style.fontSize = fontSize + 'px';
+            el.style.position = 'absolute';
+            el.style.whiteSpace = 'nowrap';
+            el.style.userSelect = 'none';
+            el.style.cursor = 'pointer';
+            el.style.opacity = Math.max(0.6, 1 - (index * 0.03));
+
+            container.appendChild(el);
+
+            // --- KHỞI TẠO VỊ TRÍ (DÙNG KÍCH THƯỚC AN TOÀN) ---
+            const startX = Math.random() * (safeWidth - 100); 
+            const startY = Math.random() * (safeHeight - 50);
+
+            // Random vận tốc
+            const vx = (Math.random() - 0.5) * 0.4; 
+            const vy = (Math.random() - 0.5) * 0.4;
+
+            physicsItems.push({
+                el: el,
+                x: startX,
+                y: startY,
+                vx: vx,
+                vy: vy,
+                width: 0, 
+                height: 0
+            });
+        });
+
+        // Đo kích thước thật ngay sau khi append
+        physicsItems.forEach(item => {
+            item.width = item.el.offsetWidth;
+            item.height = item.el.offsetHeight;
+        });
+
+        runPhysicsLoop(container);
+    }
+
+    function runPhysicsLoop(container) {
+        function update() {
+            // Cập nhật lại kích thước khung chứa liên tục (đề phòng resize)
+            // Nếu đang ẩn thì vẫn giữ logic cũ, nếu hiện thì lấy kích thước thật
+            const containerW = container.offsetWidth > 0 ? container.offsetWidth : window.innerWidth;
+            const containerH = container.offsetHeight > 0 ? container.offsetHeight : window.innerHeight;
+
+            physicsItems.forEach((itemA, i) => {
+                // A. Di chuyển
+                itemA.x += itemA.vx;
+                itemA.y += itemA.vy;
+
+                // B. Va chạm tường (Wall Bounce)
+                if (itemA.x <= 0) {
+                    itemA.x = 0;
+                    itemA.vx *= -1;
+                } else if (itemA.x + itemA.width >= containerW) {
+                    itemA.x = containerW - itemA.width;
+                    itemA.vx *= -1;
+                }
+
+                if (itemA.y <= 0) {
+                    itemA.y = 0;
+                    itemA.vy *= -1;
+                } else if (itemA.y + itemA.height >= containerH) {
+                    itemA.y = containerH - itemA.height;
+                    itemA.vy *= -1;
+                }
+
+                // C. Va chạm với nhau (Object Collision)
+                for (let j = i + 1; j < physicsItems.length; j++) {
+                    const itemB = physicsItems[j];
+
+                    if (isOverlapping(itemA, itemB)) {
+                        // Tính toán vector đẩy
+                        let dx = (itemA.x + itemA.width/2) - (itemB.x + itemB.width/2);
+                        let dy = (itemA.y + itemA.height/2) - (itemB.y + itemB.height/2);
+
+                        if (dx === 0) dx = Math.random() - 0.5;
+                        if (dy === 0) dy = Math.random() - 0.5;
+
+                        const distance = Math.sqrt(dx*dx + dy*dy);
+                        const unitX = dx / distance;
+                        const unitY = dy / distance;
+
+                        const pushForce = 0.2; 
+
+                        // Đẩy vận tốc
+                        itemA.vx += unitX * pushForce;
+                        itemA.vy += unitY * pushForce;
+                        itemB.vx -= unitX * pushForce;
+                        itemB.vy -= unitY * pushForce;
+                        
+                        // Tách vị trí ngay lập tức (quan trọng để không bị dính)
+                        const separateSpeed = 1; // Tăng lên một chút để tách nhanh hơn
+                        itemA.x += unitX * separateSpeed;
+                        itemA.y += unitY * separateSpeed;
+                        itemB.x -= unitX * separateSpeed;
+                        itemB.y -= unitY * separateSpeed;
+                    }
+                }
+
+                // D. Giới hạn tốc độ (Friction)
+                const maxSpeed = 0.8; // Tăng nhẹ max speed để chúng nó linh hoạt hơn
+                if (itemA.vx > maxSpeed) itemA.vx = maxSpeed;
+                if (itemA.vx < -maxSpeed) itemA.vx = -maxSpeed;
+                if (itemA.vy > maxSpeed) itemA.vy = maxSpeed;
+                if (itemA.vy < -maxSpeed) itemA.vy = -maxSpeed;
+
+                // E. Render
+                itemA.el.style.left = itemA.x + 'px';
+                itemA.el.style.top = itemA.y + 'px';
+            });
+
+            animationFrameId = requestAnimationFrame(update);
+        }
+        update();
+    }
+
+    // Hàm kiểm tra va chạm (+ padding 15px cho thoáng)
+    function isOverlapping(a, b) {
+        const padding = 15; 
+        return (
+            a.x < b.x + b.width + padding &&
+            a.x + a.width + padding > b.x &&
+            a.y < b.y + b.height + padding &&
+            a.y + a.height + padding > b.y
+        );
+    }
+
+    /* --- CÁC HÀM PHỤ TRỢ --- */
+    function renderWritingSidebar() {
+        const sidebarList = document.getElementById('sidebar-writing-list');
+        if (!sidebarList || typeof writingData === 'undefined') return;
+        sidebarList.innerHTML = ''; 
+        writingData.forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <a href="javascript:void(0)" onclick="openWritingDetail('${item.id}')" id="link-${item.id}">
+                    <span class="content-vi">${item.title.vi}</span>
+                    <span class="content-en">${item.title.en}</span>
+                </a>
+            `;
+            sidebarList.appendChild(li);
+        });
+    }
+
+    function openWritingDetail(id) {
+        const post = writingData.find(item => item.id === id);
+        if (!post) return;
+
+        const titleEl = document.getElementById('detail-title');
+        const metaEl = document.getElementById('detail-meta');
+        const contentEl = document.getElementById('detail-content');
+
+        if (titleEl) titleEl.innerHTML = `<span class="content-vi">${post.title.vi}</span><span class="content-en">${post.title.en}</span>`;
+        if (metaEl) metaEl.innerText = `${post.location} | ${post.date}`;
+        if (contentEl) contentEl.innerHTML = `<div class="content-vi">${post.content.vi}</div><div class="content-en">${post.content.en}</div>`;
+
+        showPage('writing-detail-view', 'group-writing');
+        
+        // Tạm dừng animation khi xem chi tiết
+        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+
+        const allLinks = document.querySelectorAll('a');
+        allLinks.forEach(link => link.classList.remove('active-link'));
+        const activeLink = document.getElementById('link-' + id);
+        if (activeLink) activeLink.classList.add('active-link');
+    }
+
+    // Bắt sự kiện Resize để không bị lỗi văng ra ngoài
+    window.addEventListener('resize', () => {
+        const container = document.getElementById('writing-list-container');
+        // Reset lại nếu cần thiết, hoặc để physics tự xử lý
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        renderWritingList();   
+        renderWritingSidebar(); 
+    });
 </script>
 
 </body>
