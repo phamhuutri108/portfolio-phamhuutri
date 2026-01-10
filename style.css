@@ -13,7 +13,7 @@ a { text-decoration: none; color: #000; transition: all 0.2s; }
 a:hover { color: #666; text-decoration: none; } /* Bỏ gạch chân khi hover cho sạch */
 
 /* Brand link styling */
-a.brand-link {color: #111;}
+a.brand-link {color: #111; transition: all 0.2s;}
 a:hover {color: #0033cc !important;}
 
 
