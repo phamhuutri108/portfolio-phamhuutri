@@ -75,7 +75,7 @@ const filmsData = {
         `,
         en: `
             <p>
-                <b>Genre:</b> Fiction short / Drama, Observation<br>
+                <b>Genre:</b> Short fiction / Drama, Observation<br>
                 <b>Year:</b> Coming-soon 2026
             </p>
 
@@ -147,7 +147,7 @@ const filmsData = {
     "film-karma": {
         vi: `
             <p>
-                <b>Thể loại:</b> Fiction short / Drama<br>
+                <b>Thể loại:</b> Short fiction / Drama<br>
                 <b>Năm:</b> 2024<br>
                 <b>Thời lượng:</b> 28:20<br>
                 <b>Giải thưởng:</b><br>
@@ -219,7 +219,7 @@ const filmsData = {
         `,
         en: `
             <p>
-                <b>Genre:</b> Fiction short / Drama<br>
+                <b>Genre:</b> Short fiction / Drama<br>
                 <b>Year:</b> 2024
                 <b>Duration:</b> 28:20<br>
                 <b>Awards:</b><br>
@@ -431,7 +431,7 @@ const filmsData = {
     "film-cocks-cooking": {
         vi: `
             <p>
-                <b>Thể loại:</b> Fiction short / Drama<br>
+                <b>Thể loại:</b> Short fiction / Drama<br>
                 <b>Năm:</b> 2023<br>
                 <b>Thời lượng:</b> 06:45
             </p>
@@ -458,7 +458,7 @@ const filmsData = {
         `,
         en: `
             <p>
-                <b>Genre:</b> Fiction short / Drama<br>
+                <b>Genre:</b> Short fiction / Drama<br>
                 <b>Year:</b> 2023<br>
                 <b>Duration:</b> 06:45
             </p>
@@ -489,7 +489,7 @@ const filmsData = {
     "film-alive": {
         vi: `
             <p>
-                <b>Thể loại:</b> Fiction short / Drama<br>
+                <b>Thể loại:</b> Short fiction / Drama<br>
                 <b>Năm:</b> 2020<br>
                 <b>Thời lượng:</b> 19:23<br>
                 <b>Giải thưởng:</b><br>
@@ -524,7 +524,7 @@ const filmsData = {
         `,
         en: `
             <p>
-                <b>Genre:</b> Fiction short / Drama<br>
+                <b>Genre:</b> Short fiction / Drama<br>
                 <b>Year:</b> 2020<br>
                 <b>Duration:</b> 19:23<br>
                 <b>Award:</b><br>
