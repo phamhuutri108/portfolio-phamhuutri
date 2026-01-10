@@ -56,16 +56,16 @@ const commercialData = {
     "comm-batdongsan": {
         vi: `
             <p>
-                <b>Brand:</b> Batdongsan.com.vn<br>
-                <b>Title:</b> Nhà thật Sài Gòn, có sao nói vậy!<br>
-                <b>Year:</b> 2024<br>
-                <b>Country:</b> Vietnam<br>
-                <b>Role:</b> Director's Assistant
+                <b>Thương hiệu:</b> <a href="https://batdongsan.com.vn" target="_blank">Batdongsan.com.vn</a><br>
+                <b>Tiêu đề:</b> Nhà thật Sài Gòn, có sao nói vậy!<br>
+                <b>Năm:</b> 2025<br>
+                <b>Quốc gia:</b> Việt Nam<br>
+                <b>Vai trò:</b> Trợ lý Đạo diễn
             </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/" 
+                    src="https://www.youtube.com/embed/8nsNFWFw2tw" 
                     title="Batdongsan.com.vn" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -74,21 +74,21 @@ const commercialData = {
 
             <h3>Mô tả vai trò</h3>
             <p>
-                Trợ lý cá nhân cho Đạo diễn, hỗ trợ phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án.
+                Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.
             </p>
         `,
         en: `
             <p>
-                <b>Brand:</b> Batdongsan.com.vn<br>
+                <b>Brand:</b> <a href="https://batdongsan.com.vn" target="_blank">Batdongsan.com.vn</a><br>
                 <b>Title:</b> Real Estate Saigon, Why Not!<br>
-                <b>Year:</b> 2024<br>
+                <b>Year:</b> 2025<br>
                 <b>Country:</b> Vietnam<br>
                 <b>Role:</b> Director's Assistant
             </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/" 
+                    src="https://www.youtube.com/embed/8nsNFWFw2tw" 
                     title="Batdongsan.com.vn" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -97,7 +97,7 @@ const commercialData = {
 
             <h3>Role Description</h3>
             <p>
-                Personal Assistant to the Director, supporting the development of ideas and preparation of creative content for the project.
+                Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision.
             </p>
         `
     },
@@ -106,16 +106,16 @@ const commercialData = {
     "comm-thegioididong": {
         vi: `
             <p>
-                <b>Brand:</b> Thế Giới Di Động<br>
-                <b>Title:</b> Có Camera Tiện Lắm! An Toàn Lắm!<br>
-                <b>Year:</b> 2024<br>
-                <b>Country:</b> Vietnam<br>
-                <b>Role:</b> Director's Assistant
+                <b>Thương hiệu:</b> <a href="https://www.thegioididong.com" target="_blank">Thế Giới Di Động</a><br>
+                <b>Tiêu đề:</b> Có Camera Tiện Lắm! An Toàn Lắm!<br>
+                <b>Năm:</b> 2025<br>
+                <b>Quốc gia:</b> Việt Nam<br>
+                <b>Vai trò:</b> Trợ lý Đạo diễn #1
             </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/" 
+                    src="https://www.youtube.com/embed/uyr9QphU2ew" 
                     title="Thế Giới Di Động" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -124,21 +124,21 @@ const commercialData = {
 
             <h3>Mô tả vai trò</h3>
             <p>
-                Trợ lý cá nhân cho Đạo diễn, hỗ trợ phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án.
+                Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.
             </p>
         `,
         en: `
             <p>
-                <b>Brand:</b> Thế Giới Di Động<br>
+                <b>Brand:</b> <a href="https://www.thegioididong.com" target="_blank">Thế Giới Di Động</a><br>
                 <b>Title:</b> Has Camera So Convenient! So Safe!<br>
-                <b>Year:</b> 2024<br>
+                <b>Year:</b> 2025<br>
                 <b>Country:</b> Vietnam<br>
-                <b>Role:</b> Director's Assistant
+                <b>Role:</b> First Assistant Director
             </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/" 
+                    src="https://www.youtube.com/embed/uyr9QphU2ew" 
                     title="Thế Giới Di Động" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -147,7 +147,7 @@ const commercialData = {
 
             <h3>Role Description</h3>
             <p>
-                Personal Assistant to the Director, supporting the development of ideas and preparation of creative content for the project.
+                Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress.
             </p>
         `
     },
@@ -156,16 +156,16 @@ const commercialData = {
     "comm-fpt-iphone": {
         vi: `
             <p>
-                <b>Brand:</b> FPT Shop x iPhone 16<br>
-                <b>Title:</b> iPhone Mới Đã Tới<br>
-                <b>Year:</b> 2024<br>
-                <b>Country:</b> Vietnam<br>
-                <b>Role:</b> 1st Assistant Director
+                <b>Thương hiệu:</b> <a href="https://fptshop.com.vn" target="_blank">FPT Shop</a> x iPhone 16<br>
+                <b>Tiêu đề:</b> iPhone Mới Đã Tới<br>
+                <b>Năm:</b> 2024<br>
+                <b>Quốc gia:</b> Việt Nam<br>
+                <b>Vai trò:</b> Trợ lý Đạo diễn #1
             </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/" 
+                    src="https://www.youtube.com/embed/rUdTgMijico" 
                     title="FPT Shop iPhone 16" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -174,21 +174,21 @@ const commercialData = {
 
             <h3>Mô tả vai trò</h3>
             <p>
-                Trợ lý đạo diễn #1, sắp xếp lịch quay và tổ chức các hoạt động sản xuất trên phim trường.
+                Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.
             </p>
         `,
         en: `
             <p>
-                <b>Brand:</b> FPT Shop x iPhone 16<br>
+                <b>Brand:</b> <a href="https://fptshop.com.vn" target="_blank">FPT Shop</a> x iPhone 16<br>
                 <b>Title:</b> New iPhone Has Arrived<br>
                 <b>Year:</b> 2024<br>
                 <b>Country:</b> Vietnam<br>
-                <b>Role:</b> 1st Assistant Director
+                <b>Role:</b> First Assistant Director
             </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/" 
+                    src="https://www.youtube.com/embed/rUdTgMijico" 
                     title="FPT Shop iPhone 16" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -197,25 +197,25 @@ const commercialData = {
 
             <h3>Role Description</h3>
             <p>
-                1st Assistant Director, scheduling shoots and organizing production activities on set.
+                Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress.
             </p>
         `
     },
 
-    // 5. FPT SHOP X ADM - BACK TO SCHOOL
+    // 5. FPT SHOP X AMD - BACK TO SCHOOL
     "comm-fpt-backtoschool": {
         vi: `
             <p>
-                <b>Brand:</b> FPT Shop x ADM<br>
-                <b>Title:</b> Back To School<br>
-                <b>Year:</b> 2024<br>
-                <b>Country:</b> Vietnam<br>
-                <b>Role:</b> 1st Assistant Director
+                <b>Thương hiệu:</b> <a href="https://fptshop.com.vn" target="_blank">FPT Shop</a> x <a href="https://www.amd.com/en.html" target="_blank">AMD</a><br>
+                <b>Tiêu đề:</b> Back To School<br>
+                <b>Năm:</b> 2024<br>
+                <b>Quốc gia:</b> Việt Nam<br>
+                <b>Vai trò:</b> Trợ lý Đạo diễn #1
             </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/" 
+                    src="https://www.youtube.com/embed/DJTxFQLngDA" 
                     title="FPT Shop Back To School" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -224,12 +224,12 @@ const commercialData = {
 
             <h3>Mô tả vai trò</h3>
             <p>
-                Trợ lý đạo diễn #1, sắp xếp lịch quay và tổ chức các hoạt động sản xuất trên phim trường.
+                Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.
             </p>
         `,
         en: `
             <p>
-                <b>Brand:</b> FPT Shop x ADM<br>
+                <b>Brand:</b> <a href="https://fptshop.com.vn" target="_blank">FPT Shop</a> x ADM<br>
                 <b>Title:</b> Back To School<br>
                 <b>Year:</b> 2024<br>
                 <b>Country:</b> Vietnam<br>
@@ -238,7 +238,7 @@ const commercialData = {
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
-                    src="https://www.youtube.com/embed/" 
+                    src="https://www.youtube.com/embed/DJTxFQLngDA" 
                     title="FPT Shop Back To School" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -247,7 +247,7 @@ const commercialData = {
 
             <h3>Role Description</h3>
             <p>
-                1st Assistant Director, scheduling shoots and organizing production activities on set.
+                Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress.
             </p>
         `
     },
