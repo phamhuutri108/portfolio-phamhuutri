@@ -1055,10 +1055,13 @@
         physicsItems.length = 0; 
         if (animationFrameId) cancelAnimationFrame(animationFrameId);
 
+        
         // --- FIX QUAN TRỌNG: TÍNH TOÁN KÍCH THƯỚC AN TOÀN ---
-        // Nếu container đang ẩn (offsetWidth = 0), ta dùng tạm kích thước màn hình
-        // Trừ đi 300px (chiều rộng sidebar) để không bị tràn
-        const safeWidth = container.offsetWidth > 0 ? container.offsetWidth : (window.innerWidth - 300);
+        // Nếu màn hình nhỏ (mobile), ta không trừ 300px sidebar nữa vì sidebar đã biến mất/chuyển lên trên
+        const isMobile = window.innerWidth < 768;
+        const sidebarWidth = isMobile ? 20 : 300; // Mobile trừ ít thôi (padding), Desktop trừ sidebar
+
+        const safeWidth = container.offsetWidth > 0 ? container.offsetWidth : (window.innerWidth - sidebarWidth);
         const safeHeight = container.offsetHeight > 0 ? container.offsetHeight : window.innerHeight;
 
         // 2. Tạo phần tử
