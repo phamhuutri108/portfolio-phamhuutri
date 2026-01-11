@@ -608,27 +608,32 @@
 </script>
 
 <script>
-    /* --- LOGIC: EXPLOSION + DRAG & DROP (HỖ TRỢ CẢ MOBILE & DESKTOP) --- */
+    /* --- LOGIC: EXPLOSION + MUSIC + RESET + REALTIME LANG --- */
     document.addEventListener("DOMContentLoaded", () => {
         const homeSection = document.getElementById('home');
         const centerImage = document.querySelector('.home-center-img');
         
-        let hasChaosStarted = false;
+        // --- 1. CẤU HÌNH NHẠC (THAY LINK NHẠC CỦA BẠN VÀO ĐÂY) ---
+        const bgMusic = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'); 
+        bgMusic.loop = true; 
+        bgMusic.volume = 0.5;
 
-        // Biến hỗ trợ Drag & Drop
+        // Biến trạng thái
+        let hasChaosStarted = false;
+        let resetTimer = null; 
+
+        // Biến Drag & Drop
         let isDragging = false;
         let currentDragItem = null;
         let dragOffsetX = 0;
         let dragOffsetY = 0;
 
-        // KHAI BÁO 2 DANH SÁCH TỪ
+        // KHAI BÁO TỪ NGỮ
         const wordsListEn = ["one", "Buddha", "is", "not", "enough"];
-        const wordsListVi = ["một", "ông", "Bụt", "là", "không", "đủ"];
-        
-        // CẤU HÌNH
-        // Trên mobile giảm số lượng chữ một chút cho đỡ rối
+        const wordsListVi = ["một", "ông Bụt", "là", "không", "đủ"];
+
         const isMobile = window.innerWidth < 768;
-        const WORD_COUNT = isMobile ? 60 : 120; 
+        const WORD_COUNT = isMobile ? 50 : 120; 
         const MIN_SIZE = 7;      
         const MAX_SIZE = 30;     
 
@@ -636,7 +641,7 @@
             return Math.random() * (max - min) + min;
         }
 
-        // --- HÀM 1: TẠO ANIMATION LƠ LỬNG ---
+        // --- HÀM 1: LƠ LỬNG ---
         function startFloating(element) {
             const animations = element.getAnimations();
             animations.forEach(anim => anim.cancel());
@@ -656,29 +661,27 @@
             });
         }
 
-        // --- HÀM 2: TẠO HIỆU ỨNG NỔ ---
+        // --- HÀM 2: NỔ CHỮ + BẬT NHẠC ---
         function createExplosion() {
-            if (!homeSection || hasChaosStarted) return;
             hasChaosStarted = true; 
+            if (resetTimer) clearTimeout(resetTimer);
+
+            // BẬT NHẠC
+            bgMusic.play().catch(e => console.log("Cần tương tác để phát nhạc:", e));
+
+            const isVietnamese = document.body.classList.contains('mode-vi');
+            const currentList = isVietnamese ? wordsListVi : wordsListEn;
 
             for (let i = 0; i < WORD_COUNT; i++) {
                 const span = document.createElement('span');
-                
-                // Kiểm tra xem web đang là Tiếng Việt hay Anh
-                const isVietnamese = document.body.classList.contains('mode-vi');
-                const currentList = isVietnamese ? wordsListVi : wordsListEn;
-
-                // Lấy từ trong danh sách tương ứng
                 span.innerText = currentList[Math.floor(Math.random() * currentList.length)];
                 span.className = 'chaos-word';
-                
                 span.style.pointerEvents = 'auto'; 
                 span.style.cursor = 'grab';
 
                 const size = randomRange(MIN_SIZE, MAX_SIZE);
                 span.style.fontSize = `${size}px`;
                 span.style.opacity = randomRange(0.2, 0.8);
-                
                 span.style.left = '50%';
                 span.style.top = '50%';
                 span.style.transform = 'translate(-50%, -50%)'; 
@@ -696,27 +699,92 @@
                 setTimeout(() => {
                     const targetX = randomRange(-10, 110);
                     const targetY = randomRange(-10, 110);
-
                     span.style.left = `${targetX}%`;
                     span.style.top = `${targetY}%`;
                     
                     setTimeout(() => {
-                        if (currentDragItem !== span) {
+                        if (hasChaosStarted && currentDragItem !== span) {
                             startFloating(span);
                         }
                     }, flyDuration * 1000);
-
                 }, 20); 
             }
         }
 
-        // --- HÀM 3: XỬ LÝ KÉO THẢ (HỖ TRỢ CẢ TOUCH & MOUSE) ---
-        
-        // Helper: Lấy toạ độ X, Y từ sự kiện (dù là chuột hay cảm ứng)
+        // --- HÀM 3: THU HỒI CHỮ + TẮT NHẠC ---
+        function resetChaos() {
+            hasChaosStarted = false; 
+
+            const words = document.querySelectorAll('.chaos-word');
+            words.forEach(word => {
+                const anims = word.getAnimations();
+                anims.forEach(anim => anim.cancel());
+
+                word.style.transition = "all 1.5s ease-in-out";
+                word.style.left = '50%';
+                word.style.top = '50%';
+                word.style.opacity = '0'; 
+            });
+
+            resetTimer = setTimeout(() => {
+                words.forEach(w => w.remove());
+                bgMusic.pause();
+                bgMusic.currentTime = 0;
+            }, 1500);
+        }
+
+        // --- HÀM 4: CẬP NHẬT NGÔN NGỮ THỜI GIAN THỰC (MỚI) ---
+        function updateChaosWordsLanguage() {
+            // Chỉ cập nhật nếu chữ đang bay
+            if (!hasChaosStarted) return;
+
+            // Kiểm tra xem vừa đổi sang ngôn ngữ gì
+            const isVietnamese = document.body.classList.contains('mode-vi');
+            const currentList = isVietnamese ? wordsListVi : wordsListEn;
+            
+            const words = document.querySelectorAll('.chaos-word');
+            
+            // Duyệt qua từng chữ đang bay và đổi nội dung
+            words.forEach(word => {
+                // Tạo hiệu ứng chớp nhẹ khi đổi chữ cho mượt
+                const originalOpacity = word.style.opacity;
+                word.style.transition = "opacity 0.2s ease"; 
+                word.style.opacity = 0.1; // Mờ đi chút
+
+                setTimeout(() => {
+                    // Đổi chữ
+                    word.innerText = currentList[Math.floor(Math.random() * currentList.length)];
+                    word.style.opacity = originalOpacity; // Hiện lại
+                    
+                    // Trả lại transition gốc (để bay lượn mượt mà)
+                    setTimeout(() => {
+                         word.style.transition = `
+                            left ${randomRange(4,8)}s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                            top ${randomRange(4,8)}s cubic-bezier(0.165, 0.84, 0.44, 1),
+                            opacity 2s ease
+                        `;
+                    }, 200);
+                }, 200);
+            });
+        }
+
+        // --- GẮN SỰ KIỆN NÚT NGÔN NGỮ ---
+        const langSwitchBtn = document.querySelector('.lang-switch');
+        if (langSwitchBtn) {
+            langSwitchBtn.addEventListener('click', () => {
+                // Đợi 50ms để hệ thống đổi class 'mode-vi' xong xuôi đã rồi mới đổi chữ
+                setTimeout(updateChaosWordsLanguage, 50);
+            });
+        }
+
+        function toggleChaos() {
+            if (!hasChaosStarted) createExplosion();
+            else resetChaos();
+        }
+
+        // --- LOGIC KÉO THẢ (GIỮ NGUYÊN) ---
         function getClientCoords(e) {
-            if (e.touches && e.touches.length > 0) {
-                return { x: e.touches[0].clientX, y: e.touches[0].clientY };
-            }
+            if (e.touches && e.touches.length > 0) return { x: e.touches[0].clientX, y: e.touches[0].clientY };
             return { x: e.clientX, y: e.clientY };
         }
 
@@ -724,36 +792,27 @@
             if (e.target.classList.contains('chaos-word')) {
                 isDragging = true;
                 currentDragItem = e.target;
-                
                 currentDragItem.style.cursor = 'grabbing';
-                currentDragItem.style.transition = 'none'; // Tắt transition để kéo mượt
-
-                // Tạm dừng animation lơ lửng
+                currentDragItem.style.transition = 'none'; 
                 const anims = currentDragItem.getAnimations();
                 anims.forEach(anim => anim.cancel());
 
                 const rect = currentDragItem.getBoundingClientRect();
                 const coords = getClientCoords(e);
-                
                 dragOffsetX = coords.x - rect.left;
                 dragOffsetY = coords.y - rect.top;
                 
-                // Ngăn sự kiện mặc định (như scroll trên mobile khi chạm vào chữ)
                 if(e.cancelable && e.type === 'touchstart') e.preventDefault();
             }
         }
 
         function onDragMove(e) {
             if (isDragging && currentDragItem) {
-                // Ngăn scroll màn hình khi đang kéo chữ
                 if(e.cancelable) e.preventDefault(); 
-
                 const containerRect = homeSection.getBoundingClientRect();
                 const coords = getClientCoords(e);
-                
                 let newLeft = coords.x - containerRect.left;
                 let newTop = coords.y - containerRect.top;
-
                 currentDragItem.style.left = `${newLeft}px`;
                 currentDragItem.style.top = `${newTop}px`;
             }
@@ -762,36 +821,29 @@
         function onDragEnd() {
             if (isDragging && currentDragItem) {
                 currentDragItem.style.cursor = 'grab';
-                startFloating(currentDragItem); // Bay tiếp tại vị trí mới
+                if (hasChaosStarted) startFloating(currentDragItem); 
                 isDragging = false;
                 currentDragItem = null;
             }
         }
 
-        // Gắn sự kiện CHUỘT (Desktop)
         document.addEventListener('mousedown', onDragStart);
         document.addEventListener('mousemove', onDragMove);
         document.addEventListener('mouseup', onDragEnd);
-
-        // Gắn sự kiện CẢM ỨNG (Mobile/Tablet) - QUAN TRỌNG
-        // Dùng { passive: false } để cho phép preventDefault (chặn scroll)
         document.addEventListener('touchstart', onDragStart, { passive: false });
         document.addEventListener('touchmove', onDragMove, { passive: false });
         document.addEventListener('touchend', onDragEnd);
 
-
-        // GẮN SỰ KIỆN CLICK VÀO ẢNH TRUNG TÂM
         if (centerImage) {
             centerImage.style.cursor = 'pointer'; 
             centerImage.addEventListener('click', (e) => {
                 e.stopPropagation();
-                createExplosion();
+                toggleChaos();
             });
-            // Thêm sự kiện touch cho ảnh để nhạy hơn trên mobile
             centerImage.addEventListener('touchstart', (e) => {
                 e.stopPropagation();
-                e.preventDefault(); // Ngăn zoom ảnh
-                createExplosion();
+                e.preventDefault(); 
+                toggleChaos();
             });
         }
     });
