@@ -853,15 +853,6 @@
 
     // Hàm tìm ID trang dựa trên URL hiện tại (Dùng khi F5 hoặc gõ link trực tiếp)
     function getIdFromUrl(path) {
-        if (path.length > 1 && path.endsWith('/')) {
-            path = path.slice(0, -1); // Xóa dấu / thừa ở cuối
-        }
-        
-        // Tìm xem đường dẫn hiện tại khớp với ID nào trong danh sách trên
-        for (const [id, url] of Object.entries(urlMapping)) {
-            if (url === path) return id;
-        }
-        function getIdFromUrl(path) {
         // 1. Chuẩn hoá đường dẫn (xóa dấu / ở cuối nếu có)
         if (path.length > 1 && path.endsWith('/')) {
             path = path.slice(0, -1);
@@ -888,34 +879,6 @@
 
         // 4. Nếu không khớp cái nào hết -> Trả về trang lỗi 404
         return 'not-found'; 
-    }function getIdFromUrl(path) {
-        // 1. Chuẩn hoá đường dẫn (xóa dấu / ở cuối nếu có)
-        if (path.length > 1 && path.endsWith('/')) {
-            path = path.slice(0, -1);
-        }
-        
-        // 2. Kiểm tra trong danh sách UrlMapping (Trang tĩnh)
-        for (const [id, url] of Object.entries(urlMapping)) {
-            if (url === path) return id;
-        }
-
-        // 3. Kiểm tra trường hợp bài viết Writing (Dạng động: /writing/...)
-        if (path.startsWith('/writing/')) {
-            // Lấy slug từ URL (ví dụ: ba-toi-la-ke-noi-doi)
-            const slug = path.replace('/writing/', '');
-            const expectedId = 'write-' + slug;
-
-            // Kiểm tra xem bài viết này có thật trong dữ liệu không?
-            const exists = writingData.find(item => item.id === expectedId);
-            
-            if (exists) {
-                return expectedId; // Nếu có thật -> Trả về ID bài viết
-            }
-        }
-
-        // 4. Nếu không khớp cái nào hết -> Trả về trang lỗi 404
-        return 'not-found'; 
-    }
     }
 
     // 2. HÀM CHÍNH: SHOW PAGE (Đã nâng cấp)
