@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Huu Tri's Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/jpeg" href="https://ik.imagekit.io/phamhuutri108/logo.png">
+
+    <meta name="description" content="A human being.">
+    <meta name="author" content="Pham Huu Tri">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phamhuutri.com/">
+    <meta property="og:title" content="Pham Huu Tri's Portfolio">
+    <meta property="og:description" content="A human being.">
+
+    <meta property="og:image" content="https://ik.imagekit.io/phamhuutri108/cover-meta.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pham Huu Tri's Portfolio">
+    <meta name="twitter:description" content="A human being.">
+    <meta name="twitter:image" content="https://ik.imagekit.io/phamhuutri108/cover-meta.png">
+</head>
+<body>
+
+<div class="wrapper">
+    <aside class="sidebar">
+
+        <div class="lang-switch">
+    <span class="lang-btn active" onclick="setLanguage('en')" id="btn-en">EN</span>
+    <span class="separator">-</span>
+    <span class="lang-btn" onclick="setLanguage('vi')" id="btn-vi">VI</span>
+</div>
+<div class="site-logo">
+    </div>
+
+        <div class="site-logo">
+            <a href="javascript:void(0)" onclick="showPage('home')">
+                <img src="https://ik.imagekit.io/phamhuutri108/tri_potrait_b&w.JPG" alt="Pham Huu Tri">
+            </a>
+        </div>
+
+        <ul class="main-menu">
+    <li>
+        <a href="javascript:void(0)" onclick="showPage('home')" id="link-home" class="active-link">
+            <span class="content-en">Home</span>
+            <span class="content-vi">Trang chủ</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0)" onclick="showPage('about')" id="link-about">
+            <span class="content-en">About</span>
+            <span class="content-vi">Về tôi</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0)" onclick="showPage('contact')" id="link-contact">
+            <span class="content-en">Contact</span>
+            <span class="content-vi">Liên hệ</span>
+        </a>
+    </li>
+</ul>
+
+        <div class="category-section">
+    
+    <div class="category-group" id="group-films">
+    <h4>
+        <a href="javascript:void(0)" onclick="showPage('cat-short-films', 'group-films')" id="link-cat-short-films">
+            <span class="content-en">Short Films</span>
+            <span class="content-vi">Phim ngắn</span>
+        </a>
+    </h4>
+    <ul class="category-list">
+
+        <li>
+    <a href="javascript:void(0)" onclick="showPage('film-dad-lie', 'group-films')" id="link-film-dad-lie">
+        <span class="content-en">Dad, Don't Lie To Me</span>
+        <span class="content-vi">Ba Ơi, Đừng Nói Dối</span>
+    </a>
+</li>
+
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('film-karma', 'group-films')" id="link-film-karma">
+                <span class="content-en">Karma</span>
+                <span class="content-vi">Nghiệp</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('film-ghost', 'group-films')" id="link-film-ghost">
+                <span class="content-en">"The Ghost" Wants to Live</span>
+                <span class="content-vi">"Con Ma" Muốn Sống</span>
+            </a>
+        </li>
+        <li>
+    <a href="javascript:void(0)" onclick="showPage('film-cocks-cooking', 'group-films')" id="link-film-cocks-cooking">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </a>
+</li>
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('film-alive', 'group-films')" id="link-film-alive">
+                <span class="content-en">Alive</span>
+                <span class="content-vi">Khi Chúng Ta Được Sống</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('film-city', 'group-films')" id="link-film-city">
+                <span class="content-en">When My City Grows</span>
+                <span class="content-vi">Khi Thành Phố Lớn</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="category-group" id="group-comm">
+        <h4>
+            <a href="javascript:void(0)" onclick="showPage('cat-commercial', 'group-comm')" id="link-cat-commercial">
+                <span class="content-en">Commercials</span>
+                <span class="content-vi">Quảng cáo</span>
+            </a>
+        </h4>
+        <ul class="category-list">
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('comm-nhatot', 'group-comm')" id="link-comm-nhatot">
+                    <span class="content-en">Perfect Home, Reasonable Price!</span>
+                    <span class="content-vi">Nhà vừa ý, giá hợp lý!</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('comm-batdongsan', 'group-comm')" id="link-comm-batdongsan">
+                    <span class="content-en">Real Estate Saigon, Why Not!</span>
+                    <span class="content-vi">Nhà thật Sài Gòn, có sao nói vậy!</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('comm-thegioididong', 'group-comm')" id="link-comm-thegioididong">
+                    <span class="content-en">Has Camera So Convenient! So Safe!</span>
+                    <span class="content-vi">Có Camera Tiện Lắm! An Toàn Lắm!</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('comm-fpt-iphone', 'group-comm')" id="link-comm-fpt-iphone">
+                    <span class="content-en">New iPhone Has Arrived</span>
+                    <span class="content-vi">iPhone Mới Đã Tới</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('comm-fpt-backtoschool', 'group-comm')" id="link-comm-fpt-backtoschool">
+                    <span class="content-en">Back To School</span>
+                    <span class="content-vi">Back To School</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('comm-bach-dang-cement', 'group-comm')" id="link-comm-bach-dang-cement">
+                    <span class="content-en">King Cement, Building Heritage Together</span>
+                    <span class="content-vi">Xi Măng Vua, Cùng Xây Di Sản</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('comm-benh-vien-phuong-nam', 'group-comm')" id="link-comm-benh-vien-phuong-nam">
+                    <span class="content-en">Expectant Mothers Always Decide</span>
+                    <span class="content-vi">Mẹ Bầu Chốt Luôn</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category-group" id="group-others">
+        <h4>
+            <a href="javascript:void(0)" onclick="showPage('cat-others', 'group-others')" id="link-cat-others">
+                <span class="content-en">Others</span>
+                <span class="content-vi">Các dự án khác</span>
+            </a>
+        </h4>
+        <ul class="category-list">
+            
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('other-wardrobe', 'group-others')" id="link-other-wardrobe">
+                    <span class="content-en">Wardrobe</span>
+                    <span class="content-vi">Học Tủ</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('other-wet-wood', 'group-others')" id="link-other-wet-wood">
+                    <span class="content-en">Wet Wood</span>
+                    <span class="content-vi">Củi Ướt</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('other-glass-painting', 'group-others')" id="link-other-glass-painting">
+                    <span class="content-en">My Family's Glass Painting</span>
+                    <span class="content-vi">Tranh Kiếng Nhà Tôi</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('other-full-moon', 'group-others')" id="link-other-full-moon">
+                    <span class="content-en">The Full Moon</span>
+                    <span class="content-vi">Trăng Rằm</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="showPage('other-chill-nw', 'group-others')" id="link-other-chill-nw">
+                    <span class="content-en">Chilling in the Northwest</span>
+                    <span class="content-vi">Chill Cùng Tây Bắc</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="category-group" id="group-writing">
+        <h4>
+            <a href="javascript:void(0)" onclick="showPage('cat-writing', 'group-writing')" id="link-cat-writing">
+                <span class="content-en">Writings</span>
+                <span class="content-vi">Viết</span>
+            </a>
+        </h4>
+        
+        <ul class="category-list" id="sidebar-writing-list">
+            </ul>
+    </div>
+
+</div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Pham Huu Tri.</p>
+        </div>
+    </aside>
+
+    <main class="content">
+        
+        <div id="home" class="page-section active-section">
+            <img src="https://ik.imagekit.io/phamhuutri108/one%20buddha%20is%20not%20enough.JPG" 
+                 alt="Home Art" 
+                 class="home-center-img">
+        </div>
+
+        <div id="about" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">About</span>
+        <span class="content-vi">Giới thiệu</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-vi">
+                Xin chào, tôi là <b>Phạm Hữu Trí</b>.<br>
+                Hiện tại, tôi đang theo đuổi con đường làm phim độc lập và là một freelancer bán thời gian. Đôi khi, tôi viết.
+            </span>
+            <span class="content-en">
+                Hello, I am <b>Pham Huu Tri</b>.<br>
+                Currently, I am pursuing independent filmmaking and working as a part-time freelancer. Sometimes, I write.
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Tuyên ngôn</span>
+            <span class="content-en">Artist Statement</span>
+        </h3>
+
+        <p style="font-style: italic;">"A human being."</p>
+
+        <p>
+            <span class="content-vi">
+                Thực hành nghệ thuật với tôi là hành trình khám phá tính nhân bản.
+                Mỗi khung hình, mỗi dòng chữ đều là một nỗ lực để thấu hiểu việc làm người.
+            </span>
+            <span class="content-en">
+                To me, artistic practice is a journey of exploring humanity.
+                Every frame, every line is an effort to understand what it means to be human.
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Giáo dục</span>
+            <span class="content-en">Education</span>
+        </h3>
+        <p>
+            <span class="content-vi"> <b>Đại học Văn Lang, TP. HCM</b> (2021 - 2026)<br>
+            </span>
+
+            <span class="content-en"> <b>Van Lang University, Vietnam</b> (2021 - 2026)<br>
+            </span>
+            <span class="content-vi" style="font-size: 11px; color: #666;">
+                Chuyên ngành: Đạo diễn điện ảnh & truyền hình
+            </span>
+            <span class="content-en" style="font-size: 11px; color: #666;">
+                Major: Art in Film & Television Directing
+            </span>
+        </p>
+
+        <h3 style="margin-top: 40px;">
+            <span class="content-vi">Quá trình làm phim - Giải thưởng</span>
+            <span class="content-en">Filmography - Awards</span>
+        </h3>
+        
+        <ul style="list-style: none; padding-left: 0; font-size: 12px;">
+    
+    <li style="margin-bottom: 5px;">
+        2024 - <i>
+            <span class="content-vi">Nghiệp</span>
+            <span class="content-en">Karma</span>
+        </i>
+        <span class="content-vi">(Phim ngắn): <b>Cánh diều bạc</b>, Hội điện ảnh Việt Nam</span>
+        <span class="content-en">(Short fiction): <b>Silver Prize</b>, Golden Kite Awards, Vietnam Cinema Association</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2023 - <i>
+            <span class="content-vi">"Con Ma" Muốn Sống</span>
+            <span class="content-en">"The Ghost" Wants to Live</span>
+        </i>
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Giải ba</b>, Liên hoan phim ngắn TP. HCM</span>
+        <span class="content-en">(Short documentary): <b>Third Prize</b>, HCMC Short Film Festival</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2022 - <i>
+            <span class="content-vi">"Con Ma" Muốn Sống</span>
+            <span class="content-en">"The Ghost" Wants to Live</span>
+        </i> 
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Quỹ sáng tác trẻ</b>, Hội điện ảnh TP. HCM</span>
+        <span class="content-en">(Short documentary): <b>Young Creativity Fund</b>, HCMC Cinema Association</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2020 - <i>
+            <span class="content-vi">Khi Chúng Ta Được Sống</span>
+            <span class="content-en">Alive</span>
+        </i>
+        <span class="content-vi">(Phim ngắn): <b>Phim xuất sắc nhất</b>, The Original Project, Hà Nội</span>
+        <span class="content-en">(Short fiction): <b>Best Short Film</b>, The Original Project, Hanoi</span>
+    </li>
+
+    <li style="margin-bottom: 5px;">
+        2020 - <i>
+            <span class="content-vi">Khi Thành Phố Lớn</span>
+            <span class="content-en">When My City Grows</span>
+        </i>
+        <span class="content-vi">(Phim tài liệu ngắn): <b>Giải nhì</b>, Le Filmmaking Camp, Quảng Trị - Đại sứ quán Mỹ tài trợ</span>
+        <span class="content-en">(Short documentary): <b>Second Prize</b>, Le Filmmaking Camp, Quang Tri - Sponsored by the U.S. Embassy</span>
+    </li>
+
+</ul>
+
+        <div id="resume-holder" style="text-align: center; margin-top: 60px; height: 50px;">
+            <a href="https://drive.google.com/file/d/16exeCisXqDe9dqmPtJ8lGSgUCP4F9pD1/view?usp=sharing" target="_blank" id="wandering-resume">Resume</a>
+        </div>
+    </div>
+</div>
+
+        <div id="contact" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Contact</span>
+        <span class="content-vi">Liên hệ</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <b>
+                <span class="content-en">Phone:</span>
+                <span class="content-vi">Điện thoại:</span>
+            </b> 
+            <a href="tel:+84865953041" style="color: #111;">(+84) 865 953 041</a>
+        </p>
+        
+        <p>
+            <b>Email:</b> 
+            <a href="mailto:contact@phamhuutri.com" style="color: #111;">contact@phamhuutri.com</a>
+        </p>
+        
+        <p>
+            <b>Instagram:</b> 
+            <a href="https://www.instagram.com/phamhuutri.es" target="_blank">@phamhuutri.es</a>
+        </p>
+        
+        <p>
+            <b>Facebook:</b> 
+            <a href="https://www.facebook.com/phamhuutri108/" target="_blank">Phạm Hữu Trí</a>
+        </p>
+
+        <img src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+             alt="Contact Image"
+             id="musical-image"
+             style="display: block; margin: 50px auto 0 auto; width: 350px; height: auto; cursor: pointer;"
+             title="Click to play music">
+
+        <audio id="contact-audio">
+            <source src="https://ik.imagekit.io/phamhuutri108/Trang-Mua%20Xuan(from%20Album%20Trong).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+        <div id="cat-short-films" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Short Films</span>
+        <span class="content-vi">Phim ngắn</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-en">2020 - present.</span>
+            <span class="content-vi">2020 - hiện tại.</span>
+        </p>
+    </div>
+
+    <div class="gallery-grid" style="margin-top:30px;">
+
+        <a href="javascript:void(0)" onclick="showPage('film-dad-lie', 'group-films')" class="gallery-item">
+    <img src="https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" alt="Dad Don't Lie">
+    <p style="margin-top: 5px; font-weight: bold;">
+        <span class="content-en">Dad, Don't Lie To Me</span>
+        <span class="content-vi">Ba ơi, Đừng Nói Dối</span>
+    </p>
+</a>
+        
+        <a href="javascript:void(0)" onclick="showPage('film-karma', 'group-films')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_thumbnail.png" alt="Karma">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Karma</span>
+                <span class="content-vi">Nghiệp</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('film-ghost', 'group-films')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_thumbnail.png" alt="The Ghost Wants to Live">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">"The Ghost" Wants to Live (2022)</span>
+                <span class="content-vi">"Con Ma" Muốn Sống (2022)</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('film-cocks-cooking', 'group-films')" class="gallery-item">
+    <img src="https://ik.imagekit.io/phamhuutri108/GTNC_thumbnail.jpg" alt="Cock's Cooking">
+    <p style="margin-top: 5px; font-weight: bold;">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </p>
+</a>
+
+        <a href="javascript:void(0)" onclick="showPage('film-alive', 'group-films')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/Alive_thumbnail.jpg" alt="Alive">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Alive</span>
+                <span class="content-vi">Khi Chúng Ta Được Sống</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('film-city', 'group-films')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/KTPL_thumbnail.jpg" alt="City">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">When My City Grows</span>
+                <span class="content-vi">Khi Thành Phố Lớn</span>
+            </p>
+        </a>
+
+    </div>
+</div>
+
+        <div id="cat-commercial" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Commercials</span>
+        <span class="content-vi">Quảng cáo</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-en">2024 - present.</span>
+            <span class="content-vi">2024 - hiện tại.</span>
+        </p>
+    </div>
+
+    <div class="gallery-grid" style="margin-top:30px;">
+
+        <a href="javascript:void(0)" onclick="showPage('comm-nhatot', 'group-comm')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/Nhatot_thumbnail.gif" alt="Perfect Home, Reasonable Price!">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Perfect Home, Reasonable Price!</span>
+                <span class="content-vi">Nhà vừa ý, giá hợp lý!</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('comm-batdongsan', 'group-comm')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/Batdongsan_thumbnail.gif" alt="Real Estate Saigon, Why Not!">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Real Estate Saigon, Why Not!</span>
+                <span class="content-vi">Nhà thật Sài Gòn, có sao nói vậy!</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('comm-thegioididong', 'group-comm')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/Thegioididong_thumbnail.gif" alt="Has Camera So Convenient! So Safe!">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Has Camera So Convenient! So Safe!</span>
+                <span class="content-vi">Có Camera Tiện Lắm! An Toàn Lắm!</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('comm-fpt-iphone', 'group-comm')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/FPTxiPhone_Thumbnail.gif" alt="New iPhone Has Arrived">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">New iPhone Has Arrived</span>
+                <span class="content-vi">iPhone Mới Đã Tới</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('comm-fpt-backtoschool', 'group-comm')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/FPTxAMD_Thumbnail.gif" alt="Back To School">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Back To School</span>
+                <span class="content-vi">Back To School</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('comm-bach-dang-cement', 'group-comm')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/comm/bach-dang-cement-thumbnail.jpg" alt="King Cement, Building Heritage Together">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">King Cement, Building Heritage Together</span>
+                <span class="content-vi">Xi Măng Vua, Cùng Xây Di Sản</span>
+            </p>
+        </a>
+
+        <a href="javascript:void(0)" onclick="showPage('comm-benh-vien-phuong-nam', 'group-comm')" class="gallery-item">
+            <img src="https://ik.imagekit.io/phamhuutri108/comm/benh-vien-phuong-nam-thumbnail.jpg" alt="Expectant Mothers Always Decide">
+            <p style="margin-top: 5px; font-weight: bold;">
+                <span class="content-en">Expectant Mothers Always Decide</span>
+                <span class="content-vi">Mẹ Bầu Chốt Luôn</span>
+            </p>
+        </a>
+
+    </div>
+</div>
+
+
+    <div id="cat-others" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Others</span>
+                <span class="content-vi">Các dự án khác</span>
+            </h2>
+            
+            <div class="about-text">
+                <p>
+                    <span class="content-en">Other projects where I worked on Assistant Director.</span>
+                    <span class="content-vi">Các dự án khác nơi tôi làm với vai trò trợ lý đạo diễn.</span>
+                </p>
+            </div>
+
+            <div class="gallery-grid" style="margin-top:30px;">
+
+                <a href="javascript:void(0)" onclick="showPage('other-wardrobe', 'group-others')" class="gallery-item">
+                    <img src="https://ik.imagekit.io/phamhuutri108/Others/Hoc%20Tu/HOC_TU_Thumbnail.png" alt="Wardrobe">
+                    <p style="margin-top: 5px; font-weight: bold;">
+                        <span class="content-en">Wardrobe</span>
+                        <span class="content-vi">Học Tủ</span>
+                    </p>
+                </a>
+
+                <a href="javascript:void(0)" onclick="showPage('other-wet-wood', 'group-others')" class="gallery-item">
+                    <img src="https://ik.imagekit.io/phamhuutri108/Others/Cui%20Uot/CUI_UOT_Thumbnail_1.png" alt="Wet Wood">
+                    <p style="margin-top: 5px; font-weight: bold;">
+                        <span class="content-en">Wet Wood</span>
+                        <span class="content-vi">Củi Ướt</span>
+                    </p>
+                </a>
+
+                <a href="javascript:void(0)" onclick="showPage('other-glass-painting', 'group-others')" class="gallery-item">
+                    <img src="https://ik.imagekit.io/phamhuutri108/Others/TKNT/TKNT_Thumbnail.jpg" alt="Glass Painting">
+                    <p style="margin-top: 5px; font-weight: bold;">
+                        <span class="content-en">My Family's Glass Painting</span>
+                        <span class="content-vi">Tranh Kiếng Nhà Tôi</span>
+                    </p>
+                </a>
+
+                <a href="javascript:void(0)" onclick="showPage('other-full-moon', 'group-others')" class="gallery-item">
+                    <img src="https://ik.imagekit.io/phamhuutri108/Others/Trang%20Ram/Trang_Ram_Thumbnail.jpg" alt="Full Moon">
+                    <p style="margin-top: 5px; font-weight: bold;">
+                        <span class="content-en">The Full Moon</span>
+                        <span class="content-vi">Trăng Rằm</span>
+                    </p>
+                </a>
+
+                <a href="javascript:void(0)" onclick="showPage('other-chill-nw', 'group-others')" class="gallery-item">
+                    <img src="https://ik.imagekit.io/phamhuutri108/Others/Chill_cung_Tay_Bac_Thumbnail.jpg" alt="Chill NW">
+                    <p style="margin-top: 5px; font-weight: bold;">
+                        <span class="content-en">Chilling in the Northwest</span>
+                        <span class="content-vi">Chill Cùng Tây Bắc</span>
+                    </p>
+                </a>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div id="cat-writing" class="page-section">
+    <div class="writing-top-area">
+        <h2 class="page-title">
+            <span class="content-en">Writings</span>
+            <span class="content-vi">Viết</span>
+        </h2>
+        
+
+        <div id="writing-list-container"></div>
+    </div>
+
+    <div id="writing-detail-view" style="display: none;">
+        <div style="margin-bottom: 20px;">
+            <a href="javascript:void(0)" onclick="closeWritingDetail()" 
+               style="font-size: 26px; text-decoration: none; color: #999; transition: all 0.2s; display: inline-block;"
+               onmouseover="this.style.color='#0033cc'; this.style.transform='translateX(-5px)'"
+               onmouseout="this.style.color='#999'; this.style.transform='translateX(0)'"
+               title="Back / Quay lại">
+                &larr;
+            </a>
+        </div>
+        
+        <h2 class="page-title" id="detail-title" style="text-align: left;"></h2>
+        
+        <p style="font-size:13px; color:#666; margin-bottom:30px; font-style: italic; text-align: left;" id="detail-meta"></p>
+
+        <div class="essay-content" id="detail-content" style="max-width: 100%; text-align: justify;"></div>
+        
+        <div style="height: 100px;"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        <div id="film-dad-lie" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Dad, Don't Lie To Me</span>
+        <span class="content-vi">Ba Ơi, Đừng Nói Dối</span>
+    </h2>
+     <div class="about-text dynamic-content" data-id="film-dad-lie"></div>
+</div> <div id="film-karma" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Karma</span>
+        <span class="content-vi">Nghiệp</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-karma"></div>
+</div>
+
+<div id="film-ghost" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">"The Ghost" Wants to Live</span>
+        <span class="content-vi">"Con Ma" Muốn Sống</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-ghost"></div>
+    
+</div>
+
+<div id="film-cocks-cooking" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Cock's Cooking</span>
+        <span class="content-vi">Gà Trống Nấu Cơm</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-cocks-cooking"></div>
+    
+</div>
+
+<div id="film-alive" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">Alive</span>
+        <span class="content-vi">Khi Chúng Ta Được Sống</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-alive"></div>
+    
+</div>
+
+<div id="film-city" class="page-section">
+    <h2 class="page-title">
+        <span class="content-en">When My City Grows</span>
+        <span class="content-vi">Khi Thành Phố Lớn</span>
+    </h2>
+    <div class="about-text dynamic-content" data-id="film-city"></div>
+    
+</div>
+
+        <div id="comm-nhatot" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Perfect Home, Reasonable Price!</span>
+                <span class="content-vi">Nhà vừa ý, giá hợp lý!</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="comm-nhatot"></div>
+        </div>
+
+        <div id="comm-batdongsan" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Real Estate Saigon, Why Not!</span>
+                <span class="content-vi">Nhà thật Sài Gòn, có sao nói vậy!</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="comm-batdongsan"></div>
+        </div>
+
+        <div id="comm-thegioididong" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Has Camera So Convenient! So Safe!</span>
+                <span class="content-vi">Có Camera Tiện Lắm! An Toàn Lắm!</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="comm-thegioididong"></div>
+        </div>
+
+        <div id="comm-fpt-iphone" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">New iPhone Has Arrived</span>
+                <span class="content-vi">iPhone Mới Đã Tới</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="comm-fpt-iphone"></div>
+        </div>
+
+        <div id="comm-fpt-backtoschool" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Back To School</span>
+                <span class="content-vi">Back To School</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="comm-fpt-backtoschool"></div>
+        </div>
+
+        <div id="comm-bach-dang-cement" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">King Cement, Building Heritage Together</span>
+                <span class="content-vi">Xi Măng Vua, Cùng Xây Di Sản</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="comm-bach-dang-cement"></div>
+        </div>
+
+        <div id="comm-benh-vien-phuong-nam" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Expectant Mothers Always Decide</span>
+                <span class="content-vi">Mẹ Bầu Chốt Luôn</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="comm-benh-vien-phuong-nam"></div>
+        </div>
+
+
+        <div id="other-wardrobe" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Wardrobe</span>
+                <span class="content-vi">Học Tủ</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="other-wardrobe"></div>
+        </div>
+
+        <div id="other-wet-wood" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Wet Wood</span>
+                <span class="content-vi">Củi Ướt</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="other-wet-wood"></div>
+        </div>
+
+        <div id="other-glass-painting" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">My Family's Glass Painting</span>
+                <span class="content-vi">Tranh Kiếng Nhà Tôi</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="other-glass-painting"></div>
+        </div>
+
+        <div id="other-full-moon" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">The Full Moon</span>
+                <span class="content-vi">Trăng Rằm</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="other-full-moon"></div>
+        </div>
+
+        <div id="other-chill-nw" class="page-section">
+            <h2 class="page-title">
+                <span class="content-en">Chilling in the Northwest</span>
+                <span class="content-vi">Chill Cùng Tây Bắc</span>
+            </h2>
+            <div class="about-text dynamic-content" data-id="other-chill-nw"></div>
+        </div>
+
+
+
+        
+
+<script>
+    // 1. CẤU HÌNH ĐƯỜNG DẪN URL
+    // Cú pháp: 'id-của-div-trong-html': 'đường-dẫn-muốn-hiện-trên-trình-duyệt'
+    const urlMapping = {
+        'home': '/',
+        'about': '/about',
+        'contact': '/contact',
+        'cat-short-films': '/short-films',
+        'cat-commercial': '/commercials',
+        'cat-others': '/others',
+        'cat-writing': '/writing',
+        
+        // Short films
+        'film-dad-lie': '/short-film/dad-dont-lie-to-me',
+        'film-karma': '/short-film/karma',
+        'film-ghost': '/short-film/the-ghost-wants-to-live',
+        'film-alive': '/short-film/alive',
+        'film-city': '/short-film/when-my-city-grows',
+        'film-cocks-cooking': '/short-film/cocks-cooking',
+        
+        // Commercials
+        'comm-nhatot': '/commercials/nhatot',
+        'comm-batdongsan': '/commercials/batdongsan',
+        'comm-thegioididong': '/commercials/thegioididong',
+        'comm-fpt-iphone': '/commercials/fptshop-iphone',
+        'comm-fpt-backtoschool': '/commercials/fpt-amd',
+        'comm-bach-dang-cement': '/commercials/bach-dang-cement',
+        'comm-benh-vien-phuong-nam': '/commercials/phuong-nam-hospital',
+
+        // Other projects
+        'other-wardrobe': '/others/wardrobe',
+        'other-wet-wood': '/others/wet-wood',
+        'other-glass-painting': '/others/my-familyglass-painting',
+        'other-full-moon': '/others/full-moon',
+        'other-chill-nw': '/others/chill-cung-tay-bac',
+        
+        // Writings
+        
+    };
+
+    // Hàm tìm ID trang dựa trên URL hiện tại (Dùng khi F5 hoặc gõ link trực tiếp)
+    function getIdFromUrl(path) {
+        if (path.length > 1 && path.endsWith('/')) {
+            path = path.slice(0, -1); // Xóa dấu / thừa ở cuối
+        }
+        
+        // Tìm xem đường dẫn hiện tại khớp với ID nào trong danh sách trên
+        for (const [id, url] of Object.entries(urlMapping)) {
+            if (url === path) return id;
+        }
+        return 'home'; // Không tìm thấy thì về Trang chủ
+    }
+
+    // 2. HÀM CHÍNH: SHOW PAGE (Đã nâng cấp)
+    function showPage(pageId, groupId = null, addToHistory = true) {
+        
+        // --- [MỚI] XỬ LÝ RIÊNG CHO BÀI VIẾT (WRITING) ---
+        // Nếu ID bắt đầu bằng 'write-' (ví dụ: write-ba-noi-doi)
+        if (pageId && pageId.startsWith('write-')) {
+            // 1. Mở trang cha (Writing) trước
+            showPage('cat-writing', 'group-writing', false);
+            
+            // 2. Mở nội dung bài viết
+            // Dùng timeout để đảm bảo dữ liệu đã kịp load
+            setTimeout(() => {
+                openWritingDetail(pageId);
+            }, 50);
+
+            // 3. Cập nhật URL thủ công
+            if (addToHistory && urlMapping[pageId]) {
+                 window.history.pushState({ pageId: pageId, groupId: 'group-writing' }, "", urlMapping[pageId]);
+            }
+            return; // Dừng hàm tại đây, không chạy logic mặc định bên dưới nữa
+        }
+
+
+        
+        // --- A. XỬ LÝ GIAO DIỆN ---
+        
+        // 1. Ẩn hiện nội dung chính
+        const sections = document.querySelectorAll('.page-section');
+        sections.forEach(section => section.classList.remove('active-section'));
+
+        const activeSection = document.getElementById(pageId);
+        if (activeSection) {
+            activeSection.classList.add('active-section');
+            window.scrollTo(0, 0); 
+        }
+
+        // 2. Tô màu menu
+        const allLinks = document.querySelectorAll('a');
+        allLinks.forEach(link => link.classList.remove('active-link'));
+        
+        const activeLink = document.getElementById('link-' + pageId);
+        if (activeLink) activeLink.classList.add('active-link');
+
+        // 3. Sidebar toggle
+        const allGroups = document.querySelectorAll('.category-group');
+        allGroups.forEach(group => group.classList.remove('is-open'));
+        
+        if (groupId) {
+            const activeGroup = document.getElementById(groupId);
+            if (activeGroup) activeGroup.classList.add('is-open');
+        }
+
+        // --- B. XỬ LÝ URL ---
+        if (addToHistory && urlMapping[pageId]) {
+            const newUrl = urlMapping[pageId];
+            window.history.pushState({ pageId: pageId, groupId: groupId }, "", newUrl);
+        }
+
+        // --- C. (MỚI) KHỞI ĐỘNG LẠI CHUYỂN ĐỘNG NẾU VÀO TRANG WRITING ---
+        // Kiểm tra: Nếu trang vừa mở là 'cat-writing', hãy chạy lại hàm render
+        if (pageId === 'cat-writing' && typeof renderWritingList === 'function') {
+            // setTimeout nhỏ để đảm bảo div đã hiện ra (block) rồi mới tính toán kích thước
+            setTimeout(() => {
+                renderWritingList(); 
+            }, 10);
+        }
+    }
+
+    // 3. XỬ LÝ KHI BẤM NÚT BACK/FORWARD TRÊN TRÌNH DUYỆT
+    window.onpopstate = function(event) {
+        if (event.state) {
+            // Khôi phục trạng thái cũ từ lịch sử
+            showPage(event.state.pageId, event.state.groupId, false);
+        } else {
+            // Nếu không có lịch sử, tự tính toán lại từ URL
+            const path = window.location.pathname;
+            const id = getIdFromUrl(path);
+            showPage(id, null, false);
+        }
+    };
+
+    // 4. TỰ ĐỘNG CHẠY KHI VỪA VÀO WEB (Xử lý F5)
+    document.addEventListener("DOMContentLoaded", () => {
+        const path = window.location.pathname;
+        const initialId = getIdFromUrl(path);
+        
+        // Logic phụ: Nếu đang vào link phim thì tự mở sidebar nhóm phim
+        let initialGroup = null;
+        if (initialId.includes('film-')) initialGroup = 'group-films'; 
+        if (initialId.includes('comm-')) initialGroup = 'group-comm';
+        if (initialId.includes('other-')) initialGroup = 'group-others';
+        if (initialId.includes('write-')) initialGroup = 'group-writing';
+        
+        // Gọi hàm hiển thị (false để không lưu lịch sử lần đầu)
+        showPage(initialId, initialGroup, false); 
+    });
+</script>
+
+<script>
+    /* --- LOGIC: EXPLOSION + DRAG & DROP --- */
+    document.addEventListener("DOMContentLoaded", () => {
+        const homeSection = document.getElementById('home');
+        const centerImage = document.querySelector('.home-center-img');
+        
+        let hasChaosStarted = false;
+
+        // Biến hỗ trợ Drag & Drop
+        let isDragging = false;
+        let currentDragItem = null;
+        let dragOffsetX = 0;
+        let dragOffsetY = 0;
+
+        const wordsList = ["one", "Buddha", "is", "not", "enough"];
+        
+        // CẤU HÌNH
+        const WORD_COUNT = 120; 
+        const MIN_SIZE = 7;     
+        const MAX_SIZE = 30;    
+
+        function randomRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // --- HÀM 1: TẠO ANIMATION LƠ LỬNG (Tách ra để dùng lại sau khi Drop) ---
+        function startFloating(element) {
+            // Hủy các animation cũ (nếu có) để tránh xung đột
+            const animations = element.getAnimations();
+            animations.forEach(anim => anim.cancel());
+
+            const floatDuration = randomRange(10000, 30000); 
+            const rotateEnd = randomRange(-90, 90); 
+
+            // Animation mới: Chỉ rung rinh nhẹ quanh vị trí hiện tại
+            element.animate([
+                { transform: `translate(-50%, -50%) rotate(0deg)` },
+                { transform: `translate(calc(-50% + ${randomRange(-50,50)}px), calc(-50% + ${randomRange(-50,50)}px)) rotate(${rotateEnd}deg)` },
+                { transform: `translate(-50%, -50%) rotate(0deg)` }
+            ], {
+                duration: floatDuration,
+                iterations: Infinity,
+                direction: 'alternate',
+                easing: 'ease-in-out'
+            });
+        }
+
+        // --- HÀM 2: TẠO HIỆU ỨNG NỔ ---
+        function createExplosion() {
+            if (!homeSection || hasChaosStarted) return;
+            hasChaosStarted = true; 
+
+            for (let i = 0; i < WORD_COUNT; i++) {
+                const span = document.createElement('span');
+                
+                span.innerText = wordsList[Math.floor(Math.random() * wordsList.length)];
+                span.className = 'chaos-word';
+                
+                // QUAN TRỌNG: Cho phép chuột tương tác để kéo thả
+                span.style.pointerEvents = 'auto'; 
+                span.style.cursor = 'grab'; // Đổi con trỏ thành bàn tay
+
+                // Random kích thước
+                const size = randomRange(MIN_SIZE, MAX_SIZE);
+                span.style.fontSize = `${size}px`;
+                span.style.opacity = randomRange(0.2, 0.8);
+                
+                // Vị trí xuất phát: Tâm ảnh
+                span.style.left = '50%';
+                span.style.top = '50%';
+                span.style.transform = 'translate(-50%, -50%)'; 
+
+                // Thời gian bay (Slow Motion: 4s - 8s)
+                const flyDuration = randomRange(4.0, 8.0); 
+
+                span.style.transition = `
+                    left ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                    top ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1),
+                    opacity ${flyDuration}s ease
+                `;
+
+                homeSection.appendChild(span);
+
+                // Kích hoạt bay ra
+                setTimeout(() => {
+                    const targetX = randomRange(-10, 110);
+                    const targetY = randomRange(-10, 110);
+
+                    span.style.left = `${targetX}%`;
+                    span.style.top = `${targetY}%`;
+                    
+                    // Sau khi bay xong thì bắt đầu lơ lửng
+                    setTimeout(() => {
+                        // Chỉ bắt đầu lơ lửng nếu người dùng KHÔNG đang kéo nó
+                        if (currentDragItem !== span) {
+                            startFloating(span);
+                        }
+                    }, flyDuration * 1000);
+
+                }, 20); 
+            }
+        }
+
+        // --- HÀM 3: XỬ LÝ KÉO THẢ (DRAG & DROP) ---
+        
+        // A. Bắt đầu kéo (Mousedown)
+        document.addEventListener('mousedown', (e) => {
+            if (e.target.classList.contains('chaos-word')) {
+                isDragging = true;
+                currentDragItem = e.target;
+                
+                // Đổi con trỏ
+                currentDragItem.style.cursor = 'grabbing';
+
+                // Tắt transition để kéo cho mượt (không bị delay bay)
+                currentDragItem.style.transition = 'none';
+
+                // Tạm dừng animation lơ lửng
+                const anims = currentDragItem.getAnimations();
+                anims.forEach(anim => anim.cancel());
+
+                // Tính toán vị trí con chuột so với góc của chữ
+                const rect = currentDragItem.getBoundingClientRect();
+                dragOffsetX = e.clientX - rect.left;
+                dragOffsetY = e.clientY - rect.top;
+                
+                e.preventDefault(); // Ngăn bôi đen text
+            }
+        });
+
+        // B. Di chuyển chuột (Mousemove) - Gắn vào document để không bị tuột
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging && currentDragItem) {
+                // Tính toạ độ mới (theo pixel)
+                // Lưu ý: rect.left/top bao gồm cả translate(-50%), nên ta cần tính toán kỹ một chút
+                // Hoặc đơn giản là set left/top theo vị trí chuột
+                
+                // Lấy container cha để tính toạ độ tương đối
+                const containerRect = homeSection.getBoundingClientRect();
+                
+                let newLeft = e.clientX - containerRect.left;
+                let newTop = e.clientY - containerRect.top;
+
+                // Gán vị trí mới (convert sang px)
+                currentDragItem.style.left = `${newLeft}px`;
+                currentDragItem.style.top = `${newTop}px`;
+            }
+        });
+
+        // C. Thả chuột (Mouseup)
+        document.addEventListener('mouseup', () => {
+            if (isDragging && currentDragItem) {
+                currentDragItem.style.cursor = 'grab';
+                
+                // Kích hoạt lại chế độ lơ lửng tại vị trí mới
+                startFloating(currentDragItem);
+
+                isDragging = false;
+                currentDragItem = null;
+            }
+        });
+
+
+        // GẮN SỰ KIỆN CLICK VÀO ẢNH
+        if (centerImage) {
+            centerImage.style.cursor = 'pointer'; 
+            centerImage.addEventListener('click', (e) => {
+                e.stopPropagation();
+                createExplosion();
+            });
+        }
+    });
+</script>
+
+                
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const resumeLink = document.getElementById('wandering-resume');
+        const aboutSection = document.getElementById('about');
+        const resumeHolder = document.getElementById('resume-holder');
+        
+        let hasStarted = false; // Kiểm tra xem đã kích hoạt bay chưa
+        let isHovering = false; 
+        let moveTimer = null;   
+        
+        // Biến đếm số lần người dùng phải rượt đuổi
+        let catchAttempt = 0; 
+        const MAX_EVASION = 3; // Số lần nó bỏ chạy trước khi chịu đứng lại
+
+        function random(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Hàm tính toán vùng an toàn (Hành lang bên phải)
+        function getNewCoordinates() {
+            const containerW = aboutSection.offsetWidth;
+            const containerH = aboutSection.offsetHeight;
+            const itemW = resumeLink.offsetWidth;
+            const itemH = resumeLink.offsetHeight;
+
+            // Vùng an toàn: Nửa bên phải màn hình
+            const safeZoneX = containerW * 0.40; 
+            const minLeft = safeZoneX;
+            const maxLeft = containerW - itemW - 20;
+
+            const minTop = 80; // Tránh tiêu đề
+            const maxTop = containerH - itemH - 20;
+
+            // Fallback nếu màn hình quá nhỏ
+            if (maxLeft < minLeft) return { left: containerW - itemW - 10, top: random(minTop, maxTop) };
+
+            return {
+                left: random(minLeft, maxLeft),
+                top: random(minTop, maxTop)
+            };
+        }
+
+        // HÀM 1: Di chuyển lơ lửng (Chậm)
+        function moveResume() {
+            if (!hasStarted) return; // Chưa bắt đầu thì không chạy
+            
+            // Nếu đang hover (đã bắt được) hoặc không ở tab About thì dừng
+            if (isHovering || !aboutSection.classList.contains('active-section')) {
+                moveTimer = setTimeout(moveResume, 1000);
+                return;
+            }
+
+            // Xóa class bỏ chạy (nếu có) để trở về bay lơ lửng
+            resumeLink.classList.remove('evading');
+
+            const coords = getNewCoordinates();
+            resumeLink.style.left = `${coords.left}px`;
+            resumeLink.style.top = `${coords.top}px`;
+
+            moveTimer = setTimeout(moveResume, 1300); // Tốc độ lơ lửng
+        }
+
+        // HÀM 2: Bỏ chạy (Nhanh)
+        function evadeMouse() {
+            // Thêm class evading để transition nhanh hơn (0.2s)
+            resumeLink.classList.add('evading');
+            
+            const coords = getNewCoordinates();
+            resumeLink.style.left = `${coords.left}px`;
+            resumeLink.style.top = `${coords.top}px`;
+
+            // Reset trạng thái hover để nó tiếp tục bay sau khi né
+            isHovering = false;
+            
+            // Sau khi né xong (0.3s) thì quay lại chế độ bay lơ lửng
+            setTimeout(() => {
+                if (!isHovering) moveResume();
+            }, 300);
+        }
+
+        // --- SỰ KIỆN TƯƠNG TÁC ---
+
+        resumeLink.addEventListener('mouseenter', () => {
+            // TRƯỜNG HỢP 1: Lần đầu tiên chạm vào -> KÍCH HOẠT GAME
+            if (!hasStarted) {
+                hasStarted = true;
+                
+                // Tính toán vị trí hiện tại so với khung cha để gán absolute không bị giật
+                const rect = resumeLink.getBoundingClientRect();
+                const parentRect = aboutSection.getBoundingClientRect();
+                
+                const startLeft = rect.left - parentRect.left;
+                const startTop = rect.top - parentRect.top;
+
+                // Chuyển sang Absolute
+                resumeLink.style.left = `${startLeft}px`;
+                resumeLink.style.top = `${startTop}px`;
+                resumeLink.classList.add('flying');
+
+                // Ngay lập tức bỏ chạy lần đầu tiên!
+                catchAttempt++;
+                evadeMouse();
+                return;
+            }
+
+            // TRƯỜNG HỢP 2: Đã bay rồi -> XỬ LÝ RƯỢT ĐUỔI
+            if (catchAttempt < MAX_EVASION) {
+                catchAttempt++;
+                // Bỏ chạy tiếp
+                evadeMouse();
+            } else {
+                // TRƯỜNG HỢP 3: Đã đuổi đủ số lần -> ĐẦU HÀNG (Đứng yên)
+                isHovering = true;
+                clearTimeout(moveTimer);
+                
+                const computedStyle = window.getComputedStyle(resumeLink);
+                resumeLink.style.transition = 'none'; // Freeze
+                resumeLink.style.left = computedStyle.left;
+                resumeLink.style.top = computedStyle.top;
+            }
+        });
+
+        resumeLink.addEventListener('mouseleave', () => {
+            // Nếu đã bắt được rồi mà thả ra thì reset lại game (hoặc cho bay tiếp tùy ý)
+            // Ở đây mình cho nó bay tiếp lơ lửng
+            if (hasStarted && isHovering) {
+                isHovering = false;
+                
+                // Trả lại transition mượt
+                resumeLink.style.transition = 'top 1.3s ease-in-out, left 1.3s ease-in-out, color 0.2s';
+                moveResume();
+                
+                // MẸO: Reset lại số lần bắt để lần sau vào lại phải đuổi tiếp?
+                // Nếu muốn khó thì uncomment dòng dưới:
+                // catchAttempt = 0; 
+            }
+        });
+    });
+</script>
+
+
+                
+<script>
+    // Hàm thiết lập ngôn ngữ
+    function setLanguage(lang) {
+        // 1. Gán class cho body (mode-en hoặc mode-vi)
+        document.body.className = 'mode-' + lang;
+
+        // 2. Đổi màu nút bấm (đậm nhạt)
+        const btnEn = document.getElementById('btn-en');
+        const btnVi = document.getElementById('btn-vi');
+
+        if (lang === 'en') {
+            btnEn.classList.add('active');
+            btnVi.classList.remove('active');
+        } else {
+            btnVi.classList.add('active');
+            btnEn.classList.remove('active');
+        }
+
+        // 3. Lưu lại lựa chọn (để F5 không bị mất)
+        localStorage.setItem('preferredLang', lang);
+    }
+
+    // Tự động chạy khi vừa vào web
+    document.addEventListener("DOMContentLoaded", () => {
+        // Kiểm tra xem trước đó khách chọn gì, nếu chưa chọn thì mặc định là 'en' (Tiếng Anh)
+        const savedLang = localStorage.getItem('preferredLang') || 'en';
+        setLanguage(savedLang);
+    });
+</script>
+
+
+                
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const musicalImage = document.getElementById('musical-image');
+        const contactAudio = document.getElementById('contact-audio');
+
+        if (musicalImage && contactAudio) {
+            musicalImage.addEventListener('click', () => {
+                // Kiểm tra: Nếu nhạc đang tắt (paused) thì bật, đang bật thì tắt
+                if (contactAudio.paused) {
+                    contactAudio.play();
+                    // (Tùy chọn) Giảm độ mờ ảnh một chút để biết nhạc đang chạy
+                    musicalImage.style.opacity = "0.7"; 
+                } else {
+                    contactAudio.pause();
+                    // Trả lại độ sáng bình thường
+                    musicalImage.style.opacity = "1";
+                }
+            });
+        }
+    });
+</script>
+
+<script src="/films-data.js"></script>
+<script src="/commercial-data.js"></script>
+<script src="/others-data.js"></script>
+<script src="/writing-data.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Tìm các khung trống
+        const containers = document.querySelectorAll('.dynamic-content');
+
+        containers.forEach(div => {
+            const id = div.getAttribute('data-id');
+            // Nếu tìm thấy dữ liệu trong file films-data.js thì điền vào
+            if (typeof filmsData !== 'undefined' && filmsData[id]) {
+                div.innerHTML = `
+                    <div class="content-vi">${filmsData[id].vi}</div>
+                    <div class="content-en">${filmsData[id].en}</div>
+                `;
+            }
+            // Nếu tìm thấy dữ liệu trong file commercial-data.js thì điền vào
+            else if (typeof commercialData !== 'undefined' && commercialData[id]) {
+                div.innerHTML = `
+                    <div class="content-vi">${commercialData[id].vi}</div>
+                    <div class="content-en">${commercialData[id].en}</div>
+                `;
+            }
+            // others-data.js
+            else if (typeof othersData !== 'undefined' && othersData[id]) {
+                div.innerHTML = `
+                    <div class="content-vi">${othersData[id].vi}</div>
+                    <div class="content-en">${othersData[id].en}</div>
+                `;
+            
+            }
+        });
+    });
+</script>
+
+<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+    // --- LOGIC LIGHTBOX ---
+    
+    // 1. Lắng nghe sự kiện click trên toàn bộ trang (Event Delegation)
+    document.addEventListener('click', function(e) {
+        // Kiểm tra xem cái được click có phải là ảnh trong gallery-wall không
+        if (e.target && e.target.closest('.gallery-wall img')) {
+            const imgSrc = e.target.src; // Lấy đường dẫn ảnh
+            openLightbox(imgSrc);
+        }
+    });
+
+    const lightbox = document.getElementById('lightbox-overlay');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    // 2. Hàm mở Lightbox
+    function openLightbox(src) {
+        lightboxImg.src = src;
+        lightbox.style.display = "flex";
+        // Ngăn cuộn chuột ở trang chính khi đang xem ảnh
+        document.body.style.overflow = "hidden"; 
+    }
+
+    // 3. Hàm đóng Lightbox
+    function closeLightbox() {
+        lightbox.style.display = "none";
+        // Cho phép cuộn trang trở lại
+        document.body.style.overflow = "auto"; 
+    }
+</script>
+
+
+<script>
+    /* --- HỆ THỐNG VẬT LÝ: FIX LỖI TỤM GÓC --- */
+
+    let animationFrameId; 
+    const physicsItems = []; 
+
+    function renderWritingList() {
+        const container = document.getElementById('writing-list-container');
+        if (!container || typeof writingData === 'undefined') return;
+
+        // 1. Reset
+        container.innerHTML = '';
+        physicsItems.length = 0; 
+        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+
+        // --- FIX QUAN TRỌNG: TÍNH TOÁN KÍCH THƯỚC AN TOÀN ---
+        // Nếu container đang ẩn (offsetWidth = 0), ta dùng tạm kích thước màn hình
+        // Trừ đi 300px (chiều rộng sidebar) để không bị tràn
+        const safeWidth = container.offsetWidth > 0 ? container.offsetWidth : (window.innerWidth - 300);
+        const safeHeight = container.offsetHeight > 0 ? container.offsetHeight : window.innerHeight;
+
+        // 2. Tạo phần tử
+        writingData.forEach((item, index) => {
+            const el = document.createElement('div');
+            el.className = 'writing-scatter-item';
+            
+            el.innerHTML = `
+                <span class="content-vi">${item.title.vi}</span>
+                <span class="content-en">${item.title.en}</span>
+            `;
+            
+            el.onclick = () => openWritingDetail(item.id);
+
+            // Style
+            const fontSize = Math.floor(Math.random() * 2) + 12; // 12px - 13px
+            el.style.fontSize = fontSize + 'px';
+            el.style.position = 'absolute';
+            el.style.whiteSpace = 'nowrap';
+            el.style.userSelect = 'none';
+            el.style.cursor = 'pointer';
+            el.style.opacity = Math.max(0.6, 1 - (index * 0.03));
+
+            container.appendChild(el);
+
+            // --- KHỞI TẠO VỊ TRÍ (DÙNG KÍCH THƯỚC AN TOÀN) ---
+            const startX = Math.random() * (safeWidth - 100); 
+            const startY = Math.random() * (safeHeight - 50);
+
+            // Random vận tốc
+            const vx = (Math.random() - 0.5) * 0.4; 
+            const vy = (Math.random() - 0.5) * 0.4;
+
+            physicsItems.push({
+                el: el,
+                x: startX,
+                y: startY,
+                vx: vx,
+                vy: vy,
+                width: 0, 
+                height: 0
+            });
+        });
+
+        // Đo kích thước thật ngay sau khi append
+        physicsItems.forEach(item => {
+            item.width = item.el.offsetWidth;
+            item.height = item.el.offsetHeight;
+        });
+
+        runPhysicsLoop(container);
+    }
+
+    function runPhysicsLoop(container) {
+        function update() {
+            // Cập nhật lại kích thước khung chứa liên tục (đề phòng resize)
+            // Nếu đang ẩn thì vẫn giữ logic cũ, nếu hiện thì lấy kích thước thật
+            const containerW = container.offsetWidth > 0 ? container.offsetWidth : window.innerWidth;
+            const containerH = container.offsetHeight > 0 ? container.offsetHeight : window.innerHeight;
+
+            physicsItems.forEach((itemA, i) => {
+                // A. Di chuyển
+                itemA.x += itemA.vx;
+                itemA.y += itemA.vy;
+
+                // B. Va chạm tường (Wall Bounce)
+                if (itemA.x <= 0) {
+                    itemA.x = 0;
+                    itemA.vx *= -1;
+                } else if (itemA.x + itemA.width >= containerW) {
+                    itemA.x = containerW - itemA.width;
+                    itemA.vx *= -1;
+                }
+
+                if (itemA.y <= 0) {
+                    itemA.y = 0;
+                    itemA.vy *= -1;
+                } else if (itemA.y + itemA.height >= containerH) {
+                    itemA.y = containerH - itemA.height;
+                    itemA.vy *= -1;
+                }
+
+                // C. Va chạm với nhau (Object Collision)
+                for (let j = i + 1; j < physicsItems.length; j++) {
+                    const itemB = physicsItems[j];
+
+                    if (isOverlapping(itemA, itemB)) {
+                        // Tính toán vector đẩy
+                        let dx = (itemA.x + itemA.width/2) - (itemB.x + itemB.width/2);
+                        let dy = (itemA.y + itemA.height/2) - (itemB.y + itemB.height/2);
+
+                        if (dx === 0) dx = Math.random() - 0.5;
+                        if (dy === 0) dy = Math.random() - 0.5;
+
+                        const distance = Math.sqrt(dx*dx + dy*dy);
+                        const unitX = dx / distance;
+                        const unitY = dy / distance;
+
+                        const pushForce = 0.2; 
+
+                        // Đẩy vận tốc
+                        itemA.vx += unitX * pushForce;
+                        itemA.vy += unitY * pushForce;
+                        itemB.vx -= unitX * pushForce;
+                        itemB.vy -= unitY * pushForce;
+                        
+                        // Tách vị trí ngay lập tức (quan trọng để không bị dính)
+                        const separateSpeed = 1; // Tăng lên một chút để tách nhanh hơn
+                        itemA.x += unitX * separateSpeed;
+                        itemA.y += unitY * separateSpeed;
+                        itemB.x -= unitX * separateSpeed;
+                        itemB.y -= unitY * separateSpeed;
+                    }
+                }
+
+                // D. Giới hạn tốc độ (Friction)
+                const maxSpeed = 0.8; // Tăng nhẹ max speed để chúng nó linh hoạt hơn
+                if (itemA.vx > maxSpeed) itemA.vx = maxSpeed;
+                if (itemA.vx < -maxSpeed) itemA.vx = -maxSpeed;
+                if (itemA.vy > maxSpeed) itemA.vy = maxSpeed;
+                if (itemA.vy < -maxSpeed) itemA.vy = -maxSpeed;
+
+                // E. Render
+                itemA.el.style.left = itemA.x + 'px';
+                itemA.el.style.top = itemA.y + 'px';
+            });
+
+            animationFrameId = requestAnimationFrame(update);
+        }
+        update();
+    }
+
+    // Hàm kiểm tra va chạm (+ padding 15px cho thoáng)
+    function isOverlapping(a, b) {
+        const padding = 15; 
+        return (
+            a.x < b.x + b.width + padding &&
+            a.x + a.width + padding > b.x &&
+            a.y < b.y + b.height + padding &&
+            a.y + a.height + padding > b.y
+        );
+    }
+
+    /* --- CÁC HÀM PHỤ TRỢ --- */
+    function renderWritingSidebar() {
+        const sidebarList = document.getElementById('sidebar-writing-list');
+        if (!sidebarList || typeof writingData === 'undefined') return;
+        sidebarList.innerHTML = ''; 
+        writingData.forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <a href="javascript:void(0)" onclick="openWritingDetail('${item.id}')" id="link-${item.id}">
+                    <span class="content-vi">${item.title.vi}</span>
+                    <span class="content-en">${item.title.en}</span>
+                </a>
+            `;
+            sidebarList.appendChild(li);
+        });
+    }
+
+    // --- HÀM MỞ BÀI VIẾT (CẬP NHẬT URL) ---
+    function openWritingDetail(id) {
+        const post = writingData.find(item => item.id === id);
+        if (!post) return;
+
+        // 1. Điền dữ liệu
+        const titleEl = document.getElementById('detail-title');
+        const metaEl = document.getElementById('detail-meta');
+        const contentEl = document.getElementById('detail-content');
+        const viewEl = document.getElementById('writing-detail-view');
+
+        if (titleEl) titleEl.innerHTML = `<span class="content-vi">${post.title.vi}</span><span class="content-en">${post.title.en}</span>`;
+        if (metaEl) metaEl.innerText = `${post.location}, ${post.date}`;
+        if (contentEl) contentEl.innerHTML = `<div class="content-vi">${post.content.vi}</div><div class="content-en">${post.content.en}</div>`;
+
+        // 2. Hiện khung bài viết
+        if (viewEl) {
+            viewEl.style.display = 'block';
+            setTimeout(() => {
+                viewEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+
+        // 3. [TỰ ĐỘNG HOÁ 100%] Tự tạo URL từ ID bài viết
+        // Logic: Nếu ID là "write-abc-xyz" -> Link sẽ là "/writing/abc-xyz"
+        
+        let newUrl = "";
+        
+        // Kiểm tra nếu có trong danh sách thủ công (urlMapping) thì ưu tiên dùng
+        if (urlMapping[id]) {
+            newUrl = urlMapping[id];
+        } 
+        // Nếu không có, tự động tạo ra từ ID
+        else if (id.startsWith('write-')) {
+            const slug = id.substring(6); // Cắt bỏ chữ "write-" (6 ký tự đầu)
+            newUrl = '/writings/' + slug;
+        }
+
+        // Tiến hành cập nhật URL nếu có thay đổi
+        if (newUrl) {
+            const currentPath = window.location.pathname;
+            if (currentPath !== newUrl) {
+                window.history.pushState({ pageId: id, groupId: 'group-writing' }, "", newUrl);
+            }
+        }
+    }
+
+    // --- HÀM ĐÓNG BÀI VIẾT (TRẢ VỀ URL GỐC) ---
+    function closeWritingDetail() {
+        const viewEl = document.getElementById('writing-detail-view');
+        if (viewEl) {
+            viewEl.style.display = 'none';
+            const topArea = document.querySelector('.writing-top-area');
+            if (topArea) topArea.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Trả URL về /writing
+        window.history.pushState({ pageId: 'cat-writing', groupId: 'group-writing' }, "", '/writing');
+    }
+
+    // Bắt sự kiện Resize để không bị lỗi văng ra ngoài
+    window.addEventListener('resize', () => {
+        const container = document.getElementById('writing-list-container');
+        // Reset lại nếu cần thiết, hoặc để physics tự xử lý
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        renderWritingList();   
+        renderWritingSidebar(); 
+    });
+</script>
+
+</body>
+</html>
