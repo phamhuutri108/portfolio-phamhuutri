@@ -1,7 +1,13 @@
+/* --- FILE: others-data.js --- */
 
 const othersData = {
     // 1. WARDROBE (HỌC TỦ)
     "other-wardrobe": {
+        title: {
+            vi: "Học Tủ",
+            en: "Wardrobe"
+        },
+        thumbnail: "https://ik.imagekit.io/phamhuutri108/Others/Hoc%20Tu/HOC_TU_Thumbnail.png",
         vi: `
             <p>
                 <b>Thể loại:</b> Phim ngắn / Tâm lý, Gia đình<br>
@@ -25,8 +31,6 @@ const othersData = {
                 <img src="https://ik.imagekit.io/phamhuutri108/Others/Hoc%20Tu/Storyboard/HOC_TU_Storyboard_9.jpg">
                 <img src="https://ik.imagekit.io/phamhuutri108/Others/Hoc%20Tu/Storyboard/HOC_TU_Storyboard_10.jpg">
             </div>
-
-            
         `,
         en: `
             <p>
@@ -56,6 +60,11 @@ const othersData = {
 
     // 2. WET WOOD (CỦI ƯỚT)
     "other-wet-wood": {
+        title: {
+            vi: "Củi Ướt",
+            en: "Wet Wood"
+        },
+        thumbnail: "https://ik.imagekit.io/phamhuutri108/Others/Cui%20Uot/CUI_UOT_Thumbnail_1.png",
         vi: `
             <p>
                 <b>Thể loại:</b> Phim ngắn / Thể nghiệm<br>
@@ -134,6 +143,11 @@ const othersData = {
 
     // 3. TRANH KIẾNG NHÀ TÔI (MY FAMILY'S GLASS PAINTING)
     "other-glass-painting": {
+        title: {
+            vi: "Tranh Kiếng Nhà Tôi",
+            en: "My Family's Glass Painting"
+        },
+        thumbnail: "https://ik.imagekit.io/phamhuutri108/Others/TKNT/TKNT_Thumbnail.jpg",
         vi: `
             <p>
                 <b>Tựa tiếng Nhật:</b> うちのガラス絵<br>
@@ -286,6 +300,11 @@ const othersData = {
 
     // 4. TRĂNG RẰM (THE FULL MOON)
     "other-full-moon": {
+        title: {
+            vi: "Trăng Rằm",
+            en: "The Full Moon"
+        },
+        thumbnail: "https://ik.imagekit.io/phamhuutri108/Others/Trang%20Ram/Trang_Ram_Thumbnail.jpg",
         vi: `
             <p>
                 <b>Thể loại:</b> Phim múa (Dance Film)<br>
@@ -356,6 +375,11 @@ const othersData = {
 
     // 5. CHILL CÙNG TÂY BẮC (CHILLING IN THE NORTHWEST)
     "other-chill-nw": {
+        title: {
+            vi: "Chill Cùng Tây Bắc",
+            en: "Chilling in the Northwest"
+        },
+        thumbnail: "https://ik.imagekit.io/phamhuutri108/Others/Chill_cung_Tay_Bac_Thumbnail.jpg",
         vi: `
             <p>
                 <b>Thể loại:</b> Video Âm nhạc<br>
@@ -389,8 +413,6 @@ const othersData = {
                     allowfullscreen>
                 </iframe>
             </div>
-
-            
         `
     }
 };
