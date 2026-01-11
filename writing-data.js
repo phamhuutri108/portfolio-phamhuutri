@@ -4,6 +4,25 @@
 // Bài mới nhất bạn cứ thêm vào ĐẦU danh sách (ngay sau dấu [ ).
 
 const writingData = [
+    
+    {
+        id: "write-test-thu-cai-moi-moi-nay-xem-sao",
+        date: "11/01/24",
+        location: "Sài Gòn",
+        title: {
+            vi: "TÉSSSTTTTT",
+            en: "TESSTTTTTTTTT"
+        },
+        content: {
+            vi: `<p>Nội dung...</p>`,
+            en: `<p>Content...</p>`
+        }
+    },
+    
+    
+    
+    
+    
     {
         id: "write-dieu-khac-la",
         date: "11/06/25", // Tương lai? Hay là 2024? Tôi cứ để nguyên nhé
