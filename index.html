@@ -385,14 +385,9 @@
 
 
 <script>
+    /* --- HỆ THỐNG TỰ ĐỘNG HOÁ (OPTIMIZED: LAZY RENDERING) --- */
 
-
-
-
-
-    /* --- HỆ THỐNG TỰ ĐỘNG HOÁ (AUTOMATION SYSTEM) --- */
-
-    // 1. CẤU HÌNH ĐƯỜNG DẪN TĨNH (Các trang cố định và danh mục)
+    // 1. CẤU HÌNH ĐƯỜNG DẪN TĨNH
     const urlMapping = {
         'home': '/',
         'about': '/about',
@@ -401,55 +396,76 @@
         'cat-commercials': '/commercials',
         'cat-others': '/others',
         'cat-writings': '/writings'
-        // KHÔNG CẦN KHAI BÁO TỪNG DỰ ÁN NỮA VÌ ĐÃ CÓ LOGIC TỰ ĐỘNG
     };
 
-    // 2. HÀM XỬ LÝ URL THÔNG MINH (Tự tìm ID từ đường dẫn)
+    // 2. HÀM TÌM DỮ LIỆU DỰ ÁN (Helper mới)
+    // Giúp tìm thông tin dự án từ ID mà không cần loop nhiều lần
+    function getProjectData(id) {
+        if (typeof filmsData !== 'undefined' && filmsData[id]) return filmsData[id];
+        if (typeof commercialData !== 'undefined' && commercialData[id]) return commercialData[id];
+        if (typeof othersData !== 'undefined' && othersData[id]) return othersData[id];
+        return null;
+    }
+
+    // 3. HÀM RENDER NỘI DUNG CHI TIẾT (Chỉ chạy khi người dùng bấm vào xem)
+    function renderSectionContent(id) {
+        // Nếu section đã tồn tại rồi thì không cần tạo lại
+        if (document.getElementById(id)) return;
+
+        const item = getProjectData(id);
+        if (!item) return; // Không tìm thấy data thì thôi
+
+        const contentContainer = document.querySelector('.content');
+        const section = document.createElement('div');
+        section.id = id;
+        section.className = 'page-section';
+        
+        // Lúc này mới nhúng iframe Youtube vào -> Giảm tải cực lớn cho lúc mới vào web
+        section.innerHTML = `
+            <h2 class="page-title">
+                <span class="content-en">${item.title.en}</span>
+                <span class="content-vi">${item.title.vi}</span>
+            </h2>
+            <div class="about-text">
+                <div class="content-vi">${item.vi}</div>
+                <div class="content-en">${item.en}</div>
+            </div>
+        `;
+        contentContainer.appendChild(section);
+        
+        // Cập nhật lại ngôn ngữ cho nội dung vừa mới sinh ra
+        const currentLang = document.body.classList.contains('mode-vi') ? 'vi' : 'en';
+        // (CSS đã tự xử lý ẩn hiện class mode-vi/en nên không cần set lại style thủ công)
+    }
+
+    // 4. HÀM XỬ LÝ URL
     function getIdFromUrl(path) {
         if (path.length > 1 && path.endsWith('/')) path = path.slice(0, -1);
-
-        // A. Kiểm tra trang tĩnh trước
         for (const [id, url] of Object.entries(urlMapping)) {
             if (url === path) return id;
         }
-
-        // B. Logic tự động cho các dự án (Dựa trên tiền tố URL)
-        // Ví dụ: /short-films/dad-dont-lie-to-me -> ID sẽ là: film-dad-dont-lie-to-me
+        
         const dynamicRoutes = [
-            { prefix: '/short-films/',  data: typeof filmsData !== 'undefined' ? filmsData : {},      idPrefix: 'short-films-', type: 'object' },
-            { prefix: '/commercials/', data: typeof commercialData !== 'undefined' ? commercialData : {}, idPrefix: 'commercials-', type: 'object' },
-            { prefix: '/others/',      data: typeof othersData !== 'undefined' ? othersData : {},     idPrefix: 'others-',type: 'object' },
-            { prefix: '/writings/',     data: typeof writingData !== 'undefined' ? writingData : {},    idPrefix: 'writings-',type: 'array' } 
+            { prefix: '/short-films/',  idPrefix: 'short-films-' },
+            { prefix: '/commercials/', idPrefix: 'commercials-' },
+            { prefix: '/others/',      idPrefix: 'others-' },
+            { prefix: '/writings/',    idPrefix: 'writings-' } 
         ];
 
         for (const route of dynamicRoutes) {
             if (path.startsWith(route.prefix)) {
-                // Lấy phần đuôi (slug) từ URL
                 const slug = path.replace(route.prefix, '');
-                // Tái tạo lại ID gốc
-                const expectedId = route.idPrefix + slug;
-
-                // Kiểm tra xem ID này có tồn tại trong Data không?
-                let exists = false;
-                if (typeof route.data !== 'undefined') {
-                    if (route.type === 'array') {
-                        exists = route.data.find(item => item.id === expectedId);
-                    } else {
-                        exists = route.data[expectedId];
-                    }
-                }
-
-                if (exists) return expectedId;
+                return route.idPrefix + slug;
             }
         }
-
-        return 'not-found'; // Không tìm thấy gì hết
+        return 'not-found';
     }
 
-    // 3. HÀM SHOW PAGE (ĐÃ NÂNG CẤP TOÀN DIỆN)
+    // 5. HÀM SHOW PAGE (ĐÃ TỐI ƯU)
     function showPage(pageId, groupId = null, addToHistory = true) {
-        
-        // A. Tự động xác định Group nếu người dùng quên truyền vào
+        if (!pageId) pageId = 'home';
+
+        // A. Tự động xác định Group
         if (!groupId) {
             if (pageId.startsWith('short-films-') || pageId === 'cat-short-films') groupId = 'group-short-films';
             else if (pageId.startsWith('commercials-') || pageId === 'cat-commercials') groupId = 'group-commercials';
@@ -457,12 +473,10 @@
             else if (pageId.startsWith('writings-') || pageId === 'cat-writings') groupId = 'group-writings';
         }
 
-        // B. XỬ LÝ RIÊNG CHO WRITING (Vì nó có hiệu ứng bay và cấu trúc khác)
-        if (pageId && pageId.startsWith('writings-')) {
-            showPage('cat-writings', 'group-writings', false); // Mở trang cha trước
-            setTimeout(() => openWritingDetail(pageId), 50); // Mở chi tiết sau
-            
-            // Cập nhật URL thủ công cho Writing
+        // B. Xử lý Writing
+        if (pageId.startsWith('writings-')) {
+            showPage('cat-writings', 'group-writings', false);
+            setTimeout(() => openWritingDetail(pageId), 50);
             if (addToHistory) {
                 const slug = pageId.replace('writings-', '');
                 updateHistory(pageId, 'group-writings', '/writings/' + slug);
@@ -470,9 +484,11 @@
             return;
         }
 
-        // C. XỬ LÝ GIAO DIỆN CHUNG
-        
-        // 1. Ẩn tất cả, hiện cái cần thiết
+        // C. [QUAN TRỌNG] RENDER DỮ LIỆU NẾU CHƯA CÓ
+        // Nếu đây là trang dự án (có ID trong data), hãy tạo nội dung ngay bây giờ
+        renderSectionContent(pageId);
+
+        // D. XỬ LÝ GIAO DIỆN CHUNG
         const sections = document.querySelectorAll('.page-section');
         sections.forEach(s => s.classList.remove('active-section'));
         
@@ -481,17 +497,15 @@
             activeSection.classList.add('active-section');
             window.scrollTo(0, 0);
         } else {
-            // Nếu không tìm thấy div (có thể data chưa load kịp hoặc lỗi ID)
             if (pageId !== 'not-found') console.warn("Không tìm thấy section:", pageId);
         }
 
-        // 2. Active Menu Link
+        // Active Menu & Sidebar
         const allLinks = document.querySelectorAll('a');
         allLinks.forEach(l => l.classList.remove('active-link'));
         const activeLink = document.getElementById('link-' + pageId);
         if (activeLink) activeLink.classList.add('active-link');
 
-        // 3. Mở Sidebar Group
         const allGroups = document.querySelectorAll('.category-group');
         allGroups.forEach(g => g.classList.remove('is-open'));
         if (groupId) {
@@ -499,45 +513,38 @@
             if (g) g.classList.add('is-open');
         }
 
-        // D. CẬP NHẬT LỊCH SỬ DUYỆT WEB (URL)
+        // E. Cập nhật History
         if (addToHistory) {
-            let url = urlMapping[pageId]; // Tìm trong danh sách tĩnh
-            
-            // Nếu không có, tự sinh URL động
+            let url = urlMapping[pageId];
             if (!url) {
                 if (pageId.startsWith('short-films-')) url = '/short-films/' + pageId.replace('short-films-', '');
                 else if (pageId.startsWith('commercials-')) url = '/commercials/' + pageId.replace('commercials-', '');
                 else if (pageId.startsWith('others-')) url = '/others/' + pageId.replace('others-', '');
             }
-            
             if (url) updateHistory(pageId, groupId, url);
         }
 
-        // E. (FIX LỖI) KHỞI ĐỘNG LẠI CHUYỂN ĐỘNG WRITING
-        // Nếu quay lại trang Writing list, hãy render lại các chữ bay
+        // F. Fix Writing List Animation
         if (pageId === 'cat-writings' && typeof renderWritingList === 'function') {
             setTimeout(renderWritingList, 10);
         }
     }
 
-    // Hàm phụ: Cập nhật thanh địa chỉ
     function updateHistory(pageId, groupId, url) {
         if (window.location.pathname !== url) {
             window.history.pushState({ pageId, groupId }, "", url);
         }
     }
 
-    // 4. NHÀ MÁY SẢN XUẤT (RENDER TỰ ĐỘNG TỪ DATA)
-    // Hàm này sẽ chạy vòng lặp qua Data và tạo ra HTML
+    // 6. NHÀ MÁY SẢN XUẤT (CHỈ TẠO SIDEBAR & GRID - KHÔNG TẠO CHI TIẾT)
     function renderProjectSystem(dataObj, sidebarId, gridId, groupId) {
         const sidebar = document.getElementById(sidebarId);
         const grid = document.getElementById(gridId);
-        const contentContainer = document.querySelector('.content');
-
+        
         if (!dataObj) return;
 
         for (const [id, item] of Object.entries(dataObj)) {
-            // A. Tạo Link ở Sidebar
+            // A. Sidebar Link
             if (sidebar) {
                 const li = document.createElement('li');
                 li.innerHTML = `
@@ -549,14 +556,17 @@
                 sidebar.appendChild(li);
             }
 
-            // B. Tạo Ảnh Thumbnail ở trang danh mục
+            // B. Grid Thumbnail
             if (grid) {
                 const a = document.createElement('a');
                 a.href = "javascript:void(0)";
                 a.onclick = () => showPage(id, groupId);
                 a.className = "gallery-item";
+                
+                // THÊM loading="lazy" vào thẻ img
+                // Đây là cách tối ưu ảnh tốt nhất mà không cần giảm chất lượng
                 a.innerHTML = `
-                    <img src="${item.thumbnail || ''}" alt="${item.title.en}">
+                    <img src="${item.thumbnail || ''}" alt="${item.title.en}" loading="lazy">
                     <p style="margin-top: 5px; font-weight: bold;">
                         <span class="content-en">${item.title.en}</span>
                         <span class="content-vi">${item.title.vi}</span>
@@ -564,65 +574,31 @@
                 `;
                 grid.appendChild(a);
             }
-
-            // C. Tạo Trang Chi Tiết (Page Section)
-            // Kiểm tra nếu chưa có thì tạo mới
-            let section = document.getElementById(id);
-            if (!section) {
-                section = document.createElement('div');
-                section.id = id;
-                section.className = 'page-section';
-                contentContainer.appendChild(section); // Thêm vào cuối Content
-            }
-
-            // Đổ nội dung vào
-            section.innerHTML = `
-                <h2 class="page-title">
-                    <span class="content-en">${item.title.en}</span>
-                    <span class="content-vi">${item.title.vi}</span>
-                </h2>
-                <div class="about-text">
-                    <div class="content-vi">${item.vi}</div>
-                    <div class="content-en">${item.en}</div>
-                </div>
-            `;
+            
+            // LƯU Ý: Đã xóa phần tạo "Page Section" ở đây để tránh tải video ngầm
         }
     }
 
-    // 5. KHỞI CHẠY TẤT CẢ KHI WEB LOAD XONG
+    // 7. KHỞI CHẠY
     document.addEventListener("DOMContentLoaded", () => {
-        
-        // Bước 1: Chạy nhà máy sản xuất cho từng mục
-        if (typeof filmsData !== 'undefined') 
-            renderProjectSystem(filmsData, 'sidebar-short-films-list', 'grid-short-films', 'group-short-films');
-        
-        if (typeof commercialData !== 'undefined') 
-            renderProjectSystem(commercialData, 'sidebar-commercials-list', 'grid-commercials', 'group-commercials');
+        if (typeof filmsData !== 'undefined') renderProjectSystem(filmsData, 'sidebar-short-films-list', 'grid-short-films', 'group-short-films');
+        if (typeof commercialData !== 'undefined') renderProjectSystem(commercialData, 'sidebar-commercials-list', 'grid-commercials', 'group-commercials');
+        if (typeof othersData !== 'undefined') renderProjectSystem(othersData, 'sidebar-others-list', 'grid-others', 'group-others');
 
-        if (typeof othersData !== 'undefined') 
-            renderProjectSystem(othersData, 'sidebar-others-list', 'grid-others', 'group-others');
-
-        // Bước 2: Chạy hệ thống Writing (Logic riêng của Writing)
         if (typeof renderWritingList === 'function') {
-            renderWritingList();   // Tạo chữ bay
-            renderWritingSidebar(); // Tạo sidebar writings (dùng hàm cũ của writings)
+            renderWritingList();   
+            renderWritingSidebar(); 
         }
 
-        // Bước 3: Kiểm tra URL để mở đúng trang
         const path = window.location.pathname;
         const initialId = getIdFromUrl(path);
         
-        // Mở trang (false = không lưu lịch sử lần đầu)
         showPage(initialId, null, false);
     });
 
-    // Xử lý nút Back/Forward của trình duyệt
     window.onpopstate = function(event) {
-        if (event.state) {
-            showPage(event.state.pageId, event.state.groupId, false);
-        } else {
-            showPage(getIdFromUrl(window.location.pathname), null, false);
-        }
+        if (event.state) showPage(event.state.pageId, event.state.groupId, false);
+        else showPage('home', null, false);
     };
 </script>
 
