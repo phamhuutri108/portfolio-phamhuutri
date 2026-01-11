@@ -835,21 +835,7 @@
         'other-chill-nw': '/others/chill-cung-tay-bac',
         
         // Writings
-        'write-dieu-khac-la': '/writings/co-dieu-gi-do-khac',
-        'write-ba-noi-doi': '/writings/ba-toi-la-ke-noi-doi',
-        'write-108-ga-nang': '/writings/108-ga-va-nang-la-ban',
-        'write-nha-trang-sep': '/writings/nha-trang-11-09-24',
-        'write-manh-giay-khe-da': '/writings/nhung-manh-giay-trong-khe-da',
-        'write-sg-apr': '/writings/sai-gon-15-04-24',
-        'write-vo-tuong-dai': '/writings/vo-tuong-dai',
-        'write-loi-me-theu-thao': '/writings/loi-me-theu-thao',
-        'write-sg-jun-23': '/writings/sai-gon-12-06-23',
-        'write-sg-mar-23': '/writings/sai-gon-04-03-23',
-        'write-mui-thuoc-la': '/writings/mui-thuoc-la-quen-thuoc',
-        'write-tu-do-that-su': '/writings/tu-do-that-su',
-        'write-triet-ly-tran-nha': '/writings/triet-ly-cai-tran-nha',
-        'write-tinh-yeu-tinh-thuong': '/writings/tinh-yeu-di-qua-tinh-thuong-o-lai',
-        'write-vong-ngu': '/writings/vong-ngu'
+        
     };
 
     // Hàm tìm ID trang dựa trên URL hiện tại (Dùng khi F5 hoặc gõ link trực tiếp)
@@ -1610,12 +1596,26 @@
             }, 100);
         }
 
-        // 3. [QUAN TRỌNG] Cập nhật URL thành /writing/ten-bai-viet
+        // 3. [TỰ ĐỘNG HOÁ 100%] Tự tạo URL từ ID bài viết
+        // Logic: Nếu ID là "write-abc-xyz" -> Link sẽ là "/writing/abc-xyz"
+        
+        let newUrl = "";
+        
+        // Kiểm tra nếu có trong danh sách thủ công (urlMapping) thì ưu tiên dùng
         if (urlMapping[id]) {
-            // Kiểm tra xem URL hiện tại đã đúng chưa để tránh push trùng
+            newUrl = urlMapping[id];
+        } 
+        // Nếu không có, tự động tạo ra từ ID
+        else if (id.startsWith('write-')) {
+            const slug = id.substring(6); // Cắt bỏ chữ "write-" (6 ký tự đầu)
+            newUrl = '/writings/' + slug;
+        }
+
+        // Tiến hành cập nhật URL nếu có thay đổi
+        if (newUrl) {
             const currentPath = window.location.pathname;
-            if (currentPath !== urlMapping[id]) {
-                window.history.pushState({ pageId: id, groupId: 'group-writing' }, "", urlMapping[id]);
+            if (currentPath !== newUrl) {
+                window.history.pushState({ pageId: id, groupId: 'group-writing' }, "", newUrl);
             }
         }
     }
