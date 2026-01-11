@@ -64,24 +64,24 @@
     </li>
 </ul>
 
-        <div class="category-group" id="group-films">
+        <div class="category-group" id="group-short-films">
         <h4>
-            <a href="javascript:void(0)" onclick="showPage('cat-short-films', 'group-films')" id="link-cat-short-films">
+            <a href="javascript:void(0)" onclick="showPage('cat-short-films', 'group-short-films')" id="link-cat-short-films">
                 <span class="content-en">Short Films</span>
                 <span class="content-vi">Phim ngắn</span>
             </a>
         </h4>
-        <ul class="category-list" id="sidebar-films-list"></ul>
+        <ul class="category-list" id="sidebar-short-films-list"></ul>
     </div>
 
-    <div class="category-group" id="group-comm">
+    <div class="category-group" id="group-commercials">
         <h4>
-            <a href="javascript:void(0)" onclick="showPage('cat-commercial', 'group-comm')" id="link-cat-commercial">
+            <a href="javascript:void(0)" onclick="showPage('cat-commercials', 'group-commercials')" id="link-cat-commercials">
                 <span class="content-en">Commercials</span>
                 <span class="content-vi">Quảng cáo</span>
             </a>
         </h4>
-        <ul class="category-list" id="sidebar-comm-list"></ul>
+        <ul class="category-list" id="sidebar-commercials-list"></ul>
     </div>
 
     <div class="category-group" id="group-others">
@@ -94,14 +94,14 @@
         <ul class="category-list" id="sidebar-others-list"></ul>
     </div>
 
-    <div class="category-group" id="group-writing">
+    <div class="category-group" id="group-writings">
         <h4>
-            <a href="javascript:void(0)" onclick="showPage('cat-writing', 'group-writing')" id="link-cat-writing">
+            <a href="javascript:void(0)" onclick="showPage('cat-writings', 'group-writings')" id="link-cat-writings">
                 <span class="content-en">Writings</span>
                 <span class="content-vi">Viết</span>
             </a>
         </h4>
-        <ul class="category-list" id="sidebar-writing-list"></ul>
+        <ul class="category-list" id="sidebar-writings-list"></ul>
     </div>
 
         <div class="copyright">
@@ -300,60 +300,13 @@
         </p>
     </div>
 
-    <div class="gallery-grid" style="margin-top:30px;">
-
-        <a href="javascript:void(0)" onclick="showPage('film-dad-lie', 'group-films')" class="gallery-item">
-    <img src="https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" alt="Dad Don't Lie">
-    <p style="margin-top: 5px; font-weight: bold;">
-        <span class="content-en">Dad, Don't Lie To Me</span>
-        <span class="content-vi">Ba ơi, Đừng Nói Dối</span>
-    </p>
-</a>
-        
-        <a href="javascript:void(0)" onclick="showPage('film-karma', 'group-films')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_thumbnail.png" alt="Karma">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">Karma</span>
-                <span class="content-vi">Nghiệp</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('film-ghost', 'group-films')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_thumbnail.png" alt="The Ghost Wants to Live">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">"The Ghost" Wants to Live (2022)</span>
-                <span class="content-vi">"Con Ma" Muốn Sống (2022)</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('film-cocks-cooking', 'group-films')" class="gallery-item">
-    <img src="https://ik.imagekit.io/phamhuutri108/GTNC_thumbnail.jpg" alt="Cock's Cooking">
-    <p style="margin-top: 5px; font-weight: bold;">
-        <span class="content-en">Cock's Cooking</span>
-        <span class="content-vi">Gà Trống Nấu Cơm</span>
-    </p>
-</a>
-
-        <a href="javascript:void(0)" onclick="showPage('film-alive', 'group-films')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/Alive_thumbnail.jpg" alt="Alive">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">Alive</span>
-                <span class="content-vi">Khi Chúng Ta Được Sống</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('film-city', 'group-films')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/KTPL_thumbnail.jpg" alt="City">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">When My City Grows</span>
-                <span class="content-vi">Khi Thành Phố Lớn</span>
-            </p>
-        </a>
+    <div class="gallery-grid" id="grid-short-films" style="margin-top:30px;">
 
     </div>
+
 </div>
 
-        <div id="cat-commercial" class="page-section">
+        <div id="cat-commercials" class="page-section">
     <h2 class="page-title">
         <span class="content-en">Commercials</span>
         <span class="content-vi">Quảng cáo</span>
@@ -366,63 +319,8 @@
         </p>
     </div>
 
-    <div class="gallery-grid" style="margin-top:30px;">
+    <div class="gallery-grid" id="grid-commercials" style="margin-top:30px;">
 
-        <a href="javascript:void(0)" onclick="showPage('comm-nhatot', 'group-comm')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/Nhatot_thumbnail.gif" alt="Perfect Home, Reasonable Price!">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">Perfect Home, Reasonable Price!</span>
-                <span class="content-vi">Nhà vừa ý, giá hợp lý!</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('comm-batdongsan', 'group-comm')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/Batdongsan_thumbnail.gif" alt="Real Estate Saigon, Why Not!">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">Real Estate Saigon, Why Not!</span>
-                <span class="content-vi">Nhà thật Sài Gòn, có sao nói vậy!</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('comm-thegioididong', 'group-comm')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/Thegioididong_thumbnail.gif" alt="Has Camera So Convenient! So Safe!">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">Has Camera So Convenient! So Safe!</span>
-                <span class="content-vi">Có Camera Tiện Lắm! An Toàn Lắm!</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('comm-fpt-iphone', 'group-comm')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/FPTxiPhone_Thumbnail.gif" alt="New iPhone Has Arrived">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">New iPhone Has Arrived</span>
-                <span class="content-vi">iPhone Mới Đã Tới</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('comm-fpt-backtoschool', 'group-comm')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/Commercial/FPTxAMD_Thumbnail.gif" alt="Back To School">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">Back To School</span>
-                <span class="content-vi">Back To School</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('comm-bach-dang-cement', 'group-comm')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/comm/bach-dang-cement-thumbnail.jpg" alt="King Cement, Building Heritage Together">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">King Cement, Building Heritage Together</span>
-                <span class="content-vi">Xi Măng Vua, Cùng Xây Di Sản</span>
-            </p>
-        </a>
-
-        <a href="javascript:void(0)" onclick="showPage('comm-benh-vien-phuong-nam', 'group-comm')" class="gallery-item">
-            <img src="https://ik.imagekit.io/phamhuutri108/comm/benh-vien-phuong-nam-thumbnail.jpg" alt="Expectant Mothers Always Decide">
-            <p style="margin-top: 5px; font-weight: bold;">
-                <span class="content-en">Expectant Mothers Always Decide</span>
-                <span class="content-vi">Mẹ Bầu Chốt Luôn</span>
-            </p>
-        </a>
 
     </div>
 </div>
@@ -441,47 +339,7 @@
                 </p>
             </div>
 
-            <div class="gallery-grid" style="margin-top:30px;">
-
-                <a href="javascript:void(0)" onclick="showPage('other-wardrobe', 'group-others')" class="gallery-item">
-                    <img src="https://ik.imagekit.io/phamhuutri108/Others/Hoc%20Tu/HOC_TU_Thumbnail.png" alt="Wardrobe">
-                    <p style="margin-top: 5px; font-weight: bold;">
-                        <span class="content-en">Wardrobe</span>
-                        <span class="content-vi">Học Tủ</span>
-                    </p>
-                </a>
-
-                <a href="javascript:void(0)" onclick="showPage('other-wet-wood', 'group-others')" class="gallery-item">
-                    <img src="https://ik.imagekit.io/phamhuutri108/Others/Cui%20Uot/CUI_UOT_Thumbnail_1.png" alt="Wet Wood">
-                    <p style="margin-top: 5px; font-weight: bold;">
-                        <span class="content-en">Wet Wood</span>
-                        <span class="content-vi">Củi Ướt</span>
-                    </p>
-                </a>
-
-                <a href="javascript:void(0)" onclick="showPage('other-glass-painting', 'group-others')" class="gallery-item">
-                    <img src="https://ik.imagekit.io/phamhuutri108/Others/TKNT/TKNT_Thumbnail.jpg" alt="Glass Painting">
-                    <p style="margin-top: 5px; font-weight: bold;">
-                        <span class="content-en">My Family's Glass Painting</span>
-                        <span class="content-vi">Tranh Kiếng Nhà Tôi</span>
-                    </p>
-                </a>
-
-                <a href="javascript:void(0)" onclick="showPage('other-full-moon', 'group-others')" class="gallery-item">
-                    <img src="https://ik.imagekit.io/phamhuutri108/Others/Trang%20Ram/Trang_Ram_Thumbnail.jpg" alt="Full Moon">
-                    <p style="margin-top: 5px; font-weight: bold;">
-                        <span class="content-en">The Full Moon</span>
-                        <span class="content-vi">Trăng Rằm</span>
-                    </p>
-                </a>
-
-                <a href="javascript:void(0)" onclick="showPage('other-chill-nw', 'group-others')" class="gallery-item">
-                    <img src="https://ik.imagekit.io/phamhuutri108/Others/Chill_cung_Tay_Bac_Thumbnail.jpg" alt="Chill NW">
-                    <p style="margin-top: 5px; font-weight: bold;">
-                        <span class="content-en">Chilling in the Northwest</span>
-                        <span class="content-vi">Chill Cùng Tây Bắc</span>
-                    </p>
-                </a>
+            <div class="gallery-grid" id="grid-others" style="margin-top:30px;">
 
             </div>
         </div>
@@ -493,243 +351,57 @@
 
 
 
-        <div id="cat-writing" class="page-section">
-    <div class="writing-top-area">
-        <h2 class="page-title">
-            <span class="content-en">Writings</span>
-            <span class="content-vi">Viết</span>
-        </h2>
-        
+        <div id="cat-writings" class="page-section">
+            <div class="writings-top-area">
+                <h2 class="page-title">
+                    <span class="content-en">Writings</span>
+                    <span class="content-vi">Viết</span>
+                </h2>
+                <div id="writings-list-container"></div>
+            </div>
 
-        <div id="writing-list-container"></div>
-    </div>
+            <div id="writings-detail-view" style="display: none;">
+                <div style="margin-bottom: 20px;">
+                    <a href="javascript:void(0)" onclick="closeWritingDetail()" 
+                       style="font-size: 26px; text-decoration: none; color: #999; transition: all 0.2s; display: inline-block;"
+                       onmouseover="this.style.color='#0033cc'; this.style.transform='translateX(-5px)'"
+                       onmouseout="this.style.color='#999'; this.style.transform='translateX(0)'"
+                       title="Back / Quay lại">
+                        &larr;
+                    </a>
+                </div>
+                
+                <h2 class="page-title" id="detail-title" style="text-align: left;"></h2>
+                
+                <p style="font-size:13px; color:#666; margin-bottom:30px; font-style: italic; text-align: left;" id="detail-meta"></p>
 
-    <div id="writing-detail-view" style="display: none;">
-        <div style="margin-bottom: 20px;">
-            <a href="javascript:void(0)" onclick="closeWritingDetail()" 
-               style="font-size: 26px; text-decoration: none; color: #999; transition: all 0.2s; display: inline-block;"
-               onmouseover="this.style.color='#0033cc'; this.style.transform='translateX(-5px)'"
-               onmouseout="this.style.color='#999'; this.style.transform='translateX(0)'"
-               title="Back / Quay lại">
-                &larr;
-            </a>
-        </div>
-        
-        <h2 class="page-title" id="detail-title" style="text-align: left;"></h2>
-        
-        <p style="font-size:13px; color:#666; margin-bottom:30px; font-style: italic; text-align: left;" id="detail-meta"></p>
-
-        <div class="essay-content" id="detail-content" style="max-width: 100%; text-align: justify;"></div>
-        
-        <div style="height: 100px;"></div>
-    </div>
-</div>
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-        <div id="film-dad-lie" class="page-section">
-    <h2 class="page-title">
-        <span class="content-en">Dad, Don't Lie To Me</span>
-        <span class="content-vi">Ba Ơi, Đừng Nói Dối</span>
-    </h2>
-     <div class="about-text dynamic-content" data-id="film-dad-lie"></div>
-</div> <div id="film-karma" class="page-section">
-    <h2 class="page-title">
-        <span class="content-en">Karma</span>
-        <span class="content-vi">Nghiệp</span>
-    </h2>
-    <div class="about-text dynamic-content" data-id="film-karma"></div>
-</div>
-
-<div id="film-ghost" class="page-section">
-    <h2 class="page-title">
-        <span class="content-en">"The Ghost" Wants to Live</span>
-        <span class="content-vi">"Con Ma" Muốn Sống</span>
-    </h2>
-    <div class="about-text dynamic-content" data-id="film-ghost"></div>
-    
-</div>
-
-<div id="film-cocks-cooking" class="page-section">
-    <h2 class="page-title">
-        <span class="content-en">Cock's Cooking</span>
-        <span class="content-vi">Gà Trống Nấu Cơm</span>
-    </h2>
-    <div class="about-text dynamic-content" data-id="film-cocks-cooking"></div>
-    
-</div>
-
-<div id="film-alive" class="page-section">
-    <h2 class="page-title">
-        <span class="content-en">Alive</span>
-        <span class="content-vi">Khi Chúng Ta Được Sống</span>
-    </h2>
-    <div class="about-text dynamic-content" data-id="film-alive"></div>
-    
-</div>
-
-<div id="film-city" class="page-section">
-    <h2 class="page-title">
-        <span class="content-en">When My City Grows</span>
-        <span class="content-vi">Khi Thành Phố Lớn</span>
-    </h2>
-    <div class="about-text dynamic-content" data-id="film-city"></div>
-    
-</div>
-
-        <div id="comm-nhatot" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Perfect Home, Reasonable Price!</span>
-                <span class="content-vi">Nhà vừa ý, giá hợp lý!</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="comm-nhatot"></div>
-        </div>
-
-        <div id="comm-batdongsan" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Real Estate Saigon, Why Not!</span>
-                <span class="content-vi">Nhà thật Sài Gòn, có sao nói vậy!</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="comm-batdongsan"></div>
-        </div>
-
-        <div id="comm-thegioididong" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Has Camera So Convenient! So Safe!</span>
-                <span class="content-vi">Có Camera Tiện Lắm! An Toàn Lắm!</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="comm-thegioididong"></div>
-        </div>
-
-        <div id="comm-fpt-iphone" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">New iPhone Has Arrived</span>
-                <span class="content-vi">iPhone Mới Đã Tới</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="comm-fpt-iphone"></div>
-        </div>
-
-        <div id="comm-fpt-backtoschool" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Back To School</span>
-                <span class="content-vi">Back To School</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="comm-fpt-backtoschool"></div>
-        </div>
-
-        <div id="comm-bach-dang-cement" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">King Cement, Building Heritage Together</span>
-                <span class="content-vi">Xi Măng Vua, Cùng Xây Di Sản</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="comm-bach-dang-cement"></div>
-        </div>
-
-        <div id="comm-benh-vien-phuong-nam" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Expectant Mothers Always Decide</span>
-                <span class="content-vi">Mẹ Bầu Chốt Luôn</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="comm-benh-vien-phuong-nam"></div>
+                <div class="essay-content" id="detail-content" style="max-width: 100%; text-align: justify;"></div>
+                
+                <div style="height: 100px;"></div>
+            </div>
         </div>
 
 
-        <div id="other-wardrobe" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Wardrobe</span>
-                <span class="content-vi">Học Tủ</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="other-wardrobe"></div>
-        </div>
 
-        <div id="other-wet-wood" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Wet Wood</span>
-                <span class="content-vi">Củi Ướt</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="other-wet-wood"></div>
-        </div>
-
-        <div id="other-glass-painting" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">My Family's Glass Painting</span>
-                <span class="content-vi">Tranh Kiếng Nhà Tôi</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="other-glass-painting"></div>
-        </div>
-
-        <div id="other-full-moon" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">The Full Moon</span>
-                <span class="content-vi">Trăng Rằm</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="other-full-moon"></div>
-        </div>
-
-        <div id="other-chill-nw" class="page-section">
-            <h2 class="page-title">
-                <span class="content-en">Chilling in the Northwest</span>
-                <span class="content-vi">Chill Cùng Tây Bắc</span>
-            </h2>
-            <div class="about-text dynamic-content" data-id="other-chill-nw"></div>
-        </div>
-
-
-            
-
-        
 
 <script>
-    
+
+
+
+
+
     /* --- HỆ THỐNG TỰ ĐỘNG HOÁ (AUTOMATION SYSTEM) --- */
 
-    // 1. CẤU HÌNH ĐƯỜNG DẪN TĨNH (Các trang cố định)
+    // 1. CẤU HÌNH ĐƯỜNG DẪN TĨNH (Các trang cố định và danh mục)
     const urlMapping = {
         'home': '/',
         'about': '/about',
         'contact': '/contact',
         'cat-short-films': '/short-films',
-        'cat-commercial': '/commercials',
+        'cat-commercials': '/commercials',
         'cat-others': '/others',
-        'cat-writing': '/writing',
-
-        // Short films
-        'film-dad-lie': '/short-films/dad-dont-lie-to-me',
-        'film-karma': '/short-films/karma',
-        'film-ghost': '/short-films/the-ghost-wants-to-live',
-        'film-alive': '/short-films/alive',
-        'film-city': '/short-films/when-my-city-grows',
-        'film-cocks-cooking': '/short-films/cocks-cooking',
-        
-        // Commercials
-        'comm-nhatot': '/commercials/nhatot',
-        'comm-batdongsan': '/commercials/batdongsan',
-        'comm-thegioididong': '/commercials/thegioididong',
-        'comm-fpt-iphone': '/commercials/fptshop-iphone',
-        'comm-fpt-backtoschool': '/commercials/fpt-amd',
-        'comm-bach-dang-cement': '/commercials/bach-dang-cement',
-        'comm-benh-vien-phuong-nam': '/commercials/phuong-nam-hospital',
-
-        // Other projects
-        'other-wardrobe': '/others/wardrobe',
-        'other-wet-wood': '/others/wet-wood',
-        'other-glass-painting': '/others/tranh-kieng-nha-toi',
-        'other-full-moon': '/others/trang-ram',
-        'other-chill-nw': '/others/chill-cung-tay-bac',
-        
-        // Writings
+        'cat-writings': '/writings'
+        // KHÔNG CẦN KHAI BÁO TỪNG DỰ ÁN NỮA VÌ ĐÃ CÓ LOGIC TỰ ĐỘNG
     };
 
     // 2. HÀM XỬ LÝ URL THÔNG MINH (Tự tìm ID từ đường dẫn)
@@ -742,17 +414,19 @@
         }
 
         // B. Logic tự động cho các dự án (Dựa trên tiền tố URL)
-        // Cấu hình quy tắc: Đường dẫn -> Dữ liệu -> Tiền tố ID
+        // Ví dụ: /short-films/dad-dont-lie-to-me -> ID sẽ là: film-dad-dont-lie-to-me
         const dynamicRoutes = [
-            { prefix: '/short-film/',  data: filmsData,      idPrefix: 'film-', type: 'object' },
-            { prefix: '/commercials/', data: commercialData, idPrefix: 'comm-', type: 'object' },
-            { prefix: '/others/',      data: othersData,     idPrefix: 'other-',type: 'object' },
-            { prefix: '/writing/',     data: writingData,    idPrefix: 'write-',type: 'array' } 
+            { prefix: '/short-films/',  data: typeof filmsData !== 'undefined' ? filmsData : {},      idPrefix: 'short-films-', type: 'object' },
+            { prefix: '/commercials/', data: typeof commercialData !== 'undefined' ? commercialData : {}, idPrefix: 'commercials-', type: 'object' },
+            { prefix: '/others/',      data: typeof othersData !== 'undefined' ? othersData : {},     idPrefix: 'others-',type: 'object' },
+            { prefix: '/writings/',     data: typeof writingData !== 'undefined' ? writingData : {},    idPrefix: 'writings-',type: 'array' } 
         ];
 
         for (const route of dynamicRoutes) {
             if (path.startsWith(route.prefix)) {
+                // Lấy phần đuôi (slug) từ URL
                 const slug = path.replace(route.prefix, '');
+                // Tái tạo lại ID gốc
                 const expectedId = route.idPrefix + slug;
 
                 // Kiểm tra xem ID này có tồn tại trong Data không?
@@ -777,21 +451,21 @@
         
         // A. Tự động xác định Group nếu người dùng quên truyền vào
         if (!groupId) {
-            if (pageId.startsWith('film-') || pageId === 'cat-short-films') groupId = 'group-films';
-            else if (pageId.startsWith('comm-') || pageId === 'cat-commercial') groupId = 'group-comm';
-            else if (pageId.startsWith('other-') || pageId === 'cat-others') groupId = 'group-others';
-            else if (pageId.startsWith('write-') || pageId === 'cat-writing') groupId = 'group-writing';
+            if (pageId.startsWith('short-films-') || pageId === 'cat-short-films') groupId = 'group-short-films';
+            else if (pageId.startsWith('commercials-') || pageId === 'cat-commercials') groupId = 'group-commercials';
+            else if (pageId.startsWith('others-') || pageId === 'cat-others') groupId = 'group-others';
+            else if (pageId.startsWith('writings-') || pageId === 'cat-writings') groupId = 'group-writings';
         }
 
         // B. XỬ LÝ RIÊNG CHO WRITING (Vì nó có hiệu ứng bay và cấu trúc khác)
-        if (pageId && pageId.startsWith('write-')) {
-            showPage('cat-writing', 'group-writing', false); // Mở trang cha trước
+        if (pageId && pageId.startsWith('writings-')) {
+            showPage('cat-writings', 'group-writings', false); // Mở trang cha trước
             setTimeout(() => openWritingDetail(pageId), 50); // Mở chi tiết sau
             
             // Cập nhật URL thủ công cho Writing
             if (addToHistory) {
-                const slug = pageId.replace('write-', '');
-                updateHistory(pageId, 'group-writing', '/writing/' + slug);
+                const slug = pageId.replace('writings-', '');
+                updateHistory(pageId, 'group-writings', '/writings/' + slug);
             }
             return;
         }
@@ -831,9 +505,9 @@
             
             // Nếu không có, tự sinh URL động
             if (!url) {
-                if (pageId.startsWith('film-')) url = '/short-film/' + pageId.replace('film-', '');
-                else if (pageId.startsWith('comm-')) url = '/commercials/' + pageId.replace('comm-', '');
-                else if (pageId.startsWith('other-')) url = '/others/' + pageId.replace('other-', '');
+                if (pageId.startsWith('short-films-')) url = '/short-films/' + pageId.replace('short-films-', '');
+                else if (pageId.startsWith('commercials-')) url = '/commercials/' + pageId.replace('commercials-', '');
+                else if (pageId.startsWith('others-')) url = '/others/' + pageId.replace('others-', '');
             }
             
             if (url) updateHistory(pageId, groupId, url);
@@ -841,7 +515,7 @@
 
         // E. (FIX LỖI) KHỞI ĐỘNG LẠI CHUYỂN ĐỘNG WRITING
         // Nếu quay lại trang Writing list, hãy render lại các chữ bay
-        if (pageId === 'cat-writing' && typeof renderWritingList === 'function') {
+        if (pageId === 'cat-writings' && typeof renderWritingList === 'function') {
             setTimeout(renderWritingList, 10);
         }
     }
@@ -920,10 +594,10 @@
         
         // Bước 1: Chạy nhà máy sản xuất cho từng mục
         if (typeof filmsData !== 'undefined') 
-            renderProjectSystem(filmsData, 'sidebar-films-list', 'grid-films', 'group-films');
+            renderProjectSystem(filmsData, 'sidebar-short-films-list', 'grid-short-films', 'group-short-films');
         
         if (typeof commercialData !== 'undefined') 
-            renderProjectSystem(commercialData, 'sidebar-comm-list', 'grid-comm', 'group-comm');
+            renderProjectSystem(commercialData, 'sidebar-commercials-list', 'grid-commercials', 'group-commercials');
 
         if (typeof othersData !== 'undefined') 
             renderProjectSystem(othersData, 'sidebar-others-list', 'grid-others', 'group-others');
@@ -931,7 +605,7 @@
         // Bước 2: Chạy hệ thống Writing (Logic riêng của Writing)
         if (typeof renderWritingList === 'function') {
             renderWritingList();   // Tạo chữ bay
-            renderWritingSidebar(); // Tạo sidebar writing (dùng hàm cũ của writing)
+            renderWritingSidebar(); // Tạo sidebar writings (dùng hàm cũ của writings)
         }
 
         // Bước 3: Kiểm tra URL để mở đúng trang
@@ -1323,42 +997,11 @@
     });
 </script>
 
-<script src="/films-data.js"></script>
-<script src="/commercial-data.js"></script>
+<script src="/short-films-data.js"></script>
+<script src="/commercials-data.js"></script>
 <script src="/others-data.js"></script>
-<script src="/writing-data.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Tìm các khung trống
-        const containers = document.querySelectorAll('.dynamic-content');
+<script src="/writings-data.js"></script>
 
-        containers.forEach(div => {
-            const id = div.getAttribute('data-id');
-            // Nếu tìm thấy dữ liệu trong file films-data.js thì điền vào
-            if (typeof filmsData !== 'undefined' && filmsData[id]) {
-                div.innerHTML = `
-                    <div class="content-vi">${filmsData[id].vi}</div>
-                    <div class="content-en">${filmsData[id].en}</div>
-                `;
-            }
-            // Nếu tìm thấy dữ liệu trong file commercial-data.js thì điền vào
-            else if (typeof commercialData !== 'undefined' && commercialData[id]) {
-                div.innerHTML = `
-                    <div class="content-vi">${commercialData[id].vi}</div>
-                    <div class="content-en">${commercialData[id].en}</div>
-                `;
-            }
-            // others-data.js
-            else if (typeof othersData !== 'undefined' && othersData[id]) {
-                div.innerHTML = `
-                    <div class="content-vi">${othersData[id].vi}</div>
-                    <div class="content-en">${othersData[id].en}</div>
-                `;
-            
-            }
-        });
-    });
-</script>
 
 <div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
     <span class="lightbox-close">&times;</span>
@@ -1404,7 +1047,7 @@
     const physicsItems = []; 
 
     function renderWritingList() {
-        const container = document.getElementById('writing-list-container');
+        const container = document.getElementById('writings-list-container');
         if (!container || typeof writingData === 'undefined') return;
 
         // 1. Reset
@@ -1421,7 +1064,7 @@
         // 2. Tạo phần tử
         writingData.forEach((item, index) => {
             const el = document.createElement('div');
-            el.className = 'writing-scatter-item';
+            el.className = 'writings-scatter-item';
             
             el.innerHTML = `
                 <span class="content-vi">${item.title.vi}</span>
@@ -1561,7 +1204,7 @@
 
     /* --- CÁC HÀM PHỤ TRỢ --- */
     function renderWritingSidebar() {
-        const sidebarList = document.getElementById('sidebar-writing-list');
+        const sidebarList = document.getElementById('sidebar-writings-list');
         if (!sidebarList || typeof writingData === 'undefined') return;
         sidebarList.innerHTML = ''; 
         writingData.forEach(item => {
@@ -1585,7 +1228,7 @@
         const titleEl = document.getElementById('detail-title');
         const metaEl = document.getElementById('detail-meta');
         const contentEl = document.getElementById('detail-content');
-        const viewEl = document.getElementById('writing-detail-view');
+        const viewEl = document.getElementById('writings-detail-view');
 
         if (titleEl) titleEl.innerHTML = `<span class="content-vi">${post.title.vi}</span><span class="content-en">${post.title.en}</span>`;
         if (metaEl) metaEl.innerText = `${post.location}, ${post.date}`;
@@ -1600,7 +1243,7 @@
         }
 
         // 3. [TỰ ĐỘNG HOÁ 100%] Tự tạo URL từ ID bài viết
-        // Logic: Nếu ID là "write-abc-xyz" -> Link sẽ là "/writing/abc-xyz"
+        // Logic: Nếu ID là "writings-abc-xyz" -> Link sẽ là "/writings/abc-xyz"
         
         let newUrl = "";
         
@@ -1609,8 +1252,8 @@
             newUrl = urlMapping[id];
         } 
         // Nếu không có, tự động tạo ra từ ID
-        else if (id.startsWith('write-')) {
-            const slug = id.substring(6); // Cắt bỏ chữ "write-" (6 ký tự đầu)
+        else if (id.startsWith('writings-')) {
+            const slug = id.replace('writings-', ''); // Cắt bỏ chữ "writings-" (6 ký tự đầu)
             newUrl = '/writings/' + slug;
         }
 
@@ -1618,27 +1261,27 @@
         if (newUrl) {
             const currentPath = window.location.pathname;
             if (currentPath !== newUrl) {
-                window.history.pushState({ pageId: id, groupId: 'group-writing' }, "", newUrl);
+                window.history.pushState({ pageId: id, groupId: 'group-writings' }, "", newUrl);
             }
         }
     }
 
     // --- HÀM ĐÓNG BÀI VIẾT (TRẢ VỀ URL GỐC) ---
     function closeWritingDetail() {
-        const viewEl = document.getElementById('writing-detail-view');
+        const viewEl = document.getElementById('writings-detail-view');
         if (viewEl) {
             viewEl.style.display = 'none';
-            const topArea = document.querySelector('.writing-top-area');
+            const topArea = document.querySelector('.writings-top-area');
             if (topArea) topArea.scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Trả URL về /writing
-        window.history.pushState({ pageId: 'cat-writing', groupId: 'group-writing' }, "", '/writing');
+        // Trả URL về /writings
+        window.history.pushState({ pageId: 'cat-writings', groupId: 'group-writings' }, "", '/writings');
     }
 
     // Bắt sự kiện Resize để không bị lỗi văng ra ngoài
     window.addEventListener('resize', () => {
-        const container = document.getElementById('writing-list-container');
+        const container = document.getElementById('writings-list-container');
         // Reset lại nếu cần thiết, hoặc để physics tự xử lý
     });
 
