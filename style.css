@@ -577,9 +577,14 @@ body.mode-vi .content-en {
         height: auto;
     }
     
-    /* 1. Chỉ ẩn dòng bản quyền (Copyright), GIỮ LẠI nút ngôn ngữ */
+    /* Hiện lại Copyright trên mobile */
     .sidebar .copyright {
-        display: none; 
+        display: block !important; /* Bắt buộc hiện */
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+        margin-bottom: 0;
     }
 
     /* 2. Căn chỉnh nút ngôn ngữ nằm gọn ở góc phải trên cùng */
