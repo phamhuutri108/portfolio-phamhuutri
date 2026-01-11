@@ -216,10 +216,22 @@ a:hover {color: #0033cc !important;}
 }
 .gallery-item:hover img { filter: grayscale(0%); }
 
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    .wrapper { flex-direction: column; }
-    .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #eee; padding: 20px; position: relative; height: auto;}
-    .content { padding: 20px; }
+    #writings-list-container {
+        position: relative;
+        width: 100%;
+        height: 80vh; 
+        overflow: hidden; 
+        display: block; 
+    }
+    
+    /* --- SỬA LẠI ĐOẠN NÀY ĐỂ CHO PHÉP BAY TRÊN MOBILE --- */
+    .writings-scatter-item {
+        /* Bỏ position: relative !important đi để JS có thể set absolute */
+        /* Giữ nguyên các thuộc tính khác nếu cần */
+        font-size: 14px !important; /* Chữ to hơn chút cho dễ bấm trên điện thoại */
+    }
 }
 
 /* --- CẬP NHẬT RIÊNG CHO TRANG HOME (CHAOS EFFECT) --- */
