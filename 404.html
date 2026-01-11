@@ -238,6 +238,19 @@
                  class="home-center-img">
         </div>
 
+        <div id="not-found" class="page-section" style="text-align: center; padding-top: 150px; display: none;">
+        <h2 style="font-size: 40px; margin-bottom: 20px;">404</h2>
+        <p style="font-size: 16px; margin-bottom: 30px;">
+            <span class="content-en">Page not found.</span>
+            <span class="content-vi">Trang này không tồn tại.</span>
+        </p>
+        <a href="javascript:void(0)" onclick="showPage('home')" 
+           style="border-bottom: 1px solid #000; padding-bottom: 2px; font-weight: bold;">
+            <span class="content-en">Go Back Home</span>
+            <span class="content-vi">Về Trang Chủ</span>
+        </a>
+    </div>
+
         <div id="about" class="page-section">
     <h2 class="page-title">
         <span class="content-en">About</span>
@@ -840,15 +853,32 @@
 
     // Hàm tìm ID trang dựa trên URL hiện tại (Dùng khi F5 hoặc gõ link trực tiếp)
     function getIdFromUrl(path) {
+        // 1. Chuẩn hoá đường dẫn (xóa dấu / ở cuối nếu có)
         if (path.length > 1 && path.endsWith('/')) {
-            path = path.slice(0, -1); // Xóa dấu / thừa ở cuối
+            path = path.slice(0, -1);
         }
         
-        // Tìm xem đường dẫn hiện tại khớp với ID nào trong danh sách trên
+        // 2. Kiểm tra trong danh sách UrlMapping (Trang tĩnh)
         for (const [id, url] of Object.entries(urlMapping)) {
             if (url === path) return id;
         }
-        return 'home'; // Không tìm thấy thì về Trang chủ
+
+        // 3. Kiểm tra trường hợp bài viết Writing (Dạng động: /writing/...)
+        if (path.startsWith('/writing/')) {
+            // Lấy slug từ URL (ví dụ: ba-toi-la-ke-noi-doi)
+            const slug = path.replace('/writing/', '');
+            const expectedId = 'write-' + slug;
+
+            // Kiểm tra xem bài viết này có thật trong dữ liệu không?
+            const exists = writingData.find(item => item.id === expectedId);
+            
+            if (exists) {
+                return expectedId; // Nếu có thật -> Trả về ID bài viết
+            }
+        }
+
+        // 4. Nếu không khớp cái nào hết -> Trả về trang lỗi 404
+        return 'not-found'; 
     }
 
     // 2. HÀM CHÍNH: SHOW PAGE (Đã nâng cấp)
