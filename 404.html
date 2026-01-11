@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://ik.imagekit.io">
     <link rel="preconnect" href="https://www.youtube.com">
 
-    
+
     <link rel="stylesheet" href="/style.css?v=5.0">
     <link rel="icon" type="image/jpeg" href="https://ik.imagekit.io/phamhuutri108/logo.png">
 
@@ -608,7 +608,7 @@
 </script>
 
 <script>
-    /* --- LOGIC: EXPLOSION + DRAG & DROP --- */
+    /* --- LOGIC: EXPLOSION + DRAG & DROP (HỖ TRỢ CẢ MOBILE & DESKTOP) --- */
     document.addEventListener("DOMContentLoaded", () => {
         const homeSection = document.getElementById('home');
         const centerImage = document.querySelector('.home-center-img');
@@ -624,24 +624,24 @@
         const wordsList = ["one", "Buddha", "is", "not", "enough"];
         
         // CẤU HÌNH
-        const WORD_COUNT = 120; 
-        const MIN_SIZE = 7;     
-        const MAX_SIZE = 30;    
+        // Trên mobile giảm số lượng chữ một chút cho đỡ rối
+        const isMobile = window.innerWidth < 768;
+        const WORD_COUNT = isMobile ? 60 : 120; 
+        const MIN_SIZE = 7;      
+        const MAX_SIZE = 30;     
 
         function randomRange(min, max) {
             return Math.random() * (max - min) + min;
         }
 
-        // --- HÀM 1: TẠO ANIMATION LƠ LỬNG (Tách ra để dùng lại sau khi Drop) ---
+        // --- HÀM 1: TẠO ANIMATION LƠ LỬNG ---
         function startFloating(element) {
-            // Hủy các animation cũ (nếu có) để tránh xung đột
             const animations = element.getAnimations();
             animations.forEach(anim => anim.cancel());
 
             const floatDuration = randomRange(10000, 30000); 
             const rotateEnd = randomRange(-90, 90); 
 
-            // Animation mới: Chỉ rung rinh nhẹ quanh vị trí hiện tại
             element.animate([
                 { transform: `translate(-50%, -50%) rotate(0deg)` },
                 { transform: `translate(calc(-50% + ${randomRange(-50,50)}px), calc(-50% + ${randomRange(-50,50)}px)) rotate(${rotateEnd}deg)` },
@@ -665,21 +665,17 @@
                 span.innerText = wordsList[Math.floor(Math.random() * wordsList.length)];
                 span.className = 'chaos-word';
                 
-                // QUAN TRỌNG: Cho phép chuột tương tác để kéo thả
                 span.style.pointerEvents = 'auto'; 
-                span.style.cursor = 'grab'; // Đổi con trỏ thành bàn tay
+                span.style.cursor = 'grab';
 
-                // Random kích thước
                 const size = randomRange(MIN_SIZE, MAX_SIZE);
                 span.style.fontSize = `${size}px`;
                 span.style.opacity = randomRange(0.2, 0.8);
                 
-                // Vị trí xuất phát: Tâm ảnh
                 span.style.left = '50%';
                 span.style.top = '50%';
                 span.style.transform = 'translate(-50%, -50%)'; 
 
-                // Thời gian bay (Slow Motion: 4s - 8s)
                 const flyDuration = randomRange(4.0, 8.0); 
 
                 span.style.transition = `
@@ -690,7 +686,6 @@
 
                 homeSection.appendChild(span);
 
-                // Kích hoạt bay ra
                 setTimeout(() => {
                     const targetX = randomRange(-10, 110);
                     const targetY = randomRange(-10, 110);
@@ -698,9 +693,7 @@
                     span.style.left = `${targetX}%`;
                     span.style.top = `${targetY}%`;
                     
-                    // Sau khi bay xong thì bắt đầu lơ lửng
                     setTimeout(() => {
-                        // Chỉ bắt đầu lơ lửng nếu người dùng KHÔNG đang kéo nó
                         if (currentDragItem !== span) {
                             startFloating(span);
                         }
@@ -710,71 +703,87 @@
             }
         }
 
-        // --- HÀM 3: XỬ LÝ KÉO THẢ (DRAG & DROP) ---
+        // --- HÀM 3: XỬ LÝ KÉO THẢ (HỖ TRỢ CẢ TOUCH & MOUSE) ---
         
-        // A. Bắt đầu kéo (Mousedown)
-        document.addEventListener('mousedown', (e) => {
+        // Helper: Lấy toạ độ X, Y từ sự kiện (dù là chuột hay cảm ứng)
+        function getClientCoords(e) {
+            if (e.touches && e.touches.length > 0) {
+                return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            }
+            return { x: e.clientX, y: e.clientY };
+        }
+
+        function onDragStart(e) {
             if (e.target.classList.contains('chaos-word')) {
                 isDragging = true;
                 currentDragItem = e.target;
                 
-                // Đổi con trỏ
                 currentDragItem.style.cursor = 'grabbing';
-
-                // Tắt transition để kéo cho mượt (không bị delay bay)
-                currentDragItem.style.transition = 'none';
+                currentDragItem.style.transition = 'none'; // Tắt transition để kéo mượt
 
                 // Tạm dừng animation lơ lửng
                 const anims = currentDragItem.getAnimations();
                 anims.forEach(anim => anim.cancel());
 
-                // Tính toán vị trí con chuột so với góc của chữ
                 const rect = currentDragItem.getBoundingClientRect();
-                dragOffsetX = e.clientX - rect.left;
-                dragOffsetY = e.clientY - rect.top;
+                const coords = getClientCoords(e);
                 
-                e.preventDefault(); // Ngăn bôi đen text
+                dragOffsetX = coords.x - rect.left;
+                dragOffsetY = coords.y - rect.top;
+                
+                // Ngăn sự kiện mặc định (như scroll trên mobile khi chạm vào chữ)
+                if(e.cancelable && e.type === 'touchstart') e.preventDefault();
             }
-        });
+        }
 
-        // B. Di chuyển chuột (Mousemove) - Gắn vào document để không bị tuột
-        document.addEventListener('mousemove', (e) => {
+        function onDragMove(e) {
             if (isDragging && currentDragItem) {
-                // Tính toạ độ mới (theo pixel)
-                // Lưu ý: rect.left/top bao gồm cả translate(-50%), nên ta cần tính toán kỹ một chút
-                // Hoặc đơn giản là set left/top theo vị trí chuột
-                
-                // Lấy container cha để tính toạ độ tương đối
-                const containerRect = homeSection.getBoundingClientRect();
-                
-                let newLeft = e.clientX - containerRect.left;
-                let newTop = e.clientY - containerRect.top;
+                // Ngăn scroll màn hình khi đang kéo chữ
+                if(e.cancelable) e.preventDefault(); 
 
-                // Gán vị trí mới (convert sang px)
+                const containerRect = homeSection.getBoundingClientRect();
+                const coords = getClientCoords(e);
+                
+                let newLeft = coords.x - containerRect.left;
+                let newTop = coords.y - containerRect.top;
+
                 currentDragItem.style.left = `${newLeft}px`;
                 currentDragItem.style.top = `${newTop}px`;
             }
-        });
+        }
 
-        // C. Thả chuột (Mouseup)
-        document.addEventListener('mouseup', () => {
+        function onDragEnd() {
             if (isDragging && currentDragItem) {
                 currentDragItem.style.cursor = 'grab';
-                
-                // Kích hoạt lại chế độ lơ lửng tại vị trí mới
-                startFloating(currentDragItem);
-
+                startFloating(currentDragItem); // Bay tiếp tại vị trí mới
                 isDragging = false;
                 currentDragItem = null;
             }
-        });
+        }
+
+        // Gắn sự kiện CHUỘT (Desktop)
+        document.addEventListener('mousedown', onDragStart);
+        document.addEventListener('mousemove', onDragMove);
+        document.addEventListener('mouseup', onDragEnd);
+
+        // Gắn sự kiện CẢM ỨNG (Mobile/Tablet) - QUAN TRỌNG
+        // Dùng { passive: false } để cho phép preventDefault (chặn scroll)
+        document.addEventListener('touchstart', onDragStart, { passive: false });
+        document.addEventListener('touchmove', onDragMove, { passive: false });
+        document.addEventListener('touchend', onDragEnd);
 
 
-        // GẮN SỰ KIỆN CLICK VÀO ẢNH
+        // GẮN SỰ KIỆN CLICK VÀO ẢNH TRUNG TÂM
         if (centerImage) {
             centerImage.style.cursor = 'pointer'; 
             centerImage.addEventListener('click', (e) => {
                 e.stopPropagation();
+                createExplosion();
+            });
+            // Thêm sự kiện touch cho ảnh để nhạy hơn trên mobile
+            centerImage.addEventListener('touchstart', (e) => {
+                e.stopPropagation();
+                e.preventDefault(); // Ngăn zoom ảnh
                 createExplosion();
             });
         }
