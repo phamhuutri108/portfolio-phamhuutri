@@ -577,9 +577,19 @@ body.mode-vi .content-en {
         height: auto;
     }
     
-    /* Ẩn bớt các thành phần không cần thiết để sidebar gọn hơn */
-    .sidebar .copyright, .sidebar .lang-switch {
+    /* 1. Chỉ ẩn dòng bản quyền (Copyright), GIỮ LẠI nút ngôn ngữ */
+    .sidebar {
         display: none; 
+    }
+
+    /* 2. Căn chỉnh nút ngôn ngữ nằm gọn ở góc phải trên cùng */
+    .sidebar .lang-switch {
+        display: block; /* Hiện lại */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin: 0;
+        z-index: 20;
     }
 
     .content { 
