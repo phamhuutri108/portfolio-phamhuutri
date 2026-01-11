@@ -578,7 +578,7 @@ body.mode-vi .content-en {
     }
     
     /* 1. Chỉ ẩn dòng bản quyền (Copyright), GIỮ LẠI nút ngôn ngữ */
-    .sidebar {
+    .sidebar .copyright {
         display: none; 
     }
 
