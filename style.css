@@ -216,23 +216,6 @@ a:hover {color: #0033cc !important;}
 }
 .gallery-item:hover img { filter: grayscale(0%); }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    #writings-list-container {
-        position: relative;
-        width: 100%;
-        height: 80vh; 
-        overflow: hidden; 
-        display: block; 
-    }
-    
-    /* --- SỬA LẠI ĐOẠN NÀY ĐỂ CHO PHÉP BAY TRÊN MOBILE --- */
-    .writings-scatter-item {
-        /* Bỏ position: relative !important đi để JS có thể set absolute */
-        /* Giữ nguyên các thuộc tính khác nếu cần */
-        font-size: 14px !important; /* Chữ to hơn chút cho dễ bấm trên điện thoại */
-    }
-}
 
 /* --- CẬP NHẬT RIÊNG CHO TRANG HOME (CHAOS EFFECT) --- */
 #home.active-section {
@@ -572,7 +555,51 @@ body.mode-vi .content-en {
     display: none; /* Mặc định ẩn, JS sẽ bật lên */
 }
 
+/* ... (Các code khác ở trên) ... */
+
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- MOBILE RESPONSIVE (DÁN XUỐNG CUỐI CÙNG) --- */
+@media (max-width: 768px) {
+    .wrapper { 
+        flex-direction: column; 
+    }
+    
+    .sidebar { 
+        width: 100%; 
+        border-right: none; 
+        border-bottom: 1px solid #eee; 
+        padding: 15px 20px; 
+        position: relative; 
+        height: auto;
+    }
+    
+    /* Ẩn bớt các thành phần không cần thiết để sidebar gọn hơn */
+    .sidebar .copyright, .sidebar .lang-switch {
+        display: none; 
+    }
+
+    .content { 
+        padding: 10px 15px; 
+        width: 100%; 
+        overflow-x: hidden;
+    }
+
+    #writings-list-container {
+        position: relative;
+        width: 100%;
+        height: 60vh; 
+        overflow: hidden; 
+        display: block; 
+    }
+    
+    /* QUAN TRỌNG: Cho phép chữ bay tự do */
+    .writings-scatter-item {
+        position: absolute !important; 
+        transform: none; 
+        font-size: 14px !important; 
+    }
 }
