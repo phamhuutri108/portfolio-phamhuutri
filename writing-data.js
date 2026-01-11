@@ -37,7 +37,7 @@ const writingData = [
 
 
     {
-        id: "write-ba-noi-doi",
+        id: "write-ba-toi-la-ke-noi-doi",
         date: "26/11/24",
         location: "Sài Gòn",
         title: {
