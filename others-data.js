@@ -2,7 +2,7 @@
 
 const othersData = {
     // 1. WARDROBE (HỌC TỦ)
-    "other-wardrobe": {
+    "others-wardrobe": {
         title: {
             vi: "Học Tủ",
             en: "Wardrobe"
@@ -59,7 +59,7 @@ const othersData = {
     },
 
     // 2. WET WOOD (CỦI ƯỚT)
-    "other-wet-wood": {
+    "others-wet-wood": {
         title: {
             vi: "Củi Ướt",
             en: "Wet Wood"
@@ -142,7 +142,7 @@ const othersData = {
     },
 
     // 3. TRANH KIẾNG NHÀ TÔI (MY FAMILY'S GLASS PAINTING)
-    "other-glass-painting": {
+    "others-tranh-kieng-nha-toi": {
         title: {
             vi: "Tranh Kiếng Nhà Tôi",
             en: "My Family's Glass Painting"
@@ -299,7 +299,7 @@ const othersData = {
     },
 
     // 4. TRĂNG RẰM (THE FULL MOON)
-    "other-full-moon": {
+    "others-trang-ram": {
         title: {
             vi: "Trăng Rằm",
             en: "The Full Moon"
@@ -374,7 +374,7 @@ const othersData = {
     },
 
     // 5. CHILL CÙNG TÂY BẮC (CHILLING IN THE NORTHWEST)
-    "other-chill-nw": {
+    "others-chill-cung-tay-bac": {
         title: {
             vi: "Chill Cùng Tây Bắc",
             en: "Chilling in the Northwest"
