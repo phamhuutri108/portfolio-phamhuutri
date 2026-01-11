@@ -1055,14 +1055,36 @@
         physicsItems.length = 0; 
         if (animationFrameId) cancelAnimationFrame(animationFrameId);
 
+
+
+
+
+
         
         // --- FIX QUAN TRỌNG: TÍNH TOÁN KÍCH THƯỚC AN TOÀN ---
-        // Nếu màn hình nhỏ (mobile), ta không trừ 300px sidebar nữa vì sidebar đã biến mất/chuyển lên trên
+        
+        // Kiểm tra xem có đang ở trên mobile không (màn hình nhỏ hơn 768px)
         const isMobile = window.innerWidth < 768;
-        const sidebarWidth = isMobile ? 20 : 300; // Mobile trừ ít thôi (padding), Desktop trừ sidebar
+        
+        // Nếu là mobile: Trừ đi rất ít (padding 20px) vì sidebar đã nằm ở trên đầu rồi
+        // Nếu là desktop: Trừ đi 300px (sidebar) để chữ không bay đè lên sidebar
+        const sidebarOffset = isMobile ? 20 : 300;
 
-        const safeWidth = container.offsetWidth > 0 ? container.offsetWidth : (window.innerWidth - sidebarWidth);
+        // Tính chiều rộng an toàn
+        const safeWidth = container.offsetWidth > 0 ? container.offsetWidth : (window.innerWidth - sidebarOffset);
+        
+        // Chiều cao an toàn
         const safeHeight = container.offsetHeight > 0 ? container.offsetHeight : window.innerHeight;
+
+
+        // --- KHỞI TẠO VỊ TRÍ ---
+        // Trừ thêm 50px - 100px để chữ không bị sát lề phải quá
+        const startX = Math.random() * (safeWidth - 80); 
+        const startY = Math.random() * (safeHeight - 50);
+
+
+
+
 
         // 2. Tạo phần tử
         writingData.forEach((item, index) => {
