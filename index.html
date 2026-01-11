@@ -621,7 +621,9 @@
         let dragOffsetX = 0;
         let dragOffsetY = 0;
 
-        const wordsList = ["one", "Buddha", "is", "not", "enough"];
+        // KHAI BÁO 2 DANH SÁCH TỪ
+        const wordsListEn = ["one", "Buddha", "is", "not", "enough"];
+        const wordsListVi = ["một", "ông", "Bụt", "là", "không", "đủ"];
         
         // CẤU HÌNH
         // Trên mobile giảm số lượng chữ một chút cho đỡ rối
@@ -662,7 +664,12 @@
             for (let i = 0; i < WORD_COUNT; i++) {
                 const span = document.createElement('span');
                 
-                span.innerText = wordsList[Math.floor(Math.random() * wordsList.length)];
+                // Kiểm tra xem web đang là Tiếng Việt hay Anh
+                const isVietnamese = document.body.classList.contains('mode-vi');
+                const currentList = isVietnamese ? wordsListVi : wordsListEn;
+
+                // Lấy từ trong danh sách tương ứng
+                span.innerText = currentList[Math.floor(Math.random() * currentList.length)];
                 span.className = 'chaos-word';
                 
                 span.style.pointerEvents = 'auto'; 
