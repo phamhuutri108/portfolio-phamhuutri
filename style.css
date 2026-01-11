@@ -66,45 +66,78 @@ a:hover {color: #0033cc !important;}
     color: #0033cc !important; /* Màu xanh dương (dùng !important để chắc chắn ăn màu) */
 }
 
-/* --- style.css (Cập nhật phần Danh mục) --- */
 
-/* ... Các phần trên giữ nguyên ... */
 
-/* Danh mục phụ (Short Films, Commercial...) */
-.category-section h4 {
-    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
-    margin-top: 10px;   /* Khoảng cách trên tiêu đề */
-    font-weight: bold;  /* In đậm khung chứa */
-}
 
-/* Style cho Link tiêu đề (Short Films, Commercial...) - IN ĐẬM */
-.category-section h4 a {
-    font-size: 13px; 
-    text-transform: capitalize;
-    color: #000; /* Màu đen rõ ràng */
-    font-weight: bold; /* In đậm chữ */
-    letter-spacing: 1px;
+
+
+/* --- CẬP NHẬT GIAO DIỆN DANH MỤC (FIX SPACING) --- */
+
+/* 1. Khung bao quanh mỗi mục (Short Films, Commercials...) */
+.category-group {
+    margin-bottom: 15px; /* ĐÂY LÀ DÒNG GIÚP CÁC MỤC CÁCH XA NHAU */
     display: block;
 }
 
-.category-section h4 a:hover {
-    color: #0033cc; /* Hover vẫn ra xanh cho đồng bộ */
+/* 2. Tiêu đề (h4) */
+.category-group h4 {
+    margin: 0; /* Reset margin */
+    line-height: 1.6;
 }
 
-/* Style cho Link Active của tiêu đề */
-.category-section h4 a.active-link {
+/* 3. Link tiêu đề (Chữ Short Films, Commercials...) */
+.category-group h4 a {
+    font-size: 13px; 
+    font-weight: 700; /* In đậm giống Home/About */
+    color: #111; 
+    text-transform: capitalize;
+    display: block;
+    letter-spacing: 0.5px;
+}
+
+.category-group h4 a:hover {
+    color: #0033cc; 
+}
+
+.category-group h4 a.active-link {
     color: #0033cc !important;
 }
 
+/* 4. Danh sách con (Tên phim bên trong) */
+.category-list {
+    display: none; /* Mặc định ẩn */
+    padding-left: 15px; /* Thụt vào đầu dòng */
+    list-style: none;
+    margin-top: 5px; /* Cách tiêu đề một chút */
+    animation: fadeIn 0.3s ease;
+}
 
-/* Style cho Danh sách con - MÀU NHẠT */
-.category-list { list-style: none; padding-left: 0; }
-.category-list li { margin-bottom: 6px; font-size: 12px; }
+.category-list li { 
+    margin-bottom: 8px; /* Khoảng cách giữa các phim con */
+    font-size: 11px; 
+}
 
 .category-list li a { 
-    color: #888; /* Màu xám nhạt (Light color) */
+    color: #666; /* Màu xám nhạt */
     transition: color 0.2s;
 }
+
+/* Hiệu ứng Hover và Active cho danh sách con */
+.category-list a:hover { color: #000; }
+.category-list a.active-link { color: #0033cc !important; font-weight: bold; }
+
+/* 5. LOGIC ẨN HIỆN (HOVER & CLICK) */
+.category-group:hover .category-list {
+    display: block;
+}
+.category-group.is-open .category-list {
+    display: block !important;
+}
+
+
+
+
+
 
 /* --- Thay thế từ dòng 104 cũ --- */
 
