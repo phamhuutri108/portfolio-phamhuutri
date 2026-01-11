@@ -1594,7 +1594,7 @@
         writingData.forEach(item => {
             const li = document.createElement('li');
             li.innerHTML = `
-                <a href="javascript:void(0)" onclick="openWritingDetail('${item.id}')" id="link-${item.id}">
+                <a href="javascript:void(0)" onclick="showPage('${item.id}')" id="link-${item.id}">
                     <span class="content-vi">${item.title.vi}</span>
                     <span class="content-en">${item.title.en}</span>
                 </a>
