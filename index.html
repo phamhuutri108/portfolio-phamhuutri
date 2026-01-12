@@ -646,11 +646,10 @@
 
 
 <script>
-    /* --- LOGIC: EXPLOSION + MUSIC HOME (FINAL) --- */
+    /* --- LOGIC: EXPLOSION + MUSIC HOME (FULL DRAG & DROP) --- */
     document.addEventListener("DOMContentLoaded", () => {
         const homeSection = document.getElementById('home');
         const centerImage = document.querySelector('.home-center-img');
-        const musicCredit = document.getElementById('music-credit');
         
         // CẤU HÌNH NHẠC HOME
         const bgMusic = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'); 
@@ -659,13 +658,18 @@
         let hasChaosStarted = false;
         let resetTimer = null; 
         
-        // Biến Drag Drop & Config (Rút gọn cho đỡ rối)
-        let isDragging=false, currentDragItem=null, dragOffsetX=0, dragOffsetY=0;
+        // BIẾN CHO DRAG & DROP
+        let isDragging = false;
+        let currentDragItem = null;
+        let dragOffsetX = 0;
+        let dragOffsetY = 0;
+
         const wordsListEn = ["one", "Buddha", "is", "not", "enough"];
         const wordsListVi = ["một", "ông Bụt", "là", "không", "đủ"];
         const isMobile = window.innerWidth < 768;
         const WORD_COUNT = isMobile ? 50 : 120; 
         const MIN_SIZE = 7; const MAX_SIZE = 30;     
+
         function randomRange(min, max) { return Math.random() * (max - min) + min; }
 
         function startFloating(element) {
@@ -678,31 +682,33 @@
             ], { duration: randomRange(10000, 30000), iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
         }
 
-        // --- 1. BẬT NHẠC (PLAY) ---
+        // --- 1. BẬT NHẠC ---
         function createExplosion() {
             hasChaosStarted = true; 
             if (resetTimer) clearTimeout(resetTimer);
             bgMusic.play().catch(e => console.log("Lỗi:", e));
             
-            // QUAN TRỌNG: Đánh dấu nhạc bật để CSS đổi chữ
             homeSection.classList.add('music-on'); 
 
-            // Tạo chữ bay (Giữ nguyên logic cũ)
             const isVietnamese = document.body.classList.contains('mode-vi');
             const currentList = isVietnamese ? wordsListVi : wordsListEn;
             for (let i = 0; i < WORD_COUNT; i++) {
                 const span = document.createElement('span');
                 span.innerText = currentList[Math.floor(Math.random() * currentList.length)];
                 span.className = 'chaos-word';
-                span.style.pointerEvents = 'auto'; span.style.cursor = 'grab';
+                // KHÔNG SET Z-INDEX Ở ĐÂY (Để CSS lo)
+                span.style.pointerEvents = 'auto'; 
+                span.style.cursor = 'grab';
+                
                 const size = randomRange(MIN_SIZE, MAX_SIZE);
                 span.style.fontSize = `${size}px`;
                 span.style.opacity = randomRange(0.2, 0.8);
                 span.style.left = '50%'; span.style.top = '50%';
                 span.style.transform = 'translate(-50%, -50%)'; 
+                
                 const flyDuration = randomRange(4.0, 8.0); 
                 homeSection.appendChild(span);
-                // Animation setup
+                
                 requestAnimationFrame(() => {
                     span.style.transition = `left ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1), top ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1), opacity ${flyDuration}s ease`;
                     const targetX = randomRange(-10, 110); const targetY = randomRange(-10, 110);
@@ -712,11 +718,9 @@
             }
         }
 
-        // --- 2. DỪNG NHẠC (PAUSE) ---
+        // --- 2. TẮT NHẠC ---
         function resetChaos() {
             hasChaosStarted = false; 
-            
-            // QUAN TRỌNG: Gỡ đánh dấu để CSS trả lại chữ "Click to play"
             homeSection.classList.remove('music-on');
 
             const words = document.querySelectorAll('.chaos-word');
@@ -728,13 +732,75 @@
             });
             resetTimer = setTimeout(() => {
                 words.forEach(w => w.remove());
-                bgMusic.pause(); // Pause nhạc
+                bgMusic.pause(); 
             }, 1500);
         }
 
         function toggleChaos() { if (!hasChaosStarted) createExplosion(); else resetChaos(); }
         
-        // Giữ nguyên logic update ngôn ngữ và drag drop...
+        // --- LOGIC KÉO THẢ (DRAG & DROP) - PHẦN BẠN ĐANG THIẾU ---
+        function getClientCoords(e) { 
+            if (e.touches && e.touches.length > 0) return { x: e.touches[0].clientX, y: e.touches[0].clientY }; 
+            return { x: e.clientX, y: e.clientY }; 
+        }
+
+        function onDragStart(e) { 
+            if (e.target.classList.contains('chaos-word')) { 
+                isDragging = true; 
+                currentDragItem = e.target; 
+                currentDragItem.style.cursor = 'grabbing'; 
+                currentDragItem.style.transition = 'none'; // Tắt animation để kéo cho mượt
+                
+                const anims = currentDragItem.getAnimations(); 
+                anims.forEach(anim => anim.cancel()); 
+
+                const rect = currentDragItem.getBoundingClientRect(); 
+                const coords = getClientCoords(e); 
+                
+                // Tính khoảng cách từ ngón tay đến góc phần tử
+                dragOffsetX = coords.x - rect.left; 
+                dragOffsetY = coords.y - rect.top; 
+
+                // Quan trọng: Ngăn sự kiện mặc định để không bị bôi đen text
+                if (e.cancelable && e.type === 'touchstart') e.preventDefault(); 
+            } 
+        }
+
+        function onDragMove(e) { 
+            if (isDragging && currentDragItem) { 
+                if (e.cancelable) e.preventDefault(); // Ngăn cuộn trang khi đang kéo chữ
+                
+                const containerRect = homeSection.getBoundingClientRect(); 
+                const coords = getClientCoords(e); 
+                
+                // Tính toán vị trí mới (bù trừ transform translate -50%)
+                const newLeft = coords.x - containerRect.left - dragOffsetX + (currentDragItem.offsetWidth / 2);
+                const newTop = coords.y - containerRect.top - dragOffsetY + (currentDragItem.offsetHeight / 2);
+
+                currentDragItem.style.left = `${newLeft}px`; 
+                currentDragItem.style.top = `${newTop}px`; 
+            } 
+        }
+
+        function onDragEnd() { 
+            if (isDragging && currentDragItem) { 
+                currentDragItem.style.cursor = 'grab'; 
+                if (hasChaosStarted) startFloating(currentDragItem); // Thả ra thì bay tiếp
+                isDragging = false; 
+                currentDragItem = null; 
+            } 
+        }
+
+        // Đăng ký sự kiện
+        document.addEventListener('mousedown', onDragStart); 
+        document.addEventListener('mousemove', onDragMove); 
+        document.addEventListener('mouseup', onDragEnd); 
+        
+        document.addEventListener('touchstart', onDragStart, { passive: false }); 
+        document.addEventListener('touchmove', onDragMove, { passive: false }); 
+        document.addEventListener('touchend', onDragEnd);
+
+        // Nút chuyển ngữ
         const langSwitchBtn = document.querySelector('.lang-switch');
         if (langSwitchBtn) {
             langSwitchBtn.addEventListener('click', () => { 
@@ -745,8 +811,6 @@
                 }
             });
         }
-        
-        // (Giữ nguyên phần Drag & Drop để tiết kiệm chỗ...)
         
         if (centerImage) {
             centerImage.style.cursor = 'pointer'; 
