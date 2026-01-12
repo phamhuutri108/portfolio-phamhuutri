@@ -1211,7 +1211,7 @@ body.mode-vi .content-en {
         
         /* Tăng độ đục nền trên mobile để không bị lẫn vào nội dung khi cuộn */
         background: rgba(255, 255, 255, 0.90); 
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(15px);
         border: 1px solid rgba(0,0,0,0.1);
         box-shadow: 0 5px 20px rgba(0,0,0,0.15);
