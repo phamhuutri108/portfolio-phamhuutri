@@ -618,3 +618,113 @@ body.mode-vi .content-en {
         font-size: 14px !important; 
     }
 }
+
+
+
+
+
+
+
+/* ================================================================= */
+/* --- HỆ THỐNG HIỂN THỊ TEXT NHẠC (FINAL - HỢP NHẤT) --- */
+/* ================================================================= */
+
+/* 1. ĐỊNH DẠNG ẢNH CONTACT (Để ảnh nhỏ lại) */
+.contact-image-wrapper {
+    position: relative;
+    width: 350px; /* Kích thước chuẩn */
+    margin: 50px auto 0 auto;
+}
+.contact-image-wrapper img {
+    width: 100%; height: auto; display: block;
+    cursor: pointer; transition: opacity 0.3s;
+}
+
+/* 2. CẤU HÌNH VỊ TRÍ CHUNG CHO CHỮ */
+#play-hint, #pause-hint, #music-credit,
+#contact-play-hint, #contact-pause-hint, #contact-music-credit {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-decoration: none;
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+    z-index: 20;
+}
+
+/* Vị trí riêng Home */
+#home #play-hint, #home #pause-hint, #home #music-credit {
+    top: 50%;
+    margin-top: 120px; 
+}
+/* Vị trí riêng Contact */
+.contact-image-wrapper #contact-play-hint,
+.contact-image-wrapper #contact-pause-hint,
+.contact-image-wrapper #contact-music-credit {
+    bottom: -30px; 
+}
+
+/* 3. TRẠNG THÁI MẶC ĐỊNH (NHẠC ĐANG TẮT) */
+/* Hiện "Click to play" khi rê chuột */
+#play-hint, #contact-play-hint {
+    color: #666; opacity: 0; display: block;
+}
+.home-center-img:hover ~ #play-hint,
+.contact-image-wrapper:hover #contact-play-hint {
+    opacity: 1;
+}
+/* Các dòng khác ẩn */
+#pause-hint, #contact-pause-hint, #music-credit, #contact-music-credit {
+    display: none; 
+}
+
+/* 4. TRẠNG THÁI KHI NHẠC ĐANG BẬT (Có class .music-on) */
+
+/* Ẩn dòng Play */
+#home.music-on #play-hint,
+.contact-image-wrapper.music-on #contact-play-hint {
+    display: none !important;
+}
+
+/* Hiện dòng Tên bài hát (Mặc định) */
+#home.music-on #music-credit,
+.contact-image-wrapper.music-on #contact-music-credit {
+    display: block; color: #999; opacity: 0.6; pointer-events: auto;
+}
+
+/* Dòng Pause (Chờ hover) */
+#home.music-on #pause-hint,
+.contact-image-wrapper.music-on #contact-pause-hint {
+    display: block; color: #000; opacity: 0;
+}
+
+/* -> LOGIC RÊ CHUỘT KHI ĐANG BẬT: Ẩn Tên bài hát, Hiện Pause */
+#home.music-on .home-center-img:hover ~ #music-credit,
+.contact-image-wrapper.music-on:hover #contact-music-credit {
+    opacity: 0;
+}
+#home.music-on .home-center-img:hover ~ #pause-hint,
+.contact-image-wrapper.music-on:hover #contact-pause-hint {
+    opacity: 1;
+}
+
+/* 5. MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-image-wrapper { width: 80%; }
+    #home #play-hint, #home #pause-hint, #home #music-credit { margin-top: 100px; font-size: 10px; }
+    
+    /* Mobile: Nhạc tắt -> Luôn hiện Play nhấp nháy */
+    #play-hint, #contact-play-hint { opacity: 0.6; animation: pulseText 2s infinite; }
+    
+    /* Mobile: Nhạc bật -> Luôn hiện Tên bài hát (Không hiện Pause) */
+    #home.music-on #music-credit,
+    .contact-image-wrapper.music-on #contact-music-credit { opacity: 1 !important; display: block !important; }
+    
+    #home.music-on #pause-hint,
+    .contact-image-wrapper.music-on #contact-pause-hint { display: none !important; }
+}
+@keyframes pulseText { 0% { opacity: 0.4; } 50% { opacity: 0.8; } 100% { opacity: 0.4; } }
