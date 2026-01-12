@@ -527,7 +527,7 @@ body.mode-vi .content-en {
 .writings-top-area {
     position: relative;
     width: 100%;
-    height: 60vh; /* Chiếm 60% màn hình */
+    height: 90vh; /* Chiếm 60% màn hình */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -727,17 +727,48 @@ body.mode-vi .content-en {
 /* 5. MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .contact-image-wrapper { width: 80%; }
-    #home #play-hint, #home #pause-hint, #home #music-credit { margin-top: 120px; font-size: 10px; }
     
-    /* Mobile: Nhạc tắt -> Luôn hiện Play nhấp nháy */
-    #play-hint, #contact-play-hint { opacity: 0.6; animation: pulseText 2s infinite; }
+    /* Cấu hình chung vị trí text Home */
+    #home #play-hint, #home #pause-hint, #home #music-credit { 
+        margin-top: 120px; 
+        font-size: 10px; 
+    }
     
-    /* Mobile: Nhạc bật -> Luôn hiện Tên bài hát (Không hiện Pause) */
+    /* --- KHI NHẠC TẮT: Chỉ hiện nút Play nhấp nháy --- */
+    #play-hint, #contact-play-hint { 
+        opacity: 0.6; 
+        animation: pulseText 2s infinite; 
+    }
+    
+    /* --- KHI NHẠC BẬT: HIỆN CẢ 2 DÒNG (Xếp chồng lên nhau) --- */
+    
+    /* 1. Tên bài hát: Giữ nguyên vị trí chuẩn */
     #home.music-on #music-credit,
-    .contact-image-wrapper.music-on #contact-music-credit { opacity: 1 !important; display: block !important; }
+    .contact-image-wrapper.music-on #contact-music-credit { 
+        opacity: 1 !important; 
+        display: block !important; 
+        z-index: 25; /* Nằm trên cùng */
+    }
     
-    #home.music-on #pause-hint,
-    .contact-image-wrapper.music-on #contact-pause-hint { display: none !important; }
+    /* 2. Dòng Pause: Hiện nhỏ hơn, nằm dưới thấp VÀ NHẤP NHÁY */
+    #home.music-on #pause-hint {
+        display: block !important;
+        /* opacity sẽ do animation kiểm soát nên không cần set cứng nữa */
+        font-size: 9px !important;    
+        margin-top: 145px !important; /* Đẩy xuống thấp hơn dòng Credit */
+        
+        /* KÍCH HOẠT NHẤP NHÁY */
+        animation: pulseText 2s infinite !important; 
+    }
+
+    .contact-image-wrapper.music-on #contact-pause-hint {
+        display: block !important;
+        font-size: 9px !important;
+        bottom: -55px !important;     /* Đẩy xuống thấp hơn dòng Credit */
+        
+        /* KÍCH HOẠT NHẤP NHÁY */
+        animation: pulseText 2s infinite !important;
+    }
 }
 @keyframes pulseText { 0% { opacity: 0.4; } 50% { opacity: 0.8; } 100% { opacity: 0.4; } }
 
@@ -754,4 +785,457 @@ body.mode-vi .content-en {
     .contact-image-wrapper {
         margin-bottom: 60px !important; 
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================= */
+/* --- WRITING MUSIC PLAYER (FIXED LAYOUT & ALIGNMENT) --- */
+/* ================================================================= */
+
+/* 1. KHUNG BAO NGOÀI (Căn giữa Tiêu đề + Dòng nhắc + Player) */
+.writing-control-wrapper {
+    position: relative;
+    z-index: 50; /* Đảm bảo nổi hẳn lên trên chữ bay */
+    display: flex;
+    flex-direction: column; /* Xếp dọc */
+    align-items: center;    /* Căn giữa trục dọc */
+    justify-content: center; /* Căn giữa trục ngang */
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 20px; /* Cách xa các chữ bay một chút */
+    pointer-events: none; /* Để chuột xuyên qua vùng trống */
+    transition: all 0.3s ease;
+}
+
+/* Cho phép bấm vào các thành phần con */
+.writing-control-wrapper > * {
+    pointer-events: auto;
+}
+
+/* 2. TIÊU ĐỀ "WRITINGS" */
+.blink-title {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.3s ease;
+    /* Animation nhấp nháy */
+    animation: blinkAnim 2.5s infinite; 
+}
+
+@keyframes blinkAnim {
+    0%, 100% { opacity: 1; text-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    50% { opacity: 0.3; text-shadow: none; }
+}
+
+.blink-title.music-active {
+    
+    color: #0033cc;
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(0, 51, 204, 0.2);
+}
+
+/* 3. DÒNG NHẮC NHỞ (Click for focus music) */
+.writing-hint-text {
+    display: block;
+    width: 100%;
+    text-align: center; /* Bắt buộc căn giữa */
+    font-size: 11px;
+    color: #888;
+    font-style: normal;
+    margin-top: 0;   /* Cách tiêu đề 5px */
+    margin-bottom: 0; /* Cách Player 15px */
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.writing-hint-text.hidden {
+    opacity: 0;
+    height: 0; /* Thu gọn chiều cao */
+    margin: 0;
+    overflow: hidden; 
+    pointer-events: none;
+}
+
+/* 4. PANEL PHÁT NHẠC (Khôi phục thiết kế chuẩn) */
+.writing-player-panel {
+    /* Kích thước to hơn 20% (Khoảng 260px) */
+    width: 260px;
+    
+    /* Màu nền kính mờ (Đục hơn xíu để chữ không bị rối như hình 4) */
+    background: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border: 1px solid rgba(0, 0, 0, 0.08); /* Viền xám nhạt để tách biệt */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Bóng đổ tạo độ nổi */
+    
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    
+    /* Mặc định ẩn */
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    margin: 0 auto; /* Căn giữa panel */
+}
+
+/* Trạng thái hiện */
+.writing-player-panel.visible {
+    max-height: 60px;
+    opacity: 1;
+    transform: translateY(0);
+    
+    /* THÊM: Margin top nhỏ để tách nhẹ khỏi Title khi Hint đã ẩn */
+    margin-top: 5px;
+}
+
+/* Trạng thái mở rộng playlist */
+.writing-player-panel.expanded {
+    max-height: 300px;
+    background: #fff; /* Khi mở ra thì nền trắng hẳn cho dễ đọc */
+}
+
+/* 5. GIAO DIỆN COMPACT (Hàng ngang chứa nút bấm) */
+.player-compact-view {
+    height: 60px;
+    display: flex; /* BẮT BUỘC CÓ ĐỂ CHIA CỘT */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Thông tin bài hát bên trái */
+.track-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 55%;
+    overflow: hidden;
+}
+
+.wp-title { 
+    font-weight: 700; 
+    font-size: 13px; /* Chữ to hơn */
+    color: #111; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: block;
+    line-height: 1.3;
+}
+
+.wp-artist { 
+    font-size: 11px; 
+    color: #666; 
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    line-height: 1.3;
+}
+
+/* Nút điều khiển bên phải */
+.track-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Khoảng cách giữa các nút */
+    flex-shrink: 0;
+}
+
+.track-controls button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    color: #222; /* Màu nút ĐEN để không bị tàng hình */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, transform 0.1s;
+}
+
+.track-controls button:hover {
+    color: #0033cc;
+    background: rgba(0,0,0,0.03);
+    border-radius: 4px;
+}
+
+/* Icon SVG */
+.track-controls button svg {
+    width: 14px; /* Icon to hơn chút */
+    height: 14px;
+    fill: currentColor;
+    display: block;
+}
+
+/* 6. PLAYLIST (Danh sách sổ xuống) */
+.player-playlist-view {
+    border-top: 1px solid #eee;
+    padding: 5px 0;
+    overflow-y: auto;
+    max-height: 240px;
+}
+
+.wp-playlist-item {
+    padding: 8px 15px;
+    font-size: 12px;
+    color: #444;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    transition: background 0.2s;
+}
+
+.wp-playlist-item:hover {
+    background: #f5f5f5;
+    color: #000;
+}
+
+.wp-playlist-item.active {
+    color: #0033cc;
+    font-weight: bold;
+    background: rgba(0, 51, 204, 0.03);
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .writing-player-panel {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+
+
+
+
+
+
+/* 4. PANEL PHÁT NHẠC (HYPER TRANSPARENT - USER CUSTOM) */
+.writing-player-panel {
+    width: 260px;
+    
+    /* NỀN: Độ đục 10% (Rất trong) */
+    background: rgba(255, 255, 255, 0.10); 
+    
+    /* ĐỘ MỜ: 2px (Mờ rất nhẹ, nhìn xuyên thấu rõ ràng) */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); /* Đã sửa cho đồng bộ với bên trên */
+    
+    /* VIỀN: Mỏng và mờ */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    
+    /* GÓC: Bo nhẹ 5px (Vuông vức, nam tính hơn) */
+    border-radius: 5px;
+    
+    /* BÓNG ĐỔ: Gần như không thấy */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03); 
+    
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    
+    /* Mặc định ẩn */
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    margin: 0 auto;
+}
+
+/* TRẠNG THÁI HIỆN (COMPACT) */
+.writing-player-panel.visible {
+    max-height: 60px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TRẠNG THÁI SỔ DANH SÁCH (EXPANDED) */
+.writing-player-panel.expanded {
+    max-height: 300px;
+    /* Khi mở danh sách thì tăng độ đục lên 35% để dễ đọc chữ hơn */
+    background: rgba(255, 255, 255, 0.35); 
+}
+
+/* 1. Khung chứa thông tin: Cho phép chiếm hết khoảng trống còn lại */
+.track-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    
+    /* THAY ĐỔI QUAN TRỌNG: */
+    flex: 1; /* Tự động chiếm hết không gian còn dư (thay vì cố định 55%) */
+    width: auto; 
+    margin-right: 5px; /* Tạo khoảng cách an toàn với nút bấm */
+    overflow: hidden;
+}
+
+/* 2. Tiêu đề bài hát/Album: Cho phép xuống dòng */
+.wp-title { 
+    font-weight: 700; 
+    font-size: 12px; 
+    color: #111; 
+    
+    /* THAY ĐỔI QUAN TRỌNG: Cho phép xuống dòng */
+    white-space: normal;  
+    line-height: 1.1; /* Khoảng cách dòng xít lại để 2 dòng vẫn đẹp */
+    
+    /* Tắt dấu 3 chấm (...) */
+    text-overflow: clip; 
+    
+    margin-bottom: 3px;
+    display: block;
+}
+
+/* Giữ nguyên phần thời gian */
+.wp-artist { 
+    font-size: 10px; 
+    color: #444; 
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .writings-top-area {
+        height: 70vh; /* Trên điện thoại thì cao vừa phải thôi để dễ vuốt */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================= */
+/* --- MOBILE OPTIMIZATION (FIXED & IMPROVED) --- */
+/* ================================================================= */
+
+@media (max-width: 768px) {
+
+    /* 1. KHUNG CHÍNH (WRITING AREA) */
+    .writings-top-area {
+        /* Dùng chiều cao động để tránh bị thanh địa chỉ che mất */
+        height: 80vh; 
+        min-height: 500px; /* Đảm bảo không quá ngắn */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Căn giữa Title theo chiều dọc */
+        align-items: center;
+        position: relative;
+        overflow: hidden; /* Cắt bỏ chữ bay ra ngoài */
+    }
+
+    /* 2. CHỮ BAY (PHYSICS ITEMS) - Đưa về làm nền */
+    #writings-list-container {
+        position: absolute !important; /* Bắt buộc đè lên vị trí absolute */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0; /* Nằm dưới cùng */
+        pointer-events: auto; /* Vẫn cho phép bấm vào chữ */
+    }
+
+    /* Chỉnh chữ bay nhỏ lại xíu trên mobile cho đỡ rối */
+    .writings-scatter-item {
+        font-size: 13px !important; 
+        opacity: 0.8 !important; /* Đậm hơn xíu để dễ đọc trên nền trắng */
+    }
+
+    /* 3. KHUNG ĐIỀU KHIỂN (TITLE + HINT) */
+    .writing-control-wrapper {
+        position: relative;
+        z-index: 50; /* Nổi lên trên chữ bay */
+        width: 100%;
+        margin-bottom: 0; /* Reset margin */
+        top: -10%; /* Nhích lên trên một chút cho thoáng mắt */
+    }
+
+    /* Tiêu đề Writings */
+    .blink-title {
+        font-size: 32px; /* Font to vừa phải trên mobile */
+    }
+
+    /* 4. PANEL NHẠC - CHUYỂN XUỐNG ĐÁY MÀN HÌNH (DOCK) */
+    .writing-player-panel {
+        position: fixed; /* Cố định vị trí so với màn hình */
+        bottom: 20px;    /* Cách đáy 20px */
+        left: 50%;
+        transform: translateX(-50%) translateY(150%); /* Mặc định ẩn xuống dưới đáy */
+        
+        width: 90%;      /* Rộng 90% màn hình */
+        max-width: 350px;
+        margin: 0;
+        
+        /* Tăng độ đục nền trên mobile để không bị lẫn vào nội dung khi cuộn */
+        background: rgba(255, 255, 255, 0.90); 
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(0,0,0,0.1);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        z-index: 9999; /* Luôn nằm trên cùng */
+        
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Hiệu ứng nảy nhẹ */
+    }
+
+    /* KHI HIỆN PANEL */
+    .writing-player-panel.visible {
+        /* Trượt từ dưới lên vị trí cũ */
+        transform: translateX(-50%) translateY(0); 
+        margin-top: 0;
+    }
+
+    /* KHI SỔ DANH SÁCH (Mở rộng lên trên) */
+    .writing-player-panel.expanded {
+        max-height: 50vh; /* Chiếm 50% màn hình tối đa */
+        bottom: 20px;
+    }
+    
+    /* Tinh chỉnh danh sách bài hát trên mobile cho dễ bấm */
+    .wp-playlist-item {
+        padding: 12px 15px; /* Ngón tay to nên cần padding lớn hơn */
+        font-size: 13px;
+    }
+    
+    /* 5. KHUNG CHI TIẾT BÀI VIẾT (Khi bấm vào đọc) */
+    #writings-detail-view {
+        padding-top: 60px; /* Tránh bị sidebar che mất nút Back */
+        padding-bottom: 100px; /* Chừa chỗ cho player ở đáy */
+    }
+}
+
+/* --- HIỆU ỨNG XOAY MŨI TÊN (Dán vào sau dòng 1231) --- */
+.expand-btn svg {
+    transition: transform 0.3s ease; /* Tạo chuyển động mượt */
+    transform-origin: center;        /* Xoay từ tâm */
+}
+
+.writing-player-panel.expanded .expand-btn svg {
+    transform: rotate(180deg);       /* Xoay ngược lại khi mở */
 }
