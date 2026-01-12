@@ -715,7 +715,7 @@ body.mode-vi .content-en {
 /* 5. MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .contact-image-wrapper { width: 80%; }
-    #home #play-hint, #home #pause-hint, #home #music-credit { margin-top: 100px; font-size: 10px; }
+    #home #play-hint, #home #pause-hint, #home #music-credit { margin-top: 120px; font-size: 10px; }
     
     /* Mobile: Nhạc tắt -> Luôn hiện Play nhấp nháy */
     #play-hint, #contact-play-hint { opacity: 0.6; animation: pulseText 2s infinite; }
@@ -728,3 +728,20 @@ body.mode-vi .content-en {
     .contact-image-wrapper.music-on #contact-pause-hint { display: none !important; }
 }
 @keyframes pulseText { 0% { opacity: 0.4; } 50% { opacity: 0.8; } 100% { opacity: 0.4; } }
+
+
+
+/* --- FIX LỖI HẸP ĐÁY CHO TOÀN BỘ WEBSITE (MOBILE) --- */
+@media (max-width: 768px) {
+    /* 1. Tạo khoảng trắng lớn dưới đáy cho TẤT CẢ các trang (Trừ Home) */
+    /* Lệnh này sẽ áp dụng cho: About, Contact, Grid Short Films/Commercials/Others và TẤT CẢ trang dự án con */
+    .page-section:not(#home) {
+        padding-bottom: 100px !important; /* Kéo xuống thoải mái */
+    }
+
+    /* 2. Riêng trang Contact cần đẩy khung ảnh lên thêm chút */
+    /* Để dòng chữ "Click to play" (lơ lửng) không bị sát mép quá */
+    .contact-image-wrapper {
+        margin-bottom: 60px !important; 
+    }
+}
