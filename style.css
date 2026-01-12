@@ -1246,12 +1246,33 @@ body.mode-vi .content-en {
     }
 }
 
-/* --- HIỆU ỨNG XOAY MŨI TÊN (Dán vào sau dòng 1231) --- */
+/* --- LOGIC MŨI TÊN (ARROW ROTATION) - ĐÃ SỬA --- */
+
 .expand-btn svg {
     transition: transform 0.3s ease; /* Tạo chuyển động mượt */
     transform-origin: center;        /* Xoay từ tâm */
 }
 
+/* 1. LAPTOP/PC: Panel sổ XUỐNG */
+/* Mặc định: Xoay 180 độ để mũi tên chỉ xuống (v) -> Gợi ý mở danh sách */
+.expand-btn svg {
+    transform: rotate(180deg);
+}
+
+/* Khi mở (Expanded): Xoay về 0 độ để mũi tên chỉ lên (^) -> Gợi ý đóng lại */
 .writing-player-panel.expanded .expand-btn svg {
-    transform: rotate(180deg);       /* Xoay ngược lại khi mở */
+    transform: rotate(0deg);
+}
+
+/* 2. MOBILE: Panel sổ LÊN (Nằm ở đáy màn hình) */
+@media (max-width: 768px) {
+    /* Mặc định: Giữ nguyên 0 độ để mũi tên chỉ lên (^) -> Gợi ý mở lên */
+    .expand-btn svg {
+        transform: rotate(0deg);
+    }
+
+    /* Khi mở (Expanded): Xoay 180 độ để mũi tên chỉ xuống (v) -> Gợi ý đóng xuống */
+    .writing-player-panel.expanded .expand-btn svg {
+        transform: rotate(180deg);
+    }
 }
