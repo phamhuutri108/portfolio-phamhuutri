@@ -714,13 +714,29 @@ body.mode-vi .content-en {
     display: block; color: #000; opacity: 0;
 }
 
-/* -> LOGIC RÊ CHUỘT KHI ĐANG BẬT: Ẩn Tên bài hát, Hiện Pause */
-#home.music-on .home-center-img:hover ~ #music-credit,
-.contact-image-wrapper.music-on:hover #contact-music-credit {
+/* --- SỬA LẠI LOGIC CONTACT: CHỈ KHI RÊ VÀO ẢNH MỚI ĐỔI CHỮ --- */
+
+/* 1. Mặc định khi nhạc đang bật: */
+/* Hiện tên bài hát */
+.contact-image-wrapper.music-on #contact-music-credit {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+/* Ẩn dòng Click to pause */
+.contact-image-wrapper.music-on #contact-pause-hint {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* 2. Khi rê chuột vào ẢNH (#musical-image) thì mới đảo trạng thái: */
+
+/* Ẩn tên bài hát */
+.contact-image-wrapper.music-on #musical-image:hover ~ #contact-music-credit {
     opacity: 0;
 }
-#home.music-on .home-center-img:hover ~ #pause-hint,
-.contact-image-wrapper.music-on:hover #contact-pause-hint {
+
+/* Hiện dòng Click to pause */
+.contact-image-wrapper.music-on #musical-image:hover ~ #contact-pause-hint {
     opacity: 1;
 }
 
