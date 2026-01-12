@@ -243,11 +243,18 @@ a:hover {color: #0033cc !important;}
 .chaos-word {
     position: absolute;
     white-space: nowrap;
-    z-index: 1; /* Nằm dưới ảnh */
+    z-index: 9; /* Nằm dưới ảnh */
     opacity: 0.5;
     color: #111;
-    pointer-events: none; /* Chuột không đụng được vào chữ */
-    will-change: transform; /* Tối ưu hiệu năng */
+    
+    /* --- CÁC DÒNG QUAN TRỌNG ĐỂ TƯƠNG TÁC ĐƯỢC --- */
+    pointer-events: auto;      /* Cho phép chạm vào */
+    user-select: none;         /* Cấm bôi đen (Chuẩn) */
+    -webkit-user-select: none; /* Cấm bôi đen (Safari/Chrome) */
+    touch-action: none;        /* Cấm trình duyệt cuộn trang khi chạm vào chữ */
+    /* --------------------------------------------- */
+    
+    will-change: transform; 
     font-family: 'Georgia', serif;
 }
 
@@ -693,7 +700,12 @@ body.mode-vi .content-en {
 /* Hiện dòng Tên bài hát (Mặc định) */
 #home.music-on #music-credit,
 .contact-image-wrapper.music-on #contact-music-credit {
-    display: block; color: #999; opacity: 0.6; pointer-events: auto;
+    display: block; color: #333; opacity: 0.9; pointer-events: auto;
+
+    /* --- THÊM HIỆU ỨNG SHADOW TỰ NHIÊN --- */
+    /* Cấu trúc: Ngang - Dọc - Độ nhòe - Màu */
+    text-shadow: 0 4px 10px rgba(255, 255, 255, 0.8), /* Lớp lót trắng sáng (halo) để tách nền */
+                 0 2px 5px rgba(0, 0, 0, 0.15);       /* Bóng đen mờ nhẹ tạo chiều sâu */
 }
 
 /* Dòng Pause (Chờ hover) */
@@ -734,13 +746,11 @@ body.mode-vi .content-en {
 /* --- FIX LỖI HẸP ĐÁY CHO TOÀN BỘ WEBSITE (MOBILE) --- */
 @media (max-width: 768px) {
     /* 1. Tạo khoảng trắng lớn dưới đáy cho TẤT CẢ các trang (Trừ Home) */
-    /* Lệnh này sẽ áp dụng cho: About, Contact, Grid Short Films/Commercials/Others và TẤT CẢ trang dự án con */
     .page-section:not(#home) {
-        padding-bottom: 100px !important; /* Kéo xuống thoải mái */
+        padding-bottom: 100px !important; 
     }
 
     /* 2. Riêng trang Contact cần đẩy khung ảnh lên thêm chút */
-    /* Để dòng chữ "Click to play" (lơ lửng) không bị sát mép quá */
     .contact-image-wrapper {
         margin-bottom: 60px !important; 
     }
