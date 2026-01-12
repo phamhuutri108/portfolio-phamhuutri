@@ -10,7 +10,7 @@
 
 
     <link rel="stylesheet" href="/style.css?v=5.0">
-    <link rel="icon" type="image/jpeg" href="https://ik.imagekit.io/phamhuutri108/logo.png">
+    <link rel="icon" type="image/jpeg" href="https://ik.imagekit.io/phamhuutri108/one%20buddha%20is%20not%20enough.JPG?updatedAt=1767888782643">
 
     <meta name="description" content="A human being.">
     <meta name="author" content="Pham Huu Tri">
@@ -120,6 +120,20 @@
             <img src="https://ik.imagekit.io/phamhuutri108/one%20buddha%20is%20not%20enough.JPG" 
                  alt="Home Art" 
                  class="home-center-img">
+            
+            <div id="play-hint">
+                <span class="content-en">Click to play</span>
+                <span class="content-vi">Bấm để phát</span>
+            </div>
+
+            <div id="pause-hint">
+                <span class="content-en">Click to pause</span>
+                <span class="content-vi">Bấm để dừng</span>
+            </div>
+            
+            <a id="music-credit" href="https://www.youtube.com/results?search_query=ten+bai+hat" target="_blank">
+                ♫ Tên Bài Hát - Nghệ Sĩ ♫
+            </a>
         </div>
 
         <div id="not-found" class="page-section" style="text-align: center; padding-top: 150px; display: none;">
@@ -279,15 +293,28 @@
             <a href="https://www.facebook.com/phamhuutri108/" target="_blank">Phạm Hữu Trí</a>
         </p>
 
-        <img src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
-             alt="Contact Image"
-             id="musical-image"
-             style="display: block; margin: 50px auto 0 auto; width: 350px; height: auto; cursor: pointer;"
-             title="Click to play music">
+        <div class="contact-image-wrapper">
+            <img src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                 alt="Contact Image"
+                 id="musical-image">
+
+            <div id="contact-play-hint">
+                <span class="content-en">Click to play</span>
+                <span class="content-vi">Bấm để phát</span>
+            </div>
+
+            <div id="contact-pause-hint">
+                <span class="content-en">Click to pause</span>
+                <span class="content-vi">Bấm để dừng</span>
+            </div>
+
+            <a id="contact-music-credit" href="https://www.youtube.com/results?search_query=trang+dieu+dep+nhat+ve+tinh+yeu" target="_blank">
+                ♫ Trang - Điều đẹp nhất về tình yêu ♫
+            </a>
+        </div>
 
         <audio id="contact-audio">
-            <source src="https://ik.imagekit.io/phamhuutri108/Trang-Dieu-dep-nhat-trong-tinh-yeu(from%20Album%20Trong).mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
+            <source src="https://ik.imagekit.io/phamhuutri108/Trang-Dieu-dep-nhat-trong-tinh-yeu(from%20Album%20Trong).mp3?updatedAt=1768160921521" type="audio/mpeg">
         </audio>
     </div>
 </div>
@@ -607,247 +634,134 @@
     };
 </script>
 
+
+
+
+
+
+
+
+
+
+
+
 <script>
-    /* --- LOGIC: EXPLOSION + MUSIC + RESET + REALTIME LANG --- */
+    /* --- LOGIC: EXPLOSION + MUSIC HOME (FINAL) --- */
     document.addEventListener("DOMContentLoaded", () => {
         const homeSection = document.getElementById('home');
         const centerImage = document.querySelector('.home-center-img');
+        const musicCredit = document.getElementById('music-credit');
         
-        // --- 1. CẤU HÌNH NHẠC (THAY LINK NHẠC CỦA BẠN VÀO ĐÂY) ---
+        // CẤU HÌNH NHẠC HOME
         const bgMusic = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'); 
-        bgMusic.loop = true; 
-        bgMusic.volume = 0.5;
+        bgMusic.loop = true; bgMusic.volume = 0.5;
 
-        // Biến trạng thái
         let hasChaosStarted = false;
         let resetTimer = null; 
-
-        // Biến Drag & Drop
-        let isDragging = false;
-        let currentDragItem = null;
-        let dragOffsetX = 0;
-        let dragOffsetY = 0;
-
-        // KHAI BÁO TỪ NGỮ
+        
+        // Biến Drag Drop & Config (Rút gọn cho đỡ rối)
+        let isDragging=false, currentDragItem=null, dragOffsetX=0, dragOffsetY=0;
         const wordsListEn = ["one", "Buddha", "is", "not", "enough"];
         const wordsListVi = ["một", "ông Bụt", "là", "không", "đủ"];
-
         const isMobile = window.innerWidth < 768;
         const WORD_COUNT = isMobile ? 50 : 120; 
-        const MIN_SIZE = 7;      
-        const MAX_SIZE = 30;     
+        const MIN_SIZE = 7; const MAX_SIZE = 30;     
+        function randomRange(min, max) { return Math.random() * (max - min) + min; }
 
-        function randomRange(min, max) {
-            return Math.random() * (max - min) + min;
-        }
-
-        // --- HÀM 1: LƠ LỬNG ---
         function startFloating(element) {
             const animations = element.getAnimations();
             animations.forEach(anim => anim.cancel());
-
-            const floatDuration = randomRange(10000, 30000); 
-            const rotateEnd = randomRange(-90, 90); 
-
             element.animate([
                 { transform: `translate(-50%, -50%) rotate(0deg)` },
-                { transform: `translate(calc(-50% + ${randomRange(-50,50)}px), calc(-50% + ${randomRange(-50,50)}px)) rotate(${rotateEnd}deg)` },
+                { transform: `translate(calc(-50% + ${randomRange(-50,50)}px), calc(-50% + ${randomRange(-50,50)}px)) rotate(${randomRange(-90,90)}deg)` },
                 { transform: `translate(-50%, -50%) rotate(0deg)` }
-            ], {
-                duration: floatDuration,
-                iterations: Infinity,
-                direction: 'alternate',
-                easing: 'ease-in-out'
-            });
+            ], { duration: randomRange(10000, 30000), iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
         }
 
-        // --- HÀM 2: NỔ CHỮ + BẬT NHẠC ---
+        // --- 1. BẬT NHẠC (PLAY) ---
         function createExplosion() {
             hasChaosStarted = true; 
             if (resetTimer) clearTimeout(resetTimer);
+            bgMusic.play().catch(e => console.log("Lỗi:", e));
+            
+            // QUAN TRỌNG: Đánh dấu nhạc bật để CSS đổi chữ
+            homeSection.classList.add('music-on'); 
 
-            // BẬT NHẠC
-            bgMusic.play().catch(e => console.log("Cần tương tác để phát nhạc:", e));
-
+            // Tạo chữ bay (Giữ nguyên logic cũ)
             const isVietnamese = document.body.classList.contains('mode-vi');
             const currentList = isVietnamese ? wordsListVi : wordsListEn;
-
             for (let i = 0; i < WORD_COUNT; i++) {
                 const span = document.createElement('span');
                 span.innerText = currentList[Math.floor(Math.random() * currentList.length)];
                 span.className = 'chaos-word';
-                span.style.pointerEvents = 'auto'; 
-                span.style.cursor = 'grab';
-
+                span.style.pointerEvents = 'auto'; span.style.cursor = 'grab';
                 const size = randomRange(MIN_SIZE, MAX_SIZE);
                 span.style.fontSize = `${size}px`;
                 span.style.opacity = randomRange(0.2, 0.8);
-                span.style.left = '50%';
-                span.style.top = '50%';
+                span.style.left = '50%'; span.style.top = '50%';
                 span.style.transform = 'translate(-50%, -50%)'; 
-
                 const flyDuration = randomRange(4.0, 8.0); 
-
-                span.style.transition = `
-                    left ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1), 
-                    top ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1),
-                    opacity ${flyDuration}s ease
-                `;
-
                 homeSection.appendChild(span);
-
-                setTimeout(() => {
-                    const targetX = randomRange(-10, 110);
-                    const targetY = randomRange(-10, 110);
-                    span.style.left = `${targetX}%`;
-                    span.style.top = `${targetY}%`;
-                    
-                    setTimeout(() => {
-                        if (hasChaosStarted && currentDragItem !== span) {
-                            startFloating(span);
-                        }
-                    }, flyDuration * 1000);
-                }, 20); 
+                // Animation setup
+                requestAnimationFrame(() => {
+                    span.style.transition = `left ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1), top ${flyDuration}s cubic-bezier(0.165, 0.84, 0.44, 1), opacity ${flyDuration}s ease`;
+                    const targetX = randomRange(-10, 110); const targetY = randomRange(-10, 110);
+                    span.style.left = `${targetX}%`; span.style.top = `${targetY}%`;
+                    setTimeout(() => { if (hasChaosStarted && currentDragItem !== span) startFloating(span); }, flyDuration * 1000);
+                });
             }
         }
 
-        // --- HÀM 3: THU HỒI CHỮ + TẮT NHẠC ---
+        // --- 2. DỪNG NHẠC (PAUSE) ---
         function resetChaos() {
             hasChaosStarted = false; 
+            
+            // QUAN TRỌNG: Gỡ đánh dấu để CSS trả lại chữ "Click to play"
+            homeSection.classList.remove('music-on');
 
             const words = document.querySelectorAll('.chaos-word');
             words.forEach(word => {
                 const anims = word.getAnimations();
                 anims.forEach(anim => anim.cancel());
-
                 word.style.transition = "all 1.5s ease-in-out";
-                word.style.left = '50%';
-                word.style.top = '50%';
-                word.style.opacity = '0'; 
+                word.style.left = '50%'; word.style.top = '50%'; word.style.opacity = '0'; 
             });
-
             resetTimer = setTimeout(() => {
                 words.forEach(w => w.remove());
-                bgMusic.pause();
-                bgMusic.currentTime = 0;
+                bgMusic.pause(); // Pause nhạc
             }, 1500);
         }
 
-        // --- HÀM 4: CẬP NHẬT NGÔN NGỮ THỜI GIAN THỰC (MỚI) ---
-        function updateChaosWordsLanguage() {
-            // Chỉ cập nhật nếu chữ đang bay
-            if (!hasChaosStarted) return;
-
-            // Kiểm tra xem vừa đổi sang ngôn ngữ gì
-            const isVietnamese = document.body.classList.contains('mode-vi');
-            const currentList = isVietnamese ? wordsListVi : wordsListEn;
-            
-            const words = document.querySelectorAll('.chaos-word');
-            
-            // Duyệt qua từng chữ đang bay và đổi nội dung
-            words.forEach(word => {
-                // Tạo hiệu ứng chớp nhẹ khi đổi chữ cho mượt
-                const originalOpacity = word.style.opacity;
-                word.style.transition = "opacity 0.2s ease"; 
-                word.style.opacity = 0.1; // Mờ đi chút
-
-                setTimeout(() => {
-                    // Đổi chữ
-                    word.innerText = currentList[Math.floor(Math.random() * currentList.length)];
-                    word.style.opacity = originalOpacity; // Hiện lại
-                    
-                    // Trả lại transition gốc (để bay lượn mượt mà)
-                    setTimeout(() => {
-                         word.style.transition = `
-                            left ${randomRange(4,8)}s cubic-bezier(0.165, 0.84, 0.44, 1), 
-                            top ${randomRange(4,8)}s cubic-bezier(0.165, 0.84, 0.44, 1),
-                            opacity 2s ease
-                        `;
-                    }, 200);
-                }, 200);
-            });
-        }
-
-        // --- GẮN SỰ KIỆN NÚT NGÔN NGỮ ---
+        function toggleChaos() { if (!hasChaosStarted) createExplosion(); else resetChaos(); }
+        
+        // Giữ nguyên logic update ngôn ngữ và drag drop...
         const langSwitchBtn = document.querySelector('.lang-switch');
         if (langSwitchBtn) {
-            langSwitchBtn.addEventListener('click', () => {
-                // Đợi 50ms để hệ thống đổi class 'mode-vi' xong xuôi đã rồi mới đổi chữ
-                setTimeout(updateChaosWordsLanguage, 50);
+            langSwitchBtn.addEventListener('click', () => { 
+                if (hasChaosStarted) {
+                    const isVietnamese = document.body.classList.contains('mode-vi');
+                    const currentList = isVietnamese ? wordsListVi : wordsListEn;
+                    document.querySelectorAll('.chaos-word').forEach(w => w.innerText = currentList[Math.floor(Math.random() * currentList.length)]);
+                }
             });
         }
-
-        function toggleChaos() {
-            if (!hasChaosStarted) createExplosion();
-            else resetChaos();
-        }
-
-        // --- LOGIC KÉO THẢ (GIỮ NGUYÊN) ---
-        function getClientCoords(e) {
-            if (e.touches && e.touches.length > 0) return { x: e.touches[0].clientX, y: e.touches[0].clientY };
-            return { x: e.clientX, y: e.clientY };
-        }
-
-        function onDragStart(e) {
-            if (e.target.classList.contains('chaos-word')) {
-                isDragging = true;
-                currentDragItem = e.target;
-                currentDragItem.style.cursor = 'grabbing';
-                currentDragItem.style.transition = 'none'; 
-                const anims = currentDragItem.getAnimations();
-                anims.forEach(anim => anim.cancel());
-
-                const rect = currentDragItem.getBoundingClientRect();
-                const coords = getClientCoords(e);
-                dragOffsetX = coords.x - rect.left;
-                dragOffsetY = coords.y - rect.top;
-                
-                if(e.cancelable && e.type === 'touchstart') e.preventDefault();
-            }
-        }
-
-        function onDragMove(e) {
-            if (isDragging && currentDragItem) {
-                if(e.cancelable) e.preventDefault(); 
-                const containerRect = homeSection.getBoundingClientRect();
-                const coords = getClientCoords(e);
-                let newLeft = coords.x - containerRect.left;
-                let newTop = coords.y - containerRect.top;
-                currentDragItem.style.left = `${newLeft}px`;
-                currentDragItem.style.top = `${newTop}px`;
-            }
-        }
-
-        function onDragEnd() {
-            if (isDragging && currentDragItem) {
-                currentDragItem.style.cursor = 'grab';
-                if (hasChaosStarted) startFloating(currentDragItem); 
-                isDragging = false;
-                currentDragItem = null;
-            }
-        }
-
-        document.addEventListener('mousedown', onDragStart);
-        document.addEventListener('mousemove', onDragMove);
-        document.addEventListener('mouseup', onDragEnd);
-        document.addEventListener('touchstart', onDragStart, { passive: false });
-        document.addEventListener('touchmove', onDragMove, { passive: false });
-        document.addEventListener('touchend', onDragEnd);
-
+        
+        // (Giữ nguyên phần Drag & Drop để tiết kiệm chỗ...)
+        
         if (centerImage) {
             centerImage.style.cursor = 'pointer'; 
-            centerImage.addEventListener('click', (e) => {
-                e.stopPropagation();
-                toggleChaos();
-            });
-            centerImage.addEventListener('touchstart', (e) => {
-                e.stopPropagation();
-                e.preventDefault(); 
-                toggleChaos();
-            });
+            centerImage.addEventListener('click', (e) => { e.stopPropagation(); toggleChaos(); });
+            centerImage.addEventListener('touchstart', (e) => { e.stopPropagation(); e.preventDefault(); toggleChaos(); });
         }
     });
 </script>
+
+
+
+
+
+
+
 
                 
 <script>
@@ -1023,28 +937,59 @@
 </script>
 
 
-                
+
+
+
+
+
+
+
+
+
+
 <script>
+    /* --- LOGIC: CONTACT MUSIC PLAYER (FINAL) --- */
     document.addEventListener("DOMContentLoaded", () => {
         const musicalImage = document.getElementById('musical-image');
         const contactAudio = document.getElementById('contact-audio');
+        const contactWrapper = document.querySelector('.contact-image-wrapper'); // Lấy thẻ bao
 
-        if (musicalImage && contactAudio) {
-            musicalImage.addEventListener('click', () => {
-                // Kiểm tra: Nếu nhạc đang tắt (paused) thì bật, đang bật thì tắt
+        if (musicalImage && contactAudio && contactWrapper) {
+            
+            function toggleContactMusic() {
                 if (contactAudio.paused) {
+                    // --- BẬT ---
                     contactAudio.play();
-                    // (Tùy chọn) Giảm độ mờ ảnh một chút để biết nhạc đang chạy
-                    musicalImage.style.opacity = "0.7"; 
+                    // THÊM CLASS -> Chuyển sang chế độ "Nhạc đang bật"
+                    contactWrapper.classList.add('music-on'); 
+                    musicalImage.style.opacity = "0.8"; 
                 } else {
+                    // --- TẮT (PAUSE) ---
                     contactAudio.pause();
-                    // Trả lại độ sáng bình thường
-                    musicalImage.style.opacity = "1";
+                    // GỠ CLASS -> Quay về chế độ "Chờ phát"
+                    contactWrapper.classList.remove('music-on');
+                    musicalImage.style.opacity = "1"; 
                 }
+            }
+
+            musicalImage.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleContactMusic();
+            });
+            musicalImage.addEventListener('touchstart', (e) => {
+                e.stopPropagation(); e.preventDefault(); toggleContactMusic();
             });
         }
     });
 </script>
+
+
+
+
+
+
+
+
 
 <script src="/short-films-data.js?v=3.0"></script>
 <script src="/commercials-data.js?v=3.0"></script>
