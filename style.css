@@ -1360,3 +1360,148 @@ body.mode-vi .content-en {
         margin-bottom: 90px !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================== */
+/* --- CÔNG CỤ CHỈNH CỠ CHỮ (NEW LOGIC) --- */
+/* ========================================================== */
+
+.font-georgia { font-family: 'Georgia', serif; font-weight: bold; }
+
+/* ---------------------------------------------------------- */
+/* 1. GIAO DIỆN LAPTOP & TABLET (> 768px) */
+/* ---------------------------------------------------------- */
+@media (min-width: 769px) {
+    /* Ẩn bản mobile */
+    .mobile-text-tools { display: none; }
+
+    /* Cấu hình bản Desktop */
+    .desktop-text-tools {
+        position: fixed; /* Cố định trên màn hình, lướt web nó vẫn đứng yên */
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Khoảng cách giữa 2 nút (như yêu cầu) */
+        z-index: 100;
+        
+        /* Hiệu ứng hiện ra từ từ */
+        opacity: 0; 
+        animation: fadeIn 0.5s ease 0.5s forwards;
+    }
+
+    .dt-btn {
+        width: 40px; height: 40px;
+        border-radius: 50%;
+        background: transparent;
+        border: 1px solid #ddd;
+        color: #666;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 16px;
+    }
+
+    .dt-btn:hover {
+        border-color: #0033cc;
+        color: #0033cc;
+        transform: scale(1.1);
+    }
+}
+
+/* ---------------------------------------------------------- */
+/* 2. GIAO DIỆN ĐIỆN THOẠI (MOBILE) (<= 768px) */
+/* ---------------------------------------------------------- */
+@media (max-width: 768px) {
+    /* Ẩn bản Desktop */
+    .desktop-text-tools { display: none; }
+
+    /* Cấu hình bản Mobile */
+    .mobile-text-tools {
+        position: fixed; /* QUAN TRỌNG: Nổi trên mặt kính, text trôi bên dưới */
+        top: 20px;       /* Cách mép trên */
+        right: 20px;     /* Cách mép phải */
+        z-index: 9999;   /* Luôn nằm trên cùng */
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40px;
+    }
+
+    /* Nút Chính (AA) */
+    .mt-toggle-btn {
+        width: 42px; height: 42px;
+        border-radius: 50%;
+        
+        /* Kính mờ xuyên thấu */
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        
+        border: 1px solid rgba(0,0,0,0.1);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        color: #222;
+        
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer;
+        z-index: 20; /* Nằm trên menu con */
+        transition: all 0.3s ease;
+    }
+
+    /* Menu Xổ Xuống (+ và -) */
+    .mt-dropdown {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+        
+        /* Mặc định: Ẩn và thụt lên trên */
+        opacity: 0;
+        transform: translateY(-20px) scale(0.8);
+        pointer-events: none; /* Không bấm được khi ẩn */
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    /* Trạng thái MỞ (Có class .is-open) */
+    .mobile-text-tools.is-open .mt-dropdown {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
+    }
+
+    /* Khi mở, nút AA đổi màu xanh */
+    .mobile-text-tools.is-open .mt-toggle-btn {
+        border-color: #0033cc;
+        color: #0033cc;
+        background: #fff;
+    }
+
+    /* Nút con (+ và -) */
+    .mt-action-btn {
+        width: 32px; height: 32px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #eee;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        color: #444;
+        display: flex; align-items: center; justify-content: center;
+    }
+    
+    .mt-action-btn:active {
+        background: #f0f0f0;
+        transform: scale(0.9);
+    }
+}
