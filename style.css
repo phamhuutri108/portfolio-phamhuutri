@@ -266,39 +266,43 @@ a:hover {color: #0033cc !important;}
     overflow: hidden; /* Quan trọng để không bay ra ngoài */
 }
 
-/* TRẠNG THÁI 1: Nằm im ban đầu */
+/* TRẠNG THÁI 1: Nằm im ban đầu (VÀ NHẤP NHÁY) */
 #wandering-resume {
-    position: relative; /* Ban đầu là relative để nằm gọn trong dòng */
+    position: relative;
     display: inline-block;
     font-size: 16px; 
     font-weight: bold;
     color: #111;
-    text-transform: none; /* Chỉ viết hoa chữ cái đầu */
+    text-transform: none;
     cursor: pointer;
-    padding: 20px; /* Vùng đệm lớn để dễ chạm vào kích hoạt */
+    padding: 20px;
     z-index: 50;
     
-    /* Hiệu ứng chuyển màu khi hover lúc chưa bay */
-    transition: color 0.3s;
+    /* Hiệu ứng chuyển màu */
+    transition: color 0.3s, opacity 0.3s; 
+    
+    /* --- THÊM DÒNG NÀY ĐỂ NHẤP NHÁY --- */
+    /* Dùng lại animation pulseText có sẵn (2s giống mobile) */
+    animation: pulseText 2s infinite; 
 }
 
-/* TRẠNG THÁI 2: Khi bắt đầu bay (JS sẽ thêm class này) */
+/* TRẠNG THÁI 2: Khi bắt đầu bay (JS thêm class này) */
 #wandering-resume.flying {
-    position: absolute; /* Tách khỏi dòng văn bản để bay */
-    
-    /* Chuyển động lơ lửng (Ambient) */
+    position: absolute; 
     transition: top 1.3s ease-in-out, left 1.3s ease-in-out, color 0.2s;
+    /* Animation nhấp nháy vẫn giữ nguyên từ ID gốc nên không cần thêm gì ở đây */
 }
 
 /* TRẠNG THÁI 3: Khi bỏ chạy (Evasion) */
 #wandering-resume.evading {
-    /* Chuyển động cực nhanh để né chuột */
     transition: top 0.2s ease-out, left 0.2s ease-out !important;
 }
 
-/* Đổi màu khi hover (chỉ hiện khi đã bắt được nó) */
+/* Đổi màu khi hover (KHI BẮT ĐƯỢC) */
 #wandering-resume:hover {
-    color: #0033cc;
+    color: #0033cc;   /* Vẫn hiện màu xanh như cũ */
+    animation: none;  /* Tạm dừng nhấp nháy để chữ hiện rõ màu xanh cho người dùng đọc */
+    opacity: 1;       /* Đảm bảo rõ nét 100% */
 }
 
 /* --- CHUYỂN NGÔN NGỮ --- */
@@ -1286,40 +1290,73 @@ body.mode-vi .content-en {
 
 
 
-/* --- FIX IPAD/TABLET: HIỆN CHỮ NHẤP NHÁY (GIỐNG ĐIỆN THOẠI) --- */
-/* Áp dụng cho màn hình dưới 1180px (Bao gồm iPad Pro, iPad Air ngang/dọc) */
-@media (max-width: 1180px) {
+/* ========================================================== */
+/* --- IPAD/TABLET: ÉP BUỘC NHẤP NHÁY (GIỐNG ĐIỆN THOẠI) --- */
+/* Phạm vi: Lớn hơn điện thoại (769px) nhưng nhỏ hơn Laptop lớn (1366px) */
+/* ========================================================== */
 
-    /* 1. KHI NHẠC TẮT: Hiện dòng "Click to play" nhấp nháy ngay lập tức */
-    #play-hint, 
-    #contact-play-hint { 
-        opacity: 0.6 !important; 
-        display: block !important;
-        animation: pulseText 2s infinite !important; /* Hiệu ứng nhấp nháy */
-    }
+@media (min-width: 769px) and (max-width: 1366px) {
 
-    /* 2. KHI NHẠC BẬT: Hiện cả Tên bài hát + Click to pause cùng lúc */
+    /* --- 1. TRANG HOME --- */
     
-    /* Hiện tên bài hát */
-    #home.music-on #music-credit,
-    .contact-image-wrapper.music-on #contact-music-credit { 
-        opacity: 1 !important; 
-        display: block !important; 
-        z-index: 25;
-    }
-    
-    /* Hiện dòng Pause nhấp nháy (và đẩy xuống dưới để không đè tên bài hát) */
-    #home.music-on #pause-hint {
+    /* KHI NHẠC TẮT: "Click to play" */
+    #play-hint { 
         display: block !important;
-        font-size: 9px !important;    
-        margin-top: 150px !important; /* Đẩy xuống thấp hơn tên bài hát ở Home */
+        /* Dùng pulseText giống hệt mobile (chỉ thay đổi độ mờ) */
         animation: pulseText 2s infinite !important; 
     }
 
+    /* Fix lỗi dính hover: Kể cả khi chạm vào ảnh, vẫn bắt buộc nháy */
+    .home-center-img:hover ~ #play-hint {
+        opacity: 0.6 !important; /* Reset opacity để animation chạy đè lên */
+        animation: pulseText 2s infinite !important;
+    }
+
+    /* KHI NHẠC BẬT: "Click to pause" */
+    #home.music-on #pause-hint {
+        display: block !important;
+        font-size: 9px !important;    
+        margin-top: 155px !important; 
+        animation: pulseText 2s infinite !important; 
+    }
+    
+    /* Tên bài hát: Luôn hiện rõ (không nháy) */
+    #home.music-on #music-credit {
+        opacity: 1 !important;
+        display: block !important;
+    }
+
+
+    /* --- 2. TRANG CONTACT --- */
+
+    /* KHI NHẠC TẮT: "Click to play" */
+    #contact-play-hint { 
+        display: block !important;
+        animation: pulseText 2s infinite !important;
+    }
+    
+    /* Fix lỗi chạm vào ảnh contact bị dừng nháy */
+    .contact-image-wrapper:hover #contact-play-hint {
+        opacity: 0.6 !important;
+        animation: pulseText 2s infinite !important;
+    }
+
+    /* KHI NHẠC BẬT: "Click to pause" */
     .contact-image-wrapper.music-on #contact-pause-hint {
         display: block !important;
         font-size: 9px !important;
-        bottom: -60px !important;     /* Đẩy xuống thấp hơn tên bài hát ở Contact */
+        bottom: -65px !important; 
         animation: pulseText 2s infinite !important;
+    }
+
+    /* Tên bài hát Contact: Luôn hiện rõ */
+    .contact-image-wrapper.music-on #contact-music-credit { 
+        opacity: 1 !important; 
+        display: block !important; 
+    }
+    
+    /* Đẩy khung ảnh lên để chứa đủ chữ */
+    .contact-image-wrapper {
+        margin-bottom: 90px !important;
     }
 }
