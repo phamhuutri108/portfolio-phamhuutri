@@ -738,6 +738,33 @@ body.mode-vi .content-en {
     display: block; color: #000; opacity: 0;
 }
 
+
+/* ================================================= */
+/* --- HOME: HOVER LOGIC (DESKTOP / LAPTOP FIX) --- */
+/* ================================================= */
+
+/* Mặc định khi nhạc đang bật */
+#home.music-on #music-credit {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+#home.music-on #pause-hint {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Khi hover vào ảnh */
+#home.music-on .home-center-img:hover ~ #music-credit {
+    opacity: 0;
+}
+
+#home.music-on .home-center-img:hover ~ #pause-hint {
+    opacity: 1;
+}
+
+
+
 /* --- SỬA LẠI LOGIC CONTACT: CHỈ KHI RÊ VÀO ẢNH MỚI ĐỔI CHỮ --- */
 
 /* 1. Mặc định khi nhạc đang bật: */
