@@ -425,6 +425,40 @@
     </div>
 
     <div id="writings-detail-view" style="display: none;">
+
+
+        <div id="writing-tools-wrapper">
+
+    <div class="desktop-text-tools">
+        <button class="dt-btn" onclick="adjustWritingSize(1)" title="Tăng cỡ chữ">
+            <span class="font-georgia">A<sup style="font-size: 11px;">+</sup></span>
+        </button>
+        <button class="dt-btn" onclick="adjustWritingSize(-1)" title="Giảm cỡ chữ">
+            <span class="font-georgia">A<sup style="font-size: 11px;">-</sup></span>
+        </button>
+    </div>
+
+    <div class="mobile-text-tools" id="mobile-text-tools">
+        <button class="mt-toggle-btn" onclick="toggleMobileMenu()">
+            <span style="font-family: 'Georgia', serif; font-size: 18px; font-weight: 700;">A</span>
+            <span style="font-family: 'Georgia', serif; font-size: 13px; font-weight: 400; margin-left: 2px;">A</span>
+        </button>
+
+        <div class="mt-dropdown">
+            <button class="mt-action-btn" onclick="adjustWritingSize(1)">
+                <span style="font-family: sans-serif; font-size: 18px; font-weight: 300;">+</span>
+            </button>
+            <button class="mt-action-btn" onclick="adjustWritingSize(-1)">
+                <span style="font-family: sans-serif; font-size: 22px; font-weight: 300;">-</span>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
         <div style="margin-bottom: 20px;">
             <a href="javascript:void(0)" onclick="closeWritingDetail()" 
                style="font-size: 26px; text-decoration: none; color: #999; transition: all 0.2s; display: inline-block;"
@@ -437,6 +471,12 @@
         <div class="essay-content" id="detail-content" style="max-width: 100%; text-align: justify;"></div>
         <div style="height: 100px;"></div>
     </div>
+
+
+
+
+
+
 </div>
 
 <audio id="writing-audio-source"></audio>
@@ -1681,6 +1721,66 @@
 
 
 
+
+
+
+
+
+
+
+
+<script>
+    // --- LOGIC CHỈNH CỠ CHỮ (FINAL) ---
+
+    // 1. Hàm Toggle Menu Mobile (Gắn vào nút AA)
+    function toggleMobileMenu() {
+        const tools = document.getElementById('mobile-text-tools');
+        tools.classList.toggle('is-open');
+    }
+
+    // 2. Hàm Tăng/Giảm (Gắn vào nút + / - và nút Desktop)
+    let currentFontSize = 16;
+    
+    function adjustWritingSize(amount) {
+        const contentEl = document.getElementById('detail-content');
+        if (!contentEl) return;
+
+        currentFontSize += amount;
+        
+        // Giới hạn
+        if (currentFontSize < 12) currentFontSize = 12;
+        if (currentFontSize > 26) currentFontSize = 26;
+
+        contentEl.style.fontSize = currentFontSize + "px";
+        contentEl.style.lineHeight = (1.6 + (amount * 0.05)) + "";
+        
+        // QUAN TRỌNG: KHÔNG ĐÓNG MENU Ở ĐÂY
+        // Để người dùng có thể bấm liên tiếp nhiều lần
+    }
+
+    // 3. Logic tự đóng khi cuộn trang (Chỉ cho Mobile)
+    document.addEventListener("DOMContentLoaded", () => {
+        const writingContainer = document.getElementById('writings-detail-view'); // Vùng cuộn
+        let scrollTimeout;
+
+        if (writingContainer) {
+            // Lắng nghe sự kiện cuộn trên toàn bộ cửa sổ (Window) vì trên mobile body cuộn
+            window.addEventListener('scroll', function() {
+                const tools = document.getElementById('mobile-text-tools');
+                
+                // Chỉ chạy logic nếu menu đang mở
+                if (tools && tools.classList.contains('is-open')) {
+                    clearTimeout(scrollTimeout);
+                    
+                    // Nếu người dùng cuộn, chờ 100ms rồi đóng lại
+                    scrollTimeout = setTimeout(() => {
+                         tools.classList.remove('is-open');
+                    }, 100);
+                }
+            }, { passive: true });
+        }
+    });
+</script>
 
 
 
