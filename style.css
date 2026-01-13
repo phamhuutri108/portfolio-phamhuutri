@@ -598,14 +598,34 @@ body.mode-vi .content-en {
         margin-bottom: 0;
     }
 
-    /* 2. Căn chỉnh nút ngôn ngữ nằm gọn ở góc phải trên cùng */
+    /* 2. Căn chỉnh nút ngôn ngữ (ĐÃ SỬA: GIỮA & TO X2) */
     .sidebar .lang-switch {
-        display: block; /* Hiện lại */
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        margin: 0;
+        display: block; 
+        
+        /* Đổi sang relative để nó tự nằm trên cùng và đẩy Logo xuống (không bị đè) */
+        position: relative; 
+        width: 100%;
+        text-align: center; /* Căn giữa */
+        
+        /* Reset các vị trí cũ */
+        top: auto; 
+        right: auto; 
+        
+        /* TĂNG KÍCH THƯỚC LÊN GẤP ĐÔI */
+        font-size: 12px; /* Cũ là 10px -> Mới 20px */
+        font-weight: bold;
+        letter-spacing: 4px; /* Tăng khoảng cách chữ cho thoáng đẹp */
+        
+        /* Tạo khoảng cách an toàn với Logo bên dưới */
+        margin-bottom: -10px; 
+        margin-top: 10px;
         z-index: 20;
+    }
+    
+    /* Tăng kích thước dấu gạch ngang (-) ở giữa cho cân đối */
+    .sidebar .lang-switch .separator {
+        font-size: 18px; 
+        vertical-align: middle; /* Căn giữa theo chiều dọc */
     }
 
     .content { 
