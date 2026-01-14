@@ -1595,3 +1595,20 @@ body.mode-vi .content-en {
         transform: scale(0.9);
     }
 }
+
+
+
+
+
+
+
+
+/* --- SỬA LỖI TRANG 404 --- */
+#not-found.active-section {
+    display: flex !important; /* Quan trọng: Ghi đè kiểu hiển thị mặc định */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
