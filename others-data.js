@@ -1,6 +1,145 @@
 /* --- FILE: others-data.js --- */
 
 const othersData = {
+
+
+    // 0. INFINITY (CẬP NHẬT: XẾP DỌC 480px + CLICK ZOOM + NÚT X)
+    "others-infinity": {
+        title: {
+            vi: "Vô Cực",
+            en: "Infinity"
+        },
+        thumbnail: "https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.jpg",
+        vi: `
+            <p>
+                <b>Thể loại:</b> Video / Collage Art<br>
+                <b>Năm:</b> 2024<br>
+                <b>Vai trò:</b> Ý tưởng & Chuyển động<br>
+                <b>Phần mềm:</b> Adobe After Effects, Adobe Photoshop, Davinci Resolve
+            </p>
+
+            <div style="padding: 60px 0; display: flex; flex-direction: column; align-items: center; gap: 50px; width: 100%;">
+
+                <div class="infinity-item" 
+                     style="cursor: zoom-in; transition: transform 0.3s;"
+                     onmouseover="this.style.transform='scale(1.02)'" 
+                     onmouseout="this.style.transform='scale(1)'"
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov')">
+                     
+                    <video autoplay loop muted playsinline disablepictureinpicture 
+                        style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov">
+                    </video>
+                </div>
+
+                <div class="infinity-item" 
+                     style="cursor: zoom-in; transition: transform 0.3s;"
+                     onmouseover="this.style.transform='scale(1.02)'" 
+                     onmouseout="this.style.transform='scale(1)'"
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov')">
+                    
+                    <video autoplay loop muted playsinline disablepictureinpicture 
+                        style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov">
+                    </video>
+                </div>
+
+                <div class="infinity-item" 
+                     style="cursor: zoom-in; transition: transform 0.3s;"
+                     onmouseover="this.style.transform='scale(1.02)'" 
+                     onmouseout="this.style.transform='scale(1)'"
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov')">
+                    
+                    <video autoplay loop muted playsinline disablepictureinpicture 
+                        style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov">
+                    </video>
+                </div>
+
+            </div>
+
+            <img src="" onerror="
+                window.openInfinityVideo = function(src) {
+                    const overlay = document.createElement('div');
+                    overlay.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.98); z-index:10000; display:flex; justify-content:center; align-items:center; animation: fadeIn 0.3s ease;';
+                    
+                    overlay.innerHTML = \`
+                        <span style='position:absolute; top:20px; right:35px; color:#000; font-size:40px; font-weight:bold; cursor:pointer; line-height:1; font-family: sans-serif;' title='Close'>&times;</span>
+                        <video autoplay loop muted playsinline style='max-width:90%; max-height:90%; box-shadow: 0 20px 50px rgba(0,0,0,0.1); pointer-events: none;'><source src='\${src}'></video>
+                    \`;
+                    
+                    overlay.onclick = function() { this.remove(); };
+                    document.body.appendChild(overlay);
+                }
+            " style="display:none;">
+        `,
+        en: `
+            <p>
+                <b>Genre:</b> Video / Collage Art<br>
+                <b>Year:</b> 2024<br>
+                <b>Role:</b> Idea & Motion Design<br>
+                <b>Software:</b> Adobe After Effects, Adobe Photoshop, Davinci Resolve
+            </p>
+
+            <div style="padding: 60px 0; display: flex; flex-direction: column; align-items: center; gap: 50px; width: 100%;">
+
+                <div class="infinity-item" 
+                     style="cursor: zoom-in; transition: transform 0.3s;"
+                     onmouseover="this.style.transform='scale(1.02)'" 
+                     onmouseout="this.style.transform='scale(1)'"
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov')">
+                     
+                    <video autoplay loop muted playsinline disablepictureinpicture 
+                        style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov">
+                    </video>
+                </div>
+
+                <div class="infinity-item" 
+                     style="cursor: zoom-in; transition: transform 0.3s;"
+                     onmouseover="this.style.transform='scale(1.02)'" 
+                     onmouseout="this.style.transform='scale(1)'"
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov')">
+                    
+                    <video autoplay loop muted playsinline disablepictureinpicture 
+                        style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov">
+                    </video>
+                </div>
+
+                <div class="infinity-item" 
+                     style="cursor: zoom-in; transition: transform 0.3s;"
+                     onmouseover="this.style.transform='scale(1.02)'" 
+                     onmouseout="this.style.transform='scale(1)'"
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov')">
+                    
+                    <video autoplay loop muted playsinline disablepictureinpicture 
+                        style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov">
+                    </video>
+                </div>
+
+            </div>
+            
+            <img src="" onerror="if(!window.openInfinityVideo) {
+                window.openInfinityVideo = function(src) {
+                    const overlay = document.createElement('div');
+                    overlay.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.98); z-index:10000; display:flex; justify-content:center; align-items:center; animation: fadeIn 0.3s ease;';
+                    overlay.innerHTML = \`<span style='position:absolute; top:20px; right:35px; color:#000; font-size:40px; font-weight:bold; cursor:pointer; line-height:1; font-family: sans-serif;' title='Close'>&times;</span><video autoplay loop muted playsinline style='max-width:90%; max-height:90%; box-shadow: 0 20px 50px rgba(0,0,0,0.1); pointer-events: none;'><source src='\${src}'></video>\`;
+                    overlay.onclick = function() { this.remove(); };
+                    document.body.appendChild(overlay);
+                }
+            }" style="display:none;">
+        `
+    },
+
+
+
+
+
+
+
+
     // 1. WARDROBE (HỌC TỦ)
     "others-wardrobe": {
         title: {
