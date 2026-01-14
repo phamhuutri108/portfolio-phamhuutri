@@ -7,7 +7,15 @@ body {
     color: #111;
     background-color: #fff;
     line-height: 1.6;
+
+    /* --- THÊM ĐOẠN NÀY ĐỂ CHẶN BÔI ĐEN --- */
+    -webkit-user-select: none; /* Safari / Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE / Edge */
+    user-select: none;         /* Chuẩn chung */
+    -webkit-touch-callout: none; /* Chặn menu giữ lì trên iOS */
 }
+
 
 a { text-decoration: none; color: #000; transition: all 0.2s; }
 a:hover { color: #666; text-decoration: none; } /* Bỏ gạch chân khi hover cho sạch */
