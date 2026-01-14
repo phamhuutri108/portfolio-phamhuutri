@@ -1808,6 +1808,43 @@
 
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // ID lấy từ link bạn gửi
+        const sheetID = "1Zu0RZ1cpXdE8Z5Temxgfy8CfSSaFAyhxv1BGGXDYbqc";
+        // Chuyển đổi sang link xuất CSV
+        const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=csv`;
+
+        fetch(sheetURL)
+            .then(response => {
+                if (!response.ok) throw new Error("Không thể đọc Google Sheet");
+                return response.text();
+            })
+            .then(csvText => {
+                const rows = csvText.split('\n'); // Tách từng dòng
+                
+                rows.forEach(row => {
+                    const cols = row.split(','); // Tách cột A và B
+                    if (cols.length < 2) return;
+
+                    const id = cols[0].trim(); // Cột A: ID (ví dụ: group-commercials)
+                    const status = cols[1].trim().toUpperCase(); // Cột B: Trạng thái (ON/OFF)
+
+                    // Nếu trạng thái là OFF -> Ẩn khỏi Sidebar
+                    if (status === 'OFF') {
+                        const element = document.getElementById(id);
+                        if (element) {
+                            element.style.display = 'none'; // Ẩn đi
+                        }
+                    }
+                });
+            })
+            .catch(error => console.log("Lỗi: Hãy kiểm tra xem Sheet đã mở quyền 'Anyone with the link' chưa?", error));
+    });
+</script>
+
+
+
 
 
 </body>
