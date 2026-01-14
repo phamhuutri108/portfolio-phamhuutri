@@ -1810,36 +1810,45 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        // ID lấy từ link bạn gửi
         const sheetID = "1Zu0RZ1cpXdE8Z5Temxgfy8CfSSaFAyhxv1BGGXDYbqc";
-        // Chuyển đổi sang link xuất CSV
-        const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=csv`;
+        // Thêm tham số random để hạn chế cache trình duyệt
+        const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=csv&t=${Date.now()}`;
+
+        console.log("Đang tải dữ liệu từ Sheet...");
 
         fetch(sheetURL)
             .then(response => {
-                if (!response.ok) throw new Error("Không thể đọc Google Sheet");
+                if (!response.ok) throw new Error(`Lỗi mạng: ${response.status}`);
                 return response.text();
             })
             .then(csvText => {
-                const rows = csvText.split('\n'); // Tách từng dòng
+                console.log("--- DỮ LIỆU ĐỌC ĐƯỢC TỪ SHEET ---");
+                console.log(csvText); // In toàn bộ nội dung sheet ra để kiểm tra
+                console.log("---------------------------------");
+
+                const rows = csvText.split('\n');
                 
                 rows.forEach(row => {
-                    const cols = row.split(','); // Tách cột A và B
+                    const cols = row.split(',');
                     if (cols.length < 2) return;
 
-                    const id = cols[0].trim(); // Cột A: ID (ví dụ: group-commercials)
-                    const status = cols[1].trim().toUpperCase(); // Cột B: Trạng thái (ON/OFF)
+                    const id = cols[0].trim();
+                    const status = cols[1].trim().toUpperCase();
 
-                    // Nếu trạng thái là OFF -> Ẩn khỏi Sidebar
+                    console.log(`Kiểm tra ID: "${id}" - Trạng thái: "${status}"`);
+
                     if (status === 'OFF') {
                         const element = document.getElementById(id);
                         if (element) {
-                            element.style.display = 'none'; // Ẩn đi
+                            console.log(`>> Đã tìm thấy element "${id}". Đang ẩn nó đi!`);
+                            element.style.setProperty('display', 'none', 'important'); // Dùng !important cho chắc
+                        } else {
+                            console.error(`>> LỖI: Sheet bảo ẩn "${id}" nhưng không tìm thấy ID này trong HTML!`);
                         }
                     }
                 });
             })
-            .catch(error => console.log("Lỗi: Hãy kiểm tra xem Sheet đã mở quyền 'Anyone with the link' chưa?", error));
+            .catch(error => console.error("Lỗi tải Sheet:", error));
     });
 </script>
 
