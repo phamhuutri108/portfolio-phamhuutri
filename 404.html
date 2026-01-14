@@ -730,19 +730,17 @@
 
 
 <script>
-    /* --- LOGIC: EXPLOSION + MUSIC HOME (FULL DRAG & DROP) --- */
+    /* --- LOGIC: EXPLOSION + MUSIC HOME (AUTO STOP OTHERS) --- */
     document.addEventListener("DOMContentLoaded", () => {
         const homeSection = document.getElementById('home');
         const centerImage = document.querySelector('.home-center-img');
         
-        // CẤU HÌNH NHẠC HOME
         const bgMusic = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'); 
         bgMusic.loop = true; bgMusic.volume = 0.5;
 
         let hasChaosStarted = false;
         let resetTimer = null; 
         
-        // BIẾN CHO DRAG & DROP
         let isDragging = false;
         let currentDragItem = null;
         let dragOffsetX = 0;
@@ -766,8 +764,16 @@
             ], { duration: randomRange(10000, 30000), iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
         }
 
-        // --- 1. BẬT NHẠC ---
+        // --- HÀM STOP CÔNG KHAI CHO CÁC TRANG KHÁC GỌI ---
+        window.stopHomeMusic = function() {
+            if (hasChaosStarted) resetChaos();
+        };
+
         function createExplosion() {
+            // TẮT NHẠC Ở 2 NƠI KHÁC TRƯỚC KHI CHẠY
+            if (window.stopContactMusic) window.stopContactMusic();
+            if (window.stopWritingMusic) window.stopWritingMusic();
+
             hasChaosStarted = true; 
             if (resetTimer) clearTimeout(resetTimer);
             bgMusic.play().catch(e => console.log("Lỗi:", e));
@@ -780,7 +786,6 @@
                 const span = document.createElement('span');
                 span.innerText = currentList[Math.floor(Math.random() * currentList.length)];
                 span.className = 'chaos-word';
-                // KHÔNG SET Z-INDEX Ở ĐÂY (Để CSS lo)
                 span.style.pointerEvents = 'auto'; 
                 span.style.cursor = 'grab';
                 
@@ -802,7 +807,6 @@
             }
         }
 
-        // --- 2. TẮT NHẠC ---
         function resetChaos() {
             hasChaosStarted = false; 
             homeSection.classList.remove('music-on');
@@ -822,7 +826,7 @@
 
         function toggleChaos() { if (!hasChaosStarted) createExplosion(); else resetChaos(); }
         
-        // --- LOGIC KÉO THẢ (DRAG & DROP) - PHẦN BẠN ĐANG THIẾU ---
+        // --- DRAG & DROP LOGIC ---
         function getClientCoords(e) { 
             if (e.touches && e.touches.length > 0) return { x: e.touches[0].clientX, y: e.touches[0].clientY }; 
             return { x: e.clientX, y: e.clientY }; 
@@ -833,34 +837,27 @@
                 isDragging = true; 
                 currentDragItem = e.target; 
                 currentDragItem.style.cursor = 'grabbing'; 
-                currentDragItem.style.transition = 'none'; // Tắt animation để kéo cho mượt
+                currentDragItem.style.transition = 'none'; 
                 
                 const anims = currentDragItem.getAnimations(); 
                 anims.forEach(anim => anim.cancel()); 
 
                 const rect = currentDragItem.getBoundingClientRect(); 
                 const coords = getClientCoords(e); 
-                
-                // Tính khoảng cách từ ngón tay đến góc phần tử
                 dragOffsetX = coords.x - rect.left; 
                 dragOffsetY = coords.y - rect.top; 
 
-                // Quan trọng: Ngăn sự kiện mặc định để không bị bôi đen text
                 if (e.cancelable && e.type === 'touchstart') e.preventDefault(); 
             } 
         }
 
         function onDragMove(e) { 
             if (isDragging && currentDragItem) { 
-                if (e.cancelable) e.preventDefault(); // Ngăn cuộn trang khi đang kéo chữ
-                
+                if (e.cancelable) e.preventDefault(); 
                 const containerRect = homeSection.getBoundingClientRect(); 
                 const coords = getClientCoords(e); 
-                
-                // Tính toán vị trí mới (bù trừ transform translate -50%)
                 const newLeft = coords.x - containerRect.left - dragOffsetX + (currentDragItem.offsetWidth / 2);
                 const newTop = coords.y - containerRect.top - dragOffsetY + (currentDragItem.offsetHeight / 2);
-
                 currentDragItem.style.left = `${newLeft}px`; 
                 currentDragItem.style.top = `${newTop}px`; 
             } 
@@ -869,22 +866,19 @@
         function onDragEnd() { 
             if (isDragging && currentDragItem) { 
                 currentDragItem.style.cursor = 'grab'; 
-                if (hasChaosStarted) startFloating(currentDragItem); // Thả ra thì bay tiếp
+                if (hasChaosStarted) startFloating(currentDragItem); 
                 isDragging = false; 
                 currentDragItem = null; 
             } 
         }
 
-        // Đăng ký sự kiện
         document.addEventListener('mousedown', onDragStart); 
         document.addEventListener('mousemove', onDragMove); 
         document.addEventListener('mouseup', onDragEnd); 
-        
         document.addEventListener('touchstart', onDragStart, { passive: false }); 
         document.addEventListener('touchmove', onDragMove, { passive: false }); 
         document.addEventListener('touchend', onDragEnd);
 
-        // Nút chuyển ngữ
         const langSwitchBtn = document.querySelector('.lang-switch');
         if (langSwitchBtn) {
             langSwitchBtn.addEventListener('click', () => { 
@@ -1096,27 +1090,35 @@
 
 
 <script>
-    /* --- LOGIC: CONTACT MUSIC PLAYER (FINAL) --- */
+    /* --- LOGIC: CONTACT MUSIC PLAYER (AUTO STOP OTHERS) --- */
     document.addEventListener("DOMContentLoaded", () => {
         const musicalImage = document.getElementById('musical-image');
         const contactAudio = document.getElementById('contact-audio');
-        const contactWrapper = document.querySelector('.contact-image-wrapper'); // Lấy thẻ bao
+        const contactWrapper = document.querySelector('.contact-image-wrapper'); 
+
+        // --- HÀM STOP CÔNG KHAI ---
+        window.stopContactMusic = function() {
+            if (contactAudio && !contactAudio.paused) {
+                contactAudio.pause();
+                if (contactWrapper) contactWrapper.classList.remove('music-on');
+                if (musicalImage) musicalImage.style.opacity = "1";
+            }
+        };
 
         if (musicalImage && contactAudio && contactWrapper) {
-            
             function toggleContactMusic() {
                 if (contactAudio.paused) {
+                    // TẮT NHẠC Ở 2 NƠI KHÁC
+                    if (window.stopHomeMusic) window.stopHomeMusic();
+                    if (window.stopWritingMusic) window.stopWritingMusic();
+
                     // --- BẬT ---
                     contactAudio.play();
-                    // THÊM CLASS -> Chuyển sang chế độ "Nhạc đang bật"
                     contactWrapper.classList.add('music-on'); 
                     musicalImage.style.opacity = "0.8"; 
                 } else {
                     // --- TẮT (PAUSE) ---
-                    contactAudio.pause();
-                    // GỠ CLASS -> Quay về chế độ "Chờ phát"
-                    contactWrapper.classList.remove('music-on');
-                    musicalImage.style.opacity = "1"; 
+                    window.stopContactMusic(); // Gọi chính hàm stop của mình cho gọn
                 }
             }
 
@@ -1470,9 +1472,11 @@
 
 
 <script>
-    /* --- WRITING MUSIC PLAYER: HARUKA NAKAMURA (AUTO DURATION FULL LIST) --- */
+    /* --- WRITING MUSIC PLAYER: HARUKA NAKAMURA (AUTO STOP OTHERS) --- */
     
-    // 1. DỮ LIỆU 15 BÀI HÁT
+    // ... (GIỮ NGUYÊN KHAI BÁO BIẾN vÀ LIST NHẠC Ở TRÊN, CHỈ SỬA CÁC HÀM DƯỚI ĐÂY) ...
+    // ĐỂ TIỆN, BẠN CÓ THỂ COPY ĐÈ TOÀN BỘ SCRIPT NÀY VÀO:
+
     const writingPlaylist = [
         { title: "better day", src: "https://ik.imagekit.io/phamhuutri108/music/1_betterday_still_life_haruka_nakamura.mp3", duration: "--:--" },
         { title: "one light", src: "https://ik.imagekit.io/phamhuutri108/music/2_onelight_still_life_haruka_nakamura.mp3", duration: "--:--" },
@@ -1496,7 +1500,6 @@
     let wpIsExpanded = false;
     let wpCurrentIndex = 0;
 
-    // Elements
     const wpTitleEl = document.getElementById('writing-main-title');
     const wpHintEl = document.getElementById('writing-hint');
     const wpPanelEl = document.getElementById('writing-player');
@@ -1507,11 +1510,9 @@
     const wpPlayBtn = document.getElementById('wp-play-btn');
     const wpPlaylistContainer = document.getElementById('wp-playlist');
 
-    // Icons
     const iconWpPlay = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
     const iconWpPause = '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
 
-    // --- HÀM FORMAT THỜI GIAN ---
     function formatTime(seconds) {
         if (isNaN(seconds) || seconds < 0) return "--:--";
         const m = Math.floor(seconds / 60);
@@ -1519,70 +1520,55 @@
         return `${m < 10 ? '0' + m : m}:${s < 10 ? '0' + s : s}`;
     }
 
-    // --- TÍNH NĂNG MỚI: TỰ ĐỘNG QUÉT THỜI LƯỢNG TOÀN BỘ LIST ---
     function preloadDurations() {
         writingPlaylist.forEach((item, index) => {
             const tempAudio = new Audio(item.src);
             tempAudio.addEventListener('loadedmetadata', () => {
-                // Lưu thời lượng thật vào data
                 item.realDuration = tempAudio.duration;
-                // Cập nhật lại giao diện ngay lập tức
                 updatePlaylistItemDuration(index, tempAudio.duration);
             });
         });
     }
 
     function updatePlaylistItemDuration(index, duration) {
-        // Tìm element tương ứng trong danh sách để sửa text
         const items = document.querySelectorAll('.wp-playlist-item');
         if (items[index]) {
             const timeSpan = items[index].querySelector('span:last-child');
-            // Chỉ cập nhật nếu không phải là bài đang phát (vì bài đang phát hiển thị đếm ngược)
             if (timeSpan && index !== wpCurrentIndex) {
                 timeSpan.innerText = formatTime(duration);
             }
         }
     }
 
-    // --- HÀM 1: BẬT / TẮT CHẾ ĐỘ NHẠC (UPDATE) ---
+    // --- HÀM STOP CÔNG KHAI ---
+    window.stopWritingMusic = function() {
+        if (wpIsPlaying) {
+            wpAudio.pause();
+            wpIsPlaying = false;
+            updateWpPlayIcon();
+        }
+    }
+
     function toggleWritingMusic() {
         wpIsActive = !wpIsActive;
-
-        // Lấy 2 thẻ ngôn ngữ bên trong dòng hint
         const hintEn = wpHintEl.querySelector('.content-en');
         const hintVi = wpHintEl.querySelector('.content-vi');
 
         if (wpIsActive) {
-            // --- TRẠNG THÁI MỞ (ON) ---
-            
-            // 1. Title: Giữ nhấp nháy, chỉ thêm màu xanh
-            // (Không remove class 'blink-title' nữa)
+            // TẮT NHẠC NƠI KHÁC KHI MỞ PLAYER
+            if (window.stopHomeMusic) window.stopHomeMusic();
+            if (window.stopContactMusic) window.stopContactMusic();
+
             wpTitleEl.classList.add('music-active'); 
-            
-            // 2. Hint: KHÔNG ẨN, mà đổi nội dung
-            // wpHintEl.classList.add('hidden'); // <-- Bỏ dòng này
             if(hintEn) hintEn.innerText = "Click to close";
             if(hintVi) hintVi.innerText = "Bấm để đóng";
-            
-            // 3. Hiện Panel
             wpPanelEl.classList.add('visible');
-            
-            // Set tĩnh tên Album
             displayWpTitle.innerText = "Still Life - Haruka Nakamura"; 
-            
             loadWpSong(wpCurrentIndex);
         } else {
-            // --- TRẠNG THÁI ĐÓNG (OFF) ---
-            
-            // 1. Title: Về màu đen (vẫn nhấp nháy)
             wpTitleEl.classList.remove('music-active');
-            
-            // 2. Hint: Trả lại nội dung cũ
-            // wpHintEl.classList.remove('hidden'); // <-- Bỏ dòng này
             if(hintEn) hintEn.innerText = "Click to open";
             if(hintVi) hintVi.innerText = "Bấm để mở";
-            
-            // 3. Ẩn Panel
             wpPanelEl.classList.remove('visible');
             wpPanelEl.classList.remove('expanded');
             wpIsExpanded = false;
@@ -1600,29 +1586,19 @@
         else wpPanelEl.classList.remove('expanded');
     }
 
-    // --- 2. LOAD BÀI HÁT ---
     function loadWpSong(index) {
         if (index < 0 || index >= writingPlaylist.length) return;
-        
         const song = writingPlaylist[index];
-        
-        // QUAN TRỌNG: Không đổi Title thành tên bài hát nữa
-        // Tên Album & Tác giả luôn cố định
         displayWpTitle.innerText = "Still Life - Haruka Nakamura"; 
-        
         displayWpTime.innerText = "Loading..."; 
-        
         wpAudio.src = song.src;
         wpAudio.load(); 
-        
         renderWpPlaylist(); 
     }
 
-    // --- 3. XỬ LÝ AUDIO ---
     wpAudio.addEventListener('loadedmetadata', () => {
         const totalDuration = wpAudio.duration;
         writingPlaylist[wpCurrentIndex].realDuration = totalDuration; 
-        
         if (!wpIsPlaying) {
             displayWpTime.innerText = formatTime(totalDuration);
         }
@@ -1634,7 +1610,6 @@
             const remaining = wpAudio.duration - wpAudio.currentTime;
             const formattedTime = "-" + formatTime(remaining);
             displayWpTime.innerText = formattedTime;
-
             const activeTimeEl = document.getElementById('wp-active-time-display');
             if (activeTimeEl) {
                 activeTimeEl.innerText = formattedTime;
@@ -1647,28 +1622,26 @@
         wpNext();
     });
 
-    // --- 4. RENDER PLAYLIST ---
     function renderWpPlaylist() {
         wpPlaylistContainer.innerHTML = '';
-        
         writingPlaylist.forEach((song, index) => {
             const div = document.createElement('div');
             div.className = 'wp-playlist-item';
-            
             let timeDisplay = "";
-            
             if (index === wpCurrentIndex) {
                 div.classList.add('active');
                 timeDisplay = `<span id="wp-active-time-display">--:--</span>`;
             } else {
-                // Ưu tiên lấy duration thực tế đã quét được
                 const durationToShow = song.realDuration ? formatTime(song.realDuration) : song.duration;
                 timeDisplay = `<span>${durationToShow}</span>`;
             }
-
             div.innerHTML = `<span>${index + 1}. ${song.title}</span> ${timeDisplay}`;
             
             div.onclick = () => {
+                // TẮT NHẠC NƠI KHÁC KHI CHỌN BÀI
+                if (window.stopHomeMusic) window.stopHomeMusic();
+                if (window.stopContactMusic) window.stopContactMusic();
+
                 wpCurrentIndex = index;
                 loadWpSong(wpCurrentIndex);
                 setTimeout(() => {
@@ -1677,17 +1650,19 @@
                     updateWpPlayIcon();
                 }, 50);
             };
-            
             wpPlaylistContainer.appendChild(div);
         });
     }
 
-    // --- CÁC HÀM ĐIỀU KHIỂN ---
     function wpTogglePlay() {
         if (wpIsPlaying) {
             wpAudio.pause();
             wpIsPlaying = false;
         } else {
+            // TẮT NHẠC NƠI KHÁC KHI BẤM PLAY
+            if (window.stopHomeMusic) window.stopHomeMusic();
+            if (window.stopContactMusic) window.stopContactMusic();
+
             wpAudio.play();
             wpIsPlaying = true;
         }
@@ -1710,12 +1685,9 @@
         setTimeout(() => { wpIsPlaying = true; wpAudio.play(); updateWpPlayIcon(); }, 50);
     }
 
-    // KÍCH HOẠT QUÉT THỜI LƯỢNG NGẦM NGAY KHI VÀO TRANG
     document.addEventListener("DOMContentLoaded", () => {
-        // Đợi 1 chút cho trang load ổn định rồi mới quét để tránh lag
         setTimeout(preloadDurations, 2000);
     });
-
 </script>
 
 
