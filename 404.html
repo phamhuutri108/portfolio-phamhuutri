@@ -678,6 +678,9 @@
                 a.href = "javascript:void(0)";
                 a.onclick = () => showPage(id, groupId);
                 a.className = "gallery-item";
+
+                // [MỚI] Gắn thẻ tên để Google Sheet tìm thấy và ẩn đi
+                a.id = 'thumb-' + id;
                 
                 // THÊM loading="lazy" vào thẻ img
                 // Đây là cách tối ưu ảnh tốt nhất mà không cần giảm chất lượng
@@ -1234,6 +1237,9 @@
         writingData.forEach((item, index) => {
             const el = document.createElement('div');
             el.className = 'writings-scatter-item';
+
+            // [MỚI] Gắn thẻ tên để Google Sheet tìm thấy và ẩn đi
+            el.id = 'scatter-' + item.id;
             
             el.innerHTML = `
                 <span class="content-vi">${item.title.vi}</span>
