@@ -1,0 +1,13 @@
+{
+  "id": "short-films-testing",
+  "title_vi": "ba ơi đừng nói dối",
+  "title_en": "dad dont lie to me",
+  "thumbnail": "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg",
+  "blocks": [
+    {
+      "type": "block_text",
+      "vi": "kekeke",
+      "en": "kekekeke"
+    }
+  ]
+}
