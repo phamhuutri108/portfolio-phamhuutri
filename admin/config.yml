@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: phamhuutri108/phamhuutri-portfolio # <--- THAY ĐÚNG TÊN REPO GITHUB CỦA BẠN (VD: username/ten-repo)
+  repo: phamhuutri108/portfolio-phamhuutri # <--- THAY ĐÚNG TÊN REPO GITHUB CỦA BẠN (VD: username/ten-repo)
   branch: main # Nhánh chính của bạn (thường là main hoặc master)
   # --- QUAN TRỌNG: Cấu hình trỏ về Worker ---
   base_url: https://oauth-login-bridge.phamhuutri108.workers.dev # <-- Link Worker của bạn (không có /callback)
