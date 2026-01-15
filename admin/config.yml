@@ -31,6 +31,19 @@ common_blocks: &common_blocks
     fields:
       - { label: "Chọn ảnh", name: "src", widget: "image" }
 
+  # --- KHỐI MỚI: DANH SÁCH VIDEO DỌC (KIỂU INFINITY) ---
+  - label: "♾️ Video Vô Cực (Infinity List)"
+    name: "block_infinity"
+    widget: "object"
+    fields:
+      - label: "Danh sách Video"
+        name: "videos"
+        widget: "list"
+        fields: 
+          - { label: "Link Video (Cloudinary/Link trực tiếp)", name: "url", widget: "string" }
+          
+              
+
 collections:
   # 1. Quản lý Phim Ngắn
   - name: "shortfilms"
