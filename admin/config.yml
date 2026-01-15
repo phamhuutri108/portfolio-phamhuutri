@@ -3,7 +3,7 @@ backend:
   repo: phamhuutri108/phamhuutri-portfolio # <--- THAY ĐÚNG TÊN REPO GITHUB CỦA BẠN (VD: username/ten-repo)
   branch: main # Nhánh chính của bạn (thường là main hoặc master)
   auth_type: implicit # Chế độ này giúp đăng nhập trực tiếp trên Cloudflare
-  app_id: PASTE_CLIENT_ID_CUA_BAN_VAO_DAY # <--- Dán Client ID lấy ở Bước 1 vào đây
+  app_id: Ov23livVZI8z7wDgpXn3 # <--- Dán Client ID lấy ở Bước 1 vào đây
 
 media_folder: "images/uploads" # Nơi CMS sẽ lưu ảnh bạn upload
 public_folder: "/images/uploads" # Đường dẫn ảnh hiển thị trên web
