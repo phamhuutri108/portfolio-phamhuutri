@@ -1,0 +1,93 @@
+backend:
+  name: github
+  repo: phamhuutri108/phamhuutri-portfolio # <--- THAY ĐÚNG TÊN REPO GITHUB CỦA BẠN (VD: username/ten-repo)
+  branch: main # Nhánh chính của bạn (thường là main hoặc master)
+  auth_type: implicit # Chế độ này giúp đăng nhập trực tiếp trên Cloudflare
+  app_id: PASTE_CLIENT_ID_CUA_BAN_VAO_DAY # <--- Dán Client ID lấy ở Bước 1 vào đây
+
+media_folder: "images/uploads" # Nơi CMS sẽ lưu ảnh bạn upload
+public_folder: "/images/uploads" # Đường dẫn ảnh hiển thị trên web
+
+# Định nghĩa các khối Lego (Cấu trúc nội dung)
+# Đây là chuẩn bị sẵn để bạn dùng sau này, chưa cần nhập liệu ngay
+common_blocks: &common_blocks
+  - label: "📝 Đoạn văn bản (Markdown)"
+    name: "block_text"
+    widget: "object"
+    fields:
+      - { label: "Nội dung Tiếng Việt", name: "vi", widget: "markdown" }
+      - { label: "Nội dung Tiếng Anh", name: "en", widget: "markdown" }
+
+  - label: "🎬 Youtube Video"
+    name: "block_youtube"
+    widget: "object"
+    fields:
+      - { label: "Youtube ID", name: "video_id", widget: "string" }
+
+  - label: "🖼️ Hình ảnh"
+    name: "block_image"
+    widget: "object"
+    fields:
+      - { label: "Chọn ảnh", name: "src", widget: "image" }
+
+collections:
+  # 1. Quản lý Phim Ngắn
+  - name: "shortfilms"
+    label: "Phim Ngắn"
+    folder: "data/short-films" # CMS sẽ lưu mỗi phim thành 1 file trong thư mục này
+    create: true
+    slug: "{{id}}" # Tên file sẽ là ID
+    extension: "json" # Lưu dưới dạng JSON
+    format: "json"
+    fields:
+      - { label: "ID (Duy nhất, viết liền không dấu)", name: "id", widget: "string" }
+      - { label: "Tiêu đề (Việt)", name: "title_vi", widget: "string" }
+      - { label: "Tiêu đề (Anh)", name: "title_en", widget: "string" }
+      - { label: "Ảnh bìa (Thumbnail)", name: "thumbnail", widget: "image" }
+      - { label: "Nội dung chi tiết", name: "blocks", widget: "list", types: *common_blocks }
+
+  # 2. Quản lý Quảng Cáo
+  - name: "commercials"
+    label: "Quảng Cáo"
+    folder: "data/commercials"
+    create: true
+    slug: "{{id}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "ID (Duy nhất)", name: "id", widget: "string" }
+      - { label: "Tiêu đề (Việt)", name: "title_vi", widget: "string" }
+      - { label: "Tiêu đề (Anh)", name: "title_en", widget: "string" }
+      - { label: "Ảnh bìa", name: "thumbnail", widget: "image" }
+      - { label: "Nội dung chi tiết", name: "blocks", widget: "list", types: *common_blocks }
+
+  # 3. Quản lý Dự án Khác (Others)
+  - name: "others"
+    label: "Dự án Khác"
+    folder: "data/others"
+    create: true
+    slug: "{{id}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "ID (Duy nhất)", name: "id", widget: "string" }
+      - { label: "Tiêu đề (Việt)", name: "title_vi", widget: "string" }
+      - { label: "Tiêu đề (Anh)", name: "title_en", widget: "string" }
+      - { label: "Ảnh bìa", name: "thumbnail", widget: "image" }
+      - { label: "Nội dung chi tiết", name: "blocks", widget: "list", types: *common_blocks }
+
+  # 4. Quản lý Bài viết (Writings)
+  - name: "writings"
+    label: "Bài Viết"
+    folder: "data/writings"
+    create: true
+    slug: "{{id}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "ID", name: "id", widget: "string" }
+      - { label: "Ngày", name: "date", widget: "string" }
+      - { label: "Địa điểm", name: "location", widget: "string" }
+      - { label: "Tiêu đề (Việt)", name: "title_vi", widget: "string" }
+      - { label: "Tiêu đề (Anh)", name: "title_en", widget: "string" }
+      - { label: "Nội dung chi tiết", name: "blocks", widget: "list", types: *common_blocks }
