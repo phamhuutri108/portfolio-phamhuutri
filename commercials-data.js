@@ -15,13 +15,13 @@ const commercialData = {
                 <b>Tiêu đề:</b> Nhà vừa ý, giá hợp lý!<br>
                 <b>Năm:</b> 2025<br>
                 <b>Quốc gia:</b> Việt Nam<br>
-                <b>Vai trò:</b> Trợ lý Đạo diễn
+                <b>Vai trò:</b> Trợ lý cá nhân Đạo diễn
             </p>
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/W4kPULPBvBM" title="Nhatot.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Mô tả vai trò</h3>
-            <p>Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án.</p>
+            <p>Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.</p>
         `,
         en: `
             <p>
@@ -35,7 +35,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/W4kPULPBvBM" title="Nhatot.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Role Description</h3>
-            <p>Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content.</p>
+            <p>Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision.</p>
         `
     },
 
@@ -52,13 +52,13 @@ const commercialData = {
                 <b>Tiêu đề:</b> Nhà thật Sài Gòn, có sao nói vậy!<br>
                 <b>Năm:</b> 2025<br>
                 <b>Quốc gia:</b> Việt Nam<br>
-                <b>Vai trò:</b> Trợ lý Đạo diễn
+                <b>Vai trò:</b> Trợ lý cá nhân Đạo diễn
             </p>
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/8nsNFWFw2tw" title="Batdongsan.com.vn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Mô tả vai trò</h3>
-            <p>Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án.</p>
+            <p>Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.</p>
         `,
         en: `
             <p>
@@ -72,7 +72,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/8nsNFWFw2tw" title="Batdongsan.com.vn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Role Description</h3>
-            <p>Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content.</p>
+            <p>Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision.</p>
         `
     },
 
@@ -95,7 +95,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/uyr9QphU2ew" title="Thế Giới Di Động" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Mô tả vai trò</h3>
-            <p>Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án.</p>
+            <p>Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.</p>
         `,
         en: `
             <p>
@@ -109,7 +109,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/uyr9QphU2ew" title="Thế Giới Di Động" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Role Description</h3>
-            <p>Planning and coordinating departments to complete professional tasks according to project requirements.</p>
+            <p>Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress.</p>
         `
     },
 
@@ -132,7 +132,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/rUdTgMijico" title="FPT Shop iPhone 16" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Mô tả vai trò</h3>
-            <p>Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án.</p>
+            <p>Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.</p>
         `,
         en: `
             <p>
@@ -146,7 +146,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/rUdTgMijico" title="FPT Shop iPhone 16" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Role Description</h3>
-            <p>Planning and coordinating departments to complete professional tasks according to project requirements.</p>
+            <p>Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress.</p>
         `
     },
 
@@ -169,7 +169,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/DJTxFQLngDA" title="FPT Shop Back To School" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Mô tả vai trò</h3>
-            <p>Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án.</p>
+            <p>Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.</p>
         `,
         en: `
             <p>
@@ -183,7 +183,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/DJTxFQLngDA" title="FPT Shop Back To School" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Role Description</h3>
-            <p>Planning and coordinating departments to complete professional tasks according to project requirements.</p>
+            <p>Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress.</p>
         `
     },
 
@@ -200,13 +200,13 @@ const commercialData = {
                 <b>Title:</b> Xi Măng Vua, Cùng Xây Di Sản<br>
                 <b>Year:</b> 2026<br>
                 <b>Country:</b> Vietnam<br>
-                <b>Role:</b> Director's Assistant
+                <b>Role:</b> Trợ lý cá nhân Đạo diễn
             </p>
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/" title="Bach Dang Cement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Mô tả vai trò</h3>
-            <p>Trợ lý cá nhân cho Đạo diễn, hỗ trợ phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án.</p>
+            <p>Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.</p>
         `,
         en: `
             <p>
@@ -220,7 +220,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/" title="Bach Dang Cement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Role Description</h3>
-            <p>Personal Assistant to the Director, supporting the development of ideas and preparation of creative content.</p>
+            <p>Personal Assistant to the Director, supporting the development of ideas and preparation of creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision.</p>
         `
     },
 
@@ -237,13 +237,13 @@ const commercialData = {
                 <b>Title:</b> Mẹ Bầu Chốt Luôn<br>
                 <b>Year:</b> 2026<br>
                 <b>Country:</b> Vietnam<br>
-                <b>Role:</b> Director's Assistant
+                <b>Role:</b> Trợ lý cá nhân Đạo diễn
             </p>
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/" title="Phuong Nam Hospital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Mô tả vai trò</h3>
-            <p>Trợ lý cá nhân cho Đạo diễn, hỗ trợ phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án.</p>
+            <p>Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.</p>
         `,
         en: `
             <p>
@@ -257,7 +257,7 @@ const commercialData = {
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/" title="Phuong Nam Hospital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3>Role Description</h3>
-            <p>Personal Assistant to the Director, supporting the development of ideas and preparation of creative content.</p>
+            <p>Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision.</p>
         `
     },
     
