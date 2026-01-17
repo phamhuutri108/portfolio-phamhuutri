@@ -68,7 +68,7 @@ const filmsData = {
                 <li><b>Sản xuất hậu kỳ:</b> Thục Mai</li>
                 <li><b>Dựng phim:</b> Phạm Hữu Trí</li>
                 <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
-                <li><b>Nhạc sĩ:</b> [Đang cập nhật]</li>
+                <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
                 <li><b>Hiệu chỉnh âm thanh:</b> [Đang cập nhật]</li>
             </ul>
             <h3>Behind The Scene</h3>
@@ -144,7 +144,7 @@ const filmsData = {
                 <li><b>Post-Production:</b> Thục Mai</li>
                 <li><b>Editor:</b> Phạm Hữu Trí</li>
                 <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
-                <li><b>Music Composer:</b> Huy</li>
+                <li><b>Music Composer:</b> Huy Đẹp Trai</li>
                 <li><b>Sound Design and Mastering:</b> [Đang cập nhật]</li>
             </ul>
             <h3>Behind The Scene</h3>
