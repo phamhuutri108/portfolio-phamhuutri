@@ -123,7 +123,7 @@ const filmsData = {
                 <li><b>Production Designer:</b> Dzuy Tom</li>
                 <li><b>Art Director:</b> Hoàng Bảo Uyên</li>
 
-                <li><b>FirstAssistant Director:</b> Lê Diễm Quỳnh</li>
+                <li><b>First Assistant Director:</b> Lê Diễm Quỳnh</li>
                 <li><b>Second Assistant Director:</b> Kon Lớn</li>
 
                 <li><b>Gaffer:</b> Tô Anh Khoa</li>
