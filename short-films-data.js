@@ -36,7 +36,7 @@ const filmsData = {
                 <li><b>Diễn viên:</b> Ngô Nhật Trường, Cô Nhum, Vũ Nguyễn Uy Nhân</li>
 
                 <li><b>Đạo diễn và Kịch bản:</b> Phạm Hữu Trí</li>
-                <li><b>Consultant Director:</b> NSND. Đạo diễn Đào Bá Sơn</li>
+                <li><b>Cố vấn nghệ thuật:</b> NSND. Đạo diễn Đào Bá Sơn</li>
 
                 <li><b>Sản xuất:</b> Thục Mai</li>
                 <li><b>Đồng sản xuất:</b> Thảo Quiêng</li>
@@ -67,7 +67,7 @@ const filmsData = {
                 <li><b>Sản xuất hậu kỳ:</b> Thục Mai</li>
                 <li><b>Dựng phim:</b> Phạm Hữu Trí</li>
                 <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
-                <li><b>Nhạc phim:</b> [Đang cập nhật]</li>
+                <li><b>Nhạc sĩ:</b> [Đang cập nhật]</li>
                 <li><b>Hiệu chỉnh âm thanh:</b> [Đang cập nhật]</li>
             </ul>
             <h3>Behind The Scene</h3>
@@ -127,7 +127,7 @@ const filmsData = {
 
                 <li><b>Gaffer:</b> Tô Anh Khoa</li>
                 <li><b>Assistant Camera:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
-                <li><b>Make-up Artist:</b> Văn Ngọc Thành</li>
+                <li><b>Focus Puller:</b> Văn Ngọc Thành</li>
                 <li><b>Best boy:</b> Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
 
                 <li><b>Assistant Production Design:</b> Ruby</li>
@@ -142,7 +142,7 @@ const filmsData = {
                 <li><b>Post-Production:</b> Thục Mai</li>
                 <li><b>Editor:</b> Phạm Hữu Trí</li>
                 <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
-                <li><b>Music Composer:</b> [Đang cập nhật]</li>
+                <li><b>Music Composer:</b> Huy</li>
                 <li><b>Sound Design and Mastering:</b> [Đang cập nhật]</li>
             </ul>
             <h3>Behind The Scene</h3>
