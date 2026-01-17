@@ -61,6 +61,7 @@ const filmsData = {
                 <li><b>Hóa trang:</b> Bia Huyền</li>
 
                 <li><b>Thu thanh hiện trường:</b> Crister Nguyên</li>
+                <li><b>Storyboard Artist:</b> Phạm Hữu Trí</li>
 
                 <li><b>Trợ lý sản xuất:</b> Khương Ngọc, Vương Linh</li>
 
@@ -136,6 +137,7 @@ const filmsData = {
                 <li><b>Make-up Artist:</b> Bia Huyền</li>
 
                 <li><b>Sound Recordist:</b> Crister Nguyên</li>
+                <li><b>Storyboard Artist:</b> Phạm Hữu Trí</li>
 
                 <li><b>Production Assistant:</b> Khương Ngọc, Vương Linh</li>
 
@@ -574,10 +576,10 @@ const filmsData = {
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Director, Filmming and Editor:</b> Phạm Hữu Trí</li>
-                <li><b>Screenwriter:</b> Quoc Vinh</li>
-                <li><b>Producer:</b> Hai Yen</li>
-                <li><b>Assistant Directors:</b> Viet Ha, Cong Thoai</li>
-                <li><b>Script Assistants:</b> Thanh Lam, Hoa Dieu</li>
+                <li><b>Screenwriter:</b> Quốc Vinh</li>
+                <li><b>Producer:</b> Hải Yến</li>
+                <li><b>Assistant Directors:</b> Việt Hà, Công Thoại</li>
+                <li><b>Script Assistants:</b> Thanh Lam, Hoa Diệu</li>
             </ul>
             `
     }
