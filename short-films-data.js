@@ -222,6 +222,37 @@ const filmsData = {
                 <li><b>Hiệu chỉnh âm thanh:</b> Ngô Hà Nam</li>
                 <li><b>Storyboard Artist:</b> Bảo Ngọc, Phạm Hữu Trí</li>
             </ul>
+
+            <h3>Still</h3>
+            <div class="gallery-wall">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-2.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-1.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-3.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-4.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-5.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-6.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-7.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-8.png">
+            </div>
+
+            <h3>3D storyboard</h3>
+            <div class="gallery-wall">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-01.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-02.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-03.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-04.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-05.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-06.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-07.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-08.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-09.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-10.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-11.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-12.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-13.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-14.jpg">
+            </div>
+
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
                 <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_1.png">
@@ -230,6 +261,15 @@ const filmsData = {
                 <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_5.png" class="tall">
                 <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_6.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_7.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_9.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_10.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_11.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_12.png" class="tall">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_15.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_16.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_18.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_19.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_17.png">
             </div>
         `,
         en: `
@@ -275,6 +315,37 @@ const filmsData = {
                 <li><b>Sound Editing and Mastering:</b> Ngô Hà Nam</li>
                 <li><b>Storyboard Artist:</b> Bảo Ngọc, Phạm Hữu Trí</li>
             </ul>
+
+            <h3>Still</h3>
+            <div class="gallery-wall">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-2.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-1.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-3.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-4.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-5.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-6.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-7.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Still/KARMA-still-8.png">
+            </div>
+
+            <h3>3D storyboard</h3>
+            <div class="gallery-wall">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-01.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-02.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-03.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-04.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-05.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-06.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-07.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-08.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-09.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-10.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-11.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-12.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-13.jpg">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/Storyboard/KARMA-Storyboard-14.jpg">
+            </div>
+
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
                 <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_1.png">
@@ -283,6 +354,15 @@ const filmsData = {
                 <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_5.png" class="tall">
                 <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_6.png">
                 <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_7.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_9.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_10.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_11.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_12.png" class="tall">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_15.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_16.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_18.png" class="wide">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_19.png">
+                <img src="https://ik.imagekit.io/phamhuutri108/karma/KARMA_BTS_17.png">
             </div>
         `
     },
@@ -368,7 +448,7 @@ const filmsData = {
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Character:</b> Nguyễn Lâm Anh</li>
                 <li><b>Director & Screenwriter:</b> Phạm Hữu Trí</li>
-                <li><b>Director's Consultant:</b> NSND. Đạo diễn Đào Bá Sơn</li>
+                <li><b>Director's Consultant:</b> NSND. Đào Bá Sơn</li>
                 <li><b>Camera Operator:</b> Võ Nguyễn Đạt Kha, Phan Quốc Anh, Phan Thiện Anh, Nguyễn Đan Thọ</li>
                 <li><b>Editor:</b> Phạm Hữu Trí</li>
                 <li><b>Songs sung by Character:</b> Một Ngày - Kien, Con Dế Mèn Hát Vào Mùa Hè - Tung</li>
