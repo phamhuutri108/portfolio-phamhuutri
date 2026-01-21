@@ -575,10 +575,30 @@
             else if (pageId.startsWith('writings-') || pageId === 'cat-writings') groupId = 'group-writings';
         }
 
-        // B. Xử lý Writing
+        // B. Xử lý Writing (ĐÃ SỬA: Thêm phần Active Sidebar)
         if (pageId.startsWith('writings-')) {
-            showPage('cat-writings', 'group-writings', false);
+            // 1. Mở trang chủ Writings để hiện layout, nhưng không cần cuộn
+            showPage('cat-writings', 'group-writings', false, false); 
+            
+            // 2. Mở nội dung chi tiết bài viết
             setTimeout(() => openWritingDetail(pageId), 50);
+
+            // 3. [FIX] Tự tay kích hoạt màu xanh cho Link bên Sidebar
+            // Xóa active cũ của các link khác
+            const allLinks = document.querySelectorAll('a');
+            allLinks.forEach(l => l.classList.remove('active-link'));
+
+            // Tìm link của bài viết hiện tại và tô xanh
+            const specificLink = document.getElementById('link-' + pageId);
+            if (specificLink) {
+                specificLink.classList.add('active-link');
+                
+                // Đảm bảo menu con vẫn mở ra (nếu chưa mở)
+                const group = document.getElementById('group-writings');
+                if (group) group.classList.add('is-open');
+            }
+
+            // 4. Cập nhật lịch sử duyệt web
             if (addToHistory) {
                 const slug = pageId.replace('writings-', '');
                 updateHistory(pageId, 'group-writings', '/writings/' + slug);
