@@ -682,74 +682,70 @@ You looked at me with aching eyes, and simply smacked your lips.</p>
 
 
 
-    {
+
+{
     id: "writings-chiec-la-truoc-them-nha",
     date: "24/10/21",
     location: "Quy Nhơn",
     title: {
         vi: "Chiếc lá trước thềm nhà",
-        en: "The Leaf at the Doorstep"
+        en: "The leaf at the doorstep"
     },
     content: {
         vi: `
-<p style="margin-bottom: 15px; ">Có chiếc lá trước thềm nhà.</p>
-            <p style="margin-bottom: 15px; ">Anh đờ người và suy ngẫm có sự khác nhau nào giữa anh và nó?</p>
-            <p style="margin-bottom: 15px; ">Nghe cứ như một người điên đang cố gắng bình tĩnh.</p>
-            <p style="margin-bottom: 15px; ">Nhặt lên,</p>
-            <p style="margin-bottom: 15px; ">ngắm nghía một hồi lâu.</p>
-            <p style="margin-bottom: 15px; ">Anh như thấy chính mình ở đấy.</p>
-            <p style="margin-bottom: 15px; ">Một nguồn năng lượng căng tràn chỉ muốn tìm đường để thoát ra.</p>
-            <p style="margin-bottom: 15px; ">Tại sao tay cầm lá mà không phải lá cầm tay?</p>
-            <p style="margin-bottom: 15px; ">Tại sao đứng trên thềm mà không phải đứng dưới thềm?</p>
-            <p style="margin-bottom: 15px; ">Tại sao yêu và ghét luôn phải song hành?</p>
-            <p style="margin-bottom: 15px; ">Tại sao và tại sao?</p>
-            <p style="margin-bottom: 15px; ">Anh đứng trơ ra đã được mười-phút-cuộc-đời.</p>
-            <p style="margin-bottom: 15px; ">Suy nghĩ đã tan, cảm xúc cũng chẳng còn ở lại.</p>
-            <p style="margin-bottom: 15px; ">Giờ đây,</p>
-            <p style="margin-bottom: 15px; ">anh sống như thể một chiếc lá,</p>
-            <p style="margin-bottom: 15px; ">một chiếc lá xanh mướt và tràn đầy.</p>
-            <p style="margin-bottom: 15px; ">Lễ hội của sự sống như đang hiện bài ngay trước mắt.</p>
-            <p style="margin-bottom: 15px; ">Anh nhận ra,</p>
-            <p style="margin-bottom: 15px; ">bản ngã chưa từng tồn tại,</p>
-            <p style="margin-bottom: 15px; ">đau khổ là thứ xa xỉ nhất để sở hữu,</p>
-            <p style="margin-bottom: 15px; ">và yêu thương thì chẳng cần điều kiện.</p>
-            <p style="margin-bottom: 15px; ">Anh đã thật sự biết yêu-thương.</p>
+<p style="margin-bottom: 15px;">Anh đờ người và suy ngẫm có sự khác nhau nào giữa anh và nó?<br>
+Nghe cứ như một người điên đang cố gắng bình tĩnh.<br>
+Nhặt lên,<br>
+ngắm nghía một hồi lâu.<br>
+Anh như thấy chính mình ở đấy.<br>
+Một nguồn năng lượng căng tràn chỉ muốn tìm đường để thoát ra.</p>
+
+<p style="margin-bottom: 15px;">Tại sao tay cầm lá mà không phải lá cầm tay?<br>
+Tại sao đứng trên thềm mà không phải đứng dưới thềm?<br>
+Tại sao yêu và ghét luôn phải song hành?<br>
+Tại sao và tại sao?</p>
+
+<p style="margin-bottom: 15px;">Anh đứng trơ ra đã được mười-phút-cuộc-đời.<br>
+Suy nghĩ đã tan, cảm xúc cũng chẳng còn ở lại.<br>
+Giờ đây,<br>
+anh sống như thể một chiếc lá,<br>
+một chiếc lá xanh mướt và tràn đầy.<br>
+Lễ hội của sự sống như đang hiện bài ngay trước mắt.</p>
+
+<p style="margin-bottom: 15px;">Anh nhận ra,<br>
+bản ngã chưa từng tồn tại,<br>
+đau khổ là thứ xa xỉ nhất để sở hữu,<br>
+và yêu thương thì chẳng cần điều kiện.<br>
+Anh đã thật sự biết yêu-thương.</p>
 `,
         en: `
-<p style="margin-bottom: 15px; ">There is a leaf at the doorstep.</p>
-            <p style="margin-bottom: 15px; ">He freezes, wondering whether there is any difference between himself and it.</p>
-            <p style="margin-bottom: 15px; ">It sounds like a madman trying to remain calm.</p>
-            <p style="margin-bottom: 15px; ">He picks it up,</p>
-            <p style="margin-bottom: 15px; ">studies it for a long while.</p>
-            <p style="margin-bottom: 15px; ">He seems to see himself there.</p>
-            <p style="margin-bottom: 15px; ">A surge of energy, taut and brimming,</p>
-            <p style="margin-bottom: 15px; ">seeking only a way to escape.</p>
-            <p style="margin-bottom: 15px; ">Why is it the hand holding the leaf,</p>
-            <p style="margin-bottom: 15px; ">and not the leaf holding the hand?</p>
-            <p style="margin-bottom: 15px; ">Why stand on the threshold</p>
-            <p style="margin-bottom: 15px; ">and not beneath it?</p>
-            <p style="margin-bottom: 15px; ">Why must love and hatred always walk side by side?</p>
-            <p style="margin-bottom: 15px; ">Why, and why?</p>
-            <p style="margin-bottom: 15px; ">He stands there, motionless,</p>
-            <p style="margin-bottom: 15px; ">for ten–minutes–of–a–life.</p>
-            <p style="margin-bottom: 15px; ">Thoughts dissolve,</p>
-            <p style="margin-bottom: 15px; ">feelings no longer remain.</p>
-            <p style="margin-bottom: 15px; ">Now,</p>
-            <p style="margin-bottom: 15px; ">he lives as though he were a leaf,</p>
-            <p style="margin-bottom: 15px; ">a leaf vivid green and full.</p>
-            <p style="margin-bottom: 15px; ">The festival of life appears to unfold right before his eyes.</p>
-            <p style="margin-bottom: 15px; ">He realizes:</p>
-            <p style="margin-bottom: 15px; ">the ego has never existed,</p>
-            <p style="margin-bottom: 15px; ">suffering is the most luxurious thing one can possess,</p>
-            <p style="margin-bottom: 15px; ">and love requires no conditions.</p>
-            <p style="margin-bottom: 15px; ">He has truly learned how to love.</p>
+<p style="margin-bottom: 15px;">He stood transfixed, pondering: is there any difference between him and it?<br>
+It sounds like a madman trying to keep his composure.<br>
+He picked it up,<br>
+staring at it for a long while.<br>
+He saw his own reflection there.<br>
+A bursting energy, desperate to find a way out.</p>
+
+<p style="margin-bottom: 15px;">Why does the hand hold the leaf, and not the leaf the hand?<br>
+Why stand on the step, and not below it?<br>
+Why must love and hate always walk hand in hand?<br>
+Why, and why?</p>
+
+<p style="margin-bottom: 15px;">He stood there frozen for ten-minutes-of-life.<br>
+Thoughts dissolved, emotions no longer stayed.<br>
+Now,<br>
+he lives as if he were a leaf,<br>
+a lush, brimming green leaf.<br>
+The carnival of life is laying its cards right before his eyes.</p>
+
+<p style="margin-bottom: 15px;">He realized,<br>
+the ego has never existed,<br>
+suffering is the most luxurious thing to possess,<br>
+and love requires no conditions.<br>
+He has truly learned to love.</p>
 `
     }
 },
-
-
-
-
 
 
 
