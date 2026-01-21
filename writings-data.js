@@ -6,15 +6,13 @@
 const writingData = [
 
 
-    // mùi thuốc lá quen thuộc //
-
     {
     id: "writings-mui-thuoc-la-quen-thuoc",
     date: "29/01/2023",
     location: "Quy Nhơn",
     title: {
         vi: "mùi thuốc lá quen thuộc.",
-        en: "that familiar smell of cigarette."
+        en: "that familiar smell of cigarettes."
     },
     content: {
         vi: `
@@ -67,59 +65,59 @@ Gã khẽ lắc đầu: “Anh không phản đối!”</p>
 Gã biết, rồi cũng sẽ đến một ngày, hoang mạc kia sẽ không còn hiện diện trong gã nữa.<br>
 Và cũng có lẽ cả trong Nàng.</p>
 
-<p style="margin-bottom: 15px;">Gã cúi nhẹ đầu, áp mặt vào tóc Nàng - Mùi thuốc lá quen thuộc.</p>
+<p style="margin-bottom: 15px;">Gã cúi nhẹ đầu, áp mặt vào tóc Nàng — Mùi thuốc lá quen thuộc.</p>
         `,
         en: `
-<p style="margin-bottom: 15px;">The tapping on the table rang out steadily. That, along with the sound of the stale cigarette being dragged in long breaths by her in the quiet space. It seemed he had foreseen the possibility of this situation, yet he ignored it and proceeded with this relationship anyway.</p>
+<p style="margin-bottom: 15px;">The steady tapping on the tabletop continued. That, and the sound of a stale cigarette being dragged on by Her in the silent room. He had foreseen this scenario as a distinct possibility, yet he had disregarded the odds and proceeded with the relationship anyway.</p>
 
-<p style="margin-bottom: 15px;">She sat right at the corner of the bed, her lips continuously taking long, deep drags of smoke as if all the air inside the room had been drawn into her lungs and replaced by an equal amount of smoke. The suffocation grew with time. As seconds and minutes passed, she couldn't stop filling the ashtray with cigarette butts that were scorched nearly halfway through.</p>
+<p style="margin-bottom: 15px;">She sat at the edge of the bed, her lips working continuously, taking long, deep drags. It was as if all the oxygen in the room was being siphoned into her lungs and replaced by an equal volume of gray smoke. The suffocation intensified with time. As the seconds and minutes ticked by, she couldn't stop filling the ashtray with butts that had been scorched nearly halfway down.</p>
 
-<p style="margin-bottom: 15px;">He sat at the desk opposite the door. He stared into the void, as if something in the air held a strange attraction for him. He didn't move much, just sat still and tapped rhythmically on the table — <em>thud, thud, thud</em>. That sound was as steady and rhythmic as his own heartbeat. He always possessed a certain calmness, no matter what event occurred. Whether he was happy, pensive, or even when he was passionate with her on that bed over there, his face always maintained a stoic composure.</p>
+<p style="margin-bottom: 15px;">He sat at the desk facing the door. He stared into the empty space, as if something in the air held a strange gravitational pull for him. He didn't move much. He just sat there, tapping a rhythm on the table—<em>thud, thud, thud</em>. The sound was as steady and mechanical as his own heartbeat. He always maintained a certain composure, no matter what events unfolded. Whether he was happy, sunk in gloom, or even in the throes of passion with Her on that bed over there, his face always wore the same mask of calm.</p>
 
-<p style="margin-bottom: 15px;">She stubbed out the cigarette in the ashtray. Reaching for the red Marlboro pack, she lit another one. She spoke after exhaling the first puff of the new cigarette:<br>
+<p style="margin-bottom: 15px;">She crushed the cigarette into the ashtray. Reached for the pack of Marlboro Reds. Lit another one. She spoke only after exhaling the first cloud of the new stick.<br>
 “Something is wrong between us.”<br>
-“You think so?” he asked, still staring into the void, though his eyes wavered slightly as he looked toward her.<br>
-“Yeah, I think so. Neither of us is okay.”<br>
-“Then, tell me.”<br>
+“Is that how you see it?” He kept his eyes on the void, though his gaze wavered slightly before shifting toward Her.<br>
+“Yeah. That’s how I see it. Neither of us is okay.”<br>
+“Then tell me.”<br>
 “Tell you what?”<br>
-He paused for a beat, then said: “Tell me what you’re thinking.”<br>
-She remained silent. It was the same reaction every time.</p>
+He paused for a beat. “What you’re thinking.”<br>
+She remained silent. It was always the same reaction.</p>
 
-<p style="margin-bottom: 15px;">He didn't find her reaction strange. He didn't like it, but he had gradually grown familiar with it. It was as if she were to speak her true thoughts, he would find it odd and suspect those words were not the truth. He felt conflicted; whether she spoke or not, he had no evidence to verify what the truth really was. So gradually, he flipped a switch, getting used to her reaction, and implicitly accepted it as a covenant between the two of them.</p>
+<p style="margin-bottom: 15px;">He found nothing strange in this response. He didn't like it, but he had grown accustomed to it, like a piece of furniture in the room. In fact, if She were to speak her true thoughts, he would have found it odd, perhaps even suspecting the words were lies. It was a contradiction, he knew. Whether She spoke or not, he had no evidence to verify what was true. So, over time, he had flipped a switch inside himself, normalizing her reaction, accepting it as an unspoken covenant between them.</p>
 
-<p style="margin-bottom: 15px;">“I don't know either,” she took a deep drag, speaking while exhaling. “I have never understood myself, even though I've tried very hard to.”<br>
-“So you expect me to understand you on your behalf?” he confided in his usual tone, neither high nor low, simply a question with no hidden nuance.<br>
+<p style="margin-bottom: 15px;">“I don't know either,” She said, taking a deep drag and exhaling the words with the smoke. “I have never understood myself, even though I've tried very hard.”<br>
+“So you expect me to understand you in your place?” He asked in his usual tone—flat, neither high nor low, a simple inquiry devoid of hidden meanings.<br>
 “I did.”</p>
 
-<p style="margin-bottom: 15px;">She lowered her head, looking toward the window. The wind kept blowing strong, dry gusts against the glass. The background noise of traffic, mingled with her longing to express what was inside, unsettled him.</p>
+<p style="margin-bottom: 15px;">She lowered her head and looked toward the window. The wind was blowing strong, dry gusts against the glass. The background noise of traffic mixed with her longing to express something internal stirred something in him.</p>
 
-<p style="margin-bottom: 15px;">Honestly, he had tried to do that for her. But the thing blocking his path was like the wall separating East and West Germany. Not a single crack for him to squeeze into her chaotic inner world, no matter how hard he tried.</p>
+<p style="margin-bottom: 15px;">In truth, he had tried to do that for Her. But the obstacle blocking his path was like the Berlin Wall. Not a single crack for him to slip through into her chaotic inner world, no matter how much effort he applied.</p>
 
-<p style="margin-bottom: 15px;">“I have never once given up. I hope you know that,” he stopped tapping on the table, looked at her, and continued. “What else could I do?”<br>
-“I don't expect anything else either. I just wonder what brought us here and made us this silent with each other?”<br>
-“I confess, I've never really understood what the hell love is. And I hoped I would find it in you,” she said, her voice rising in pitch but remaining dry.</p>
+<p style="margin-bottom: 15px;">“I have never once given up. I hope you know that.” He stopped tapping on the table, looked at Her, and continued. “What else could I do?”<br>
+“I don't expect anything else. I just wonder what brought us here and made us this silent with each other.”<br>
+“I confess, I've never really understood what the hell love is. And I hoped I would find it in you,” She said, her voice rising in pitch but remaining dry as dust.</p>
 
-<p style="margin-bottom: 15px;">He imagined himself walking in a desert full of sand. The dry heat, without a hint of moisture, made him want to collapse to the ground. He had no specific destination. He didn't know where to go or what to do to cultivate this barren place. He could only walk without any guidance other than the silence she gave him. He grasped at that guidance — unworthy of being called proper guidance — in utter despair.</p>
+<p style="margin-bottom: 15px;">He imagined himself walking through a vast desert. The dry heat, devoid of moisture, made him want to collapse. He had no destination. He didn't know where to go or what to do to irrigate this barren landscape. He could only walk, with no guidance other than the silence She offered him. In his utter despair, he grasped at that silence as if it were a map.</p>
 
-<p style="margin-bottom: 15px;">Then she lay sprawled on the bed, turning toward the corner of the wall. Her shoulders shook violently. That sound went straight into his eardrums, throb by throb, making him unable to sit still. He tapped his foot, but the sounds no longer harmonized. There was some other noise disturbing him. He wondered, trying to find the source of that sound. And in a moment, as he looked at her lying on the bed, looking at the body he held in his arms every night, looking at a wounded soul he wished to heal, he realized that sound came from his own chest. His heart was beating fast and hard.</p>
+<p style="margin-bottom: 15px;">Then She lay back on the bed, turning toward the wall. Her shoulders shook violently. The sound went straight into his eardrums, throb by throb, making it impossible to sit still. He tapped his foot, but the rhythm no longer synchronized. There was another noise interfering. He wondered about it, tried to locate its source. And in a moment, as he looked at Her lying on the bed—at the body he held every night, at the wounded soul he wished to heal—he realized the sound was coming from his own chest. His heart was beating fast and hard.</p>
 
-<p style="margin-bottom: 15px;">His legs stood up automatically, and his body moved toward her. Deep down, he still had an opposing will telling him: <em>do not approach</em>. But his heart had now taken full control. He sat by the bed, leaning close to her soft, trembling back. He leaned into her ear, kissing all those broken pieces with the warmth of his heart and the scent of the Marlboro cigarette he had smoked not long ago. The opposing will from earlier had vanished without him realizing. Her hair smelled of his cigarette smoke, the smell of her tobacco, and the perfume she often used because he said he liked her in that scent.</p>
+<p style="margin-bottom: 15px;">His legs stood up on their own. His body moved toward Her. Somewhere in his mind, an opposing will argued: <em>Do not approach</em>. But his heart had taken full control of the system. He sat by the bed, leaning close to her trembling back. He leaned into her ear, kissing all those broken fragments with the warmth of his own chest and the scent of the Marlboro he had smoked not long ago. The resistance had vanished without him noticing. Her hair smelled of his smoke, of her tobacco, and of the perfume she wore because he had once said he liked it.</p>
 
-<p style="margin-bottom: 15px;">He looked at her shoulder. Covered in cigarette scars. Shoulders she had ruthlessly hurt herself with half-smoked cigarettes. He kissed that place too; he buried his head into that shoulder.</p>
+<p style="margin-bottom: 15px;">He looked at her shoulder. It was covered in cigarette burns. Shoulders she had ruthlessly damaged with half-smoked cigarettes. He kissed that place, too. He buried his face in that shoulder.</p>
 
-<p style="margin-bottom: 15px;">She reached up to touch his face. A face dry from the weather of the year's end and the barrenness inside his soul. She caressed that face without hesitation, as if it were a part of her own body.<br>
-“But in the deepest of depths, I still want to be with you.”<br>
-She turned to look at him, her eyes seeming to contain a quiet underground stream, flowing steadily along the rocky cliffs.<br>
-“You don't object, do you?” She pressed her small lips into a straight line, her eyes never leaving his face for a second.</p>
+<p style="margin-bottom: 15px;">She reached up to touch his face. A face dried out by the year-end weather and the barrenness of his own soul. She caressed it without hesitation, as if it were a limb of her own body.<br>
+“But at the very bottom of everything, I still want to be with you.”<br>
+She turned to look at him. Her eyes seemed to contain a quiet underground stream, flowing steadily along rocky cliffs.<br>
+“You don't object, do you?” She pressed her small lips into a straight line, her eyes never leaving his face.</p>
 
-<p style="margin-bottom: 15px;">The surrounding sounds fell silent. Smoke wafted in the air. The sound of his heart and her heart beating together. The rhythm was uneven, but he felt it: it would be even one day soon.<br>
-He shook his head slightly: “I don't object!”</p>
+<p style="margin-bottom: 15px;">The surrounding sounds fell silent. Smoke drifted in the air. The sound of his heart and her heart beating. The rhythms were uneven, but he sensed it—they would synchronize soon.<br>
+He shook his head slightly. “I don't object.”</p>
 
-<p style="margin-bottom: 15px;">The underground stream in her eyes stirred, flowing stronger in long lines along the bridge of her nose. She pressed her face against his chest. His shirt was soaked. But he didn't care, because he knew: his desert now showed signs of the first rains. Small but steady. Scarce but full of joy.<br>
-He knew, a day would come when that desert would no longer exist within him.<br>
-And perhaps in her, too.</p>
+<p style="margin-bottom: 15px;">The underground stream in her eyes stirred, flowing stronger in long lines down the bridge of her nose. She pressed her face against his chest. His shirt was soaked. But he didn't care. He knew his desert was showing signs of the first rain. Small, but steady. Scarce, but full of quiet joy.<br>
+He knew a day would come when that desert would no longer exist inside him.<br>
+And perhaps inside Her, too.</p>
 
-<p style="margin-bottom: 15px;">He bowed his head slightly, pressing his face into her hair — That familiar smell of cigarette.</p>
+<p style="margin-bottom: 15px;">He bowed his head slightly, pressing his face into her hair — That familiar smell of cigarettes.</p>
         `
     }
 },
@@ -158,7 +156,7 @@ And perhaps in her, too.</p>
     location: "Sài Gòn",
     title: {
         vi: "Sài Gòn, 31/03/25",
-        en: "Saigon, 31/03/25"
+        en: "Sài Gòn, 31/03/25"
     },
     content: {
         vi: `
@@ -173,13 +171,13 @@ And perhaps in her, too.</p>
 `,
         en: `
 <p style="margin-bottom: 15px; ">Dear Mom,</p>
-            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I still clearly remember the large piece of wood, as thick as my six-year-old calf, in your hand, grabbed from the woodpile behind the kitchen, and my legs hurting so much I couldn't stand. But I didn't know your hand was also bleeding from the sharp splinters.</p>
-            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I still clearly remember the fear when you flipped the food tray and swung your hand to smash the pile of bowls I had set out because I got carried away playing and came home past noon. But I didn't know your feet were also bleeding when stepping on the porcelain shards while cleaning up what you had broken.</p>
-            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I still clearly remember being away from you for a very long time and having to stay at Uncle Tam's house. But I didn't know until I grew up and Dad told me everything, that you had to stay in a mental hospital for treatment.</p>
-            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I still clearly remember you returning and remaining silent with me when my younger brother was born. But I didn't know your silence was to protect us after everything you had unconsciously caused.</p>
-            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I still clearly remember the mental anguish you suffered, yet you, right now, have no fragment of memory left about those days. Mom, I remember very clearly. But I will remain silent. You don't need to remember. You deserve to forget it all.</p>
-            <p style="margin-bottom: 15px; ">And... Somewhere between that day and now, I am also gradually forgetting what I intended to put pen to paper and write. You protected me with all the ability you had. So, the forgetfulness within me is also to protect the two of us from the losses we have endured.</p>
-            <p style="margin-bottom: 15px; ">I will forget everything, as long as the last thing I forget is not you.</p>
+            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I still see the log, thick as my six-year-old calf, raised in your hand—pulled from the woodpile behind the kitchen. I remember my legs buckling under the pain, unable to hold me up. But I did not know then that your hand was also weeping blood, pierced by the sharp splinters of that very same wood.</p>
+            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I recall the terror when you hurled the dinner tray, your arm swinging to smash the bowls I had set out, all because I had played past noon. But I did not see the blood blooming on your soles as you walked on the porcelain shards to clean up the wreckage you had made.</p>
+            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I clearly remember being away from you for a long time, staying at Uncle Tam's house. But I didn't know until I grew up and Dad told me everything—that you had to stay in a mental hospital for treatment.</p>
+            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I clearly remember you returning, staying silent with me when my younger brother was born. But I didn't know your silence was to protect us after everything you had unconsciously caused.</p>
+            <p style="margin-bottom: 15px; ">Somewhere between memory and oblivion, I remember the anguish you endured. Yet you, right now, are empty of those days, stripped of every fragment. Mom, I remember it all clearly. But I will stay quiet. You don’t need to remember. You deserve the mercy of forgetting.</p>
+            <p style="margin-bottom: 15px; ">And... Somewhere between that day and this one, I too am losing the words I intended to set down. You protected me with everything you had. So perhaps this forgetting inside me is also a protection, a way to shield us both from the losses we have swallowed.</p>
+            <p style="margin-bottom: 15px; ">I will let it all go, as long as the very last thing I lose is not you.</p>
 `
     }
 },
@@ -194,11 +192,11 @@ And perhaps in her, too.</p>
 
 {
     "id": "writings-khi-nhung-loi-noi-cua-me-dan-tro-nen-theu-thao",
-    "date": "11-06-2025",
+    "date": "11/06/2025",
     "location": "Quy Nhơn",
     "title": {
         "vi": "khi những lời nói của mẹ dần trở nên thều thào.",
-        "en": "when mother's words became whispers."
+        "en": "when your words became whispers."
     },
     "content": {
         "vi": `
@@ -238,40 +236,40 @@ Mẹ nhìn con xót xa rồi chỉ chép miệng một cái.</p>
 <p style="margin-bottom: 15px;">Con mong mẹ sống thật lâu.</p>
 `,
         "en": `
-<p style="margin-bottom: 15px;">When my mother’s words gradually became whispers, dissolving into the air before me through the telephone line, I felt as though I were slowly approaching the threshold of being “orphaned.”</p>
+<p style="margin-bottom: 15px;">When your words became whispers, dissolving into the air right before me over the phone, I felt as though I were drifting closer to the threshold of being an orphan.</p>
 
-<p style="margin-bottom: 15px;">I don’t know if my mother still had the strength to remember, but for the first time after many years of carrying the label of “being a man,” my tears fell. I made sure she didn’t see them, because simply looking at her already broke my heart.</p>
+<p style="margin-bottom: 15px;">I don’t know if you still have the strength to remember, but for the first time after years of carrying the label of “being a man,” I wept. But I made sure you didn’t see, because looking at you, I saw my own heart breaking.</p>
 
-<p style="margin-bottom: 15px;">I know my father carries immense pain, but he too bears the label of “being a man,” so he rarely shows his emotions for me to see. I wish I had understood that back then; perhaps it would have been better.</p>
+<p style="margin-bottom: 15px;">I know Dad carries an immense grief, but he too bears the weight of “being a man,” so he rarely lets me see his emotions. I wish I had known that back then; perhaps it would have been better.</p>
 
-<p style="margin-bottom: 15px;">The other day, Uncle Hai said to me, “Your dad is really something, you know? The way he scrambles for money to get your mom treated—I truly admire him.”</p>
+<p style="margin-bottom: 15px;">The other day, Uncle Hai told me, “Your dad is something else, you know? The way he scrambles for money to get your Mom treated—I truly admire him.”</p>
 
-<p style="margin-bottom: 15px;">He laughed lightly, but I knew he was only trying to distract me. I couldn’t say a word, my mind left hollow after he told such a serious story in such a gentle tone.</p>
+<p style="margin-bottom: 15px;">He chuckled, but I knew he was only trying to distract me. I couldn’t say a word, my spirit hollowed out after hearing such a heavy story told in such a weightless tone.</p>
 
-<p style="margin-bottom: 15px;">I remember the day before we learned my mother had suffered a stroke, when she came to Saigon for a medical checkup. She asked me to take her to the hospital, but I overslept. She knew it well—the habit of young people is to exhaust themselves staying up all night just to sleep through the day.</p>
+<p style="margin-bottom: 15px;">I remember the day before we learned of your stroke, when you came to Saigon for a checkup. You asked me to take you to the hospital, but I overslept. You know how it is, the ritual of the young—punishing our bodies by staying up all night just to sleep through the day.</p>
 
-<p style="margin-bottom: 15px;">When I woke up, it was already past noon. I barely had time to brush my teeth and check my phone. There were more than ten missed calls from my mother. I kept clicking my tongue in frustration at my “obvious” carelessness for not picking her up on time. When I arrived, she only frowned at me—not to complain about my lateness, but to say, “A plate of rice in Saigon costs forty-five thousand; I can’t even swallow it.”</p>
+<p style="margin-bottom: 15px;">When I woke up, the sun was already past noon. I barely had time to brush my teeth and check my phone. Over ten missed calls from you. I kept clicking my tongue, frustrated by my “obvious” carelessness in failing to pick you up on time. When I arrived, you only frowned at me—not to complain about my lateness, but to say, “A plate of rice in Saigon costs forty-five thousand; I can’t even swallow it.”</p>
 
-<p style="margin-bottom: 15px;">After that, I took her back to my rented room so she could shower before returning home. I didn’t dare let her see the room, afraid she wouldn’t be able to squeeze into that four-square-meter corner filled with rats and cockroaches. “Luckily,” the bathroom was outside, so she could bathe easily.</p>
+<p style="margin-bottom: 15px;">After that, I took you back to my rented place so you could shower before the trip home. I didn’t dare let you see inside, afraid you wouldn’t be able to squeeze into that four-square-meter corner, teeming with rats and cockroaches. But “luckily,” the bathroom was outside, so you could bathe easily.</p>
 
-<p style="margin-bottom: 15px;">When everything was done, she still tried to peek into the room, wanting to see how I lived.<br>
+<p style="margin-bottom: 15px;">When you were done, you still tried to peek into the room, wanting to see how I lived.<br>
 “So I can’t go in, can I?”<br>
-“It’s okay, Mom. It’s dirty, and you’re sick.”<br>
-She looked at me with aching eyes and simply smacked her lips.</p>
+“No, Mom. It’s dirty, and you’re sick.”<br>
+You looked at me with aching eyes, and simply smacked your lips.</p>
 
-<p style="margin-bottom: 15px;">By four in the afternoon, Saigon was already suffocating in traffic. I took her to the bus station to wait. She asked, “Is there anything cheap? I need to eat before taking my medicine.”</p>
+<p style="margin-bottom: 15px;">By four in the afternoon, Saigon was choking in traffic. I took you to the bus station to wait. You asked, “Is there anything cheap? I need to eat before taking my medicine.”</p>
 
-<p style="margin-bottom: 15px;">I only thought of chicken rice—it’s something you can find anywhere—but it wouldn’t be cheap by her standards.</p>
+<p style="margin-bottom: 15px;">I only thought of chicken rice—it’s something found everywhere—but it wouldn’t be cheap by your definition.</p>
 
-<p style="margin-bottom: 15px;">I rushed off quickly so she wouldn’t miss the bus. When I came back, I was holding two boxes of chicken rice. She smiled and asked how much it cost. I didn’t answer, only urged her to eat quickly. She tried to give the money back, but I refused. She ate while looking at me.</p>
+<p style="margin-bottom: 15px;">I ran off quickly so you wouldn’t miss the bus. When I returned, I held two boxes of chicken rice. You just smiled and asked how much. I didn’t answer, only urged you to eat. You tried to give me the money back, but I refused. You ate, watching me between bites.</p>
 
 <p style="margin-bottom: 15px;">“I wish I could make more money so your life wouldn’t be so hard. Everything here is so expensive.”</p>
 
-<p style="margin-bottom: 15px;">She laughed it off, as if so I wouldn’t dwell on her words. But she didn’t know that just five minutes after she boarded the bus, I could no longer hold back my tears—the kind that could fall for no one but her.</p>
+<p style="margin-bottom: 15px;">You laughed it off, as if to keep me from dwelling on your words. But you didn’t know that just five minutes after you boarded the bus, I could no longer hold back my tears—tears that fall for no one but you.</p>
 
-<p style="margin-bottom: 15px;">And so, when my mother’s words gradually became whispers, dissolving into the air before me through the telephone line, I felt as though I were slowly approaching the threshold of being “orphaned.”</p>
+<p style="margin-bottom: 15px;">So when your words became whispers, dissolving into the air right before me over the phone, I felt as though I were drifting closer to the threshold of being an orphan.</p>
 
-<p style="margin-bottom: 15px;">I wish my mother a long life.</p>
+<p style="margin-bottom: 15px;">I wish you a long life, Mom.</p>
 `
     }
 },
@@ -285,8 +283,6 @@ She looked at me with aching eyes and simply smacked her lips.</p>
 
     
 
-
-    // ba tôi là kẻ nói dối. //
 
     {
     id: "writings-ba-toi-la-ke-noi-doi",
@@ -350,56 +346,56 @@ She looked at me with aching eyes and simply smacked her lips.</p>
             <p style="margin-bottom: 15px; ">Tôi nhìn về phía bàn thờ. Nụ cười của con trai tôi vẫn vẹn nguyên, căn phòng này vẫn vẹn nguyên nhưng tôi biết chắc đã có điều gì đó thay đổi trong tôi và người phụ nữ đối diện. Có lẽ là một thứ ánh sáng, xuất hiện vào một đêm tối cận tết, nơi gió thổi qua khe cửa sổ và mùi thức ăn vẫn còn nóng hổi đợi có người thưởng thức chúng. Thứ ánh sáng làm căn phòng chúng tôi đang đứng trở nên ấm áp và tôi chẳng thể diễn đạt hay thuật lại cho bất cứ ai. Thứ ánh sáng chỉ có hai đứa bé từng xuất hiện trong cuộc đời tôi mang đến. Thứ ánh sáng chỉ người phụ nữ trước mắt tôi cảm nhận được. Nên ngay lúc này đây, tôi có thể nhắm mắt và để thứ ánh sáng ấm áp ấy ôm ấp thân thể mình. Mãi mãi.</p>
 `,
         en: `
-<p style="margin-bottom: 15px; ">I walked past the rows of rooms, hallways, staircases, desks, windows, wheelchairs tucked in the corners of rooms, yellowed restrooms, elderly people struggling to stand with the help of relatives, and children gasping to maintain their vitality with soulless medical instruments. This place feels more familiar than anything belonging to my life in the past. Why is that? I honestly don't know, or perhaps I have been running away long enough to admit it. What event brought me to work at this hospital? I ask myself a thousand times even though I know the answer is very close to the truth, yet I have tried to escape it time and time again.</p>
-            <p style="margin-bottom: 15px; ">The woman walked over and stood in front of me, picking up the cap of a disinfectant spray bottle that had fallen on the floor. I didn't dare raise my head to face her. I guessed that she was resentful. I stared blankly at her hand picking up the bottle cap, feeling as though time was moving many times faster than reality because, in that very moment, the only sound I could hear was my own uneven breathing and a heart that had died many years ago. That hand, I knew it very well. It was truly her! I repeated that thought many times like a familiar prayer recited when one goes to confess. That woman was intimately tied to me and this bustling hospital.</p>
-            <p style="margin-bottom: 15px; ">“Do you have time?” she spoke with a tone that was incredibly slow and cold as ice. I thought I understood this cold feeling well after what she had been through that night.</p>
-            <p style="margin-bottom: 15px; ">I slowly raised my head and felt a bit strange looking at her face, the necessary strangeness when one misjudges what should have happened.</p>
-            <p style="margin-bottom: 15px; ">“I am about to get off work,” my voice choked as if holding back a lump of hollow words, which perhaps I could have spoken had I not deliberated so carefully within my throat. She reacted as usual, leaning forward when she didn't hear someone's voice clearly.</p>
-            <p style="margin-bottom: 15px; ">“I will wait for you down in the lobby.”</p>
+<p style="margin-bottom: 15px; ">I walked past the rows of rooms. The corridors, the staircases, the desks by the windows. Wheelchairs tucked into corners. Yellowed toilets. Elderly patients struggling to stand with the help of relatives, and children gasping to hold onto life with the aid of soulless medical instruments. This place felt more familiar than anything in my past life. Why? I honestly didn't know. Or perhaps I had been running away long enough to finally admit it. What event brought me to work at this hospital? I asked myself a thousand times, even though I knew the answer was sitting right next to the truth. Yet, I tried to escape it, time and time again.</p>
+            <p style="margin-bottom: 15px; ">The woman approached me. She picked up the cap of a disinfectant spray bottle that had fallen to the floor. I didn't dare raise my head to face her. I assumed she was resentful. I stared blankly at her hand retrieving the bottle cap, feeling as though time was accelerating far beyond reality. In that moment, the only sound I could hear was my own uneven breathing and a heart that had died many years ago. That hand—I knew it well. It was really her. I repeated the thought like a familiar prayer recited during confession. This woman was intimately tied to me and to this bustling hospital.</p>
+            <p style="margin-bottom: 15px; ">“Do you have time?” She spoke with a tone that was incredibly slow. Cold as ice. I thought I understood this coldness well after what she had been through that night.</p>
+            <p style="margin-bottom: 15px; ">I slowly raised my head. It felt strange looking at her face—the necessary strangeness one feels when misjudging what should have happened.</p>
+            <p style="margin-bottom: 15px; ">“I am about to finish my shift.” My voice choked, as if holding back a lump of hollow words. I might have spoken them had I not deliberated so carefully within my throat. She reacted as usual, leaning forward when she couldn't hear clearly.</p>
+            <p style="margin-bottom: 15px; ">“I will wait for you in the lobby.”</p>
             <p style="margin-bottom: 15px; ">“Why do you still want to see me?”</p>
-            <p style="margin-bottom: 15px; ">“I will wait for you to finish your shift.”</p>
-            <p style="margin-bottom: 15px; ">“Alright. Please wait for me a moment,” just as the words ended, she handed me the bottle cap and silently walked slowly down the stairs, leaving me with a strange sense of relief. I stood dazed looking at her for a moment, then tried to clean up the utility cart as quickly as possible.</p>
+            <p style="margin-bottom: 15px; ">“I will wait for you to finish.”</p>
+            <p style="margin-bottom: 15px; ">“Alright. Please wait a moment.” As soon as the words ended, she handed me the bottle cap and silently walked down the stairs. I felt a strange sense of relief. I stood there, dazed, watching her for a moment, then tried to clean up the utility cart as quickly as possible.</p>
             <p style="margin-bottom: 15px; text-align: center; ">***</p>
-            <p style="margin-bottom: 15px; ">She stood in the hospital lobby. I silently walked up beside her, and I assumed she knew of my presence within just a few short seconds.</p>
-            <p style="margin-bottom: 15px; ">“Can I cook you a meal?” she asked, but her gaze only looked nonchalantly forward as if she had no intention of asking for my opinion, placing me precisely in a situation where I was forced to agree.</p>
-            <p style="margin-bottom: 15px; ">“I’m not sure if it’s convenient for you? My house is a bit… small.”</p>
-            <p style="margin-bottom: 15px; ">She cut in at the end of my answer, seeming to want to reassure me but naturally still without the implication of asking for an opinion: “It is just a humble meal. Any space is suitable for such a meal.”</p>
-            <p style="margin-bottom: 15px; ">At this moment, I could only agree to her wish because I didn't exactly want to refuse, but I also didn't clearly understand my current situation and the reason why she was behaving this way after everything that had happened. So I resigned myself to letting this meeting happen without asking any further questions.</p>
+            <p style="margin-bottom: 15px; ">She stood in the hospital lobby. I walked silently to her side. I assumed she was aware of my presence within seconds.</p>
+            <p style="margin-bottom: 15px; ">“Can I cook you a meal?” She asked, but her gaze remained fixed straight ahead, nonchalant. She wasn't asking for my opinion. She was placing me in a situation where I was forced to agree.</p>
+            <p style="margin-bottom: 15px; ">“I’m not sure if it’s convenient. My house is a bit... small.”</p>
+            <p style="margin-bottom: 15px; ">She cut in at the end of my sentence, seemingly to reassure me, though still without really asking. “It is just a simple meal. Any space is suitable for such a meal.”</p>
+            <p style="margin-bottom: 15px; ">At this point, I could only agree. I didn't exactly want to refuse, but I also didn't clearly understand my situation or why she was behaving this way after everything that had happened. So I resigned myself to letting this encounter unfold without further questions.</p>
             <p style="margin-bottom: 15px; ">“As you wish.”</p>
             <p style="margin-bottom: 15px; text-align: center; ">***</p>
-            <p style="margin-bottom: 15px; ">I fumbled to open the room door with a lock that had rusted long ago, pushing the door open with difficulty, feeling as if the door itself was intentionally trying to prevent this strange encounter. After a while, the door opened fully. She walked in calmly, took off her shoes, and placed them neatly near the corner of the cabinet. I flipped the light switch, and she turned to observe the surroundings of the house. She gently swept her eyes over every nook and cranny, not too thoroughly but long enough to take in information about my life. She stopped her gaze at a spot where, observing her face, I realized she was slightly surprised, mixed with a deep empathy that was hard to express. But she didn't reveal too much of her thoughts through her eyes, so the sign that helped me recognize this was that the wrinkles at the corners of her eyes were clearer than necessary. Before her eyes was a small wooden table with a 20x30 black and white photo on a white background and an incense bowl placed neatly in the center. It was a young boy with clear eyes and a shy smile when having to face the camera.</p>
-            <p style="margin-bottom: 15px; ">I used the excuse of showing her the kitchen location to distract her attention from the small table and the smile of the lovely boy looking at me. She composed herself for a few seconds and then started cooking in the cramped kitchen that was only big enough for one person to stand.</p>
+            <p style="margin-bottom: 15px; ">I fumbled with the rusted lock. I pushed the door open. It resisted, as if the door itself was intentionally trying to prevent this strange meeting. Eventually, it opened. She walked in calmly, removed her shoes, and placed them neatly by the cabinet. I flipped the light switch. She turned to observe the room. She gently swept her eyes over every nook and cranny—not too thoroughly, but long enough to process the information of my life. Her gaze stopped at a specific spot. Observing her face, I noticed a slight surprise mixed with a deep, inexpressible empathy. She didn't reveal much, but the wrinkles at the corners of her eyes deepened. Before her was a small wooden table with a 20x30 black-and-white photo and an incense bowl placed neatly in the center. It was a young boy with clear eyes and a shy smile, facing the camera.</p>
+            <p style="margin-bottom: 15px; ">I used the excuse of showing her the kitchen to distract her from the altar and the smile of the lovely boy looking at me. She composed herself for a few seconds, then started cooking in the cramped kitchen, barely big enough for one person to stand.</p>
             <p style="margin-bottom: 15px; ">“You can take a nap while I cook.”</p>
-            <p style="margin-bottom: 15px; ">“Do you need me to show you where to keep some kitchen tools?”</p>
-            <p style="margin-bottom: 15px; ">“I can manage on my own. You should rest. You’ve worked all day,” she said while taking food out of a plastic bag and putting it into the sink.</p>
-            <p style="margin-bottom: 15px; ">“Then, if you’ll excuse me,” saying that, I went straight to the wooden chair in the living room, curled up to fit my exhausted body, and turned my head to look towards the kitchen. She was starting to pick vegetables, and I could tell she was trying to be as silent as possible. I thought that silence was meant for me. I closed my eyes with peace of mind and let the rustling sound of the plastic bag and her light breathing lull me to sleep.</p>
+            <p style="margin-bottom: 15px; ">“Do you need me to show you where the tools are?”</p>
+            <p style="margin-bottom: 15px; ">“I can manage. You should rest. You’ve worked all day.” She spoke while taking food out of a plastic bag and placing it in the sink.</p>
+            <p style="margin-bottom: 15px; ">“Then, if you’ll excuse me.” I walked straight to the wooden chair in the living room, curling up to fit my exhausted body. I turned my head toward the kitchen. She was picking vegetables. I could tell she was trying to be as silent as possible. I thought that silence was a gift meant for me. I closed my eyes and let the rustling of the plastic bag and the sound of her light breathing lull me to sleep.</p>
             <p style="margin-bottom: 15px; text-align: center; ">***</p>
-            <p style="margin-bottom: 15px; ">The aroma of garlic being fried in oil gently woke me after a short nap. I felt this was the best sleep I had sought for a long time, perhaps since the house where I lived no longer held the silhouette of a woman.</p>
-            <p style="margin-bottom: 15px; ">She set out on the table a plate of stir-fried water spinach with garlic, a plate of braised ribs slightly charred, a bowl of savory scad fish soup, and a small bowl of pickled scallions with chili. I was a bit stunned because if not for her bowl of pickled scallions, I wouldn't have realized the slight chill from the breeze blowing through the window tonight signaling that Tet was approaching. She washed her hands and brought the pot of rice to the table. I sat up while still feeling a bit groggy. I walked to the table shyly because I should have woken up a few minutes earlier to help her set the bowls and chopsticks, but she had thoughtfully prepared everything on the table.</p>
-            <p style="margin-bottom: 15px; ">“Hope these dishes suit your taste,” she said while scooping the rice. I leaned forward slightly so these scents could fill my lungs.</p>
+            <p style="margin-bottom: 15px; ">The smell of garlic frying in oil woke me. It was a short nap, but deep. Perhaps the best sleep I had found in a long time—since the house no longer held the silhouette of a woman.</p>
+            <p style="margin-bottom: 15px; ">She set the table. A plate of water spinach stir-fried with garlic. Braised ribs, slightly charred. A bowl of savory scad fish soup. And a small bowl of pickled scallions with chili. I was stunned. If not for her bowl of pickled scallions, I wouldn't have noticed the slight chill from the breeze blowing through the window, signaling that Tet was approaching. She washed her hands and brought the pot of rice to the table. I sat up, still groggy. I approached the table shyly; I should have woken up earlier to help with the bowls and chopsticks, but she had thoughtfully prepared everything.</p>
+            <p style="margin-bottom: 15px; ">“Hope these dishes suit your taste.” She scooped the rice. I leaned forward slightly, letting the scents fill my lungs.</p>
             <p style="margin-bottom: 15px; ">“It’s been a long time since I had such a hearty meal.”</p>
-            <p style="margin-bottom: 15px; ">“Don't exaggerate,” she smiled and put a piece of rib into my bowl, “Try it.”</p>
-            <p style="margin-bottom: 15px; ">“It really is very delicious,” I said and let the piece of meat overwhelm my taste buds.</p>
-            <p style="margin-bottom: 15px; ">“That’s lucky then,” she watched me eat, feeling as if she knew the flavor of the dish better than anyone else. Then she looked over at the small wooden table that was now out of my line of sight.</p>
+            <p style="margin-bottom: 15px; ">“Don't exaggerate.” She smiled and placed a piece of rib into my bowl. “Try it.”</p>
+            <p style="margin-bottom: 15px; ">“It really is very delicious.” I let the taste of the meat overwhelm my senses.</p>
+            <p style="margin-bottom: 15px; ">“That’s lucky then.” She watched me eat, seemingly knowing the flavor of the dish better than anyone. Then she looked over at the small wooden table, now out of my line of sight.</p>
             <p style="margin-bottom: 15px; ">“Is that your son?”</p>
-            <p style="margin-bottom: 15px; ">I answered her but tried to use the food to make myself calmer, “His name is Khoa. He also died of cancer... just like your child. It has been nearly 8 years since then.”</p>
-            <p style="margin-bottom: 15px; ">“And your wife?” she asked in a posture of having paused her chopsticks, wanting only to hear the answer from me.</p>
-            <p style="margin-bottom: 15px; ">“She moved away 2 years after Khoa died. I became so devastated that we almost couldn't go back to how we were,” I picked up some vegetables and put them in my bowl, then a piece of rib, a pickled scallion, and flooded the rice bowl with soup, “In the end, she made the right choice,” I tried to smile but it was clearly an unnatural smile, and I told myself that even a child could recognize the fakeness in my smile.</p>
-            <p style="margin-bottom: 15px; ">“Is that the reason you held a special affection for my son?” I realized her voice was completely choked up. Now, in her throat, there also existed a mass of words carrying the weight of spasms, slow but painful.</p>
-            <p style="margin-bottom: 15px; ">“Why didn't you come that night?” She began to corner me with questions that left me completely helpless and unable to answer.</p>
-            <p style="margin-bottom: 15px; ">“The boy waited for you for a very long time. He was very weak but kept asking 'Has Dad come yet? Has Dad come yet? Did Dad abandon us again?'” she continued in a loss of control, “I hoped to see you appear beside him and hold him.”</p>
-            <p style="margin-bottom: 15px; ">She hesitated while observing my face lowered almost touching the table, then continued, but I knew clearly that the tone of her voice had transformed from anger into something else, something that tormented her, “Until the final moment, the thing he held tight in his hand was the phone to wait for a call… from you.”</p>
-            <p style="margin-bottom: 15px; ">“I was very terrified… I was afraid that he would know I wasn't the person he was waiting for. I believed that if I didn't appear, he would forever believe his dad was still alive,” I said while struggling to find my breath.</p>
+            <p style="margin-bottom: 15px; ">I answered, using the food to steady myself. “His name is Khoa. He also died of cancer... just like your child. It has been nearly eight years.”</p>
+            <p style="margin-bottom: 15px; ">“And your wife?” She paused her chopsticks, waiting for the answer.</p>
+            <p style="margin-bottom: 15px; ">“She moved away two years after Khoa died. I was so devastated that we couldn't go back to how we were.” I picked up some vegetables, then a piece of rib, a pickled scallion, and flooded the rice bowl with soup. “In the end, she made the right choice.” I tried to smile, but it was clearly unnatural. Even a child could have recognized the artifice in it.</p>
+            <p style="margin-bottom: 15px; ">“Is that why you held a special affection for my son?” Her voice was completely choked. In her throat, there existed a mass of words carrying the weight of spasms—slow, but painful.</p>
+            <p style="margin-bottom: 15px; ">“Why didn't you come that night?” She began to corner me with questions. I was helpless. Unable to answer.</p>
+            <p style="margin-bottom: 15px; ">“The boy waited for you for a long time. He was very weak, but kept asking: ‘Has Dad come yet? Has Dad come yet? Did Dad abandon us again?’” She continued, losing control. “I hoped to see you appear beside him. To hold him.”</p>
+            <p style="margin-bottom: 15px; ">She hesitated, observing my face lowered almost to the table. Then she continued, but I knew the tone had shifted from anger to something else. Something that tormented her. “Until the final moment, the thing he held tight in his hand was the phone. Waiting for a call... from you.”</p>
+            <p style="margin-bottom: 15px; ">“I was terrified... I was afraid he would know I wasn't the person he was waiting for. I believed that if I didn't appear, he would forever believe his dad was still alive.” I spoke, struggling to find my breath.</p>
             <p style="margin-bottom: 15px; ">“He had considered you his father for a long time.”</p>
-            <p style="margin-bottom: 15px; ">I heard a rhythmic sound in the air; I tried to find that sound until it stopped. In a moment, I completely realized that was the sound of my own heart, and also in that moment, it completely stopped the sign showing that I was alive. And if she didn't hit me, I would be the one to do it for her.</p>
-            <p style="margin-bottom: 15px; ">“Coward,” I dealt myself a painful blow to the face, then switched from one hand to the other. Continuously. Rhythmically. As if punishing myself was the most comfortable feeling for my own cowardice, that I didn't deserve to receive any more affection in this life. But I was wrong, because even so, I didn't feel any better.</p>
+            <p style="margin-bottom: 15px; ">I heard a rhythmic sound in the air. I tried to locate it until it stopped. In a moment, I realized it was the sound of my own heart. And in that same moment, the sign that I was alive stopped completely. If she didn't hit me, I would do it for her.</p>
+            <p style="margin-bottom: 15px; ">“Coward.” I dealt myself a painful blow to the face. Then switched hands. Continuously. Rhythmically. As if punishing myself was the only comfort for my cowardice. As if I didn't deserve to receive any more affection in this life. But I was wrong. Even so, I didn't feel any better.</p>
             <p style="margin-bottom: 15px; ">I cried.</p>
-            <p style="margin-bottom: 15px; ">She stepped forward and stopped me. She hugged me and whispered in my ear, “It’s over. It’s all over.”</p>
-            <p style="margin-bottom: 15px; ">I was in pain thinking about the image of that little child. The child who waited for a call from me every night.</p>
-            <p style="margin-bottom: 15px; ">“It’s over,” she gently patted my shoulder. She slowly pushed me away, looking at me for a moment. Her eyes were like a stream of water, affectionate and bringing salvation.</p>
-            <p style="margin-bottom: 15px; ">“We must continue to live. That is our responsibility to ourselves,” she stood up, walked to where her bag was, and took out a plastic-covered file folder. She handed it to me and waited for me to open it. Inside, wax crayon drawings gradually revealed themselves. The common point among them was always three people: a man in a pilot’s uniform sitting in an airplane, carrying behind him a little boy and a woman who was smiling brightly. The airplane flew over a miniature earth about 2 cm in diameter. I held up a drawing to see it more clearly after my vision had blurred with tears. A scrawled line of text was written in 3 different colors:</p>
+            <p style="margin-bottom: 15px; ">She stepped forward and stopped me. She hugged me and whispered in my ear. “It’s over. It’s all over.”</p>
+            <p style="margin-bottom: 15px; ">I was in pain, thinking about the image of that little child. The child who waited for a call from me every night.</p>
+            <p style="margin-bottom: 15px; ">“It’s over.” She gently patted my shoulder. She slowly pushed me away, looking at me for a moment. Her eyes were like a stream of water. Affectionate. Bringing salvation.</p>
+            <p style="margin-bottom: 15px; ">“We must continue to live. That is our responsibility to ourselves.” She stood up, walked to her bag, and took out a plastic-covered folder. She handed it to me and waited. Inside, wax crayon drawings revealed themselves. The common thread was always three people: a man in a pilot’s uniform sitting in an airplane, carrying a little boy and a smiling woman behind him. The airplane flew over a miniature earth, about two centimeters in diameter. I held up a drawing to see it more clearly through my tears. A scrawled line of text was written in three different colors:</p>
             <p style="margin-bottom: 15px; ">“My father is a liar.<br>But I love Dad very much.”</p>
-            <p style="margin-bottom: 15px; ">I looked toward the altar. My son’s smile remained intact, this room remained intact, but I knew for sure something had changed within me and the woman opposite me. Perhaps it was a kind of light, appearing on a dark night near Tet, where the wind blew through the window crack and the smell of food was still hot waiting for someone to enjoy it. A light that made the room we were standing in become warm, and I couldn't express or recount it to anyone. A light that only the two children who had appeared in my life brought. A light that only the woman before my eyes could feel. So right at this moment, I could close my eyes and let that warm light embrace my body. Forever.</p>
+            <p style="margin-bottom: 15px; ">I looked toward the altar. My son’s smile remained intact. This room remained intact. But I knew for sure something had changed within me and the woman opposite me. Perhaps it was a kind of light, appearing on a dark night near Tet, where the wind blew through the window crack and the smell of hot food waited for someone to enjoy it. A light that made the room warm. I couldn't express it or recount it to anyone. A light brought only by the two children who had appeared in my life. A light that only the woman before my eyes could feel. So right at this moment, I could close my eyes and let that warm light embrace my body. Forever.</p>
 `
     }
 },
@@ -474,53 +470,53 @@ She looked at me with aching eyes and simply smacked her lips.</p>
 <p style="margin-bottom: 15px;">Sương đêm dày hơn trong không khí, gió lạnh vẫn thổi trên con đường cô trở về nhà. Vừa đi, cô vừa lẩm bẩm trong hơi thở nhẹ nhàng của mình: “Có điều gì đó khác.”</p>
 `,
         "en": `
-<p style="margin-bottom: 15px;">As usual, she chose a pair of gloves and a thick scarf before leaving the house. She walked slowly along the uneven road near her home, its construction indefinitely postponed, crossing to the other side where a small park served the surrounding neighborhood. There, a familiar stone bench had already been marked by two almond leaves stacked neatly atop one another. She sat down gently, took out the only cigarette in her coat pocket, lit it, and began to wait. Truthfully, she had asked herself many times why she needed to meet the Woman, even though nothing the Woman told her was ever truly clear. Yet something deep inside her needed to be spoken, or at least the clarity she once sought no longer soothed the constant anxiety in her heart. She knew this, and she always admitted that she needed to see the Woman.</p>
+<p style="margin-bottom: 15px;">As was her routine, she selected a pair of gloves and a thick scarf before stepping out of the house. She walked at a measured pace along the uneven road near her home, where construction had been indefinitely postponed. She crossed to the other side, toward a small park that served the neighborhood. Upon arrival, she found the familiar stone bench already marked by two almond leaves, stacked neatly one atop the other. She sat down gently. She took out the single cigarette in her coat pocket, lit it, and began to wait. To be honest, she had asked herself many times why she had to meet the Woman, even though nothing the Woman told her was ever truly clear. Yet something deep inside her needed to be expressed. Or perhaps the clarity she sought no longer had any effect on the constant anxiety residing in her heart. She knew this. And she always admitted to herself that she needed to see the Woman.</p>
 
-<p style="margin-bottom: 15px;">When the cigarette had burned past its halfway point, the heat from the ember scorched her fingers. Unconsciously, she jolted awake and found herself carried by cold winds into a forgotten region of memory. The day her mother used the last of her fragile strength to hold her small hand before exhaling her final breath on the way to the hospital. The impact had completely disfigured one side of her mother’s head and eye. What she remembered most was not only those horrific wounds, but the tears, the blood-stained small hands, and a single blink that transferred every hope of survival from an adult to a child—only for that child to realize her future had vanished forever on a one-way ambulance ride. She cried endlessly, until she decided her fate would be bound to the place that had brought her into the world: becoming a nurse at the very hospital that received her mother’s body. A place where, as the most important life of her own ended, the lives of thousands of other patients were tended by her hands and found hope. Something—small as a seed—had taken root deep within her, quietly dragging her down day after day. She knew it.</p>
+<p style="margin-bottom: 15px;">When the cigarette had burned past the halfway mark, the heat from the ember scorched her fingers. Unconsciously, she jolted awake, realizing that the cold winds had carried her into a forgotten zone of memory. The day her mother used the last of her fragile strength to grasp her small hand before exhaling her final breath on the way to the hospital. The impact had completely disfigured one side of her mother’s head and eye. The final things she remembered about her mother were not just those horrific wounds, but the tears, the blood-stained small hands, and the single blink that transferred every hope of survival from an adult to a child—only for that child to realize her future had vanished forever on a one-way ambulance ride. She had cried endlessly, until she decided her fate would be completely bound to the place that had created her—becoming a nurse at the very hospital that received her mother’s body. A place where, as the most important life of her own ended, the lives of thousands of other patients were tended by her hands and found hope. Something—small as a seed—had taken root deep within, quietly dragging her down day by day. She knew it.</p>
 
-<p style="margin-bottom: 15px;">A warm hand rested gently on her shoulder, pulling her back into the presence of the cold.</p>
+<p style="margin-bottom: 15px;">A warm hand touched her shoulder lightly. Pulling her back to the presence of the cold.</p>
 
 <p style="margin-bottom: 15px;">“Have you been here long?”</p>
 
-<p style="margin-bottom: 15px;">She turned to look at the Woman, as if her sudden appearance were nothing unusual. “For a while, I think… honestly, I didn’t really notice the time.”</p>
+<p style="margin-bottom: 15px;">She turned to look at the Woman as if her sudden appearance were nothing unusual. “For a while, I think. Actually, I didn’t pay much attention to the time.”</p>
 
-<p style="margin-bottom: 15px;">“Next time, just come on time. There’s no need to be this early.” The Woman sat down beside her.</p>
+<p style="margin-bottom: 15px;">“Next time, just come on time. There is no need to be this early.” The Woman sat down beside her.</p>
 
 <p style="margin-bottom: 15px;">“I feel restless tonight. I don’t know why,” she said, looking at the Woman. “If I stay cooped up inside any longer, I can’t bear it.”</p>
 
-<p style="margin-bottom: 15px;">“Did something happen at work today?” the Woman asked, surprised.</p>
+<p style="margin-bottom: 15px;">“Did something happen at work?” The Woman seemed surprised.</p>
 
-<p style="margin-bottom: 15px;">“No. I took a sick day, but really, there’s nothing wrong with me.”</p>
+<p style="margin-bottom: 15px;">“No. I took a sick day, but actually, there is nothing wrong with me.”</p>
 
-<p style="margin-bottom: 15px;">The Woman leaned back against the bench, her expression deliberately conveying that she understood. “That’s very hard for you.”</p>
+<p style="margin-bottom: 15px;">The Woman leaned back against the bench. Her expression deliberately let her know that she understood. “That must be very hard for you.”</p>
 
 <p style="margin-bottom: 15px;">She remained silent, staring into the empty space ahead.</p>
 
-<p style="margin-bottom: 15px;">“You know,” the Woman said, “human beings were not born to absorb pain. They prefer to produce it and pass it on to others.”</p>
+<p style="margin-bottom: 15px;">“You know, human beings were not born to absorb pain. They prefer to manufacture pain and pass it on to others.”</p>
 
-<p style="margin-bottom: 15px;">“But what if some people don’t mean to create it? And what if pain itself is just random?” she said, watching leaves quietly swept across the pavement by the night wind. “Like my mother. She didn’t create pain for me. I created it myself and punished myself with it.”</p>
+<p style="margin-bottom: 15px;">“But what if some people don’t mean to create it? And what if pain itself is just random?” She said, watching the leaves quietly swept across the pavement by the night wind. “Like my mother. She didn’t create pain for me. I created it myself and punished myself with it.”</p>
 
-<p style="margin-bottom: 15px;">“But you’re forgetting one thing,” the Woman said slowly, without emphasis, yet each word carried weight. “Your mother’s temper while driving was what caused her to lose control. You’re bearing a pain you were not directly responsible for.”</p>
+<p style="margin-bottom: 15px;">“But you are forgetting one thing,” the Woman said slowly. Not emphasizing, yet every word carried weight. “Your mother’s temper while driving was the cause of her losing control. You are bearing a pain for which you were not the direct cause.”</p>
 
-<p style="margin-bottom: 15px;">The Woman inhaled and exhaled gently. Her breath was so close that its warmth brushed against her skin. In that silent moment, she missed her mother. The Woman seemed to perceive everything present. “Humans were not created to absorb pain. That task belongs to angels. But there are exceptions. If someone can absorb pain and keep it to themselves instead of throwing it onto others, then they are, in truth, an angel.”</p>
+<p style="margin-bottom: 15px;">The Woman inhaled and exhaled slowly. The warmth of her breath was close enough to be felt on the skin. In that silent moment, she missed her mother. The Woman perceived everything present. “Humans were not created to absorb pain. That is the task of angels. But there are exceptions. If someone can absorb pain and keep it to themselves, instead of throwing it onto others, then in truth, they are an angel.”</p>
 
-<p style="margin-bottom: 15px;">She looked at the Woman in astonishment, then let her gaze drift away. She knew the Woman was looking into her soul from a place she could not imagine—a place she believed she could never reach. She trembled. “I don’t think I’m that good. You know, absorbing pain is exhausting, and throwing it at others is even more exhausting. I don’t have the strength for that. Maybe I’m just too lazy to do what makes me tired.”</p>
+<p style="margin-bottom: 15px;">She looked at the Woman in astonishment, then shifted her gaze elsewhere. She knew the Woman was looking into her soul from a different perspective—one beyond her imagination. A perspective she believed she would never reach. She trembled. “I don’t think I’m that good. You know, absorbing pain is exhausting. And throwing it at others is even more exhausting. I don’t have the strength for that. Maybe I’m just too lazy to do what makes me tired.”</p>
 
-<p style="margin-bottom: 15px;">“But pain still has its own meaning. If it took root in you early in childhood, it will stay with you for the rest of your life… You didn’t run away, and when the time comes, you’ll understand everything.” the Woman said.</p>
+<p style="margin-bottom: 15px;">“But pain still has its own meaning. If pain took root in you early in childhood, it will stay with you for the rest of your life. You didn’t run away. And when the time is right, you will understand everything.” The Woman said.</p>
 
-<p style="margin-bottom: 15px;">Her eyes filled with tears as she leaned against the Woman’s shoulder. “You know, I wished you were my mother. I wanted nothing more than that.”</p>
+<p style="margin-bottom: 15px;">Her eyes wet, she leaned her head on the Woman’s shoulder. “You know, I wished you were my mother. I wanted nothing more than that.”</p>
 
-<p style="margin-bottom: 15px;">The Woman held her hand and stroked her soft hair. “I can be anyone, and because I’m not fixed as anyone, I can’t become anyone other than what you wish to see in me. Your words mean a great deal to me, but I think it would be better if you saved them for those who deserve them more.”</p>
+<p style="margin-bottom: 15px;">The Woman held her hand, stroking her soft hair. “I can be anyone. And because I am not fixed as anyone, I cannot become anyone other than what you wish to see in me. Your words mean a great deal to me, but I think it would be better if you saved them for those who deserve them more.”</p>
 
-<p style="margin-bottom: 15px;">The Woman caressed her small face before standing up. “It’s time. We must part for now.”</p>
+<p style="margin-bottom: 15px;">The Woman caressed her small face before standing up completely. “It is time. We must part for now.”</p>
 
-<p style="margin-bottom: 15px;">“When can I see you again?” she asked, standing up with her.</p>
+<p style="margin-bottom: 15px;">“When can I see you again?” She asked, standing up with the Woman.</p>
 
-<p style="margin-bottom: 15px;">The Woman smiled. “You’ll always know what you truly wish to know, my child.”</p>
+<p style="margin-bottom: 15px;">The Woman smiled. “You will always know what you truly wish to know, my child.”</p>
 
-<p style="margin-bottom: 15px;">Their gazes lingered for a few seconds before the Woman finally walked away. She watched as the Woman faded into the distance until her figure disappeared. She looked inward. The pain had not lessened with time—but tonight, something was different. She adjusted her scarf, pulled her coat tighter around herself, and took a deep breath before walking on.</p>
+<p style="margin-bottom: 15px;">Their gazes held for a few seconds before the Woman finally walked away. She watched, the figure fading into the distance until it disappeared from sight. She looked inward. The pain had not lessened after all this time. But today, there was something different. She adjusted her scarf, pulled the lapels of her coat tight, and took a deep breath before walking on.</p>
 
-<p style="margin-bottom: 15px;">The night mist thickened in the air, cold wind still sweeping along the road home. As she walked, she murmured softly with each breath, “There was something different.”</p>
+<p style="margin-bottom: 15px;">The night mist thickened in the air. The cold wind still blew along the road home. As she walked, she murmured softly under her breath: “There was something different.”</p>
 `
     }
 },
