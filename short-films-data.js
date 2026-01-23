@@ -2,7 +2,7 @@
 
 const filmsData = {
 
-    // 1. BA ƠI, ĐỪNG NÓI DỐI
+    // 1. BA ƠI, ĐỪNG NÓI DỐI (FORMAT DỌC DỄ QUẢN LÝ)
     "short-films-dad-dont-lie-to-me": {
         title: {
             vi: "Ba Ơi, Đừng Nói Dối",
@@ -11,26 +11,32 @@ const filmsData = {
         thumbnail: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg",
         
         vi: `
-            
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý, Quan sát<br>
             <b> Năm:</b> Sắp ra mắt (2026)<br>
             <b>Thời lượng:</b> 39:40<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
-                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" 
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/ooWID56SmHk" 
-                    title="Dad, Don't Lie To Me" frameborder="0" 
+                    title="Dad, Don't Lie To Me" 
+                    frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
             </div>
+
             <h3>Logline</h3>
             <p>Một bác sĩ trung niên bất đắc dĩ, thông qua điện thoại, phải đóng giả làm cha của một cậu bé bệnh nhân ung thư của anh, để đánh lừa cậu về cái chết của người cha ruột.</p>
+            
             <h3>Director’s Statement</h3>
             <p>Khoảng cuối năm 2023, khi tôi đang túc trực ở bệnh viện để chăm sóc cho mẹ tôi sau khi bà trải qua một cơn đột quỵ đã khiến sức khỏe tinh thần và khả năng lao động của bà giảm sút. Có một vị bác sĩ đã chăm sóc rất tận tâm cho mẹ tôi mặc dù gia đình tôi không quen biết ông, và phòng bệnh của mẹ tôi chỉ thuộc loại phổ thông. Tôi cho rằng, vượt lên trên y đức, phải có một động lực sâu xa hơn đằng sau lòng tốt của ông. Và ý tưởng của tôi ra đời từ đó.</p>
             <p>Tôi đã chuyển đổi bệnh nhân từ hình mẫu là một người phụ nữ thành một cậu bé vì điều đó gần gũi hơn với tâm hồn và cách hiểu của tôi. Ngoài ra, sự gắn kết của cậu bé và vị bác sĩ hết sức thân mật nhưng cũng hết sức xa cách, vì họ không thể gặp mặt trực tiếp mà chỉ có thể thông qua điện thoại. Một phần vì tình huống bất đắc dĩ của vị bác sĩ, nhưng hơn hết, sự kết nối giữa những con người với nhau qua một thiết bị điện tử phản ánh cho sự xa cách trong thời kỳ hiện đại, nơi con người buộc phải bày tỏ tình cảm của mình một cách không trọn vẹn. Đó là bi kịch của thời đại này.</p>
             <p>Tôi muốn kể câu chuyện ở góc độ người quan sát. Thay vì đưa máy quay đến gần nhân vật để thấy cảm xúc của họ đang diễn biến ra sao, tôi muốn cùng khán giả đứng ở khoảng cách thích hợp để theo dõi hành trình cảm xúc của họ. Khi một sự kiện đau buồn diễn ra, khán giả buộc phải dùng kinh nghiệm của mình để dự đoán cảm xúc của nhân vật. Điều này cho diễn viên của tôi nhiều không gian hơn để thể nghiệm nhân vật mà họ muốn trở thành, không phải chỉ vì tôi bảo họ phải làm theo cách mà tôi đang cảm nhận.</p>
             <p>Bộ phim sẽ không có nhân vật chính vì vai trò của cả ba nhân vật trong câu chuyện đều bổ trợ lẫn nhau. Khi đồng hồ đã điểm, hành trình của mỗi nhân vật sẽ hòa làm một để củng cố cho duy nhất một luận điểm: “Cuộc sống vẫn phải tiếp tục”.</p>
+            
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Diễn viên:</b> Ngô Nhật Trường, Cô Nhum, Vũ Nguyễn Uy Nhân</li>
@@ -71,7 +77,324 @@ const filmsData = {
                 <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
                 <li><b>Hiệu chỉnh âm thanh:</b> [Đang cập nhật]</li>
             </ul>
-            <h3>Behind The Scene</h3>
+
+
+
+            <div class="crew-scroller">
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-name="Ngô Nhật Trường" 
+                        data-role="Diễn viên"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Diễn viên</div>
+                        <div class="crew-name">Ngô Nhật Trường</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-name="Cô Nhum" 
+                        data-role="Diễn viên"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Diễn viên</div>
+                        <div class="crew-name">Cô Nhum</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-name="Vũ Nguyễn Uy Nhân" 
+                        data-role="Diễn viên"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Diễn viên</div>
+                        <div class="crew-name">Vũ Nguyễn Uy Nhân</div>
+                    </div>
+                </div>
+                
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-name="Phạm Hữu Trí" 
+                        data-role="Đạo diễn, Kịch bản & Dựng phim"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Đạo diễn, Kịch bản & Dựng phim</div>
+                        <div class="crew-name">Phạm Hữu Trí</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Thục Mai" 
+                        data-role="Sản xuất & Sản xuất hậu kỳ"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Sản xuất & Sản xuất hậu kỳ</div>
+                        <div class="crew-name">Thục Mai</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Thảo Quiêng" 
+                        data-role="Đồng sản xuất & Sản xuất hậu kỳ"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Đồng sản xuất & Sản xuất hậu kỳ</div>
+                        <div class="crew-name">Thảo Quiêng</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Nguyễn Tùng Lâm" 
+                        data-role="Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc</div>
+                        <div class="crew-name">Nguyễn Tùng Lâm</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Dzuy Tom" 
+                        data-role="Thiết kế sản xuất"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Thiết kế sản xuất</div>
+                        <div class="crew-name">Dzuy Tom</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Hoàng Bảo Uyên" 
+                        data-role="Thiết kế mỹ thuật"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Thiết kế mỹ thuật</div>
+                        <div class="crew-name">Hoàng Bảo Uyên</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Lê Diễm Quỳnh" 
+                        data-role="Trợ lý đạo diễn #1"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Trợ lý đạo diễn #1</div>
+                        <div class="crew-name">Lê Diễm Quỳnh</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Kon Lớn" 
+                        data-role="Trợ lý đạo diễn #2"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Trợ lý đạo diễn #2</div>
+                        <div class="crew-name">Kon Lớn</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Tõ Anh Khoa" 
+                        data-role="Gaffer"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Gaffer</div>
+                        <div class="crew-name">Tõ Anh Khoa</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Đặng Xuân Hoàng" 
+                        data-role="Phụ quay"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Phụ Quay</div>
+                        <div class="crew-name">Đặng Xuân Hoàng</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Nguyễn Kim Hậu" 
+                        data-role="Phụ quay"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Phụ Quay</div>
+                        <div class="crew-name">Nguyễn Kim Hậu</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Văn Ngọc Thành" 
+                        data-role="Chỉnh nét & Giám sát hậu kỳ"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Chỉnh nét & Giám sát hậu kỳ</div>
+                        <div class="crew-name">Văn Ngọc Thành</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Ruby" 
+                        data-role="Trợ lý thiết kế sản xuất"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Trợ lý thiết kế sản xuất</div>
+                        <div class="crew-name">Ruby</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Nicholas Nguyễn" 
+                        data-role="Thiết kế bối cảnh"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Thiết kế bối cảnh</div>
+                        <div class="crew-name">Nicholas Nguyễn</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Khải Hân (Kaii)" 
+                        data-role="Thiết kế bối cảnh"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Thiết kế bối cảnh</div>
+                        <div class="crew-name">Khải Hân (Kaii)</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="HaiBkk" 
+                        data-role="Thiết kế bối cảnh"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Thiết kế bối cảnh</div>
+                        <div class="crew-name">HaiBkk</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Minh Thảo" 
+                        data-role="Phục trang"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Phục trang</div>
+                        <div class="crew-name">Minh Thảo</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Bia Huyền" 
+                        data-role="Hóa trang"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Hóa Trang</div>
+                        <div class="crew-name">Bia Huyền</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Crister Nguyên" 
+                        data-role="Thu thanh hiện trường"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Thu thanh hiện trường</div>
+                        <div class="crew-name">Crister Nguyên</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Huy Đẹp Trai" 
+                        data-role="Nhạc sĩ"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Nhạc sĩ</div>
+                        <div class="crew-name">Huy Đẹp Trai</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="[Đang cập nhật]" 
+                        data-role="Hiệu chỉnh âm thanh"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Hiệu chỉnh âm thanh</div>
+                        <div class="crew-name">[Đang cập nhật]</div>
+                    </div>
+                </div>
+
+            </div> <h3>Behind The Scene</h3>
             <div class="gallery-wall">
                 <img src="https://ik.imagekit.io/phamhuutri108/BODND/BU010038.JPG">
                 <img src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" class="tall">
@@ -91,14 +414,21 @@ const filmsData = {
             </div>
         `,
         en: `
-            
-
-             <p><b>Genre:</b> Short fiction / Drama, Observation<br>
+            <p><b>Genre:</b> Short fiction / Drama, Observation<br>
             <b> Year:</b> Coming-soon (2026)<br>
             <b>Duration:</b> 39:40<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
-                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/ooWID56SmHk" title="Dad, Don't Lie To Me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    style="max-width: 560px; border-radius: 4px;" 
+                    src="https://www.youtube.com/embed/ooWID56SmHk" 
+                    title="Dad, Don't Lie To Me" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
             <h3>Logline</h3>
             <p>An unwilling middle-aged doctor has to impersonate the father of his young cancer patient through a series of phone calls, to deceive him about the death of his real father.</p>
@@ -107,6 +437,7 @@ const filmsData = {
             <p>I transformed the patient (my mother) from a woman to a young boy because this resonated more closely with my soul and understanding. The connection between the boy and the doctor is simultaneously intimate yet distant, as they cannot meet in person but can only communicate through phone calls. This is partly due to the doctor's unavoidable circumstances, but more importantly, the connection between them through an electronic device reflects the disconnect in modern life, where humans are forced to express their feelings incompletely. This is the tragedy of our era.</p>
             <p>I want to tell this story from an observer's perspective. Instead of bringing the camera close to the characters to see how their emotions unfold, I will stand with the audience at an appropriate distance to witness their emotional journey. When a sad event occurs, the audience must use their own experiences to anticipate the characters' feelings. This gives my actors more space to experiment with the characters they want to become, not just following my personal interpretation of how they should feel.</p>
             <p>The film will not have one main character because all three characters' roles complement each other. When the clock strikes, each character's journey will merge into one to reinforce a single thesis: "Life must go on."</p>
+            
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Cast:</b> Ngô Nhật Trường, Cô Nhum, Vũ Nguyễn Uy Nhân</li>
@@ -147,6 +478,325 @@ const filmsData = {
                 <li><b>Music Composer:</b> Huy Đẹp Trai</li>
                 <li><b>Sound Design and Mastering:</b> [Đang cập nhật]</li>
             </ul>
+
+
+
+            <div class="crew-scroller">
+                
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-name="Ngô Nhật Trường" 
+                        data-role="Cast"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Cast</div>
+                        <div class="crew-name">Ngô Nhật Trường</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-name="Cô Nhum" 
+                        data-role="Cast"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Cast</div>
+                        <div class="crew-name">Cô Nhum</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-name="Vũ Nguyễn Uy Nhân" 
+                        data-role="Cast"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Cast</div>
+                        <div class="crew-name">Vũ Nguyễn Uy Nhân</div>
+                    </div>
+                </div>
+                
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        data-name="Phạm Hữu Trí" 
+                        data-role="Director, Screenwriter & Editor"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Director, Screenwriter & Editor</div>
+                        <div class="crew-name">Phạm Hữu Trí</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Thục Mai" 
+                        data-role="Producer & Post-Production"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Producer & Post-Production</div>
+                        <div class="crew-name">Thục Mai</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Thảo Quiêng" 
+                        data-role="Co-Producer & Post-Production"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Co-Producer & Post-Production</div>
+                        <div class="crew-name">Thảo Quiêng</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Nguyễn Tùng Lâm" 
+                        data-role="Cinematographer & Colorist"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Cinematographer & Colorist</div>
+                        <div class="crew-name">Nguyễn Tùng Lâm</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Dzuy Tom" 
+                        data-role="Production Designer"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Production Designer</div>
+                        <div class="crew-name">Dzuy Tom</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Hoàng Bảo Uyên" 
+                        data-role="Art Director"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Art Director</div>
+                        <div class="crew-name">Hoàng Bảo Uyên</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Lê Diễm Quỳnh" 
+                        data-role="First Assistant Director"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">First Assistant Director</div>
+                        <div class="crew-name">Lê Diễm Quỳnh</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Kon Lớn" 
+                        data-role="Second Assistant Director"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Second Assistant Director</div>
+                        <div class="crew-name">Kon Lớn</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Tõ Anh Khoa" 
+                        data-role="Gaffer"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Gaffer</div>
+                        <div class="crew-name">Tõ Anh Khoa</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Đặng Xuân Hoàng" 
+                        data-role="Assistant Camera"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Assistant Camera</div>
+                        <div class="crew-name">Đặng Xuân Hoàng</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Nguyễn Kim Hậu" 
+                        data-role="Assistant Camera"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Assistant Camera</div>
+                        <div class="crew-name">Nguyễn Kim Hậu</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Văn Ngọc Thành" 
+                        data-role="Focus Puller & Supervisor Post-Production"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Focus Puller & Supervisor Post-Production</div>
+                        <div class="crew-name">Văn Ngọc Thành</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Ruby" 
+                        data-role="Assistant Production Designer"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Assistant Production Designer</div>
+                        <div class="crew-name">Ruby</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Nicholas Nguyễn" 
+                        data-role="Set Design and Set Decorator"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Set Design and Set Decorator</div>
+                        <div class="crew-name">Nicholas Nguyễn</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Khải Hân (Kaii)" 
+                        data-role="Set Design and Set Decorator"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Set Design and Set Decorator</div>
+                        <div class="crew-name">Khải Hân (Kaii)</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="HaiBkk" 
+                        data-role="Set Design and Set Decorator"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Set Design and Set Decorator</div>
+                        <div class="crew-name">HaiBkk</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Minh Thảo" 
+                        data-role="Wardrobe"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Wardrobe</div>
+                        <div class="crew-name">Minh Thảo</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Bia Huyền" 
+                        data-role="Make-up Artist"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Make-up Artist</div>
+                        <div class="crew-name">Bia Huyền</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Crister Nguyên" 
+                        data-role="Sound Recordist"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Sound Recordist</div>
+                        <div class="crew-name">Crister Nguyên</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="Huy Đẹp Trai" 
+                        data-role="Music Composer"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Music Composer</div>
+                        <div class="crew-name">Huy Đẹp Trai</div>
+                    </div>
+                </div>
+
+                <div class="crew-card">
+                    <img 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" 
+                        data-name="[Đang cập nhật]" 
+                        data-role="Sound Design and Mastering"
+                    >
+                    <div class="crew-info">
+                        <div class="crew-role">Sound Design and Mastering</div>
+                        <div class="crew-name">[Đang cập nhật]</div>
+                    </div>
+                </div>
+
+            </div> 
+
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
                 <img src="https://ik.imagekit.io/phamhuutri108/BODND/BU010038.JPG">

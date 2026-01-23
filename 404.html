@@ -1170,40 +1170,146 @@
 <script src="/writings-data.js?v=5.0"></script>
 
 
-<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img id="lightbox-img" src="">
+<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+    
+    <button id="lb-prev" class="lb-nav-btn" onclick="changeLbSlide(-1, event)">&#10094;</button>
+    
+    <div class="lb-content-wrapper">
+        <img id="lightbox-img" src="" onclick="event.stopPropagation()"> 
+        <div id="lb-caption" class="lb-caption">
+            <h3 id="lb-name">Name</h3>
+            <p id="lb-role">Role</p>
+        </div>
+    </div>
+
+    <button id="lb-next" class="lb-nav-btn" onclick="changeLbSlide(1, event)">&#10095;</button>
 </div>
 
 <script>
-    // --- LOGIC LIGHTBOX ---
-    
-    // 1. Lắng nghe sự kiện click trên toàn bộ trang (Event Delegation)
+    // --- BIẾN TOÀN CỤC CHO GALLERY ---
+    let currentCrewArray = []; // Mảng chứa danh sách ảnh đang xem
+    let currentCrewIndex = 0;  // Vị trí hiện tại
+
+    // 1. Lắng nghe sự kiện click toàn trang
     document.addEventListener('click', function(e) {
-        // Kiểm tra xem cái được click có phải là ảnh trong gallery-wall không
+        
+        // A. Nếu click vào Gallery Wall (Ảnh BTS thường) -> Giữ nguyên
         if (e.target && e.target.closest('.gallery-wall img')) {
-            const imgSrc = e.target.src; // Lấy đường dẫn ảnh
-            openLightbox(imgSrc);
+            openSimpleLightbox(e.target.src);
+        }
+        
+        // B. Nếu click vào Crew Scroll Item -> SỬA LẠI ĐOẠN NÀY
+        if (e.target && e.target.closest('.crew-card img')) {
+            const clickedImg = e.target;
+            const container = clickedImg.closest('.crew-scroller');
+            
+            // 1. Lấy tất cả ảnh trong danh sách hiện tại
+            const allImagesNodeList = container.querySelectorAll('.crew-card img');
+            const allImagesArray = Array.from(allImagesNodeList); // Chuyển sang mảng để dễ xử lý
+
+            // 2. Tạo dữ liệu cho Lightbox
+            currentCrewArray = allImagesArray.map(img => ({
+                src: img.dataset.full, 
+                name: img.dataset.name,
+                role: img.dataset.role
+            }));
+
+            // 3. TÌM VỊ TRÍ CHÍNH XÁC (FIX LỖI TẠI ĐÂY)
+            // Thay vì tìm theo src (dễ bị trùng), ta tìm theo chính cái thẻ img vừa bấm vào
+            currentCrewIndex = allImagesArray.indexOf(clickedImg);
+            
+            // 4. Mở Lightbox
+            openCrewLightbox();
         }
     });
 
     const lightbox = document.getElementById('lightbox-overlay');
     const lightboxImg = document.getElementById('lightbox-img');
+    const lbPrev = document.getElementById('lb-prev');
+    const lbNext = document.getElementById('lb-next');
+    const lbCaption = document.getElementById('lb-caption');
+    const lbName = document.getElementById('lb-name');
+    const lbRole = document.getElementById('lb-role');
 
-    // 2. Hàm mở Lightbox
-    function openLightbox(src) {
+    // --- CHẾ ĐỘ 1: ẢNH ĐƠN (BTS) ---
+    function openSimpleLightbox(src) {
         lightboxImg.src = src;
         lightbox.style.display = "flex";
-        // Ngăn cuộn chuột ở trang chính khi đang xem ảnh
-        document.body.style.overflow = "hidden"; 
+        document.body.style.overflow = "hidden";
+        
+        // Ẩn các nút điều hướng
+        lbPrev.style.display = 'none';
+        lbNext.style.display = 'none';
+        lbCaption.style.display = 'none';
     }
 
-    // 3. Hàm đóng Lightbox
-    function closeLightbox() {
-        lightbox.style.display = "none";
-        // Cho phép cuộn trang trở lại
-        document.body.style.overflow = "auto"; 
+    // --- CHẾ ĐỘ 2: CREW GALLERY (CÓ NÚT NEXT) ---
+    function openCrewLightbox() {
+        lightbox.style.display = "flex";
+        document.body.style.overflow = "hidden";
+        
+        // Hiện các nút điều hướng
+        lbPrev.style.display = 'block';
+        lbNext.style.display = 'block';
+        lbCaption.style.display = 'block';
+
+        updateLbContent();
     }
+
+    function updateLbContent() {
+    if (!currentCrewArray || currentCrewArray.length === 0) return;
+    
+    const item = currentCrewArray[currentCrewIndex];
+    lightboxImg.src = item.src;
+
+    // QUAN TRỌNG: Đổi innerText thành innerHTML để hiển thị được song ngữ
+    lbName.innerHTML = item.name; 
+    lbRole.innerHTML = item.role;
+}
+
+    // --- HÀM CHUYỂN SLIDE ĐÃ SỬA LỖI (QUAN TRỌNG) ---
+    function changeLbSlide(step, e) {
+        // 1. Chặn sự kiện click xuyên qua (QUAN TRỌNG)
+        if (e) {
+            e.stopPropagation();
+            e.preventDefault(); 
+        } else if (window.event) {
+            window.event.stopPropagation();
+        }
+
+        // 2. Kiểm tra dữ liệu an toàn
+        if (!currentCrewArray || currentCrewArray.length === 0) return;
+
+        // 3. Cộng trừ vị trí
+        currentCrewIndex += step;
+        
+        // 4. Loop vòng tròn
+        if (currentCrewIndex >= currentCrewArray.length) currentCrewIndex = 0;
+        if (currentCrewIndex < 0) currentCrewIndex = currentCrewArray.length - 1;
+
+        // 5. Cập nhật nội dung
+        updateLbContent();
+    }
+
+    // Đóng Lightbox (Chỉ đóng khi bấm vào nền đen hoặc nút X)
+    function closeLightbox(e) {
+        // Nếu e tồn tại và target là chính cái overlay (vùng đen) HOẶC nút close
+        if (!e || e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+            lightbox.style.display = "none";
+            document.body.style.overflow = "auto";
+            lightboxImg.src = ""; // Reset ảnh
+        }
+    }
+    
+    // Hỗ trợ phím mũi tên trái/phải
+    document.addEventListener('keydown', function(e) {
+        if (lightbox.style.display === "flex" && lbNext.style.display === 'block') {
+            if (e.key === "ArrowLeft") changeLbSlide(-1, e);
+            if (e.key === "ArrowRight") changeLbSlide(1, e);
+        }
+        if (e.key === "Escape") closeLightbox(e);
+    });
 </script>
 
 
@@ -1883,6 +1989,152 @@
             .catch(error => console.error("Lỗi:", error));
     });
 </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* ============================================================= */
+    /* --- HỆ THỐNG XỬ LÝ CREW: KÉO THẢ + FOCUS + CLICK TO CENTER --- */
+    /* ============================================================= */
+
+    let isGlobalDragging = false; 
+
+    function initCrewSystem() {
+        const sliders = document.querySelectorAll('.crew-scroller');
+
+        sliders.forEach(slider => {
+            if (slider.dataset.hasLogic) return;
+            slider.dataset.hasLogic = "true";
+
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            let velX = 0;
+            let animationID;
+
+            // --- 1. LOGIC KÉO THẢ (DRAG) ---
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                isGlobalDragging = false;
+                slider.classList.add('is-dragging');
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+                cancelAnimationFrame(animationID);
+            });
+
+            const stopDragging = () => {
+                if (!isDown) return;
+                isDown = false;
+                slider.classList.remove('is-dragging');
+                
+                function inertia() {
+                    if (Math.abs(velX) > 0.5) {
+                        slider.scrollLeft -= velX;
+                        velX *= 0.95; 
+                        animationID = requestAnimationFrame(inertia);
+                    } else {
+                        slider.style.scrollBehavior = 'smooth';
+                    }
+                }
+                inertia();
+                
+                setTimeout(() => { isGlobalDragging = false; }, 50);
+            };
+
+            slider.addEventListener('mouseleave', stopDragging);
+            slider.addEventListener('mouseup', stopDragging);
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 1; 
+                if (Math.abs(x - startX) > 5) isGlobalDragging = true;
+                const prevScrollLeft = slider.scrollLeft;
+                slider.scrollLeft = scrollLeft - walk;
+                velX = slider.scrollLeft - prevScrollLeft;
+            });
+
+            // --- 2. LOGIC CLICK-TO-CENTER (CẬP NHẬT MỚI: CHUẨN XÁC 100%) ---
+            const cards = slider.querySelectorAll('.crew-card');
+            cards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (isGlobalDragging) {
+                        e.preventDefault(); e.stopPropagation(); return;
+                    }
+
+                    // Nếu thẻ đã active (ở giữa) -> Mở Lightbox
+                    if (card.classList.contains('active')) return;
+
+                    // Nếu thẻ ở rìa -> Lướt vào giữa
+                    e.preventDefault();
+                    
+                    // SỬ DỤNG HÀM CĂN GIỮA CỦA TRÌNH DUYỆT (Chính xác tuyệt đối)
+                    card.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        inline: 'center',  // Căn giữa theo chiều ngang
+                        block: 'nearest'   // Giữ nguyên chiều dọc, không bị nhảy trang
+                    });
+                });
+            });
+
+            // --- 3. LOGIC FOCUS ---
+            const handleScroll = () => {
+                if (slider.classList.contains('is-dragging')) return;
+
+                // Tính tâm màn hình chính xác
+                const centerPoint = slider.scrollLeft + (slider.offsetWidth / 2);
+                let closestCard = null;
+                let minDistance = Infinity;
+
+                cards.forEach(card => {
+                    // Tính tâm thẻ (bao gồm cả margin lệch nếu có)
+                    const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                    const distance = Math.abs(centerPoint - cardCenter);
+
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        closestCard = card;
+                    }
+                    card.classList.remove('active');
+                });
+
+                if (closestCard) closestCard.classList.add('active');
+            };
+
+            slider.addEventListener('scroll', handleScroll);
+            setTimeout(handleScroll, 100);
+        });
+    }
+
+    const observer = new MutationObserver((mutations) => {
+        let shouldUpdate = false;
+        mutations.forEach((mutation) => {
+            if (mutation.addedNodes.length) shouldUpdate = true;
+        });
+        if (shouldUpdate && document.querySelector('.crew-scroller')) {
+            initCrewSystem();
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+</script>
+
+
+
+
+
+
+
+
+
 
 
 

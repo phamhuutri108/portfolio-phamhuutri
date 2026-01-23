@@ -1612,3 +1612,219 @@ body.mode-vi .content-en {
     height: calc(100vh - 80px);
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- STYLE 3: REFINED FOCUS (CÓ HỖ TRỢ KÉO THẢ) --- */
+
+/* --- KHUNG CHỨA TỔNG --- */
+.crew-scroller-container {
+    width: 100%;
+    margin: 40px 0;
+    overflow: hidden; 
+    position: relative;
+}
+
+/* --- THANH TRƯỢT (Đã chỉnh lại chiều cao và căn giữa cho thẻ to) --- */
+/* --- TRONG FILE STYLE.CSS --- */
+
+.crew-scroller {
+    display: flex;
+    overflow-x: auto;
+    
+    /* CŨ: padding: 0 calc(50% - 110px); -> BỊ LỆCH 10PX */
+    /* MỚI: Trừ thêm 10px margin nữa để vào chuẩn tâm */
+    padding: 0 calc(50% - 120px); 
+    
+    /* Các thuộc tính khác giữ nguyên */
+    height: 480px; 
+    align-items: center;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+    cursor: grab; 
+    cursor: -webkit-grab;
+}
+
+/* --- THẺ THÀNH VIÊN (Về kích thước gốc) --- */
+.crew-card {
+    /* Khôi phục kích thước 220px */
+    flex: 0 0 220px; 
+    width: 220px;    
+    
+    margin: 0 10px; /* Tăng khoảng cách ra cho thoáng */
+    scroll-snap-align: center;
+    
+    opacity: 0.6;          
+    transform: scale(0.9); 
+    filter: grayscale(100%); 
+    transition: all 0.4s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.crew-card img {
+    width: 100%; 
+    aspect-ratio: 3 / 4; /* Vẫn giữ tỷ lệ 3:4 chuẩn */
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    pointer-events: none; /* Quan trọng để kéo thả mượt */
+}
+
+/* --- THÔNG TIN CHỮ (To lên lại) --- */
+.crew-info {
+    margin-top: 20px; /* Cách xa ảnh một chút */
+    text-align: center;
+    opacity: 0.5; 
+    transform: none; 
+    transition: all 0.4s ease;
+    pointer-events: none; 
+}
+
+.crew-role { 
+    font-size: 10px; /* Về lại 10px */
+    color: #666; 
+    margin-bottom: 5px; 
+    letter-spacing: 1px;
+}
+
+.crew-name { 
+    font-size: 14px; /* Về lại 14px */
+    font-weight: bold; 
+    color: #000; 
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+/* --- GIỮ NGUYÊN TRẠNG THÁI ACTIVE --- */
+.crew-card.active {
+    opacity: 1;
+    transform: scale(1.1); 
+    filter: grayscale(0%);
+    z-index: 10;
+}
+
+.crew-card.active .crew-info {
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+/* ACTIVE STATE */
+.crew-card.active {
+    opacity: 1;
+    transform: scale(1.1); 
+    filter: grayscale(0%);
+    z-index: 10;
+}
+
+.crew-card.active .crew-info {
+    opacity: 1;
+    transform: translateY(5px);
+}
+.crew-card.active img {
+    pointer-events: auto; /* Active rồi mới cho bấm vào ảnh để xem Lightbox */
+}
+
+.crew-role { font-size: 10px; color: #666; text-transform: uppercase; margin-bottom: 5px; }
+.crew-name { font-size: 14px; font-weight: bold; color: #000; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- BỔ SUNG LIGHTBOX STYLES (NAV & CAPTION) --- */
+
+/* 1. Căn chỉnh vị trí nội dung */
+.lb-content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* 2. Nút điều hướng (Mũi tên trái phải) */
+.lb-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6); /* Màu trắng mờ */
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10000;
+    user-select: none;
+}
+
+.lb-nav-btn:hover {
+    color: #fff; /* Sáng lên khi rê chuột */
+    transform: translateY(-50%) scale(1.2); /* Phóng to nhẹ */
+}
+
+/* Định vị nút Trái - Phải */
+#lb-prev { left: 20px; }
+#lb-next { right: 20px; }
+
+/* 3. Phần chú thích (Tên & Vai trò) */
+.lb-caption {
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 0.5s ease;
+}
+
+.lb-caption h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.lb-caption p {
+    font-size: 12px;
+    font-family: 'Georgia', serif; /* Font chữ nghệ thuật */
+    color: #ccc; /* Màu xám bạc sang trọng */
+}
+
+/* Responsive trên điện thoại */
+@media (max-width: 768px) {
+    .lb-nav-btn {
+        font-size: 30px;
+        padding: 10px;
+    }
+    #lb-prev { left: 5px; }
+    #lb-next { right: 5px; }
+}
