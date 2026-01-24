@@ -14,7 +14,7 @@ const filmsData = {
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý, Quan sát<br>
             <b> Năm:</b> Sắp ra mắt (2026)<br>
-            <b>Thời lượng:</b> 39:40<br> </p>
+            <b>Thời lượng:</b> 39:45<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe 
@@ -40,7 +40,7 @@ const filmsData = {
 
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
-                <li><b>Diễn viên:</b> Ngô Nhật Trường, Cô Nhum, Vũ Nguyễn Uy Nhân</li>
+                <li><b>Diễn viên:</b> Ngô Nhật Trường, Cô Nhum, Nguyễn Vũ Uy Nhân</li>
 
                 <li><b>Đạo diễn và Kịch bản:</b> Phạm Hữu Trí</li>
                 <li><b>Cố vấn nghệ thuật:</b> NSND. Đạo diễn Đào Bá Sơn</li>
@@ -56,6 +56,7 @@ const filmsData = {
 
                 <li><b>Trợ lý đạo diễn #1:</b> Lê Diễm Quỳnh</li>
                 <li><b>Trợ lý đạo diễn #2:</b> Kon Lớn</li>
+                <li><b>Thư ký trường quay:</b> Hồ Minh Khoa</li>
 
                 <li><b>Gaffer:</b> Tô Anh Khoa</li>
                 <li><b>Phụ quay:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
@@ -63,7 +64,7 @@ const filmsData = {
                 <li><b>Chuyên viên ánh sáng:</b> Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
 
                 <li><b>Trợ lý thiết kế sản xuất</b> Ruby</li>
-                <li><b>Thiết kế bối cảnh:</b> Nicholas Nguyễn, Khải Hân (Kaii), HaiBkk</li>
+                <li><b>Thiết kế bối cảnh:</b> Nicholas Nguyễn, Kaii Khải Hân, HaiBkk</li>
                 <li><b>Phục trang:</b> Minh Thảo</li>
                 <li><b>Hóa trang:</b> Bia Huyền</li>
 
@@ -125,6 +126,7 @@ const filmsData = {
 
                 <li><b>First Assistant Director:</b> Lê Diễm Quỳnh</li>
                 <li><b>Second Assistant Director:</b> Kon Lớn</li>
+                <li><b>Script Supervisor:</b> Hồ Minh Khoa</li>
 
                 <li><b>Gaffer:</b> Tô Anh Khoa</li>
                 <li><b>Assistant Camera:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
@@ -132,7 +134,7 @@ const filmsData = {
                 <li><b>Best boy:</b> Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
 
                 <li><b>Assistant Production Design:</b> Ruby</li>
-                <li><b>Set Design and Set Decorator:</b> Nicholas Nguyễn, Khải Hân (Kaii), HaiBkk</li>
+                <li><b>Set Design and Set Decorator:</b> Nicholas Nguyễn, Kaii Khải Hân, HaiBkk</li>
                 <li><b>Wardrobe:</b> Minh Thảo</li>
                 <li><b>Make-up Artist:</b> Bia Huyền</li>
 
@@ -152,39 +154,47 @@ const filmsData = {
 
         // Dữ liệu Crew đã được tách riêng, sạch sẽ và dễ quản lý
         crewData: [
-            { name: "Ngô Nhật Trường", role: { vi: "Diễn viên", en: "Cast" }, img: "https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" },
-            { name: "Cô Nhum", role: { vi: "Diễn viên", en: "Cast" }, img: "https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" },
-            { name: "Vũ Nguyễn Uy Nhân", role: { vi: "Diễn viên", en: "Cast" }, img: "https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" },
+            { name: "Ngô Nhật Trường", role: { vi: "Diễn viên", en: "Cast" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ngo-nhat-truong.png" },
+            { name: "Cô Nhum", role: { vi: "Diễn viên", en: "Cast" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-co-nhum.png" },
+            { name: "Nguyễn Vũ Uy Nhân", role: { vi: "Diễn viên", en: "Cast" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-bap.jpg" },
             
             { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-pham-huu-tri.png" },
             
-            { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Production" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Production" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-thuc-mai.png" },
+            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             
-            { name: "Nguyễn Tùng Lâm", role: { vi: "D.O.P & Colorist", en: "Cinematographer & Colorist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             
             { name: "Dzuy Tom", role: { vi: "Thiết kế sản xuất", en: "Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-hoang-bao-uyen.png" },
             
             { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-kon-lon.JPG" },
+            
             
             { name: "Tô Anh Khoa", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét", en: "Focus Puller" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             
-            { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ruby.png" },
             { name: "Nicholas Nguyễn", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Khải Hân (Kaii)", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Kaii Khải Hân", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-kaii.png" },
             { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             
-            { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Bia Huyền", role: { vi: "Hóa trang", en: "Make-up Artist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            
-            { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+
             { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" }
+            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+
+
+            { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Bia Huyền", role: { vi: "Hóa trang", en: "Make-up Artist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-bia-huyen.png" },
+            { name: "Hồ Minh Khoa", role: { vi: "Thư ký trường quay", en: "Script Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            
+            { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-crister-nguyen.png" },
+            { name: "Khương Ngọc", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ngoc-lao.png" },
+            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            
         ],
 
         // DỮ LIỆU BTS (MỚI THÊM VÀO - CHỈ CẦN KHAI BÁO 1 LẦN)
