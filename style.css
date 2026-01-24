@@ -1651,7 +1651,7 @@ body.mode-vi .content-en {
     
     /* Logic Snap chuẩn */
     scroll-snap-type: x mandatory; 
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     
     padding: 0; 
     
@@ -1663,6 +1663,9 @@ body.mode-vi .content-en {
     cursor: grab; 
     user-select: none; /* Chặn bôi đen khi kéo */
     -webkit-user-select: none;
+
+    /* Tăng tốc độ phản hồi trên Mobile */
+    -webkit-overflow-scrolling: touch;
 }
 
 .crew-scroller:active { cursor: grabbing; }
@@ -1676,12 +1679,12 @@ body.mode-vi .content-en {
     
     /* Bắt buộc điểm giữa của thẻ phải khớp với điểm giữa màn hình */
     scroll-snap-align: center;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal;
     
     opacity: 0.5;
     transform: scale(0.9);
     filter: grayscale(100%);
-    transition: all 0.4s ease-out;
+    transition: all 0.3s ease-out;
     will-change: transform, opacity;
     
     /* Quan trọng: Để thẻ div nhận click, không bị img chặn */
