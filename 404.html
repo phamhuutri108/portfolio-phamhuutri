@@ -1232,37 +1232,31 @@
 
 <script>
     // --- BIẾN TOÀN CỤC CHO GALLERY ---
-    let currentCrewArray = []; // Mảng chứa danh sách ảnh đang xem
-    let currentCrewIndex = 0;  // Vị trí hiện tại
+    let currentCrewArray = []; 
+    let currentCrewIndex = 0;  
 
     // 1. Lắng nghe sự kiện click toàn trang
     document.addEventListener('click', function(e) {
-        
-        // A. Nếu click vào Gallery Wall (Ảnh BTS thường) -> Giữ nguyên
+        // A. Click vào Gallery Wall (Ảnh BTS thường)
         if (e.target && e.target.closest('.gallery-wall img')) {
             openSimpleLightbox(e.target.src);
         }
         
-        // B. Nếu click vào Crew Scroll Item
+        // B. Click vào Crew Scroll Item
         if (e.target && e.target.closest('.crew-card img')) {
             const clickedImg = e.target;
             const container = clickedImg.closest('.crew-scroller');
             
-            // 1. Lấy tất cả ảnh trong danh sách hiện tại
             const allImagesNodeList = container.querySelectorAll('.crew-card img');
             const allImagesArray = Array.from(allImagesNodeList); 
 
-            // 2. Tạo dữ liệu cho Lightbox
             currentCrewArray = allImagesArray.map(img => ({
                 src: img.dataset.full, 
                 name: img.dataset.name,
                 role: img.dataset.role
             }));
 
-            // 3. Tìm vị trí chính xác
             currentCrewIndex = allImagesArray.indexOf(clickedImg);
-            
-            // 4. Mở Lightbox
             openCrewLightbox();
         }
     });
@@ -1275,82 +1269,73 @@
     const lbName = document.getElementById('lb-name');
     const lbRole = document.getElementById('lb-role');
 
-    // --- CHẾ ĐỘ 1: ẢNH ĐƠN (BTS) ---
+    // --- HÀM KHÓA SCROLL BACKGROUND (QUAN TRỌNG) ---
+    function lockBodyScroll() {
+        document.body.style.overflow = 'hidden'; // Ẩn thanh cuộn
+        document.body.style.touchAction = 'none'; // Chặn các thao tác chạm mặc định của trình duyệt
+    }
+
+    function unlockBodyScroll() {
+        document.body.style.overflow = ''; 
+        document.body.style.touchAction = '';
+    }
+
+    // --- CHẾ ĐỘ 1: ẢNH ĐƠN ---
     function openSimpleLightbox(src) {
         lightboxImg.src = src;
         lightbox.style.display = "flex";
-        document.body.style.overflow = "hidden";
         
-        // Ẩn các nút điều hướng
+        lockBodyScroll(); // Khóa cuộn nền
+        
         lbPrev.style.display = 'none';
         lbNext.style.display = 'none';
         lbCaption.style.display = 'none';
         
-        // Tắt tính năng vuốt ở chế độ đơn
-        disableSwipe();
+        disableSwipe(); // Tắt vuốt ở chế độ đơn
     }
 
-    // --- CHẾ ĐỘ 2: CREW GALLERY (CÓ NÚT NEXT & SWIPE) ---
+    // --- CHẾ ĐỘ 2: CREW GALLERY ---
     function openCrewLightbox() {
         lightbox.style.display = "flex";
-        document.body.style.overflow = "hidden";
         
-        // Hiện các nút điều hướng
+        lockBodyScroll(); // Khóa cuộn nền
+        
         lbPrev.style.display = 'block';
         lbNext.style.display = 'block';
         lbCaption.style.display = 'block';
 
         updateLbContent();
-        
-        // Bật tính năng vuốt
-        enableSwipe();
+        enableSwipe(); // Bật vuốt
     }
 
     function updateLbContent() {
         if (!currentCrewArray || currentCrewArray.length === 0) return;
-        
         const item = currentCrewArray[currentCrewIndex];
         lightboxImg.src = item.src;
-
-        // Đổi innerText thành innerHTML để hiển thị được song ngữ
         lbName.innerHTML = item.name; 
         lbRole.innerHTML = item.role;
     }
 
-    // --- HÀM CHUYỂN SLIDE ---
     function changeLbSlide(step, e) {
-        // 1. Chặn sự kiện click xuyên qua
-        if (e) {
-            e.stopPropagation();
-            e.preventDefault(); 
-        } else if (window.event) {
-            window.event.stopPropagation();
-        }
+        if (e) { e.stopPropagation(); e.preventDefault(); }
 
-        // 2. Kiểm tra dữ liệu an toàn
         if (!currentCrewArray || currentCrewArray.length === 0) return;
-
-        // 3. Cộng trừ vị trí
         currentCrewIndex += step;
         
-        // 4. Loop vòng tròn
         if (currentCrewIndex >= currentCrewArray.length) currentCrewIndex = 0;
         if (currentCrewIndex < 0) currentCrewIndex = currentCrewArray.length - 1;
 
-        // 5. Cập nhật nội dung
         updateLbContent();
     }
 
-    // Đóng Lightbox
     function closeLightbox(e) {
         if (!e || e.target === lightbox || e.target.classList.contains('lightbox-close')) {
             lightbox.style.display = "none";
-            document.body.style.overflow = "auto";
+            unlockBodyScroll(); // Mở khóa cuộn nền
             lightboxImg.src = ""; 
         }
     }
     
-    // Hỗ trợ phím mũi tên trái/phải (Desktop)
     document.addEventListener('keydown', function(e) {
         if (lightbox.style.display === "flex" && lbNext.style.display === 'block') {
             if (e.key === "ArrowLeft") changeLbSlide(-1, e);
@@ -1360,14 +1345,31 @@
     });
 
     /* =========================================================== */
-    /* --- TÍNH NĂNG VUỐT (SWIPE) CHO MOBILE --- */
+    /* --- TÍNH NĂNG VUỐT (SWIPE) + CHẶN CUỘN NỀN --- */
     /* =========================================================== */
     
     let touchStartX = 0;
     let touchEndX = 0;
+    let touchStartY = 0;
 
     function handleTouchStart(e) {
         touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    }
+
+    function handleTouchMove(e) {
+        // Đây là hàm QUAN TRỌNG NHẤT để chặn nền bị trôi
+        
+        // 1. Nếu người dùng đang chạm vào phần Chữ (Caption) -> Cho phép cuộn (để đọc chữ dài)
+        if (e.target.closest('.lb-caption')) {
+            return; // Thoát ra, không chặn
+        }
+
+        // 2. Nếu chạm vào Ảnh hoặc Nền đen -> CHẶN TUYỆT ĐỐI
+        // preventDefault() sẽ bảo trình duyệt: "Đừng cuộn trang web, để yên đấy!"
+        if (e.cancelable) {
+            e.preventDefault(); 
+        }
     }
 
     function handleTouchEnd(e) {
@@ -1376,29 +1378,28 @@
     }
 
     function handleSwipeGesture() {
-        // Ngưỡng vuốt: Phải vuốt ít nhất 50px mới tính
         const SWIPE_THRESHOLD = 50; 
-        
-        // Vuốt sang Trái (Muốn xem ảnh tiếp theo -> Next)
         if (touchStartX - touchEndX > SWIPE_THRESHOLD) {
-            changeLbSlide(1);
+            changeLbSlide(1); // Vuốt trái -> Next
         }
-        
-        // Vuốt sang Phải (Muốn xem ảnh trước đó -> Prev)
         if (touchEndX - touchStartX > SWIPE_THRESHOLD) {
-            changeLbSlide(-1);
+            changeLbSlide(-1); // Vuốt phải -> Prev
         }
     }
 
     function enableSwipe() {
-        // Lắng nghe trên toàn bộ overlay lightbox để dễ vuốt
+        // start và end dùng passive: true cho mượt
         lightbox.addEventListener('touchstart', handleTouchStart, {passive: true});
         lightbox.addEventListener('touchend', handleTouchEnd, {passive: true});
+        
+        // move BẮT BUỘC phải dùng passive: false để dùng được preventDefault (chặn cuộn)
+        lightbox.addEventListener('touchmove', handleTouchMove, {passive: false});
     }
 
     function disableSwipe() {
         lightbox.removeEventListener('touchstart', handleTouchStart);
         lightbox.removeEventListener('touchend', handleTouchEnd);
+        lightbox.removeEventListener('touchmove', handleTouchMove);
     }
 </script>
 
