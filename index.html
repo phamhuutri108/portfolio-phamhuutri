@@ -2091,7 +2091,7 @@
 
 <script>
     /* ============================================================= */
-    /* --- HỆ THỐNG XỬ LÝ CREW: FIX LỖI KÉO BỊ NHẦM LÀ CLICK --- */
+    /* --- HỆ THỐNG XỬ LÝ CREW: FIX LỖI NHẢY & QUÁ NHẠY MOBILE --- */
     /* ============================================================= */
     
     function initCrewSystem() {
@@ -2103,7 +2103,7 @@
 
             const cards = Array.from(slider.querySelectorAll('.crew-card'));
             
-            // Biến kiểm tra xem người dùng đang Click hay đang Kéo
+            // Biến kiểm tra kéo/click
             let isDragging = false;
             let startDragX = 0;
 
@@ -2113,7 +2113,9 @@
                 let closest = null;
                 let minDistance = Infinity;
 
-                cards.forEach(card => {
+                // Dùng vòng lặp tối ưu để tìm thẻ gần tâm nhất
+                for (let i = 0; i < cards.length; i++) {
+                    const card = cards[i];
                     const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
                     const distance = Math.abs(centerPoint - cardCenter);
                     
@@ -2121,34 +2123,42 @@
                         minDistance = distance;
                         closest = card;
                     }
-                    card.classList.remove('active');
-                });
+                }
 
-                if (closest) closest.classList.add('active');
+                // Cập nhật class active (chỉ thay đổi khi cần thiết để đỡ giật)
+                cards.forEach(card => {
+                    if (card === closest) {
+                        if (!card.classList.contains('active')) card.classList.add('active');
+                    } else {
+                        if (card.classList.contains('active')) card.classList.remove('active');
+                    }
+                });
             };
 
-            // --- 2. LẮNG NGHE SỰ KIỆN CUỘN ---
-            let isScrolling;
+            // --- 2. LẮNG NGHE SỰ KIỆN CUỘN (TỐI ƯU HÓA) ---
+            // Thay vì setTimeout, ta dùng requestAnimationFrame để mượt theo màn hình
+            let ticking = false;
+            
             slider.addEventListener('scroll', () => {
-                window.clearTimeout(isScrolling);
-                updateActiveState(); 
-                isScrolling = setTimeout(updateActiveState, 60);
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        updateActiveState();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
             }, { passive: true });
 
-            // --- 3. LOGIC CLICK THÔNG MINH (ĐÃ FIX LỖI KÉO THẢ) ---
+            // --- 3. LOGIC CLICK THÔNG MINH ---
             cards.forEach(card => {
                 card.addEventListener('click', (e) => {
-                    // QUAN TRỌNG: Nếu cờ isDragging đang bật -> Dừng ngay, không làm gì cả
                     if (isDragging) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        return; 
+                        e.preventDefault(); e.stopPropagation(); return; 
                     }
 
-                    // Nếu là Click thật thì chạy logic cũ
                     if (!card.classList.contains('active')) {
-                        e.preventDefault();
-                        e.stopPropagation(); 
+                        e.preventDefault(); e.stopPropagation(); 
+                        // Cuộn mượt khi click (JS scroll vẫn cần smooth)
                         card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                     } 
                     else {
@@ -2158,49 +2168,44 @@
                 });
             });
 
-            // --- 4. HỖ TRỢ KÉO THẢ (DRAG) & PHÁT HIỆN CLICK ---
+            // --- 4. HỖ TRỢ KÉO THẢ (DRAG) TRÊN DESKTOP ---
+            // (Đã chặn xung đột với Touch của mobile)
             let isDown = false;
             let startX;
             let scrollLeft;
 
             slider.addEventListener('mousedown', (e) => {
                 isDown = true;
-                isDragging = false; // Reset trạng thái kéo
-                startDragX = e.pageX; // Lưu vị trí bắt đầu bấm
-                
+                isDragging = false;
+                startDragX = e.pageX;
                 slider.classList.add('active');
                 startX = e.pageX - slider.offsetLeft;
                 scrollLeft = slider.scrollLeft;
-                slider.style.scrollSnapType = 'none'; 
-            });
-
-            slider.addEventListener('mouseleave', () => {
-                isDown = false;
-                slider.classList.remove('active');
-                slider.style.scrollSnapType = 'x mandatory'; 
-                // Khi chuột rời đi, reset luôn cờ drag để an toàn
-                setTimeout(() => { isDragging = false; }, 50); 
-            });
-
-            slider.addEventListener('mouseup', () => {
-                isDown = false;
-                slider.classList.remove('active');
-                slider.style.scrollSnapType = 'x mandatory'; 
                 
-                // Đặt một timeout nhỏ để đảm bảo sự kiện click (nếu có) bị chặn kịp thời
-                // sau đó mới reset biến isDragging về false
-                setTimeout(() => { isDragging = false; }, 50); 
+                // Khi bắt đầu kéo bằng chuột, tắt snap để không bị khựng
+                slider.style.scrollSnapType = 'none'; 
+                slider.style.scrollBehavior = 'auto';
             });
+
+            const stopDragging = () => {
+                if (!isDown) return;
+                isDown = false;
+                slider.classList.remove('active');
+                
+                // Bật lại snap khi thả chuột ra
+                slider.style.scrollSnapType = 'x mandatory'; 
+                // Delay reset cờ drag để tránh click nhầm
+                setTimeout(() => { isDragging = false; }, 50); 
+            };
+
+            slider.addEventListener('mouseleave', stopDragging);
+            slider.addEventListener('mouseup', stopDragging);
 
             slider.addEventListener('mousemove', (e) => {
                 if (!isDown) return;
                 e.preventDefault();
                 
-                // --- KIỂM TRA ĐỘ LỆCH ---
-                // Nếu chuột di chuyển quá 5 pixel thì mới tính là KÉO
-                if (Math.abs(e.pageX - startDragX) > 5) {
-                    isDragging = true; 
-                }
+                if (Math.abs(e.pageX - startDragX) > 5) isDragging = true; 
 
                 const x = e.pageX - slider.offsetLeft;
                 const walk = (x - startX) * 2; 
