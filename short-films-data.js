@@ -123,8 +123,8 @@ const filmsData = {
                 
                 <div class="crew-card">
                     <img 
-                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
-                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-pham-huu-tri.png" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-pham-huu-tri.png" 
                         data-name="Phạm Hữu Trí" 
                         data-role="Đạo diễn, Kịch bản & Dựng phim"
                     >
@@ -524,8 +524,8 @@ const filmsData = {
                 
                 <div class="crew-card">
                     <img 
-                        src="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
-                        data-full="https://ik.imagekit.io/phamhuutri108/tri_portrait_b&w_3.jpg" 
+                        src="https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-pham-huu-tri.png" 
+                        data-full="https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-pham-huu-tri.png" 
                         data-name="Phạm Hữu Trí" 
                         data-role="Director, Screenwriter & Editor"
                     >
