@@ -73,7 +73,8 @@ const filmsData = {
 
                 <li><b>Trợ lý sản xuất:</b> Khương Ngọc, Vương Linh</li>
 
-                <li><b>Sản xuất hậu kỳ:</b> Thục Mai</li>
+                <li><b>Sản xuất hậu kỳ:</b> Thục Mai, Thảo Quiêng</li>
+                <li><b>Giám sát hậu kỳ:</b> Văn Ngọc Thành</li>
                 <li><b>Dựng phim:</b> Phạm Hữu Trí</li>
                 <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
@@ -143,7 +144,8 @@ const filmsData = {
 
                 <li><b>Production Assistant:</b> Khương Ngọc, Vương Linh</li>
 
-                <li><b>Post-Production:</b> Thục Mai</li>
+                <li><b>Post-Production:</b> Thục Mai, Thảo Quiêng</li>
+                <li><b>Post-Production Supervisor:</b> Văn Ngọc Thành</li>
                 <li><b>Editor:</b> Phạm Hữu Trí</li>
                 <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Music Composer:</b> Huy Đẹp Trai</li>
@@ -175,7 +177,7 @@ const filmsData = {
             { name: "Tô Anh Khoa", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét", en: "Focus Puller" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             
             { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ruby.png" },
             { name: "Nicholas Nguyễn", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
@@ -184,7 +186,7 @@ const filmsData = {
             
 
             { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
 
 
             { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
