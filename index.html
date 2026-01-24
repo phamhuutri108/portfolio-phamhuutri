@@ -2001,129 +2001,119 @@
 
 <script>
     /* ============================================================= */
-    /* --- HỆ THỐNG XỬ LÝ CREW: KÉO THẢ + FOCUS + CLICK TO CENTER --- */
+    /* --- HỆ THỐNG XỬ LÝ CREW: CSS-SNAP DRIVEN (SIÊU NHẸ) --- */
     /* ============================================================= */
-
-    let isGlobalDragging = false; 
-
+    
     function initCrewSystem() {
         const sliders = document.querySelectorAll('.crew-scroller');
 
         sliders.forEach(slider => {
-            if (slider.dataset.hasLogic) return;
-            slider.dataset.hasLogic = "true";
+            if (slider.dataset.init === "true") return;
+            slider.dataset.init = "true";
 
+            const cards = Array.from(slider.querySelectorAll('.crew-card'));
+            
+            // --- 1. HÀM TÌM THẺ GIỮA (VISUAL ONLY) ---
+            // Chỉ dùng để gán class .active, không can thiệp vào cuộn
+            const updateActiveState = () => {
+                const centerPoint = slider.scrollLeft + (slider.offsetWidth / 2);
+                let closest = null;
+                let minDistance = Infinity;
+
+                cards.forEach(card => {
+                    // Tính tâm thẻ
+                    const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                    const distance = Math.abs(centerPoint - cardCenter);
+                    
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        closest = card;
+                    }
+                    card.classList.remove('active');
+                });
+
+                if (closest) closest.classList.add('active');
+            };
+
+            // --- 2. LẮNG NGHE SỰ KIỆN CUỘN ---
+            // Dùng throttle nhẹ để không bị giật
+            let isScrolling;
+            slider.addEventListener('scroll', () => {
+                window.clearTimeout(isScrolling);
+                // Cập nhật ngay lập tức để hiệu ứng mượt
+                updateActiveState(); 
+                
+                // Sau khi dừng cuộn hẳn, đảm bảo snap đúng (Backup)
+                isScrolling = setTimeout(updateActiveState, 60);
+            }, { passive: true });
+
+            // --- 3. CLICK ĐỂ CHỌN ---
+            cards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    // Nếu chưa active thì cuộn nó ra giữa
+                    if (!card.classList.contains('active')) {
+                        e.preventDefault();
+                        card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                    }
+                });
+            });
+
+            // --- 4. HỖ TRỢ KÉO THẢ (DRAG TO SCROLL) ---
             let isDown = false;
             let startX;
             let scrollLeft;
-            let velX = 0;
-            let animationID;
 
-            // --- 1. LOGIC KÉO THẢ (DRAG) ---
             slider.addEventListener('mousedown', (e) => {
                 isDown = true;
-                isGlobalDragging = false;
-                slider.classList.add('is-dragging');
+                slider.classList.add('active'); // Đổi con trỏ chuột
                 startX = e.pageX - slider.offsetLeft;
                 scrollLeft = slider.scrollLeft;
-                cancelAnimationFrame(animationID);
+                // Tạm tắt snap khi đang kéo để không bị khựng
+                slider.style.scrollSnapType = 'none'; 
             });
 
-            const stopDragging = () => {
-                if (!isDown) return;
+            slider.addEventListener('mouseleave', () => {
                 isDown = false;
-                slider.classList.remove('is-dragging');
-                
-                function inertia() {
-                    if (Math.abs(velX) > 0.5) {
-                        slider.scrollLeft -= velX;
-                        velX *= 0.95; 
-                        animationID = requestAnimationFrame(inertia);
-                    } else {
-                        slider.style.scrollBehavior = 'smooth';
-                    }
-                }
-                inertia();
-                
-                setTimeout(() => { isGlobalDragging = false; }, 50);
-            };
+                slider.classList.remove('active');
+                slider.style.scrollSnapType = 'x mandatory'; // Bật lại snap
+            });
 
-            slider.addEventListener('mouseleave', stopDragging);
-            slider.addEventListener('mouseup', stopDragging);
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.classList.remove('active');
+                slider.style.scrollSnapType = 'x mandatory'; // Bật lại snap
+            });
 
             slider.addEventListener('mousemove', (e) => {
                 if (!isDown) return;
                 e.preventDefault();
                 const x = e.pageX - slider.offsetLeft;
-                const walk = (x - startX) * 1; 
-                if (Math.abs(x - startX) > 5) isGlobalDragging = true;
-                const prevScrollLeft = slider.scrollLeft;
+                const walk = (x - startX) * 2; // Tốc độ kéo
                 slider.scrollLeft = scrollLeft - walk;
-                velX = slider.scrollLeft - prevScrollLeft;
             });
 
-            // --- 2. LOGIC CLICK-TO-CENTER (CẬP NHẬT MỚI: CHUẨN XÁC 100%) ---
-            const cards = slider.querySelectorAll('.crew-card');
-            cards.forEach(card => {
-                card.addEventListener('click', (e) => {
-                    if (isGlobalDragging) {
-                        e.preventDefault(); e.stopPropagation(); return;
-                    }
-
-                    // Nếu thẻ đã active (ở giữa) -> Mở Lightbox
-                    if (card.classList.contains('active')) return;
-
-                    // Nếu thẻ ở rìa -> Lướt vào giữa
-                    e.preventDefault();
-                    
-                    // SỬ DỤNG HÀM CĂN GIỮA CỦA TRÌNH DUYỆT (Chính xác tuyệt đối)
-                    card.scrollIntoView({ 
-                        behavior: 'smooth', 
-                        inline: 'center',  // Căn giữa theo chiều ngang
-                        block: 'nearest'   // Giữ nguyên chiều dọc, không bị nhảy trang
-                    });
-                });
-            });
-
-            // --- 3. LOGIC FOCUS ---
-            const handleScroll = () => {
-                if (slider.classList.contains('is-dragging')) return;
-
-                // Tính tâm màn hình chính xác
-                const centerPoint = slider.scrollLeft + (slider.offsetWidth / 2);
-                let closestCard = null;
-                let minDistance = Infinity;
-
-                cards.forEach(card => {
-                    // Tính tâm thẻ (bao gồm cả margin lệch nếu có)
-                    const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
-                    const distance = Math.abs(centerPoint - cardCenter);
-
-                    if (distance < minDistance) {
-                        minDistance = distance;
-                        closestCard = card;
-                    }
-                    card.classList.remove('active');
-                });
-
-                if (closestCard) closestCard.classList.add('active');
-            };
-
-            slider.addEventListener('scroll', handleScroll);
-            setTimeout(handleScroll, 100);
+            // Chạy lần đầu tiên
+            updateActiveState();
         });
     }
 
+    // --- TỰ ĐỘNG KHỞI TẠO ---
     const observer = new MutationObserver((mutations) => {
-        let shouldUpdate = false;
-        mutations.forEach((mutation) => {
-            if (mutation.addedNodes.length) shouldUpdate = true;
-        });
-        if (shouldUpdate && document.querySelector('.crew-scroller')) {
-            initCrewSystem();
+        if (document.querySelector('.crew-scroller')) {
+            // Delay nhỏ để CSS load xong kích thước
+            setTimeout(initCrewSystem, 100);
         }
     });
     observer.observe(document.body, { childList: true, subtree: true });
+
+    document.addEventListener("DOMContentLoaded", initCrewSystem);
+
+    // --- XỬ LÝ XOAY MÀN HÌNH (RESIZE) ---
+    // Chỉ cần cập nhật lại class active, CSS Scroll Snap sẽ tự giữ vị trí
+    window.addEventListener('resize', () => {
+        const sliders = document.querySelectorAll('.crew-scroller');
+        sliders.forEach(slider => slider.dispatchEvent(new Event('scroll')));
+    });
 
 </script>
 

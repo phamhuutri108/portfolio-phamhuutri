@@ -1629,91 +1629,96 @@ body.mode-vi .content-en {
 
 
 
-/* --- STYLE 3: REFINED FOCUS (CÓ HỖ TRỢ KÉO THẢ) --- */
+/* ================================================================= */
+/* --- STYLE CREW: CĂN GIỮA CHUẨN XÁC (MARGIN SPACER FIX) --- */
+/* ================================================================= */
 
-/* --- KHUNG CHỨA TỔNG --- */
 .crew-scroller-container {
     width: 100%;
     margin: 40px 0;
-    overflow: hidden; 
     position: relative;
 }
 
-/* --- THANH TRƯỢT (Đã chỉnh lại chiều cao và căn giữa cho thẻ to) --- */
-/* --- TRONG FILE STYLE.CSS --- */
-
+/* --- 1. CẤU HÌNH THANH TRƯỢT --- */
 .crew-scroller {
     display: flex;
     overflow-x: auto;
-    
-    /* CŨ: padding: 0 calc(50% - 110px); -> BỊ LỆCH 10PX */
-    /* MỚI: Trừ thêm 10px margin nữa để vào chuẩn tâm */
-    padding: 0 calc(50% - 120px); 
-    
-    /* Các thuộc tính khác giữ nguyên */
-    height: 480px; 
+    overflow-y: hidden;
+    height: 480px;
     align-items: center;
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
+    
+    /* Bắt buộc trình duyệt tự căn giữa */
     scroll-snap-type: x mandatory; 
     scroll-behavior: smooth;
+    
+    /* XÓA BỎ PADDING CŨ ĐỂ TRÁNH LỖI TÍNH TOÁN */
+    padding: 0; 
+    
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
     cursor: grab; 
-    cursor: -webkit-grab;
+}
+.crew-scroller:active { cursor: grabbing; }
+.crew-scroller::-webkit-scrollbar { display: none; }
+
+/* --- 2. CẤU HÌNH THẺ (DESKTOP: 220px) --- */
+.crew-card {
+    flex: 0 0 220px;
+    width: 220px;
+    
+    /* Margin chuẩn cho các thẻ ở giữa */
+    margin: 0 15px; 
+    
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    
+    opacity: 0.5;
+    transform: scale(0.9);
+    filter: grayscale(100%);
+    transition: all 0.4s ease-out;
+    will-change: transform, opacity;
 }
 
-/* --- THẺ THÀNH VIÊN (Về kích thước gốc) --- */
-.crew-card {
-    /* Khôi phục kích thước 220px */
-    flex: 0 0 220px; 
-    width: 220px;    
-    
-    margin: 0 10px; /* Tăng khoảng cách ra cho thoáng */
-    scroll-snap-align: center;
-    
-    opacity: 0.6;          
-    transform: scale(0.9); 
-    filter: grayscale(100%); 
-    transition: all 0.4s ease;
-    user-select: none;
-    -webkit-user-select: none;
+/* --- QUAN TRỌNG: CĂN GIỮA THẺ ĐẦU VÀ THẺ CUỐI --- */
+/* Công thức đúng: 50% màn hình - 1 nửa độ rộng thẻ (110px) */
+/* Không trừ thêm margin 15px nữa để tránh bị lệch trái */
+
+.crew-card:first-child {
+    margin-left: calc(50% - 110px); 
+}
+
+.crew-card:last-child {
+    margin-right: calc(50% - 110px); 
 }
 
 .crew-card img {
-    width: 100%; 
-    aspect-ratio: 3 / 4; /* Vẫn giữ tỷ lệ 3:4 chuẩn */
+    width: 100%;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     display: block;
     border-radius: 4px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-    pointer-events: none; /* Quan trọng để kéo thả mượt */
-}
-
-/* --- THÔNG TIN CHỮ (To lên lại) --- */
-.crew-info {
-    margin-top: 20px; /* Cách xa ảnh một chút */
-    text-align: center;
-    opacity: 0.5; 
-    transform: none; 
-    transition: all 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     pointer-events: none; 
 }
 
+/* --- 3. THÔNG TIN CHỮ --- */
+.crew-info {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0; 
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
 .crew-role { 
-    font-size: 10px; /* Về lại 10px */
-    color: #666; 
-    margin-bottom: 5px; 
-    letter-spacing: 1px;
+    font-size: 11px; color: #666; margin-bottom: 5px; 
+    text-transform: none; letter-spacing: 0.5px;
 }
-
 .crew-name { 
-    font-size: 14px; /* Về lại 14px */
-    font-weight: bold; 
-    color: #000; 
-    line-height: 1.4;
-    text-transform: uppercase;
+    font-size: 15px; font-weight: bold; color: #000; text-transform: uppercase;
 }
 
-/* --- GIỮ NGUYÊN TRẠNG THÁI ACTIVE --- */
+/* --- 4. TRẠNG THÁI ACTIVE --- */
 .crew-card.active {
     opacity: 1;
     transform: scale(1.1); 
@@ -1723,27 +1728,46 @@ body.mode-vi .content-en {
 
 .crew-card.active .crew-info {
     opacity: 1;
-    transform: translateY(5px);
+    transform: translateY(0);
 }
 
-/* ACTIVE STATE */
-.crew-card.active {
-    opacity: 1;
-    transform: scale(1.1); 
-    filter: grayscale(0%);
-    z-index: 10;
-}
-
-.crew-card.active .crew-info {
-    opacity: 1;
-    transform: translateY(5px);
-}
 .crew-card.active img {
-    pointer-events: auto; /* Active rồi mới cho bấm vào ảnh để xem Lightbox */
+    pointer-events: auto; 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-.crew-role { font-size: 10px; color: #666; text-transform: none; margin-bottom: 5px; }
-.crew-name { font-size: 14px; font-weight: bold; color: #000; }
+/* ================================================================= */
+/* --- MOBILE RESPONSIVE (MÀN HÌNH NHỎ) --- */
+/* ================================================================= */
+@media (max-width: 768px) {
+    
+    .crew-scroller {
+        height: 400px; 
+    }
+
+    .crew-card {
+        /* Kích thước nhỏ hơn: 180px */
+        flex: 0 0 180px; 
+        width: 180px;
+        margin: 0 10px; 
+    }
+    
+    /* CĂN GIỮA MOBILE: 50% - 90px (Một nửa của 180px) */
+    .crew-card:first-child {
+        margin-left: calc(50% - 90px); 
+    }
+
+    .crew-card:last-child {
+        margin-right: calc(50% - 90px); 
+    }
+    
+    .crew-info {
+        opacity: 0.3; 
+        margin-top: 15px;
+    }
+    .crew-card.active .crew-info { opacity: 1; }
+    .crew-name { font-size: 14px; }
+}
 
 
 
