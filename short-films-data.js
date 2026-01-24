@@ -189,7 +189,7 @@ const filmsData = {
             { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
 
 
-            { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-minh-thao.png" },
             { name: "Bia Huyền", role: { vi: "Hóa trang", en: "Make-up Artist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-bia-huyen.png" },
             { name: "Hồ Minh Khoa", role: { vi: "Thư ký trường quay", en: "Script Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             
