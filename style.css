@@ -7,6 +7,7 @@ body {
     color: #111;
     background-color: #fff;
     line-height: 1.6;
+    overflow-x: hidden;
 
     /* --- THÊM ĐOẠN NÀY ĐỂ CHẶN BÔI ĐEN --- */
     -webkit-user-select: none; /* Safari / Chrome */
@@ -188,8 +189,10 @@ a:hover {color: #0033cc !important;}
 .content { 
     flex-grow: 1; 
     padding: 40px 60px; /* Tăng padding một chút cho thoáng */
-    width: 100%; /* Chiếm hết không gian còn lại */
+    width: auto; /* Chiếm hết không gian còn lại */
     /* Xóa dòng max-width cũ đi */
+    min-width: 0; 
+    max-width: 100%;
 }
 
 .page-section { 
@@ -1629,17 +1632,16 @@ body.mode-vi .content-en {
 
 
 
-/* ================================================================= */
-/* --- STYLE CREW: CĂN GIỮA CHUẨN XÁC (MARGIN SPACER FIX) --- */
-/* ================================================================= */
+/* --- STYLE CREW: CĂN GIỮA CHUẨN XÁC --- */
 
 .crew-scroller-container {
     width: 100%;
     margin: 40px 0;
     position: relative;
+    /* Đảm bảo container không bị tràn layout */
+    max-width: 100%; 
 }
 
-/* --- 1. CẤU HÌNH THANH TRƯỢT --- */
 .crew-scroller {
     display: flex;
     overflow-x: auto;
@@ -1647,28 +1649,32 @@ body.mode-vi .content-en {
     height: 480px;
     align-items: center;
     
-    /* Bắt buộc trình duyệt tự căn giữa */
+    /* Logic Snap chuẩn */
     scroll-snap-type: x mandatory; 
     scroll-behavior: smooth;
     
-    /* XÓA BỎ PADDING CŨ ĐỂ TRÁNH LỖI TÍNH TOÁN */
     padding: 0; 
     
+    /* Ẩn thanh cuộn */
     scrollbar-width: none; 
     -ms-overflow-style: none;
+    
+    /* Cấu hình chuột */
     cursor: grab; 
+    user-select: none; /* Chặn bôi đen khi kéo */
+    -webkit-user-select: none;
 }
+
 .crew-scroller:active { cursor: grabbing; }
 .crew-scroller::-webkit-scrollbar { display: none; }
 
-/* --- 2. CẤU HÌNH THẺ (DESKTOP: 220px) --- */
 .crew-card {
+    /* Desktop: 220px */
     flex: 0 0 220px;
     width: 220px;
-    
-    /* Margin chuẩn cho các thẻ ở giữa */
     margin: 0 15px; 
     
+    /* Bắt buộc điểm giữa của thẻ phải khớp với điểm giữa màn hình */
     scroll-snap-align: center;
     scroll-snap-stop: always;
     
@@ -1677,16 +1683,15 @@ body.mode-vi .content-en {
     filter: grayscale(100%);
     transition: all 0.4s ease-out;
     will-change: transform, opacity;
+    
+    /* Quan trọng: Để thẻ div nhận click, không bị img chặn */
+    position: relative;
 }
 
-/* --- QUAN TRỌNG: CĂN GIỮA THẺ ĐẦU VÀ THẺ CUỐI --- */
-/* Công thức đúng: 50% màn hình - 1 nửa độ rộng thẻ (110px) */
-/* Không trừ thêm margin 15px nữa để tránh bị lệch trái */
-
+/* CĂN GIỮA ITEM ĐẦU VÀ CUỐI (Logic toán học chuẩn) */
 .crew-card:first-child {
     margin-left: calc(50% - 110px); 
 }
-
 .crew-card:last-child {
     margin-right: calc(50% - 110px); 
 }
@@ -1698,10 +1703,11 @@ body.mode-vi .content-en {
     display: block;
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    /* Cho phép click xuyên qua ảnh để JS bắt sự kiện ở thẻ cha .crew-card */
     pointer-events: none; 
 }
 
-/* --- 3. THÔNG TIN CHỮ --- */
+/* Thông tin chữ */
 .crew-info {
     margin-top: 20px;
     text-align: center;
@@ -1718,53 +1724,36 @@ body.mode-vi .content-en {
     font-size: 15px; font-weight: bold; color: #000; text-transform: uppercase;
 }
 
-/* --- 4. TRẠNG THÁI ACTIVE --- */
+/* Trạng thái Active */
 .crew-card.active {
     opacity: 1;
     transform: scale(1.1); 
     filter: grayscale(0%);
     z-index: 10;
 }
-
 .crew-card.active .crew-info {
     opacity: 1;
     transform: translateY(0);
 }
-
 .crew-card.active img {
-    pointer-events: auto; 
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* ================================================================= */
-/* --- MOBILE RESPONSIVE (MÀN HÌNH NHỎ) --- */
-/* ================================================================= */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-    
-    .crew-scroller {
-        height: 400px; 
-    }
+    .crew-scroller { height: 400px; }
 
     .crew-card {
-        /* Kích thước nhỏ hơn: 180px */
         flex: 0 0 180px; 
         width: 180px;
         margin: 0 10px; 
     }
     
-    /* CĂN GIỮA MOBILE: 50% - 90px (Một nửa của 180px) */
-    .crew-card:first-child {
-        margin-left: calc(50% - 90px); 
-    }
-
-    .crew-card:last-child {
-        margin-right: calc(50% - 90px); 
-    }
+    /* 50% màn hình - 90px (nửa chiều rộng thẻ mobile) */
+    .crew-card:first-child { margin-left: calc(50% - 90px); }
+    .crew-card:last-child { margin-right: calc(50% - 90px); }
     
-    .crew-info {
-        opacity: 0.3; 
-        margin-top: 15px;
-    }
+    .crew-info { opacity: 0.3; margin-top: 15px; }
     .crew-card.active .crew-info { opacity: 1; }
     .crew-name { font-size: 14px; }
 }
@@ -1783,72 +1772,134 @@ body.mode-vi .content-en {
 
 
 
-/* --- BỔ SUNG LIGHTBOX STYLES (NAV & CAPTION) --- */
+/* --- BỔ SUNG LIGHTBOX STYLES (NAV & CAPTION) - ĐÃ FIX 3:4 RATIO --- */
 
-/* 1. Căn chỉnh vị trí nội dung */
+/* 1. Căn chỉnh vị trí nội dung (WRAPPER) */
 .lb-content-wrapper {
     position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 90%;
-    max-height: 90%;
+    flex-direction: column; /* Xếp dọc: Ảnh trên, Chữ dưới */
+    align-items: center;    /* Căn giữa ngang */
+    justify-content: center; /* Căn giữa dọc */
+    
+    /* Giới hạn khung bao để không bao giờ tràn màn hình */
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Để click xuyên qua vùng trống đóng lightbox */
 }
 
-/* 2. Nút điều hướng (Mũi tên trái phải) */
+/* 2. Ảnh bên trong Wrapper (Logic 3:4 Chuẩn) */
+.lb-content-wrapper img {
+    pointer-events: auto; /* Bật lại click cho ảnh */
+    display: block;
+    
+    /* --- LOGIC TỈ LỆ 3:4 (QUAN TRỌNG) --- */
+    aspect-ratio: 3 / 4;  /* Bắt buộc khung ảnh luôn là hình chữ nhật đứng 3:4 */
+    object-fit: cover;    /* Cắt ảnh gọn gàng vào khung 3:4 mà không bị méo */
+    
+    /* --- KÍCH THƯỚC TRÊN DESKTOP --- */
+    /* Chiều cao max 75% màn hình để chừa 25% cho chữ bên dưới */
+    height: 65vh; 
+    width: auto; /* Chiều rộng tự tính theo tỉ lệ 3:4 */
+    
+    /* Đảm bảo chiều rộng không bao giờ quá to (dành cho màn hình ngang siêu rộng) */
+    max-width: 90vw; 
+    
+    margin: 0 auto;
+    border-radius: 4px; /* Bo góc nhẹ cho giống Crew Card bên ngoài */
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5); 
+    border: 2px solid #fff;
+}
+
+/* 3. Phần chú thích (Tên & Vai trò) */
+.lb-caption {
+    margin-top: 15px; /* Cách ảnh một đoạn */
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 0.5s ease;
+    pointer-events: auto;
+    
+    /* Đảm bảo chữ luôn nằm gọn dưới ảnh */
+    width: 100%;
+    max-width: 600px; 
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.lb-caption h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.lb-caption p {
+    font-size: 14px;
+    font-family: 'Georgia', serif; 
+    color: #ddd; 
+    font-style: italic;
+}
+
+/* 4. Nút điều hướng (Mũi tên trái phải) */
 .lb-nav-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: rgba(255, 255, 255, 0.6); /* Màu trắng mờ */
-    font-size: 40px;
+    color: rgba(255, 255, 255, 0.4); 
+    font-size: 50px; 
     padding: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10000;
     user-select: none;
+    outline: none;
 }
 
 .lb-nav-btn:hover {
-    color: #fff; /* Sáng lên khi rê chuột */
-    transform: translateY(-50%) scale(1.2); /* Phóng to nhẹ */
+    color: #fff; 
+    transform: translateY(-50%) scale(1.1); 
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 
-/* Định vị nút Trái - Phải */
-#lb-prev { left: 20px; }
-#lb-next { right: 20px; }
+#lb-prev { left: 30px; }
+#lb-next { right: 30px; }
 
-/* 3. Phần chú thích (Tên & Vai trò) */
-.lb-caption {
-    margin-top: 15px;
-    text-align: center;
-    color: #fff;
-    animation: fadeIn 0.5s ease;
-}
-
-.lb-caption h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.lb-caption p {
-    font-size: 12px;
-    font-family: 'Georgia', serif; /* Font chữ nghệ thuật */
-    color: #ccc; /* Màu xám bạc sang trọng */
-}
-
-/* Responsive trên điện thoại */
+/* --- MOBILE RESPONSIVE (ĐIỆN THOẠI) --- */
 @media (max-width: 768px) {
-    .lb-nav-btn {
-        font-size: 30px;
-        padding: 10px;
+    /* --- TỐI ƯU CHO ĐIỆN THOẠI --- */
+    .lb-content-wrapper img {
+        /* Giảm chiều cao xuống còn 60% màn hình để không bị che bởi thanh địa chỉ */
+        height: 60vh; 
+        
+        /* Giới hạn chiều rộng để không chạm mép màn hình điện thoại */
+        max-width: 85vw; 
     }
-    #lb-prev { left: 5px; }
-    #lb-next { right: 5px; }
+
+    .lb-caption { margin-top: 15px; }
+    .lb-caption h3 { font-size: 16px; margin-bottom: 2px; }
+    .lb-caption p { font-size: 13px; }
+
+    /* Nút bấm nhỏ lại và có nền mờ để dễ thấy trên ảnh */
+    .lb-nav-btn {
+        font-size: 24px;
+        padding: 0;
+        width: 40px; height: 40px;
+        background: rgba(0,0,0,0.3);
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+    }
+    
+    #lb-prev { left: 10px; }
+    #lb-next { right: 10px; }
 }
+
+
+
+
+
+
+
