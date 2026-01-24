@@ -165,7 +165,7 @@ const filmsData = {
             { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-thuc-mai.png" },
             { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
             
-            { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-nguyen-tung-lam.png" },
             
             { name: "Dzuy Tom", role: { vi: "Thiết kế sản xuất", en: "Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-dzuy-tom.png" },
             { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-hoang-bao-uyen.png" },
@@ -191,7 +191,7 @@ const filmsData = {
 
             { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-minh-thao.png" },
             { name: "Bia Huyền", role: { vi: "Hóa trang", en: "Make-up Artist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-bia-huyen.png" },
-            { name: "Hồ Minh Khoa", role: { vi: "Thư ký trường quay", en: "Script Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Hồ Minh Khoa", role: { vi: "Thư ký trường quay", en: "Script Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ho-minh-khoa.jpeg" },
             
             { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-crister-nguyen.png" },
             { name: "Khương Ngọc", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ngoc-lao.png" },
