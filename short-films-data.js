@@ -144,7 +144,7 @@ const filmsData = {
 
                 <li><b>Production Assistant:</b> Khương Ngọc, Vương Linh</li>
 
-                <li><b>Post-Production:</b> Thục Mai, Thảo Quiêng</li>
+                <li><b>Post-Producer:</b> Thục Mai, Thảo Quiêng</li>
                 <li><b>Post-Production Supervisor:</b> Văn Ngọc Thành</li>
                 <li><b>Editor:</b> Phạm Hữu Trí</li>
                 <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
