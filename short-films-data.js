@@ -170,7 +170,7 @@ const filmsData = {
             { name: "Dzuy Tom", role: { vi: "Thiết kế sản xuất", en: "Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-dzuy-tom.png" },
             { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-hoang-bao-uyen.png" },
             
-            { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-quynh-sun.png" },
             { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-kon-lon.JPG" },
             
             
