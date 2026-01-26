@@ -611,7 +611,7 @@ const filmsData = {
             vi: "Gà Trống Nấu Cơm",
             en: "Cock's Cooking"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/GTNC_thumbnail.jpg",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/GTNC/GTNC_thumbnail.jpg",
         
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý<br>
@@ -668,7 +668,7 @@ const filmsData = {
             vi: "Khi Chúng Ta Được Sống",
             en: "Alive"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/Alive_thumbnail.jpg",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/ALIVE/Alive_thumbnail.jpg",
         
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý<br>
@@ -733,7 +733,7 @@ const filmsData = {
             vi: "Khi Thành Phố Lớn",
             en: "When My City Grows"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/KTPL_thumbnail.jpg",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KTPL/KTPL_thumbnail.jpg",
         
         vi: `
             <p>
