@@ -495,7 +495,7 @@ const filmsData = {
             vi: `"Con Ma" Muốn Sống`,
             en: `"The Ghost" Wants To Live`
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_thumbnail.png",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_thumbnail.png",
         
         vi: `
             <p>
@@ -530,23 +530,23 @@ const filmsData = {
             <h3>Behind The Scene</h3>
             
             <div class="gallery-wall">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_5.png" class="big">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_12.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_17.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_15.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_8.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_10.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_2.png" class="tall">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_14.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_4.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_16.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_11.png" class="tall">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_3.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_6.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_9.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_7.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_13.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_1.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_5.png" class="big">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_12.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_17.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_15.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_8.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_10.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_2.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_14.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_4.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_16.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_11.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_3.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_6.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_9.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_7.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_13.png" class="wide">
             </div>
 
 
@@ -581,23 +581,23 @@ const filmsData = {
             <h3>Behind The Scene</h3>
             
             <div class="gallery-wall">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_1.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_5.png" class="big">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_12.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_17.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_15.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_8.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_10.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_2.png" class="tall">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_14.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_4.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_16.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_11.png" class="tall">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_3.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_6.png" class="wide">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_9.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_7.png">
-                <img src="https://ik.imagekit.io/phamhuutri108/CMMS/CMMS_13.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_1.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_5.png" class="big">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_12.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_17.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_15.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_8.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_10.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_2.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_14.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_4.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_16.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_11.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_3.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_6.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_9.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_7.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_13.png" class="wide">
             </div>
 
 
