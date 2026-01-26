@@ -129,7 +129,7 @@ const filmsData = {
                 <li><b>Second Assistant Director:</b> Kon Lớn</li>
                 <li><b>Script Supervisor:</b> Hồ Minh Khoa</li>
 
-                <li><b>Gaffer:</b> Tô Anh Khoa</li>
+                <li><b>Gaffer:</b> Khoa Too</li>
                 <li><b>Assistant Camera:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
                 <li><b>Focus Puller:</b> Văn Ngọc Thành</li>
                 <li><b>Best boy:</b> Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
@@ -174,7 +174,7 @@ const filmsData = {
             { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-kon-lon.png" },
             
             { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
-            { name: "Tô Anh Khoa", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Khoa Too", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-to-anh-khoa.png" },
             { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
             { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
             
@@ -185,7 +185,7 @@ const filmsData = {
             { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-haibkk.png" },
             { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ruby.png" },
 
-            { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-huy-dep-trai.png" },
             { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
 
 
