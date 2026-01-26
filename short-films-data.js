@@ -163,7 +163,7 @@ const filmsData = {
             { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-pham-huu-tri.png" },
             
             { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-thuc-mai.jpg" },
-            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
             
             { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-nguyen-tung-lam.png" },
             
@@ -173,10 +173,10 @@ const filmsData = {
             { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-quynh-sun.png" },
             { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-kon-lon.JPG" },
             
-            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Tô Anh Khoa", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Tô Anh Khoa", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
             
             
             
@@ -185,8 +185,8 @@ const filmsData = {
             { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-haibkk.png" },
             { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ruby.png" },
 
-            { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
-            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
 
 
             { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-minh-thao.png" },
@@ -195,7 +195,7 @@ const filmsData = {
             
             { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-crister-nguyen.png" },
             { name: "Khương Ngọc", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ngoc-lao.png" },
-            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BU010082.JPG" },
+            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
             
         ],
 
