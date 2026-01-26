@@ -211,11 +211,12 @@ const filmsData = {
             { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010319.JPG" },
             { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010328.JPG" },
             { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010342.JPG", class: "big" },
-            { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010381.JPG", class: "tall" },
+            { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010381.JPG" },
             { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010395.JPG", class: "wide" },
             { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010412.JPG", class: "wide" },
             { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010417.JPG" },
-            { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010456.JPG", class: "wide" }
+            { src: "https://ik.imagekit.io/phamhuutri108/BODND/BU010456.JPG"},
+            { src: "https://ik.imagekit.io/phamhuutri108/BODND/IMG_20250710_151238.jpg", class: "wide"},
         ],
 
         // Giữ nguyên phần Behind The Scene bên dưới nếu có...

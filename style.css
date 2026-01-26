@@ -1797,12 +1797,13 @@ body.mode-vi .content-en {
     display: block;
     
     /* --- LOGIC TỈ LỆ 3:4 (QUAN TRỌNG) --- */
-    aspect-ratio: 3 / 4;  /* Bắt buộc khung ảnh luôn là hình chữ nhật đứng 3:4 */
-    object-fit: cover;    /* Cắt ảnh gọn gàng vào khung 3:4 mà không bị méo */
+   /* aspect-ratio: 3 / 4;  /* Bắt buộc khung ảnh luôn là hình chữ nhật đứng 3:4 */
+   /* object-fit: cover;    /* Cắt ảnh gọn gàng vào khung 3:4 mà không bị méo */
     
     /* --- KÍCH THƯỚC TRÊN DESKTOP --- */
     /* Chiều cao max 75% màn hình để chừa 25% cho chữ bên dưới */
-    height: 65vh; 
+    max-height: 65vh;
+    height: auto;
     width: auto; /* Chiều rộng tự tính theo tỉ lệ 3:4 */
     
     /* Đảm bảo chiều rộng không bao giờ quá to (dành cho màn hình ngang siêu rộng) */
@@ -1876,7 +1877,8 @@ body.mode-vi .content-en {
     /* --- TỐI ƯU CHO ĐIỆN THOẠI --- */
     .lb-content-wrapper img {
         /* Giảm chiều cao xuống còn 60% màn hình để không bị che bởi thanh địa chỉ */
-        height: 60vh; 
+        height: auto;
+        max-height: 60vh;
         
         /* Giới hạn chiều rộng để không chạm mép màn hình điện thoại */
         max-width: 85vw; 
