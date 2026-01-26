@@ -132,7 +132,7 @@ const filmsData = {
                 <li><b>Gaffer:</b> Khoa Too</li>
                 <li><b>Assistant Camera:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
                 <li><b>Focus Puller:</b> Văn Ngọc Thành</li>
-                <li><b>Best boy:</b> Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
+                <li><b>Best boy:</b> Nguyễn Trung Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
 
                 <li><b>Assistant Production Design:</b> Ruby</li>
                 <li><b>Set Design and Set Decorator:</b> Nicholas Nguyễn, Kaii Khải Hân, HaiBkk</li>
@@ -173,11 +173,11 @@ const filmsData = {
             { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-quynh-sun.png" },
             { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-kon-lon.png" },
             
-            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455123/crew-card-thanh_pcxpey.jpg" },
             { name: "Khoa Too", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-to-anh-khoa.png" },
             { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
-            { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
-            
+            { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455398/crew-card-hau_iype5a.jpg" },
+            { name: "Nguyễn Trung Hiếu", role: { vi: "Chuyên viên ánh sáng", en: "Best Boy" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455124/crew-card-hieu_vjkjsj.jpg" },
             
             
             { name: "Nicholas Nguyễn", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-nick.jpeg" },
@@ -185,7 +185,7 @@ const filmsData = {
             { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-haibkk.png" },
             { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ruby.png" },
 
-            { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-huy-dep-trai.png" },
+            { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455133/crew-card-huy-dep-trai_bh533e.jpg" },
             { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
 
 
@@ -195,7 +195,7 @@ const filmsData = {
             
             { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-crister-nguyen.png" },
             { name: "Khương Ngọc", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ngoc-lao.png" },
-            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455458/crew-card-vuong-linh_ahypg9.jpg" },
             
         ],
 
