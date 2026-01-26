@@ -8,7 +8,7 @@ const filmsData = {
             vi: "Ba Ơi, Đừng Nói Dối",
             en: "Dad, Don't Lie To Me"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg",
+        thumbnail: "-https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg",
         
         // Phần Text giới thiệu giữ nguyên, nhưng ĐÃ XÓA HTML CREW SCROLLER ở dưới cùng
         vi: `
@@ -163,7 +163,7 @@ const filmsData = {
             { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-pham-huu-tri.png" },
             
             { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-thuc-mai.jpg" },
-            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "-https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
             
             { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-nguyen-tung-lam.png" },
             
@@ -175,7 +175,7 @@ const filmsData = {
             
             { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455123/crew-card-thanh_pcxpey.jpg" },
             { name: "Khoa Too", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-to-anh-khoa.png" },
-            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "-https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
             { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455398/crew-card-hau_iype5a.jpg" },
             { name: "Nguyễn Trung Hiếu", role: { vi: "Chuyên viên ánh sáng", en: "Best Boy" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455124/crew-card-hieu_vjkjsj.jpg" },
             
@@ -186,7 +186,7 @@ const filmsData = {
             { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-ruby.png" },
 
             { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455133/crew-card-huy-dep-trai_bh533e.jpg" },
-            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/BODND_Still.jpg" },
+            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "-https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
 
 
             { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://ik.imagekit.io/phamhuutri108/BODND/crew-card/crew-card-minh-thao.png" },
