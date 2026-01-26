@@ -8,7 +8,7 @@ const commercialData = {
             vi: "Nhà vừa ý, giá hợp lý!",
             en: "Perfect Home, Reasonable Price!"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/Commercial/Nhatot_thumbnail.gif",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/commercial/Nhatot_thumbnail.gif",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://www.nhatot.com" target="_blank">Nhà Tốt</a><br>
@@ -45,7 +45,7 @@ const commercialData = {
             vi: "Nhà thật Sài Gòn, có sao nói vậy!",
             en: "Real Estate Saigon, Why Not!"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/Commercial/Batdongsan_thumbnail.gif",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/commercial/Batdongsan_thumbnail.gif",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://batdongsan.com.vn" target="_blank">Batdongsan.com.vn</a><br>
@@ -82,7 +82,7 @@ const commercialData = {
             vi: "Có Camera Tiện Lắm! An Toàn Lắm!",
             en: "Has Camera So Convenient! So Safe!"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/Commercial/Thegioididong_thumbnail.gif",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/commercial/Thegioididong_thumbnail.gif",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://www.thegioididong.com" target="_blank">Thế Giới Di Động</a><br>
@@ -119,7 +119,7 @@ const commercialData = {
             vi: "iPhone Mới Đã Tới",
             en: "New iPhone Has Arrived"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/Commercial/FPTxiPhone_Thumbnail.gif",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/commercial/FPTxiPhone_Thumbnail.gif",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://fptshop.com.vn" target="_blank">FPT Shop</a> x iPhone 16<br>
@@ -156,7 +156,7 @@ const commercialData = {
             vi: "Back To School",
             en: "Back To School"
         },
-        thumbnail: "https://ik.imagekit.io/phamhuutri108/Commercial/FPTxAMD_Thumbnail.gif",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/commercial/FPTxAMD_Thumbnail.gif",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://fptshop.com.vn" target="_blank">FPT Shop</a> x <a href="https://www.amd.com/en.html" target="_blank">AMD</a><br>
