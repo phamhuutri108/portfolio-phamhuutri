@@ -2289,7 +2289,30 @@
 
 
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Chờ 1 chút để menu render xong
+    setTimeout(function() {
+        // Lấy đường dẫn sau dấu #
+        var hash = window.location.hash; // Ví dụ: #/short-films/dad-dont-lie-to-me
+        
+        if (hash && hash.length > 1) {
+            // Tìm cái thẻ A trong menu có href giống y hệt cái hash này
+            // Lưu ý: Logic này dựa vào việc bạn render menu có href="/#/short-films/..."
+            // Nếu thẻ a của bạn href là "#/..." thì bỏ dấu / đầu đi
+            
+            // Thử tìm thẻ A khớp link
+            var targetLink = document.querySelector('a[href="' + hash + '"]') || 
+                             document.querySelector('a[href="/' + hash + '"]');
+            
+            if (targetLink) {
+                console.log("Auto clicking:", targetLink);
+                targetLink.click(); // Tự động kích hoạt sự kiện click
+            }
+        }
+    }, 100); // Delay 100ms để đảm bảo HTML đã load
+});
+</script>
 
 
 
