@@ -9,7 +9,7 @@ const othersData = {
             vi: "Vô Cực",
             en: "Infinity"
         },
-        thumbnail: "https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1.jpeg?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/others/infinity/infinity_thumbnail.jpeg",
         vi: `
             <p>
                 <b>Thể loại:</b> Video / Collage Art<br>
