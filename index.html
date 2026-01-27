@@ -2291,27 +2291,31 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-    // Chờ 1 chút để menu render xong
-    setTimeout(function() {
-        // Lấy đường dẫn sau dấu #
-        var hash = window.location.hash; // Ví dụ: #/short-films/dad-dont-lie-to-me
-        
-        if (hash && hash.length > 1) {
-            // Tìm cái thẻ A trong menu có href giống y hệt cái hash này
-            // Lưu ý: Logic này dựa vào việc bạn render menu có href="/#/short-films/..."
-            // Nếu thẻ a của bạn href là "#/..." thì bỏ dấu / đầu đi
-            
-            // Thử tìm thẻ A khớp link
-            var targetLink = document.querySelector('a[href="' + hash + '"]') || 
-                             document.querySelector('a[href="/' + hash + '"]');
-            
-            if (targetLink) {
-                console.log("Auto clicking:", targetLink);
-                targetLink.click(); // Tự động kích hoạt sự kiện click
+        // Đợi 0.5 giây để đảm bảo menu bên trái đã được tạo xong
+        setTimeout(function() {
+            // 1. Lấy phần đuôi trên thanh địa chỉ (ví dụ: #/short-films/dad-dont-lie-to-me)
+            var currentHash = window.location.hash;
+
+            // 2. Nếu có đuôi link
+            if (currentHash && currentHash.length > 1) {
+                console.log("Phát hiện yêu cầu mở link:", currentHash);
+
+                // 3. Tìm cái nút trong Menu có đường dẫn khớp với cái đuôi này
+                // (Chúng ta tìm thẻ <a> có href chứa đoạn text này)
+                
+                // Chuẩn hóa: Đôi khi href có dấu / ở đầu, đôi khi không, nên ta tìm tương đối
+                var targetLink = document.querySelector('a[href*="' + currentHash + '"]');
+
+                // 4. Nếu tìm thấy nút -> Tự động bấm vào nó
+                if (targetLink) {
+                    console.log("Đang tự động bấm vào:", targetLink);
+                    targetLink.click();
+                } else {
+                    console.log("Không tìm thấy nút nào khớp với link này trong menu.");
+                }
             }
-        }
-    }, 100); // Delay 100ms để đảm bảo HTML đã load
-});
+        }, 500); // 500ms là thời gian chờ an toàn
+    });
 </script>
 
 
