@@ -163,7 +163,7 @@ const filmsData = {
             { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri.jpeg?v=2" },
             
             { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpeg?v=2" },
-            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2" },
+            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thao-quieng.jpeg?v=2" },
             
             { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.jpeg?v=2" },
             
@@ -175,7 +175,7 @@ const filmsData = {
             
             { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thanh.jpeg?v=2" },
             { name: "Khoa Too", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-to-anh-khoa.jpeg?v=2" },
-            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2" },
+            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-xuan-hoang.jpeg?v=2" },
             { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-hau.jpeg?v=2" },
             { name: "Nguyễn Trung Hiếu", role: { vi: "Chuyên viên ánh sáng", en: "Best Boy" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-hieu.jpeg?v=2" },
             
