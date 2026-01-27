@@ -296,7 +296,7 @@ const filmsData = {
             vi: "Nghiệp",
             en: "Karma"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/KARMA-thumbnail.png?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/KARMA_thumbnail.png?v=2",
         
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý<br>
@@ -495,7 +495,7 @@ const filmsData = {
             vi: `"Con Ma" Muốn Sống`,
             en: `"The Ghost" Wants To Live`
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_thumbnail.png?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS-thumbnail.png?v=2",
         
         vi: `
             <p>
