@@ -8,7 +8,7 @@ const filmsData = {
             vi: "Ba Ơi, Đừng Nói Dối",
             en: "Dad, Don't Lie To Me"
         },
-        thumbnail: "-https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg",
         
         // Phần Text giới thiệu giữ nguyên, nhưng ĐÃ XÓA HTML CREW SCROLLER ở dưới cùng
         vi: `
@@ -156,134 +156,134 @@ const filmsData = {
 
         // Dữ liệu Crew đã được tách riêng, sạch sẽ và dễ quản lý
         crewData: [
-            { name: "Ngô Nhật Trường", role: { vi: "Diễn viên", en: "Cast" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ngo-nhat-truong.png" },
-            { name: "Cô Nhum", role: { vi: "Diễn viên", en: "Cast" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-co-nhum.png" },
-            { name: "Nguyễn Vũ Uy Nhân", role: { vi: "Diễn viên", en: "Cast" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-bap.jpg" },
+            { name: "Ngô Nhật Trường", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ngo-nhat-truong.png" },
+            { name: "Cô Nhum", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-co-nhum.png" },
+            { name: "Nguyễn Vũ Uy Nhân", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-bap.jpg" },
             
-            { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri.png" },
+            { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri.png" },
             
-            { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpg" },
-            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "-https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
+            { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpg" },
+            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
             
-            { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.png" },
+            { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.png" },
             
-            { name: "Dzuy Tom", role: { vi: "Thiết kế sản xuất", en: "Production Designer" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-dzuy-tom.png" },
-            { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hoang-bao-uyen.png" },
+            { name: "Dzuy Tom", role: { vi: "Thiết kế sản xuất", en: "Production Designer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-dzuy-tom.png" },
+            { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hoang-bao-uyen.png" },
             
-            { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-quynh-sun.png" },
-            { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-kon-lon.png" },
+            { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-quynh-sun.png" },
+            { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-kon-lon.png" },
             
-            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-thanh.jpg" },
-            { name: "Khoa Too", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-to-anh-khoa.png" },
-            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "-https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
-            { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hau.jpg" },
-            { name: "Nguyễn Trung Hiếu", role: { vi: "Chuyên viên ánh sáng", en: "Best Boy" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hieu.jpg" },
+            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-thanh.jpg" },
+            { name: "Khoa Too", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-to-anh-khoa.png" },
+            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
+            { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hau.jpg" },
+            { name: "Nguyễn Trung Hiếu", role: { vi: "Chuyên viên ánh sáng", en: "Best Boy" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hieu.jpg" },
             
             
-            { name: "Nicholas Nguyễn", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-nick.jpeg" },
-            { name: "Kaii Khải Hân", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-kaii.png" },
-            { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-haibkk.png" },
-            { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ruby.png" },
+            { name: "Nicholas Nguyễn", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-nick.jpeg" },
+            { name: "Kaii Khải Hân", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-kaii.png" },
+            { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-haibkk.png" },
+            { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ruby.png" },
 
             { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://res.cloudinary.com/dwtj2pjwn/image/upload/v1769455133/crew-card-huy-dep-trai_bh533e.jpg" },
-            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "-https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
+            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg" },
 
 
-            { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-minh-thao.png" },
-            { name: "Bia Huyền", role: { vi: "Hóa trang", en: "Make-up Artist" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-bia-huyen.png" },
-            { name: "Hồ Minh Khoa", role: { vi: "Thư ký trường quay", en: "Script Supervisor" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ho-minh-khoa.jpeg" },
+            { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-minh-thao.png" },
+            { name: "Bia Huyền", role: { vi: "Hóa trang", en: "Make-up Artist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-bia-huyen.png" },
+            { name: "Hồ Minh Khoa", role: { vi: "Thư ký trường quay", en: "Script Supervisor" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ho-minh-khoa.jpeg" },
             
-            { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-crister-nguyen.png" },
-            { name: "Khương Ngọc", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ngoc-lao.png" },
-            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-vuong-linh.jpg" },
+            { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-crister-nguyen.png" },
+            { name: "Khương Ngọc", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ngoc-lao.png" },
+            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-vuong-linh.jpg" },
             
         ],
 
         // DỮ LIỆU BTS (MỚI THÊM VÀO - CHỈ CẦN KHAI BÁO 1 LẦN)
     btsData: [
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-2.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-1.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-3.jpeg", class: "big" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-5.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-6.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-8.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-9.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-14.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-7.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-11.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-12.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-15.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-10.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-19.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-23.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-21.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-24.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-26.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-22.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-27.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-25.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-18.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-20.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-28.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-16.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-17.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-29.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-30.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-31.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-32.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-33.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-4.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-36.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-34.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-35.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-37.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-38.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-39.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-40.jpeg", class: "tall" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-41.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-42.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-43.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-44.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-45.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-46.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-47.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-48.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-49.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-50.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-51.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-52.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-53.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-54.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-55.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-56.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-57.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-58.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-59.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-61.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-62.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-63.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-60.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-64.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-65.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-66.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-67.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-68.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-69.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-70.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-71.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-72.jpeg", class: "tall" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-73.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-74.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-75.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-77.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-76.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-79.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-81.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-83.jpeg", class: "big" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-82.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-80.jpeg" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-78.jpeg", class: "wide" },
-    { src: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-84.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-2.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-1.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-3.jpeg", class: "big" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-5.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-6.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-8.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-9.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-14.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-7.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-11.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-12.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-15.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-10.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-19.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-23.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-21.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-24.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-26.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-22.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-27.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-25.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-18.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-20.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-28.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-16.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-17.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-29.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-30.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-31.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-32.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-33.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-4.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-36.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-34.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-35.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-37.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-38.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-39.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-40.jpeg", class: "tall" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-41.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-42.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-43.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-44.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-45.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-46.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-47.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-48.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-49.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-50.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-51.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-52.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-53.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-54.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-55.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-56.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-57.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-58.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-59.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-61.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-62.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-63.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-60.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-64.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-65.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-66.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-67.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-68.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-69.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-70.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-71.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-72.jpeg", class: "tall" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-73.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-74.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-75.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-77.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-76.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-79.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-81.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-83.jpeg", class: "big" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-82.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-80.jpeg" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-78.jpeg", class: "wide" },
+    { src: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BTS/BODND-BTS-84.jpeg" },
 ],
 
         // Giữ nguyên phần Behind The Scene bên dưới nếu có...
@@ -347,51 +347,51 @@ const filmsData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-2.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-1.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-3.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-4.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-5.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-6.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-7.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-8.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-2.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-1.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-3.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-4.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-5.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-6.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-7.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-8.png">
             </div>
 
             <h3>3D storyboard</h3>
             <div class="gallery-wall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpg">
             </div>
 
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_1.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_2.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_4.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_5.png" class="tall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_6.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_7.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_9.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_10.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_11.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_12.png" class="tall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_15.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_16.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_18.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_19.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_17.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_1.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_2.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_4.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_5.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_6.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_7.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_9.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_10.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_11.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_12.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_15.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_16.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_18.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_19.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_17.png">
             </div>
         `,
         en: `
@@ -440,51 +440,51 @@ const filmsData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-2.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-1.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-3.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-4.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-5.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-6.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-7.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-8.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-2.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-1.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-3.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-4.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-5.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-6.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-7.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-8.png">
             </div>
 
             <h3>3D storyboard</h3>
             <div class="gallery-wall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpg">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpg">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpg">
             </div>
 
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_1.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_2.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_4.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_5.png" class="tall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_6.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_7.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_9.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_10.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_11.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_12.png" class="tall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_15.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_16.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_18.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_19.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_17.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_1.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_2.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_4.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_5.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_6.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_7.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_9.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_10.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_11.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_12.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_15.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_16.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_18.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_19.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_17.png">
             </div>
         `
     },
@@ -495,7 +495,7 @@ const filmsData = {
             vi: `"Con Ma" Muốn Sống`,
             en: `"The Ghost" Wants To Live`
         },
-        thumbnail: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS-thumbnail.png",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS-thumbnail.png",
         
         vi: `
             <p>
@@ -530,23 +530,23 @@ const filmsData = {
             <h3>Behind The Scene</h3>
             
             <div class="gallery-wall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_1.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_5.png" class="big">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_12.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_17.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_15.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_8.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_10.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_2.png" class="tall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_14.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_4.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_16.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_11.png" class="tall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_3.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_6.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_9.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_7.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_13.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_1.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_5.png" class="big">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_12.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_17.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_15.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_8.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_10.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_2.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_14.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_4.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_16.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_11.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_3.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_6.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_9.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_7.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_13.png" class="wide">
             </div>
 
 
@@ -581,23 +581,23 @@ const filmsData = {
             <h3>Behind The Scene</h3>
             
             <div class="gallery-wall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_1.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_5.png" class="big">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_12.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_17.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_15.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_8.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_10.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_2.png" class="tall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_14.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_4.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_16.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_11.png" class="tall">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_3.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_6.png" class="wide">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_9.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_7.png">
-                <img src="https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_13.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_1.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_5.png" class="big">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_12.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_17.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_15.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_8.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_10.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_2.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_14.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_4.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_16.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_11.png" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_3.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_6.png" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_9.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_7.png">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS_13.png" class="wide">
             </div>
 
 
@@ -611,7 +611,7 @@ const filmsData = {
             vi: "Gà Trống Nấu Cơm",
             en: "Cock's Cooking"
         },
-        thumbnail: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/GTNC/GTNC_thumbnail.jpg",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/GTNC/GTNC_thumbnail.jpg",
         
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý<br>
@@ -668,7 +668,7 @@ const filmsData = {
             vi: "Khi Chúng Ta Được Sống",
             en: "Alive"
         },
-        thumbnail: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/ALIVE/Alive_thumbnail.jpg",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/ALIVE/Alive_thumbnail.jpg",
         
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý<br>
@@ -733,7 +733,7 @@ const filmsData = {
             vi: "Khi Thành Phố Lớn",
             en: "When My City Grows"
         },
-        thumbnail: "https://purge.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KTPL/KTPL_thumbnail.jpg",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KTPL/KTPL_thumbnail.jpg",
         
         vi: `
             <p>
