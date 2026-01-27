@@ -8,7 +8,7 @@ const commercialData = {
             vi: "Nhà vừa ý, giá hợp lý!",
             en: "Perfect Home, Reasonable Price!"
         },
-        thumbnail: "https://assets.phamhuutri.com/assets/assets/commercial/Nhatot_thumbnail.gif?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/commercial/Nhatot_thumbnail.gif?v=2",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://www.nhatot.com" target="_blank">Nhà Tốt</a><br>
@@ -45,7 +45,7 @@ const commercialData = {
             vi: "Nhà thật Sài Gòn, có sao nói vậy!",
             en: "Real Estate Saigon, Why Not!"
         },
-        thumbnail: "https://assets.phamhuutri.com/assets/assets/commercial/Batdongsan_thumbnail.gif?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/commercial/Batdongsan_thumbnail.gif?v=2",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://batdongsan.com.vn" target="_blank">Batdongsan.com.vn</a><br>
@@ -82,7 +82,7 @@ const commercialData = {
             vi: "Có Camera Tiện Lắm! An Toàn Lắm!",
             en: "Has Camera So Convenient! So Safe!"
         },
-        thumbnail: "https://assets.phamhuutri.com/assets/assets/commercial/Thegioididong_thumbnail.gif?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/commercial/Thegioididong_thumbnail.gif?v=2",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://www.thegioididong.com" target="_blank">Thế Giới Di Động</a><br>
@@ -119,7 +119,7 @@ const commercialData = {
             vi: "iPhone Mới Đã Tới",
             en: "New iPhone Has Arrived"
         },
-        thumbnail: "https://assets.phamhuutri.com/assets/assets/commercial/FPTxiPhone_Thumbnail.gif?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/commercial/FPTxiPhone_Thumbnail.gif?v=2",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://fptshop.com.vn" target="_blank">FPT Shop</a> x iPhone 16<br>
@@ -156,7 +156,7 @@ const commercialData = {
             vi: "Back To School",
             en: "Back To School"
         },
-        thumbnail: "https://assets.phamhuutri.com/assets/assets/commercial/FPTxAMD_Thumbnail.gif?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/commercial/FPTxAMD_Thumbnail.gif?v=2",
         vi: `
             <p>
                 <b>Thương hiệu:</b> <a href="https://fptshop.com.vn" target="_blank">FPT Shop</a> x <a href="https://www.amd.com/en.html" target="_blank">AMD</a><br>
