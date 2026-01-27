@@ -8,7 +8,7 @@ const filmsData = {
             vi: "Ba Ơi, Đừng Nói Dối",
             en: "Dad, Don't Lie To Me"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpeg?v=2",
         
         // Phần Text giới thiệu giữ nguyên, nhưng ĐÃ XÓA HTML CREW SCROLLER ở dưới cùng
         vi: `
@@ -156,46 +156,46 @@ const filmsData = {
 
         // Dữ liệu Crew đã được tách riêng, sạch sẽ và dễ quản lý
         crewData: [
-            { name: "Ngô Nhật Trường", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ngo-nhat-truong.png?v=2" },
-            { name: "Cô Nhum", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-co-nhum.png?v=2" },
-            { name: "Nguyễn Vũ Uy Nhân", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-bap.jpg?v=2" },
+            { name: "Ngô Nhật Trường", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ngo-nhat-truong.jpeg?v=2" },
+            { name: "Cô Nhum", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-co-nhum.jpeg?v=2" },
+            { name: "Nguyễn Vũ Uy Nhân", role: { vi: "Diễn viên", en: "Cast" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-bap.jpeg?v=2" },
             
-            { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri.png?v=2" },
+            { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri.jpeg?v=2" },
             
-            { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpg?v=2" },
-            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg?v=2" },
+            { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpeg?v=2" },
+            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpeg?v=2" },
             
-            { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.png?v=2" },
+            { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.jpeg?v=2" },
             
-            { name: "Dzuy Tom", role: { vi: "Thiết kế sản xuất", en: "Production Designer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-dzuy-tom.png?v=2" },
-            { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hoang-bao-uyen.png?v=2" },
+            { name: "Dzuy Tom", role: { vi: "Thiết kế sản xuất", en: "Production Designer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-dzuy-tom.jpeg?v=2" },
+            { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hoang-bao-uyen.jpeg?v=2" },
             
-            { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-quynh-sun.png?v=2" },
-            { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-kon-lon.png?v=2" },
+            { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-quynh-sun.jpeg?v=2" },
+            { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-kon-lon.jpeg?v=2" },
             
-            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-thanh.jpg?v=2" },
-            { name: "Khoa Too", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-to-anh-khoa.png?v=2" },
-            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg?v=2" },
-            { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hau.jpg?v=2" },
-            { name: "Nguyễn Trung Hiếu", role: { vi: "Chuyên viên ánh sáng", en: "Best Boy" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hieu.jpg?v=2" },
+            { name: "Văn Ngọc Thành", role: { vi: "Chỉnh nét & Giám sát hậu kỳ", en: "Focus Puller & Post-Production Supervisor" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-thanh.jpeg?v=2" },
+            { name: "Khoa Too", role: { vi: "Gaffer", en: "Gaffer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-to-anh-khoa.jpeg?v=2" },
+            { name: "Đặng Xuân Hoàng", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpeg?v=2" },
+            { name: "Nguyễn Kim Hậu", role: { vi: "Phụ quay", en: "Assistant Camera" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hau.jpeg?v=2" },
+            { name: "Nguyễn Trung Hiếu", role: { vi: "Chuyên viên ánh sáng", en: "Best Boy" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-hieu.jpeg?v=2" },
             
             
             { name: "Nicholas Nguyễn", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-nick.jpeg?v=2" },
-            { name: "Kaii Khải Hân", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-kaii.png?v=2" },
-            { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-haibkk.png?v=2" },
-            { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ruby.png?v=2" },
+            { name: "Kaii Khải Hân", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-kaii.jpeg?v=2" },
+            { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-haibkk.jpeg?v=2" },
+            { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ruby.jpeg?v=2" },
 
-            { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-huy-dep-trai.jpg?v=2" },
-            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpg?v=2" },
+            { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-huy-dep-trai.jpeg?v=2" },
+            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpeg?v=2" },
 
 
-            { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-minh-thao.png?v=2" },
-            { name: "Bia Huyền", role: { vi: "Hóa trang", en: "Make-up Artist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-bia-huyen.png?v=2" },
+            { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-minh-thao.jpeg?v=2" },
+            { name: "Bia Huyền", role: { vi: "Hóa trang", en: "Make-up Artist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-bia-huyen.jpeg?v=2" },
             { name: "Hồ Minh Khoa", role: { vi: "Thư ký trường quay", en: "Script Supervisor" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ho-minh-khoa.jpeg?v=2" },
             
-            { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-crister-nguyen.png?v=2" },
-            { name: "Khương Ngọc", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ngoc-lao.png?v=2" },
-            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-vuong-linh.jpg?v=2" },
+            { name: "Crister Nguyên", role: { vi: "Thu thanh hiện trường", en: "Sound Recordist" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-crister-nguyen.jpeg?v=2" },
+            { name: "Khương Ngọc", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-ngoc-lao.jpeg?v=2" },
+            { name: "Vương Linh", role: { vi: "Trợ lý sản xuất", en: "Production Assistant" }, img: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/crew-card/crew-card-vuong-linh.jpeg?v=2" },
             
         ],
 
@@ -296,7 +296,7 @@ const filmsData = {
             vi: "Nghiệp",
             en: "Karma"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/KARMA_thumbnail.png?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/KARMA_thumbnail.jpeg?v=2",
         
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý<br>
@@ -347,62 +347,62 @@ const filmsData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-1.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-2.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-3.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-4.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-5.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-6.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-7.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-8.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-9.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-10.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-11.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-12.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-13.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-14.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-15.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-16.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-17.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-18.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-19.png?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-1.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-2.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-3.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-4.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-5.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-6.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-7.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-8.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-9.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-10.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-11.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-12.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-13.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-14.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-15.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-16.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-17.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-18.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-19.jpeg?v=3">
             </div>
 
             <h3>3D storyboard</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpeg?v=2">
             </div>
 
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_1.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_2.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_4.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_5.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_6.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_7.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_9.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_10.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_11.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_12.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_15.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_16.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_18.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_19.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_17.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_1.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_2.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_4.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_5.jpeg?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_6.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_7.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_9.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_10.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_11.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_12.jpeg?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_15.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_16.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_18.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_19.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_17.jpeg?v=2">
             </div>
         `,
         en: `
@@ -451,62 +451,62 @@ const filmsData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-1.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-2.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-3.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-4.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-5.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-6.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-7.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-8.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-9.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-10.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-11.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-12.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-13.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-14.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-15.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-16.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-17.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-18.png?v=3">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-19.png?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-1.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-2.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-3.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-4.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-5.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-6.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-7.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-8.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-9.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-10.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-11.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-12.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-13.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-14.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-15.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-16.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-17.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-18.jpeg?v=3">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/still/KARMA-still-19.jpeg?v=3">
             </div>
 
             <h3>3D storyboard</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpeg?v=2">
             </div>
 
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_1.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_2.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_4.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_5.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_6.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_7.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_9.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_10.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_11.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_12.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_15.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_16.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_18.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_19.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_17.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_1.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_2.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_4.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_5.jpeg?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_6.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_7.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_9.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_10.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_11.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_12.jpeg?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_15.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_16.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_18.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_19.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KARMA/BTS/KARMA_BTS_17.jpeg?v=2">
             </div>
         `
     },
@@ -517,7 +517,7 @@ const filmsData = {
             vi: `"Con Ma" Muốn Sống`,
             en: `"The Ghost" Wants To Live`
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS-thumbnail.png?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS-thumbnail.jpeg?v=2",
         
         vi: `
             <p>
@@ -552,23 +552,23 @@ const filmsData = {
             <h3>Behind The Scene</h3>
             
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_1.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_5.png?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_12.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_17.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_15.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_8.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_10.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_2.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_14.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_4.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_16.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_11.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_3.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_6.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_9.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_7.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_13.png?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_1.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_5.jpeg?v=2" class="big">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_12.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_17.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_15.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_8.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_10.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_2.jpeg?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_14.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_4.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_16.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_11.jpeg?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_3.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_6.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_9.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_7.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_13.jpeg?v=2" class="wide">
             </div>
 
 
@@ -603,23 +603,23 @@ const filmsData = {
             <h3>Behind The Scene</h3>
             
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_1.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_5.png?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_12.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_17.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_15.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_8.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_10.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_2.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_14.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_4.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_16.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_11.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_3.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_6.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_9.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_7.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_13.png?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_1.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_5.jpeg?v=2" class="big">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_12.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_17.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_15.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_8.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_10.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_2.jpeg?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_14.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_4.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_16.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_11.jpeg?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_3.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_6.jpeg?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_9.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_7.jpeg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS_13.jpeg?v=2" class="wide">
             </div>
 
 
@@ -633,7 +633,7 @@ const filmsData = {
             vi: "Gà Trống Nấu Cơm",
             en: "Cock's Cooking"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/GTNC/GTNC_thumbnail.jpg?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/GTNC/GTNC_thumbnail.jpeg?v=2",
         
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý<br>
@@ -690,7 +690,7 @@ const filmsData = {
             vi: "Khi Chúng Ta Được Sống",
             en: "Alive"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/ALIVE/Alive_thumbnail.jpg?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/ALIVE/Alive_thumbnail.jpeg?v=2",
         
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý<br>
@@ -755,7 +755,7 @@ const filmsData = {
             vi: "Khi Thành Phố Lớn",
             en: "When My City Grows"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KTPL/KTPL-thumbnail.jpg?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/KTPL/KTPL-thumbnail.jpeg?v=2",
         
         vi: `
             <p>
