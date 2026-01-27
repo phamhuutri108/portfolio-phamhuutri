@@ -5,231 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Dad, Don't Lie To Me - Short Film | Pham Huu Tri</title>
-    <meta name="description" content="Một bộ phim ngắn về tình phụ tử và lời nói dối. Đạo diễn: Phạm Hữu Trí.">
+    <meta name="description" content="&copy; 2026 Pham Huu Tri.">
     <meta name="author" content="Pham Huu Tri">
 
     <meta property="og:type" content="video.movie">
     <meta property="og:url" content="https://phamhuutri.com/short-films/dad-dont-lie-to-me">
-    <meta property="og:title" content="Ba Ơi, Đừng Nói Dối (Dad, Don't Lie To Me)">
-    <meta property="og:description" content="Một bộ phim ngắn về tình phụ tử và lời nói dối. © 2026 Pham Huu Tri.">
+    <meta property="og:title" content="Dad, Don't Lie To Me - Short Film">
+    <meta property="og:description" content="&copy; 2026 Pham Huu Tri.">
     <meta property="og:image" content="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpeg?v=2">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ba Ơi, Đừng Nói Dối | Pham Huu Tri">
-    <meta name="twitter:description" content="Một bộ phim ngắn về tình phụ tử và lời nói dối.">
+    <meta name="twitter:title" content="Dad, Don't Lie To Me - Short Film">
+    <meta name="twitter:description" content="&copy; 2026 Pham Huu Tri.">
     <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpeg?v=2">
 
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="stylesheet" href="/style.css?v=5.0">
-    <link rel="icon" type="image/jpeg" href="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/home/one-buddha-is-not-enough.jpeg?v=2">
+    <script>
+        // Dòng lệnh này sẽ chuyển người dùng về trang chủ gốc (phamhuutri.com)
+        // Kèm theo cái đuôi (hash) để trang chủ biết cần mở phim nào
+        window.location.href = "/#/short-films/dad-dont-lie-to-me";
+    </script>
 </head>
 <body>
-
-<div class="wrapper">
-    <aside class="sidebar">
-        <div class="lang-switch">
-            <span class="lang-btn active" onclick="setLanguage('en')" id="btn-en">EN</span>
-            <span class="separator">-</span>
-            <span class="lang-btn" onclick="setLanguage('vi')" id="btn-vi">VI</span>
-        </div>
-
-        <div class="site-logo">
-            <a href="/" onclick="window.location.href='/'; return false;">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/home/tri-avatar-b%26w.jpeg?v=2" alt="Pham Huu Tri">
-            </a>
-        </div>
-
-        <ul class="main-menu">
-            <li><a href="/" onclick="window.location.href='/'; return false;"><span class="content-en">Home</span><span class="content-vi">Trang Chủ</span></a></li>
-            <li><a href="/#/about" onclick="window.location.href='/#/about'; return false;"><span class="content-en">About</span><span class="content-vi">Về Tôi</span></a></li>
-            <li><a href="/#/contact" onclick="window.location.href='/#/contact'; return false;"><span class="content-en">Contact</span><span class="content-vi">Liên Hệ</span></a></li>
-        </ul>
-
-        <div class="category-group is-open" id="group-short-films">
-            <h4>
-                <a href="/#/short-films" onclick="window.location.href='/#/short-films'; return false;" class="active-link">
-                    <span class="content-en">Short Films</span>
-                    <span class="content-vi">Phim Ngắn</span>
-                </a>
-            </h4>
-            <ul class="category-list" id="sidebar-short-films-list" style="display: block;"></ul>
-        </div>
-
-        <div class="category-group" id="group-commercials">
-            <h4><a href="/#/commercials" onclick="window.location.href='/#/commercials'; return false;"><span class="content-en">Commercials</span><span class="content-vi">Quảng Cáo</span></a></h4>
-        </div>
-        <div class="category-group" id="group-others">
-            <h4><a href="/#/others" onclick="window.location.href='/#/others'; return false;"><span class="content-en">Others</span><span class="content-vi">Các Dự Án Khác</span></a></h4>
-        </div>
-        <div class="category-group" id="group-writings">
-            <h4><a href="/#/writings" onclick="window.location.href='/#/writings'; return false;"><span class="content-en">Writings</span><span class="content-vi">Viết</span></a></h4>
-        </div>
-
-        <div class="copyright"><p>&copy; 2026 Pham Huu Tri.</p></div>
-    </aside>
-
-    <main class="content">
-        <div id="loading" style="margin-top: 50px; text-align: center;">Loading...</div>
-    </main>
-</div>
-
-<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox(event)">
-    <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
-    <button id="lb-prev" class="lb-nav-btn" onclick="changeLbSlide(-1, event)">&#10094;</button>
-    <div class="lb-content-wrapper">
-        <img id="lightbox-img" src="" onclick="event.stopPropagation()"> 
-        <div id="lb-caption" class="lb-caption">
-            <h3 id="lb-name">Name</h3>
-            <p id="lb-role">Role</p>
-        </div>
-    </div>
-    <button id="lb-next" class="lb-nav-btn" onclick="changeLbSlide(1, event)">&#10095;</button>
-</div>
-
-<script src="/short-films-data.js?v=5.0"></script>
-<script src="/commercials-data.js?v=5.0"></script>
-<script src="/others-data.js?v=5.0"></script>
-<script src="/writings-data.js?v=5.0"></script>
-
-<script>
-    // --- 1. SET NGÔN NGỮ (Logic cơ bản) ---
-    function setLanguage(lang) {
-        document.body.className = 'mode-' + lang;
-        localStorage.setItem('preferredLang', lang);
-        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-        const activeBtn = document.getElementById('btn-' + lang);
-        if(activeBtn) activeBtn.classList.add('active');
-    }
-    const savedLang = localStorage.getItem('preferredLang') || 'en';
-    setLanguage(savedLang);
-
-    // --- 2. LOGIC LIGHTBOX (Giữ nguyên) ---
-    const lightbox = document.getElementById('lightbox-overlay');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lbName = document.getElementById('lb-name');
-    const lbRole = document.getElementById('lb-role');
-    const lbCaption = document.getElementById('lb-caption');
-    let currentCrewArray = [];
-    let currentCrewIndex = 0;
-
-    function openCrewLightbox() { lightbox.style.display = "flex"; document.body.style.overflow = 'hidden'; updateLbContent(); }
-    function updateLbContent() {
-        if (!currentCrewArray || currentCrewArray.length === 0) return;
-        const item = currentCrewArray[currentCrewIndex];
-        lightboxImg.src = item.src;
-        lbName.innerHTML = item.name;
-        lbRole.innerHTML = item.role;
-        lbCaption.style.display = (!item.name && !item.role) ? 'none' : 'block';
-    }
-    function changeLbSlide(step, e) {
-        if (e) { e.stopPropagation(); e.preventDefault(); }
-        currentCrewIndex += step;
-        if (currentCrewIndex >= currentCrewArray.length) currentCrewIndex = 0;
-        if (currentCrewIndex < 0) currentCrewIndex = currentCrewArray.length - 1;
-        updateLbContent();
-    }
-    function closeLightbox(e) {
-        if (!e || e.target === lightbox || e.target.classList.contains('lightbox-close')) {
-            lightbox.style.display = "none"; document.body.style.overflow = ''; lightboxImg.src = "";
-        }
-    }
-    document.addEventListener('click', function(e) {
-        if (e.target && e.target.closest('.gallery-wall img, .crew-card img')) {
-            const clickedImg = e.target;
-            let container = clickedImg.closest('.gallery-wall');
-            if(container) {
-                const allImgs = Array.from(container.querySelectorAll('img'));
-                currentCrewArray = allImgs.map(img => ({ src: img.src, name: "", role: "" }));
-                currentCrewIndex = allImgs.indexOf(clickedImg);
-            } else {
-                container = clickedImg.closest('.crew-scroller');
-                if(container) {
-                    const allImgs = Array.from(container.querySelectorAll('.crew-card img'));
-                    currentCrewArray = allImgs.map(img => ({ 
-                        src: img.dataset.full, name: img.dataset.name, role: img.dataset.roleVi || img.dataset.role 
-                    }));
-                    currentCrewIndex = allImgs.indexOf(clickedImg);
-                }
-            }
-            if(currentCrewArray.length > 0) openCrewLightbox();
-        }
-    });
-
-    // --- 3. LOGIC CHÍNH: HIỂN THỊ "DAD DON'T LIE TO ME" ---
-    document.addEventListener("DOMContentLoaded", () => {
-        // ID này phải khớp với trong file short-films-data.js
-        const filmId = 'short-films-dad-dont-lie-to-me'; 
-        const contentContainer = document.querySelector('.content');
-        
-        // A. Render Sidebar List: Nhưng Link trỏ về GỐC (/#/short-films/...)
-        const sidebarList = document.getElementById('sidebar-short-films-list');
-        if (typeof filmsData !== 'undefined' && sidebarList) {
-            for (const [id, item] of Object.entries(filmsData)) {
-                const li = document.createElement('li');
-                // Link này sẽ nhảy về trang chủ
-                const linkHref = `/#/${id.replace('short-films-', 'short-films/')}`;
-                li.innerHTML = `<a href="${linkHref}" onclick="window.location.href='${linkHref}'" ${id === filmId ? 'class="active-link"' : ''}><span class="content-en">${item.title.en}</span><span class="content-vi">${item.title.vi}</span></a>`;
-                sidebarList.appendChild(li);
-            }
-        }
-
-        // B. Render Nội Dung Phim Ngay Tại Đây
-        if (typeof filmsData !== 'undefined' && filmsData[filmId]) {
-            const item = filmsData[filmId];
-            document.getElementById('loading').style.display = 'none';
-            
-            const section = document.createElement('div');
-            section.className = 'page-section active-section';
-            section.style.display = 'block';
-
-            let htmlContent = `
-                <h2 class="page-title">
-                    <span class="content-en">${item.title.en}</span>
-                    <span class="content-vi">${item.title.vi}</span>
-                </h2>
-                <div class="about-text">
-                    <div class="content-vi">${item.vi}</div>
-                    <div class="content-en">${item.en}</div>
-                </div>
-            `;
-
-            // Crew Slider
-            if (item.crewData && item.crewData.length > 0) {
-                let crewHtml = `<div class="crew-scroller-container"><div class="crew-scroller">`;
-                item.crewData.forEach(member => {
-                    crewHtml += `
-                        <div class="crew-card">
-                            <img src="${member.img}" data-full="${member.img}" data-name="${member.name}" data-role-vi="${member.role.vi}" data-role-en="${member.role.en}">
-                            <div class="crew-info">
-                                <div class="crew-role"><span class="content-vi">${member.role.vi}</span><span class="content-en">${member.role.en}</span></div>
-                                <div class="crew-name">${member.name}</div>
-                            </div>
-                        </div>`;
-                });
-                crewHtml += `</div></div>`;
-                htmlContent += crewHtml;
-            }
-
-            // BTS Gallery
-            if (item.btsData && item.btsData.length > 0) {
-                htmlContent += `<h3 style="margin-top: 50px;"><span class="content-vi">Hậu trường</span><span class="content-en">Behind The Scene</span></h3><div class="gallery-wall">`;
-                item.btsData.forEach(pic => {
-                    const cssClass = pic.class ? ` class="${pic.class}"` : '';
-                    htmlContent += `<img src="${pic.src}"${cssClass} loading="lazy">`;
-                });
-                htmlContent += `</div>`;
-            }
-
-            section.innerHTML = htmlContent;
-            contentContainer.appendChild(section);
-
-        } else {
-            contentContainer.innerHTML = "<h2>Error: Film data not found.</h2>";
-        }
-    });
-</script>
-
-</body>
+    </body>
 </html>
