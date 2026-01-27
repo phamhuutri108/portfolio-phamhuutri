@@ -443,7 +443,7 @@ const othersData = {
             vi: "Trăng Rằm",
             en: "The Full Moon"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Thumbnail.jpg?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Thumbnail.jpg?v=2",
         vi: `
             <p>
                 <b>Thể loại:</b> Phim múa (Dance Film)<br>
@@ -462,19 +462,19 @@ const othersData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_1.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_2.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_3.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_4.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_5.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_6.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_7.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_8.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_9.png?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_10.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_11.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_12.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_13.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_1.png?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_2.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_3.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_4.png?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_5.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_6.png?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_7.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_8.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_9.png?v=2" class="big">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_10.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_11.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_12.png?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_13.png?v=2">
             </div>
         `,
         en: `
@@ -495,19 +495,19 @@ const othersData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_1.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_2.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_3.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_4.png?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_5.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_6.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_7.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_8.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_9.png?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_10.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_11.png?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_12.png?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Trang%20Ram/Trang_Ram_Still_13.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_1.png?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_2.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_3.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_4.png?v=2" class="tall">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_5.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_6.png?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_7.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_8.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_9.png?v=2" class="big">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_10.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_11.png?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_12.png?v=2" class="wide">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Still_13.png?v=2">
             </div>
         `
     },
