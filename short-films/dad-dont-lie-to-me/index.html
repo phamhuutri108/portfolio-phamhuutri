@@ -15,18 +15,22 @@
     <meta property="og:image" content="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpeg?v=2">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
+    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dad, Don't Lie To Me - Short Film">
     <meta name="twitter:description" content="&copy; 2026 Pham Huu Tri.">
     <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/BODND/BODND_Still.jpeg?v=2">
 
     <script>
-        // Dòng lệnh này sẽ chuyển người dùng về trang chủ gốc (phamhuutri.com)
-        // Kèm theo cái đuôi (hash) để trang chủ biết cần mở phim nào
-        window.location.href = "/#/short-films/dad-dont-lie-to-me";
+        // Lấy tên miền hiện tại (localhost hoặc phamhuutri.com)
+        var baseUrl = window.location.origin;
+        
+        // Chuyển hướng về trang chủ kèm theo đúng hash để mở phim
+        // Lưu ý: Đường dẫn này sẽ biến đổi trên thanh địa chỉ thành .../#/short-films/...
+        // Đây là bắt buộc để logic trang chủ hiểu được lệnh.
+        window.location.href = baseUrl + "/#/short-films/dad-dont-lie-to-me";
     </script>
 </head>
 <body>
-    </body>
+</body>
 </html>
