@@ -307,7 +307,7 @@ const filmsData = {
             <br>Kịch bản xuất sắc nhất - FABA Films (2025)</p>
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/VzVB9pFBoiY" title="Karma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p style="margin-top: 10px; font-size: 12px;"><a href="https://www.fabafilms.com/streaming-/karma" target="_blank" style="color: #0033cc;">▶ Xem trực tuyến trên FABA Films</a></p>
+                <p style="margin-top: 10px; font-size: 12px;"><a href="https://www.fabafilms.com//streaming/8b88437e-ebf3-41f1-8ed5-70e0d7f14771" target="_blank" style="color: #0033cc;">▶ Xem trực tuyến trên FABA Films</a></p>
             </div>
             <h3>Logline</h3>
             <p>Một Tỳ Kheo già, sau hơn 20 năm đi tu để thoát khỏi cảm giác tội lỗi từng hãm hiếp một cô gái, đã vô tình gặp lại con gái ruột của mình, một lần nữa phải đối mặt với tội lỗi năm xưa và ngộ ra quan niệm về sự giải thoát và tha thứ.</p>
@@ -412,7 +412,7 @@ const filmsData = {
             <br>Silver Prize, Golden Kite Awards (2024)
             <br>Best Screenplay, FABA Films (2025)</p>   <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/VzVB9pFBoiY" title="Karma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p style="margin-top: 10px; font-size: 12px;"><a href="https://www.fabafilms.com/streaming-/karma" target="_blank" style="color: #0033cc;">▶ Streaming on FABA Films</a></p>
+                <p style="margin-top: 10px; font-size: 12px;"><a href="https://www.fabafilms.com//streaming/8b88437e-ebf3-41f1-8ed5-70e0d7f14771" target="_blank" style="color: #0033cc;">▶ Streaming on FABA Films</a></p>
             </div>
             <h3>Logline</h3>
             <p>An old monk, after 20 years of practicing Buddhism to escape the guilt of having raped a woman, accidentally meets his own daughter, and once more has to face his past sin and realizes the meaning of enlightenment and forgiveness.</p>
