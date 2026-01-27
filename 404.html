@@ -2291,30 +2291,28 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Đợi 0.5 giây để đảm bảo menu bên trái đã được tạo xong
+        // Đợi 0.5 giây để dữ liệu phim tải xong
         setTimeout(function() {
-            // 1. Lấy phần đuôi trên thanh địa chỉ (ví dụ: #/short-films/dad-dont-lie-to-me)
+            // 1. Lấy phần đuôi sau dấu # (ví dụ: #/short-films/dad-dont-lie-to-me)
             var currentHash = window.location.hash;
 
-            // 2. Nếu có đuôi link
+            // 2. Kiểm tra nếu có dấu #
             if (currentHash && currentHash.length > 1) {
-                console.log("Phát hiện yêu cầu mở link:", currentHash);
+                // Xóa dấu # ở đầu để lấy đường dẫn sạch (ví dụ: /short-films/dad-dont-lie-to-me)
+                var path = currentHash.substring(1);
 
-                // 3. Tìm cái nút trong Menu có đường dẫn khớp với cái đuôi này
-                // (Chúng ta tìm thẻ <a> có href chứa đoạn text này)
-                
-                // Chuẩn hóa: Đôi khi href có dấu / ở đầu, đôi khi không, nên ta tìm tương đối
-                var targetLink = document.querySelector('a[href*="' + currentHash + '"]');
+                console.log("Phát hiện Hash Link:", path);
 
-                // 4. Nếu tìm thấy nút -> Tự động bấm vào nó
-                if (targetLink) {
-                    console.log("Đang tự động bấm vào:", targetLink);
-                    targetLink.click();
-                } else {
-                    console.log("Không tìm thấy nút nào khớp với link này trong menu.");
+                // 3. Tận dụng hàm getIdFromUrl có sẵn (dòng 945) để dịch đường dẫn thành ID bài viết
+                // Hàm này sẽ tự tìm ra ID là: "short-films-dad-dont-lie-to-me"
+                var targetId = getIdFromUrl(path);
+
+                // 4. Gọi hàm mở trang
+                if (targetId && targetId !== 'not-found') {
+                    showPage(targetId);
                 }
             }
-        }, 500); // 500ms là thời gian chờ an toàn
+        }, 500); 
     });
 </script>
 
