@@ -24,11 +24,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov')">
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov?v=2')">
                      
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov?v=2">
                     </video>
                 </div>
 
@@ -36,11 +36,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov')">
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov?v=2')">
                     
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov?v=2">
                     </video>
                 </div>
 
@@ -48,11 +48,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov')">
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov?v=2')">
                     
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov?v=2">
                     </video>
                 </div>
 
@@ -87,11 +87,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov')">
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov?v=2')">
                      
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov?v=2">
                     </video>
                 </div>
 
@@ -99,11 +99,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov')">
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov?v=2')">
                     
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov?v=2">
                     </video>
                 </div>
 
@@ -111,11 +111,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov')">
+                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov?v=2')">
                     
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov">
+                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov?v=2">
                     </video>
                 </div>
 
