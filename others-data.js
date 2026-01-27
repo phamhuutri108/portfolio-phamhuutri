@@ -159,16 +159,16 @@ const othersData = {
             <h3>3D storyboard > Still</h3>
            
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_1.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_2.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_3.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_4.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_5.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_6.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_7.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_8.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_9.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_10.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_1.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_2.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_3.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_4.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_5.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_6.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_7.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_8.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_9.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_10.jpg?v=2">
             </div>
         `,
         en: `
@@ -183,16 +183,16 @@ const othersData = {
             <h3>3D storyboard > Still</h3>
             
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_1.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_2.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_3.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_4.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_5.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_6.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_7.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_8.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_9.jpg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/Storyboard/HOC_TU_Storyboard_10.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_1.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_2.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_3.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_4.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_5.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_6.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_7.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_8.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_9.jpg?v=2">
+                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_10.jpg?v=2">
             </div>
         `
     },
