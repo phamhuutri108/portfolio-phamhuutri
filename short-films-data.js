@@ -495,7 +495,7 @@ const filmsData = {
             vi: `"Con Ma" Muốn Sống`,
             en: `"The Ghost" Wants To Live`
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/BTS/CMMS-thumbnail.png?v=2",
+        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/short-films/CMMS/CMMS-thumbnail.png?v=2",
         
         vi: `
             <p>
