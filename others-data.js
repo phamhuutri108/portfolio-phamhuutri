@@ -9,7 +9,7 @@ const othersData = {
             vi: "Vô Cực",
             en: "Infinity"
         },
-        thumbnail: "https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.jpeg?v=2",
+        thumbnail: "https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1.jpeg?v=2",
         vi: `
             <p>
                 <b>Thể loại:</b> Video / Collage Art<br>
@@ -24,11 +24,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov?v=2')">
+                     onclick="openInfinityVideo('https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_1.mov?v=2')">
                      
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov?v=2">
+                        <source src="https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_1.mov?v=2">
                     </video>
                 </div>
 
@@ -36,11 +36,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov?v=2')">
+                     onclick="openInfinityVideo('https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_2.mov?v=2')">
                     
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov?v=2">
+                        <source src="https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_2.mov?v=2">
                     </video>
                 </div>
 
@@ -48,11 +48,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov?v=2')">
+                     onclick="openInfinityVideo('https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_3.mov?v=2')">
                     
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov?v=2">
+                        <source src="https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_3.mov?v=2">
                     </video>
                 </div>
 
@@ -87,11 +87,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov?v=2')">
+                     onclick="openInfinityVideo('https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_1.mov?v=2')">
                      
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_1_ysowaw.mov?v=2">
+                        <source src="https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_1.mov?v=2">
                     </video>
                 </div>
 
@@ -99,11 +99,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov?v=2')">
+                     onclick="openInfinityVideo('https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_2.mov?v=2')">
                     
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_2_z8mabq.mov?v=2">
+                        <source src="https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_2.mov?v=2">
                     </video>
                 </div>
 
@@ -111,11 +111,11 @@ const othersData = {
                      style="cursor: zoom-in; transition: transform 0.3s;"
                      onmouseover="this.style.transform='scale(1.02)'" 
                      onmouseout="this.style.transform='scale(1)'"
-                     onclick="openInfinityVideo('https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov?v=2')">
+                     onclick="openInfinityVideo('https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_3.mov?v=2')">
                     
                     <video autoplay loop muted playsinline disablepictureinpicture 
                         style="width: 480px; max-width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); pointer-events: none;">
-                        <source src="https://res.cloudinary.com/dwtj2pjwn/video/upload/phamhuutri_infinity_3_yu2x8g.mov?v=2">
+                        <source src="https://assets.phamhuutri.com/assets/others/infinity/phamhuutri_infinity_3.mov?v=2">
                     </video>
                 </div>
 
@@ -146,7 +146,7 @@ const othersData = {
             vi: "Học Tủ",
             en: "Wardrobe"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Thumbnail.jpeg?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Thumbnail.jpeg?v=2",
         vi: `
             <p>
                 <b>Thể loại:</b> Phim ngắn / Tâm lý, Gia đình<br>
@@ -154,21 +154,21 @@ const othersData = {
                 <b>Vai trò:</b> Trợ lý đạo diễn #1, 3D Storyboard
             </p>
 
-            <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Thumbnail.jpeg?v=2?v=2" style="width: 100%; max-width: 560px; border-radius: 4px; margin-bottom: 0px;">
+            <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Thumbnail.jpeg?v=2?v=2" style="width: 100%; max-width: 560px; border-radius: 4px; margin-bottom: 0px;">
              
             <h3>3D storyboard > Still</h3>
            
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_1.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_4.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_6.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_7.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_8.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_9.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_10.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_1.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_4.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_6.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_8.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_9.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_10.jpeg?v=2">
             </div>
         `,
         en: `
@@ -178,21 +178,21 @@ const othersData = {
                 <b>Role:</b> First Assistant Director, 3D Storyboard Artist
             </p>
         
-            <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Thumbnail.jpeg?v=2" style="width: 100%; max-width: 560px; border-radius: 4px; margin-bottom: 0px;">
+            <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Thumbnail.jpeg?v=2" style="width: 100%; max-width: 560px; border-radius: 4px; margin-bottom: 0px;">
 
             <h3>3D storyboard > Still</h3>
             
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_1.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_4.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_6.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_7.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_8.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_9.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/hoc-tu/HOC_TU_Storyboard_10.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_1.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_4.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_6.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_8.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_9.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/hoc-tu/HOC_TU_Storyboard_10.jpeg?v=2">
             </div>
         `
     },
@@ -203,7 +203,7 @@ const othersData = {
             vi: "Củi Ướt",
             en: "Wet Wood"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/CUI_UOT_Thumbnail_1.jpeg?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/assets/others/cui-uot/CUI_UOT_Thumbnail_1.jpeg?v=2",
         vi: `
             <p>
                 <b>Thể loại:</b> Phim ngắn / Thể nghiệm<br>
@@ -222,23 +222,23 @@ const othersData = {
 
             <h3>Storyboard</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_1.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_4.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_6.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_1.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_4.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_6.jpeg?v=2">
             </div>
 
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_4.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_1.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_6.jpeg?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_4.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_1.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_6.jpeg?v=2" class="big">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_7.jpeg?v=2">
             </div>
         `,
         en: `
@@ -259,23 +259,23 @@ const othersData = {
 
             <h3>Storyboard</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_1.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_4.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_6.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_1.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_4.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/STORYBOARD/CUI_UOT_Storyboard_6.jpeg?v=2">
             </div>
 
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_4.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_1.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_6.jpeg?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/cui-uot/BTS/CUI_UOT_BTS_7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_4.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_1.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_6.jpeg?v=2" class="big">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/cui-uot/BTS/CUI_UOT_BTS_7.jpeg?v=2">
             </div>
         `
     },
@@ -286,7 +286,7 @@ const othersData = {
             vi: "Tranh Kiếng Nhà Tôi",
             en: "My Family's Glass Painting"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Thumbnail.jpeg?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Thumbnail.jpeg?v=2",
         vi: `
             <p>
                 <b>Tựa tiếng Nhật:</b> うちのガラス絵<br>
@@ -306,59 +306,59 @@ const othersData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_1.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_4.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_6.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_7.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_8.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_9.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_10.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_11.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_12.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_13.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_14.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_15.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_16.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_17.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_18.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_19.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_20.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_21.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_22.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_23.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_24.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_25.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_26.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_1.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_4.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_6.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_8.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_9.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_10.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_11.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_12.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_13.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_14.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_15.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_16.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_17.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_18.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_19.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_20.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_21.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_22.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_23.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_24.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_25.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_26.jpeg?v=2">
             </div>
 
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-1.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-2.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-4.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-5.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-6.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-7.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-8.jpeg?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-9.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-10.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-11.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-12.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-13.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-14.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-15.jpeg?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-16.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-17.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-18.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-19.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-20.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-22.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-23.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-24.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-1.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-2.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-4.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-5.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-6.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-8.jpeg?v=2" class="big">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-9.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-10.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-11.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-12.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-13.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-14.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-15.jpeg?v=2" class="big">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-16.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-17.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-18.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-19.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-20.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-22.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-23.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-24.jpeg?v=2">
             </div>
         `,
         en: `
@@ -380,59 +380,59 @@ const othersData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_1.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_4.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_6.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_7.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_8.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_9.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_10.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_11.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_12.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_13.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_14.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_15.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_16.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_17.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_18.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_19.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_20.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_21.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_22.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_23.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_24.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_25.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/TKNT_Still_26.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_1.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_4.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_6.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_8.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_9.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_10.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_11.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_12.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_13.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_14.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_15.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_16.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_17.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_18.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_19.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_20.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_21.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_22.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_23.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_24.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_25.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/TKNT_Still_26.jpeg?v=2">
             </div>
 
             <h3>Behind The Scene</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-1.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-2.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-4.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-5.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-6.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-7.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-8.jpeg?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-9.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-10.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-11.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-12.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-13.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-14.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-15.jpeg?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-16.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-17.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-18.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-19.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-20.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-22.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-23.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/TKNT/BTS/TKNT-BTS-24.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-1.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-2.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-4.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-5.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-6.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-8.jpeg?v=2" class="big">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-9.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-10.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-11.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-12.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-13.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-14.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-15.jpeg?v=2" class="big">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-16.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-17.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-18.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-19.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-20.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-22.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-23.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/TKNT/BTS/TKNT-BTS-24.jpeg?v=2">
             </div>
         `
     },
@@ -443,7 +443,7 @@ const othersData = {
             vi: "Trăng Rằm",
             en: "The Full Moon"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Trang_Ram_Thumbnail.jpeg?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/assets/others/trang-ram/Trang_Ram_Thumbnail.jpeg?v=2",
         vi: `
             <p>
                 <b>Thể loại:</b> Phim múa (Dance Film)<br>
@@ -462,19 +462,19 @@ const othersData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_1.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_4.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_6.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_7.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_8.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_9.jpeg?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_10.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_11.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_12.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_13.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_1.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_4.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_6.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_8.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_9.jpeg?v=2" class="big">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_10.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_11.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_12.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_13.jpeg?v=2">
             </div>
         `,
         en: `
@@ -495,19 +495,19 @@ const othersData = {
 
             <h3>Still</h3>
             <div class="gallery-wall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_1.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_2.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_3.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_4.jpeg?v=2" class="tall">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_5.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_6.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_7.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_8.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_9.jpeg?v=2" class="big">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_10.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_11.jpeg?v=2">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_12.jpeg?v=2" class="wide">
-                <img src="https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/trang-ram/Still/Trang_Ram_Still_13.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_1.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_2.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_3.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_4.jpeg?v=2" class="tall">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_5.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_6.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_7.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_8.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_9.jpeg?v=2" class="big">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_10.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_11.jpeg?v=2">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_12.jpeg?v=2" class="wide">
+                <img src="https://assets.phamhuutri.com/assets/assets/others/trang-ram/Still/Trang_Ram_Still_13.jpeg?v=2">
             </div>
         `
     },
@@ -518,7 +518,7 @@ const othersData = {
             vi: "Chill Cùng Tây Bắc",
             en: "Chilling in the Northwest"
         },
-        thumbnail: "https://cdn.jsdelivr.net/gh/phamhuutri108/portfolio-phamhuutri@main/assets/others/Chill_cung_Tay_Bac_Thumbnail.jpeg?v=2",
+        thumbnail: "https://assets.phamhuutri.com/assets/assets/others/Chill_cung_Tay_Bac_Thumbnail.jpeg?v=2",
         vi: `
             <p>
                 <b>Thể loại:</b> Video Âm nhạc<br>
