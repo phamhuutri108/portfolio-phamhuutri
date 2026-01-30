@@ -1,0 +1,11 @@
+backend:
+  name: github
+  repo: phamhuutri108/portfolio-phamhuutri
+  branch: main
+  base_url: https://oauth-server.phamhuutri.workers.dev
+  auth_endpoint: auth
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections: []
