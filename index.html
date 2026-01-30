@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://www.youtube.com">
 
 
-    <link rel="stylesheet" href="/style.css?v=5.0">
+    <link rel="stylesheet" href="/css/style.css?v=5.0">
     <link rel="icon" type="image/png" href="https://assets.phamhuutri.com/assets/home/favicon.png">
 
     <meta name="description" content="Short Films, Commercials and Writings.">
@@ -491,9 +491,15 @@
 
 
 <script>
-    /* --- HỆ THỐNG TỰ ĐỘNG HOÁ (OPTIMIZED: LAZY RENDERING) --- */
+    /* --- HỆ THỐNG TỰ ĐỘNG HOÁ V3 (JSON + GIỮ NGUYÊN TÍNH NĂNG) --- */
 
-    // 1. CẤU HÌNH ĐƯỜNG DẪN TĨNH
+    // 1. KHAI BÁO BIẾN DỮ LIỆU (Ban đầu rỗng để chờ tải)
+    let filmsData = {};
+    let commercialData = {};
+    let othersData = {};
+    let writingData = [];
+
+    // 2. CẤU HÌNH ĐƯỜNG DẪN TĨNH
     const urlMapping = {
         'home': '/',
         'about': '/about',
@@ -504,16 +510,43 @@
         'cat-writings': '/writings'
     };
 
-    // 2. HÀM TÌM DỮ LIỆU DỰ ÁN (Helper mới)
-    // Giúp tìm thông tin dự án từ ID mà không cần loop nhiều lần
+    // 3. HÀM TẢI DỮ LIỆU (PHẦN BẠN BỊ THIẾU)
+    async function loadAllData() {
+        try {
+            // Tải 4 file JSON cùng lúc
+            const [f, c, o, w] = await Promise.all([
+                fetch('data/short-films.json').then(r => r.json()),
+                fetch('data/commercials.json').then(r => r.json()),
+                fetch('data/others.json').then(r => r.json()),
+                fetch('data/writings.json').then(r => r.json())
+            ]);
+
+            // Gán dữ liệu vào biến
+            filmsData = f;
+            commercialData = c;
+            othersData = o;
+            writingData = w;
+
+            // Dữ liệu về rồi -> Khởi động máy
+            startApp();
+        } catch (error) {
+            console.error("Lỗi tải JSON (Hãy kiểm tra folder data):", error);
+        }
+    }
+
+    // 4. CÁC HÀM XỬ LÝ (LOGIC CỦA BẠN)
     function getProjectData(id) {
-        if (typeof filmsData !== 'undefined' && filmsData[id]) return filmsData[id];
-        if (typeof commercialData !== 'undefined' && commercialData[id]) return commercialData[id];
-        if (typeof othersData !== 'undefined' && othersData[id]) return othersData[id];
+        if (filmsData && filmsData[id]) return filmsData[id];
+        if (commercialData && commercialData[id]) return commercialData[id];
+        if (othersData && othersData[id]) return othersData[id];
+        // Tìm trong mảng writing
+        if (Array.isArray(writingData)) {
+            const found = writingData.find(w => w.id === id);
+            if (found) return found;
+        }
         return null;
     }
 
-    // 3. HÀM RENDER NỘI DUNG CHI TIẾT (ĐÃ NÂNG CẤP: CREW + BTS)
     function renderSectionContent(id) {
         if (document.getElementById(id)) return;
 
@@ -525,32 +558,28 @@
         section.id = id;
         section.className = 'page-section';
 
-        // 1. Tạo nội dung chính (Text & Video)
+        // Xử lý nội dung (Hỗ trợ cả bài viết và phim)
+        const contentVi = item.content ? item.content.vi : item.vi;
+        const contentEn = item.content ? item.content.en : item.en;
+        
         let htmlContent = `
             <h2 class="page-title">
                 <span class="content-en">${item.title.en}</span>
                 <span class="content-vi">${item.title.vi}</span>
             </h2>
             <div class="about-text">
-                <div class="content-vi">${item.vi}</div>
-                <div class="content-en">${item.en}</div>
+                <div class="content-vi">${contentVi}</div>
+                <div class="content-en">${contentEn}</div>
             </div>
         `;
 
-        // 2. Tự động sinh Crew Slider (nếu có)
+        // Crew Slider
         if (item.crewData && item.crewData.length > 0) {
-            // htmlContent += `<h3 style="margin-top: 40px;"><span class="content-vi">Ê-kíp</span><span class="content-en">Crew</span></h3>`;
-            
             let crewHtml = `<div class="crew-scroller-container"><div class="crew-scroller">`;
             item.crewData.forEach(member => {
                 crewHtml += `
                     <div class="crew-card">
-                        <img 
-                            src="${member.img}" 
-                            data-full="${member.img}" 
-                            data-name="${member.name}" 
-                            data-role-vi="${member.role.vi}" 
-                            data-role-en="${member.role.en}">
+                        <img src="${member.img}" loading="lazy">
                         <div class="crew-info">
                             <div class="crew-role">
                                 <span class="content-vi">${member.role.vi}</span>
@@ -558,29 +587,24 @@
                             </div>
                             <div class="crew-name">${member.name}</div>
                         </div>
-                    </div>
-                `;
+                    </div>`;
             });
             crewHtml += `</div></div>`;
             htmlContent += crewHtml;
         }
 
-        // 3. Tự động sinh BTS Gallery Wall (nếu có) -> ĐÃ THÊM MỚI
+        // BTS Gallery
         if (item.btsData && item.btsData.length > 0) {
             htmlContent += `
                 <h3 style="margin-top: 50px;">
                     <span class="content-vi">Hậu trường</span>
                     <span class="content-en">Behind The Scene</span>
                 </h3>
-                <div class="gallery-wall">
-            `;
-
+                <div class="gallery-wall">`;
             item.btsData.forEach(pic => {
-                // Kiểm tra xem ảnh có class riêng (wide, tall, big) không
                 const cssClass = pic.class ? ` class="${pic.class}"` : '';
                 htmlContent += `<img src="${pic.src}"${cssClass} loading="lazy">`;
             });
-
             htmlContent += `</div>`;
         }
 
@@ -588,7 +612,6 @@
         contentContainer.appendChild(section);
     }
 
-    // 4. HÀM XỬ LÝ URL
     function getIdFromUrl(path) {
         if (path.length > 1 && path.endsWith('/')) path = path.slice(0, -1);
         for (const [id, url] of Object.entries(urlMapping)) {
@@ -611,13 +634,10 @@
         return 'not-found';
     }
 
-    // 5. HÀM SHOW PAGE (ĐÃ TỐI ƯU)
-    // 5. HÀM SHOW PAGE (ĐÃ SỬA LỖI)
-    // Thêm tham số doScroll = true vào dòng này để sửa lỗi ReferenceError
     function showPage(pageId, groupId = null, addToHistory = true, doScroll = true) {
         if (!pageId) pageId = 'home';
 
-        // A. Tự động xác định Group
+        // Tự động xác định Group
         if (!groupId) {
             if (pageId.startsWith('short-films-') || pageId === 'cat-short-films') groupId = 'group-short-films';
             else if (pageId.startsWith('commercials-') || pageId === 'cat-commercials') groupId = 'group-commercials';
@@ -625,30 +645,32 @@
             else if (pageId.startsWith('writings-') || pageId === 'cat-writings') groupId = 'group-writings';
         }
 
-        // B. Xử lý Writing (ĐÃ SỬA: Thêm phần Active Sidebar)
+        // Xử lý Writing (Đặc biệt)
         if (pageId.startsWith('writings-')) {
-            // 1. Mở trang chủ Writings để hiện layout, nhưng không cần cuộn
             showPage('cat-writings', 'group-writings', false, false); 
-            
-            // 2. Mở nội dung chi tiết bài viết
-            setTimeout(() => openWritingDetail(pageId), 50);
+            setTimeout(() => {
+                // Mở nội dung
+                renderSectionContent(pageId);
+                // Active Section
+                const sections = document.querySelectorAll('.page-section');
+                sections.forEach(s => s.classList.remove('active-section'));
+                const active = document.getElementById(pageId);
+                if (active) {
+                    active.classList.add('active-section');
+                    if (doScroll && window.innerWidth <= 768) {
+                        active.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            }, 50);
 
-            // 3. [FIX] Tự tay kích hoạt màu xanh cho Link bên Sidebar
-            // Xóa active cũ của các link khác
-            const allLinks = document.querySelectorAll('a');
-            allLinks.forEach(l => l.classList.remove('active-link'));
+            // Active Sidebar Link
+            document.querySelectorAll('a').forEach(l => l.classList.remove('active-link'));
+            const link = document.getElementById('link-' + pageId);
+            if (link) link.classList.add('active-link');
 
-            // Tìm link của bài viết hiện tại và tô xanh
-            const specificLink = document.getElementById('link-' + pageId);
-            if (specificLink) {
-                specificLink.classList.add('active-link');
-                
-                // Đảm bảo menu con vẫn mở ra (nếu chưa mở)
-                const group = document.getElementById('group-writings');
-                if (group) group.classList.add('is-open');
-            }
+            const group = document.getElementById('group-writings');
+            if (group) group.classList.add('is-open');
 
-            // 4. Cập nhật lịch sử duyệt web
             if (addToHistory) {
                 const slug = pageId.replace('writings-', '');
                 updateHistory(pageId, 'group-writings', '/writings/' + slug);
@@ -656,50 +678,36 @@
             return;
         }
 
-        // C. RENDER DỮ LIỆU NẾU CHƯA CÓ
+        // Render dữ liệu thường
         renderSectionContent(pageId);
 
-        // D. XỬ LÝ GIAO DIỆN CHUNG
+        // Active Section
         const sections = document.querySelectorAll('.page-section');
         sections.forEach(s => s.classList.remove('active-section'));
         
         const activeSection = document.getElementById(pageId);
-        
-        // --- ĐOẠN CODE XỬ LÝ CUỘN TRANG ---
         if (activeSection) {
             activeSection.classList.add('active-section');
-
-            // Kiểm tra Mobile (<= 768px)
-            if (window.innerWidth <= 768) {
-                // Chỉ cuộn nếu doScroll là true (tức là người dùng bấm link)
-                if (doScroll) {
-                    setTimeout(() => {
-                        activeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }, 100);
-                }
+            if (window.innerWidth <= 768 && doScroll) {
+                setTimeout(() => activeSection.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
             } else {
-                // Desktop: Luôn cuộn lên đầu
                 window.scrollTo(0, 0);
             }
-        } else {
-            if (pageId !== 'not-found') console.warn("Không tìm thấy section:", pageId);
         }
-        // -----------------------------------
 
-        // Active Menu & Sidebar
-        const allLinks = document.querySelectorAll('a');
-        allLinks.forEach(l => l.classList.remove('active-link'));
+        // Active Menu Sidebar
+        document.querySelectorAll('a').forEach(l => l.classList.remove('active-link'));
         const activeLink = document.getElementById('link-' + pageId);
         if (activeLink) activeLink.classList.add('active-link');
 
-        const allGroups = document.querySelectorAll('.category-group');
-        allGroups.forEach(g => g.classList.remove('is-open'));
+        // Mở Group menu
+        document.querySelectorAll('.category-group').forEach(g => g.classList.remove('is-open'));
         if (groupId) {
             const g = document.getElementById(groupId);
             if (g) g.classList.add('is-open');
         }
 
-        // E. Cập nhật History
+        // Cập nhật History URL
         if (addToHistory) {
             let url = urlMapping[pageId];
             if (!url) {
@@ -709,11 +717,6 @@
             }
             if (url) updateHistory(pageId, groupId, url);
         }
-
-        // F. Fix Writing List Animation
-        if (pageId === 'cat-writings' && typeof renderWritingList === 'function') {
-            setTimeout(renderWritingList, 10);
-        }
     }
 
     function updateHistory(pageId, groupId, url) {
@@ -722,7 +725,7 @@
         }
     }
 
-    // 6. NHÀ MÁY SẢN XUẤT (CHỈ TẠO SIDEBAR & GRID - KHÔNG TẠO CHI TIẾT)
+    // Render Grid & Sidebar (Cho Object: Phim, QC...)
     function renderProjectSystem(dataObj, sidebarId, gridId, groupId) {
         const sidebar = document.getElementById(sidebarId);
         const grid = document.getElementById(gridId);
@@ -730,60 +733,69 @@
         if (!dataObj) return;
 
         for (const [id, item] of Object.entries(dataObj)) {
-            // A. Sidebar Link
+            // Sidebar
             if (sidebar) {
                 const li = document.createElement('li');
-                li.innerHTML = `
-                    <a href="javascript:void(0)" onclick="showPage('${id}', '${groupId}')" id="link-${id}">
-                        <span class="content-en">${item.title.en}</span>
-                        <span class="content-vi">${item.title.vi}</span>
-                    </a>
-                `;
+                li.innerHTML = `<a href="javascript:void(0)" onclick="showPage('${id}', '${groupId}')" id="link-${id}"><span class="content-en">${item.title.en}</span><span class="content-vi">${item.title.vi}</span></a>`;
                 sidebar.appendChild(li);
             }
-
-            // B. Grid Thumbnail
+            // Grid
             if (grid) {
                 const a = document.createElement('a');
                 a.href = "javascript:void(0)";
                 a.onclick = () => showPage(id, groupId);
                 a.className = "gallery-item";
-
-                // [MỚI] Gắn thẻ tên để Google Sheet tìm thấy và ẩn đi
                 a.id = 'thumb-' + id;
-                
-                // THÊM loading="lazy" vào thẻ img
-                // Đây là cách tối ưu ảnh tốt nhất mà không cần giảm chất lượng
-                a.innerHTML = `
-                    <img src="${item.thumbnail || ''}" alt="${item.title.en}" loading="lazy">
-                    <p style="margin-top: 5px; font-weight: bold;">
-                        <span class="content-en">${item.title.en}</span>
-                        <span class="content-vi">${item.title.vi}</span>
-                    </p>
-                `;
+                a.innerHTML = `<img src="${item.thumbnail || ''}" alt="${item.title.en}" loading="lazy"><p style="margin-top: 5px; font-weight: bold;"><span class="content-en">${item.title.en}</span><span class="content-vi">${item.title.vi}</span></p>`;
                 grid.appendChild(a);
             }
-            
-            // LƯU Ý: Đã xóa phần tạo "Page Section" ở đây để tránh tải video ngầm
         }
     }
+    
+    // Render Riêng Cho Writings (Vì nó là Mảng)
+    function renderWritingSystem(dataArr, sidebarId, gridId, groupId) {
+        const sidebar = document.getElementById(sidebarId);
+        const grid = document.getElementById(gridId);
+        if (!dataArr || !Array.isArray(dataArr)) return;
 
-    // 7. KHỞI CHẠY
-    document.addEventListener("DOMContentLoaded", () => {
-        if (typeof filmsData !== 'undefined') renderProjectSystem(filmsData, 'sidebar-short-films-list', 'grid-short-films', 'group-short-films');
-        if (typeof commercialData !== 'undefined') renderProjectSystem(commercialData, 'sidebar-commercials-list', 'grid-commercials', 'group-commercials');
-        if (typeof othersData !== 'undefined') renderProjectSystem(othersData, 'sidebar-others-list', 'grid-others', 'group-others');
+        dataArr.forEach(item => {
+            const id = item.id;
+            // Sidebar
+            if (sidebar) {
+                const li = document.createElement('li');
+                li.innerHTML = `<a href="javascript:void(0)" onclick="showPage('${id}', '${groupId}')" id="link-${id}"><span class="content-en">${item.title.en}</span><span class="content-vi">${item.title.vi}</span></a>`;
+                sidebar.appendChild(li);
+            }
+            // Grid
+            if (grid) {
+                const div = document.createElement('div');
+                div.className = 'writing-item';
+                div.onclick = () => showPage(id, groupId);
+                div.innerHTML = `<div class="writing-date">${item.date}</div><div class="writing-title"><span class="content-en">${item.title.en}</span><span class="content-vi">${item.title.vi}</span></div>`;
+                grid.appendChild(div);
+            }
+        });
+    }
 
-        if (typeof renderWritingList === 'function') {
-            renderWritingList();   
-            renderWritingSidebar(); 
-        }
+    // 5. KHỞI ĐỘNG ỨNG DỤNG (Chỉ chạy khi có Data)
+    function startApp() {
+        // Render 3 mục chính (Object)
+        renderProjectSystem(filmsData, 'sidebar-short-films-list', 'grid-short-films', 'group-short-films');
+        renderProjectSystem(commercialData, 'sidebar-commercials-list', 'grid-commercials', 'group-commercials');
+        renderProjectSystem(othersData, 'sidebar-others-list', 'grid-others', 'group-others');
 
+        // Render Writings (Array)
+        renderWritingSystem(writingData, 'sidebar-writings-list', 'writings-list', 'group-writings');
+
+        // Kiểm tra URL để mở trang tương ứng
         const path = window.location.pathname;
         const initialId = getIdFromUrl(path);
         
         showPage(initialId, null, false, false);
-    });
+    }
+
+    // THAY VÌ CHẠY LUÔN, TA GỌI HÀM TẢI DỮ LIỆU
+    document.addEventListener("DOMContentLoaded", loadAllData);
 
     window.onpopstate = function(event) {
         if (event.state) showPage(event.state.pageId, event.state.groupId, false);
@@ -1214,10 +1226,7 @@
 
 
 
-<script src="/short-films-data.js?v=5.0"></script>
-<script src="/commercials-data.js?v=5.0"></script>
-<script src="/others-data.js?v=5.0"></script>
-<script src="/writings-data.js?v=5.0"></script>
+
 
 
 <div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox(event)">
@@ -2295,32 +2304,7 @@
 
 
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Đợi 0.5 giây để dữ liệu phim tải xong
-        setTimeout(function() {
-            // 1. Lấy phần đuôi sau dấu # (ví dụ: #/short-films/dad-dont-lie-to-me)
-            var currentHash = window.location.hash;
 
-            // 2. Kiểm tra nếu có dấu #
-            if (currentHash && currentHash.length > 1) {
-                // Xóa dấu # ở đầu để lấy đường dẫn sạch (ví dụ: /short-films/dad-dont-lie-to-me)
-                var path = currentHash.substring(1);
-
-                console.log("Phát hiện Hash Link:", path);
-
-                // 3. Tận dụng hàm getIdFromUrl có sẵn (dòng 945) để dịch đường dẫn thành ID bài viết
-                // Hàm này sẽ tự tìm ra ID là: "short-films-dad-dont-lie-to-me"
-                var targetId = getIdFromUrl(path);
-
-                // 4. Gọi hàm mở trang
-                if (targetId && targetId !== 'not-found') {
-                    showPage(targetId);
-                }
-            }
-        }, 500); 
-    });
-</script>
 
 
 
