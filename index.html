@@ -578,9 +578,14 @@
             let crewHtml = `<div class="crew-scroller-container"><div class="crew-scroller">`;
             item.crewData.forEach(member => {
                 crewHtml += `
-                    <div class="crew-card">
-                        <img src="${member.img}" loading="lazy">
-                        <div class="crew-info">
+                <div class="crew-card">
+                    <img src="${member.img}" 
+                        data-full="${member.img}" 
+                        data-name="${member.name}" 
+                        data-role-vi="${member.role.vi}" 
+                        data-role-en="${member.role.en}" 
+                        loading="lazy">
+                    <div class="crew-info">
                             <div class="crew-role">
                                 <span class="content-vi">${member.role.vi}</span>
                                 <span class="content-en">${member.role.en}</span>
@@ -786,6 +791,9 @@
 
         // Render Writings (Array)
         renderWritingSystem(writingData, 'sidebar-writings-list', 'writings-list', 'group-writings');
+
+        // --- THÊM DÒNG NÀY ĐỂ KÍCH HOẠT PHYSICS SAU KHI CÓ DATA ---
+        renderWritingList();
 
         // Kiểm tra URL để mở trang tương ứng
         const path = window.location.pathname;
@@ -1724,8 +1732,8 @@
     });
 
     document.addEventListener("DOMContentLoaded", () => {
-        renderWritingList();   
-        renderWritingSidebar(); 
+      //  renderWritingList();   
+      //  renderWritingSidebar(); 
     });
 </script>
 
