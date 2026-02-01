@@ -1,0 +1,195 @@
+[
+  {
+    "id": "commercials-nhatot",
+    "slug": "nhatot",
+    "title": {
+      "vi": "Nhà vừa ý, giá hợp lý!",
+      "en": "Perfect Home, Reasonable Price!"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/Nhatot_thumbnail.gif?v=2",
+    "year": 2025,
+    "country": "Vietnam",
+    "brand": {
+      "name": "Nhà Tốt",
+      "url": "https://www.nhatot.com"
+    },
+    "video_id": "W4kPULPBvBM",
+    "role": {
+      "vi": "Trợ lý cá nhân Đạo diễn",
+      "en": "Director's Assistant"
+    },
+    "role_description": {
+      "vi": "Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.",
+      "en": "Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision."
+    },
+    "featured": true,
+    "draft": false,
+    "order": 1
+  },
+  {
+    "id": "commercials-batdongsan",
+    "slug": "batdongsan",
+    "title": {
+      "vi": "Nhà thật Sài Gòn, có sao nói vậy!",
+      "en": "Real Estate Saigon, Why Not!"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/Batdongsan_thumbnail.gif?v=2",
+    "year": 2025,
+    "country": "Vietnam",
+    "brand": {
+      "name": "Batdongsan.com.vn",
+      "url": "https://batdongsan.com.vn"
+    },
+    "video_id": "8nsNFWFw2tw",
+    "role": {
+      "vi": "Trợ lý cá nhân Đạo diễn",
+      "en": "Director's Assistant"
+    },
+    "role_description": {
+      "vi": "Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.",
+      "en": "Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision."
+    },
+    "featured": true,
+    "draft": false,
+    "order": 2
+  },
+  {
+    "id": "commercials-thegioididong",
+    "slug": "thegioididong-camera",
+    "title": {
+      "vi": "Có Camera Tiện Lắm! An Toàn Lắm!",
+      "en": "Has Camera So Convenient! So Safe!"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/Thegioididong_thumbnail.gif?v=2",
+    "year": 2025,
+    "country": "Vietnam",
+    "brand": {
+      "name": "Thế Giới Di Động",
+      "url": "https://www.thegioididong.com"
+    },
+    "video_id": "uyr9QphU2ew",
+    "role": {
+      "vi": "Trợ lý Đạo diễn #1",
+      "en": "First Assistant Director"
+    },
+    "role_description": {
+      "vi": "Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.",
+      "en": "Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress."
+    },
+    "featured": false,
+    "draft": false,
+    "order": 3
+  },
+  {
+    "id": "commercials-fpt-iphone",
+    "slug": "fpt-iphone-16",
+    "title": {
+      "vi": "iPhone Mới Đã Tới",
+      "en": "New iPhone Has Arrived"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/FPTxiPhone_Thumbnail.gif?v=2",
+    "year": 2024,
+    "country": "Vietnam",
+    "brand": {
+      "name": "FPT Shop x iPhone 16",
+      "url": "https://fptshop.com.vn"
+    },
+    "video_id": "rUdTgMijico",
+    "role": {
+      "vi": "Trợ lý Đạo diễn #1",
+      "en": "First Assistant Director"
+    },
+    "role_description": {
+      "vi": "Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.",
+      "en": "Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress."
+    },
+    "featured": false,
+    "draft": false,
+    "order": 4
+  },
+  {
+    "id": "commercials-fpt-backtoschool",
+    "slug": "fpt-back-to-school",
+    "title": {
+      "vi": "Back To School",
+      "en": "Back To School"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/FPTxAMD_Thumbnail.gif?v=2",
+    "year": 2024,
+    "country": "Vietnam",
+    "brand": {
+      "name": "FPT Shop x AMD",
+      "url": "https://fptshop.com.vn"
+    },
+    "partner": {
+      "name": "AMD",
+      "url": "https://www.amd.com/en.html"
+    },
+    "video_id": "DJTxFQLngDA",
+    "role": {
+      "vi": "Trợ lý Đạo diễn #1",
+      "en": "First Assistant Director"
+    },
+    "role_description": {
+      "vi": "Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.",
+      "en": "Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress."
+    },
+    "featured": false,
+    "draft": false,
+    "order": 5
+  },
+  {
+    "id": "commercials-bach-dang-cement",
+    "slug": "bach-dang-cement",
+    "title": {
+      "vi": "Xi Măng Vua, Cùng Xây Di Sản",
+      "en": "King Cement, Building Heritage Together"
+    },
+    "thumbnail": "https://ik.imagekit.io/phamhuutri108/comm/bach-dang-cement-thumbnail.jpg",
+    "year": 2026,
+    "country": "Vietnam",
+    "brand": {
+      "name": "Xi Măng Bạch Đằng",
+      "url": ""
+    },
+    "video_id": "",
+    "role": {
+      "vi": "Trợ lý cá nhân Đạo diễn",
+      "en": "Director's Assistant"
+    },
+    "role_description": {
+      "vi": "Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.",
+      "en": "Personal Assistant to the Director, supporting the development of ideas and preparation of creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision."
+    },
+    "featured": false,
+    "draft": false,
+    "order": 6
+  },
+  {
+    "id": "commercials-benh-vien-phuong-nam",
+    "slug": "benh-vien-phuong-nam",
+    "title": {
+      "vi": "Mẹ Bầu Chốt Luôn",
+      "en": "Expectant Mothers Always Decide"
+    },
+    "thumbnail": "https://ik.imagekit.io/phamhuutri108/comm/benh-vien-phuong-nam-thumbnail.jpg",
+    "year": 2026,
+    "country": "Vietnam",
+    "brand": {
+      "name": "Bệnh Viện Phương Nam",
+      "url": ""
+    },
+    "video_id": "",
+    "role": {
+      "vi": "Trợ lý cá nhân Đạo diễn",
+      "en": "Director's Assistant"
+    },
+    "role_description": {
+      "vi": "Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.",
+      "en": "Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision."
+    },
+    "featured": false,
+    "draft": false,
+    "order": 7
+  }
+]

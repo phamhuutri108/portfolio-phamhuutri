@@ -1,0 +1,246 @@
+[
+  {
+    "id": "short-films-dad-dont-lie-to-me",
+    "slug": "dad-dont-lie-to-me",
+    "title": {
+      "vi": "Ba Ơi, Đừng Nói Dối",
+      "en": "Dad, Don't Lie To Me"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2",
+    "year": 2026,
+    "duration": "39:45",
+    "status": "coming-soon",
+    "genre": {
+      "vi": "Phim ngắn / Tâm lý, Quan sát",
+      "en": "Short fiction / Drama, Observation"
+    },
+    "video_id": "ooWID56SmHk",
+    "logline": {
+      "vi": "Một bác sĩ trung niên bất đắc dĩ, thông qua điện thoại, phải đóng giả làm cha của một cậu bé bệnh nhân ung thư của anh, để đánh lừa cậu về cái chết của người cha ruột.",
+      "en": "An unwilling middle-aged doctor has to impersonate the father of his young cancer patient through a series of phone calls, to deceive him about the death of his real father."
+    },
+    "director_statement": {
+      "vi": "Khoảng cuối năm 2023, khi tôi đang túc trực ở bệnh viện để chăm sóc cho mẹ tôi sau khi bà trải qua một cơn đột quỵ đã khiến sức khỏe tinh thần và khả năng lao động của bà giảm sút. Có một vị bác sĩ đã chăm sóc rất tận tâm cho mẹ tôi mặc dù gia đình tôi không quen biết ông, và phòng bệnh của mẹ tôi chỉ thuộc loại phổ thông. Tôi cho rằng, vượt lên trên y đức, phải có một động lực sâu xa hơn đằng sau lòng tốt của ông. Và ý tưởng của tôi ra đời từ đó.",
+      "en": "In late 2023, while I was keeping vigil at the hospital caring for my mother after she suffered a stroke, there was a doctor who provided exceptionally dedicated care for my mother despite having no prior connection to our family. I believe that, beyond medical ethics, there must have been a deeper motivation behind his kindness. And from this, my idea was born."
+    },
+    "awards": [],
+    "cast": ["Ngô Nhật Trường", "Cô Nhum", "Nguyễn Vũ Uy Nhân"],
+    "crew": [
+      { "role": { "vi": "Đạo diễn và Kịch bản", "en": "Director and Screenwriter" }, "name": "Phạm Hữu Trí" },
+      { "role": { "vi": "Cố vấn nghệ thuật", "en": "Director's Consultant" }, "name": "NSND. Đạo diễn Đào Bá Sơn" },
+      { "role": { "vi": "Sản xuất", "en": "Producer" }, "name": "Thục Mai" },
+      { "role": { "vi": "Đồng sản xuất", "en": "Co-Producer" }, "name": "Thảo Quiêng" },
+      { "role": { "vi": "Quản lý dự án", "en": "Project Manager" }, "name": "Phạm Văn Nam" },
+      { "role": { "vi": "Đạo diễn hình ảnh", "en": "Cinematographer" }, "name": "Nguyễn Tùng Lâm" },
+      { "role": { "vi": "Thiết kế sản xuất", "en": "Production Designer" }, "name": "Dzuy Tom" },
+      { "role": { "vi": "Thiết kế mỹ thuật", "en": "Art Director" }, "name": "Hoàng Bảo Uyên" },
+      { "role": { "vi": "Dựng phim", "en": "Editor" }, "name": "Phạm Hữu Trí" },
+      { "role": { "vi": "Hiệu chỉnh màu sắc", "en": "Colorist" }, "name": "Nguyễn Tùng Lâm" },
+      { "role": { "vi": "Nhạc sĩ", "en": "Music Composer" }, "name": "Huy Đẹp Trai" }
+    ],
+    "crew_cards": [
+      { "name": "Ngô Nhật Trường", "role": { "vi": "Diễn viên", "en": "Cast" }, "image": "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-ngo-nhat-truong.jpeg?v=2" },
+      { "name": "Cô Nhum", "role": { "vi": "Diễn viên", "en": "Cast" }, "image": "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-co-nhum.jpeg?v=2" },
+      { "name": "Nguyễn Vũ Uy Nhân", "role": { "vi": "Diễn viên", "en": "Cast" }, "image": "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-bap.jpeg?v=2" },
+      { "name": "Phạm Hữu Trí", "role": { "vi": "Đạo diễn, Kịch bản & Dựng phim", "en": "Director, Screenwriter & Editor" }, "image": "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri_1.jpeg?v=5" },
+      { "name": "Thục Mai", "role": { "vi": "Sản xuất", "en": "Producer" }, "image": "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpeg?v=2" },
+      { "name": "Thảo Quiêng", "role": { "vi": "Đồng sản xuất", "en": "Co-Producer" }, "image": "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thao-quieng.jpeg?v=2" },
+      { "name": "Nguyễn Tùng Lâm", "role": { "vi": "Đạo diễn hình ảnh", "en": "Cinematographer" }, "image": "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.jpeg?v=2" },
+      { "name": "Dzuy Tom", "role": { "vi": "Thiết kế sản xuất", "en": "Production Designer" }, "image": "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-dzuy-tom.jpeg?v=2" }
+    ],
+    "bts_images": [
+      { "src": "https://assets.phamhuutri.com/assets/short-films/BODND/BTS/BODND-BTS-2.jpeg?v=2", "layout": "wide" },
+      { "src": "https://assets.phamhuutri.com/assets/short-films/BODND/BTS/BODND-BTS-1.jpeg?v=2", "layout": "normal" },
+      { "src": "https://assets.phamhuutri.com/assets/short-films/BODND/BTS/BODND-BTS-3.jpeg?v=2", "layout": "big" }
+    ],
+    "featured": true,
+    "draft": false,
+    "order": 1
+  },
+  {
+    "id": "short-films-karma",
+    "slug": "karma",
+    "title": {
+      "vi": "Nghiệp",
+      "en": "Karma"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/short-films/KARMA/KARMA_thumbnail.jpeg?v=2",
+    "year": 2024,
+    "duration": "28:20",
+    "status": "released",
+    "genre": {
+      "vi": "Phim ngắn / Tâm lý",
+      "en": "Short fiction / Drama"
+    },
+    "video_id": "VzVB9pFBoiY",
+    "streaming_url": "https://www.fabafilms.com//streaming/8b88437e-ebf3-41f1-8ed5-70e0d7f14771",
+    "logline": {
+      "vi": "Một Tỳ Kheo già, sau hơn 20 năm đi tu để thoát khỏi cảm giác tội lỗi từng hãm hiếp một cô gái, đã vô tình gặp lại con gái ruột của mình, một lần nữa phải đối mặt với tội lỗi năm xưa và ngộ ra quan niệm về sự giải thoát và tha thứ.",
+      "en": "An old monk, after 20 years of practicing Buddhism to escape the guilt of having raped a woman, accidentally meets his own daughter, and once more has to face his past sin and realizes the meaning of enlightenment and forgiveness."
+    },
+    "awards": [
+      { "year": 2024, "name": { "vi": "Cánh Diều Bạc", "en": "Silver Prize, Golden Kite Awards" }, "organization": { "vi": "Hội Điện ảnh Việt Nam", "en": "Vietnam Cinema Association" } },
+      { "year": 2025, "name": { "vi": "Kịch bản xuất sắc nhất", "en": "Best Screenplay" }, "organization": { "vi": "FABA Films", "en": "FABA Films" } }
+    ],
+    "cast": ["Khánh Duy", "Cô Nhum", "Đức Trí"],
+    "crew": [
+      { "role": { "vi": "Đạo diễn & Kịch bản", "en": "Director & Screenwriter" }, "name": "Phạm Hữu Trí" },
+      { "role": { "vi": "Cố vấn nghệ thuật", "en": "Director's Consultant" }, "name": "NSƯT. Đạo diễn Nguyễn Tường Phương" },
+      { "role": { "vi": "Sản xuất", "en": "Producer" }, "name": "Hoàng Mỹ" },
+      { "role": { "vi": "Đạo diễn hình ảnh", "en": "Director of Photography" }, "name": "Nguyễn Tùng Lâm, Hoàng Bảo Uyên" },
+      { "role": { "vi": "Dựng phim", "en": "Editor" }, "name": "Ngô Hà Nam, Phạm Hữu Trí" },
+      { "role": { "vi": "Hiệu chỉnh màu sắc", "en": "Colorist" }, "name": "Nguyễn Tùng Lâm" }
+    ],
+    "still_images": [
+      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-1.jpeg?v=3" },
+      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-2.jpeg?v=3" },
+      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-3.jpeg?v=3" }
+    ],
+    "storyboard_images": [
+      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpeg?v=2" },
+      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpeg?v=2" }
+    ],
+    "bts_images": [
+      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_1.jpeg?v=2", "layout": "normal" },
+      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_2.jpeg?v=2", "layout": "wide" }
+    ],
+    "featured": true,
+    "draft": false,
+    "order": 2
+  },
+  {
+    "id": "short-films-the-ghost-wants-to-live",
+    "slug": "the-ghost-wants-to-live",
+    "title": {
+      "vi": "\"Con Ma\" Muốn Sống",
+      "en": "\"The Ghost\" Wants To Live"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/short-films/CMMS/CMMS-thumbnail.jpeg?v=2",
+    "year": 2022,
+    "duration": "22:02",
+    "status": "released",
+    "genre": {
+      "vi": "Phim tài liệu ngắn / Tương tác",
+      "en": "Documentary short / Interactive"
+    },
+    "video_id": "ijfYdCNMRK8",
+    "synopsis": {
+      "vi": "Phim là toàn bộ câu chuyện của nhân vật Lâm Anh, kể về những thăng trầm của bản thân khi đã trải qua căn bệnh trầm cảm. Đã có lúc cô tự nhận mình là một con ma, và giờ đây… con ma ấy muốn được sống, muốn được hạnh phúc.",
+      "en": "The film tells the complete story of the character Lâm Anh, recounting the ups and downs she experienced after battling depression. There was a time when she considered herself a ghost, and now... that ghost wants to live."
+    },
+    "awards": [
+      { "year": 2023, "name": { "vi": "Giải Ba", "en": "Third Prize" }, "organization": { "vi": "Liên hoan Phim ngắn TP.HCM", "en": "HCMC Short Film Festival" } },
+      { "year": 2022, "name": { "vi": "Quỹ Sáng tạo trẻ", "en": "Young Creativity Fund" }, "organization": { "vi": "Hội Điện ảnh TP.HCM", "en": "HCMC Cinema Association" } }
+    ],
+    "cast": ["Nguyễn Lâm Anh"],
+    "crew": [
+      { "role": { "vi": "Đạo diễn và Kịch bản", "en": "Director & Screenwriter" }, "name": "Phạm Hữu Trí" },
+      { "role": { "vi": "Cố vấn nghệ thuật", "en": "Director's Consultant" }, "name": "NSND. Đạo diễn Đào Bá Sơn" },
+      { "role": { "vi": "Quay phim", "en": "Camera Operator" }, "name": "Võ Nguyễn Đạt Kha, Phan Quốc Anh, Phan Thiện Anh, Nguyễn Đan Thọ" },
+      { "role": { "vi": "Dựng phim", "en": "Editor" }, "name": "Phạm Hữu Trí" }
+    ],
+    "music": [
+      { "title": "Một Ngày", "artist": "Kien" },
+      { "title": "Con Dế Mèn Hát Vào Mùa Hè", "artist": "Tung" }
+    ],
+    "bts_images": [
+      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_1.jpeg?v=2", "layout": "normal" },
+      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_5.jpeg?v=2", "layout": "big" }
+    ],
+    "featured": false,
+    "draft": false,
+    "order": 3
+  },
+  {
+    "id": "short-films-cocks-cooking",
+    "slug": "cocks-cooking",
+    "title": {
+      "vi": "Gà Trống Nấu Cơm",
+      "en": "Cock's Cooking"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/short-films/GTNC/GTNC_thumbnail.jpeg?v=2",
+    "year": 2023,
+    "duration": "06:45",
+    "status": "released",
+    "genre": {
+      "vi": "Phim ngắn / Tâm lý",
+      "en": "Short fiction / Drama"
+    },
+    "video_id": "nOfecnBi0bM",
+    "awards": [],
+    "cast": ["Võ Nguyễn Đạt Kha"],
+    "crew": [
+      { "role": { "vi": "Đạo diễn, Kịch bản và Dựng phim", "en": "Director, Screenwriter & Editor" }, "name": "Phạm Hữu Trí" }
+    ],
+    "music": [
+      { "title": "You Are So Beautiful", "artist": "Joe Cocker" }
+    ],
+    "featured": false,
+    "draft": false,
+    "order": 4
+  },
+  {
+    "id": "short-films-alive",
+    "slug": "alive",
+    "title": {
+      "vi": "Khi Chúng Ta Được Sống",
+      "en": "Alive"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/short-films/ALIVE/Alive_thumbnail.jpeg?v=2",
+    "year": 2020,
+    "duration": "19:23",
+    "status": "released",
+    "genre": {
+      "vi": "Phim ngắn / Tâm lý",
+      "en": "Short fiction / Drama"
+    },
+    "video_id": "QBW1HpOVGz8",
+    "awards": [
+      { "year": 2022, "name": { "vi": "Phim ngắn xuất sắc", "en": "Best Short Film" }, "organization": { "vi": "The Original Project, Hà Nội", "en": "The Original Project, Hanoi" } }
+    ],
+    "cast": ["Ngọc Đạt", "Tuyết Sương", "Minh Nhã", "Thảo Linh", "Công Sang"],
+    "crew": [
+      { "role": { "vi": "Đạo diễn", "en": "Director" }, "name": "Phạm Hữu Trí" },
+      { "role": { "vi": "Đồng Đạo diễn", "en": "Co-Director" }, "name": "Nguyễn Lâm Anh" },
+      { "role": { "vi": "Sản xuất", "en": "Producer" }, "name": "Phương Uyên" },
+      { "role": { "vi": "Kịch bản", "en": "Screenwriter" }, "name": "Quốc Vinh" },
+      { "role": { "vi": "Quay phim", "en": "Cinematography" }, "name": "Nhật Khánh" },
+      { "role": { "vi": "Dựng phim", "en": "Editor" }, "name": "Lê Đăng Doanh" }
+    ],
+    "featured": false,
+    "draft": false,
+    "order": 5
+  },
+  {
+    "id": "short-films-when-my-city-grows",
+    "slug": "when-my-city-grows",
+    "title": {
+      "vi": "Khi Thành Phố Lớn",
+      "en": "When My City Grows"
+    },
+    "thumbnail": "https://assets.phamhuutri.com/assets/short-films/KTPL/KTPL-thumbnail.jpeg?v=2",
+    "year": 2020,
+    "duration": "02:55",
+    "status": "released",
+    "genre": {
+      "vi": "Phim tài liệu ngắn",
+      "en": "Short documentary"
+    },
+    "video_id": "9qh9bCoNitI",
+    "awards": [
+      { "year": 2020, "name": { "vi": "Giải nhì", "en": "Second Prize" }, "organization": { "vi": "Le Filmmaking Camp: Spectrum, Quảng Trị", "en": "Le Filmmaking Camp: Spectrum, Quang Tri" } }
+    ],
+    "description": {
+      "vi": "Dự án được tổ chức dưới sự tài trợ của Đại sứ quán Hoa Kỳ và được bảo trợ tổ chức của Tỉnh Đoàn Quảng Trị.",
+      "en": "The project was organised with sponsorship from the U.S. Embassy and supported by the Quang Tri Provincial Youth Union."
+    },
+    "crew": [
+      { "role": { "vi": "Đạo diễn, Quay phim và Dựng phim", "en": "Director, Filmming and Editor" }, "name": "Phạm Hữu Trí" },
+      { "role": { "vi": "Kịch bản", "en": "Screenwriter" }, "name": "Quốc Vinh" },
+      { "role": { "vi": "Sản xuất", "en": "Producer" }, "name": "Hải Yến" }
+    ],
+    "featured": false,
+    "draft": false,
+    "order": 6
+  }
+]
