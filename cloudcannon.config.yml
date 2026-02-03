@@ -1,0 +1,109 @@
+collections_config:
+  data:
+    path: data
+    name: Data Files
+    icon: notes
+    disable_url: false
+    _inputs:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  renderOrder[*].blockId:
+    type: text
+    label: Block ID
+    comment: ID from Custom Blocks
+    cascade: true
+  customBlocks.*.style:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - info
+        - warning
+        - success
+        - error
+        - primary
+        - secondary
+    cascade: true
+_structures:
+  customBlocks:
+    style: select
+    values:
+      - label: 📝 Text
+        value:
+          type: text
+          heading:
+            vi: ''
+            en: ''
+          content:
+            vi: ''
+            en: ''
+      - label: 💬 Quote
+        value:
+          type: quote
+          author: ''
+          content:
+            vi: ''
+            en: ''
+      - label: 📢 Callout
+        value:
+          type: callout
+          style: info
+          content:
+            vi: ''
+            en: ''
+      - label: 🔘 Button
+        value:
+          type: button
+          label:
+            vi: ''
+            en: ''
+          url: ''
+          style: primary
+  renderOrder:
+    style: select
+    values:
+      - label: 📊 Metadata
+        value:
+          type: metadata
+      - label: 🎬 Video
+        value:
+          type: video
+      - label: 📝 Logline
+        value:
+          type: logline
+      - label: 📄 Synopsis
+        value:
+          type: synopsis
+      - label: 💭 Statement
+        value:
+          type: directorsStatement
+      - label: 👥 Crew
+        value:
+          type: crew
+      - label: ✨ Custom
+        value:
+          type: custom
+          blockId: ''
+data_config:
+  data/short-films.json#*:
+    _inputs:
+      customBlocks:
+        type: object
+        label: 🎨 Custom Content Blocks
+        comment: Create reusable content blocks
+        cascade: true
+      customBlocks.*:
+        type: object
+        options:
+          structures: _structures.customBlocks
+        cascade: true
+      renderOrder:
+        type: array
+        options:
+          structures: _structures.renderOrder
+        label: 📋 Content Order
+        comment: Drag to reorder
+        cascade: true
+timezone: Etc/UTC
