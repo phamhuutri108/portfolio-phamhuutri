@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tool Chuyển Đổi Others (JS to JSON)</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f9; display: flex; flex-direction: column; gap: 15px; }
+        textarea { width: 100%; height: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        button { padding: 10px 20px; background: #3498db; color: white; border: none; cursor: pointer; border-radius: 5px; font-weight: bold; }
+        .success { color: green; margin-top: 10px; } .error { color: red; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Tool Chuyển Đổi Dữ Liệu "Others"</h2>
+    <textarea id="inputData" placeholder="Dán nội dung file others-data.js vào đây (const othersData = ...)"></textarea>
+    <button onclick="runConvert()">CHUYỂN ĐỔI</button>
+    <textarea id="outputData" placeholder="Kết quả JSON..."></textarea>
+    <div id="status"></div>
+
+    <script>
+        // LOGIC CHUYỂN ĐỔI (Dùng lại của Short Films)
+        function convertOthersToNewFormat(oldData) {
+            const newData = {};
+            const parser = new DOMParser();
+            const cleanText = (t) => t ? t.replace(/<[^>]*>?/gm, ' ').replace(/\s+/g, ' ').trim() : "";
+
+            const extractMetadata = (doc, lang) => {
+                const textContent = doc.body.innerHTML;
+                let year = "", genre = "", duration = "";
+                const patterns = lang === 'vi' ? {
+                    year: /Năm:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    genre: /Thể loại:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    duration: /Thời lượng:<\/b>\s*(.*?)(<br>|<\/p>)/i
+                } : {
+                    year: /Year:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    genre: /Genre:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    duration: /Duration:<\/b>\s*(.*?)(<br>|<\/p>)/i
+                };
+                const mY = textContent.match(patterns.year); if(mY) year = cleanText(mY[1]);
+                const mG = textContent.match(patterns.genre); if(mG) genre = cleanText(mG[1]);
+                const mD = textContent.match(patterns.duration); if(mD) duration = cleanText(mD[1]);
+                return { year, genre, duration };
+            };
+
+            const extractSection = (doc, headers) => {
+                const h3s = Array.from(doc.querySelectorAll('h3'));
+                let content = "";
+                for (const h3 of h3s) {
+                    if (headers.some(h => h3.textContent.toLowerCase().includes(h))) {
+                        let sibling = h3.nextElementSibling;
+                        while (sibling) {
+                            if (sibling.tagName === 'H3') break;
+                            if (sibling.tagName === 'P') content += sibling.textContent.trim() + " ";
+                            sibling = sibling.nextElementSibling;
+                        }
+                        break; 
+                    }
+                }
+                return content.trim();
+            };
+
+            const extractCrew = (doc) => {
+                return Array.from(doc.querySelectorAll('ul li')).map(li => {
+                    const b = li.querySelector('b');
+                    let r = b ? cleanText(b.textContent).replace(/:+$/, '') : "";
+                    let n = li.textContent.replace(b ? b.textContent : "", "").trim();
+                    if(n.startsWith(':')) n = n.substring(1).trim();
+                    return { role: r, name: n };
+                });
+            };
+
+            for (const [key, item] of Object.entries(oldData)) {
+                const docVi = parser.parseFromString(item.vi||"", "text/html");
+                const docEn = parser.parseFromString(item.en||"", "text/html");
+                const metaVi = extractMetadata(docVi, 'vi');
+                const metaEn = extractMetadata(docEn, 'en');
+
+                // Video
+                const iframe = docVi.querySelector('iframe');
+                let videoData = { platform: "", embedId: "", url: "" };
+                if (iframe) {
+                    const src = iframe.src;
+                    if (src.includes("youtube") || src.includes("youtu.be")) {
+                        videoData.platform = "youtube"; videoData.url = src;
+                        try { videoData.embedId = src.split('/').pop().split('?')[0]; } catch(e){}
+                    } else if (src.includes("vimeo")) {
+                        videoData.platform = "vimeo"; videoData.url = src;
+                    }
+                }
+
+                // Crew
+                const cVi = extractCrew(docVi);
+                const cEn = extractCrew(docEn);
+                const mergedCrew = cVi.map((c, i) => ({
+                    role: { vi: c.role, en: cEn[i]?.role || "" },
+                    name: c.name
+                }));
+
+                newData[key] = {
+                    title: item.title,
+                    thumbnail: item.thumbnail,
+                    year: metaVi.year || metaEn.year,
+                    genre: { vi: metaVi.genre, en: metaEn.genre },
+                    duration: metaVi.duration,
+                    video: videoData,
+                    logline: { vi: extractSection(docVi,['logline']), en: extractSection(docEn,['logline']) },
+                    synopsis: { vi: extractSection(docVi,['tóm tắt','synopsis']), en: extractSection(docEn,['synopsis']) },
+                    crew: mergedCrew,
+                    crewData: item.crewData || [],
+                    btsData: item.btsData || []
+                };
+            }
+            return JSON.stringify(newData, null, 2);
+        }
+
+        function runConvert() {
+            const inputVal = document.getElementById('inputData').value;
+            try {
+                // Nhận diện biến othersData
+                const dataExtractor = new Function(inputVal + "; try { return othersData; } catch(e) { return null; }");
+                const oldObj = dataExtractor();
+                if (!oldObj) throw new Error("Không tìm thấy biến 'othersData'.");
+                
+                document.getElementById('outputData').value = convertOthersToNewFormat(oldObj);
+                document.getElementById('status').innerText = "Thành công!";
+                document.getElementById('status').className = "success";
+            } catch (e) {
+                document.getElementById('status').innerText = "Lỗi: " + e.message;
+                document.getElementById('status').className = "error";
+            }
+        }
+    </script>
+</body>
+</html>

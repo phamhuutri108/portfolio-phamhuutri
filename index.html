@@ -527,11 +527,15 @@ async function loadAllData() {
             fetch('data/writings.json').then(r => r.json())
         ]);
 
-        // CONVERT data mới sang format cũ (để code cũ vẫn chạy)
-        filmsData = convertNewSchemaToOld(f);
-        commercialData = convertNewSchemaToOld(c);
-        othersData = convertNewSchemaToOld(o);
-        writingData = convertNewSchemaToOld(w);
+        // --- CẬP NHẬT: TRUYỀN THAM SỐ TYPE VÀO ĐÂY ---
+        filmsData = convertNewSchemaToOld(f, 'film');            // Mode: Phim
+        commercialData = convertNewSchemaToOld(c, 'commercial'); // Mode: Quảng cáo
+        othersData = convertNewSchemaToOld(o, 'film');           // Mode: Phim (Others thường giống phim)
+        
+        // Writing giữ nguyên hoặc convert tuỳ cấu trúc json của bạn
+        // Nếu writing.json là mảng Array thì không cần gọi convertNewSchemaToOld (vì hàm đó trả về Object)
+        // Nếu writing.json cũng là Object project-id thì gọi: convertNewSchemaToOld(w, 'writing');
+        writingData = w; 
 
         console.log('✅ Data loaded and converted successfully');
 
@@ -566,11 +570,12 @@ async function loadAllData() {
         section.id = id;
         section.className = 'page-section';
 
-        // Xử lý nội dung (Hỗ trợ cả bài viết và phim)
+        // 1. Text Content
         const contentVi = item.content ? item.content.vi : item.vi;
         const contentEn = item.content ? item.content.en : item.en;
         
-        let htmlContent = `
+        const textWrapper = document.createElement('div');
+        textWrapper.innerHTML = `
             <h2 class="page-title">
                 <span class="content-en">${item.title.en}</span>
                 <span class="content-vi">${item.title.vi}</span>
@@ -580,49 +585,115 @@ async function loadAllData() {
                 <div class="content-en">${contentEn}</div>
             </div>
         `;
+        section.appendChild(textWrapper);
 
-        // Crew Slider
-        if (item.crewData && item.crewData.length > 0) {
-            let crewHtml = `<div class="crew-scroller-container"><div class="crew-scroller">`;
+        // 2. CREW SCROLLER (CODE SẠCH - DÙNG CSS)
+        if (item.crewData && Array.isArray(item.crewData) && item.crewData.length > 0) {
+            
+            // Container bọc ngoài (quan trọng cho margin desktop)
+            const container = document.createElement('div');
+            container.className = 'crew-scroller-container';
+            
+            // Scroller trượt ngang
+            const scroller = document.createElement('div');
+            scroller.className = 'crew-scroller';
+            
             item.crewData.forEach(member => {
-                crewHtml += `
-                <div class="crew-card">
-                    <img src="${member.img}" 
-                        data-full="${member.img}" 
-                        data-name="${member.name}" 
-                        data-role-vi="${member.role.vi}" 
-                        data-role-en="${member.role.en}" 
-                        loading="lazy">
-                    <div class="crew-info">
-                            <div class="crew-role">
-                                <span class="content-vi">${member.role.vi}</span>
-                                <span class="content-en">${member.role.en}</span>
-                            </div>
-                            <div class="crew-name">${member.name}</div>
-                        </div>
-                    </div>`;
+                if (!member.img) return;
+
+                const card = document.createElement('div');
+                card.className = 'crew-card';
+
+                const img = document.createElement('img');
+                img.src = member.img;
+                img.alt = member.name;
+                img.loading = "lazy";
+                // Dataset Lightbox
+                img.dataset.full = member.img;
+                img.dataset.name = member.name;
+                img.dataset.roleVi = member.role.vi || "";
+                img.dataset.roleEn = member.role.en || "";
+
+                const info = document.createElement('div');
+                info.className = 'crew-info';
+
+                // ROLE (Nằm trên)
+                const roleDiv = document.createElement('div');
+                roleDiv.className = 'crew-role'; // Class này trong CSS đã định nghĩa màu xám, font nhỏ
+                roleDiv.innerHTML = `<span class="content-vi">${member.role.vi}</span><span class="content-en">${member.role.en}</span>`;
+
+                // NAME (Nằm dưới)
+                const nameDiv = document.createElement('div');
+                nameDiv.className = 'crew-name'; // Class này trong CSS đã định nghĩa in đậm, uppercase
+                nameDiv.innerText = member.name;
+
+                // Ghép vào (Role trước, Name sau)
+                info.appendChild(roleDiv);
+                info.appendChild(nameDiv);
+                
+                card.appendChild(img);
+                card.appendChild(info);
+                
+                // Gắn trực tiếp vào scroller
+                scroller.appendChild(card);
             });
-            crewHtml += `</div></div>`;
-            htmlContent += crewHtml;
+
+            container.appendChild(scroller);
+            section.appendChild(container);
         }
 
-        // BTS Gallery
-        if (item.btsData && item.btsData.length > 0) {
-            htmlContent += `
+        // 3. STILL GALLERY
+        if (item.stillData && item.stillData.length > 0) {
+            const stillContainer = document.createElement('div');
+            stillContainer.innerHTML = `
                 <h3 style="margin-top: 50px;">
-                    <span class="content-vi">Hậu trường</span>
+                    <span class="content-vi">Still</span>
+                    <span class="content-en">Still</span>
+                </h3>
+                <div class="gallery-wall">
+                    ${item.stillData.map(pic => `<img src="${pic.src}" class="${pic.class||''}" loading="lazy">`).join('')}
+                </div>
+            `;
+            section.appendChild(stillContainer);
+        }
+
+        // 4. STORYBOARD
+        if (item.storyboardData && item.storyboardData.length > 0) {
+            const sbContainer = document.createElement('div');
+            sbContainer.innerHTML = `
+                <h3 style="margin-top: 50px;">
+                    <span class="content-vi">Storyboard</span>
+                    <span class="content-en">Storyboard</span>
+                </h3>
+                <div class="gallery-wall">
+                    ${item.storyboardData.map(pic => `<img src="${pic.src}" class="${pic.class||''}" loading="lazy">`).join('')}
+                </div>
+            `;
+            section.appendChild(sbContainer);
+        }
+
+        // 5. BTS Gallery (đã có, nhưng đảm bảo đúng)
+        if (item.btsData && item.btsData.length > 0) {
+            const btsContainer = document.createElement('div');
+            btsContainer.innerHTML = `
+                <h3 style="margin-top: 50px;">
+                    <span class="content-vi">Behind The Scene</span>
                     <span class="content-en">Behind The Scene</span>
                 </h3>
-                <div class="gallery-wall">`;
-            item.btsData.forEach(pic => {
-                const cssClass = pic.class ? ` class="${pic.class}"` : '';
-                htmlContent += `<img src="${pic.src}"${cssClass} loading="lazy">`;
-            });
-            htmlContent += `</div>`;
+                <div class="gallery-wall">
+                    ${item.btsData.map(pic => `<img src="${pic.src}" class="${pic.class||''}" loading="lazy">`).join('')}
+                </div>
+            `;
+            section.appendChild(btsContainer);
         }
 
-        section.innerHTML = htmlContent;
+        // 5. Đưa vào trang
         contentContainer.appendChild(section);
+
+        // 6. Kích hoạt JS (nếu có)
+        if (typeof initCrewSystem === 'function') {
+            setTimeout(() => initCrewSystem(), 100);
+        }
     }
 
     function getIdFromUrl(path) {

@@ -1,125 +1,280 @@
-# CloudCannon Configuration
-# Place this file in root: cloudcannon.config.yml
-
 collections_config:
-  data:
+  short-films:
     path: data
     parser: json
+    name: Short Films
     
-_inputs:
-  title:
-    type: object
-    label: Title
-  title.vi:
-    type: text
-    label: Tiêu đề (Tiếng Việt)
-  title.en:
-    type: text
-    label: Title (English)
-  
-  thumbnail:
-    type: object
-  thumbnail.url:
-    type: image
-    label: Poster Image
-  thumbnail.alt:
-    type: text
-    label: Alt Text
-  
-  metadata:
-    type: object
-    label: Metadata
-  metadata.genre:
-    type: object
-  metadata.genre.vi:
-    type: text
-    label: Thể loại (VI)
-  metadata.genre.en:
-    type: text
-    label: Genre (EN)
-  metadata.year:
-    type: text
-    label: Year
-  metadata.duration:
-    type: text
-    label: Duration
-  metadata.awards:
-    type: array
-    label: Awards
-  
-  video:
-    type: object
-  video.platform:
-    type: select
-    options:
-      values: [youtube, vimeo]
-  video.embedId:
-    type: text
-  video.url:
-    type: url
-  
-  logline:
-    type: object
-  logline.vi:
-    type: markdown
-    label: Logline (VI)
-  logline.en:
-    type: markdown
-    label: Logline (EN)
-  
-  synopsis:
-    type: object
-  synopsis.vi:
-    type: markdown
-    label: Synopsis (VI)
-  synopsis.en:
-    type: markdown
-    label: Synopsis (EN)
-  
-  directorsStatement:
-    type: object
-  directorsStatement.vi:
-    type: markdown
-    label: Director's Statement (VI)
-  directorsStatement.en:
-    type: markdown
-    label: Director's Statement (EN)
-  
-  crew:
-    type: array
-    label: Cast & Crew
-  crew[*].name:
-    type: text
-  crew[*].role:
-    type: object
-  crew[*].role.vi:
-    type: text
-  crew[*].role.en:
-    type: text
-  crew[*].avatar:
-    type: image
-  crew[*].priority:
-    type: number
-  
-  gallery:
-    type: array
-    label: Gallery
-  gallery[*].url:
-    type: image
-  gallery[*].size:
-    type: select
-    options:
-      values: [normal, wide, tall, big]
-  gallery[*].caption:
-    type: text
-  
-  published:
-    type: switch
-  featured:
-    type: switch
-  order:
-    type: number
+    # Preview trong CMS
+    preview:
+      gallery:
+        image: key thumbnail
+        text: key title.en
+    
+    _inputs:
+      # ===== FIXED FIELDS (Unchanged) =====
+      
+      title:
+        type: object
+        label: Title
+      
+      thumbnail:
+        type: image
+        label: Thumbnail
+      
+      year:
+        type: text
+        label: Year
+      
+      genre:
+        type: object
+        label: Genre
+      
+      duration:
+        type: text
+        label: Duration
+      
+      awards:
+        type: array
+        label: Awards
+      
+      video:
+        type: object
+        label: Main Video
+      
+      logline:
+        type: object
+        label: Logline
+      
+      synopsis:
+        type: object
+        label: Synopsis
+      
+      directorsStatement:
+        type: object
+        label: Director's Statement
+      
+      crew:
+        type: array
+        label: Crew (Text List)
+      
+      music:
+        type: object
+        label: Music
+      
+      # ===== CUSTOM BLOCKS (New) =====
+      
+      customBlocks:
+        type: object
+        label: Custom Content Blocks
+        comment: "Create reusable content blocks here, then add them to Render Order below"
+        options:
+          subtype: object
+      
+      # IMPORTANT: Mỗi custom block cần define structure
+      customBlocks.*:
+        type: object
+        label: Block
+        options:
+          structures: _structures.customBlocks
+      
+      # ===== RENDER ORDER (Drag & Drop) =====
+      
+      renderOrder:
+        type: array
+        label: Content Order
+        comment: "Drag items to reorder how content appears on the page"
+        options:
+          structures: _structures.renderOrder
 
-paths:
-  uploads: assets/uploads
-  dam_uploads: assets/uploads
+# ==========================================
+# STRUCTURES
+# ==========================================
+
+_structures:
+  
+  # Custom Blocks Structures
+  customBlocks:
+    values:
+      - label: Text Section
+        icon: article
+        value:
+          type: text
+          heading: { vi: "", en: "" }
+          content: { vi: "", en: "" }
+      
+      - label: Quote
+        icon: format_quote
+        value:
+          type: quote
+          author: ""
+          content: { vi: "", en: "" }
+      
+      - label: Callout / Alert
+        icon: info
+        value:
+          type: callout
+          style: info
+          content: { vi: "", en: "" }
+      
+      - label: Button
+        icon: smart_button
+        value:
+          type: button
+          label: { vi: "", en: "" }
+          url: ""
+          style: primary
+      
+      - label: List
+        icon: list
+        value:
+          type: list
+          heading: { vi: "", en: "" }
+          listType: ul
+          items: { vi: [], en: [] }
+      
+      - label: Image
+        icon: image
+        value:
+          type: image
+          src: ""
+          caption: { vi: "", en: "" }
+          width: "100%"
+      
+      - label: Divider
+        icon: horizontal_rule
+        value:
+          type: divider
+      
+      - label: Video (Extra)
+        icon: videocam
+        value:
+          type: video
+          title: { vi: "", en: "" }
+          data:
+            platform: youtube
+            embedId: ""
+            url: ""
+      
+      - label: Embed Code
+        icon: code
+        value:
+          type: embed
+          embedCode: ""
+          caption: { vi: "", en: "" }
+      
+      - label: Custom HTML
+        icon: html
+        value:
+          type: custom_html
+          content: { vi: "", en: "" }
+  
+  # Render Order Structures
+  renderOrder:
+    values:
+      # Built-in sections
+      - label: "📊 Metadata (Genre, Year, Duration)"
+        icon: info
+        value:
+          type: metadata
+      
+      - label: "🎬 Main Video"
+        icon: videocam
+        value:
+          type: video
+      
+      - label: "📝 Logline"
+        icon: short_text
+        value:
+          type: logline
+      
+      - label: "📄 Synopsis"
+        icon: subject
+        value:
+          type: synopsis
+      
+      - label: "💭 Director's Statement"
+        icon: record_voice_over
+        value:
+          type: directorsStatement
+      
+      - label: "📋 Description"
+        icon: description
+        value:
+          type: description
+      
+      - label: "👥 Crew List"
+        icon: people
+        value:
+          type: crew
+      
+      - label: "🎵 Music"
+        icon: music_note
+        value:
+          type: music
+      
+      # Custom block reference
+      - label: "✨ Custom Block"
+        icon: add_circle
+        value:
+          type: custom
+          blockId: ""
+
+# ==========================================
+# INPUT CONFIGURATIONS
+# ==========================================
+
+_inputs:
+  
+  # Render Order Item
+  renderOrder[*].type:
+    type: select
+    label: Type
+    hidden: true
+  
+  renderOrder[*].blockId:
+    type: select
+    label: Select Custom Block
+    comment: "Choose which custom block to insert here"
+    options:
+      values: _select_data.customBlockIds
+  
+  # Custom Blocks
+  customBlocks.*.type:
+    type: select
+    label: Block Type
+    hidden: true
+  
+  customBlocks.*.style:
+    type: select
+    label: Style
+    options:
+      values:
+        - info
+        - warning
+        - success
+        - error
+        - primary
+        - secondary
+  
+  customBlocks.*.listType:
+    type: select
+    label: List Type
+    options:
+      values:
+        - value: ul
+          label: Bullet List
+        - value: ol
+          label: Numbered List
+
+# ==========================================
+# SELECT DATA (Dynamic)
+# ==========================================
+
+_select_data:
+  customBlockIds:
+    # CloudCannon will auto-populate này với keys từ customBlocks
+    # Nếu không auto → Phải list manual:
+    # - special-intro
+    # - critic-quote
+    # - premiere-announcement
+    # etc.

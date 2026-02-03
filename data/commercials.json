@@ -1,407 +1,205 @@
 {
   "commercials-nhatot": {
-    "id": "commercials-nhatot",
-    "category": "commercials-nhatot",
-    "slug": "commercials-nhatot",
     "title": {
       "vi": "Nhà vừa ý, giá hợp lý!",
       "en": "Perfect Home, Reasonable Price!"
     },
-    "thumbnail": {
-      "url": "https://assets.phamhuutri.com/assets/commercial/Nhatot_thumbnail.gif?v=2",
-      "alt": "Perfect Home, Reasonable Price!"
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/Nhatot_thumbnail.gif?v=2",
+    "brand": {
+      "vi": "Nhà Tốt",
+      "en": "Nhà Tốt"
     },
-    "metadata": {
-      "genre": {
-        "vi": "",
-        "en": ""
-      },
-      "year": "2025",
-      "status": {
-        "vi": "",
-        "en": ""
-      },
-      "duration": "",
-      "awards": []
+    "year": "2025",
+    "country": {
+      "vi": "Việt Nam",
+      "en": "Vietnam"
+    },
+    "role": {
+      "vi": "",
+      "en": ""
     },
     "video": {
       "platform": "youtube",
       "embedId": "W4kPULPBvBM",
-      "url": "https://www.youtube.com/watch?v=W4kPULPBvBM"
+      "url": "https://www.youtube.com/embed/W4kPULPBvBM"
     },
-    "logline": {
-      "vi": "",
-      "en": ""
-    },
-    "synopsis": {
-      "vi": "",
-      "en": ""
-    },
-    "directorsStatement": {
-      "vi": "",
-      "en": ""
-    },
-    "crew": [],
-    "gallery": [],
-    "seo": {
-      "metaTitle": {
-        "vi": "Nhà vừa ý, giá hợp lý! - Phạm Hữu Trí",
-        "en": "Perfect Home, Reasonable Price! - Pham Huu Tri"
-      },
-      "metaDescription": {
-        "vi": "",
-        "en": ""
-      },
-      "ogImage": "https://assets.phamhuutri.com/assets/commercial/Nhatot_thumbnail.gif?v=2"
-    },
-    "published": true,
-    "featured": false,
-    "order": 999
+    "roleDescription": {
+      "vi": "Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.",
+      "en": "Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision."
+    }
   },
   "commercials-batdongsan": {
-    "id": "commercials-batdongsan",
-    "category": "commercials-batdongsan",
-    "slug": "commercials-batdongsan",
     "title": {
       "vi": "Nhà thật Sài Gòn, có sao nói vậy!",
       "en": "Real Estate Saigon, Why Not!"
     },
-    "thumbnail": {
-      "url": "https://assets.phamhuutri.com/assets/commercial/Batdongsan_thumbnail.gif?v=2",
-      "alt": "Real Estate Saigon, Why Not!"
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/Batdongsan_thumbnail.gif?v=2",
+    "brand": {
+      "vi": "Batdongsan.com.vn",
+      "en": "Batdongsan.com.vn"
     },
-    "metadata": {
-      "genre": {
-        "vi": "",
-        "en": ""
-      },
-      "year": "2025",
-      "status": {
-        "vi": "",
-        "en": ""
-      },
-      "duration": "",
-      "awards": []
+    "year": "2025",
+    "country": {
+      "vi": "Việt Nam",
+      "en": "Vietnam"
+    },
+    "role": {
+      "vi": "",
+      "en": ""
     },
     "video": {
       "platform": "youtube",
       "embedId": "8nsNFWFw2tw",
-      "url": "https://www.youtube.com/watch?v=8nsNFWFw2tw"
+      "url": "https://www.youtube.com/embed/8nsNFWFw2tw"
     },
-    "logline": {
-      "vi": "",
-      "en": ""
-    },
-    "synopsis": {
-      "vi": "",
-      "en": ""
-    },
-    "directorsStatement": {
-      "vi": "",
-      "en": ""
-    },
-    "crew": [],
-    "gallery": [],
-    "seo": {
-      "metaTitle": {
-        "vi": "Nhà thật Sài Gòn, có sao nói vậy! - Phạm Hữu Trí",
-        "en": "Real Estate Saigon, Why Not! - Pham Huu Tri"
-      },
-      "metaDescription": {
-        "vi": "",
-        "en": ""
-      },
-      "ogImage": "https://assets.phamhuutri.com/assets/commercial/Batdongsan_thumbnail.gif?v=2"
-    },
-    "published": true,
-    "featured": false,
-    "order": 999
+    "roleDescription": {
+      "vi": "Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.",
+      "en": "Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision."
+    }
   },
   "commercials-thegioididong": {
-    "id": "commercials-thegioididong",
-    "category": "commercials-thegioididong",
-    "slug": "commercials-thegioididong",
     "title": {
       "vi": "Có Camera Tiện Lắm! An Toàn Lắm!",
       "en": "Has Camera So Convenient! So Safe!"
     },
-    "thumbnail": {
-      "url": "https://assets.phamhuutri.com/assets/commercial/Thegioididong_thumbnail.gif?v=2",
-      "alt": "Has Camera So Convenient! So Safe!"
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/Thegioididong_thumbnail.gif?v=2",
+    "brand": {
+      "vi": "Thế Giới Di Động",
+      "en": "Thế Giới Di Động"
     },
-    "metadata": {
-      "genre": {
-        "vi": "",
-        "en": ""
-      },
-      "year": "2025",
-      "status": {
-        "vi": "",
-        "en": ""
-      },
-      "duration": "",
-      "awards": []
+    "year": "2025",
+    "country": {
+      "vi": "Việt Nam",
+      "en": "Vietnam"
+    },
+    "role": {
+      "vi": "",
+      "en": ""
     },
     "video": {
       "platform": "youtube",
       "embedId": "uyr9QphU2ew",
-      "url": "https://www.youtube.com/watch?v=uyr9QphU2ew"
+      "url": "https://www.youtube.com/embed/uyr9QphU2ew"
     },
-    "logline": {
-      "vi": "",
-      "en": ""
-    },
-    "synopsis": {
-      "vi": "",
-      "en": ""
-    },
-    "directorsStatement": {
-      "vi": "",
-      "en": ""
-    },
-    "crew": [],
-    "gallery": [],
-    "seo": {
-      "metaTitle": {
-        "vi": "Có Camera Tiện Lắm! An Toàn Lắm! - Phạm Hữu Trí",
-        "en": "Has Camera So Convenient! So Safe! - Pham Huu Tri"
-      },
-      "metaDescription": {
-        "vi": "",
-        "en": ""
-      },
-      "ogImage": "https://assets.phamhuutri.com/assets/commercial/Thegioididong_thumbnail.gif?v=2"
-    },
-    "published": true,
-    "featured": false,
-    "order": 999
+    "roleDescription": {
+      "vi": "Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.",
+      "en": "Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress."
+    }
   },
   "commercials-fpt-iphone": {
-    "id": "commercials-fpt-iphone",
-    "category": "commercials-fpt",
-    "slug": "iphone",
     "title": {
       "vi": "iPhone Mới Đã Tới",
       "en": "New iPhone Has Arrived"
     },
-    "thumbnail": {
-      "url": "https://assets.phamhuutri.com/assets/commercial/FPTxiPhone_Thumbnail.gif?v=2",
-      "alt": "New iPhone Has Arrived"
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/FPTxiPhone_Thumbnail.gif?v=2",
+    "brand": {
+      "vi": "FPT Shop x iPhone 16",
+      "en": "FPT Shop x iPhone 16"
     },
-    "metadata": {
-      "genre": {
-        "vi": "",
-        "en": ""
-      },
-      "year": "2024",
-      "status": {
-        "vi": "",
-        "en": ""
-      },
-      "duration": "",
-      "awards": []
+    "year": "2024",
+    "country": {
+      "vi": "Việt Nam",
+      "en": "Vietnam"
+    },
+    "role": {
+      "vi": "",
+      "en": ""
     },
     "video": {
       "platform": "youtube",
       "embedId": "rUdTgMijico",
-      "url": "https://www.youtube.com/watch?v=rUdTgMijico"
+      "url": "https://www.youtube.com/embed/rUdTgMijico"
     },
-    "logline": {
-      "vi": "",
-      "en": ""
-    },
-    "synopsis": {
-      "vi": "",
-      "en": ""
-    },
-    "directorsStatement": {
-      "vi": "",
-      "en": ""
-    },
-    "crew": [],
-    "gallery": [],
-    "seo": {
-      "metaTitle": {
-        "vi": "iPhone Mới Đã Tới - Phạm Hữu Trí",
-        "en": "New iPhone Has Arrived - Pham Huu Tri"
-      },
-      "metaDescription": {
-        "vi": "",
-        "en": ""
-      },
-      "ogImage": "https://assets.phamhuutri.com/assets/commercial/FPTxiPhone_Thumbnail.gif?v=2"
-    },
-    "published": true,
-    "featured": false,
-    "order": 999
+    "roleDescription": {
+      "vi": "Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.",
+      "en": "Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress."
+    }
   },
   "commercials-fpt-backtoschool": {
-    "id": "commercials-fpt-backtoschool",
-    "category": "commercials-fpt",
-    "slug": "backtoschool",
     "title": {
       "vi": "Back To School",
       "en": "Back To School"
     },
-    "thumbnail": {
-      "url": "https://assets.phamhuutri.com/assets/commercial/FPTxAMD_Thumbnail.gif?v=2",
-      "alt": "Back To School"
+    "thumbnail": "https://assets.phamhuutri.com/assets/commercial/FPTxAMD_Thumbnail.gif?v=2",
+    "brand": {
+      "vi": "FPT Shop x AMD",
+      "en": "FPT Shop x ADM"
     },
-    "metadata": {
-      "genre": {
-        "vi": "",
-        "en": ""
-      },
-      "year": "2024",
-      "status": {
-        "vi": "",
-        "en": ""
-      },
-      "duration": "",
-      "awards": []
+    "year": "2024",
+    "country": {
+      "vi": "Việt Nam",
+      "en": "Vietnam"
+    },
+    "role": {
+      "vi": "",
+      "en": ""
     },
     "video": {
       "platform": "youtube",
       "embedId": "DJTxFQLngDA",
-      "url": "https://www.youtube.com/watch?v=DJTxFQLngDA"
+      "url": "https://www.youtube.com/embed/DJTxFQLngDA"
     },
-    "logline": {
-      "vi": "",
-      "en": ""
-    },
-    "synopsis": {
-      "vi": "",
-      "en": ""
-    },
-    "directorsStatement": {
-      "vi": "",
-      "en": ""
-    },
-    "crew": [],
-    "gallery": [],
-    "seo": {
-      "metaTitle": {
-        "vi": "Back To School - Phạm Hữu Trí",
-        "en": "Back To School - Pham Huu Tri"
-      },
-      "metaDescription": {
-        "vi": "",
-        "en": ""
-      },
-      "ogImage": "https://assets.phamhuutri.com/assets/commercial/FPTxAMD_Thumbnail.gif?v=2"
-    },
-    "published": true,
-    "featured": false,
-    "order": 999
+    "roleDescription": {
+      "vi": "Lên kế hoạch, điều phối các department hoàn thành công việc chuyên môn theo yêu cầu của dự án. Breakdown kịch bản, nắm bắt Shotlist, sắp xếp Shooting schedule, Callsheet đảm bảo đúng tiến độ quay.",
+      "en": "Planning and coordinating departments to complete professional tasks according to project requirements. Script breakdown, mastering the Shotlist, arranging the Shooting schedule and Callsheets to ensure filming progress."
+    }
   },
   "commercials-bach-dang-cement": {
-    "id": "commercials-bach-dang-cement",
-    "category": "commercials-bach",
-    "slug": "dang-cement",
     "title": {
       "vi": "Xi Măng Vua, Cùng Xây Di Sản",
       "en": "King Cement, Building Heritage Together"
     },
-    "thumbnail": {
-      "url": "https://ik.imagekit.io/phamhuutri108/comm/bach-dang-cement-thumbnail.jpg",
-      "alt": "King Cement, Building Heritage Together"
+    "thumbnail": "https://ik.imagekit.io/phamhuutri108/comm/bach-dang-cement-thumbnail.jpg",
+    "brand": {
+      "vi": "Xi Măng Bạch Đằng",
+      "en": "Bach Dang Cement"
     },
-    "metadata": {
-      "genre": {
-        "vi": "",
-        "en": ""
-      },
-      "year": "2026",
-      "status": {
-        "vi": "",
-        "en": ""
-      },
-      "duration": "",
-      "awards": []
+    "year": "2026",
+    "country": {
+      "vi": "Vietnam",
+      "en": "Vietnam"
     },
-    "video": null,
-    "logline": {
+    "role": {
       "vi": "",
       "en": ""
     },
-    "synopsis": {
-      "vi": "",
-      "en": ""
+    "video": {
+      "platform": "youtube",
+      "embedId": "",
+      "url": "https://www.youtube.com/embed/"
     },
-    "directorsStatement": {
-      "vi": "",
-      "en": ""
-    },
-    "crew": [],
-    "gallery": [],
-    "seo": {
-      "metaTitle": {
-        "vi": "Xi Măng Vua, Cùng Xây Di Sản - Phạm Hữu Trí",
-        "en": "King Cement, Building Heritage Together - Pham Huu Tri"
-      },
-      "metaDescription": {
-        "vi": "",
-        "en": ""
-      },
-      "ogImage": "https://ik.imagekit.io/phamhuutri108/comm/bach-dang-cement-thumbnail.jpg"
-    },
-    "published": true,
-    "featured": false,
-    "order": 999
+    "roleDescription": {
+      "vi": "Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.",
+      "en": "Personal Assistant to the Director, supporting the development of ideas and preparation of creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision."
+    }
   },
   "commercials-benh-vien-phuong-nam": {
-    "id": "commercials-benh-vien-phuong-nam",
-    "category": "commercials-benh",
-    "slug": "vien-phuong-nam",
     "title": {
       "vi": "Mẹ Bầu Chốt Luôn",
       "en": "Expectant Mothers Always Decide"
     },
-    "thumbnail": {
-      "url": "https://ik.imagekit.io/phamhuutri108/comm/benh-vien-phuong-nam-thumbnail.jpg",
-      "alt": "Expectant Mothers Always Decide"
+    "thumbnail": "https://ik.imagekit.io/phamhuutri108/comm/benh-vien-phuong-nam-thumbnail.jpg",
+    "brand": {
+      "vi": "Bệnh Viện Phương Nam",
+      "en": "Phương Nam Hospital"
     },
-    "metadata": {
-      "genre": {
-        "vi": "",
-        "en": ""
-      },
-      "year": "2026",
-      "status": {
-        "vi": "",
-        "en": ""
-      },
-      "duration": "",
-      "awards": []
+    "year": "2026",
+    "country": {
+      "vi": "Vietnam",
+      "en": "Vietnam"
     },
-    "video": null,
-    "logline": {
+    "role": {
       "vi": "",
       "en": ""
     },
-    "synopsis": {
-      "vi": "",
-      "en": ""
+    "video": {
+      "platform": "youtube",
+      "embedId": "",
+      "url": "https://www.youtube.com/embed/"
     },
-    "directorsStatement": {
-      "vi": "",
-      "en": ""
-    },
-    "crew": [],
-    "gallery": [],
-    "seo": {
-      "metaTitle": {
-        "vi": "Mẹ Bầu Chốt Luôn - Phạm Hữu Trí",
-        "en": "Expectant Mothers Always Decide - Pham Huu Tri"
-      },
-      "metaDescription": {
-        "vi": "",
-        "en": ""
-      },
-      "ogImage": "https://ik.imagekit.io/phamhuutri108/comm/benh-vien-phuong-nam-thumbnail.jpg"
-    },
-    "published": true,
-    "featured": false,
-    "order": 999
+    "roleDescription": {
+      "vi": "Trợ lý cá nhân cho Đạo diễn, hỗ trợ đạo diễn phát triển ý tưởng và chuẩn bị nội dung sáng tạo cho dự án để thuyết trình với khách hàng. Tham gia chỉnh sửa nội dung sáng tạo phù hợp với yêu cầu của khách hàng về nội dung và tầm nhìn sáng của đạo diễn.",
+      "en": "Personal Assistant to the Director, supporting the director in developing ideas and preparing creative content for the project to present to clients. Participated in editing creative content according to client requirements regarding content and the director's vision."
+    }
   }
 }

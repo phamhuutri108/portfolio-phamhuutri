@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Film Converter - COMPLETE</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f9; display: flex; flex-direction: column; gap: 15px; max-width: 1400px; margin: 0 auto; }
+        textarea { width: 100%; height: 300px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-family: monospace; font-size: 13px; }
+        button { padding: 12px 24px; background: #3498db; color: white; border: none; cursor: pointer; border-radius: 5px; font-weight: bold; font-size: 14px; align-self: flex-start; }
+        button:hover { background: #2980b9; }
+        .success { color: green; font-weight: bold; margin-top: 10px; } 
+        .error { color: red; font-weight: bold; margin-top: 10px; }
+        label { font-weight: bold; margin-bottom: 5px; display: block; color: #2c3e50; }
+        .info { background: #e8f4f8; padding: 15px; border-radius: 5px; margin: 10px 0; }
+        .info ul { margin: 5px 0; padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <h2>🎬 Short Film Converter - COMPLETE</h2>
+    
+    <div class="info">
+        <strong>📋 Features:</strong>
+        <ul>
+            <li>✅ Giữ line breaks (\n)</li>
+            <li>✅ Extract year + status</li>
+            <li>✅ Copy crewData, btsData, stillData, storyboardData</li>
+            <li>✅ Extract music, description</li>
+        </ul>
+    </div>
+
+    <div>
+        <label>Input (Dán file JS):</label>
+        <textarea id="inputData" placeholder="// Paste short-films-data.js..."></textarea>
+    </div>
+    
+    <button onclick="runConvert()">🚀 CONVERT</button>
+    
+    <div>
+        <label>Output (JSON):</label>
+        <textarea id="outputData" placeholder="Result..."></textarea>
+    </div>
+    
+    <div id="status"></div>
+    <button onclick="downloadJSON()" style="background: #27ae60; margin-top: 10px;">💾 DOWNLOAD</button>
+
+    <script>
+        function convertFilmsToNewFormat(oldData) {
+            const newData = {};
+            const parser = new DOMParser();
+            const cleanText = (text) => text ? text.replace(/<[^>]*>?/gm, ' ').replace(/\s+/g, ' ').trim() : "";
+
+            const extractYearAndStatus = (rawText) => {
+                const yearMatch = rawText.match(/\d{4}/);
+                const year = yearMatch ? yearMatch[0] : "";
+                let status = rawText.replace(/\(\d{4}\)/, '').replace(/\d{4}/, '').trim().replace(/^[:\s\-]+|[:\s\-]+$/g, '');
+                return { year, status };
+            };
+
+            const extractMetadata = (doc, lang) => {
+                const textContent = doc.body.innerHTML;
+                let year = "", status = "", genre = "", duration = "", awards = [];
+                const patterns = lang === 'vi' ? {
+                    year: /Năm:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    genre: /Thể loại:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    duration: /Thời lượng:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    awardsStart: /(?:Giải thưởng|Quỹ hỗ trợ|Thành tích):<\/b>/i 
+                } : {
+                    year: /Year:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    genre: /Genre:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    duration: /Duration:<\/b>\s*(.*?)(<br>|<\/p>)/i,
+                    awardsStart: /(?:Award|Fund|Achievement)(s?):<\/b>/i
+                };
+                const getMatch = (regex) => {
+                    const match = textContent.match(regex);
+                    return match ? cleanText(match[1]) : "";
+                };
+                const rawYear = getMatch(patterns.year);
+                if (rawYear) {
+                    const parsed = extractYearAndStatus(rawYear);
+                    year = parsed.year;
+                    status = parsed.status;
+                }
+                genre = getMatch(patterns.genre);
+                duration = getMatch(patterns.duration);
+                const pTags = Array.from(doc.querySelectorAll('p'));
+                pTags.forEach(p => {
+                    if (patterns.awardsStart.test(p.innerHTML)) {
+                        const rawLines = p.innerHTML.split(/<br\s*\/?>/i);
+                        rawLines.forEach(line => {
+                            let cLine = cleanText(line);
+                            if (cLine && !cLine.match(/^(Giải thưởng|Award|Quỹ|Fund|Thành tích|Achievement)/i)) {
+                                awards.push(cLine.replace(/^[:\s]+/, ''));
+                            }
+                        });
+                    }
+                });
+                return { year, status, genre, duration, awards };
+            };
+
+            const extractSection = (doc, headers) => {
+                const h3s = Array.from(doc.querySelectorAll('h3'));
+                let paragraphs = [];
+                for (const h3 of h3s) {
+                    if (headers.some(h => h3.textContent.toLowerCase().includes(h))) {
+                        let sibling = h3.nextElementSibling;
+                        while (sibling) {
+                            if (sibling.tagName === 'H3') break;
+                            if (sibling.tagName === 'P') {
+                                let html = sibling.innerHTML.replace(/<br\s*\/?>/gi, '\n');
+                                let text = html.replace(/<[^>]+>/g, '');
+                                paragraphs.push(text.trim());
+                            }
+                            sibling = sibling.nextElementSibling;
+                        }
+                        break; 
+                    }
+                }
+                return paragraphs.join('\n\n');
+            };
+
+            const extractCrewList = (doc) => {
+                return Array.from(doc.querySelectorAll('ul li')).map(li => {
+                    const b = li.querySelector('b');
+                    let role = b ? cleanText(b.textContent).replace(/:+$/, '') : "";
+                    let name = li.textContent.replace(b ? b.textContent : "", "").trim();
+                    if (name.startsWith(':')) name = name.substring(1).trim();
+                    return { role, name };
+                });
+            };
+
+            for (const [key, item] of Object.entries(oldData)) {
+                const docVi = parser.parseFromString(item.vi || "", "text/html");
+                const docEn = parser.parseFromString(item.en || "", "text/html");
+                const metaVi = extractMetadata(docVi, 'vi');
+                const metaEn = extractMetadata(docEn, 'en');
+
+                const iframe = docVi.querySelector('iframe') || docEn.querySelector('iframe');
+                let videoData = null; 
+                if (iframe) {
+                    const src = iframe.src;
+                    videoData = { platform: "", embedId: "", url: src };
+                    if (src.includes("youtube") || src.includes("youtu.be")) {
+                        videoData.platform = "youtube";
+                        try { videoData.embedId = src.split('/').pop().split('?')[0]; } catch(e) {}
+                    } else if (src.includes("vimeo")) {
+                        videoData.platform = "vimeo";
+                        try {
+                            const match = src.match(/vimeo\.com\/(\d+)/);
+                            if (match) videoData.embedId = match[1];
+                        } catch(e) {}
+                    }
+                }
+
+                const cVi = extractCrewList(docVi);
+                const cEn = extractCrewList(docEn);
+                const mergedCrew = cVi.map((c, i) => ({
+                    role: { vi: c.role, en: cEn[i]?.role || "" },
+                    name: c.name
+                }));
+
+                newData[key] = {
+                    title: item.title || { vi: "", en: "" },
+                    thumbnail: item.thumbnail || "",
+                    year: metaVi.year || metaEn.year || "",
+                    status: { vi: metaVi.status || "", en: metaEn.status || "" },
+                    genre: { vi: metaVi.genre || "", en: metaEn.genre || "" },
+                    duration: metaVi.duration || metaEn.duration || "",
+                    awards: [...new Set([...metaVi.awards, ...metaEn.awards])],
+                    video: videoData,
+                    logline: { vi: extractSection(docVi, ['logline']), en: extractSection(docEn, ['logline']) },
+                    synopsis: { vi: extractSection(docVi, ['tóm tắt', 'synopsis']), en: extractSection(docEn, ['synopsis']) },
+                    directorsStatement: { vi: extractSection(docVi, ['lời đạo diễn', 'director']), en: extractSection(docEn, ['director', 'statement']) },
+                    crew: mergedCrew,
+                    music: item.music || null,
+                    crewData: item.crewData || [],
+                    stillData: item.stillData || item.still || [],
+                    storyboardData: item.storyboardData || item.storyboard_3d || item.storyboard || [],
+                    btsData: item.btsData || []
+                };
+            }
+            return JSON.stringify(newData, null, 2);
+        }
+
+        function runConvert() {
+            const inputVal = document.getElementById('inputData').value;
+            const statusEl = document.getElementById('status');
+            if (!inputVal.trim()) { 
+                statusEl.textContent = "❌ Chưa có dữ liệu!"; 
+                statusEl.className = "error"; 
+                return; 
+            }
+            try {
+                const code = inputVal + "; try { return filmsData; } catch(e) { try { return othersData; } catch(ex) { try { return commercialData; } catch(exx) { try { return writingData; } catch(exxx) { return null; }}}}";
+                const dataExtractor = new Function(code);
+                const oldObj = dataExtractor();
+                if (!oldObj) throw new Error("Không tìm thấy biến data.");
+                const jsonOutput = convertFilmsToNewFormat(oldObj);
+                document.getElementById('outputData').value = jsonOutput;
+                statusEl.textContent = "✅ Thành công!"; 
+                statusEl.className = "success";
+            } catch (e) {
+                statusEl.textContent = "❌ Lỗi: " + e.message; 
+                statusEl.className = "error";
+            }
+        }
+
+        function downloadJSON() {
+            const output = document.getElementById('outputData').value;
+            if (!output.trim()) { alert('Chưa có dữ liệu!'); return; }
+            const blob = new Blob([output], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'converted.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

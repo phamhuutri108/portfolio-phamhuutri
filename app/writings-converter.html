@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tool Chuyển Đổi Writings (JS to JSON)</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #fffbe6; display: flex; flex-direction: column; gap: 15px; }
+        textarea { width: 100%; height: 200px; padding: 10px; border: 1px solid #ddd; }
+        button { padding: 10px 20px; background: #d35400; color: white; border: none; cursor: pointer; font-weight: bold; }
+        .success { color: green; } .error { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Tool Chuyển Đổi Dữ Liệu "Writings"</h2>
+    <p>Dán file <b>writing-data.js</b> vào đây (const writingData = [...])</p>
+    <textarea id="inputData"></textarea>
+    <button onclick="runConvert()">CHUYỂN ĐỔI SANG JSON</button>
+    <textarea id="outputData"></textarea>
+    <div id="status"></div>
+
+    <script>
+        function convertWritingsToJSON(oldArray) {
+            // Mapping lại mảng mới sạch hơn
+            return JSON.stringify(oldArray.map(item => {
+                return {
+                    id: item.id,
+                    title: item.title, // {vi, en}
+                    date: item.date,
+                    location: item.location || "", // Nếu có địa điểm
+                    
+                    // Nội dung: Giữ nguyên HTML nhưng xoá khoảng trắng thừa
+                    content: {
+                        vi: item.content && item.content.vi ? item.content.vi.trim() : "",
+                        en: item.content && item.content.en ? item.content.en.trim() : ""
+                    }
+                };
+            }), null, 2);
+        }
+
+        function runConvert() {
+            const inputVal = document.getElementById('inputData').value;
+            try {
+                // Nhận diện biến writingData (là Array)
+                const dataExtractor = new Function(inputVal + "; try { return writingData; } catch(e) { return null; }");
+                const oldArr = dataExtractor();
+                
+                if (!oldArr || !Array.isArray(oldArr)) throw new Error("Không tìm thấy mảng 'writingData'.");
+                
+                document.getElementById('outputData').value = convertWritingsToJSON(oldArr);
+                document.getElementById('status').innerText = "Thành công!";
+                document.getElementById('status').className = "success";
+            } catch (e) {
+                document.getElementById('status').innerText = "Lỗi: " + e.message;
+                document.getElementById('status').className = "error";
+            }
+        }
+    </script>
+</body>
+</html>
