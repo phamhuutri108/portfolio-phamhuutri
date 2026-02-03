@@ -160,7 +160,7 @@ const filmsData = {
             { name: "Cô Nhum", role: { vi: "Diễn viên", en: "Cast" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-co-nhum.jpeg?v=2" },
             { name: "Nguyễn Vũ Uy Nhân", role: { vi: "Diễn viên", en: "Cast" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-bap.jpeg?v=2" },
             
-            { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri.jpeg?v=2" },
+            { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri_1.jpeg?v=2" },
             
             { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpeg?v=2" },
             { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thao-quieng.jpeg?v=2" },
