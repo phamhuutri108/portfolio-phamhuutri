@@ -1,0 +1,662 @@
+{
+  "0": {
+    "id": "0",
+    "category": "0-undefined",
+    "slug": "0",
+    "title": {
+      "vi": "mùi thuốc lá quen thuộc.",
+      "en": "that familiar smell of cigarettes."
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "that familiar smell of cigarettes."
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "mùi thuốc lá quen thuộc. - Phạm Hữu Trí",
+        "en": "that familiar smell of cigarettes. - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "1": {
+    "id": "1",
+    "category": "1-undefined",
+    "slug": "1",
+    "title": {
+      "vi": "Sài Gòn, 31/03/25",
+      "en": "Sài Gòn, 31/03/25"
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "Sài Gòn, 31/03/25"
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "Sài Gòn, 31/03/25 - Phạm Hữu Trí",
+        "en": "Sài Gòn, 31/03/25 - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "2": {
+    "id": "2",
+    "category": "2-undefined",
+    "slug": "2",
+    "title": {
+      "vi": "khi những lời nói của mẹ dần trở nên thều thào.",
+      "en": "when your words became whispers."
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "when your words became whispers."
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "khi những lời nói của mẹ dần trở nên thều thào. - Phạm Hữu Trí",
+        "en": "when your words became whispers. - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "3": {
+    "id": "3",
+    "category": "3-undefined",
+    "slug": "3",
+    "title": {
+      "vi": "ba tôi là kẻ nói dối.",
+      "en": "my father is a liar."
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "my father is a liar."
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "ba tôi là kẻ nói dối. - Phạm Hữu Trí",
+        "en": "my father is a liar. - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "4": {
+    "id": "4",
+    "category": "4-undefined",
+    "slug": "4",
+    "title": {
+      "vi": "có điều gì đó khác.",
+      "en": "there was something different."
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "there was something different."
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "có điều gì đó khác. - Phạm Hữu Trí",
+        "en": "there was something different. - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "5": {
+    "id": "5",
+    "category": "5-undefined",
+    "slug": "5",
+    "title": {
+      "vi": "108% Gã và Nàng là bạn",
+      "en": "108% He and She are friends."
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "108% He and She are friends."
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "108% Gã và Nàng là bạn - Phạm Hữu Trí",
+        "en": "108% He and She are friends. - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "6": {
+    "id": "6",
+    "category": "6-undefined",
+    "slug": "6",
+    "title": {
+      "vi": "những mảnh giấy trong khe đá.",
+      "en": "fragments of paper in the rock’s crevices."
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "fragments of paper in the rock’s crevices."
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "những mảnh giấy trong khe đá. - Phạm Hữu Trí",
+        "en": "fragments of paper in the rock’s crevices. - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "7": {
+    "id": "7",
+    "category": "7-undefined",
+    "slug": "7",
+    "title": {
+      "vi": "Sài Gòn, 15/04/24",
+      "en": "Saigon, 15/04/24"
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "Saigon, 15/04/24"
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "Sài Gòn, 15/04/24 - Phạm Hữu Trí",
+        "en": "Saigon, 15/04/24 - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "8": {
+    "id": "8",
+    "category": "8-undefined",
+    "slug": "8",
+    "title": {
+      "vi": "there was nothing here.",
+      "en": "there was nothing here."
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "there was nothing here."
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "there was nothing here. - Phạm Hữu Trí",
+        "en": "there was nothing here. - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "9": {
+    "id": "9",
+    "category": "9-undefined",
+    "slug": "9",
+    "title": {
+      "vi": "Sài Gòn, 04/03/23",
+      "en": "Saigon, 04/03/23"
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "Saigon, 04/03/23"
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "Sài Gòn, 04/03/23 - Phạm Hữu Trí",
+        "en": "Saigon, 04/03/23 - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "10": {
+    "id": "10",
+    "category": "10-undefined",
+    "slug": "10",
+    "title": {
+      "vi": "Chiếc lá trước thềm nhà",
+      "en": "The leaf at the doorstep"
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "The leaf at the doorstep"
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "Chiếc lá trước thềm nhà - Phạm Hữu Trí",
+        "en": "The leaf at the doorstep - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  },
+  "11": {
+    "id": "11",
+    "category": "11-undefined",
+    "slug": "11",
+    "title": {
+      "vi": "Nha Trang, 11/09/24",
+      "en": "Nha Trang, 11/09/24"
+    },
+    "thumbnail": {
+      "url": "",
+      "alt": "Nha Trang, 11/09/24"
+    },
+    "metadata": {
+      "genre": {
+        "vi": "",
+        "en": ""
+      },
+      "year": "",
+      "status": {
+        "vi": "",
+        "en": ""
+      },
+      "duration": "",
+      "awards": []
+    },
+    "video": null,
+    "logline": {
+      "vi": "",
+      "en": ""
+    },
+    "synopsis": {
+      "vi": "",
+      "en": ""
+    },
+    "directorsStatement": {
+      "vi": "",
+      "en": ""
+    },
+    "crew": [],
+    "gallery": [],
+    "seo": {
+      "metaTitle": {
+        "vi": "Nha Trang, 11/09/24 - Phạm Hữu Trí",
+        "en": "Nha Trang, 11/09/24 - Pham Huu Tri"
+      },
+      "metaDescription": {
+        "vi": "",
+        "en": ""
+      },
+      "ogImage": ""
+    },
+    "published": true,
+    "featured": false,
+    "order": 999
+  }
+}
