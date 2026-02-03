@@ -761,14 +761,8 @@
     },
     "duration": "28:20",
     "awards": [
-      "Thể loại: Phim ngắn / Tâm lý",
-      "Năm: 2024",
-      "Thời lượng: 28:20",
       "Cánh Diều Bạc, Hội điện ảnh Việt Nam (2024)",
       "Kịch bản xuất sắc nhất - FABA Films (2025)",
-      "Genre: Short fiction / Drama",
-      "Year: 2024",
-      "Duration: 28:20",
       "Silver Prize, Golden Kite Awards (2024)",
       "Best Screenplay, FABA Films (2025)"
     ],
@@ -941,58 +935,202 @@
     "music": null,
     "crewData": [],
     "stillData": [
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-1.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-2.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-3.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-4.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-5.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-6.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-7.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-8.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-9.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-10.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-11.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-12.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-13.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-14.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-15.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-16.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-17.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-18.jpeg?v=3", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-19.jpeg?v=3", "class": "" }
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-1.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-2.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-3.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-4.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-5.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-6.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-7.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-8.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-9.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-10.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-11.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-12.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-13.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-14.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-15.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-16.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-17.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-18.jpeg?v=3",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/still/KARMA-still-19.jpeg?v=3",
+        "class": ""
+      }
     ],
     "storyboardData": [
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpeg?v=2", "class": "" }
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-01.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-02.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-03.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-04.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-05.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-06.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-07.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-08.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-09.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-10.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-11.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-12.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-13.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/storyboard/KARMA-Storyboard-14.jpeg?v=2",
+        "class": ""
+      }
     ],
     "btsData": [
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_1.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_2.jpeg?v=2", "class": "wide" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_4.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_5.jpeg?v=2", "class": "tall" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_6.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_7.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_9.jpeg?v=2", "class": "wide" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_10.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_11.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_12.jpeg?v=2", "class": "tall" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_15.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_16.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_18.jpeg?v=2", "class": "wide" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_19.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_17.jpeg?v=2", "class": "" }
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_1.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_2.jpeg?v=2",
+        "class": "wide"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_4.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_5.jpeg?v=2",
+        "class": "tall"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_6.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_7.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_9.jpeg?v=2",
+        "class": "wide"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_10.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_11.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_12.jpeg?v=2",
+        "class": "tall"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_15.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_16.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_18.jpeg?v=2",
+        "class": "wide"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_19.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/KARMA/BTS/KARMA_BTS_17.jpeg?v=2",
+        "class": ""
+      }
     ]
   },
   "short-films-the-ghost-wants-to-live": {
@@ -1095,23 +1233,74 @@
     "stillData": [],
     "storyboardData": [],
     "btsData": [
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_1.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_5.jpeg?v=2", "class": "big" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_12.jpeg?v=2", "class": "wide" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_17.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_15.jpeg?v=2", "class": "wide" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_8.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_10.jpeg?v=2", "class": "wide" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_2.jpeg?v=2", "class": "tall" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_14.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_4.jpeg?v=2", "class": "wide" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_16.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_11.jpeg?v=2", "class": "tall" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_3.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_6.jpeg?v=2", "class": "wide" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_9.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_7.jpeg?v=2", "class": "" },
-      { "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_13.jpeg?v=2", "class": "wide" }
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_1.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_5.jpeg?v=2",
+        "class": "big"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_12.jpeg?v=2",
+        "class": "wide"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_17.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_15.jpeg?v=2",
+        "class": "wide"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_8.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_10.jpeg?v=2",
+        "class": "wide"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_2.jpeg?v=2",
+        "class": "tall"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_14.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_4.jpeg?v=2",
+        "class": "wide"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_16.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_11.jpeg?v=2",
+        "class": "tall"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_3.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_6.jpeg?v=2",
+        "class": "wide"
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_9.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_7.jpeg?v=2",
+        "class": ""
+      },
+      {
+        "src": "https://assets.phamhuutri.com/assets/short-films/CMMS/BTS/CMMS_13.jpeg?v=2",
+        "class": "wide"
+      }
     ]
   },
   "short-films-cocks-cooking": {
