@@ -1,280 +1,84 @@
+# CloudCannon Configuration
+# Place this file at: cloudcannon.config.yml (root folder)
+
 collections_config:
-  short-films:
+  data:
     path: data
     parser: json
-    name: Short Films
-    
-    # Preview trong CMS
-    preview:
-      gallery:
-        image: key thumbnail
-        text: key title.en
-    
+    name: Data Files
+
+data_config:
+  "data/short-films.json#*":
     _inputs:
-      # ===== FIXED FIELDS (Unchanged) =====
-      
-      title:
-        type: object
-        label: Title
-      
-      thumbnail:
-        type: image
-        label: Thumbnail
-      
-      year:
-        type: text
-        label: Year
-      
-      genre:
-        type: object
-        label: Genre
-      
-      duration:
-        type: text
-        label: Duration
-      
-      awards:
-        type: array
-        label: Awards
-      
-      video:
-        type: object
-        label: Main Video
-      
-      logline:
-        type: object
-        label: Logline
-      
-      synopsis:
-        type: object
-        label: Synopsis
-      
-      directorsStatement:
-        type: object
-        label: Director's Statement
-      
-      crew:
-        type: array
-        label: Crew (Text List)
-      
-      music:
-        type: object
-        label: Music
-      
-      # ===== CUSTOM BLOCKS (New) =====
-      
       customBlocks:
         type: object
-        label: Custom Content Blocks
-        comment: "Create reusable content blocks here, then add them to Render Order below"
-        options:
-          subtype: object
+        label: 🎨 Custom Content Blocks
+        comment: "Create reusable content blocks"
       
-      # IMPORTANT: Mỗi custom block cần define structure
-      customBlocks.*:
+      "customBlocks.*":
         type: object
-        label: Block
         options:
           structures: _structures.customBlocks
       
-      # ===== RENDER ORDER (Drag & Drop) =====
-      
       renderOrder:
         type: array
-        label: Content Order
-        comment: "Drag items to reorder how content appears on the page"
+        label: 📋 Content Order
+        comment: "Drag to reorder"
         options:
           structures: _structures.renderOrder
 
-# ==========================================
-# STRUCTURES
-# ==========================================
-
 _structures:
-  
-  # Custom Blocks Structures
   customBlocks:
     values:
-      - label: Text Section
-        icon: article
+      - label: 📝 Text
         value:
           type: text
           heading: { vi: "", en: "" }
           content: { vi: "", en: "" }
       
-      - label: Quote
-        icon: format_quote
+      - label: 💬 Quote
         value:
           type: quote
           author: ""
           content: { vi: "", en: "" }
       
-      - label: Callout / Alert
-        icon: info
+      - label: 📢 Callout
         value:
           type: callout
           style: info
           content: { vi: "", en: "" }
       
-      - label: Button
-        icon: smart_button
+      - label: 🔘 Button
         value:
           type: button
           label: { vi: "", en: "" }
           url: ""
           style: primary
-      
-      - label: List
-        icon: list
-        value:
-          type: list
-          heading: { vi: "", en: "" }
-          listType: ul
-          items: { vi: [], en: [] }
-      
-      - label: Image
-        icon: image
-        value:
-          type: image
-          src: ""
-          caption: { vi: "", en: "" }
-          width: "100%"
-      
-      - label: Divider
-        icon: horizontal_rule
-        value:
-          type: divider
-      
-      - label: Video (Extra)
-        icon: videocam
-        value:
-          type: video
-          title: { vi: "", en: "" }
-          data:
-            platform: youtube
-            embedId: ""
-            url: ""
-      
-      - label: Embed Code
-        icon: code
-        value:
-          type: embed
-          embedCode: ""
-          caption: { vi: "", en: "" }
-      
-      - label: Custom HTML
-        icon: html
-        value:
-          type: custom_html
-          content: { vi: "", en: "" }
   
-  # Render Order Structures
   renderOrder:
     values:
-      # Built-in sections
-      - label: "📊 Metadata (Genre, Year, Duration)"
-        icon: info
-        value:
-          type: metadata
-      
-      - label: "🎬 Main Video"
-        icon: videocam
-        value:
-          type: video
-      
-      - label: "📝 Logline"
-        icon: short_text
-        value:
-          type: logline
-      
-      - label: "📄 Synopsis"
-        icon: subject
-        value:
-          type: synopsis
-      
-      - label: "💭 Director's Statement"
-        icon: record_voice_over
-        value:
-          type: directorsStatement
-      
-      - label: "📋 Description"
-        icon: description
-        value:
-          type: description
-      
-      - label: "👥 Crew List"
-        icon: people
-        value:
-          type: crew
-      
-      - label: "🎵 Music"
-        icon: music_note
-        value:
-          type: music
-      
-      # Custom block reference
-      - label: "✨ Custom Block"
-        icon: add_circle
-        value:
-          type: custom
-          blockId: ""
-
-# ==========================================
-# INPUT CONFIGURATIONS
-# ==========================================
+      - label: 📊 Metadata
+        value: { type: metadata }
+      - label: 🎬 Video
+        value: { type: video }
+      - label: 📝 Logline
+        value: { type: logline }
+      - label: 📄 Synopsis
+        value: { type: synopsis }
+      - label: 💭 Statement
+        value: { type: directorsStatement }
+      - label: 👥 Crew
+        value: { type: crew }
+      - label: ✨ Custom
+        value: { type: custom, blockId: "" }
 
 _inputs:
+  "renderOrder[*].blockId":
+    type: text
+    label: Block ID
+    comment: "ID from Custom Blocks"
   
-  # Render Order Item
-  renderOrder[*].type:
+  "customBlocks.*.style":
     type: select
-    label: Type
-    hidden: true
-  
-  renderOrder[*].blockId:
-    type: select
-    label: Select Custom Block
-    comment: "Choose which custom block to insert here"
     options:
-      values: _select_data.customBlockIds
-  
-  # Custom Blocks
-  customBlocks.*.type:
-    type: select
-    label: Block Type
-    hidden: true
-  
-  customBlocks.*.style:
-    type: select
-    label: Style
-    options:
-      values:
-        - info
-        - warning
-        - success
-        - error
-        - primary
-        - secondary
-  
-  customBlocks.*.listType:
-    type: select
-    label: List Type
-    options:
-      values:
-        - value: ul
-          label: Bullet List
-        - value: ol
-          label: Numbered List
-
-# ==========================================
-# SELECT DATA (Dynamic)
-# ==========================================
-
-_select_data:
-  customBlockIds:
-    # CloudCannon will auto-populate này với keys từ customBlocks
-    # Nếu không auto → Phải list manual:
-    # - special-intro
-    # - critic-quote
-    # - premiere-announcement
-    # etc.
+      values: [info, warning, success, error, primary, secondary]
