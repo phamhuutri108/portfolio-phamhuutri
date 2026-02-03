@@ -48,7 +48,7 @@
 
         <div class="site-logo">
             <a href="javascript:void(0)" onclick="showPage('home')">
-                <img src="https://assets.phamhuutri.com/assets/home/tri-avatar-b%26w.jpeg?v=2" alt="Pham Huu Tri">
+                <img src="https://assets.phamhuutri.com/assets/home/tri-avatar.jpeg?v=2" alt="Pham Huu Tri">
             </a>
         </div>
 
@@ -490,6 +490,12 @@
 
 
 
+<!-- Data Adapter - THÊM DÒNG NÀY -->
+<script src="js/data-adapter.js"></script>
+
+
+
+
 <script>
     /* --- HỆ THỐNG TỰ ĐỘNG HOÁ V3 (JSON + GIỮ NGUYÊN TÍNH NĂNG) --- */
 
@@ -510,29 +516,31 @@
         'cat-writings': '/writings'
     };
 
-    // 3. HÀM TẢI DỮ LIỆU (PHẦN BẠN BỊ THIẾU)
-    async function loadAllData() {
-        try {
-            // Tải 4 file JSON cùng lúc
-            const [f, c, o, w] = await Promise.all([
-                fetch('data/short-films.json').then(r => r.json()),
-                fetch('data/commercials.json').then(r => r.json()),
-                fetch('data/others.json').then(r => r.json()),
-                fetch('data/writings.json').then(r => r.json())
-            ]);
+    // 3. HÀM TẢI DỮ LIỆU (ĐÃ CẬP NHẬT)
+async function loadAllData() {
+    try {
+        // Tải 4 file JSON cùng lúc
+        const [f, c, o, w] = await Promise.all([
+            fetch('data/short-films.json').then(r => r.json()),
+            fetch('data/commercials.json').then(r => r.json()),
+            fetch('data/others.json').then(r => r.json()),
+            fetch('data/writings.json').then(r => r.json())
+        ]);
 
-            // Gán dữ liệu vào biến
-            filmsData = f;
-            commercialData = c;
-            othersData = o;
-            writingData = w;
+        // CONVERT data mới sang format cũ (để code cũ vẫn chạy)
+        filmsData = convertNewSchemaToOld(f);
+        commercialData = convertNewSchemaToOld(c);
+        othersData = convertNewSchemaToOld(o);
+        writingData = convertNewSchemaToOld(w);
 
-            // Dữ liệu về rồi -> Khởi động máy
-            startApp();
-        } catch (error) {
-            console.error("Lỗi tải JSON (Hãy kiểm tra folder data):", error);
-        }
+        console.log('✅ Data loaded and converted successfully');
+
+        // Dữ liệu về rồi -> Khởi động máy
+        startApp();
+    } catch (error) {
+        console.error("❌ Lỗi tải JSON:", error);
     }
+}
 
     // 4. CÁC HÀM XỬ LÝ (LOGIC CỦA BẠN)
     function getProjectData(id) {
@@ -2317,6 +2325,14 @@
 
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "91aba50029014f4cbb68002f867068e6"}'></script><!-- End Cloudflare Web Analytics -->
+
+
+
+
+
+
+
+
 
 
 
