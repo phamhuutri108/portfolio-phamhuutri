@@ -1,0 +1,157 @@
+paths:
+  uploads: src/assets/uploads
+  static: ''
+  dam_uploads: ''
+
+collections_config:
+  short-films:
+    path: src/content/short-films
+    name: Short Films
+    icon: movie
+    output: true
+    glob:
+      - "**/*.md"
+    schemas:
+      default:
+        path: .cloudcannon/schemas/film.md
+    _enabled_editors:
+      - content
+      - visual
+    add_options:
+      - name: Add Short Film
+        schema: default
+    create:
+      path: "{slug}.md"
+
+  commercials:
+    path: src/content/commercials
+    name: Commercials
+    icon: videocam
+    output: true
+    glob:
+      - "**/*.md"
+    schemas:
+      default:
+        path: .cloudcannon/schemas/film.md
+    _enabled_editors:
+      - content
+      - visual
+    add_options:
+      - name: Add Commercial
+        schema: default
+    create:
+      path: "{slug}.md"
+
+  others:
+    path: src/content/others
+    name: Others
+    icon: folder_special
+    output: true
+    glob:
+      - "**/*.md"
+    schemas:
+      default:
+        path: .cloudcannon/schemas/film.md
+    _enabled_editors:
+      - content
+      - visual
+    add_options:
+      - name: Add Other Project
+        schema: default
+    create:
+      path: "{slug}.md"
+
+  writings:
+    path: src/content/writings
+    name: Writings
+    icon: edit_note
+    output: true
+    glob:
+      - "**/*.md"
+    schemas:
+      default:
+        path: .cloudcannon/schemas/writing.md
+    _enabled_editors:
+      - content
+      - visual
+    add_options:
+      - name: Add Writing
+        schema: default
+    create:
+      path: "{slug}.md"
+    sort:
+      key: publishDate
+      order: desc
+
+_inputs:
+  slug:
+    type: text
+    label: URL Slug
+    comment: URL-friendly identifier (lowercase, hyphens only)
+  
+  title_vi:
+    type: text
+    label: Title (Vietnamese)
+  
+  title_en:
+    type: text
+    label: Title (English)
+  
+  thumbnail:
+    type: image
+    label: Thumbnail Image
+    comment: Main image for the project
+  
+  category:
+    type: select
+    label: Category
+    options:
+      values:
+        - short-films
+        - commercials
+        - others
+        - writings
+  
+  order:
+    type: number
+    label: Display Order
+    comment: Lower numbers appear first
+  
+  publishDate:
+    type: text
+    label: Date
+    comment: Format DD/MM/YYYY or DD/MM/YY
+  
+  location:
+    type: text
+    label: Location
+  
+  content:
+    type: markdown
+    label: Content
+    options:
+      format: p h1 h2 h3 h4
+      bold: true
+      italic: true
+      link: true
+      image: true
+      blockquote: true
+      bulletedlist: true
+      numberedlist: true
+      code: true
+
+_editables:
+  content:
+    blockquote: true
+    bold: true
+    format: p h1 h2 h3 h4
+    italic: true
+    link: true
+    bulletedlist: true
+    numberedlist: true
+    image: true
+    code: true
+
+timezone: Asia/Ho_Chi_Minh
+
+source: ''

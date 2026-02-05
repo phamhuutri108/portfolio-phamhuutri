@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+permalink: /commercials/
+title: Commercials - Pham Huu Tri
+---
+
+<div id="cat-commercials" class="page-section active-section">
+    <h2 class="page-title">
+        <span class="content-en">Commercials</span>
+        <span class="content-vi">Quảng Cáo</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-en">2024 - present.</span>
+            <span class="content-vi">2024 - hiện tại.</span>
+        </p>
+    </div>
+
+    <div class="gallery-grid" style="margin-top:30px;">
+        {% for item in collections.commercials %}
+        <a href="/commercials/{{ item.data.slug }}/" class="gallery-item">
+            <img src="{{ item.data.thumbnail }}" alt="{{ item.data.title_en }}" loading="lazy">
+            <div class="gallery-overlay">
+                <span class="content-vi">{{ item.data.title_vi }}</span>
+                <span class="content-en">{{ item.data.title_en }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

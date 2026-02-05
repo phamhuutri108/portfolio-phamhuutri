@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+permalink: /others/
+title: Others - Pham Huu Tri
+---
+
+<div id="cat-others" class="page-section active-section">
+    <h2 class="page-title">
+        <span class="content-en">Others</span>
+        <span class="content-vi">Dự Án Khác</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-en">Other projects where I worked on different roles.</span>
+            <span class="content-vi">Các dự án khác nơi tôi làm với vai trò khác.</span>
+        </p>
+    </div>
+
+    <div class="gallery-grid" style="margin-top:30px;">
+        {% for item in collections.others %}
+        <a href="/others/{{ item.data.slug }}/" class="gallery-item">
+            <img src="{{ item.data.thumbnail }}" alt="{{ item.data.title_en }}" loading="lazy">
+            <div class="gallery-overlay">
+                <span class="content-vi">{{ item.data.title_vi }}</span>
+                <span class="content-en">{{ item.data.title_en }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

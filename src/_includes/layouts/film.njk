@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="page-section active-section">
+    <h2 class="film-title">
+        <span class="content-vi">{{ title_vi }}</span>
+        <span class="content-en">{{ title_en }}</span>
+    </h2>
+    
+    {{ content | safe }}
+
+    {# ========== CREW SLIDER ========== #}
+    {% if crewData and crewData.length > 0 %}
+    <div class="crew-scroller-container">
+        <div class="crew-scroller">
+            {% for member in crewData %}
+            <div class="crew-card">
+                <img 
+                    src="{{ member.img }}" 
+                    data-full="{{ member.img }}" 
+                    data-name="{{ member.name }}" 
+                    data-role-vi="{{ member.role_vi }}" 
+                    data-role-en="{{ member.role_en }}"
+                    alt="{{ member.name }}"
+                    loading="lazy">
+                <div class="crew-info">
+                    <div class="crew-role">
+                        <span class="content-vi">{{ member.role_vi }}</span>
+                        <span class="content-en">{{ member.role_en }}</span>
+                    </div>
+                    <div class="crew-name">{{ member.name }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    {# ========== BTS GALLERY WALL ========== #}
+    {% if btsData and btsData.length > 0 %}
+    <h3 style="margin-top: 50px;">
+        <span class="content-vi">Hậu trường</span>
+        <span class="content-en">Behind The Scene</span>
+    </h3>
+    <div class="gallery-wall">
+        {% for pic in btsData %}
+        <img src="{{ pic.src }}"{% if pic.class %} class="{{ pic.class }}"{% endif %} loading="lazy" alt="Behind the scene">
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>

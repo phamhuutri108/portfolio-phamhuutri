@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+permalink: /short-films/
+title: Short Films - Pham Huu Tri
+---
+
+<div id="cat-short-films" class="page-section active-section">
+    <h2 class="page-title">
+        <span class="content-en">Short Films</span>
+        <span class="content-vi">Phim Ngắn</span>
+    </h2>
+    
+    <div class="about-text">
+        <p>
+            <span class="content-en">2020 - present.</span>
+            <span class="content-vi">2020 - hiện tại.</span>
+        </p>
+    </div>
+
+    <div class="gallery-grid" style="margin-top:30px;">
+        {% for film in collections.shortFilms %}
+        <a href="/short-films/{{ film.data.slug }}/" class="gallery-item">
+            <img src="{{ film.data.thumbnail }}" alt="{{ film.data.title_en }}" loading="lazy">
+            <div class="gallery-overlay">
+                <span class="content-vi">{{ film.data.title_vi }}</span>
+                <span class="content-en">{{ film.data.title_en }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

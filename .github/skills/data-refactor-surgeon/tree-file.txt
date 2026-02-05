@@ -1,0 +1,32 @@
+data-refactor-surgeon-v3/
+├── README.md                    # GIỮ NGUYÊN (hướng dẫn tổng quát)
+├── SKILL.md                     # UPDATE (thêm Vanilla JS support)
+│
+├── decision-tree.md            # GIỮ (đã tốt)
+├── troubleshooting.md          # GIỮ (sẽ thêm Vanilla JS cases)
+│
+├── workflows/                   # MỚI - Thay thế templates/
+│   ├── vanilla-js-to-markdown.md    # CHUYÊN cho case của bạn
+│   └── cloudcannon-11ty-setup.md   # Setup Eleventy (recommended)
+│
+├── examples/tri-portfolio-migration/
+│       ├── README.md
+│       ├── conversion-script.js
+│       ├── before/
+│       │   ├── short-films-data.js (2 items)
+│       │   └── index.html (key sections)
+│       └── after/
+│           ├── .eleventy.js
+│           ├── package.json
+│           ├── src/
+│           │   ├── index.njk
+│           │   ├── _includes/layouts/
+│           │   │   ├── base.njk
+│           │   │   └── film.njk
+│           │   └── content/short-films/
+│           │       └── dad-dont-lie-to-me.md
+│           └── .cloudcannon/config.yml
+│
+└── checklists/
+    ├── pre-flight.md           # GIỮ
+    └── validation.md           # GIỮ

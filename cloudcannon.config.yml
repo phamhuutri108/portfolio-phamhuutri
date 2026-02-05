@@ -1,4 +1,66 @@
 collections_config:
+  pages:
+    path: src
+    name: Pages
+    icon: description
+    filter:
+      base: strict
+      include:
+        - about.njk
+        - contact.njk
+    _inputs:
+      showResume:
+        type: switch
+        label: Hiện nút Resume
+        comment: Tắt để ẩn nút Resume
+      showArtistStatement:
+        type: switch
+        label: Hiện Artist Statement
+        comment: Tắt để ẩn phần Tuyên ngôn
+      showEducation:
+        type: switch
+        label: Hiện Education
+        comment: Tắt để ẩn phần Học vấn
+      showFilmography:
+        type: switch
+        label: Hiện Filmography
+        comment: Tắt để ẩn phần Quá trình làm phim
+  short-films:
+    path: src/content/short-films
+    name: Short Films
+    icon: movie
+    _inputs:
+      draft:
+        type: switch
+        label: Ẩn bài viết (Draft)
+        comment: Bật để ẩn bài viết khỏi trang web
+  commercials:
+    path: src/content/commercials
+    name: Commercials
+    icon: videocam
+    _inputs:
+      draft:
+        type: switch
+        label: Ẩn bài viết (Draft)
+        comment: Bật để ẩn bài viết khỏi trang web
+  others:
+    path: src/content/others
+    name: Others
+    icon: collections
+    _inputs:
+      draft:
+        type: switch
+        label: Ẩn bài viết (Draft)
+        comment: Bật để ẩn bài viết khỏi trang web
+  writings:
+    path: src/content/writings
+    name: Writings
+    icon: edit
+    _inputs:
+      draft:
+        type: switch
+        label: Ẩn bài viết (Draft)
+        comment: Bật để ẩn bài viết khỏi trang web
   data:
     path: data
     name: Data Files

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or "Pham Huu Tri - Filmmaker's Portfolio" }}</title>
+    <link rel="stylesheet" href="/style.css?v=5.0">
+    <link rel="icon" type="image/png" href="https://assets.phamhuutri.com/assets/home/favicon.png">
+    <link rel="preconnect" href="https://assets.phamhuutri.com">
+    <link rel="preconnect" href="https://www.youtube.com">
+    
+    <meta name="description" content="{{ description or 'Short Films, Commercials and Writings.' }}">
+    <meta name="author" content="Pham Huu Tri">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title or 'Pham Huu Tri Portfolio' }}">
+    <meta property="og:image" content="{{ thumbnail or 'https://assets.phamhuutri.com/assets/home/cover-meta.jpeg?v=2' }}">
+</head>
+<body class="mode-en">
+    <div class="wrapper">
+        {% include "partials/sidebar.njk" %}
+        
+        <main class="content">
+            {{ content | safe }}
+        </main>
+    </div>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        
+        <button id="lb-prev" class="lb-nav-btn" onclick="changeLbSlide(-1, event)">&#10094;</button>
+        
+        <div class="lb-content-wrapper">
+            <img id="lightbox-img" src="" onclick="event.stopPropagation()"> 
+            <div id="lb-caption" class="lb-caption">
+                <h3 id="lb-name">Name</h3>
+                <p id="lb-role">Role</p>
+            </div>
+        </div>
+
+        <button id="lb-next" class="lb-nav-btn" onclick="changeLbSlide(1, event)">&#10095;</button>
+    </div>
+
+    <script src="/assets/js/main.js?v=5.0"></script>
+</body>
+</html>
