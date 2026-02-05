@@ -151,6 +151,35 @@ _editables:
     numberedlist: true
     image: true
     code: true
+    snippet: true
+
+_snippets_imports:
+  eleventy_liquid: true
+
+_snippets:
+  youtube:
+    template: eleventy_liquid_shortcode
+    inline: false
+    preview:
+      text: YouTube Video
+      icon: play_circle
+    definitions:
+      shortcode_name: youtube
+    _inputs:
+      video_id:
+        type: text
+        label: YouTube Video ID
+        comment: "ID từ URL YouTube (vd: ooWID56SmHk)"
+      title:
+        type: text
+        label: Video Title
+    params:
+      video_id:
+        type: string
+        parser: argument
+      title:
+        type: string
+        parser: argument
 
 timezone: Asia/Ho_Chi_Minh
 

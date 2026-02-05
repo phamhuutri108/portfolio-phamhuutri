@@ -8,6 +8,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/google92ff446c62e27352.html");
   eleventyConfig.addPassthroughCopy("src/sitemap.xml");
 
+  // YouTube Shortcode for CloudCannon
+  eleventyConfig.addShortcode("youtube", function(videoId, title = "YouTube Video") {
+    return `<div class="video-embed">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/${videoId}" title="${title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>`;
+  });
+
   // Markdown config - cho phép HTML inline
   const md = markdownIt({
     html: true,

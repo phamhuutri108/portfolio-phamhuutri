@@ -6,6 +6,155 @@ title_vi: "Ba Ơi, Đừng Nói Dối"
 title_en: "Dad, Don't Lie To Me"
 thumbnail: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
 category: short-films
+
+# Film Info
+genre_vi: "Phim ngắn / Tâm lý, Quan sát"
+genre_en: "Short fiction / Drama, Observation"
+year_vi: "Sắp ra mắt (2026)"
+year_en: "Coming-soon (2026)"
+duration: "39:45"
+youtube_id: "ooWID56SmHk"
+
+# Logline
+logline_vi: "Một bác sĩ trung niên bất đắc dĩ, thông qua điện thoại, phải đóng giả làm cha của một cậu bé bệnh nhân ung thư của anh, để đánh lừa cậu về cái chết của người cha ruột."
+logline_en: "An unwilling middle-aged doctor has to impersonate the father of his young cancer patient through a series of phone calls, to deceive him about the death of his real father."
+
+# Director's Statement (each paragraph is an item)
+director_statement_vi:
+  - "Khoảng cuối năm 2023, khi tôi đang túc trực ở bệnh viện để chăm sóc cho mẹ tôi sau khi bà trải qua một cơn đột quỵ đã khiến sức khỏe tinh thần và khả năng lao động của bà giảm sút. Có một vị bác sĩ đã chăm sóc rất tận tâm cho mẹ tôi mặc dù gia đình tôi không quen biết ông, và phòng bệnh của mẹ tôi chỉ thuộc loại phổ thông. Tôi cho rằng, vượt lên trên y đức, phải có một động lực sâu xa hơn đằng sau lòng tốt của ông. Và ý tưởng của tôi ra đời từ đó."
+  - "Tôi đã chuyển đổi bệnh nhân từ hình mẫu là một người phụ nữ thành một cậu bé vì điều đó gần gũi hơn với tâm hồn và cách hiểu của tôi. Ngoài ra, sự gắn kết của cậu bé và vị bác sĩ hết sức thân mật nhưng cũng hết sức xa cách, vì họ không thể gặp mặt trực tiếp mà chỉ có thể thông qua điện thoại. Một phần vì tình huống bất đắc dĩ của vị bác sĩ, nhưng hơn hết, sự kết nối giữa những con người với nhau qua một thiết bị điện tử phản ánh cho sự xa cách trong thời kỳ hiện đại, nơi con người buộc phải bày tỏ tình cảm của mình một cách không trọn vẹn. Đó là bi kịch của thời đại này."
+  - "Tôi muốn kể câu chuyện ở góc độ người quan sát. Thay vì đưa máy quay đến gần nhân vật để thấy cảm xúc của họ đang diễn biến ra sao, tôi muốn cùng khán giả đứng ở khoảng cách thích hợp để theo dõi hành trình cảm xúc của họ. Khi một sự kiện đau buồn diễn ra, khán giả buộc phải dùng kinh nghiệm của mình để dự đoán cảm xúc của nhân vật. Điều này cho diễn viên của tôi nhiều không gian hơn để thể nghiệm nhân vật mà họ muốn trở thành, không phải chỉ vì tôi bảo họ phải làm theo cách mà tôi đang cảm nhận."
+  - "Bộ phim sẽ không có nhân vật chính vì vai trò của cả ba nhân vật trong câu chuyện đều bổ trợ lẫn nhau. Khi đồng hồ đã điểm, hành trình của mỗi nhân vật sẽ hòa làm một để củng cố cho duy nhất một luận điểm: \"Cuộc sống vẫn phải tiếp tục\"."
+
+director_statement_en:
+  - "In late 2023, while I was keeping vigil at the hospital caring for my mother after she suffered a stroke, there was a doctor who provided exceptionally dedicated care for my mother despite having no prior connection to our family, and we hadn't paid for treatment at a high-quality private hospital. I believe that, beyond medical ethics, there must have been a deeper motivation behind his kindness. And from this, my idea was born."
+  - "I transformed the patient (my mother) from a woman to a young boy because this resonated more closely with my soul and understanding. The connection between the boy and the doctor is simultaneously intimate yet distant, as they cannot meet in person but can only communicate through phone calls. This is partly due to the doctor's unavoidable circumstances, but more importantly, the connection between them through an electronic device reflects the disconnect in modern life, where humans are forced to express their feelings incompletely. This is the tragedy of our era."
+  - "I want to tell this story from an observer's perspective. Instead of bringing the camera close to the characters to see how their emotions unfold, I will stand with the audience at an appropriate distance to witness their emotional journey. When a sad event occurs, the audience must use their own experiences to anticipate the characters' feelings. This gives my actors more space to experiment with the characters they want to become, not just following my personal interpretation of how they should feel."
+  - "The film will not have one main character because all three characters' roles complement each other. When the clock strikes, each character's journey will merge into one to reinforce a single thesis: \"Life must go on.\""
+
+# Crew List Vietnamese
+crew_vi:
+  - role: "Diễn viên"
+    name: "Ngô Nhật Trường, Cô Nhum, Nguyễn Vũ Uy Nhân"
+  - role: "Đạo diễn và Kịch bản"
+    name: "Phạm Hữu Trí"
+  - role: "Cố vấn nghệ thuật"
+    name: "NSND. Đạo diễn Đào Bá Sơn"
+  - role: "Sản xuất"
+    name: "Thục Mai"
+  - role: "Đồng sản xuất"
+    name: "Thảo Quiêng"
+  - role: "Quản lý dự án"
+    name: "Phạm Văn Nam"
+  - role: "Đạo diễn hình ảnh và Quay phim"
+    name: "Nguyễn Tùng Lâm"
+  - role: "Thiết kế sản xuất"
+    name: "Dzuy Tom"
+  - role: "Thiết kế mỹ thuật"
+    name: "Hoàng Bảo Uyên"
+  - role: "Trợ lý đạo diễn #1"
+    name: "Lê Diễm Quỳnh"
+  - role: "Trợ lý đạo diễn #2"
+    name: "Kon Lớn"
+  - role: "Thư ký trường quay"
+    name: "Hồ Minh Khoa"
+  - role: "Gaffer"
+    name: "Tô Anh Khoa"
+  - role: "Phụ quay"
+    name: "Đặng Xuân Hoàng, Nguyễn Kim Hậu"
+  - role: "Chỉnh nét"
+    name: "Văn Ngọc Thành"
+  - role: "Chuyên viên ánh sáng"
+    name: "Hiếu, Gia Bảo, Mai Ngọc Hiền"
+  - role: "Trợ lý thiết kế sản xuất"
+    name: "Ruby"
+  - role: "Thiết kế bối cảnh"
+    name: "Nicholas Nguyễn, Kaii Khải Hân, HaiBkk"
+  - role: "Phục trang"
+    name: "Minh Thảo"
+  - role: "Hóa trang"
+    name: "Bia Huyền"
+  - role: "Thu thanh hiện trường"
+    name: "Crister Nguyên"
+  - role: "Storyboard Artist"
+    name: "Phạm Hữu Trí"
+  - role: "Trợ lý sản xuất"
+    name: "Khương Ngọc, Vương Linh"
+  - role: "Sản xuất hậu kỳ"
+    name: "Thục Mai, Thảo Quiêng"
+  - role: "Giám sát hậu kỳ"
+    name: "Văn Ngọc Thành"
+  - role: "Dựng phim"
+    name: "Phạm Hữu Trí"
+  - role: "Hiệu chỉnh màu sắc"
+    name: "Nguyễn Tùng Lâm"
+  - role: "Nhạc sĩ"
+    name: "Huy Đẹp Trai"
+  - role: "Hiệu chỉnh âm thanh"
+    name: "[Đang cập nhật]"
+
+# Crew List English
+crew_en:
+  - role: "Cast"
+    name: "Ngô Nhật Trường, Cô Nhum, Vũ Nguyễn Uy Nhân"
+  - role: "Director and Screenwriter"
+    name: "Phạm Hữu Trí"
+  - role: "Director's Consultant"
+    name: "NSND. Đào Bá Sơn"
+  - role: "Producer"
+    name: "Thục Mai"
+  - role: "Co-Producer"
+    name: "Thảo Quiêng"
+  - role: "Project Manager"
+    name: "Phạm Văn Nam"
+  - role: "Cinematographer"
+    name: "Nguyễn Tùng Lâm"
+  - role: "Production Designer"
+    name: "Dzuy Tom"
+  - role: "Art Director"
+    name: "Hoàng Bảo Uyên"
+  - role: "First Assistant Director"
+    name: "Lê Diễm Quỳnh"
+  - role: "Second Assistant Director"
+    name: "Kon Lớn"
+  - role: "Script Supervisor"
+    name: "Hồ Minh Khoa"
+  - role: "Gaffer"
+    name: "Khoa Too"
+  - role: "Assistant Camera"
+    name: "Đặng Xuân Hoàng, Nguyễn Kim Hậu"
+  - role: "Focus Puller"
+    name: "Văn Ngọc Thành"
+  - role: "Best boy"
+    name: "Nguyễn Trung Hiếu, Gia Bảo, Mai Ngọc Hiền"
+  - role: "Assistant Production Design"
+    name: "Ruby"
+  - role: "Set Design and Set Decorator"
+    name: "Nicholas Nguyễn, Kaii Khải Hân, HaiBkk"
+  - role: "Wardrobe"
+    name: "Minh Thảo"
+  - role: "Make-up Artist"
+    name: "Bia Huyền"
+  - role: "Sound Recordist"
+    name: "Crister Nguyên"
+  - role: "Storyboard Artist"
+    name: "Phạm Hữu Trí"
+  - role: "Production Assistant"
+    name: "Khương Ngọc, Vương Linh"
+  - role: "Post-Producer"
+    name: "Thục Mai, Thảo Quiêng"
+  - role: "Post-Production Supervisor"
+    name: "Văn Ngọc Thành"
+  - role: "Editor"
+    name: "Phạm Hữu Trí"
+  - role: "Colorist"
+    name: "Nguyễn Tùng Lâm"
+  - role: "Music Composer"
+    name: "Huy Đẹp Trai"
+  - role: "Sound Design and Mastering"
+    name: "[Đang cập nhật]"
+
+# Crew Cards (for slider)
 crewData:
   - name: "Ngô Nhật Trường"
     role_vi: "Diễn viên"
@@ -115,6 +264,8 @@ crewData:
     role_vi: "Trợ lý sản xuất"
     role_en: "Production Assistant"
     img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-vuong-linh.jpeg?v=2"
+
+# BTS Gallery
 btsData:
   - src: "https://assets.phamhuutri.com/assets/short-films/BODND/BTS/BODND-BTS-2.jpeg?v=2"
     class: "wide"
@@ -225,113 +376,3 @@ btsData:
     class: "wide"
   - src: "https://assets.phamhuutri.com/assets/short-films/BODND/BTS/BODND-BTS-84.jpeg?v=2"
 ---
-
-<!-- VIETNAMESE CONTENT -->
-<div class="content-vi" lang="vi">
-
-<p><b>Thể loại:</b> Phim ngắn / Tâm lý, Quan sát<br>
-<b>Năm:</b> Sắp ra mắt (2026)<br>
-<b>Thời lượng:</b> 39:45</p>
-
-<div class="video-embed">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ooWID56SmHk" title="Dad, Don't Lie To Me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<h3>Logline</h3>
-<p>Một bác sĩ trung niên bất đắc dĩ, thông qua điện thoại, phải đóng giả làm cha của một cậu bé bệnh nhân ung thư của anh, để đánh lừa cậu về cái chết của người cha ruột.</p>
-
-<h3>Director's Statement</h3>
-<p>Khoảng cuối năm 2023, khi tôi đang túc trực ở bệnh viện để chăm sóc cho mẹ tôi sau khi bà trải qua một cơn đột quỵ đã khiến sức khỏe tinh thần và khả năng lao động của bà giảm sút. Có một vị bác sĩ đã chăm sóc rất tận tâm cho mẹ tôi mặc dù gia đình tôi không quen biết ông, và phòng bệnh của mẹ tôi chỉ thuộc loại phổ thông. Tôi cho rằng, vượt lên trên y đức, phải có một động lực sâu xa hơn đằng sau lòng tốt của ông. Và ý tưởng của tôi ra đời từ đó.</p>
-<p>Tôi đã chuyển đổi bệnh nhân từ hình mẫu là một người phụ nữ thành một cậu bé vì điều đó gần gũi hơn với tâm hồn và cách hiểu của tôi. Ngoài ra, sự gắn kết của cậu bé và vị bác sĩ hết sức thân mật nhưng cũng hết sức xa cách, vì họ không thể gặp mặt trực tiếp mà chỉ có thể thông qua điện thoại. Một phần vì tình huống bất đắc dĩ của vị bác sĩ, nhưng hơn hết, sự kết nối giữa những con người với nhau qua một thiết bị điện tử phản ánh cho sự xa cách trong thời kỳ hiện đại, nơi con người buộc phải bày tỏ tình cảm của mình một cách không trọn vẹn. Đó là bi kịch của thời đại này.</p>
-<p>Tôi muốn kể câu chuyện ở góc độ người quan sát. Thay vì đưa máy quay đến gần nhân vật để thấy cảm xúc của họ đang diễn biến ra sao, tôi muốn cùng khán giả đứng ở khoảng cách thích hợp để theo dõi hành trình cảm xúc của họ. Khi một sự kiện đau buồn diễn ra, khán giả buộc phải dùng kinh nghiệm của mình để dự đoán cảm xúc của nhân vật. Điều này cho diễn viên của tôi nhiều không gian hơn để thể nghiệm nhân vật mà họ muốn trở thành, không phải chỉ vì tôi bảo họ phải làm theo cách mà tôi đang cảm nhận.</p>
-<p>Bộ phim sẽ không có nhân vật chính vì vai trò của cả ba nhân vật trong câu chuyện đều bổ trợ lẫn nhau. Khi đồng hồ đã điểm, hành trình của mỗi nhân vật sẽ hòa làm một để củng cố cho duy nhất một luận điểm: "Cuộc sống vẫn phải tiếp tục".</p>
-
-<h3>Crew</h3>
-<ul class="crew-list">
-    <li><b>Diễn viên:</b> Ngô Nhật Trường, Cô Nhum, Nguyễn Vũ Uy Nhân</li>
-    <li><b>Đạo diễn và Kịch bản:</b> Phạm Hữu Trí</li>
-    <li><b>Cố vấn nghệ thuật:</b> NSND. Đạo diễn Đào Bá Sơn</li>
-    <li><b>Sản xuất:</b> Thục Mai</li>
-    <li><b>Đồng sản xuất:</b> Thảo Quiêng</li>
-    <li><b>Quản lý dự án:</b> Phạm Văn Nam</li>
-    <li><b>Đạo diễn hình ảnh và Quay phim:</b> Nguyễn Tùng Lâm</li>
-    <li><b>Thiết kế sản xuất:</b> Dzuy Tom</li>
-    <li><b>Thiết kế mỹ thuật:</b> Hoàng Bảo Uyên</li>
-    <li><b>Trợ lý đạo diễn #1:</b> Lê Diễm Quỳnh</li>
-    <li><b>Trợ lý đạo diễn #2:</b> Kon Lớn</li>
-    <li><b>Thư ký trường quay:</b> Hồ Minh Khoa</li>
-    <li><b>Gaffer:</b> Tô Anh Khoa</li>
-    <li><b>Phụ quay:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
-    <li><b>Chỉnh nét:</b> Văn Ngọc Thành</li>
-    <li><b>Chuyên viên ánh sáng:</b> Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
-    <li><b>Trợ lý thiết kế sản xuất</b> Ruby</li>
-    <li><b>Thiết kế bối cảnh:</b> Nicholas Nguyễn, Kaii Khải Hân, HaiBkk</li>
-    <li><b>Phục trang:</b> Minh Thảo</li>
-    <li><b>Hóa trang:</b> Bia Huyền</li>
-    <li><b>Thu thanh hiện trường:</b> Crister Nguyên</li>
-    <li><b>Storyboard Artist:</b> Phạm Hữu Trí</li>
-    <li><b>Trợ lý sản xuất:</b> Khương Ngọc, Vương Linh</li>
-    <li><b>Sản xuất hậu kỳ:</b> Thục Mai, Thảo Quiêng</li>
-    <li><b>Giám sát hậu kỳ:</b> Văn Ngọc Thành</li>
-    <li><b>Dựng phim:</b> Phạm Hữu Trí</li>
-    <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
-    <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
-    <li><b>Hiệu chỉnh âm thanh:</b> [Đang cập nhật]</li>
-</ul>
-
-</div>
-
-<!-- ENGLISH CONTENT -->
-<div class="content-en" lang="en">
-
-<p><b>Genre:</b> Short fiction / Drama, Observation<br>
-<b>Year:</b> Coming-soon (2026)<br>
-<b>Duration:</b> 39:40</p>
-
-<div class="video-embed">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ooWID56SmHk" title="Dad, Don't Lie To Me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<h3>Logline</h3>
-<p>An unwilling middle-aged doctor has to impersonate the father of his young cancer patient through a series of phone calls, to deceive him about the death of his real father.</p>
-
-<h3>Director's Statement</h3>
-<p>In late 2023, while I was keeping vigil at the hospital caring for my mother after she suffered a stroke, there was a doctor who provided exceptionally dedicated care for my mother despite having no prior connection to our family, and we hadn't paid for treatment at a high-quality private hospital. I believe that, beyond medical ethics, there must have been a deeper motivation behind his kindness. And from this, my idea was born.</p>
-<p>I transformed the patient (my mother) from a woman to a young boy because this resonated more closely with my soul and understanding. The connection between the boy and the doctor is simultaneously intimate yet distant, as they cannot meet in person but can only communicate through phone calls. This is partly due to the doctor's unavoidable circumstances, but more importantly, the connection between them through an electronic device reflects the disconnect in modern life, where humans are forced to express their feelings incompletely. This is the tragedy of our era.</p>
-<p>I want to tell this story from an observer's perspective. Instead of bringing the camera close to the characters to see how their emotions unfold, I will stand with the audience at an appropriate distance to witness their emotional journey. When a sad event occurs, the audience must use their own experiences to anticipate the characters' feelings. This gives my actors more space to experiment with the characters they want to become, not just following my personal interpretation of how they should feel.</p>
-<p>The film will not have one main character because all three characters' roles complement each other. When the clock strikes, each character's journey will merge into one to reinforce a single thesis: "Life must go on."</p>
-
-<h3>Crew</h3>
-<ul class="crew-list">
-    <li><b>Cast:</b> Ngô Nhật Trường, Cô Nhum, Vũ Nguyễn Uy Nhân</li>
-    <li><b>Director and Screenwriter:</b> Phạm Hữu Trí</li>
-    <li><b>Director's Consultant:</b> NSND. Đào Bá Sơn</li>
-    <li><b>Producer:</b> Thục Mai</li>
-    <li><b>Co-Producer:</b> Thảo Quiêng</li>
-    <li><b>Project Manager:</b> Phạm Văn Nam</li>
-    <li><b>Cinematographer:</b> Nguyễn Tùng Lâm</li>
-    <li><b>Production Designer:</b> Dzuy Tom</li>
-    <li><b>Art Director:</b> Hoàng Bảo Uyên</li>
-    <li><b>First Assistant Director:</b> Lê Diễm Quỳnh</li>
-    <li><b>Second Assistant Director:</b> Kon Lớn</li>
-    <li><b>Script Supervisor:</b> Hồ Minh Khoa</li>
-    <li><b>Gaffer:</b> Khoa Too</li>
-    <li><b>Assistant Camera:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
-    <li><b>Focus Puller:</b> Văn Ngọc Thành</li>
-    <li><b>Best boy:</b> Nguyễn Trung Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
-    <li><b>Assistant Production Design:</b> Ruby</li>
-    <li><b>Set Design and Set Decorator:</b> Nicholas Nguyễn, Kaii Khải Hân, HaiBkk</li>
-    <li><b>Wardrobe:</b> Minh Thảo</li>
-    <li><b>Make-up Artist:</b> Bia Huyền</li>
-    <li><b>Sound Recordist:</b> Crister Nguyên</li>
-    <li><b>Storyboard Artist:</b> Phạm Hữu Trí</li>
-    <li><b>Production Assistant:</b> Khương Ngọc, Vương Linh</li>
-    <li><b>Post-Producer:</b> Thục Mai, Thảo Quiêng</li>
-    <li><b>Post-Production Supervisor:</b> Văn Ngọc Thành</li>
-    <li><b>Editor:</b> Phạm Hữu Trí</li>
-    <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
-    <li><b>Music Composer:</b> Huy Đẹp Trai</li>
-    <li><b>Sound Design and Mastering:</b> [Đang cập nhật]</li>
-</ul>
-
-</div>

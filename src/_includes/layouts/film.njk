@@ -8,6 +8,80 @@ layout: layouts/base.njk
         <span class="content-en">{{ title_en }}</span>
     </h2>
     
+    {# ========== FILM INFO ========== #}
+    <!-- VIETNAMESE CONTENT -->
+    <div class="content-vi" lang="vi">
+        <p>
+            <b>Thể loại:</b> {{ genre_vi }}<br>
+            <b>Năm:</b> {{ year_vi }}<br>
+            <b>Thời lượng:</b> {{ duration }}
+        </p>
+
+        {% if youtube_id %}
+        <div class="video-embed">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ youtube_id }}" title="{{ title_en }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        {% endif %}
+
+        {% if logline_vi %}
+        <h3>Logline</h3>
+        <p>{{ logline_vi }}</p>
+        {% endif %}
+
+        {% if director_statement_vi and director_statement_vi.length > 0 %}
+        <h3>Director's Statement</h3>
+        {% for para in director_statement_vi %}
+        <p>{{ para }}</p>
+        {% endfor %}
+        {% endif %}
+
+        {% if crew_vi and crew_vi.length > 0 %}
+        <h3>Crew</h3>
+        <ul class="crew-list">
+            {% for item in crew_vi %}
+            <li><b>{{ item.role }}:</b> {{ item.name }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div class="content-en" lang="en">
+        <p>
+            <b>Genre:</b> {{ genre_en }}<br>
+            <b>Year:</b> {{ year_en }}<br>
+            <b>Duration:</b> {{ duration }}
+        </p>
+
+        {% if youtube_id %}
+        <div class="video-embed">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ youtube_id }}" title="{{ title_en }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        {% endif %}
+
+        {% if logline_en %}
+        <h3>Logline</h3>
+        <p>{{ logline_en }}</p>
+        {% endif %}
+
+        {% if director_statement_en and director_statement_en.length > 0 %}
+        <h3>Director's Statement</h3>
+        {% for para in director_statement_en %}
+        <p>{{ para }}</p>
+        {% endfor %}
+        {% endif %}
+
+        {% if crew_en and crew_en.length > 0 %}
+        <h3>Crew</h3>
+        <ul class="crew-list">
+            {% for item in crew_en %}
+            <li><b>{{ item.role }}:</b> {{ item.name }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+    {# ========== ADDITIONAL CONTENT FROM MARKDOWN ========== #}
     {{ content | safe }}
 
     {# ========== CREW SLIDER ========== #}
