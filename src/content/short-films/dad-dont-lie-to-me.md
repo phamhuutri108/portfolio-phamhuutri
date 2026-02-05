@@ -234,16 +234,7 @@ btsData:
 <b>Thời lượng:</b> 39:45</p>
 
 <div class="video-embed">
-    <iframe 
-        width="100%" 
-        height="315" 
-        
-        src="https://www.youtube.com/embed/ooWID56SmHk" 
-        title="Dad, Don't Lie To Me" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ooWID56SmHk" title="Dad, Don't Lie To Me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <h3>Logline</h3>
@@ -298,16 +289,7 @@ btsData:
 <b>Duration:</b> 39:40</p>
 
 <div class="video-embed">
-    <iframe 
-        width="100%" 
-        height="315" 
-        
-        src="https://www.youtube.com/embed/ooWID56SmHk" 
-        title="Dad, Don't Lie To Me" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ooWID56SmHk" title="Dad, Don't Lie To Me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <h3>Logline</h3>
