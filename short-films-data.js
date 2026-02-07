@@ -111,7 +111,7 @@ const filmsData = {
 
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
-                <li><b>Cast:</b> Ngô Nhật Trường, Cô Nhum, Vũ Nguyễn Uy Nhân</li>
+                <li><b>Cast:</b> Ngô Nhật Trường, Cô Nhum, Nguyễn Vũ Uy Nhân</li>
 
                 <li><b>Director and Screenwriter:</b> Phạm Hữu Trí</li>
                 <li><b>Director's Consultant:</b> NSND. Đào Bá Sơn</li>
