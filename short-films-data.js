@@ -3,10 +3,10 @@
 const filmsData = {
 
     // 1. BA ƠI, ĐỪNG NÓI DỐI (ĐÃ TỐI ƯU)
-    "short-films-dad-dont-lie-to-me": {
+    "short-films-dad-dont-lie": {
         title: {
             vi: "Ba Ơi, Đừng Nói Dối",
-            en: "Dad, Don't Lie To Me"
+            en: "Dad, Don't Lie"
         },
         thumbnail: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2",
         
@@ -22,7 +22,7 @@ const filmsData = {
                     height="315" 
                     style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/ooWID56SmHk" 
-                    title="Dad, Don't Lie To Me" 
+                    title="Dad, Don't Lie" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -93,7 +93,7 @@ const filmsData = {
                     height="315" 
                     style="max-width: 560px; border-radius: 4px;" 
                     src="https://www.youtube.com/embed/ooWID56SmHk" 
-                    title="Dad, Don't Lie To Me" 
+                    title="Dad, Don't Lie" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
