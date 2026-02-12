@@ -46,7 +46,7 @@ const filmsData = {
                 <li><b>Cố vấn nghệ thuật:</b> NSND. Đạo diễn Đào Bá Sơn</li>
 
                 <li><b>Sản xuất:</b> Thục Mai</li>
-                <li><b>Đồng sản xuất:</b> Thảo Quiêng</li>
+                <li><b>Đồng sản xuất:</b> Thảo Quiêngg</li>
                 <li><b>Quản lý dự án:</b> Phạm Văn Nam</li>
 
                 <li><b>Đạo diễn hình ảnh và Quay phim:</b> Nguyễn Tùng Lâm</li>
@@ -118,7 +118,7 @@ const filmsData = {
                 <li><b>Director's Consultant:</b> NSND. Đào Bá Sơn</li>
 
                 <li><b>Producer:</b> Thục Mai</li>
-                <li><b>Co-Producer:</b> Thảo Quiêng</li>
+                <li><b>Co-Producer:</b> Thảo Quiêngg</li>
                 <li><b>Project Manager:</b> Phạm Văn Nam</li>
 
                 <li><b>Cinematographer:</b> Nguyễn Tùng Lâm</li>
@@ -165,7 +165,7 @@ const filmsData = {
             { name: "Phạm Hữu Trí", role: { vi: "Đạo diễn, Kịch bản & Dựng phim", en: "Director, Screenwriter & Editor" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-pham-huu-tri_1.jpeg?v=2" },
             
             { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpeg?v=2" },
-            { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thao-quieng.jpeg?v=2" },
+            { name: "Thảo Quiêngg", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thao-quieng.jpeg?v=2" },
             
             { name: "Nguyễn     Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.jpeg?v=2" },
             
