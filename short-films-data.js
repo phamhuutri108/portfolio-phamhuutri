@@ -76,7 +76,7 @@ const filmsData = {
 
                 <li><b>Sản xuất hậu kỳ:</b> Thục Mai, Thảo Quiêng</li>
                 <li><b>Giám sát hậu kỳ:</b> Văn Ngọc Thành</li>
-                <li><b>Dựng phim:</b> Phạm Hữu Trí</li>
+                <li><b>Dựng phim:</b> Phạm Hữu Trí, Hoàng Bảo Uyên</li>
                 <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
                 <li><b>Hiệu chỉnh âm thanh:</b> Sigon Sound Production</li>
@@ -148,7 +148,7 @@ const filmsData = {
 
                 <li><b>Post-Producer:</b> Thục Mai, Thảo Quiêng</li>
                 <li><b>Post-Production Supervisor:</b> Văn Ngọc Thành</li>
-                <li><b>Editor:</b> Phạm Hữu Trí</li>
+                <li><b>Editor:</b> Phạm Hữu Trí, Hoàng Bảo Uyên</li>
                 <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Music Composer:</b> Huy Đẹp Trai</li>
                 <li><b>Sound Design and Mastering:</b> Sigon Sound Production</li>
@@ -167,10 +167,10 @@ const filmsData = {
             { name: "Thục Mai", role: { vi: "Sản xuất & Sản xuất hậu kỳ", en: "Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thuc-mai.jpeg?v=2" },
             { name: "Thảo Quiêng", role: { vi: "Đồng sản xuất & Sản xuất hậu kỳ", en: "Co-Producer & Post-Producer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-thao-quieng.jpeg?v=2" },
             
-            { name: "Nguyễn Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.jpeg?v=2" },
+            { name: "Nguyễn     Tùng Lâm", role: { vi: "Đạo diễn hình ảnh, Quay phim & Hiệu chỉnh màu sắc", en: "Cinematographer & Colorist" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-nguyen-tung-lam.jpeg?v=2" },
             
             { name: "Dzuy Tom", role: { vi: "Thiết kế sản xuất", en: "Production Designer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-dzuy-tom.jpeg?v=2" },
-            { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật", en: "Art Director" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-hoang-bao-uyen.jpeg?v=2" },
+            { name: "Hoàng Bảo Uyên", role: { vi: "Thiết kế mỹ thuật & Dựng phim", en: "Art Director & Editor" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-hoang-bao-uyen.jpeg?v=2" },
             
             { name: "Lê Diễm Quỳnh", role: { vi: "Trợ lý đạo diễn #1", en: "First Assistant Director" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-quynh-sun.jpeg?v=2" },
             { name: "Kon Lớn", role: { vi: "Trợ lý đạo diễn #2", en: "Second Assistant Director" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-kon-lon.jpeg?v=2" },
@@ -188,7 +188,7 @@ const filmsData = {
             { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-ruby.jpeg?v=2" },
 
             { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-huy-dep-trai.jpeg?v=2" },
-            { name: "[Đang cập nhật]", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2" },
+            { name: "Sigon Sound Production", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2" },
 
 
             { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-minh-thao.jpeg?v=2" },
