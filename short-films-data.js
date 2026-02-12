@@ -64,7 +64,8 @@ const filmsData = {
                 <li><b>Chuyên viên ánh sáng:</b> Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
 
                 <li><b>Trợ lý thiết kế sản xuất</b> Ruby</li>
-                <li><b>Thiết kế bối cảnh:</b> Nicholas Nguyễn, Kaii Khải Hân, HaiBkk</li>
+                <li><b>Đạo cụ:</b> Kaii Khải Hân</li>
+                <li><b>Thiết kế bối cảnh:</b> Nicholas Nguyễn, HaiBkk</li>
                 <li><b>Phục trang:</b> Minh Thảo</li>
                 <li><b>Hóa trang:</b> Bia Huyền</li>
 
@@ -78,7 +79,7 @@ const filmsData = {
                 <li><b>Dựng phim:</b> Phạm Hữu Trí</li>
                 <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
-                <li><b>Hiệu chỉnh âm thanh:</b> [Đang cập nhật]</li>
+                <li><b>Hiệu chỉnh âm thanh:</b> Sigon Sound Production</li>
             </ul>
 
             `,
@@ -135,7 +136,8 @@ const filmsData = {
                 <li><b>Best boy:</b> Nguyễn Trung Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
 
                 <li><b>Assistant Production Design:</b> Ruby</li>
-                <li><b>Set Design and Set Decorator:</b> Nicholas Nguyễn, Kaii Khải Hân, HaiBkk</li>
+                <li><b>Props Master:</b> Kaii Khải Hân</li>
+                <li><b>Set Design and Set Decorator:</b> Nicholas Nguyễn, HaiBkk</li>
                 <li><b>Wardrobe:</b> Minh Thảo</li>
                 <li><b>Make-up Artist:</b> Bia Huyền</li>
 
@@ -149,7 +151,7 @@ const filmsData = {
                 <li><b>Editor:</b> Phạm Hữu Trí</li>
                 <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Music Composer:</b> Huy Đẹp Trai</li>
-                <li><b>Sound Design and Mastering:</b> [Đang cập nhật]</li>
+                <li><b>Sound Design and Mastering:</b> Sigon Sound Production</li>
             </ul>
         
             `,
@@ -181,7 +183,7 @@ const filmsData = {
             
             
             { name: "Nicholas Nguyễn", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-nick.jpeg?v=2" },
-            { name: "Kaii Khải Hân", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-kaii.jpeg?v=2" },
+            { name: "Kaii Khải Hân", role: { vi: "Đạo cụ", en: "Props Master" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-kaii.jpeg?v=2" },
             { name: "HaiBkk", role: { vi: "Thiết kế bối cảnh", en: "Set Design" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-haibkk.jpeg?v=2" },
             { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-ruby.jpeg?v=2" },
 
