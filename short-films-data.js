@@ -79,7 +79,8 @@ const filmsData = {
                 <li><b>Dựng phim:</b> Phạm Hữu Trí, Hoàng Bảo Uyên</li>
                 <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
-                <li><b>Hiệu chỉnh âm thanh:</b> Sigon Sound Production</li>
+                <li><b>Hiệu chỉnh âm thanh:</b> Ngô Xuân Hồ</li>
+                <li><b>Hiệu chỉnh tại:</b> Sigon Sound Production
             </ul>
 
             `,
@@ -151,7 +152,8 @@ const filmsData = {
                 <li><b>Editor:</b> Phạm Hữu Trí, Hoàng Bảo Uyên</li>
                 <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Music Composer:</b> Huy Đẹp Trai</li>
-                <li><b>Sound Design and Mastering:</b> Sigon Sound Production</li>
+                <li><b>Sound Design and Mixed:</b> Ngô Xuân Hồ</li>
+                <li><b>Mixed at:</b> Sigon Sound Production</li>
             </ul>
         
             `,
