@@ -80,7 +80,9 @@ const filmsData = {
                 <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
                 <li><b>Hiệu chỉnh âm thanh:</b> Ngô Xuân Hồ</li>
-                <li><b>Hiệu chỉnh tại:</b> Sigon Sound Production
+                <li><b>Hiệu chỉnh tại:</b> Sigon Sound Production</li>
+                <li><b>Phụ đề tiếng Pháp & tiếng Anh:</b> Ngô Nhật Trường</li>
+                <li><b>Poster:</b> Ngô Nhật Trường, Rémi Thomas</li>
             </ul>
 
             `,
@@ -154,6 +156,8 @@ const filmsData = {
                 <li><b>Music Composer:</b> Huy Đẹp Trai</li>
                 <li><b>Sound Design and Mixed:</b> Ngô Xuân Hồ</li>
                 <li><b>Mixed at:</b> Sigon Sound Production</li>
+                <li><b>French & English Subtitles:</b> Ngô Nhật Trường</li>
+                <li><b>Poster:</b> Ngô Nhật Trường, Rémi Thomas</li>
             </ul>
         
             `,
