@@ -157,7 +157,7 @@ const filmsData = {
                 <li><b>Sound Design and Mixed:</b> Ngô Xuân Hồ</li>
                 <li><b>Mixed at:</b> Sigon Sound Production</li>
                 <li><b>French & English Subtitles:</b> Ngô Nhật Trường</li>
-                <li><b>Poster:</b> Ngô Nhật Trường, Rémi Thomas</li>
+                <li><b>Poster Design:</b> Ngô Nhật Trường, Rémi Thomas</li>
             </ul>
         
             `,
