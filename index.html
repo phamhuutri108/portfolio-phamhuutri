@@ -565,7 +565,17 @@
             htmlContent += crewHtml;
         }
 
-        // 3. Tự động sinh BTS Gallery Wall (nếu có) -> ĐÃ THÊM MỚI
+        // 3. Tự động sinh SoundCloud Embed (nếu có) - ĐẶT TRƯỚC BTS
+        if (item.soundcloudEmbed) {
+            htmlContent += `
+                <h3 style="margin-top: 50px;">Soundtrack</h3>
+                <div style="max-width: 560px; margin-top: 15px;">
+                    ${item.soundcloudEmbed}
+                </div>
+            `;
+        }
+
+        // 4. Tự động sinh BTS Gallery Wall (nếu có)
         if (item.btsData && item.btsData.length > 0) {
             htmlContent += `
                 <h3 style="margin-top: 50px;">

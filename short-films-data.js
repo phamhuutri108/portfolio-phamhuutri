@@ -294,6 +294,9 @@ const filmsData = {
     { src: "https://assets.phamhuutri.com/assets/short-films/BODND/BTS/BODND-BTS-84.jpeg?v=2" },
 ],
 
+        // SoundCloud Embed
+        soundcloudEmbed: `<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2192844275%3Fsecret_token%3Ds-YdumxnhXXXl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>`,
+
         // Giữ nguyên phần Behind The Scene bên dưới nếu có...
         // ... (Bạn copy nốt phần gallery-wall BTS vào đây nếu muốn, hoặc để nguyên trong file gốc nếu nó nằm ngoài biến `vi`/`en`)
     },
