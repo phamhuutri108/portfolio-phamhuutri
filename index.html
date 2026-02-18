@@ -540,16 +540,16 @@
         // 2. Tự động sinh Crew Slider (nếu có)
         if (item.crewData && item.crewData.length > 0) {
             // htmlContent += `<h3 style="margin-top: 40px;"><span class="content-vi">Ê-kíp</span><span class="content-en">Crew</span></h3>`;
-            
+
             let crewHtml = `<div class="crew-scroller-container"><div class="crew-scroller">`;
             item.crewData.forEach(member => {
                 crewHtml += `
                     <div class="crew-card">
-                        <img 
-                            src="${member.img}" 
-                            data-full="${member.img}" 
-                            data-name="${member.name}" 
-                            data-role-vi="${member.role.vi}" 
+                        <img
+                            src="${member.img}"
+                            data-full="${member.img}"
+                            data-name="${member.name}"
+                            data-role-vi="${member.role.vi}"
                             data-role-en="${member.role.en}">
                         <div class="crew-info">
                             <div class="crew-role">
@@ -563,16 +563,6 @@
             });
             crewHtml += `</div></div>`;
             htmlContent += crewHtml;
-        }
-
-        // 3. Tự động sinh SoundCloud Embed (nếu có) - ĐẶT TRƯỚC BTS
-        if (item.soundcloudEmbed) {
-            htmlContent += `
-                <h3 style="margin-top: 50px;">Soundtrack</h3>
-                <div style="max-width: 560px; margin-top: 15px;">
-                    ${item.soundcloudEmbed}
-                </div>
-            `;
         }
 
         // 4. Tự động sinh BTS Gallery Wall (nếu có)

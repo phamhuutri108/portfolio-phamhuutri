@@ -38,6 +38,11 @@ const filmsData = {
             <p>Tôi muốn kể câu chuyện ở góc độ người quan sát. Thay vì đưa máy quay đến gần nhân vật để thấy cảm xúc của họ đang diễn biến ra sao, tôi muốn cùng khán giả đứng ở khoảng cách thích hợp để theo dõi hành trình cảm xúc của họ. Khi một sự kiện đau buồn diễn ra, khán giả buộc phải dùng kinh nghiệm của mình để dự đoán cảm xúc của nhân vật. Điều này cho diễn viên của tôi nhiều không gian hơn để thể nghiệm nhân vật mà họ muốn trở thành, không phải chỉ vì tôi bảo họ phải làm theo cách mà tôi đang cảm nhận.</p>
             <p>Bộ phim sẽ không có nhân vật chính vì vai trò của cả ba nhân vật trong câu chuyện đều bổ trợ lẫn nhau. Khi đồng hồ đã điểm, hành trình của mỗi nhân vật sẽ hòa làm một để củng cố cho duy nhất một luận điểm: “Cuộc sống vẫn phải tiếp tục”.</p>
 
+            <h3>Nhạc phim</h3>
+            <div style="max-width: 560px; margin-top: 15px;">
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2192844275%3Fsecret_token%3Ds-YdumxnhXXXl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/phamhuutri" title="Tri Pham" target="_blank" style="color: #cccccc; text-decoration: none;">Tri Pham</a> · <a href="https://soundcloud.com/phamhuutri/sets/soundtrack-dad-dont-lie" title="Original Soundtrack for Dad, Don't Lie" target="_blank" style="color: #cccccc; text-decoration: none;">Original Soundtrack for "Dad, Don't Lie"</a></div>
+            </div>
+
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Diễn viên:</b> Ngô Nhật Trường, Cô Nhum, Nguyễn Vũ Uy Nhân</li>
@@ -50,7 +55,7 @@ const filmsData = {
                 <li><b>Quản lý dự án:</b> Phạm Văn Nam</li>
 
                 <li><b>Đạo diễn hình ảnh và Quay phim:</b> Nguyễn Tùng Lâm</li>
-                
+
                 <li><b>Thiết kế sản xuất:</b> Dzuy Tom</li>
                 <li><b>Thiết kế mỹ thuật:</b> Hoàng Bảo Uyên</li>
 
@@ -113,6 +118,11 @@ const filmsData = {
 
 
 
+            <h3>Soundtrack</h3>
+            <div style="max-width: 560px; margin-top: 15px;">
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2192844275%3Fsecret_token%3Ds-YdumxnhXXXl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/phamhuutri" title="Tri Pham" target="_blank" style="color: #cccccc; text-decoration: none;">Tri Pham</a> · <a href="https://soundcloud.com/phamhuutri/sets/soundtrack-dad-dont-lie" title="Original Soundtrack for Dad, Don't Lie" target="_blank" style="color: #cccccc; text-decoration: none;">Original Soundtrack for "Dad, Don't Lie"</a></div>
+            </div>
+
             <h3>Crew</h3>
             <ul style="list-style: none; padding-left: 10px; font-size: 12px; line-height: 1.8;">
                 <li><b>Cast:</b> Ngô Nhật Trường, Cô Nhum, Nguyễn Vũ Uy Nhân</li>
@@ -159,7 +169,7 @@ const filmsData = {
                 <li><b>French & English Subtitles:</b> Ngô Nhật Trường</li>
                 <li><b>Poster Design:</b> Ngô Nhật Trường, Rémi Thomas</li>
             </ul>
-        
+
             `,
 
         // Dữ liệu Crew đã được tách riêng, sạch sẽ và dễ quản lý
@@ -293,9 +303,6 @@ const filmsData = {
     { src: "https://assets.phamhuutri.com/assets/short-films/BODND/BTS/BODND-BTS-78.jpeg?v=2", class: "wide" },
     { src: "https://assets.phamhuutri.com/assets/short-films/BODND/BTS/BODND-BTS-84.jpeg?v=2" },
 ],
-
-        // SoundCloud Embed
-        soundcloudEmbed: `<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2192844275%3Fsecret_token%3Ds-YdumxnhXXXl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/phamhuutri" title="Tri Pham" target="_blank" style="color: #cccccc; text-decoration: none;">Tri Pham</a> · <a href="https://soundcloud.com/phamhuutri/sets/soundtrack-dad-dont-lie" title="Original Soundtrack for Dad, Don't Lie" target="_blank" style="color: #cccccc; text-decoration: none;">Original Soundtrack for "Dad, Don't Lie"</a></div>`,
 
         // Giữ nguyên phần Behind The Scene bên dưới nếu có...
         // ... (Bạn copy nốt phần gallery-wall BTS vào đây nếu muốn, hoặc để nguyên trong file gốc nếu nó nằm ngoài biến `vi`/`en`)
