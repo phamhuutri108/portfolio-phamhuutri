@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Press Kit — Ba Ơi, Đừng Nói Dối | Pham Huu Tri</title>
+    <meta name="description" content="Press Kit — Ba Ơi, Đừng Nói Dối (Dad, Don't Lie). A short film by Pham Huu Tri.">
+    <meta name="author" content="Pham Huu Tri">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="canonical" href="https://phamhuutri.com/short-films/dad-dont-lie/press-kit">
+    <link rel="icon" type="image/png" href="https://assets.phamhuutri.com/assets/home/favicon.png">
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+
+        body {
+            background: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            flex-shrink: 0;
+            gap: 16px;
+            background: #fff;
+        }
+
+        .back-link {
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.45);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+        .back-link:hover { color: #1a1a1a; }
+
+        .header-title {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-align: center;
+            flex: 1;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 9px 20px;
+            border: 1px solid rgba(0, 0, 0, 0.28);
+            color: #1a1a1a;
+            text-decoration: none;
+            font-family: Georgia, serif;
+            font-size: 12px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            transition: background 0.2s, border-color 0.2s;
+            white-space: nowrap;
+        }
+        .download-btn:hover {
+            background: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.55);
+        }
+
+        /* Flipbook area */
+        .flipbook-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .flipbook-area iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+            display: block;
+            min-height: calc(100vh - 57px);
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .header { padding: 14px 18px; }
+            .header-title { font-size: 10px; letter-spacing: 0.06em; }
+            .download-btn { padding: 8px 13px; font-size: 11px; }
+            .back-link { font-size: 12px; }
+            .flipbook-area iframe { min-height: calc(100vh - 49px); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <a class="back-link" href="https://phamhuutri.com/short-films/dad-dont-lie/">← Back</a>
+    <span class="header-title">Press Kit &nbsp;·&nbsp; Ba Ơi, Đừng Nói Dối</span>
+    <!-- UPDATE DRIVE LINK HERE -->
+    <a class="download-btn"
+       href="https://drive.google.com/PLACEHOLDER_PRESS_KIT_PDF"
+       target="_blank"
+       rel="noopener noreferrer">
+        ↓ &nbsp;Download PDF
+    </a>
+</header>
+
+<div class="flipbook-area">
+    <iframe
+        allowfullscreen="allowfullscreen"
+        allow="clipboard-write"
+        scrolling="no"
+        src="https://heyzine.com/flip-book/90478adcc8.html"
+        title="Press Kit — Ba Ơi, Đừng Nói Dối">
+    </iframe>
+</div>
+
+<script>
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            window.location.href = 'https://phamhuutri.com/short-films/dad-dont-lie/';
+        }
+    });
+</script>
+
+</body>
+</html>
