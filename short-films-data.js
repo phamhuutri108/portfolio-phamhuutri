@@ -205,7 +205,7 @@ const filmsData = {
             { name: "Ruby", role: { vi: "Trợ lý thiết kế sản xuất", en: "Assistant Production Designer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-ruby.jpeg?v=2" },
 
             { name: "Huy Đẹp Trai", role: { vi: "Nhạc sĩ", en: "Music Composer" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-huy-dep-trai.jpeg?v=2" },
-            { name: "Sigon Sound Production", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mastering" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2" },
+            { name: "Ngô Xuân Hồ", role: { vi: "Hiệu chỉnh âm thanh", en: "Sound Design & Mixed" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-xuan-ho.jpeg?v=2" },
 
 
             { name: "Minh Thảo", role: { vi: "Phục trang", en: "Wardrobe" }, img: "https://assets.phamhuutri.com/assets/short-films/BODND/crew-card/crew-card-minh-thao.jpeg?v=2" },
