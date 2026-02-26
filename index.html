@@ -1252,8 +1252,9 @@
 
 <script>
     // --- BIẾN TOÀN CỤC CHO GALLERY ---
-    let currentCrewArray = []; 
-    let currentCrewIndex = 0;  
+    let currentCrewArray = [];
+    let currentCrewIndex = 0;
+    let currentCrewSlider = null;
 
     // 1. Lắng nghe sự kiện click toàn trang
     document.addEventListener('click', function(e) {
@@ -1377,6 +1378,14 @@
 
         // Sau khi tính toán xong Index mới, gọi hàm update để hiển thị
         updateLbContent();
+
+        // Sync crew-scroller theo index mới
+        if (currentCrewSlider) {
+            const cards = currentCrewSlider.querySelectorAll('.crew-card');
+            if (cards[currentCrewIndex]) {
+                cards[currentCrewIndex].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }
+        }
     }
 
     function closeLightbox(e) {
@@ -1706,6 +1715,15 @@
             if (currentPath !== newUrl) {
                 window.history.pushState({ pageId: id, groupId: 'group-writings' }, "", newUrl);
             }
+        }
+
+        // 4. Sync sidebar: highlight bài viết đang mở
+        document.querySelectorAll('a').forEach(l => l.classList.remove('active-link'));
+        const sidebarLink = document.getElementById('link-' + id);
+        if (sidebarLink) {
+            sidebarLink.classList.add('active-link');
+            const group = document.getElementById('group-writings');
+            if (group) group.classList.add('is-open');
         }
     }
 
@@ -2214,6 +2232,7 @@
                         card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                     } 
                     else {
+                        e.stopPropagation();
                         const img = card.querySelector('img');
                         openCrewLightboxFromElement(img, slider);
                     }
@@ -2284,9 +2303,10 @@
         }));
 
         currentCrewIndex = allImages.indexOf(clickedImg);
-        
+        currentCrewSlider = container;
+
         // Gọi hàm mở lightbox có sẵn của bạn
-        openCrewLightbox(); 
+        openCrewLightbox();
     }
 
     // Tự động chạy khi có thay đổi DOM (MutationObserver)
