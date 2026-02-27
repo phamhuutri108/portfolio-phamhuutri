@@ -15,7 +15,7 @@ const filmsData = {
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý, Quan sát<br>
             <b> Năm:</b> Sắp ra mắt (2026)<br>
-            <b>Thời lượng:</b> 36:42<br> </p>
+            <b>Thời lượng:</b> 36:46<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe 
@@ -95,7 +95,7 @@ const filmsData = {
         en: `
             <p><b>Genre:</b> Short fiction / Drama, Observation<br>
             <b> Year:</b> Coming-soon (2026)<br>
-            <b>Duration:</b> 36:42<br> </p>
+            <b>Duration:</b> 36:46<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe 
