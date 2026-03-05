@@ -71,6 +71,12 @@
             <span class="content-vi">Liên Hệ</span>
         </a>
     </li>
+    <li>
+        <a href="javascript:void(0)" onclick="showPage('application')" id="link-application">
+            <span class="content-en">Application</span>
+            <span class="content-vi">Ứng dụng</span>
+        </a>
+    </li>
 </ul>
 
         <div class="category-group" id="group-short-films">
@@ -276,26 +282,32 @@
     </h2>
     
     <div class="about-text">
+        
+        
+        <!-- HIDDEN
         <p>
             <b>
                 <span class="content-en">Phone:</span>
                 <span class="content-vi">Điện thoại:</span>
-            </b> 
+            </b>
+
             <a href="tel:+84865953041" style="color: #111;">(+84) 865 953 041</a>
         </p>
-        
+        END HIDDEN -->
+     
+
         <p>
-            <b>Email:</b> 
+            <b>Email:</b>
             <a href="mailto:contact@phamhuutri.com" style="color: #111;">contact@phamhuutri.com</a>
         </p>
-        
+
         <p>
-            <b>Instagram:</b> 
+            <b>Instagram:</b>
             <a href="https://www.instagram.com/phamhuutri.es" target="_blank">@phamhuutri.es</a>
         </p>
-        
+
         <p>
-            <b>Facebook:</b> 
+            <b>Facebook:</b>
             <a href="https://www.facebook.com/phamhuutri108/" target="_blank">Phạm Hữu Trí</a>
         </p>
 
@@ -323,6 +335,23 @@
             <source src="https://assets.phamhuutri.com/assets/contact/Tung-De-Leo-Mot-Ngon-Nui.mp3?v=2" type="audio/mpeg">
         </audio>
     </div>
+</div>
+
+        <div id="application" class="page-section">
+    <div class="app-wrapper">
+        <p class="app-title">INDIE FILMMAKING TRACKER</p>
+        <a href="https://www.indiefilmmakingtracker.com/" target="_blank">
+            <img src="https://assets.phamhuutri.com/assets/application/ift-logo.png?v=2" alt="Indie Filmmaking Tracker" class="app-center-img">
+        </a>
+    </div>
+    <div id="app-open-hint">
+        <span class="content-en">Click to open</span>
+        <span class="content-vi">Bấm để mở</span>
+    </div>
+    <p class="app-description">
+        <span class="content-en">An application for the Independent Filmmaking Community.</span>
+        <span class="content-vi">Ứng dụng dành cho Cộng đồng Làm phim Độc lập.</span>
+    </p>
 </div>
 
         <div id="cat-short-films" class="page-section">
@@ -498,6 +527,7 @@
         'home': '/',
         'about': '/about',
         'contact': '/contact',
+        'application': '/application',
         'cat-short-films': '/short-films',
         'cat-commercials': '/commercials',
         'cat-others': '/others',
@@ -540,16 +570,16 @@
         // 2. Tự động sinh Crew Slider (nếu có)
         if (item.crewData && item.crewData.length > 0) {
             // htmlContent += `<h3 style="margin-top: 40px;"><span class="content-vi">Ê-kíp</span><span class="content-en">Crew</span></h3>`;
-            
+
             let crewHtml = `<div class="crew-scroller-container"><div class="crew-scroller">`;
             item.crewData.forEach(member => {
                 crewHtml += `
                     <div class="crew-card">
-                        <img 
-                            src="${member.img}" 
-                            data-full="${member.img}" 
-                            data-name="${member.name}" 
-                            data-role-vi="${member.role.vi}" 
+                        <img
+                            src="${member.img}"
+                            data-full="${member.img}"
+                            data-name="${member.name}"
+                            data-role-vi="${member.role.vi}"
                             data-role-en="${member.role.en}">
                         <div class="crew-info">
                             <div class="crew-role">
@@ -565,7 +595,21 @@
             htmlContent += crewHtml;
         }
 
-        // 3. Tự động sinh BTS Gallery Wall (nếu có) -> ĐÃ THÊM MỚI
+        // 3b. Press Kit link (nếu có)
+        if (item.pressKitUrl) {
+            htmlContent += `
+                <div style="text-align: center; margin-top: 48px;">
+                    <a href="${item.pressKitUrl}"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       style="display: inline-block; font-family: Georgia, serif; font-size: 17px; font-weight: normal; color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 3px; letter-spacing: 0.04em;">
+                        Press Kit
+                    </a>
+                </div>
+            `;
+        }
+
+        // 4. Tự động sinh BTS Gallery Wall (nếu có)
         if (item.btsData && item.btsData.length > 0) {
             htmlContent += `
                 <h3 style="margin-top: 50px;">
@@ -1238,8 +1282,9 @@
 
 <script>
     // --- BIẾN TOÀN CỤC CHO GALLERY ---
-    let currentCrewArray = []; 
-    let currentCrewIndex = 0;  
+    let currentCrewArray = [];
+    let currentCrewIndex = 0;
+    let currentCrewSlider = null;
 
     // 1. Lắng nghe sự kiện click toàn trang
     document.addEventListener('click', function(e) {
@@ -1363,6 +1408,14 @@
 
         // Sau khi tính toán xong Index mới, gọi hàm update để hiển thị
         updateLbContent();
+
+        // Sync crew-scroller theo index mới
+        if (currentCrewSlider) {
+            const cards = currentCrewSlider.querySelectorAll('.crew-card');
+            if (cards[currentCrewIndex]) {
+                cards[currentCrewIndex].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }
+        }
     }
 
     function closeLightbox(e) {
@@ -1692,6 +1745,15 @@
             if (currentPath !== newUrl) {
                 window.history.pushState({ pageId: id, groupId: 'group-writings' }, "", newUrl);
             }
+        }
+
+        // 4. Sync sidebar: highlight bài viết đang mở
+        document.querySelectorAll('a').forEach(l => l.classList.remove('active-link'));
+        const sidebarLink = document.getElementById('link-' + id);
+        if (sidebarLink) {
+            sidebarLink.classList.add('active-link');
+            const group = document.getElementById('group-writings');
+            if (group) group.classList.add('is-open');
         }
     }
 
@@ -2200,6 +2262,7 @@
                         card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                     } 
                     else {
+                        e.stopPropagation();
                         const img = card.querySelector('img');
                         openCrewLightboxFromElement(img, slider);
                     }
@@ -2270,9 +2333,10 @@
         }));
 
         currentCrewIndex = allImages.indexOf(clickedImg);
-        
+        currentCrewSlider = container;
+
         // Gọi hàm mở lightbox có sẵn của bạn
-        openCrewLightbox(); 
+        openCrewLightbox();
     }
 
     // Tự động chạy khi có thay đổi DOM (MutationObserver)
