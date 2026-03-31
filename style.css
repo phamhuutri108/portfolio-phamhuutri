@@ -1913,11 +1913,21 @@ body.mode-vi .content-en {
     gap: 14px;
 }
 
+.app-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
 .app-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 200px;
+    gap: 14px;
 }
 
 .app-title {
@@ -1926,7 +1936,7 @@ body.mode-vi .content-en {
     letter-spacing: 0.12em;
     color: #111;
     text-align: center;
-    margin: 0 0 10px 0;
+    margin: 0;
     width: 100%;
 }
 
@@ -1941,7 +1951,7 @@ body.mode-vi .content-en {
     opacity: 0.8;
 }
 
-#app-open-hint {
+.app-open-hint {
     font-family: 'Courier New', Courier, monospace;
     font-size: 11px;
     color: #666;
