@@ -15,7 +15,7 @@ const filmsData = {
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý, Quan sát<br>
             <b> Năm:</b> Sắp ra mắt (2026)<br>
-            <b>Thời lượng:</b> 37:00<br> </p>
+            <b>Thời lượng:</b> 33:33<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe 
@@ -85,8 +85,8 @@ const filmsData = {
                 <li><b>Dựng phim:</b> Phạm Hữu Trí, Hoàng Bảo Uyên</li>
                 <li><b>Hiệu chỉnh màu sắc:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Nhạc sĩ:</b> Huy Đẹp Trai</li>
-                <li><b>Hiệu chỉnh âm thanh:</b> Ngô Xuân Hồ</li>
-                <li><b>Hiệu chỉnh tại:</b> Sigon Sound Production</li>
+                <li><b>Hậu kỳ âm thanh tại:</b> Sound of An Nam</li>
+                <li><b>Kỹ sư thiết kế & Hòa âm:</b> Ngô Xuân Hồ</li>
                 <li><b>Phụ đề tiếng Pháp & tiếng Anh:</b> Ngô Nhật Trường</li>
                 <li><b>Poster:</b> Ngô Nhật Trường, Rémi Thomas</li>
             </ul>
@@ -95,7 +95,7 @@ const filmsData = {
         en: `
             <p><b>Genre:</b> Short fiction / Drama, Observation<br>
             <b> Year:</b> Coming-soon (2026)<br>
-            <b>Duration:</b> 37:00<br> </p>
+            <b>Duration:</b> 33:33<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
                 <iframe 
@@ -165,8 +165,8 @@ const filmsData = {
                 <li><b>Editor:</b> Phạm Hữu Trí, Hoàng Bảo Uyên</li>
                 <li><b>Colorist:</b> Nguyễn Tùng Lâm</li>
                 <li><b>Music Composer:</b> Huy Đẹp Trai</li>
-                <li><b>Sound Design and Mixed:</b> Ngô Xuân Hồ</li>
-                <li><b>Mixed at:</b> Sigon Sound Production</li>
+                <li><b>Audio Post-Production at:</b> Sound of An Nam</li>
+                <li><b>Sound Design & Re-recording Mixer:</b> Ngô Xuân Hồ</li>
                 <li><b>French & English Subtitles:</b> Ngô Nhật Trường</li>
                 <li><b>Poster Design:</b> Ngô Nhật Trường, Rémi Thomas</li>
             </ul>
