@@ -553,7 +553,7 @@ const filmsData = {
             <b>Năm:</b> 2022<br>
             <b>Thời lượng:</b> 22:02<br>
             <b>Giải thưởng & Quỹ hỗ trợ:</b><br>
-            Giải Ba, Liên hoan Phim ngắn TP.HCM (2023)<br>
+            Giải Ba, Liên hoan Phim ngắn TP.HCM Lần I(2023)<br>
             Quỹ Sáng tạo trẻ, Hội Điện ảnh TP.HCM (2022)
             </p>
             
@@ -607,7 +607,7 @@ const filmsData = {
             <b>Year:</b> 2022<br>
             <b>Duration:</b> 22:02<br>
             <b>Award & Fund:</b><br>
-            Third Prize, HCMC Short Film Festival (2023)<br>
+            Third Prize, Ho Chi Minh City Short Film Festival I (2023)<br>
             Young Creativity Fund, HCMC Cinema Association (2022)
             </p>
             <div style="text-align: left; margin: 30px 0;">
