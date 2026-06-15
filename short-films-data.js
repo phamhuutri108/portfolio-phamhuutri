@@ -324,7 +324,7 @@ const filmsData = {
             <b>Giải thưởng:</b>
             <br>Cánh Diều Bạc, Hội điện ảnh Việt Nam (2024)
             <br>Giải nhất, Liên hoan phim ngắn TP. HCM Lần II (2024)
-            <br>Quay phim xuất sắc nhất - Nguyễn Tùng Lâm, Liên hoan phim ngắn TP. HCM Lần II (2026)
+            <br>Quay phim xuất sắc nhất - Nguyễn Tùng Lâm & Hoàng Bảo Uyên, Liên hoan phim ngắn TP. HCM Lần II (2026)
             <br>Nam diễn viên xuất sắc nhất - Khánh Duy, Liên hoan phim ngắn TP. HCM Lần II (2026)
             <br>Kịch bản xuất sắc nhất - FABA Films (2025)</p>
             <div style="text-align: left; margin: 30px 0;">
@@ -433,7 +433,7 @@ const filmsData = {
             <b>Awards:</b>
             <br>Silver Prize, Golden Kite Awards (2024)
             <br>First Prize for Best Short Film, Ho Chi Minh City Short Film Festival II (2024)
-            <br>Best Cinematography - Nguyễn Tùng Lâm, Ho Chi Minh City Short Film Festival II (2026)
+            <br>Best Cinematography - Nguyễn Tùng Lâm & Hoàng Bảo Uyên, Ho Chi Minh City Short Film Festival II (2026)
             <br>Best Actor - Khánh Duy, Ho Chi Minh City Short Film Festival II (2026)
             <br>Best Screenplay, FABA Films (2025)</p>
 
