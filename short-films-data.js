@@ -324,8 +324,8 @@ const filmsData = {
             <b>Giải thưởng:</b>
             <br>Cánh Diều Bạc, Hội điện ảnh Việt Nam (2024)
             <br>Giải nhất, Liên hoan phim ngắn TP. HCM Lần II (2024)
-            <br>Quay phim xuất sắc nhất - Nguyễn Tùng Lâm & Hoàng Bảo Uyên, Liên hoan phim ngắn TP. HCM Lần II (2026)
-            <br>Nam diễn viên xuất sắc nhất - Khánh Duy, Liên hoan phim ngắn TP. HCM Lần II (2026)
+            <br>Quay phim xuất sắc nhất - <b>Nguyễn Tùng Lâm & Hoàng Bảo Uyên</b>, Liên hoan phim ngắn TP. HCM Lần II (2026)
+            <br>Nam diễn viên xuất sắc nhất - <b>Khánh Duy</b>, Liên hoan phim ngắn TP. HCM Lần II (2026)
             <br>Kịch bản xuất sắc nhất - FABA Films (2025)</p>
             <div style="text-align: left; margin: 30px 0;">
                 <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;" src="https://www.youtube.com/embed/VzVB9pFBoiY" title="Karma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -433,8 +433,8 @@ const filmsData = {
             <b>Awards:</b>
             <br>Silver Prize, Golden Kite Awards (2024)
             <br>First Prize for Best Short Film, Ho Chi Minh City Short Film Festival II (2024)
-            <br>Best Cinematography - Nguyễn Tùng Lâm & Hoàng Bảo Uyên, Ho Chi Minh City Short Film Festival II (2026)
-            <br>Best Actor - Khánh Duy, Ho Chi Minh City Short Film Festival II (2026)
+            <br>Best Cinematography - <b>Nguyễn Tùng Lâm & Hoàng Bảo Uyên</b>, Ho Chi Minh City Short Film Festival II (2026)
+            <br>Best Actor - <b>Khánh Duy</b>, Ho Chi Minh City Short Film Festival II (2026)
             <br>Best Screenplay, FABA Films (2025)</p>
 
             
