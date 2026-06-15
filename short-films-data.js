@@ -119,9 +119,9 @@ const filmsData = {
 
 
 
-            <h3>Soundtrack</h3>
+            <h3>Scores</h3>
             <div style="max-width: 560px; margin-top: 15px;">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2192844275%3Fsecret_token%3Ds-YdumxnhXXXl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/phamhuutri" title="Tri Pham" target="_blank" style="color: #cccccc; text-decoration: none;">Tri Pham</a> · <a href="https://soundcloud.com/phamhuutri/sets/soundtrack-dad-dont-lie" title="Original Soundtrack for Dad, Don't Lie" target="_blank" style="color: #cccccc; text-decoration: none;">Original Soundtrack for "Dad, Don't Lie"</a></div>
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2192844275%3Fsecret_token%3Ds-YdumxnhXXXl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/phamhuutri" title="Tri Pham" target="_blank" style="color: #cccccc; text-decoration: none;">Tri Pham</a> · <a href="https://soundcloud.com/phamhuutri/sets/scores-dad-dont-lie" title="Original Scores for &quot;Dad, Don&#x27;t Lie&quot;" target="_blank" style="color: #cccccc; text-decoration: none;">Original Scores for &quot;Dad, Don&#x27;t Lie&quot;</a></div>
             </div>
 
             <h3>Crew</h3>
