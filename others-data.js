@@ -2,7 +2,80 @@
 
 const othersData = {
 
-    // 0. ADRENALINE
+    // 0. PHÍA SAU NGƯỜI LÍNH (BEHIND THE SOLDIER)
+    "others-phia-sau-nguoi-linh": {
+        title: {
+            vi: "Phía Sau Người Lính",
+            en: "Behind The Soldier"
+        },
+        thumbnail: "https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-2.jpeg",
+        vi: `
+            <p>
+                <b>Thể loại:</b> Phim ngắn / Chính kịch<br>
+                <b>Năm:</b> 2025<br>
+                <b>Vai trò:</b> Trợ lý đạo diễn #1
+            </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;"
+                    src="https://www.youtube.com/embed/8p1CIco6_gc"
+                    title="Phía Sau Người Lính" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Still</h3>
+            <div class="gallery-wall">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-1.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-2.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-3.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-4.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-5.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-6.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-7.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-8.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-9.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-10.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-11.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-12.jpeg">
+            </div>
+        `,
+        en: `
+            <p>
+                <b>Genre:</b> Short fiction / Drama<br>
+                <b>Year:</b> 2025<br>
+                <b>Role:</b> First Assistant Director
+            </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;"
+                    src="https://www.youtube.com/embed/8p1CIco6_gc"
+                    title="Behind The Soldier" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Still</h3>
+            <div class="gallery-wall">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-1.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-2.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-3.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-4.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-5.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-6.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-7.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-8.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-9.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-10.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-11.jpeg">
+                <img src="https://assets.phamhuutri.com/assets/others/phia-sau-nguoi-linh/phia-sau-nguoi-linh-still-12.jpeg">
+            </div>
+        `
+    },
+
+    // 1. ADRENALINE
     "others-adrenaline": {
         title: {
             vi: "adrenaline",
@@ -98,7 +171,7 @@ const othersData = {
     },
 
 
-    // 1. INFINITY (CẬP NHẬT: XẾP DỌC 480px + CLICK ZOOM + NÚT X)
+    // 2. INFINITY (CẬP NHẬT: XẾP DỌC 480px + CLICK ZOOM + NÚT X)
     "others-infinity": {
         title: {
             vi: "Vô Cực",
