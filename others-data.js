@@ -2,8 +2,103 @@
 
 const othersData = {
 
+    // 0. ADRENALINE
+    "others-adrenaline": {
+        title: {
+            vi: "adrenaline",
+            en: "adrenaline"
+        },
+        thumbnail: "https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_thumbnail.jpeg?v=1",
+        vi: `
+            <p>
+                <b>Thể loại:</b> Video âm nhạc<br>
+                <b>Nghệ sĩ:</b> Phạm Đình Thái Ngân (ft. B Ray x Hoàng Tôn)<br>
+                <b>Năm:</b> 2026<br>
+                <b>Vai trò:</b> Trợ lý đạo diễn #1
+            </p>
 
-    // 0. INFINITY (CẬP NHẬT: XẾP DỌC 480px + CLICK ZOOM + NÚT X)
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;"
+                    src="https://www.youtube.com/embed/-CguggiBj5s"
+                    title="adrenaline" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Still</h3>
+            <div class="adrenaline-gallery">
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_1.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_1.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_2.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_2.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_3.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_3.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_4.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_4.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_5.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_5.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_6.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_6.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_7.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_7.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_8.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_8.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_9.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_9.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_10.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_10.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_11.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_11.mov"></video></div>
+            </div>
+
+            <img src="/__adrenaline_video_preview__.invalid" onerror="
+                window.openAdrenalineVideo = function(src) {
+                    const overlay = document.createElement('div');
+                    overlay.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.98); z-index:10000; display:flex; justify-content:center; align-items:center; animation:fadeIn 0.3s ease;';
+                    overlay.innerHTML = \`<span style='position:absolute; top:20px; right:35px; color:#000; font-size:40px; font-weight:bold; cursor:pointer; line-height:1; font-family:sans-serif;' title='Close'>&times;</span><video autoplay loop muted playsinline style='max-width:90%; max-height:90%; width:auto; height:auto; box-shadow:0 20px 50px rgba(0,0,0,0.1); pointer-events:none;'><source src='\${src}'></video>\`;
+                    overlay.onclick = function() { this.remove(); };
+                    document.body.appendChild(overlay);
+                };
+                this.remove();
+            " style="display:none;">
+        `,
+        en: `
+            <p>
+                <b>Genre:</b> Music Video<br>
+                <b>Artist:</b> Phạm Đình Thái Ngân (ft. B Ray x Hoàng Tôn)<br>
+                <b>Year:</b> 2026<br>
+                <b>Role:</b> First Assistant Director
+            </p>
+
+            <div style="text-align: left; margin: 30px 0;">
+                <iframe width="100%" height="315" style="max-width: 560px; border-radius: 4px;"
+                    src="https://www.youtube.com/embed/-CguggiBj5s"
+                    title="adrenaline" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Still</h3>
+            <div class="adrenaline-gallery">
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_1.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_1.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_2.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_2.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_3.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_3.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_4.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_4.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_5.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_5.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_6.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_6.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_7.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_7.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_8.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_8.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_9.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_9.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_10.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_10.mov"></video></div>
+                <div class="adrenaline-video-item" onclick="openAdrenalineVideo('https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_11.mov')"><video autoplay loop muted playsinline disablepictureinpicture preload="metadata"><source src="https://assets.phamhuutri.com/assets/others/adrenaline/adrenaline_11.mov"></video></div>
+            </div>
+
+            <img src="/__adrenaline_video_preview__.invalid" onerror="
+                window.openAdrenalineVideo = function(src) {
+                    const overlay = document.createElement('div');
+                    overlay.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.98); z-index:10000; display:flex; justify-content:center; align-items:center; animation:fadeIn 0.3s ease;';
+                    overlay.innerHTML = \`<span style='position:absolute; top:20px; right:35px; color:#000; font-size:40px; font-weight:bold; cursor:pointer; line-height:1; font-family:sans-serif;' title='Close'>&times;</span><video autoplay loop muted playsinline style='max-width:90%; max-height:90%; width:auto; height:auto; box-shadow:0 20px 50px rgba(0,0,0,0.1); pointer-events:none;'><source src='\${src}'></video>\`;
+                    overlay.onclick = function() { this.remove(); };
+                    document.body.appendChild(overlay);
+                };
+                this.remove();
+            " style="display:none;">
+        `
+    },
+
+
+    // 1. INFINITY (CẬP NHẬT: XẾP DỌC 480px + CLICK ZOOM + NÚT X)
     "others-infinity": {
         title: {
             vi: "Vô Cực",

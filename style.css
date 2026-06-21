@@ -395,6 +395,34 @@ body.mode-vi .content-en {
 }
 
 /* --- GALLERY WALL STYLE (BTS) --- */
+.adrenaline-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.adrenaline-video-item {
+    width: 100%;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.adrenaline-video-item video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.adrenaline-video-item:hover {
+    transform: scale(1.02);
+    z-index: 2;
+}
+
 .gallery-wall {
     display: grid;
     /* Chia làm 4 cột bằng nhau */
@@ -1966,7 +1994,6 @@ body.mode-vi .content-en {
     margin: 0;
     max-width: 200px;
 }
-
 
 
 
