@@ -7,4 +7,15 @@
 /short-films/dad-dont-lie/assets/all-assets      /short-films/dad-dont-lie/assets/all-assets/index.html      200
 /short-films/dad-dont-lie/trailer               /short-films/dad-dont-lie/trailer/index.html               200
 /short-films/dad-dont-lie/press-kit             /short-films/dad-dont-lie/press-kit/index.html             200
+# dad-dont-lie invitations:start
+/short-films/dad-dont-lie/invitation/nguyen-tung-lam   /short-films/dad-dont-lie/invitation/khach-moi/nguyen-tung-lam/index.html   200
+/short-films/dad-dont-lie/invitation/nguyen-tung-lam/  /short-films/dad-dont-lie/invitation/khach-moi/nguyen-tung-lam/index.html   200
+/short-films/dad-dont-lie/invitation/ngo-nhat-truong   /short-films/dad-dont-lie/invitation/khach-moi/ngo-nhat-truong/index.html   200
+/short-films/dad-dont-lie/invitation/ngo-nhat-truong/  /short-films/dad-dont-lie/invitation/khach-moi/ngo-nhat-truong/index.html   200
+/short-films/dad-dont-lie/invitation/cha-bong   /short-films/dad-dont-lie/invitation/khach-moi/cha-bong/index.html   200
+/short-films/dad-dont-lie/invitation/cha-bong/  /short-films/dad-dont-lie/invitation/khach-moi/cha-bong/index.html   200
+/short-films/dad-dont-lie/invitation/hoang-bao-uyen   /short-films/dad-dont-lie/invitation/khach-moi/hoang-bao-uyen/index.html   200
+/short-films/dad-dont-lie/invitation/hoang-bao-uyen/  /short-films/dad-dont-lie/invitation/khach-moi/hoang-bao-uyen/index.html   200
+# dad-dont-lie invitations:end
+/short-films/dad-dont-lie/invitation/*          /short-films/dad-dont-lie/invitation/index.html            200
 /* /index.html 200
