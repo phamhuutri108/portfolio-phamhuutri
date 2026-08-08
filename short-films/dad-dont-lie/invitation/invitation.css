@@ -440,11 +440,24 @@ button {
     pointer-events: none;
 }
 
+.download-link.is-busy {
+    cursor: wait;
+    opacity: 0.72;
+}
+
 .download-note {
     margin-top: 12px;
     color: var(--muted);
     font-size: 12px;
     line-height: 1.5;
+}
+
+.download-status {
+    min-height: 16px;
+    margin-top: 7px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.45;
 }
 
 .missing {

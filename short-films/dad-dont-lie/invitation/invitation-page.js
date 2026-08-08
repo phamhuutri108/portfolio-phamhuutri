@@ -54,7 +54,79 @@
         if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
-    function setDownload(selector, url, filename) {
+    function setDownloadStatus(value) {
+        var status = document.querySelector("[data-download-status]");
+        if (status) status.textContent = value || "";
+    }
+
+    function setDownloadLabel(link, value) {
+        var label = link.querySelector("[data-download-label]");
+        if (label) label.textContent = value;
+    }
+
+    function getVideoFilename(url, fallback) {
+        try {
+            var pathname = new URL(url, window.location.href).pathname;
+            var name = pathname.split("/").filter(Boolean).pop();
+            return name || fallback;
+        } catch (error) {
+            return fallback;
+        }
+    }
+
+    function saveBlob(blob, filename) {
+        var blobUrl = URL.createObjectURL(blob);
+        var anchor = document.createElement("a");
+        anchor.href = blobUrl;
+        anchor.download = filename;
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+        window.setTimeout(function () {
+            URL.revokeObjectURL(blobUrl);
+        }, 1000);
+    }
+
+    function openDirectDownload(url) {
+        window.location.href = url;
+    }
+
+    async function shareVideoToPhotos(url, filename, link) {
+        var resolvedFilename = getVideoFilename(url, filename || "dad-dont-lie-story.mp4");
+        link.classList.add("is-busy");
+        setDownloadLabel(link, "Đang chuẩn bị");
+        setDownloadStatus("Đang chuẩn bị video...");
+
+        try {
+            var response = await fetch(url, { mode: "cors", credentials: "omit" });
+            if (!response.ok) throw new Error("Video response was not ok.");
+
+            var blob = await response.blob();
+            var file = new File([blob], resolvedFilename, { type: blob.type || "video/mp4" });
+            var canShareFile = navigator.share && navigator.canShare && navigator.canShare({ files: [file] });
+
+            if (canShareFile) {
+                setDownloadStatus("Chọn Lưu video trong bảng chia sẻ của iPhone.");
+                await navigator.share({
+                    files: [file],
+                    title: "Ba Ơi, Đừng Nói Dối"
+                });
+            } else {
+                setDownloadStatus("Trình duyệt này không hỗ trợ lưu vào album ảnh. Đang tải file video.");
+                saveBlob(blob, resolvedFilename);
+            }
+        } catch (error) {
+            setDownloadStatus("Không thể chuẩn bị file tự động. Đang mở video gốc.");
+            window.setTimeout(function () {
+                openDirectDownload(url);
+            }, 450);
+        } finally {
+            link.classList.remove("is-busy");
+            setDownloadLabel(link, "Download video");
+        }
+    }
+
+    function setDownload(selector, url, filename, options) {
         var links = document.querySelectorAll(selector);
         links.forEach(function (link) {
             if (!url) {
@@ -68,6 +140,13 @@
             link.classList.remove("is-disabled");
             link.removeAttribute("aria-disabled");
             if (filename) link.setAttribute("download", filename);
+            if (options && options.shareVideo) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    if (link.classList.contains("is-busy")) return;
+                    shareVideoToPhotos(url, filename, link);
+                });
+            }
         });
     }
 
@@ -190,7 +269,7 @@
         if (map) map.href = text(guest.mapUrl, data.mapUrl);
 
         setDownload("[data-download-story-image]", text(guest.storyImageUrl, data.storyImageUrl || posterUrl), "dad-dont-lie-story.jpg");
-        setDownload("[data-download-story-video]", text(guest.storyVideoUrl, data.storyVideoUrl), "dad-dont-lie-story.mp4");
+        setDownload("[data-download-story-video]", text(guest.storyVideoUrl, data.storyVideoUrl), "dad-dont-lie-story.mp4", { shareVideo: true });
         setDownload("[data-download-full-video]", text(guest.fullInvitationVideoUrl, data.fullInvitationVideoUrl), "dad-dont-lie-invitation.mp4");
 
         setupIntro(Object.assign({}, data, {
