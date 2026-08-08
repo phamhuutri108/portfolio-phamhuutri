@@ -12,7 +12,7 @@ window.dadDontLieInvitationConfig = {
     posterUrl: "/short-films/dad-dont-lie/invitation/assets/poster.jpg",
     ticketImageUrl: "/short-films/dad-dont-lie/invitation/assets/hero-image.jpg",
     secondaryTicketImageUrl: "/short-films/dad-dont-lie/invitation/assets/hero-image_2.jpeg",
-    shareImageUrl: "/short-films/dad-dont-lie/invitation/assets/cover-image.jpeg",
+    shareImageUrl: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2",
     posterPlaceholderLabel: "",
     storyVideoUrl: "",
     storyImageUrl: "",

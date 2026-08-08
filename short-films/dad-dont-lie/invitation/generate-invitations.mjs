@@ -12,7 +12,7 @@ const REDIRECTS_PATH = path.join(ROOT_DIR, "_redirects");
 
 const PUBLIC_INVITATION_BASE = "/short-films/dad-dont-lie/invitation";
 const SITE_INVITATION_BASE = "https://phamhuutri.com/short-films/dad-dont-lie/invitation";
-const SHARE_IMAGE_URL = `${SITE_INVITATION_BASE}/assets/cover-image.jpeg`;
+const SHARE_IMAGE_URL = "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2";
 const SHARE_DESCRIPTION = "Ba Ơi, Đừng Nói Dối";
 const VIDEO_BASE_URL = "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/";
 

@@ -12,7 +12,7 @@ window.dadDontLieInvitationGuests = {
         "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/nguyen-tung-lam.mp4",
         "shareTitle": "Lời mời đến Nguyễn Tùng Lâm",
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
-        "shareImageUrl": "https://phamhuutri.com/short-films/dad-dont-lie/invitation/assets/cover-image.jpeg"
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
     "ngo-nhat-truong": {
         "displayName": "Ngô Nhật Trường",
@@ -27,7 +27,7 @@ window.dadDontLieInvitationGuests = {
         "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/ngo-nhat-truong.mp4",
         "shareTitle": "Lời mời đến Ngô Nhật Trường",
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
-        "shareImageUrl": "https://phamhuutri.com/short-films/dad-dont-lie/invitation/assets/cover-image.jpeg"
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
     "cha-bong": {
         "displayName": "Chà Bông",
@@ -42,7 +42,7 @@ window.dadDontLieInvitationGuests = {
         "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/cha-bong.mp4",
         "shareTitle": "Lời mời đến Chà Bông",
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
-        "shareImageUrl": "https://phamhuutri.com/short-films/dad-dont-lie/invitation/assets/cover-image.jpeg"
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
     "hoang-bao-uyen": {
         "displayName": "Hoàng Bảo Uyên",
@@ -57,7 +57,7 @@ window.dadDontLieInvitationGuests = {
         "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/hoang-bao-uyen.mp4",
         "shareTitle": "Lời mời đến Hoàng Bảo Uyên",
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
-        "shareImageUrl": "https://phamhuutri.com/short-films/dad-dont-lie/invitation/assets/cover-image.jpeg"
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     }
 };
 if (window.dadDontLieInvitationConfig) {
