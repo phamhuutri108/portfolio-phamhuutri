@@ -4,7 +4,8 @@
         var marker = "/short-films/dad-dont-lie/invitation/";
         var markerIndex = path.indexOf(marker);
         if (markerIndex === -1) return "nguyen-tung-lam";
-        var slug = path.slice(markerIndex + marker.length).split("/")[0];
+        var parts = path.slice(markerIndex + marker.length).split("/").filter(Boolean);
+        var slug = parts[0] === "khach-moi" ? parts[1] : parts[0];
         return slug || "nguyen-tung-lam";
     }
 
