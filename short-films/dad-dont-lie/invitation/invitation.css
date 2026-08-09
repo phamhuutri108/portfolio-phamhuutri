@@ -133,6 +133,18 @@ button {
     line-height: 1.34;
 }
 
+.intro-name-prefix {
+    font-style: italic;
+}
+
+.intro-name-prefix[hidden] {
+    display: none;
+}
+
+.intro-name-prefix:not([hidden])::after {
+    content: " ";
+}
+
 .intro-rule {
     width: 30px;
     height: 1px;
@@ -201,6 +213,11 @@ button {
     align-items: start;
 }
 
+.letter-section.no-letter {
+    grid-template-columns: minmax(260px, 420px);
+    justify-content: center;
+}
+
 .letter-copy,
 .poster-panel,
 .ticket-stack {
@@ -213,6 +230,11 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     padding: 56px 52px;
+}
+
+.letter-copy[hidden],
+.letter-section.no-letter .letter-copy {
+    display: none;
 }
 
 .eyebrow {
@@ -390,9 +412,96 @@ button {
     margin-bottom: 18px;
 }
 
-.note-card p {
+.ticket-role-prefix {
+    font-style: italic;
+}
+
+.ticket-role-prefix[hidden] {
+    display: none;
+}
+
+.ticket-role-prefix:not([hidden])::after {
+    content: " ";
+}
+
+.schedule-fallback {
     font-size: 14px;
     white-space: pre-line;
+}
+
+.schedule-fallback[hidden],
+.schedule-list[hidden] {
+    display: none;
+}
+
+.schedule-list {
+    display: grid;
+    gap: 0;
+    margin-top: 4px;
+}
+
+.schedule-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(86px, 0.72fr) 18px minmax(0, 1fr);
+    gap: 10px;
+    min-height: 44px;
+    align-items: start;
+    padding-bottom: 13px;
+}
+
+.schedule-item:last-child {
+    min-height: 0;
+    padding-bottom: 0;
+}
+
+.schedule-time {
+    color: var(--ink);
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.schedule-dot {
+    position: relative;
+    z-index: 1;
+    width: 7px;
+    height: 7px;
+    margin-top: 5px;
+    border: 1px solid var(--ink);
+    border-radius: 50%;
+    background: var(--panel);
+}
+
+.schedule-dot::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 1px;
+    height: 49px;
+    background: rgba(23, 23, 23, 0.18);
+    transform: translateX(-50%);
+}
+
+.schedule-item:last-child .schedule-dot::after {
+    display: none;
+}
+
+.schedule-title {
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.note-card small {
+    display: block;
+    margin-top: 13px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.contact-value {
+    margin: 0;
 }
 
 .download-grid {

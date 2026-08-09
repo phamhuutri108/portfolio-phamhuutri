@@ -98,6 +98,18 @@ function resolveAssetUrl(value, baseUrl) {
     return `${baseUrl}${trimmed}`;
 }
 
+function compactJoin(values) {
+    return values
+        .map((value) => (value || "").trim())
+        .filter(Boolean)
+        .join(" ");
+}
+
+function isChecked(value) {
+    const normalized = (value || "").trim().toLowerCase();
+    return ["1", "true", "yes", "y", "x", "✓", "✔", "checked", "tick"].includes(normalized);
+}
+
 function escapeHtml(value) {
     return String(value)
         .replace(/&/g, "&amp;")
@@ -126,22 +138,30 @@ function replaceLink(html, rel, value) {
 function buildGuest(record, slug) {
     const displayName = record.displayName;
     const pronoun = record.introPronoun || "bạn";
+    const namePrefix = record.namePrefix || "";
+    const displayNameWithPrefix = compactJoin([namePrefix, displayName]);
     const ticketName = record.ticketName || displayName;
+    const ticketRole = record.ticketRole || "";
+    const ticketDisplayName = compactJoin([ticketRole, ticketName]);
     const shareTitle = `Lời mời đến ${displayName}`;
     const videoFile = record.videoFile || record.introVideoFile || record.storyVideoFile;
     const introVideoUrl = resolveAssetUrl(videoFile, VIDEO_BASE_URL);
     const storyVideoUrl = resolveAssetUrl(videoFile, VIDEO_BASE_URL);
+    const showLetter = isChecked(record.showLetter);
 
     return {
         slug,
         displayName,
-        dearName: displayName,
-        letterTitle: record.letterTitle || `Gửi ${displayName},`,
-        message: record.message,
+        namePrefix,
+        dearName: displayNameWithPrefix || displayName,
+        showLetter,
+        letterTitle: showLetter ? record.letterTitle || `Gửi ${displayNameWithPrefix || displayName},` : "",
+        message: showLetter ? record.message : "",
         ticketName,
-        ticketRole: record.ticketRole || "Khách mời",
-        role: record.ticketRole || "Khách mời",
-        storyLine: `Trân trọng mời ${pronoun} đến buổi chiếu phim thân mật`,
+        ticketRole,
+        ticketDisplayName: ticketDisplayName || ticketName,
+        role: ticketRole,
+        storyLine: `Trân quý mời ${pronoun} đến buổi chiếu phim thân mật`,
         introVideoUrl,
         storyVideoUrl,
         shareTitle,

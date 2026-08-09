@@ -34,6 +34,20 @@
         if (tag && value) tag.setAttribute("content", value);
     }
 
+    function setHidden(selector, hidden) {
+        var elements = document.querySelectorAll(selector);
+        elements.forEach(function (element) {
+            element.hidden = Boolean(hidden);
+        });
+    }
+
+    function toggleClass(selector, className, enabled) {
+        var elements = document.querySelectorAll(selector);
+        elements.forEach(function (element) {
+            element.classList.toggle(className, Boolean(enabled));
+        });
+    }
+
     function setPhoneLink(selector, value) {
         var phone = text(value);
         var hrefPhone = phone.replace(/[^\d+]/g, "");
@@ -42,6 +56,80 @@
             link.textContent = phone;
             if (hrefPhone) link.href = "tel:" + hrefPhone;
         });
+    }
+
+    function setContactInfo(config, guest) {
+        var phone = text(guest.contactPhone, config.contactPhone);
+        var contactName = text(guest.contactName, config.contactName);
+        var suffix = contactName ? " - " + contactName : "";
+        setPhoneLink("[data-contact-phone]", phone);
+        setText("[data-contact-name]", suffix);
+    }
+
+    function renderSchedule(value) {
+        var schedule = document.querySelector("[data-note-timeline]");
+        var fallback = document.querySelector("[data-note]");
+        var source = text(value);
+        var rows = source
+            .split(/\r?\n/)
+            .map(function (line) {
+                return line.trim();
+            })
+            .filter(Boolean)
+            .map(function (line) {
+                var dotParts = line.split("·");
+                var time = "";
+                var title = "";
+                var rangeMatch = line.match(/^(\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2})\s*:\s*(.+)$/);
+
+                if (dotParts.length > 1) {
+                    time = dotParts.shift();
+                    title = dotParts.join("·").trim();
+                } else if (rangeMatch) {
+                    time = rangeMatch[1];
+                    title = rangeMatch[2];
+                } else {
+                    var parts = line.split(":");
+                    time = parts.shift();
+                    title = parts.join(":").trim();
+                }
+
+                return {
+                    time: (time || "").trim(),
+                    title: title || line
+                };
+            });
+
+        if (!schedule || rows.length === 0) {
+            if (fallback) {
+                fallback.textContent = source;
+                fallback.hidden = !source;
+            }
+            return;
+        }
+
+        schedule.innerHTML = "";
+        rows.forEach(function (row) {
+            var item = document.createElement("div");
+            var time = document.createElement("span");
+            var dot = document.createElement("span");
+            var title = document.createElement("span");
+
+            item.className = "schedule-item";
+            time.className = "schedule-time";
+            dot.className = "schedule-dot";
+            title.className = "schedule-title";
+
+            time.textContent = row.time;
+            title.textContent = row.title;
+
+            item.appendChild(time);
+            item.appendChild(dot);
+            item.appendChild(title);
+            schedule.appendChild(item);
+        });
+        schedule.hidden = false;
+        if (fallback) fallback.hidden = true;
     }
 
     function showIntroCard() {
@@ -236,20 +324,31 @@
         setText("[data-host-name]", data.hostName);
         setText("[data-ticket-host]", data.hostName);
         setText("[data-ticket-title]", data.filmTitle);
-        setText("[data-dear-name]", text(guest.dearName, guest.displayName));
-        setText("[data-letter-title]", text(guest.letterTitle, "Gửi " + text(guest.dearName, guest.displayName) + ","));
-        setText("[data-ticket-dear-name]", text(guest.ticketName, guest.dearName || guest.displayName));
-        setText("[data-story-line]", text(guest.storyLine, data.introStoryLine || "Trân trọng mời anh đến buổi chiếu phim thân mật"));
-        setText("[data-message]", guest.message);
-        setText("[data-role]", text(guest.ticketRole, guest.role || "Guest"));
+        var dearName = text(guest.dearName, guest.displayName);
+        var namePrefix = text(guest.namePrefix);
+        var showLetter = Boolean(guest.showLetter) && Boolean(text(guest.letterTitle, guest.message));
+        setText("[data-dear-name]", dearName);
+        setText("[data-intro-name-prefix]", namePrefix);
+        setHidden("[data-intro-name-prefix]", !namePrefix);
+        setText("[data-intro-display-name]", text(guest.displayName, dearName));
+        setText("[data-letter-title]", showLetter ? text(guest.letterTitle, "Gửi " + dearName + ",") : "");
+        var ticketRole = text(guest.ticketRole, guest.role);
+        setText("[data-ticket-role-prefix]", ticketRole);
+        setHidden("[data-ticket-role-prefix]", !ticketRole);
+        setText("[data-ticket-name]", text(guest.ticketName, dearName));
+        setText("[data-story-line]", text(guest.storyLine, data.introStoryLine || "Trân quý mời anh đến buổi chiếu phim thân mật"));
+        setText("[data-message]", showLetter ? guest.message : "");
+        setHidden(".letter-copy", !showLetter);
+        toggleClass(".letter-section", "no-letter", !showLetter);
         setText("[data-invitation-id]", text(guest.invitationId, "DDL-000"));
         setText("[data-event-date]", text(guest.eventDate, data.eventDate));
         setText("[data-event-time]", text(guest.eventTime, data.eventTime));
         setText("[data-theater-name]", text(guest.theaterName, data.theaterName));
         setText("[data-location-name]", text(guest.locationName, data.locationName));
         setText("[data-location-address]", text(guest.locationAddress, data.locationAddress));
-        setPhoneLink("[data-contact-info]", text(guest.contactInfo, data.contactInfo));
-        setText("[data-note]", text(guest.note, data.note));
+        setContactInfo(data, guest);
+        renderSchedule(text(guest.note, data.note));
+        setText("[data-note-caption]", text(guest.noteCaption, data.noteCaption));
 
         var posterUrl = text(guest.posterUrl, data.posterUrl);
         var ticketImageUrl = text(guest.ticketImageUrl, data.ticketImageUrl || data.fallbackStillUrl || posterUrl);

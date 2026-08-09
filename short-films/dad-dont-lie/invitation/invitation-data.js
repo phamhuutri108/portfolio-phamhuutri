@@ -3,7 +3,7 @@ window.dadDontLieInvitationConfig = {
     filmTitleVi: "Ba Ơi, Đừng Nói Dối",
     introFilmTitle: "Ba Ơi,\nĐừng Nói Dối",
     introSalutation: "Mến gửi",
-    introStoryLine: "Trân trọng mời anh đến buổi chiếu phim thân mật",
+    introStoryLine: "Trân quý mời anh đến buổi chiếu phim thân mật",
     hostName: "Pham Huu Tri",
     introVideoBaseUrl: "/short-films/dad-dont-lie/invitation/intro/",
     storyVideoBaseUrl: "/short-films/dad-dont-lie/invitation/intro/",
@@ -23,8 +23,11 @@ window.dadDontLieInvitationConfig = {
     theaterName: "02",
     locationName: "DCINE Bến Thành - 6 Mạc Đĩnh Chi, Phường Sài Gòn, HCM",
     locationAddress: "",
-    contactInfo: "0123456789",
+    contactPhone: "0779706008",
+    contactName: "Thục Mai",
+    contactInfo: "0779706008 - Thục Mai",
     mapUrl: "https://maps.app.goo.gl/odFkyzn3RxUBbB9b8",
-    note: "Vui lòng đến sớm 15 phút.",
+    note: "17:00 - 17:30: Đón khách\n17:30 - 18:30: Chiếu phim\n18:30 - 19:00: Giao lưu",
+    noteCaption: "Có mặt đúng giờ để không bỏ lỡ bất cứ frame nào 🥸",
     guests: window.dadDontLieInvitationGuests || {}
 };
