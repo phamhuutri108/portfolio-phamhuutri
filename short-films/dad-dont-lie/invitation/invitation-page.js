@@ -340,6 +340,10 @@
         setText("[data-message]", showLetter ? guest.message : "");
         setHidden(".letter-copy", !showLetter);
         toggleClass(".letter-section", "no-letter", !showLetter);
+        var messageLength = showLetter ? text(guest.message).replace(/\s+/g, " ").trim().length : 0;
+        toggleClass(".letter-section", "letter-short", showLetter && messageLength < 420);
+        toggleClass(".letter-section", "letter-medium", showLetter && messageLength >= 420 && messageLength < 900);
+        toggleClass(".letter-section", "letter-long", showLetter && messageLength >= 900);
         setText("[data-invitation-id]", text(guest.invitationId, "DDL-000"));
         setText("[data-event-date]", text(guest.eventDate, data.eventDate));
         setText("[data-event-time]", text(guest.eventTime, data.eventTime));
