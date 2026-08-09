@@ -111,5 +111,7 @@
 /short-films/dad-dont-lie/invitation/ngoc-tram-anh   /short-films/dad-dont-lie/invitation/khach-moi/ngoc-tram-anh/index.html   200
 /short-films/dad-dont-lie/invitation/ngoc-tram-anh/  /short-films/dad-dont-lie/invitation/khach-moi/ngoc-tram-anh/index.html   200
 # dad-dont-lie invitations:end
+/short-films/dad-dont-lie/invitation/dashboard   /short-films/dad-dont-lie/invitation/dashboard/index.html   200
+/short-films/dad-dont-lie/invitation/dashboard/  /short-films/dad-dont-lie/invitation/dashboard/index.html   200
 /short-films/dad-dont-lie/invitation/*          /short-films/dad-dont-lie/invitation/index.html            200
 /* /index.html 200
