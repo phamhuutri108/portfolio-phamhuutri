@@ -609,16 +609,32 @@
             htmlContent += crewHtml;
         }
 
-        // 3b. Press Kit link (nếu có)
-        if (item.pressKitUrl) {
-            htmlContent += `
-                <div style="text-align: center; margin-top: 48px;">
+        // 3b. Project links (nếu có)
+        if (item.pressKitUrl || item.invitationUrl) {
+            const projectLinks = [];
+            if (item.pressKitUrl) {
+                projectLinks.push(`
                     <a href="${item.pressKitUrl}"
                        target="_blank"
                        rel="noopener noreferrer"
                        style="display: inline-block; font-family: Georgia, serif; font-size: 17px; font-weight: normal; color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 3px; letter-spacing: 0.04em;">
                         Press Kit
                     </a>
+                `);
+            }
+            if (item.invitationUrl) {
+                projectLinks.push(`
+                    <a href="${item.invitationUrl}"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       style="display: inline-block; font-family: Georgia, serif; font-size: 17px; font-weight: normal; color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 3px; letter-spacing: 0.04em;">
+                        Invitation
+                    </a>
+                `);
+            }
+            htmlContent += `
+                <div style="display: flex; align-items: center; justify-content: center; gap: 22px; flex-wrap: wrap; text-align: center; margin-top: 48px;">
+                    ${projectLinks.join("")}
                 </div>
             `;
         }

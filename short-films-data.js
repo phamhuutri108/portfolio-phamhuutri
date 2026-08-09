@@ -10,6 +10,7 @@ const filmsData = {
         },
         thumbnail: "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2",
         pressKitUrl: "https://phamhuutri.com/short-films/dad-dont-lie/press-kit",
+        invitationUrl: "https://phamhuutri.com/short-films/dad-dont-lie/invitation/dashboard",
         
         // Phần Text giới thiệu giữ nguyên, nhưng ĐÃ XÓA HTML CREW SCROLLER ở dưới cùng
         vi: `

@@ -115,7 +115,8 @@
             return;
         }
 
-        const inputHash = await hashValue(passwordInput.value);
+        const normalizedPassword = passwordInput.value.trim().toUpperCase();
+        const inputHash = await hashValue(normalizedPassword);
         if (inputHash === PASSWORD_HASH) {
             setUnlocked(true);
         } else {
