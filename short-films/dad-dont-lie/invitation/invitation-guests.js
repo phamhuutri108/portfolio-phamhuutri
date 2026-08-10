@@ -112,7 +112,7 @@ window.dadDontLieInvitationGuests = {
         "namePrefix": "chị",
         "dearName": "chị Hoàng Bảo Uyên",
         "showLetter": true,
-        "letterTitle": "Mến gửi hở bu,",
+        "letterTitle": "Mến gửi hờ bu,",
         "message": "Em viết cho nhiều người khác được vì em có sự xa lạ nhất định với họ, nhưng đến khi viết cho chị em cảm thấy hơi ngượng. Em suy đoán là do mình đã có những điều tương đối hiểu nhau, nên nếu em nói cái gì đó sến súa quá chị sẽ nhận ra ngay 🙂‍↕️\n\nEm biết bộ phim này đã để lại cho chị nhiều vết thương và không may thời điểm đó em đã không dũng cảm để an ủi chị và nói với chị là chị đã làm rất tốt. Lời nói dù có muộn màng nhưng trong thâm tâm em luôn ngưỡng mộ tài năng và tình yêu của chị dành cho phim ảnh.\n\nNếu có ai đó yêu phim hơn hờ bu thì người đó có thể là nhân vật trong phim chứ không có thật ngoài đời. Tình yêu của chị với phim ảnh, dù có kín đáo đến đâu cũng sẽ có một ngày tất cả mọi người đều nhìn thấy và cũng ngưỡng mộ nó giống em.\n\nHành trình mà bọn mình làm bạn và làm phim, với em hết sức quý giá. Em nghĩ đây chỉ là khởi đầu rất nhỏ của tình bạn này, mà sau này sẽ là những bộ phim khác nữa. Để khi bọn mình dù già nua, răng rụng trong khi nhai cháo thì mình cũng sẽ tự hào vì những gì đã đi qua, những gì mình đóng góp cho phim ảnh.\n\nChúc Uyên luôn luôn giữ được sự trong trẻo của mình với phim và thành công hơn trong vai trò mà chị đã chọn.\n\nNghỉ chơi khi nào thì chưa biết, nhưng chắc chắn phải đến xem phim cái đã. Thân.",
         "ticketName": "Hoàng Bảo Uyên",
         "ticketRole": "Art Director",
