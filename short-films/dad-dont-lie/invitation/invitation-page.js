@@ -381,7 +381,7 @@
         var realMessageEnabled = shouldShowRealMessage(slug, visibility);
         var realLetterAvailable = Boolean(guest.showLetter) && Boolean(text(guest.message));
         var showRealLetter = realLetterAvailable && realMessageEnabled;
-        var showLetter = showRealLetter || Boolean(sampleMessage);
+        var showLetter = realLetterAvailable && Boolean(showRealLetter || sampleMessage);
         var letterTitle = showRealLetter ? text(guest.letterTitle, "Gửi " + dearName + ",") : "Gửi " + dearName + ",";
         var message = showRealLetter ? text(guest.message, sampleMessage) : sampleMessage;
         setText("[data-dear-name]", dearName);
