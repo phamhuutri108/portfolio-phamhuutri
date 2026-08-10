@@ -180,6 +180,20 @@ h2 {
     line-height: 1.45;
 }
 
+.privacy-status {
+    min-height: 22px;
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.privacy-status.is-error {
+    color: #9b2d24;
+}
+
 .privacy-actions {
     display: flex;
     flex-wrap: wrap;

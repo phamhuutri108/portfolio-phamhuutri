@@ -1,8 +1,9 @@
 (function () {
     const PUBLIC_INVITATION_BASE = "https://phamhuutri.com/short-films/dad-dont-lie/invitation";
+    const MESSAGE_VISIBILITY_API_URL = "/api/invitation-message-visibility";
     const PASSWORD_HASH = "1e72293938c5f5a7d5b20fccbd9e59ab0c5c82b0db3bbd2a95a635e4a74e5fa3";
     const SESSION_KEY = "dad-dont-lie-dashboard-unlocked";
-    const VISIBILITY_DRAFT_KEY = "dad-dont-lie-message-visibility-draft";
+    const SESSION_PASSWORD_KEY = "dad-dont-lie-dashboard-password";
     const DEFAULT_SAMPLE_MESSAGE = "Đây là lời nhắn. ".repeat(20).trim();
 
     const lockScreen = document.querySelector("[data-lock-screen]");
@@ -20,6 +21,7 @@
     const hideAllButton = document.querySelector("[data-hide-all]");
     const showAllButton = document.querySelector("[data-show-all]");
     const lockButton = document.querySelector("[data-lock-button]");
+    const privacyStatus = document.querySelector("[data-privacy-status]");
 
     const guests = Object.entries(window.dadDontLieInvitationGuests || {}).map(([slug, guest], index) => ({
         index: index + 1,
@@ -28,7 +30,9 @@
         invitationUrl: `${PUBLIC_INVITATION_BASE}/${slug}`
     }));
 
-    let visibilityState = normalizeVisibility(loadVisibilityDraft() || window.dadDontLieMessageVisibility || {});
+    let adminPassword = sessionStorage.getItem(SESSION_PASSWORD_KEY) || "";
+    let visibilityState = normalizeVisibility(window.dadDontLieMessageVisibility || {});
+    let isSavingVisibility = false;
 
     function toHex(buffer) {
         return Array.from(new Uint8Array(buffer))
@@ -142,35 +146,81 @@
         return normalized;
     }
 
-    function loadVisibilityDraft() {
-        try {
-            return JSON.parse(localStorage.getItem(VISIBILITY_DRAFT_KEY) || "null");
-        } catch (error) {
-            return null;
-        }
-    }
-
-    function saveVisibilityDraft() {
-        localStorage.setItem(VISIBILITY_DRAFT_KEY, JSON.stringify(visibilityState));
-    }
-
     function isRealMessageVisible(slug) {
         const override = getOwnValue(visibilityState.showRealMessageFor, slug);
         if (override !== undefined) return Boolean(override);
         return Boolean(visibilityState.defaultShowRealMessage);
     }
 
-    function setAllVisibility(value) {
-        visibilityState.defaultShowRealMessage = Boolean(value);
-        visibilityState.showRealMessageFor = {};
-        saveVisibilityDraft();
+    function setPrivacyStatus(value, isError) {
+        if (!privacyStatus) return;
+        privacyStatus.textContent = value || "";
+        privacyStatus.classList.toggle("is-error", Boolean(isError));
+    }
+
+    async function loadRemoteVisibility() {
+        try {
+            const response = await fetch(MESSAGE_VISIBILITY_API_URL, { cache: "no-store" });
+            if (!response.ok) throw new Error("Cannot load message visibility.");
+            visibilityState = normalizeVisibility(await response.json());
+            setPrivacyStatus("Đã tải trạng thái từ D1.");
+        } catch (error) {
+            visibilityState = normalizeVisibility(window.dadDontLieMessageVisibility || {});
+            setPrivacyStatus("Chưa kết nối được D1, đang dùng trạng thái fallback.", true);
+        }
         renderGuests();
     }
 
-    function setGuestVisibility(slug, value) {
-        visibilityState.showRealMessageFor[slug] = Boolean(value);
-        saveVisibilityDraft();
+    async function saveRemoteVisibility(previousState) {
+        if (!adminPassword) {
+            setPrivacyStatus("Hãy lock rồi mở lại dashboard để lưu thay đổi lên D1.", true);
+            visibilityState = previousState;
+            renderGuests();
+            return;
+        }
+
+        isSavingVisibility = true;
         renderGuests();
+        setPrivacyStatus("Đang lưu trạng thái lên D1...");
+
+        try {
+            const response = await fetch(MESSAGE_VISIBILITY_API_URL, {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json",
+                    "x-dashboard-password": adminPassword
+                },
+                body: JSON.stringify(visibilityState)
+            });
+            if (!response.ok) throw new Error("Cannot save message visibility.");
+            visibilityState = normalizeVisibility(await response.json());
+            setPrivacyStatus("Đã lưu lên D1. Người mở thiệp ở thiết bị khác sẽ thấy trạng thái mới.");
+        } catch (error) {
+            visibilityState = previousState;
+            setPrivacyStatus("Không lưu được lên D1. Mình đã hoàn tác thay đổi vừa rồi.", true);
+        }
+
+        isSavingVisibility = false;
+        renderGuests();
+    }
+
+    function cloneVisibilityState() {
+        return normalizeVisibility(JSON.parse(JSON.stringify(visibilityState)));
+    }
+
+    function setAllVisibility(value) {
+        const previousState = cloneVisibilityState();
+        visibilityState.defaultShowRealMessage = Boolean(value);
+        visibilityState.showRealMessageFor = {};
+        renderGuests();
+        saveRemoteVisibility(previousState);
+    }
+
+    function setGuestVisibility(slug, value) {
+        const previousState = cloneVisibilityState();
+        visibilityState.showRealMessageFor[slug] = Boolean(value);
+        renderGuests();
+        saveRemoteVisibility(previousState);
     }
 
     function buildVisibilityFile() {
@@ -209,17 +259,20 @@
         window.setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
 
-    function setUnlocked(unlocked) {
+    async function setUnlocked(unlocked) {
         if (unlocked) {
             sessionStorage.setItem(SESSION_KEY, "1");
             lockScreen.hidden = true;
             dashboardView.hidden = false;
             renderGuests();
+            await loadRemoteVisibility();
             searchInput.focus();
             return;
         }
 
         sessionStorage.removeItem(SESSION_KEY);
+        sessionStorage.removeItem(SESSION_PASSWORD_KEY);
+        adminPassword = "";
         lockScreen.hidden = false;
         dashboardView.hidden = true;
         passwordInput.value = "";
@@ -262,7 +315,8 @@
         });
 
         const visibleCount = guests.filter((guest) => isRealMessageVisible(guest.slug)).length;
-        summary.textContent = `${guests.length} thiep moi dang san sang · ${visibleCount} dang hien loi that`;
+        const savingText = isSavingVisibility ? " · dang luu D1" : "";
+        summary.textContent = `${guests.length} thiep moi dang san sang · ${visibleCount} dang hien loi that${savingText}`;
         emptyState.hidden = filteredGuests.length > 0;
 
         guestList.innerHTML = filteredGuests.map((guest) => {
@@ -278,7 +332,7 @@
             return `
                 <article class="guest-row">
                     <label class="message-toggle">
-                        <input type="checkbox" data-show-real-message="${guest.slug}" ${checked ? "checked" : ""}>
+                        <input type="checkbox" data-show-real-message="${guest.slug}" ${checked ? "checked" : ""} ${isSavingVisibility ? "disabled" : ""}>
                         Hiện lời thật
                     </label>
                     <div>
@@ -303,6 +357,8 @@
         const normalizedPassword = passwordInput.value.trim().toUpperCase();
         const inputHash = await hashValue(normalizedPassword);
         if (inputHash === PASSWORD_HASH) {
+            adminPassword = normalizedPassword;
+            sessionStorage.setItem(SESSION_PASSWORD_KEY, adminPassword);
             setUnlocked(true);
         } else {
             formMessage.textContent = "Sai password.";

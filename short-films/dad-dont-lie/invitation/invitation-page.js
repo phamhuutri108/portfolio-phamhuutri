@@ -1,5 +1,6 @@
 (function () {
-    var VISIBILITY_DRAFT_KEY = "dad-dont-lie-message-visibility-draft";
+    var MESSAGE_VISIBILITY_API_URL = "/api/invitation-message-visibility";
+    var MESSAGE_VISIBILITY_TIMEOUT_MS = 1800;
 
     function getCurrentSlug() {
         var path = window.location.pathname.replace(/\/+$/, "");
@@ -55,23 +56,35 @@
         return object[key];
     }
 
-    function getVisibilityDraft() {
+    async function fetchRemoteMessageVisibility() {
+        var controller = window.AbortController ? new AbortController() : null;
+        var timeout = window.setTimeout(function () {
+            if (controller) controller.abort();
+        }, MESSAGE_VISIBILITY_TIMEOUT_MS);
+
         try {
-            return JSON.parse(localStorage.getItem(VISIBILITY_DRAFT_KEY) || "null") || {};
+            var response = await fetch(MESSAGE_VISIBILITY_API_URL, {
+                cache: "no-store",
+                signal: controller ? controller.signal : undefined
+            });
+            if (!response.ok) throw new Error("Message visibility API failed.");
+            return await response.json();
         } catch (error) {
-            return {};
+            return null;
+        } finally {
+            window.clearTimeout(timeout);
         }
     }
 
-    function getMessageVisibility() {
+    async function getMessageVisibility() {
         var source = window.dadDontLieMessageVisibility || {};
-        var draft = getVisibilityDraft();
-        var draftDefault = getOwnValue(draft, "defaultShowRealMessage");
-        var draftSample = getOwnValue(draft, "sampleMessage");
+        var remote = await fetchRemoteMessageVisibility();
+        var remoteDefault = getOwnValue(remote, "defaultShowRealMessage");
+        var remoteSample = getOwnValue(remote, "sampleMessage");
         return {
-            defaultShowRealMessage: Boolean(draftDefault !== undefined ? draftDefault : source.defaultShowRealMessage),
-            sampleMessage: text(draftSample !== undefined ? draftSample : "", source.sampleMessage),
-            showRealMessageFor: Object.assign({}, source.showRealMessageFor || {}, draft.showRealMessageFor || {})
+            defaultShowRealMessage: Boolean(remoteDefault !== undefined ? remoteDefault : source.defaultShowRealMessage),
+            sampleMessage: text(remoteSample !== undefined ? remoteSample : "", source.sampleMessage),
+            showRealMessageFor: Object.assign({}, source.showRealMessageFor || {}, remote && remote.showRealMessageFor || {})
         };
     }
 
@@ -332,7 +345,7 @@
         ].join("");
     }
 
-    function renderInvitation() {
+    async function renderInvitation() {
         var data = window.dadDontLieInvitationConfig;
         if (!data || !data.guests) return;
 
@@ -363,7 +376,7 @@
         setText("[data-ticket-title]", data.filmTitle);
         var dearName = text(guest.dearName, guest.displayName);
         var namePrefix = text(guest.namePrefix);
-        var visibility = getMessageVisibility();
+        var visibility = await getMessageVisibility();
         var realMessageEnabled = shouldShowRealMessage(slug, visibility);
         var realLetterAvailable = Boolean(guest.showLetter) && Boolean(text(guest.letterTitle, guest.message));
         var showRealLetter = realLetterAvailable && realMessageEnabled;
@@ -424,7 +437,4 @@
     }
 
     document.addEventListener("DOMContentLoaded", renderInvitation);
-    window.addEventListener("storage", function (event) {
-        if (event.key === VISIBILITY_DRAFT_KEY) renderInvitation();
-    });
 })();
