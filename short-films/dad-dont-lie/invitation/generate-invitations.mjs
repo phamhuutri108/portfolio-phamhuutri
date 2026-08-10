@@ -8,6 +8,7 @@ const CSV_PATH = path.join(INVITATION_DIR, "guest-list.csv");
 const INDEX_TEMPLATE_PATH = path.join(INVITATION_DIR, "index.html");
 const GUESTS_OUTPUT_PATH = path.join(INVITATION_DIR, "invitation-guests.js");
 const GUEST_HTML_DIR = path.join(INVITATION_DIR, "khach-moi");
+const CLEAN_GUEST_HTML_DIR = INVITATION_DIR;
 const REDIRECTS_PATH = path.join(ROOT_DIR, "_redirects");
 
 const PUBLIC_INVITATION_BASE = "/short-films/dad-dont-lie/invitation";
@@ -212,9 +213,16 @@ function buildHtml(template, guest) {
 function writeGuestHtml(guests) {
     const template = fs.readFileSync(INDEX_TEMPLATE_PATH, "utf8");
     guests.forEach((guest) => {
-        const guestDir = path.join(GUEST_HTML_DIR, guest.slug);
-        fs.mkdirSync(guestDir, { recursive: true });
-        fs.writeFileSync(path.join(guestDir, "index.html"), buildHtml(template, guest));
+        const html = buildHtml(template, guest);
+        const guestDirs = [
+            path.join(CLEAN_GUEST_HTML_DIR, guest.slug),
+            path.join(GUEST_HTML_DIR, guest.slug)
+        ];
+
+        guestDirs.forEach((guestDir) => {
+            fs.mkdirSync(guestDir, { recursive: true });
+            fs.writeFileSync(path.join(guestDir, "index.html"), html);
+        });
     });
 }
 
@@ -222,8 +230,8 @@ function updateRedirects(guests) {
     const startMarker = "# dad-dont-lie invitations:start";
     const endMarker = "# dad-dont-lie invitations:end";
     const redirectLines = guests.flatMap((guest) => [
-        `${PUBLIC_INVITATION_BASE}/${guest.slug}   ${PUBLIC_INVITATION_BASE}/khach-moi/${guest.slug}/index.html   200`,
-        `${PUBLIC_INVITATION_BASE}/${guest.slug}/  ${PUBLIC_INVITATION_BASE}/khach-moi/${guest.slug}/index.html   200`
+        `${PUBLIC_INVITATION_BASE}/khach-moi/${guest.slug}   ${PUBLIC_INVITATION_BASE}/${guest.slug}   301`,
+        `${PUBLIC_INVITATION_BASE}/khach-moi/${guest.slug}/  ${PUBLIC_INVITATION_BASE}/${guest.slug}   301`
     ]);
     const block = [startMarker, ...redirectLines, endMarker].join("\n");
     let redirects = fs.readFileSync(REDIRECTS_PATH, "utf8");
