@@ -916,6 +916,24 @@ window.dadDontLieInvitationGuests = {
         "shareTitle": "Lời mời đến Ngọc Trâm Anh",
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
+    },
+    "ngoc-khue": {
+        "displayName": "Ngọc Khuê",
+        "namePrefix": "Em trai",
+        "dearName": "Em trai Ngọc Khuê",
+        "showLetter": false,
+        "letterTitle": "",
+        "message": "",
+        "ticketName": "Ngọc Khuê",
+        "ticketRole": "Em trai",
+        "ticketDisplayName": "Em trai Ngọc Khuê",
+        "role": "Em trai",
+        "storyLine": "Trân quý mời em đến buổi chiếu phim thân mật",
+        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/ngoc-khue.mp4",
+        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/ngoc-khue.mp4",
+        "shareTitle": "Lời mời đến Ngọc Khuê",
+        "shareDescription": "Ba Ơi, Đừng Nói Dối",
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     }
 };
 if (window.dadDontLieInvitationConfig) {
