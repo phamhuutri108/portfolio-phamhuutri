@@ -377,12 +377,13 @@
         var dearName = text(guest.dearName, guest.displayName);
         var namePrefix = text(guest.namePrefix);
         var visibility = await getMessageVisibility();
+        var sampleMessage = getSampleMessage(visibility);
         var realMessageEnabled = shouldShowRealMessage(slug, visibility);
-        var realLetterAvailable = Boolean(guest.showLetter) && Boolean(text(guest.letterTitle, guest.message));
+        var realLetterAvailable = Boolean(guest.showLetter) && Boolean(text(guest.message));
         var showRealLetter = realLetterAvailable && realMessageEnabled;
-        var showLetter = showRealLetter || Boolean(getSampleMessage(visibility));
+        var showLetter = showRealLetter || Boolean(sampleMessage);
         var letterTitle = showRealLetter ? text(guest.letterTitle, "Gửi " + dearName + ",") : "Gửi " + dearName + ",";
-        var message = showRealLetter ? guest.message : getSampleMessage(visibility);
+        var message = showRealLetter ? text(guest.message, sampleMessage) : sampleMessage;
         setText("[data-dear-name]", dearName);
         setText("[data-intro-name-prefix]", namePrefix);
         setHidden("[data-intro-name-prefix]", !namePrefix);

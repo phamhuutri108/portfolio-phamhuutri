@@ -146,7 +146,13 @@
         return normalized;
     }
 
-    function isRealMessageVisible(slug) {
+    function hasRealMessage(guest) {
+        return Boolean(guest && guest.showLetter && guest.message);
+    }
+
+    function isRealMessageVisible(guest) {
+        const slug = typeof guest === "string" ? guest : guest.slug;
+        if (typeof guest !== "string" && !hasRealMessage(guest)) return false;
         const override = getOwnValue(visibilityState.showRealMessageFor, slug);
         if (override !== undefined) return Boolean(override);
         return Boolean(visibilityState.defaultShowRealMessage);
@@ -217,6 +223,8 @@
     }
 
     function setGuestVisibility(slug, value) {
+        const guest = guests.find((item) => item.slug === slug);
+        if (value && !hasRealMessage(guest)) return;
         const previousState = cloneVisibilityState();
         visibilityState.showRealMessageFor[slug] = Boolean(value);
         renderGuests();
@@ -314,13 +322,14 @@
             return normalize(searchable).includes(query);
         });
 
-        const visibleCount = guests.filter((guest) => isRealMessageVisible(guest.slug)).length;
+        const visibleCount = guests.filter((guest) => isRealMessageVisible(guest)).length;
         const savingText = isSavingVisibility ? " · dang luu D1" : "";
         summary.textContent = `${guests.length} thiep moi dang san sang · ${visibleCount} dang hien loi that${savingText}`;
         emptyState.hidden = filteredGuests.length > 0;
 
         guestList.innerHTML = filteredGuests.map((guest) => {
-            const checked = isRealMessageVisible(guest.slug);
+            const canShowRealMessage = hasRealMessage(guest);
+            const checked = isRealMessageVisible(guest);
             const status = checked ? "Loi that" : "Sample";
             const meta = [
                 `#${String(guest.index).padStart(2, "0")}`,
@@ -332,7 +341,7 @@
             return `
                 <article class="guest-row">
                     <label class="message-toggle">
-                        <input type="checkbox" data-show-real-message="${guest.slug}" ${checked ? "checked" : ""} ${isSavingVisibility ? "disabled" : ""}>
+                        <input type="checkbox" data-show-real-message="${guest.slug}" ${checked ? "checked" : ""} ${isSavingVisibility || !canShowRealMessage ? "disabled" : ""}>
                         Hiện lời thật
                     </label>
                     <div>
