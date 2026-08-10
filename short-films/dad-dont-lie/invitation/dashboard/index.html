@@ -57,12 +57,39 @@
                 </button>
             </div>
 
+            <section class="privacy-panel" aria-label="Quan ly hien thi loi nhan">
+                <div>
+                    <p class="eyebrow">Message privacy</p>
+                    <h2>Ẩn / hiện lời nhắn thật</h2>
+                    <p class="panel-note">Người chưa được tick sẽ thấy lời nhắn mẫu để test UI. Thay đổi đang áp dụng ngay trên trình duyệt này.</p>
+                </div>
+                <div class="privacy-actions">
+                    <button class="text-button" type="button" data-hide-all>
+                        <span class="material-symbols-rounded" aria-hidden="true">visibility_off</span>
+                        Ẩn tất cả
+                    </button>
+                    <button class="text-button" type="button" data-show-all>
+                        <span class="material-symbols-rounded" aria-hidden="true">visibility</span>
+                        Hiện tất cả
+                    </button>
+                    <button class="text-button" type="button" data-copy-visibility>
+                        <span class="material-symbols-rounded" aria-hidden="true">content_copy</span>
+                        Copy file
+                    </button>
+                    <button class="text-button" type="button" data-download-visibility>
+                        <span class="material-symbols-rounded" aria-hidden="true">download</span>
+                        Download file
+                    </button>
+                </div>
+            </section>
+
             <section class="guest-list" data-guest-list aria-label="Danh sach link thiep moi"></section>
             <p class="empty-state" data-empty-state hidden>Khong tim thay khach moi nao.</p>
         </section>
     </main>
 
     <script src="/short-films/dad-dont-lie/invitation/invitation-guests.js?v=3"></script>
-    <script src="/short-films/dad-dont-lie/invitation/dashboard/dashboard.js?v=2"></script>
+    <script src="/short-films/dad-dont-lie/invitation/invitation-message-visibility.js?v=1"></script>
+    <script src="/short-films/dad-dont-lie/invitation/dashboard/dashboard.js?v=4"></script>
 </body>
 </html>

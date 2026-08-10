@@ -1,4 +1,6 @@
 (function () {
+    var VISIBILITY_DRAFT_KEY = "dad-dont-lie-message-visibility-draft";
+
     function getCurrentSlug() {
         var path = window.location.pathname.replace(/\/+$/, "");
         var marker = "/short-films/dad-dont-lie/invitation/";
@@ -46,6 +48,41 @@
         elements.forEach(function (element) {
             element.classList.toggle(className, Boolean(enabled));
         });
+    }
+
+    function getOwnValue(object, key) {
+        if (!object || !Object.prototype.hasOwnProperty.call(object, key)) return undefined;
+        return object[key];
+    }
+
+    function getVisibilityDraft() {
+        try {
+            return JSON.parse(localStorage.getItem(VISIBILITY_DRAFT_KEY) || "null") || {};
+        } catch (error) {
+            return {};
+        }
+    }
+
+    function getMessageVisibility() {
+        var source = window.dadDontLieMessageVisibility || {};
+        var draft = getVisibilityDraft();
+        var draftDefault = getOwnValue(draft, "defaultShowRealMessage");
+        var draftSample = getOwnValue(draft, "sampleMessage");
+        return {
+            defaultShowRealMessage: Boolean(draftDefault !== undefined ? draftDefault : source.defaultShowRealMessage),
+            sampleMessage: text(draftSample !== undefined ? draftSample : "", source.sampleMessage),
+            showRealMessageFor: Object.assign({}, source.showRealMessageFor || {}, draft.showRealMessageFor || {})
+        };
+    }
+
+    function shouldShowRealMessage(slug, visibility) {
+        var override = getOwnValue(visibility.showRealMessageFor, slug);
+        if (override !== undefined) return Boolean(override);
+        return Boolean(visibility.defaultShowRealMessage);
+    }
+
+    function getSampleMessage(visibility) {
+        return text(visibility.sampleMessage, "Đây là lời nhắn. ".repeat(20).trim());
     }
 
     function setPhoneLink(selector, value) {
@@ -326,21 +363,27 @@
         setText("[data-ticket-title]", data.filmTitle);
         var dearName = text(guest.dearName, guest.displayName);
         var namePrefix = text(guest.namePrefix);
-        var showLetter = Boolean(guest.showLetter) && Boolean(text(guest.letterTitle, guest.message));
+        var visibility = getMessageVisibility();
+        var realMessageEnabled = shouldShowRealMessage(slug, visibility);
+        var realLetterAvailable = Boolean(guest.showLetter) && Boolean(text(guest.letterTitle, guest.message));
+        var showRealLetter = realLetterAvailable && realMessageEnabled;
+        var showLetter = showRealLetter || Boolean(getSampleMessage(visibility));
+        var letterTitle = showRealLetter ? text(guest.letterTitle, "Gửi " + dearName + ",") : "Gửi " + dearName + ",";
+        var message = showRealLetter ? guest.message : getSampleMessage(visibility);
         setText("[data-dear-name]", dearName);
         setText("[data-intro-name-prefix]", namePrefix);
         setHidden("[data-intro-name-prefix]", !namePrefix);
         setText("[data-intro-display-name]", text(guest.displayName, dearName));
-        setText("[data-letter-title]", showLetter ? text(guest.letterTitle, "Gửi " + dearName + ",") : "");
+        setText("[data-letter-title]", showLetter ? letterTitle : "");
         var ticketRole = text(guest.ticketRole, guest.role);
         setText("[data-ticket-role-prefix]", ticketRole);
         setHidden("[data-ticket-role-prefix]", !ticketRole);
         setText("[data-ticket-name]", text(guest.ticketName, dearName));
         setText("[data-story-line]", text(guest.storyLine, data.introStoryLine || "Trân quý mời anh đến buổi chiếu phim thân mật"));
-        setText("[data-message]", showLetter ? guest.message : "");
+        setText("[data-message]", showLetter ? message : "");
         setHidden(".letter-copy", !showLetter);
         toggleClass(".letter-section", "no-letter", !showLetter);
-        var messageLength = showLetter ? text(guest.message).replace(/\s+/g, " ").trim().length : 0;
+        var messageLength = showLetter ? text(message).replace(/\s+/g, " ").trim().length : 0;
         toggleClass(".letter-section", "letter-short", showLetter && messageLength < 420);
         toggleClass(".letter-section", "letter-medium", showLetter && messageLength >= 420 && messageLength < 900);
         toggleClass(".letter-section", "letter-long", showLetter && messageLength >= 900);
@@ -381,4 +424,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", renderInvitation);
+    window.addEventListener("storage", function (event) {
+        if (event.key === VISIBILITY_DRAFT_KEY) renderInvitation();
+    });
 })();

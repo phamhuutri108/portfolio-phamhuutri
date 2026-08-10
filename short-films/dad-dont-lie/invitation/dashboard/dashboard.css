@@ -60,6 +60,13 @@ h1 {
     line-height: 0.95;
 }
 
+h2 {
+    margin: 0;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 400;
+    line-height: 1;
+}
+
 .password-form {
     margin-top: 40px;
 }
@@ -154,6 +161,32 @@ h1 {
     backdrop-filter: blur(10px);
 }
 
+.privacy-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 18px;
+    align-items: end;
+    margin: 4px 0 18px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.74);
+    padding: 18px;
+}
+
+.panel-note {
+    max-width: 640px;
+    margin: 14px 0 0;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+.privacy-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
 .search-field {
     grid-template-columns: 46px 1fr;
 }
@@ -190,12 +223,30 @@ h1 {
 
 .guest-row {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     gap: 18px;
     align-items: center;
     border: 1px solid var(--line);
     background: rgba(255, 255, 255, 0.74);
     padding: 18px;
+}
+
+.message-toggle {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+    color: var(--muted);
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.message-toggle input {
+    width: 24px;
+    height: 24px;
+    accent-color: var(--ink);
+    cursor: pointer;
 }
 
 .guest-name {
@@ -263,8 +314,19 @@ h1 {
     }
 
     .toolbar,
+    .privacy-panel,
     .guest-row {
         grid-template-columns: 1fr;
+    }
+
+    .privacy-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .message-toggle {
+        grid-template-columns: auto 1fr;
+        justify-items: start;
     }
 
     .row-actions {
