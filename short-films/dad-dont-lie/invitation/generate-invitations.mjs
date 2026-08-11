@@ -10,6 +10,7 @@ const GUESTS_OUTPUT_PATH = path.join(INVITATION_DIR, "invitation-guests.js");
 const GUEST_HTML_DIR = path.join(INVITATION_DIR, "khach-moi");
 const CLEAN_GUEST_HTML_DIR = INVITATION_DIR;
 const REDIRECTS_PATH = path.join(ROOT_DIR, "_redirects");
+const CUSTOM_HTML_SLUGS = new Set(["cha-bong"]);
 
 const PUBLIC_INVITATION_BASE = "/short-films/dad-dont-lie/invitation";
 const SITE_INVITATION_BASE = "https://phamhuutri.com/short-films/dad-dont-lie/invitation";
@@ -213,6 +214,8 @@ function buildHtml(template, guest) {
 function writeGuestHtml(guests) {
     const template = fs.readFileSync(INDEX_TEMPLATE_PATH, "utf8");
     guests.forEach((guest) => {
+        if (CUSTOM_HTML_SLUGS.has(guest.slug)) return;
+
         const html = buildHtml(template, guest);
         const guestDirs = [
             path.join(CLEAN_GUEST_HTML_DIR, guest.slug),

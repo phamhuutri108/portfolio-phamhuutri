@@ -4,134 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lời mời đến Chà Bông - Ba Ơi, Đừng Nói Dối | Phạm Hữu Trí</title>
+    <title>Thiệp riêng gửi Chà Bông</title>
     <meta name="description" content="Ba Ơi, Đừng Nói Dối">
     <meta name="author" content="Pham Huu Tri">
     <meta name="robots" content="noindex, nofollow">
 
     <link rel="canonical" href="https://phamhuutri.com/short-films/dad-dont-lie/invitation/cha-bong">
     <link rel="icon" type="image/png" href="https://assets.phamhuutri.com/assets/home/favicon.png?v=2">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0" rel="stylesheet">
-    <link rel="stylesheet" href="/short-films/dad-dont-lie/invitation/invitation.css?v=26">
+    <link rel="stylesheet" href="/short-films/dad-dont-lie/invitation/cha-bong/cha-bong.css?v=39">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://phamhuutri.com/short-films/dad-dont-lie/invitation/cha-bong">
-    <meta property="og:title" content="Lời mời đến Chà Bông">
+    <meta property="og:title" content="Thiệp riêng gửi Chà Bông">
     <meta property="og:description" content="Ba Ơi, Đừng Nói Dối">
     <meta property="og:image" content="https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2">
     <meta property="og:image:width" content="2048">
     <meta property="og:image:height" content="1106">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lời mời đến Chà Bông">
+    <meta name="twitter:title" content="Thiệp riêng gửi Chà Bông">
     <meta name="twitter:description" content="Ba Ơi, Đừng Nói Dối">
     <meta name="twitter:image" content="https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2">
 </head>
 <body>
-    <section class="intro-screen" id="intro-screen" aria-label="Intro video">
-        <img class="intro-fallback" id="intro-fallback" alt="">
-        <video class="intro-video" id="intro-video" playsinline preload="auto"></video>
-        <article class="intro-card" id="intro-card">
-            <p class="intro-dear"><span data-intro-salutation>Mến gửi</span><br><span class="intro-name-prefix" data-intro-name-prefix></span><span data-intro-display-name></span>,</p>
-            <p class="intro-rule"></p>
-            <p class="intro-copy" data-story-line>Trân quý mời anh đến buổi chiếu phim thân mật</p>
-            <h1 class="intro-title" data-film-title>Dad,<br>Don't Lie</h1>
+    <section class="love-intro" id="intro-screen" aria-label="Intro video">
+        <video class="intro-video" id="intro-video" playsinline preload="auto" src="https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/cha-bong.mp4"></video>
+        <div class="intro-shade"></div>
+
+        <article class="intro-note" id="intro-note">
+            <div class="intro-note-copy">
+                <h1>Yêu quý gửi em,</h1>
+                <p class="intro-note-rule"></p>
+                <p class="intro-note-message">Anh giữ riêng một chiếc ghế, một buổi tối, và một lời mời nhỏ xíu này cho em.</p>
+            </div>
+            <button class="intro-open" id="intro-open" type="button" aria-label="Mở thiệp">
+                <span aria-hidden="true">⌄</span>
+            </button>
         </article>
-        <button class="sound-start" id="sound-start" type="button" hidden>Bấm để phát</button>
-        <button class="scroll-cue" id="scroll-cue" type="button" aria-label="Open invitation">⌄</button>
+
+        <button class="sound-button" id="sound-start" type="button">
+            <span class="button-glyph" aria-hidden="true">▷</span>
+            <span>Phát video</span>
+        </button>
+
+        <div class="intro-progress" aria-hidden="true">
+            <span id="intro-progress-bar"></span>
+        </div>
     </section>
 
-    <main class="invitation-shell" id="invitation-root">
-        <section class="letter-section" aria-label="Personal message">
-            <figure class="poster-panel">
-                <img data-poster src="" alt="">
-                <figcaption class="poster-placeholder-label" data-poster-placeholder hidden></figcaption>
-            </figure>
-
-            <article class="letter-copy">
-                <h2 class="letter-title" data-letter-title></h2>
-                <p class="message" data-message></p>
-            </article>
+    <main class="cha-bong-page" id="invitation-root">
+        <section class="letter-band" aria-label="Lời mời riêng">
+            <div class="letter-wrap">
+                <h2>Gửi em yêu thương, phim này có một chỗ nhỏ "to lớn" dành cho em.</h2>
+                <div class="letter-body">
+                    <p>Mười một tháng trước mình gặp nhau, mười một tháng sau mình đang yêu nhau. Anh vẫn chưa tin.</p>
+                    <p>Đó là sự thật.</p>
+                    <p>Em bước vào cuộc sống của anh nhẹ nhàng đến mức có nhiều khoảnh khắc ngắn ngủi chỉ như thoáng qua, anh không còn đặt câu hỏi về sự tồn tại của em nữa, mà anh cảm tưởng như em đã ở đây 100 năm nay rồi. Và 100 năm đó, chưa bao giờ có 1 khoảnh khắc nào anh muốn bỏ lỡ, anh muốn mang giăng lưới bắt hết mọi khoảnh khắc mà anh có bên cạnh em để cất nó đi.</p>
+                    <p>Nhưng mà nghĩ lại như vậy thì quá ích kỷ. Nếu anh đem lòng yêu 1 khoảnh khắc, thì đó chỉ có thể là quá khứ. Anh không thể yêu được 1 khoảnh khắc tương lai, thứ mà anh chưa được biết. Anh chỉ có thể yêu 1 thứ đã thuộc về quá khứ, mà như thế thì mình phải cho nó đi ra khỏi mình, vuột khỏi tay mình và mình chỉ có thể hồi tưởng về nó với một thái độ nào đó.</p>
+                    <p>Tình yêu với anh là vậy. Là bằng một cách gián tiếp, anh yêu những gì đã qua. Nhưng anh không còn sợ nữa. Vì nếu mình sống trọn vẹn một khoảnh khắc, cho dù tầm thường nhất, thì nó sẽ luôn có một ý nghĩa gì đó. Anh không biết, có thể em biết, và có thể không. Nhưng quan trọng là trọn vẹn. Và vì trọn vẹn mình sẽ không sợ, không tiếc nuối và biết yêu thương hơn mỗi ngày một chút. Ô... và vừa hay Chà Bông khớp một cách hoàn hảo với sự trọn vẹn có trong anh.</p>
+                    <p>Em lúc nào cũng có một sự sâu lắng mà anh không thể nào nhìn thấu được hết. Em làm cho anh khao khát muốn tìm tòi khám phá ngóc ngách của tâm trí em, và cho dù đến cuối cùng anh có không nhận được đáp án, anh vẫn mãn nguyện. Vì hành trình lúc nào cũng quan trọng hơn kết quả. Nếu mỗi giây phút mình đều có thể nhìn nhau với sự hiện diện, thì không bao giờ là uổng phí.</p>
+                    <p>Anh nhớ cái giây phút mà anh bắt đầu cảm nhận được sự hiện diện của em là lúc mình chơi bộ bài ở ban công. Em hỏi rất nhiều câu hỏi mà khi trả lời, đều là lần đầu tiên anh nói ra. Có những câu anh đã nghĩ đến rồi, có những câu anh lần đầu được nghe. Nhưng lúc đó anh trả lời với sự ngây ngô và chân thành nhất mà anh có. Đêm đó anh đã siêu hạnh phúc, và anh nghĩ: chà, cuối cùng cũng có người hiểu được mình.</p>
+                    <p>Em là món quà của anh.</p>
+                    <p>Em luôn khiến anh cảm thấy mình đặc biệt và anh cũng muốn mình có thể đối đãi với em sự đặc biệt đó theo cách của anh. Một cách trực tiếp, em đã tạo ra anh.</p>
+                    <p>Buổi chiếu phim này, không gì khác hơn, là dành cho em. Vì ý tưởng về buổi chiếu này, ngay từ đầu là anh muốn kết nối lại với em sau khi mình không còn gặp nhau nữa, nên buổi chiếu chính là cái cớ 🥸 (xin lỗi vì giờ anh mới tiết lộ). Nhưng mà hay ho làm sao, bọn mình đã kết nối trở lại trước khi anh hoàn thành được ý đồ của anh nữa 🥸</p>
+                    <p>Ngày chiếu phim, anh muốn em ở đó không chỉ như một khách mời. Anh muốn em là người đầu tiên anh nhìn về, sau khi đèn rạp sáng lên, để biết là bộ phim bé xíu này đã đi qua được thêm một đoạn đường. Và anh nghĩ là chỉ có mình em mới hiểu được ánh mắt đó của anh 🥸</p>
+                    <p>Cảm ơn Bông vì đã hiện diện ở đây với anh. Anh thấy có một anh rất khác sau khi em xuất hiện, và thật may là khác theo hướng mà anh có thể tự hào khi nhớ về.</p>
+                    <p class="signature">Hẹn em ở rạp. Anh yêu em.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="ticket-section" aria-label="Thông tin buổi chiếu">
-            <div class="ticket-stack">
-                <article class="ticket-hero">
-                    <img data-ticket-image src="" alt="">
-                </article>
-                <article class="ticket-card guest-card">
-                    <div>
-                        <span class="ticket-label">Khách mời</span>
-                        <p class="guest-name">
-                            <span class="ticket-role-prefix" data-ticket-role-prefix></span><span data-ticket-name></span>
-                        </p>
+        <section class="memory-band" aria-label="Kỷ niệm và still frame">
+            <div class="still-gallery" data-still-gallery>
+                <figure class="still-viewer">
+                    <button class="gallery-nav gallery-nav-prev" type="button" data-still-prev aria-label="Xem ảnh trước">
+                        <span aria-hidden="true">‹</span>
+                    </button>
+                    <button class="still-image-button" type="button" data-still-open aria-label="Mở ảnh still frame">
+                        <img data-still-image src="/short-films/dad-dont-lie/invitation/assets/cha-bong/still/still-1.jpg" alt="Still frame trong phim Ba Ơi, Đừng Nói Dối">
+                    </button>
+                    <button class="gallery-nav gallery-nav-next" type="button" data-still-next aria-label="Xem ảnh tiếp theo">
+                        <span aria-hidden="true">›</span>
+                    </button>
+                </figure>
+                <p class="still-note">Tất cả những frame em thích đều nằm ở đây.</p>
+            </div>
+
+            <div class="memory-puzzle" data-memory-puzzle>
+                <form class="memory-puzzle-form" data-memory-puzzle-form>
+                    <label class="memory-question" for="memory-answer" data-memory-question></label>
+                    <div class="memory-answer-row">
+                        <input id="memory-answer" data-memory-answer type="text" autocomplete="off" placeholder="Gõ đáp án">
+                        <button class="icon-button puzzle-submit" type="submit">Mở ảnh</button>
                     </div>
-                </article>
+                    <button class="puzzle-swap" type="button" data-memory-new-question>Câu khác</button>
+                    <p class="memory-feedback" data-memory-feedback aria-live="polite"></p>
+                </form>
+            </div>
 
-                <article class="ticket-card ticket-pass">
-                    <div class="ticket-card-head">
-                        <span>Thông tin buổi chiếu</span>
-                    </div>
-                    <div class="ticket-grid">
-                        <p>
-                            <span class="ticket-label">Ngày</span>
-                            <span class="ticket-value" data-event-date></span>
-                        </p>
-                        <p>
-                            <span class="ticket-label">Thời gian</span>
-                            <span class="ticket-value" data-event-time></span>
-                        </p>
-                        <p class="ticket-location">
-                            <span class="ticket-label">Địa điểm</span>
-                            <span class="ticket-value" data-location-name></span>
-                            <span class="ticket-muted" data-location-address></span>
-                        </p>
-                        <p class="ticket-theater">
-                            <span class="ticket-label">Rạp</span>
-                            <span class="ticket-value" data-theater-name></span>
-                        </p>
-                    </div>
-                    <a class="map-link" data-map-link href="https://maps.google.com/" target="_blank" rel="noopener noreferrer">Mở trong Google Map</a>
-                </article>
+            <div class="personal-collage" aria-label="Ảnh kỷ niệm" data-personal-collage hidden></div>
+        </section>
 
-                <article class="ticket-hero ticket-hero-secondary">
-                    <img data-ticket-image-secondary src="" alt="">
-                </article>
+        <section class="details-band" aria-label="Thông tin buổi chiếu">
+            <div class="details-copy">
+                <p class="small-label">THÔNG TIN CHIẾU PHIM</p>
+                <p>anh không để số điện thoại của tHụC mAi vì em đã có anh 🥸</p>
+            </div>
 
-                <article class="ticket-card note-card">
-                    <span class="ticket-label">Thời gian chi tiết</span>
-                    <div class="schedule-list" data-note-timeline></div>
-                    <p class="schedule-fallback" data-note></p>
-                    <small data-note-caption></small>
-                </article>
+            <div class="details-list">
+                <p>
+                    <span>Ngày</span>
+                    <strong data-event-date>T6, 21/08/2026</strong>
+                </p>
+                <p>
+                    <span>Thời gian</span>
+                    <strong data-event-time>17:00</strong>
+                </p>
+                <p>
+                    <span>Địa điểm</span>
+                    <strong data-location-name>DCINE Bến Thành - 6 Mạc Đĩnh Chi, Phường Sài Gòn, HCM</strong>
+                </p>
+                <p>
+                    <span>Rạp</span>
+                    <strong data-theater-name>02</strong>
+                </p>
+                <a class="icon-button map-button" data-map-link href="https://maps.app.goo.gl/odFkyzn3RxUBbB9b8" target="_blank" rel="noopener noreferrer">
+                    <span class="button-glyph" aria-hidden="true">↗</span>
+                    <span>Mở Google Map</span>
+                </a>
+            </div>
+        </section>
 
-                <article class="ticket-card contact-card">
-                    <span class="ticket-label">Thông tin liên hệ</span>
-                    <p class="ticket-value contact-value">
-                        <a class="contact-link" data-contact-phone href="tel:0779706008"></a><span data-contact-name></span>
-                    </p>
-                </article>
+        <section class="timeline-band" aria-label="Lịch chi tiết">
+            <p class="small-label">LỊCH TRÌNH CHI TIẾT</p>
+            <div class="timeline-list" data-note-timeline></div>
+            <p class="timeline-caption" data-note-caption>bữa đó anh chở em đến rạp 🥸</p>
+        </section>
 
-                <article class="download-card">
-                    <p class="ticket-label">Mạng xã hội</p>
-                    <div class="download-grid">
-                        <a class="download-link" data-download-story-video href="#" download>
-                            <span class="material-symbols-rounded download-icon" aria-hidden="true">download</span>
-                            <span data-download-label>Download video</span>
-                        </a>
-                    </div>
-                    <p class="download-note">Bấm Download video rồi chọn Lưu video để lưu vào album ảnh. Nhớ đăng story cả nhà nhé ✨👨‍🍳🥸</p>
-                    <p class="download-status" data-download-status aria-live="polite"></p>
-                </article>
+        <section class="wedding-notice-band" aria-label="Giấy thông báo hôn lễ">
+            <h2 class="wedding-notice-title">Toàn bộ thiệp trên đều là giả, đây mới là thật 🥸</h2>
+            <figure class="wedding-notice-frame">
+                <button class="wedding-notice-button" type="button" data-lightbox-trigger data-gallery="wedding" data-index="0" aria-label="Mở giấy thông báo hôn lễ">
+                    <img src="/short-films/dad-dont-lie/invitation/assets/thiep-cuoi-final.png?v=1" alt="Giấy thông báo hôn lễ dành cho Chà Bông">
+                </button>
+            </figure>
+        </section>
+
+        <section class="ending-band" aria-label="Video story">
+            <div>
+                <p class="small-label">MẠNG XÃ HỘI</p>
+                <h2>Video story của em vẫn là bản riêng 🥸</h2>
+            </div>
+            <div class="ending-actions">
+                <a class="icon-button download-button" data-download-story-video href="https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/cha-bong.mp4" download>
+                    <span class="button-glyph" aria-hidden="true">↓</span>
+                    <span data-download-label>Lưu video</span>
+                </a>
+                <p class="download-status" data-download-status aria-live="polite"></p>
             </div>
         </section>
     </main>
 
     <script src="/short-films/dad-dont-lie/invitation/invitation-data.js?v=16"></script>
-    <script src="/short-films/dad-dont-lie/invitation/invitation-guests.js?v=4"></script>
-    <script src="/short-films/dad-dont-lie/invitation/invitation-message-visibility.js?v=1"></script>
-    <script src="/short-films/dad-dont-lie/invitation/invitation-page.js?v=25"></script>
+    <div class="photo-lightbox" data-photo-lightbox hidden>
+        <button class="lightbox-backdrop" type="button" data-lightbox-backdrop data-lightbox-close aria-label="Đóng ảnh"></button>
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Đóng ảnh">
+            <span aria-hidden="true">×</span>
+        </button>
+        <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Ảnh trước">
+            <span aria-hidden="true">‹</span>
+        </button>
+        <figure class="lightbox-frame">
+            <img data-lightbox-image src="" alt="">
+        </figure>
+        <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Ảnh tiếp theo">
+            <span aria-hidden="true">›</span>
+        </button>
+    </div>
+
+    <script src="/short-films/dad-dont-lie/invitation/cha-bong/cha-bong.js?v=30"></script>
 </body>
 </html>
