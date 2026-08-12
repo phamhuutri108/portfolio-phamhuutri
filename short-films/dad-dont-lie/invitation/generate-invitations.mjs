@@ -205,6 +205,8 @@ function buildHtml(template, guest) {
     html = replaceMeta(html, "property", "og:title", guest.shareTitle);
     html = replaceMeta(html, "property", "og:description", SHARE_DESCRIPTION);
     html = replaceMeta(html, "property", "og:image", SHARE_IMAGE_URL);
+    html = replaceMeta(html, "property", "og:image:width", "2048");
+    html = replaceMeta(html, "property", "og:image:height", "1106");
     html = replaceMeta(html, "name", "twitter:title", guest.shareTitle);
     html = replaceMeta(html, "name", "twitter:description", SHARE_DESCRIPTION);
     html = replaceMeta(html, "name", "twitter:image", SHARE_IMAGE_URL);
