@@ -488,7 +488,7 @@
         setText("[data-event-date]", text(config.eventDate, "T6, 21/08/2026"));
         setText("[data-event-time]", text(config.eventTime, "17:00"));
         setText("[data-location-name]", text(config.locationName, "DCINE Bến Thành - 6 Mạc Đĩnh Chi, Phường Sài Gòn, HCM"));
-        setText("[data-theater-name]", text(config.theaterName, "02"));
+        setText("[data-theater-name]", text(config.theaterName, "04"));
         setText("[data-note-caption]", "bữa đó anh chở em đến rạp 🥸");
 
         document.querySelectorAll("[data-map-link]").forEach(function (map) {
