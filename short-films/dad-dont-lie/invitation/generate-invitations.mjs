@@ -196,7 +196,7 @@ function writeGuestsFile(guests) {
 }
 
 function buildHtml(template, guest) {
-    const publicUrl = `${SITE_INVITATION_BASE}/${guest.slug}`;
+    const publicUrl = `${SITE_INVITATION_BASE}/${guest.slug}/`;
     let html = template;
     html = replaceTag(html, "title", `${guest.shareTitle} - ${SHARE_DESCRIPTION} | Phạm Hữu Trí`);
     html = replaceMeta(html, "name", "description", SHARE_DESCRIPTION);
@@ -235,8 +235,8 @@ function updateRedirects(guests) {
     const startMarker = "# dad-dont-lie invitations:start";
     const endMarker = "# dad-dont-lie invitations:end";
     const redirectLines = guests.flatMap((guest) => [
-        `${PUBLIC_INVITATION_BASE}/khach-moi/${guest.slug}   ${PUBLIC_INVITATION_BASE}/${guest.slug}   301`,
-        `${PUBLIC_INVITATION_BASE}/khach-moi/${guest.slug}/  ${PUBLIC_INVITATION_BASE}/${guest.slug}   301`
+        `${PUBLIC_INVITATION_BASE}/khach-moi/${guest.slug}   ${PUBLIC_INVITATION_BASE}/${guest.slug}/   301`,
+        `${PUBLIC_INVITATION_BASE}/khach-moi/${guest.slug}/  ${PUBLIC_INVITATION_BASE}/${guest.slug}/   301`
     ]);
     const block = [startMarker, ...redirectLines, endMarker].join("\n");
     let redirects = fs.readFileSync(REDIRECTS_PATH, "utf8");
@@ -276,7 +276,7 @@ function main() {
 
     console.log(`Generated ${guests.length} invitation(s):`);
     guests.forEach((guest) => {
-        console.log(`${SITE_INVITATION_BASE}/${guest.slug}`);
+        console.log(`${SITE_INVITATION_BASE}/${guest.slug}/`);
     });
 }
 
