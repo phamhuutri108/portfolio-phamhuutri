@@ -377,7 +377,7 @@
         var description = text(guest.shareDescription, text(data.filmTitleVi, data.filmTitle));
         var shareImage = text(guest.shareImageUrl, data.shareImageUrl || data.posterUrl);
         var shareUrl = window.location.hash
-            ? window.location.origin + window.location.pathname
+            ? window.location.origin + window.location.pathname + window.location.search
             : window.location.href;
         document.title = title;
         setMeta('meta[name="description"]', description);
