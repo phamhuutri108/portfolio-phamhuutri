@@ -461,8 +461,8 @@ window.dadDontLieInvitationGuests = {
         "ticketDisplayName": "Anh Khoa Too",
         "role": "Anh",
         "storyLine": "Trân quý mời anh đến buổi chiếu phim thân mật",
-        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/dang-xuan-hoang.mp4",
-        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/dang-xuan-hoang.mp4",
+        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/khoa-too.mp4",
+        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/khoa-too.mp4",
         "shareTitle": "Lời mời đến Khoa Too",
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
