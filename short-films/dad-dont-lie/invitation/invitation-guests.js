@@ -449,6 +449,24 @@ window.dadDontLieInvitationGuests = {
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
+    "khoa-too": {
+        "displayName": "Khoa Too",
+        "namePrefix": "anh",
+        "dearName": "anh Khoa Too",
+        "showLetter": true,
+        "letterTitle": "Gửi anh Khoa Too,",
+        "message": "Chân thành cảm ơn anh Khoa Too đã dành tài năng, thời gian và sức khỏe để cùng em thực hiện bộ phim này. Mong rằng trải nghiệm của anh khi làm việc với em không quá tệ🙂‍↕️\n\nChúc anh có những giây phút xem phim vui vẻ. Cảm ơn anh một lần nữa.",
+        "ticketName": "Khoa Too",
+        "ticketRole": "Anh",
+        "ticketDisplayName": "Anh Khoa Too",
+        "role": "Anh",
+        "storyLine": "Trân quý mời anh đến buổi chiếu phim thân mật",
+        "introVideoUrl": "",
+        "storyVideoUrl": "",
+        "shareTitle": "Lời mời đến Khoa Too",
+        "shareDescription": "Ba Ơi, Đừng Nói Dối",
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
+    },
     "nguyen-trung-hieu": {
         "displayName": "Nguyễn Trung Hiếu",
         "namePrefix": "anh",
