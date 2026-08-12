@@ -791,6 +791,24 @@ window.dadDontLieInvitationGuests = {
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
+    "nhi": {
+        "displayName": "Nhi",
+        "namePrefix": "em",
+        "dearName": "em Nhi",
+        "showLetter": true,
+        "letterTitle": "Gửi em Nhi,",
+        "message": "Trí và Mai thương mời em Nhi đến và cùng xem \"Ba Ơi, Đừng Nói Dối\" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",
+        "ticketName": "Nhi",
+        "ticketRole": "Em",
+        "ticketDisplayName": "Em Nhi",
+        "role": "Em",
+        "storyLine": "Trân quý mời em đến buổi chiếu phim thân mật",
+        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/nhi.mp4",
+        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/nhi.mp4",
+        "shareTitle": "Lời mời đến Nhi",
+        "shareDescription": "Ba Ơi, Đừng Nói Dối",
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
+    },
     "sulla": {
         "displayName": "Sulla",
         "namePrefix": "chị",
