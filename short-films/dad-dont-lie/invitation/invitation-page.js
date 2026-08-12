@@ -3,6 +3,18 @@
     var MESSAGE_VISIBILITY_TIMEOUT_MS = 1800;
 
     function getCurrentSlug() {
+        var hash = window.location.hash.replace(/^#/, "").trim();
+        if (hash) {
+            try {
+                hash = decodeURIComponent(hash);
+            } catch (error) {
+                // Keep the original hash when it is not valid URI encoding.
+            }
+
+            var hashSlug = hash.replace(/^invite=/, "").replace(/^\/+|\/+$/g, "");
+            if (/^[a-z0-9-]+$/.test(hashSlug)) return hashSlug;
+        }
+
         var path = window.location.pathname.replace(/\/+$/, "");
         var marker = "/short-films/dad-dont-lie/invitation/";
         var markerIndex = path.indexOf(marker);
@@ -350,6 +362,11 @@
         if (!data || !data.guests) return;
 
         var slug = getCurrentSlug();
+        if (window.location.hash && slug === "cha-bong") {
+            window.location.replace("/short-films/dad-dont-lie/invitation/cha-bong/");
+            return;
+        }
+
         var guest = data.guests[slug];
         if (!guest) {
             renderMissing(slug);
@@ -359,11 +376,14 @@
         var title = text(guest.shareTitle, "Lời mời đến " + guest.displayName);
         var description = text(guest.shareDescription, text(data.filmTitleVi, data.filmTitle));
         var shareImage = text(guest.shareImageUrl, data.shareImageUrl || data.posterUrl);
+        var shareUrl = window.location.hash
+            ? window.location.origin + window.location.pathname
+            : window.location.href;
         document.title = title;
         setMeta('meta[name="description"]', description);
         setMeta('meta[property="og:title"]', title);
         setMeta('meta[property="og:description"]', description);
-        setMeta('meta[property="og:url"]', window.location.href);
+        setMeta('meta[property="og:url"]', shareUrl);
         setMeta('meta[property="og:image"]', shareImage);
         setMeta('meta[name="twitter:title"]', title);
         setMeta('meta[name="twitter:description"]', description);

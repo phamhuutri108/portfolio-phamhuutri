@@ -15,6 +15,9 @@ const CUSTOM_HTML_SLUGS = new Set(["cha-bong"]);
 const PUBLIC_INVITATION_BASE = "/short-films/dad-dont-lie/invitation";
 const SITE_INVITATION_BASE = "https://phamhuutri.com/short-films/dad-dont-lie/invitation";
 const SHARE_IMAGE_URL = "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2";
+const SHARE_IMAGE_WIDTH = "1920";
+const SHARE_IMAGE_HEIGHT = "1038";
+const SHARE_IMAGE_ALT = "Canh phim Ba Oi, Dung Noi Doi";
 const SHARE_DESCRIPTION = "Ba Ơi, Đừng Nói Dối";
 const VIDEO_BASE_URL = "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/";
 
@@ -205,11 +208,15 @@ function buildHtml(template, guest) {
     html = replaceMeta(html, "property", "og:title", guest.shareTitle);
     html = replaceMeta(html, "property", "og:description", SHARE_DESCRIPTION);
     html = replaceMeta(html, "property", "og:image", SHARE_IMAGE_URL);
-    html = replaceMeta(html, "property", "og:image:width", "2048");
-    html = replaceMeta(html, "property", "og:image:height", "1106");
+    html = replaceMeta(html, "property", "og:image:secure_url", SHARE_IMAGE_URL);
+    html = replaceMeta(html, "property", "og:image:type", "image/jpeg");
+    html = replaceMeta(html, "property", "og:image:width", SHARE_IMAGE_WIDTH);
+    html = replaceMeta(html, "property", "og:image:height", SHARE_IMAGE_HEIGHT);
+    html = replaceMeta(html, "property", "og:image:alt", SHARE_IMAGE_ALT);
     html = replaceMeta(html, "name", "twitter:title", guest.shareTitle);
     html = replaceMeta(html, "name", "twitter:description", SHARE_DESCRIPTION);
     html = replaceMeta(html, "name", "twitter:image", SHARE_IMAGE_URL);
+    html = replaceMeta(html, "name", "twitter:image:alt", SHARE_IMAGE_ALT);
     return html;
 }
 

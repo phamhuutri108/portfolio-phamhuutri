@@ -27,7 +27,7 @@
         index: index + 1,
         slug,
         ...guest,
-        invitationUrl: `${PUBLIC_INVITATION_BASE}/${slug}`
+        invitationUrl: `${PUBLIC_INVITATION_BASE}/#${slug}`
     }));
 
     let adminPassword = sessionStorage.getItem(SESSION_PASSWORD_KEY) || "";
