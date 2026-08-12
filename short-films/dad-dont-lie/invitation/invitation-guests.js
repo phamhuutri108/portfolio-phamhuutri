@@ -863,6 +863,24 @@ window.dadDontLieInvitationGuests = {
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
+    "kontribute-studio": {
+        "displayName": "Kontribute Studio",
+        "namePrefix": "",
+        "dearName": "Kontribute Studio",
+        "showLetter": true,
+        "letterTitle": "Gửi Kontribute Studio,",
+        "message": "Em Trí và em Mai thương mời anh/chị đến và cùng xem \"Ba Ơi, Đừng Nói Dối\" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",
+        "ticketName": "Kontribute Studio",
+        "ticketRole": "",
+        "ticketDisplayName": "Kontribute Studio",
+        "role": "",
+        "storyLine": "Trân quý mời anh/chị đến buổi chiếu phim thân mật",
+        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/kontribute-studio.mp4",
+        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/kontribute-studio.mp4",
+        "shareTitle": "Lời mời đến Kontribute Studio",
+        "shareDescription": "Ba Ơi, Đừng Nói Dối",
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
+    },
     "tran": {
         "displayName": "Trân",
         "namePrefix": "chị",
