@@ -611,6 +611,24 @@ window.dadDontLieInvitationGuests = {
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
+    "anh-kiet": {
+        "displayName": "Anh Kiệt",
+        "namePrefix": "anh",
+        "dearName": "anh Anh Kiệt",
+        "showLetter": true,
+        "letterTitle": "Gửi anh Anh Kiệt,",
+        "message": "Em Trí và em Mai thương mời anh Anh Kiệt đến và cùng xem \"Ba Ơi, Đừng Nói Dối\" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",
+        "ticketName": "Anh Kiệt",
+        "ticketRole": "Anh",
+        "ticketDisplayName": "Anh Anh Kiệt",
+        "role": "Anh",
+        "storyLine": "Trân quý mời anh đến buổi chiếu phim thân mật",
+        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/anh-kiet.mp4",
+        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/anh-kiet.mp4",
+        "shareTitle": "Lời mời đến Anh Kiệt",
+        "shareDescription": "Ba Ơi, Đừng Nói Dối",
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
+    },
     "dang-thanh-tam": {
         "displayName": "Đặng Thành Tâm",
         "namePrefix": "anh",
