@@ -617,7 +617,7 @@ window.dadDontLieInvitationGuests = {
         "dearName": "em Lâm Nguyên Sơn Thạch",
         "showLetter": true,
         "letterTitle": "Gửi em Lâm Nguyên Sơn Thạch,",
-        "message": "Em Trí và em Mai thương mời em Lâm Nguyên Sơn Thạch đến và cùng xem \"Ba Ơi, Đừng Nói Dối\" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",
+        "message": "Trí và Mai thương mời em Lâm Nguyên Sơn Thạch đến và cùng xem \"Ba Ơi, Đừng Nói Dối\" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",
         "ticketName": "Lâm Nguyên Sơn Thạch",
         "ticketRole": "Em",
         "ticketDisplayName": "Em Lâm Nguyên Sơn Thạch",
