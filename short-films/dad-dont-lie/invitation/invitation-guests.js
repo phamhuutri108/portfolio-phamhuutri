@@ -666,6 +666,24 @@ window.dadDontLieInvitationGuests = {
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
+    "san-san": {
+        "displayName": "San San",
+        "namePrefix": "em",
+        "dearName": "em San San",
+        "showLetter": true,
+        "letterTitle": "Gửi em San San,",
+        "message": "Kaii mời San đi phim BODND \nĐón Xem Kaii làm role gì trong phim nha.",
+        "ticketName": "San San",
+        "ticketRole": "Em",
+        "ticketDisplayName": "Em San San",
+        "role": "Em",
+        "storyLine": "Trân quý mời em đến buổi chiếu phim thân mật",
+        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/san-san.mp4",
+        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/san-san.mp4",
+        "shareTitle": "Lời mời đến San San",
+        "shareDescription": "Ba Ơi, Đừng Nói Dối",
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
+    },
     "lam-nguyen-son-thach": {
         "displayName": "Lâm Nguyên Sơn Thạch",
         "namePrefix": "em",
