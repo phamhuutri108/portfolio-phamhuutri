@@ -1,4 +1,4 @@
-slug,namePrefix,displayName,introPronoun,showLetter,letterTitle,message,ticketName,ticketRole,videoFile
+slug,namePrefix,displayName,introPronoun,showLetter,letterTitle,message,ticketName,ticketRole,videoFile,introSalutation,storyLine
 ,diễn viên,Ngô Nhật Trường,anh,TRUE,"Mến gửi anh Trường,","Nghệ thuật là một hành trình độc hành, nên dù muốn hay không mỗi người đều sẽ phải cô đơn tự bước đi trên hành trình của mình. Nhưng điều đáng quý nhất của hành trình này là trên đường mình đi, mình được gặp những người bạn. Chân thành.
 
 Và anh là một người bạn như thế.
@@ -166,6 +166,8 @@ Anh là một nghệ sĩ thật sự và em chưa từng gặp ai có nghệ sĩ
 Hy vọng sắp tới chuyến đi của anh thuận lợi và hy vọng anh em mình có thể cùng nhau làm thêm được nhiều dự án khác.",Huy Đẹp Trai,Original Scores,huy-dep-trai.mp4
 ,anh,Hà Tất Thành,anh,TRUE,"Gửi anh Hà Tất Thành,","Em Trí và em Mai thương mời anh Hà Tất Thành đến và cùng xem ""Ba Ơi, Đừng Nói Dối"" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",Hà Tất Thành,Anh,ha-tat-thanh.mp4
 ,anh,Võ Đăng Minh,anh,TRUE,"Gửi anh Võ Đăng Minh,","Em Trí và em Mai thương mời anh Võ Đăng Minh đến và cùng xem ""Ba Ơi, Đừng Nói Dối"" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",Võ Đăng Minh,Anh,vo-dang-minh.mp4
+,,Glenn Henry,Glenn Henry,TRUE,"Dear Glenn Henry,","Tri and Truong warmly invite Glenn Henry to join us for ""Dad, Don't Lie"" at a private screening for the crew and dear friends.",Glenn Henry,,glenn-henry.mp4,Dear,"You are warmly invited to a private screening of Dad, Don't Lie."
+,chị,Trâm Tôn,chị,TRUE,"Gửi chị Trâm Tôn,","Em Trí và Trường thương mời chị Trâm Tôn đến và cùng xem ""Ba Ơi, Đừng Nói Dối"" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",Trâm Tôn,Chị,tram-ton.mp4,,
 ,em,Lâm Nguyên Sơn Thạch,em,TRUE,"Gửi em Lâm Nguyên Sơn Thạch,","Trí và Mai thương mời em Lâm Nguyên Sơn Thạch đến và cùng xem ""Ba Ơi, Đừng Nói Dối"" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",Lâm Nguyên Sơn Thạch,Em,lam-nguyen-son-thach.mp4
 ,anh,Phương Nguyễn,anh,TRUE,"Gửi anh Phương Nguyễn,","Em Trí và em Mai thương mời anh Phương Nguyễn đến và cùng xem ""Ba Ơi, Đừng Nói Dối"" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",Phương Nguyễn,Anh,phuong-nguyen.mp4
 ,anh,Đặng Thành Tâm,anh,TRUE,"Gửi anh Đặng Thành Tâm,","Em Trí và Mai thương mời Tâm đến và cùng xem ""Ba Ơi, Đừng Nói Dối"" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",Đặng Thành Tâm,Anh,dang-thanh-tam.mp4

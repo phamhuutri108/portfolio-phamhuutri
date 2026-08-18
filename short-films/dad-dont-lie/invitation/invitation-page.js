@@ -390,7 +390,7 @@
         setMeta('meta[name="twitter:image"]', shareImage);
 
         setText("[data-film-title]", text(data.introFilmTitle, data.filmTitle));
-        setText("[data-intro-salutation]", text(data.introSalutation, "Mến gửi"));
+        setText("[data-intro-salutation]", text(guest.introSalutation, data.introSalutation || "Mến gửi"));
         setText("[data-host-name]", data.hostName);
         setText("[data-ticket-host]", data.hostName);
         setText("[data-ticket-title]", data.filmTitle);

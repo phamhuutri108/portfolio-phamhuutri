@@ -153,8 +153,10 @@ function buildGuest(record, slug) {
     const introVideoUrl = resolveAssetUrl(videoFile, VIDEO_BASE_URL);
     const storyVideoUrl = resolveAssetUrl(videoFile, VIDEO_BASE_URL);
     const showLetter = isChecked(record.showLetter);
+    const storyLine = record.storyLine || `Trân quý mời ${pronoun} đến buổi chiếu phim thân mật`;
+    const introSalutation = record.introSalutation || "";
 
-    return {
+    const guest = {
         slug,
         displayName,
         namePrefix,
@@ -166,13 +168,15 @@ function buildGuest(record, slug) {
         ticketRole,
         ticketDisplayName: ticketDisplayName || ticketName,
         role: ticketRole,
-        storyLine: `Trân quý mời ${pronoun} đến buổi chiếu phim thân mật`,
+        storyLine,
         introVideoUrl,
         storyVideoUrl,
         shareTitle,
         shareDescription: SHARE_DESCRIPTION,
         shareImageUrl: SHARE_IMAGE_URL
     };
+    if (introSalutation) guest.introSalutation = introSalutation;
+    return guest;
 }
 
 function guestToData(guest) {
