@@ -20,7 +20,7 @@ window.dadDontLieInvitationConfig = {
     introPlaceholderLabel: "Intro video placeholder",
     eventDate: "T6, 21/08/2026",
     eventTime: "17:00",
-    theaterName: "04",
+    theaterName: "02",
     locationName: "DCINE Bến Thành - 6 Mạc Đĩnh Chi, Phường Sài Gòn, HCM",
     locationAddress: "",
     contactPhone: "0779706008",
