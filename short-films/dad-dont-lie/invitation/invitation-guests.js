@@ -617,7 +617,7 @@ window.dadDontLieInvitationGuests = {
         "dearName": "anh Nguyễn Thành Đồng",
         "showLetter": true,
         "letterTitle": "Gửi anh Nguyễn Thành Đồng,",
-        "message": "Em Trí mời anh Đồng đến xem phim cùng em và ekip. Cảm ơn sự hỗ trợ thiết bị của anh trong quá trình quay phim. Chúc anh có buổi xem phim vui vẻ",
+        "message": "Em Trí mời anh Đồng đến xem phim cùng em và ekip. Cảm ơn sự hỗ trợ thiết bị của anh trong quá trình quay phim. Chúc anh có buổi xem phim vui vẻ.",
         "ticketName": "Nguyễn Thành Đồng",
         "ticketRole": "Anh",
         "ticketDisplayName": "Anh Nguyễn Thành Đồng",
