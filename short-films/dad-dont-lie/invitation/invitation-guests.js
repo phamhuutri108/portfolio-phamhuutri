@@ -1399,8 +1399,8 @@ window.dadDontLieInvitationGuests = {
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
     "bac-huong": {
-        "displayName": "Hường",
-        "namePrefix": "bác",
+        "displayName": "bác Hường",
+        "namePrefix": "",
         "dearName": "bác Hường",
         "showLetter": false,
         "letterTitle": "",
@@ -1412,7 +1412,7 @@ window.dadDontLieInvitationGuests = {
         "storyLine": "Trân quý mời bác đến buổi chiếu phim thân mật",
         "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/bac-huong.mp4",
         "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/bac-huong.mp4",
-        "shareTitle": "Lời mời đến Hường",
+        "shareTitle": "Lời mời đến bác Hường",
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
