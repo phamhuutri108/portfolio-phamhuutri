@@ -45,6 +45,10 @@ button {
     cursor: pointer;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 .map-link:hover,
 .download-link:hover,
 .enter-link:hover {

@@ -155,6 +155,12 @@ function buildGuest(record, slug) {
     const showLetter = isChecked(record.showLetter);
     const storyLine = record.storyLine || `Trân quý mời ${pronoun} đến buổi chiếu phim thân mật`;
     const introSalutation = record.introSalutation || "";
+    const introFilmTitle = record.introFilmTitle || "";
+    const hideIntroDear = isChecked(record.hideIntroDear);
+    const hideIntroRule = isChecked(record.hideIntroRule);
+    const hideGuestCard = isChecked(record.hideGuestCard);
+    const hideDownloadCard = isChecked(record.hideDownloadCard);
+    const forceShowLetter = isChecked(record.forceShowLetter);
 
     const guest = {
         slug,
@@ -176,6 +182,12 @@ function buildGuest(record, slug) {
         shareImageUrl: SHARE_IMAGE_URL
     };
     if (introSalutation) guest.introSalutation = introSalutation;
+    if (introFilmTitle) guest.introFilmTitle = introFilmTitle;
+    if (hideIntroDear) guest.hideIntroDear = true;
+    if (hideIntroRule) guest.hideIntroRule = true;
+    if (hideGuestCard) guest.hideGuestCard = true;
+    if (hideDownloadCard) guest.hideDownloadCard = true;
+    if (forceShowLetter) guest.forceShowLetter = true;
     return guest;
 }
 

@@ -389,8 +389,10 @@
         setMeta('meta[name="twitter:description"]', description);
         setMeta('meta[name="twitter:image"]', shareImage);
 
-        setText("[data-film-title]", text(data.introFilmTitle, data.filmTitle));
+        setText("[data-film-title]", text(guest.introFilmTitle, data.introFilmTitle || data.filmTitle));
         setText("[data-intro-salutation]", text(guest.introSalutation, data.introSalutation || "Mến gửi"));
+        setHidden(".intro-dear", Boolean(guest.hideIntroDear));
+        setHidden(".intro-rule", Boolean(guest.hideIntroRule));
         setText("[data-host-name]", data.hostName);
         setText("[data-ticket-host]", data.hostName);
         setText("[data-ticket-title]", data.filmTitle);
@@ -400,7 +402,7 @@
         var sampleMessage = getSampleMessage(visibility);
         var realMessageEnabled = shouldShowRealMessage(slug, visibility);
         var realLetterAvailable = Boolean(guest.showLetter) && Boolean(text(guest.message));
-        var showRealLetter = realLetterAvailable && realMessageEnabled;
+        var showRealLetter = realLetterAvailable && (realMessageEnabled || Boolean(guest.forceShowLetter));
         var showLetter = realLetterAvailable && Boolean(showRealLetter || sampleMessage);
         var letterTitle = showRealLetter ? text(guest.letterTitle, "Gửi " + dearName + ",") : "Gửi " + dearName + ",";
         var message = showRealLetter ? text(guest.message, sampleMessage) : sampleMessage;
@@ -413,6 +415,7 @@
         setText("[data-ticket-role-prefix]", ticketRole);
         setHidden("[data-ticket-role-prefix]", !ticketRole);
         setText("[data-ticket-name]", text(guest.ticketName, dearName));
+        setHidden(".guest-card", Boolean(guest.hideGuestCard));
         setText("[data-story-line]", text(guest.storyLine, data.introStoryLine || "Trân quý mời anh đến buổi chiếu phim thân mật"));
         setText("[data-message]", showLetter ? message : "");
         setHidden(".letter-copy", !showLetter);
@@ -448,6 +451,7 @@
         var map = document.querySelector("[data-map-link]");
         if (map) map.href = text(guest.mapUrl, data.mapUrl);
 
+        setHidden(".download-card", Boolean(guest.hideDownloadCard));
         setDownload("[data-download-story-image]", text(guest.storyImageUrl, data.storyImageUrl || posterUrl), "dad-dont-lie-story.jpg");
         setDownload("[data-download-story-video]", text(guest.storyVideoUrl, data.storyVideoUrl), "dad-dont-lie-story.mp4", { shareVideo: true });
         setDownload("[data-download-full-video]", text(guest.fullInvitationVideoUrl, data.fullInvitationVideoUrl), "dad-dont-lie-invitation.mp4");
