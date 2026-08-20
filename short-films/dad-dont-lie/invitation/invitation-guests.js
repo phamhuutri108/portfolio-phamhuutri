@@ -611,6 +611,24 @@ window.dadDontLieInvitationGuests = {
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     },
+    "nguyen-thanh-dong": {
+        "displayName": "Nguyễn Thành Đồng",
+        "namePrefix": "anh",
+        "dearName": "anh Nguyễn Thành Đồng",
+        "showLetter": true,
+        "letterTitle": "Gửi anh Nguyễn Thành Đồng,",
+        "message": "Em Trí mời anh Đồng đến xem phim cùng em và ekip. Cảm ơn sự hỗ trợ thiết bị của anh trong quá trình quay phim. Chúc anh có buổi xem phim vui vẻ",
+        "ticketName": "Nguyễn Thành Đồng",
+        "ticketRole": "Anh",
+        "ticketDisplayName": "Anh Nguyễn Thành Đồng",
+        "role": "Anh",
+        "storyLine": "Trân quý mời anh đến buổi chiếu phim thân mật",
+        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/nguyen-thanh-dong.mp4",
+        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/nguyen-thanh-dong.mp4",
+        "shareTitle": "Lời mời đến Nguyễn Thành Đồng",
+        "shareDescription": "Ba Ơi, Đừng Nói Dối",
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
+    },
     "vo-dang-minh": {
         "displayName": "Võ Đăng Minh",
         "namePrefix": "anh",
