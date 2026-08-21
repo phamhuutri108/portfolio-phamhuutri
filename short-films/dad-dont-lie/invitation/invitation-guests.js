@@ -1469,6 +1469,24 @@ window.dadDontLieInvitationGuests = {
         "shareTitle": "Lời mời đến Thùy Dương",
         "shareDescription": "Ba Ơi, Đừng Nói Dối",
         "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
+    },
+    "evy": {
+        "displayName": "Evy",
+        "namePrefix": "",
+        "dearName": "Evy",
+        "showLetter": true,
+        "letterTitle": "Gửi Evy,",
+        "message": "Em Trí và em Mai thương mời Evy đến và cùng xem \"Ba Ơi, Đừng Nói Dối\" tại buổi chiếu phim thân mật dành cho ekip và những bạn bè thân thương.",
+        "ticketName": "Evy",
+        "ticketRole": "",
+        "ticketDisplayName": "Evy",
+        "role": "",
+        "storyLine": "Trân quý mời chị đến buổi chiếu phim thân mật",
+        "introVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/evy.mp4",
+        "storyVideoUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/invitation/intro/evy.mp4",
+        "shareTitle": "Lời mời đến Evy",
+        "shareDescription": "Ba Ơi, Đừng Nói Dối",
+        "shareImageUrl": "https://assets.phamhuutri.com/assets/short-films/BODND/BODND_Still.jpeg?v=2"
     }
 };
 if (window.dadDontLieInvitationConfig) {
