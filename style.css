@@ -295,52 +295,7 @@ a:hover {color: #0033cc !important;}
     font-family: 'Georgia', serif;
 }
 
-/* --- THÊM VÀO CUỐI STYLE.CSS --- */
 
-#about {
-    position: relative;
-    min-height: 600px; 
-    overflow: hidden; /* Quan trọng để không bay ra ngoài */
-}
-
-/* TRẠNG THÁI 1: Nằm im ban đầu (VÀ NHẤP NHÁY) */
-#wandering-resume {
-    position: relative;
-    display: inline-block;
-    font-size: 16px; 
-    font-weight: bold;
-    color: #111;
-    text-transform: none;
-    cursor: pointer;
-    padding: 20px;
-    z-index: 50;
-    
-    /* Hiệu ứng chuyển màu */
-    transition: color 0.3s, opacity 0.3s; 
-    
-    /* --- THÊM DÒNG NÀY ĐỂ NHẤP NHÁY --- */
-    /* Dùng lại animation pulseText có sẵn (2s giống mobile) */
-    animation: pulseText 2s infinite; 
-}
-
-/* TRẠNG THÁI 2: Khi bắt đầu bay (JS thêm class này) */
-#wandering-resume.flying {
-    position: absolute; 
-    transition: top 1.3s ease-in-out, left 1.3s ease-in-out, color 0.2s;
-    /* Animation nhấp nháy vẫn giữ nguyên từ ID gốc nên không cần thêm gì ở đây */
-}
-
-/* TRẠNG THÁI 3: Khi bỏ chạy (Evasion) */
-#wandering-resume.evading {
-    transition: top 0.2s ease-out, left 0.2s ease-out !important;
-}
-
-/* Đổi màu khi hover (KHI BẮT ĐƯỢC) */
-#wandering-resume:hover {
-    color: #0033cc;   /* Vẫn hiện màu xanh như cũ */
-    animation: none;  /* Tạm dừng nhấp nháy để chữ hiện rõ màu xanh cho người dùng đọc */
-    opacity: 1;       /* Đảm bảo rõ nét 100% */
-}
 
 /* --- CHUYỂN NGÔN NGỮ --- */
 
