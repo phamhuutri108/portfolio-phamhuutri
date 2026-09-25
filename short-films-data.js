@@ -15,7 +15,7 @@ const filmsData = {
         // Phần Text giới thiệu giữ nguyên, nhưng ĐÃ XÓA HTML CREW SCROLLER ở dưới cùng
         vi: `
             <p><b>Thể loại:</b> Phim ngắn / Tâm lý, Quan sát<br>
-            <b> Năm:</b> Sắp ra mắt (2026)<br>
+            <b> Năm:</b> 2026<br>
             <b>Thời lượng:</b> 33:33<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
@@ -65,7 +65,7 @@ const filmsData = {
                 <li><b>Trợ lý đạo diễn #2:</b> Kon Lớn</li>
                 <li><b>Thư ký trường quay:</b> Hồ Minh Khoa</li>
 
-                <li><b>Gaffer:</b> Tô Anh Khoa</li>
+                <li><b>Trợ lý đạo diễn hình ảnh:</b> Tô Anh Khoa</li>
                 <li><b>Phụ quay:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
                 <li><b>Chỉnh nét:</b> Văn Ngọc Thành</li>
                 <li><b>Chuyên viên ánh sáng:</b> Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
@@ -95,7 +95,7 @@ const filmsData = {
             `,
         en: `
             <p><b>Genre:</b> Short fiction / Drama, Observation<br>
-            <b> Year:</b> Coming-soon (2026)<br>
+            <b> Year:</b> 2026<br>
             <b>Duration:</b> 33:33<br> </p>
 
             <div style="text-align: left; margin: 30px 0;">
@@ -120,7 +120,7 @@ const filmsData = {
 
 
 
-            <h3>Scores</h3>
+            <h3>Original Score</h3>
             <div style="max-width: 560px; margin-top: 15px;">
                 <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2192844275%3Fsecret_token%3Ds-YdumxnhXXXl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/phamhuutri" title="Tri Pham" target="_blank" style="color: #cccccc; text-decoration: none;">Tri Pham</a> · <a href="https://soundcloud.com/phamhuutri/sets/scores-dad-dont-lie" title="Original Soundtrack for Dad, Don't Lie" target="_blank" style="color: #cccccc; text-decoration: none;">Original Scores for "Dad, Don't Lie"</a></div>
             </div>
@@ -145,7 +145,7 @@ const filmsData = {
                 <li><b>Second Assistant Director:</b> Kon Lớn</li>
                 <li><b>Script Supervisor:</b> Hồ Minh Khoa</li>
 
-                <li><b>Gaffer:</b> Khoa Too</li>
+                <li><b>Assistant Cinematographer:</b> Khoa Too</li>
                 <li><b>Assistant Camera:</b> Đặng Xuân Hoàng, Nguyễn Kim Hậu</li>
                 <li><b>Focus Puller:</b> Văn Ngọc Thành</li>
                 <li><b>Best boy:</b> Nguyễn Trung Hiếu, Gia Bảo, Mai Ngọc Hiền</li>
